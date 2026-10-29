@@ -1,0 +1,15 @@
+{
+  "locale": "tr-TR",
+  "status": "pending listing-locale eligibility and human review",
+  "reviewer": null,
+  "source": {
+    "title": "PrepTrove – Emergency Kit & Family Planner",
+    "shortDescription": "Organise household supplies, saved contacts and preparedness plans.",
+    "disclaimer": "A planning companion, not an emergency alert service or replacement for official guidance."
+  },
+  "translation": null,
+  "screenshots": {
+    "status": "pending real localised captures",
+    "countRequiredByProduct": 8
+  }
+}

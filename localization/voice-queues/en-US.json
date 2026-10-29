@@ -1,0 +1,25 @@
+{
+  "locale": "en-US",
+  "status": "source English",
+  "reviewer": null,
+  "intents": {
+    "addSupply": [
+      "add {supply}"
+    ],
+    "expiry": [
+      "what supplies are expiring soon"
+    ],
+    "contacts": [
+      "show my contacts"
+    ],
+    "plans": [
+      "read my family plan"
+    ],
+    "checklists": [
+      "show my checklist"
+    ],
+    "quantity": [
+      "how many {supply} do I have"
+    ]
+  }
+}

@@ -1,10 +1,34 @@
 {
- "date": "2026-10-28",
- "interface": {"en-GB":"development preview", "allOtherRequestedLocales":"pending"},
- "listing": {"status":"not approved", "reference":"https://www.developer.amazon.com/docs/app-submission/distribute-your-app-internationally.html"},
- "distributionCountries": {"status":"owner selection and console validation pending"},
- "recognition": {"languages":"device service dependent", "commands":"English subset", "offline":"not verified"},
- "textToSpeech": {"languages":"device language capability checked at runtime", "offline":"not verified"},
- "guidance": {"GB":"offline general planning summary", "otherCountries":"not available"},
- "screenshots": {"approvedListingLocales":[],"productionCompositions":[],"status":"pending"}
+  "date": "2026-10-29",
+  "interface": {
+    "en-GB": "source resource variant, device-tested",
+    "en-US": "source resource variant, device-tested",
+    "en-AU": "source resource variant",
+    "other19Targets": "translation and review pending"
+  },
+  "listing": {
+    "status": "not approved",
+    "reference": "https://www.developer.amazon.com/docs/app-submission/distribute-your-app-internationally.html"
+  },
+  "distributionCountries": {
+    "status": "owner selection and console validation pending"
+  },
+  "recognition": {
+    "languages": "active app locale requested from device service; capability depends on installed engine",
+    "commands": "English subset only; 22 separate voice review queues",
+    "offline": "not verified"
+  },
+  "textToSpeech": {
+    "languages": "active app locale checked with installed engine",
+    "offline": "not verified"
+  },
+  "guidance": {
+    "GB": "offline general planning summary",
+    "otherCountries": "not available"
+  },
+  "screenshots": {
+    "approvedListingLocales": [],
+    "productionCompositions": [],
+    "status": "pending"
+  }
 }

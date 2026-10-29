@@ -1,6 +1,6 @@
 # Release gates and implementation status
 
-Last assessed: 2026-10-28. Package com.preptrove.app, version 0.1.0.
+Last assessed: 2026-10-29. Package com.preptrove.app, version 0.1.0.
 
 ## Implemented development scope
 
@@ -16,14 +16,14 @@ Last assessed: 2026-10-28. Package com.preptrove.app, version 0.1.0.
 ## Blocking full product release
 
 - Amazon IAP SDK integration, configured entitlement SKU, localised store pricing, verified receipts, paginated restore, revocation, durable verified entitlement, offline policy, failure testing. No purchases or fake premium unlock exist in this build. The development preview does not enforce free-tier limits.
-- Human-reviewed translations in all 19 product locales plus Korean, Simplified Chinese and Traditional Chinese from the standing requirements. Static resource extraction and a DeepL API/cache/review pipeline exist; dynamic strings, plurals, notification strings, onboarding validation, locale selector, voice dictionaries and marketing translation coverage remain incomplete. No locale is declared fully localised.
+- Human-reviewed translations in all 19 product locales plus Korean, Simplified Chinese and Traditional Chinese from the standing requirements. Native screen and dynamic-message resources, plural notifications, manual language selection, device-language fallback, locale-aware quantities and date display are implemented. All 22 locales have review queues and separate voice/metadata queues. Three source English resource variants are generated. The other 19 need provider translations and human review; qualified safety review and multilingual voice dictionaries remain pending. No worldwide localisation completion is claimed.
 - Qualified regional safety-content review and content packs. Only the UK summary exists. Country setting does not imply country-specific reference coverage.
 - Optional photographs, secure attachment handling, purchase dates, custom reusable kit/checklist templates, structured multi-plan fields, custom reminder intervals and history.
 - App lock, export selection at individual-field level, PDF complex-script shaping and word-boundary wrapping. Backup encryption and copy-based restore are implemented; end-to-end file-picker and interoperability verification remain pending. Current PDFs use Android canvas text and should not be advertised as worldwide-ready.
 - Complete voice intents for checked items, reminder dates and locale-aware quantity nouns; destruction by voice remains unsupported.
-- Feature-module decomposition, schema export/migration tests, lifecycle-restored draft state, persist theme, accessibility audit and talkback, RTL, rotation and large-font tests.
-- Original full asset suite, splash and adaptive/monochrome icons, onboarding illustrations, all eight marketing compositions, phone/tablet and approved-language screenshots. Current vector icon and any device captures are development assets only.
-- Marketing website, legal review, trademark clearance, support contact and privacy hosting, SEO/AI search content, store descriptions across approved languages, signed release APK, device compatibility and store certification.
+- Feature-module decomposition, schema export/migration tests, lifecycle-restored draft state, accessibility audit and talkback, RTL, rotation and large-font tests.
+- Original full asset suite, splash and adaptive/monochrome icons, onboarding illustrations, all eight marketing compositions, phone/tablet and approved-language screenshots. Adaptive and monochrome launcher icons and an editable SVG master exist. Illustrations, promotional compositions and approved localised captures remain pending.
+- Marketing website, legal review, trademark clearance, support contact and privacy hosting, SEO/AI search content, store descriptions across approved languages, signed release APK (unsigned QA release builds are available), device compatibility and store certification.
 
 ## Store references checked
 

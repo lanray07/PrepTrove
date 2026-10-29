@@ -23,3 +23,14 @@ Room persistence for kits, supplies, plan notes, manually entered contacts, grou
 Read [release gates](docs/RELEASE.md) before distributing. This is a working foundation, not completion of the full master brief. Source brief supplied by the user stops partway through section 23; later requirements were not available.
 
 Architecture uses one application module with UI, ViewModel, Room repository/DAO and a WorkManager task. Feature module separation, typed structured family plans, complete locale support and production entitlement handling are still required. No encryption or security guarantee is claimed.
+
+## Localisation and release tooling
+
+- UI resource variants available: en-GB, en-US, en-AU. They are source-English variants, not evidence of full store-language approval.
+- 19 additional locale packs are pending provider translation and review, as requested when no provider was configured. All 22 targets have UI, voice and store review queues under localization/.
+- Settings offers manual language selection; pending languages are disabled. Device-language fallback never translates private records. Speech recognition/TTS use the active app locale; command parsing remains the documented English subset.
+- Run `python tools/extract_resources.py --check`, `python tools/localize.py`, `python tools/audit_localization.py`, and `python -m unittest discover -s tools -p 'test_*.py'`.
+- Review workflow: fill the locale queue, identify the reviewer, review each string and safety flag, then use `python tools/localize.py --approve LOCALE`. Machine output is never treated as human-reviewed.
+- `python tools/release_check.py` deliberately fails while production requirements remain open. `python tools/package_release.py --unsigned` builds a QA release and checksum manifest. Signing requires completed gates and local environment secrets; the tool never publishes.
+
+See [translation review instructions](docs/LOCALISATION.md).

@@ -1,0 +1,9 @@
+{
+  "amazonCatalogueAndVerifiedReceipts": {"status":"pending", "evidence":"Configure entitlement SKU, SDK, receipt verification, restore and Amazon App Tester results."},
+  "deviceCompatibilityAndVoice": {"status":"pending", "evidence":"Test phone, portrait, accessibility, RTL, speech engines and notification delivery."},
+  "localisedScreenshotsAndMetadata": {"status":"pending", "evidence":"Capture actual reviewed UI for every approved listing locale; validate dimensions in Amazon console."},
+  "regionalSafetyReview": {"status":"pending", "evidence":"Obtain qualified country-specific review; no automatically translated safety packs."},
+  "publisherLegalAndSupport": {"status":"pending", "evidence":"Publisher identity, working support address, hosted privacy URL, legal and trademark review."},
+  "functionalCompleteness": {"status":"pending", "evidence":"Structured family plans, secure photos, templates, app lock, richer reminders and remaining master-brief functions."},
+  "ownerReleaseApproval": {"status":"pending", "evidence":"Owner approval of final price, territories, listing and signed release package."}
+}

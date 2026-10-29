@@ -24,3 +24,14 @@ APK SHA-256: `59006f688af27cb84850cde92efc1267fa613ffce1100aab59731712cafdd470`
 - Android lint passed. The file-picker restore/export journey and cryptographic provider interoperability across Fire versions still require verification.
 - CI's first run failed because setup-android requested the removed `tools` SDK package. The workflow now requests explicit supported SDK components; the rerun status is tracked on GitHub.
 - Localisation audit now reports 23 inline Text calls. Added backup copy remains pending full translation.
+
+## Localisation and release-tooling milestone — 29 October 2026
+
+- Debug and unsigned release builds passed; signed release and publication were not performed.
+- Current Android unit results: {'tests': 6, 'failures': 0, 'errors': 0}. Fire tablet instrumentation: {'tests': 7, 'failures': 0, 'errors': 0}. Three Python localisation-tool tests also passed.
+- Lint: {'Error': 0, 'Warning': 45, 'Fatal': 0}. Dependency/toolchain warnings remain review items.
+- 179 source string keys, two native plural groups, 22 UI review queues, 22 voice queues and 22 metadata queues. Three source English variants generate usable resources; the other 19 packs remain pending because no translation provider was configured, as the owner requested.
+- Language tests cover persistent selection, UK/US resource differences, pending-language rejection and notification singular/plural output. Locale-aware number parser tests cover regional decimal separators and invalid input. Full RTL, text expansion, TalkBack, microphone engines and every launch market are not verified.
+- Resource catalogue drift and placeholder checks passed. The single remaining inline Text call formats a supply quantity together with private user fields; those private fields are intentionally untranslated.
+- Production preflight intentionally exits nonzero and records remaining gates in release/readiness.json. Unsigned packaging tool ran successfully and wrote an SHA-256 manifest beside the unsigned APK. Signing credentials remain external; no keys were created or uploaded.
+- Latest debug APK SHA-256: `61cd4d1b9eab5730fbc67682cf3b0cb2cdc1c69a515c681e3392f647de8d8178`

@@ -1,178 +1,200 @@
 [
   {
     "locale": "en-GB",
-    "staticStrings": 52,
-    "reviewed": 0,
-    "resourceStatus": "pending",
+    "strings": 183,
+    "translated": 183,
+    "reviewed": 183,
+    "resourceStatus": "generated",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "source English variant"
   },
   {
     "locale": "en-US",
-    "staticStrings": 52,
-    "reviewed": 0,
-    "resourceStatus": "pending",
+    "strings": 183,
+    "translated": 183,
+    "reviewed": 183,
+    "resourceStatus": "generated",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "source English variant"
   },
   {
     "locale": "en-AU",
-    "staticStrings": 52,
-    "reviewed": 0,
-    "resourceStatus": "pending",
+    "strings": 183,
+    "translated": 183,
+    "reviewed": 183,
+    "resourceStatus": "generated",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "source English variant"
   },
   {
     "locale": "es-ES",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "es-419",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "fr-FR",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "fr-CA",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "de-DE",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "it-IT",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "pt-BR",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "pt-PT",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "nl-NL",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "pl-PL",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "sv-SE",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "ja-JP",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "hi-IN",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "ar",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "tr-TR",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "id-ID",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "ko-KR",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "zh-Hans",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   },
   {
     "locale": "zh-Hant",
-    "staticStrings": 52,
+    "strings": 183,
+    "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "remaining": "Dynamic messages, plurals, voice dictionary, marketing and safety review require completion"
+    "reviewType": "human review required"
   }
 ]

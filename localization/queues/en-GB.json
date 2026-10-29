@@ -1,0 +1,1105 @@
+{
+  "locale": "en-GB",
+  "reviewer": "",
+  "qualifiedSafetyReview": false,
+  "strings": {
+    "preptrove_c7187b": {
+      "source": "PrepTrove",
+      "translation": "PrepTrove",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "your_household_organised_96de4e": {
+      "source": "YOUR HOUSEHOLD, ORGANISED",
+      "translation": "YOUR HOUSEHOLD, ORGANISED",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "prepared_today_ready_for_tomorrow_6786a9": {
+      "source": "Prepared today. Ready for tomorrow.",
+      "translation": "Prepared today. Ready for tomorrow.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "saved_records_work_offline_eceb81": {
+      "source": "●  Saved records work offline",
+      "translation": "●  Saved records work offline",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "a_little_preparation_more_peace_of_mind_48526d": {
+      "source": "A little preparation.\nMore peace of mind.",
+      "translation": "A little preparation.\nMore peace of mind.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "your_essentials_and_household_plans_together_in__354383": {
+      "source": "Your essentials and household plans, together in one private place.",
+      "translation": "Your essentials and household plans, together in one private place.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "organise_your_kit_e4829c": {
+      "source": "Organise your kit",
+      "translation": "Organise your kit",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "your_next_small_step_b68082": {
+      "source": "Your next small step",
+      "translation": "Your next small step",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "planning_progress_is_not_a_guarantee_of_safety_f_26ae34": {
+      "source": "Planning progress is not a guarantee of safety. Follow local authorities during an emergency.",
+      "translation": "Planning progress is not a guarantee of safety. Follow local authorities during an emergency.",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "saved_guidance_united_kingdom_8a9326": {
+      "source": "Saved guidance • United Kingdom",
+      "translation": "Saved guidance • United Kingdom",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "general_planning_information_not_live_alerts_for_127afe": {
+      "source": "General planning information, not live alerts. For other countries, consult your local emergency-management authority.",
+      "translation": "General planning information, not live alerts. For other countries, consult your local emergency-management authority.",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "source_uk_government_prepare_https_prepare_campa_17bb7e": {
+      "source": "Source: UK Government Prepare\nhttps://prepare.campaign.gov.uk/get-prepared-for-emergencies/\nReviewed: 28 October 2026 · Content version 1\nSource update date: not supplied. This summary is stored offline. The source link needs internet access.",
+      "translation": "Source: UK Government Prepare\nhttps://prepare.campaign.gov.uk/get-prepared-for-emergencies/\nReviewed: 28 October 2026 · Content version 1\nSource update date: not supplied. This summary is stored offline. The source link needs internet access.",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "your_voice_your_planner_4e42c9": {
+      "source": "Your voice. Your planner.",
+      "translation": "Your voice. Your planner.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "push_to_talk_then_review_the_transcript_your_dev_afdb27": {
+      "source": "Push to talk, then review the transcript. Your device’s recognition provider may use the network. PrepTrove does not save audio. English commands are available in this preview.",
+      "translation": "Push to talk, then review the transcript. Your device’s recognition provider may use the network. PrepTrove does not save audio. English commands are available in this preview.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "transcript_or_typed_command_48008f": {
+      "source": "Transcript or typed command",
+      "translation": "Transcript or typed command",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "review_command_399b62": {
+      "source": "Review command",
+      "translation": "Review command",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "read_response_aloud_ac4ff0": {
+      "source": "Read response aloud",
+      "translation": "Read response aloud",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "private_by_default_f52e06": {
+      "source": "Private by default",
+      "translation": "Private by default",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "no_account_ads_analytics_location_tracking_or_au_75a32c": {
+      "source": "No account, ads, analytics, location tracking or automatic uploads. Records are stored in this app’s private device storage. Device encryption depends on your device settings.",
+      "translation": "No account, ads, analytics, location tracking or automatic uploads. Records are stored in this app’s private device storage. Device encryption depends on your device settings.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "dark_theme_3f11a5": {
+      "source": "Dark theme",
+      "translation": "Dark theme",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "interface_english_preview_other_languages_are_pe_364f22": {
+      "source": "Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.",
+      "translation": "Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "enable_optional_reminders_4af429": {
+      "source": "Enable optional reminders",
+      "translation": "Enable optional reminders",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "reminders_are_checked_periodically_usually_daily_226139": {
+      "source": "Reminders are checked periodically, usually daily. Timing is controlled by the operating system. Mark complete to pause; edit the date to snooze.",
+      "translation": "Reminders are checked periodically, usually daily. Timing is controlled by the operating system. Mark complete to pause; edit the date to snooze.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "exports_2f4dcf": {
+      "source": "Exports",
+      "translation": "Exports",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "exports_are_unencrypted_review_the_included_info_14b601": {
+      "source": "PDF, CSV and JSON exports are unencrypted. PTB backups use password-protected encryption. Review the included information before saving.",
+      "translation": "PDF, CSV and JSON exports are unencrypted. PTB backups use password-protected encryption. Review the included information before saving.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "delete_all_saved_records_4e66b6": {
+      "source": "Delete all saved records",
+      "translation": "Delete all saved records",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "checked_today_d85745": {
+      "source": "Checked today",
+      "translation": "Checked today",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "duplicate_02cdaa": {
+      "source": "Duplicate",
+      "translation": "Duplicate",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "delete_e2d0a5": {
+      "source": "Delete",
+      "translation": "Delete",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "this_cannot_be_undone_supplies_in_a_deleted_kit__54a684": {
+      "source": "This cannot be undone. Supplies in a deleted kit will become unassigned.",
+      "translation": "This cannot be undone. Supplies in a deleted kit will become unassigned.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "cancel_19766e": {
+      "source": "Cancel",
+      "translation": "Cancel",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "delete_all_records_1dcbbc": {
+      "source": "Delete all records?",
+      "translation": "Delete all records?",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "all_kits_supplies_contacts_plans_reminders_and_c_bbd353": {
+      "source": "All kits, supplies, contacts, plans, reminders and checklist tasks will be permanently removed from this device.",
+      "translation": "All kits, supplies, contacts, plans, reminders and checklist tasks will be permanently removed from this device.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "delete_everything_71eb8a": {
+      "source": "Delete everything",
+      "translation": "Delete everything",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "review_export_contents_521854": {
+      "source": "Review export contents",
+      "translation": "Review export contents",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "also_include_contacts_and_family_plans_331c8a": {
+      "source": "Also include contacts and family plans",
+      "translation": "Also include contacts and family plans",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "choose_destination_5853e2": {
+      "source": "Choose destination",
+      "translation": "Choose destination",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "welcome_to_preptrove_2fb668": {
+      "source": "Welcome to PrepTrove",
+      "translation": "Welcome to PrepTrove",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "prepared_today_ready_for_tomorrow_your_records_s_5cbed1": {
+      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. Interface language: English preview.",
+      "translation": "Prepared today. Ready for tomorrow. Your records stay on this device. Interface language: English preview.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "household_size_optional_73a7cf": {
+      "source": "Household size (optional)",
+      "translation": "Household size (optional)",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "country_or_region_8d2360": {
+      "source": "Country or region",
+      "translation": "Country or region",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "reminders_and_microphone_access_are_optional_and_121a8c": {
+      "source": "Reminders and microphone access are optional and requested only when you enable them.",
+      "translation": "Reminders and microphone access are optional and requested only when you enable them.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "start_planning_655059": {
+      "source": "Start planning",
+      "translation": "Start planning",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "skip_28d035": {
+      "source": "Skip",
+      "translation": "Skip",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "name_dcd1d5": {
+      "source": "Name",
+      "translation": "Name",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "category_checklist_group_0cf902": {
+      "source": "Category / checklist group",
+      "translation": "Category / checklist group",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "quantity_822bab": {
+      "source": "Quantity",
+      "translation": "Quantity",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "unit_e_g_litres_bottles_3092cb": {
+      "source": "Unit (e.g. litres, bottles)",
+      "translation": "Unit (e.g. litres, bottles)",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "assign_to_a_kit_ba9a85": {
+      "source": "Assign to a kit",
+      "translation": "Assign to a kit",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "unassigned_14d33b": {
+      "source": "Unassigned",
+      "translation": "Unassigned",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "storage_location_a59e28": {
+      "source": "Storage location",
+      "translation": "Storage location",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "save_1509f5": {
+      "source": "Save",
+      "translation": "Save",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_a772ed394d2a": {
+      "source": "Family plans",
+      "translation": "Family plans",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_79f24e0d59e2": {
+      "source": "No recognition service is installed. Type your command below.",
+      "translation": "No recognition service is installed. Type your command below.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_27a56819312e": {
+      "source": "Voice recognition unavailable or interrupted (%1$d). Try again or type a command.",
+      "translation": "Voice recognition unavailable or interrupted (%1$d). Try again or type a command.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_3449cda89b1a": {
+      "source": "Recognition could not start. Use text instead.",
+      "translation": "Recognition could not start. Use text instead.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_16cfda4cd82d": {
+      "source": "Microphone permission was declined. Text commands are available.",
+      "translation": "Microphone permission was declined. Text commands are available.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_4bd4c7b77408": {
+      "source": "Notifications enabled. Delivery timing depends on your device.",
+      "translation": "Notifications enabled. Delivery timing depends on your device.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_52df1e1e5c92": {
+      "source": "Notifications declined. Saved reminders remain available here.",
+      "translation": "Notifications declined. Saved reminders remain available here.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_e72fbb36b74a": {
+      "source": "Reading backup…",
+      "translation": "Reading backup…",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_ca8f3e592a42": {
+      "source": "Unavailable file",
+      "translation": "Unavailable file",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_8c5bd585f189": {
+      "source": "Review the restore confirmation.",
+      "translation": "Review the restore confirmation.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_6cf8046d34d7": {
+      "source": "Unable to restore: invalid file, unsupported format or incorrect password. Existing records were kept.",
+      "translation": "Unable to restore: invalid file, unsupported format or incorrect password. Existing records were kept.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_88a395e76126": {
+      "source": "PrepTrove | Household preparedness",
+      "translation": "PrepTrove | Household preparedness",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_6703075bc782": {
+      "source": "Prepared %1$s | Saved planning records",
+      "translation": "Prepared %1$s | Saved planning records",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_730f66958d23": {
+      "source": "Destination unavailable",
+      "translation": "Destination unavailable",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_3b92ecba1a57": {
+      "source": "Export saved. Keep the file somewhere private.",
+      "translation": "Export saved. Keep the file somewhere private.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_e82ead9f0716": {
+      "source": "Export could not be saved. Check the destination and try again.",
+      "translation": "Export could not be saved. Check the destination and try again.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_290b79b6acea": {
+      "source": "Voice assistant",
+      "translation": "Voice assistant",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_950eea0391cc": {
+      "source": "Add record",
+      "translation": "Add record",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_9a9143036dec": {
+      "source": "Due soon",
+      "translation": "Due soon",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_d2dbe2559ba6": {
+      "source": "Build a household plan",
+      "translation": "Build a household plan",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_6079021c3755": {
+      "source": "Record a meeting point and how you’ll check in.",
+      "translation": "Record a meeting point and how you’ll check in.",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "msg_ed39c4413dda": {
+      "source": "Open family plans",
+      "translation": "Open family plans",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_46e7e7653a2f": {
+      "source": "Supplies to review",
+      "translation": "Supplies to review",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_17e01f62f29d": {
+      "source": "%1$d supplies expire within 30 days or are past their recorded date.",
+      "translation": "%1$d supplies expire within 30 days or are past their recorded date.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_20881999e49c": {
+      "source": "Review supplies",
+      "translation": "Review supplies",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_29bad2d89383": {
+      "source": "Keep useful contacts close",
+      "translation": "Keep useful contacts close",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_e0d1c3905d20": {
+      "source": "Save phone numbers manually, with no access to your device contacts.",
+      "translation": "Save phone numbers manually, with no access to your device contacts.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_e2f452853253": {
+      "source": "Open contacts",
+      "translation": "Open contacts",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_763918ef854e": {
+      "source": "Start with what you have",
+      "translation": "Start with what you have",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_64807d95473b": {
+      "source": "Consider a torch, phone power bank, drinking water and food suited to your household. Keep supplies easy to find and review their condition.",
+      "translation": "Consider a torch, phone power bank, drinking water and food suited to your household. Keep supplies easy to find and review their condition.",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "msg_54c27d3dfa89": {
+      "source": "Source: UK Government Prepare",
+      "translation": "Source: UK Government Prepare",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "msg_1a856e66963c": {
+      "source": "Talk through your plan",
+      "translation": "Talk through your plan",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "msg_78d63721f142": {
+      "source": "Discuss a meeting point, communication arrangements and any support your household may need.",
+      "translation": "Discuss a meeting point, communication arrangements and any support your household may need.",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "msg_d879aface73a": {
+      "source": "Review your household plan",
+      "translation": "Review your household plan",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_bbb4106e8144": {
+      "source": "Listening…",
+      "translation": "Listening…",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_4c15103c8011": {
+      "source": "Start listening",
+      "translation": "Start listening",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_99d34c2615d3": {
+      "source": "%1$d supplies need an expiry review.",
+      "translation": "%1$d supplies need an expiry review.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_ed7e19e138cd": {
+      "source": "Your contacts are ready.",
+      "translation": "Your contacts are ready.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_a66277f71e95": {
+      "source": "Your checklists are ready.",
+      "translation": "Your checklists are ready.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_7ac9410ea796": {
+      "source": "No family plans have been saved.",
+      "translation": "No family plans have been saved.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_4a157ac5d322": {
+      "source": "add ",
+      "translation": "add ",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_315a3eabfa27": {
+      "source": " to my ",
+      "translation": " to my ",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_186c6ec83f48": {
+      "source": "Review the supply details and save to confirm.",
+      "translation": "Review the supply details and save to confirm.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_b958e49b2c13": {
+      "source": "how many ",
+      "translation": "how many ",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_53a4248d89b5": {
+      "source": " do i",
+      "translation": " do i",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_32668e0b1acf": {
+      "source": "%1$s %2$s recorded.",
+      "translation": "%1$s %2$s recorded.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_475a159ff59c": {
+      "source": "Try: add bottled water; what supplies are expiring soon; show my contacts; read my family plan; show my checklist.",
+      "translation": "Try: add bottled water; what supplies are expiring soon; show my contacts; read my family plan; show my checklist.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_182831393f70": {
+      "source": "Notifications follow device settings.",
+      "translation": "Notifications follow device settings.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_96276c8b3a4b": {
+      "source": "Restore a backup",
+      "translation": "Restore a backup",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_5fc3fb1f3247": {
+      "source": "PrepTrove Premium",
+      "translation": "PrepTrove Premium",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_220a688eedd7": {
+      "source": "Purchases are unavailable in this development preview. Amazon catalogue setup, receipt verification and store testing are required before any purchase can be enabled.",
+      "translation": "Purchases are unavailable in this development preview. Amazon catalogue setup, receipt verification and store testing are required before any purchase can be enabled.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_959277cecafb": {
+      "source": "View release notes",
+      "translation": "View release notes",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_a02b8fe0ca36": {
+      "source": "See docs/RELEASE.md in the source package for release gates.",
+      "translation": "See docs/RELEASE.md in the source package for release gates.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_dab9ab319759": {
+      "source": "Power Outages",
+      "translation": "Power Outages",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_bd48c42d9275": {
+      "source": "Severe Weather",
+      "translation": "Severe Weather",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_e53d1915f2aa": {
+      "source": "Flood Preparation",
+      "translation": "Flood Preparation",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_0c32b624fed5": {
+      "source": "Winter Readiness",
+      "translation": "Winter Readiness",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_c1f91d2d0d07": {
+      "source": "Travel Preparation",
+      "translation": "Travel Preparation",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_445cbef5c132": {
+      "source": "Household Evacuation",
+      "translation": "Household Evacuation",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_45474e80fd18": {
+      "source": "Pet Preparedness",
+      "translation": "Pet Preparedness",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_1503c09ae775": {
+      "source": "Emergency Document Organisation",
+      "translation": "Emergency Document Organisation",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_c22e78a7a25a": {
+      "source": "Supply Inspection",
+      "translation": "Supply Inspection",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_9894105732a6": {
+      "source": "Review official local guidance",
+      "translation": "Review official local guidance",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "msg_ceda0ef368ce": {
+      "source": "Discuss household needs and arrangements",
+      "translation": "Discuss household needs and arrangements",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_5d8d8b9627ca": {
+      "source": "Review relevant supplies and contacts",
+      "translation": "Review relevant supplies and contacts",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_b836676c3c6d": {
+      "source": "Add starter checklist tasks",
+      "translation": "Add starter checklist tasks",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_4db74eab28d5": {
+      "source": "Use notes for meeting points, communication, pets and accessibility arrangements. Sensitive details are optional.",
+      "translation": "Use notes for meeting points, communication, pets and accessibility arrangements. Sensitive details are optional.",
+      "reviewed": true,
+      "safetyReviewRequired": true
+    },
+    "msg_0d4f4e9b3444": {
+      "source": "Each record is an editable checklist task. Group tasks with the category field.",
+      "translation": "Each record is an editable checklist task. Group tasks with the category field.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_a36a7fd80438": {
+      "source": "Enter a phone number in notes. No device contacts permission is used.",
+      "translation": "Enter a phone number in notes. No device contacts permission is used.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_ffacb0664095": {
+      "source": "Keep the details that matter to your household.",
+      "translation": "Keep the details that matter to your household.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_7d76ac75b53e": {
+      "source": "Search %1$s",
+      "translation": "Search %1$s",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_357221fd3aac": {
+      "source": "Make room for peace of mind",
+      "translation": "Make room for peace of mind",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_ac8bbdb90299": {
+      "source": "Nothing saved here yet. Start with one small step.",
+      "translation": "Nothing saved here yet. Start with one small step.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_f841d822b35e": {
+      "source": "Add your first record",
+      "translation": "Add your first record",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_261e9c17ca74": {
+      "source": "Edit %1$s",
+      "translation": "Edit %1$s",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_b7b25d4790e6": {
+      "source": "Stored: %1$s",
+      "translation": "Stored: %1$s",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_b23a0abbda63": {
+      "source": "Kit: %1$s",
+      "translation": "Kit: %1$s",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_f55bccec7713": {
+      "source": "Date: %1$s",
+      "translation": "Date: %1$s",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_7273969a69f6": {
+      "source": "Last checked: %1$s",
+      "translation": "Last checked: %1$s",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_d75612450689": {
+      "source": " (copy)",
+      "translation": " (copy)",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_6474596f1237": {
+      "source": "Delete %1$s?",
+      "translation": "Delete %1$s?",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_591249e28bc1": {
+      "source": "Choose JSON or an encrypted PTB backup. Records are restored as new copies. Existing records are kept.",
+      "translation": "Choose JSON or an encrypted PTB backup. Records are restored as new copies. Existing records are kept.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_f6a927e954b2": {
+      "source": "Encrypted PTB file",
+      "translation": "Encrypted PTB file",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_3e39703b6e87": {
+      "source": "Backup password",
+      "translation": "Backup password",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_b09c73d9d3f8": {
+      "source": "Choose file",
+      "translation": "Choose file",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_19766ed6ccb2": {
+      "source": "Cancel",
+      "translation": "Cancel",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_3e69551e06f4": {
+      "source": "Restore %1$d records?",
+      "translation": "Restore %1$d records?",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_4f1b416367bf": {
+      "source": "This creates new copies, including any private details in the selected file. Importing the same backup again creates duplicates.",
+      "translation": "This creates new copies, including any private details in the selected file. Importing the same backup again creates duplicates.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_b749a0e44f52": {
+      "source": "Restored %1$d records as new copies.",
+      "translation": "Restored %1$d records as new copies.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_a6ed8cd2316c": {
+      "source": "Restore failed. No records were imported.",
+      "translation": "Restore failed. No records were imported.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_f539a84db776": {
+      "source": "Restore copies",
+      "translation": "Restore copies",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_6793524957eb": {
+      "source": "%1$s export includes saved inventory, kit notes, checklists and reminders. Those notes may contain personal information. JSON can be restored as new copies. PTB uses password-protected encryption. Keep the password safe; it cannot be recovered.",
+      "translation": "%1$s export includes saved inventory, kit notes, checklists and reminders. Those notes may contain personal information. JSON can be restored as new copies. PTB uses password-protected encryption. Keep the password safe; it cannot be recovered.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_03cf154b18e2": {
+      "source": "Password (at least 12 characters)",
+      "translation": "Password (at least 12 characters)",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_dd73784cf848": {
+      "source": "PrepTrove-%1$s.%2$s",
+      "translation": "PrepTrove-%1$s.%2$s",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_8d23a6e37e0a": {
+      "source": "United Kingdom",
+      "translation": "United Kingdom",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_df4fe91a7edb": {
+      "source": "Add %1$s",
+      "translation": "Add %1$s",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_fe367046458e": {
+      "source": "Phone number and notes",
+      "translation": "Phone number and notes",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_774de0ec6b19": {
+      "source": "Notes / plan details",
+      "translation": "Notes / plan details",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_5c542b734931": {
+      "source": "%1$s date: YYYY-MM-DD (optional)",
+      "translation": "%1$s date: YYYY-MM-DD (optional)",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_099f9079ba79": {
+      "source": "Enter a name.",
+      "translation": "Enter a name.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_d81b36d718f3": {
+      "source": "Enter a valid non-negative quantity.",
+      "translation": "Enter a valid non-negative quantity.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "msg_032613d09381": {
+      "source": "Use a valid date in YYYY-MM-DD format.",
+      "translation": "Use a valid date in YYYY-MM-DD format.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "nav_overview": {
+      "source": "Overview",
+      "translation": "Overview",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "nav_kits": {
+      "source": "Kits",
+      "translation": "Kits",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "nav_supplies": {
+      "source": "Supplies",
+      "translation": "Supplies",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "nav_family_plans": {
+      "source": "Family plans",
+      "translation": "Family plans",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "nav_contacts": {
+      "source": "Contacts",
+      "translation": "Contacts",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "nav_checklists": {
+      "source": "Checklists",
+      "translation": "Checklists",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "nav_reminders": {
+      "source": "Reminders",
+      "translation": "Reminders",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "nav_reference": {
+      "source": "Reference",
+      "translation": "Reference",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "nav_voice": {
+      "source": "Voice",
+      "translation": "Voice",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "nav_settings": {
+      "source": "Settings",
+      "translation": "Settings",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "language_label": {
+      "source": "App language",
+      "translation": "App language",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "language_system": {
+      "source": "Use device language",
+      "translation": "Use device language",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "language_pending": {
+      "source": "Translation pending",
+      "translation": "Translation pending",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "language_close": {
+      "source": "Close",
+      "translation": "Close",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "language_review_notice": {
+      "source": "Only completed resource packs can be selected. Other languages are queued for translation and review. Your private records are never translated.",
+      "translation": "Only completed resource packs can be selected. Other languages are queued for translation and review. Your private records are never translated.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "date_due": {
+      "source": "Due",
+      "translation": "Due",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "date_expiry": {
+      "source": "Expiry",
+      "translation": "Expiry",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "notification_channel": {
+      "source": "Preparedness reviews",
+      "translation": "Preparedness reviews",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "notification_title": {
+      "source": "PrepTrove review",
+      "translation": "PrepTrove review",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "kind_kit": {
+      "source": "Kit",
+      "translation": "Kit",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "kind_supply": {
+      "source": "Supply",
+      "translation": "Supply",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "kind_plan": {
+      "source": "Family plan",
+      "translation": "Family plan",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "kind_contact": {
+      "source": "Contact",
+      "translation": "Contact",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "kind_check": {
+      "source": "Checklist task",
+      "translation": "Checklist task",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "kind_reminder": {
+      "source": "Reminder",
+      "translation": "Reminder",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "reminders_due.one": {
+      "source": "%d saved reminder is due. Open your planner to review.",
+      "translation": "%d saved reminder is due. Open your planner to review.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "reminders_due.other": {
+      "source": "%d saved reminders are due. Open your planner to review.",
+      "translation": "%d saved reminders are due. Open your planner to review.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "supplies_attention.one": {
+      "source": "%d supply expires within 30 days or is past its recorded date.",
+      "translation": "%d supply expires within 30 days or is past its recorded date.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "supplies_attention.other": {
+      "source": "%d supplies expire within 30 days or are past their recorded dates.",
+      "translation": "%d supplies expire within 30 days or are past their recorded dates.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    }
+  }
+}

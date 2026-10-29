@@ -1,0 +1,10 @@
+{
+  "reminders_due": {
+    "one": "%d saved reminder is due. Open your planner to review.",
+    "other": "%d saved reminders are due. Open your planner to review."
+  },
+  "supplies_attention": {
+    "one": "%d supply expires within 30 days or is past its recorded date.",
+    "other": "%d supplies expire within 30 days or are past their recorded dates."
+  }
+}

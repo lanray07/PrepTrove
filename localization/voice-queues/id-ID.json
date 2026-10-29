@@ -1,0 +1,33 @@
+{
+  "locale": "id-ID",
+  "status": "pending translation and device validation",
+  "reviewer": null,
+  "intents": {
+    "addSupply": [
+      "add {supply}"
+    ],
+    "expiry": [
+      "what supplies are expiring soon"
+    ],
+    "contacts": [
+      "show my contacts"
+    ],
+    "plans": [
+      "read my family plan"
+    ],
+    "checklists": [
+      "show my checklist"
+    ],
+    "quantity": [
+      "how many {supply} do I have"
+    ]
+  },
+  "translations": {
+    "addSupply": null,
+    "expiry": null,
+    "contacts": null,
+    "plans": null,
+    "checklists": null,
+    "quantity": null
+  }
+}

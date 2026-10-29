@@ -3,7 +3,7 @@ from pathlib import Path
 import json,re,xml.etree.ElementTree as ET
 root=Path(__file__).resolve().parents[1]
 source=json.loads((root/'localization/source.json').read_text(encoding='utf-8'))
-resources={e.attrib['name']:e.text for e in ET.parse(root/'app/src/main/res/values/strings.xml').getroot()}
+resources={e.attrib['name']:e.text for e in ET.parse(root/'app/src/main/res/values/strings.xml').getroot() if e.tag=='string'}
 assert set(source)==set(resources),'Source catalogue and Android resource keys differ'
 files=list((root/'app/src/main/java').rglob('*.kt'))
 missing=[]
