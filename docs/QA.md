@@ -16,3 +16,11 @@
 PDF/CSV/JSON save flows end to end, real microphone recognition and TTS across engines, long-running notification delivery, portrait/phone/RTL layouts, large fonts/TalkBack, country content outside GB, payment/restore, encryption, release signing and Amazon submission. Those are release gates, not implied successes.
 
 APK SHA-256: `59006f688af27cb84850cde92efc1267fa613ffce1100aab59731712cafdd470`
+
+## Backup milestone — 29 October 2026
+
+- Local build and 4 JUnit tests passed (expiry, CSV, encryption round trip/randomisation, wrong password/tamper/invalid-container rejection).
+- 4 Fire tablet instrumentation tests passed, adding backup copy/link preservation and malformed-input validation to the previous storage/UI tests.
+- Android lint passed. The file-picker restore/export journey and cryptographic provider interoperability across Fire versions still require verification.
+- CI's first run failed because setup-android requested the removed `tools` SDK package. The workflow now requests explicit supported SDK components; the rerun status is tracked on GitHub.
+- Localisation audit now reports 23 inline Text calls. Added backup copy remains pending full translation.

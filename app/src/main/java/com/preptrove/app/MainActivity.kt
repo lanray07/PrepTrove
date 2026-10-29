@@ -33,6 +33,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.time.LocalDate
 import java.util.Locale
+import kotlinx.coroutines.launch
 
 val Navy=Color(0xFF263B4D)
 val Teal=Color(0xFF2C7A7B)
@@ -83,17 +84,36 @@ class MainActivity:ComponentActivity() {
   var listening by remember { mutableStateOf(false) }
   var exportType by remember { mutableStateOf("") }
   var exportConfirm by remember { mutableStateOf(false) }
+  var backupPassword by remember { mutableStateOf("") }
+  var importing by remember { mutableStateOf(false) }
+  var importEncrypted by remember { mutableStateOf(false) }
+  var pendingImport by remember { mutableStateOf<List<Entry>?>(null) }
+  val scope=rememberCoroutineScope()
   var sensitive by remember { mutableStateOf(false) }
   var status by remember { mutableStateOf("") }
   val permission=rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted->if(granted) listen({command=it},{listening=it}) else {response="Microphone permission was declined. Text commands are available."} }
   val notifications=rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { status=if(it) "Notifications enabled. Delivery timing depends on your device." else "Notifications declined. Saved reminders remain available here." }
+  val restore=rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri->
+   if(uri!=null) scope.launch {
+    status="Reading backup…"
+    val password=backupPassword.toCharArray();backupPassword=""
+    try {
+     val restored=kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+      val bytes=contentResolver.openInputStream(uri)?.use {it.readBytesLimited(BackupCrypto.MAX_BYTES)} ?: error("Unavailable file")
+      BackupCodec.decodeCopies(if(importEncrypted) BackupCrypto.decrypt(bytes,password) else bytes)
+     }
+     pendingImport=restored;status="Review the restore confirmation."
+    } catch(e:Exception) {status="Unable to restore: invalid file, unsupported format or incorrect password. Existing records were kept."} finally {password.fill('\u0000')}
+   }
+  }
   val export=rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/octet-stream")) { uri->
    if(uri!=null) try {
     val chosen=records.filter { sensitive || (it.kind!="contact" && it.kind!="plan") }
     contentResolver.openOutputStream(uri)?.use { stream->
      when(exportType) {
       "csv"->stream.write(Inventory.csv(chosen).toByteArray())
-      "json"->{val array=JSONArray();chosen.forEach { e->array.put(JSONObject().put("id",e.id).put("kind",e.kind).put("title",e.title).put("detail",e.detail).put("category",e.category).put("kitId",e.kitId).put("quantity",e.quantity).put("unit",e.unit).put("expiry",e.expiry).put("location",e.location).put("done",e.done).put("checked",e.checked)) };stream.write(JSONObject().put("schemaVersion",1).put("records",array).toString(2).toByteArray())}
+      "json"->stream.write(BackupCodec.encode(chosen))
+      "ptb"->{val password=backupPassword.toCharArray();backupPassword="";try {stream.write(BackupCrypto.encrypt(BackupCodec.encode(chosen),password))} finally {password.fill('\u0000')}}
       "pdf"->{ val pdf=PdfDocument();val paint=Paint().apply {textSize=12f};var pageNumber=0;var page:PdfDocument.Page?=null;var y=0f
        fun newPage() {page?.let {pdf.finishPage(it)};pageNumber++;page=pdf.startPage(PdfDocument.PageInfo.Builder(595,842,pageNumber).create());y=45f}
        fun line(s:String) {if(page==null || y>790) newPage();page!!.canvas.drawText(s,36f,y,paint);y+=20f}
@@ -160,7 +180,8 @@ class MainActivity:ComponentActivity() {
           item {Button(onClick={if(android.os.Build.VERSION.SDK_INT>=33) notifications.launch(Manifest.permission.POST_NOTIFICATIONS) else status="Notifications follow device settings."}) {Text(androidx.compose.ui.res.stringResource(R.string.enable_optional_reminders_4af429))} }
           item {Text(androidx.compose.ui.res.stringResource(R.string.reminders_are_checked_periodically_usually_daily_226139))}
           item {Text(androidx.compose.ui.res.stringResource(R.string.exports_2f4dcf),fontSize=22.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.exports_are_unencrypted_review_the_included_info_14b601))}
-          item {Row {listOf("pdf","csv","json").forEach {type->TextButton(onClick={exportType=type;exportConfirm=true}) {Text(type.uppercase())}}} }
+          item {Row {listOf("pdf","csv","json","ptb").forEach {type->TextButton(onClick={exportType=type;exportConfirm=true;backupPassword=""}) {Text(type.uppercase())}}} }
+          item {OutlinedButton(onClick={importing=true;backupPassword=""}) {Text("Restore a backup")} }
           item {InfoCard("PrepTrove Premium","Purchases are unavailable in this development preview. Amazon catalogue setup, receipt verification and store testing are required before any purchase can be enabled.","View release notes") {status="See docs/RELEASE.md in the source package for release gates."} }
           item {OutlinedButton(onClick={wipe=true}) {Text(androidx.compose.ui.res.stringResource(R.string.delete_all_saved_records_4e66b6))} }
          }
@@ -198,7 +219,9 @@ class MainActivity:ComponentActivity() {
    editing?.let {entry->EntryEditor(entry,records.filter{it.kind=="kit"},onClose={editing=null},onSave={model.save(it);editing=null})}
    deleting?.let {e->AlertDialog(onDismissRequest={deleting=null},title={Text("Delete ${e.title}?")},text={Text(androidx.compose.ui.res.stringResource(R.string.this_cannot_be_undone_supplies_in_a_deleted_kit__54a684))},confirmButton={TextButton(onClick={model.remove(e);deleting=null}) {Text(androidx.compose.ui.res.stringResource(R.string.delete_e2d0a5))}},dismissButton={TextButton(onClick={deleting=null}) {Text(androidx.compose.ui.res.stringResource(R.string.cancel_19766e))}})}
    if(wipe) AlertDialog(onDismissRequest={wipe=false},title={Text(androidx.compose.ui.res.stringResource(R.string.delete_all_records_1dcbbc))},text={Text(androidx.compose.ui.res.stringResource(R.string.all_kits_supplies_contacts_plans_reminders_and_c_bbd353))},confirmButton={TextButton(onClick={model.clear();wipe=false}) {Text(androidx.compose.ui.res.stringResource(R.string.delete_everything_71eb8a))}},dismissButton={TextButton(onClick={wipe=false}) {Text(androidx.compose.ui.res.stringResource(R.string.cancel_19766e))}})
-   if(exportConfirm) AlertDialog(onDismissRequest={exportConfirm=false},title={Text(androidx.compose.ui.res.stringResource(R.string.review_export_contents_521854))},text={Column {Text("$exportType export includes saved inventory, kit notes, checklists and reminders. Those notes may contain personal information. JSON is a data export; restore is not yet implemented.");Row(verticalAlignment=Alignment.CenterVertically) {Checkbox(sensitive,{sensitive=it});Text(androidx.compose.ui.res.stringResource(R.string.also_include_contacts_and_family_plans_331c8a))}}},confirmButton={TextButton(onClick={exportConfirm=false;export.launch("PrepTrove-${LocalDate.now()}.$exportType")}) {Text(androidx.compose.ui.res.stringResource(R.string.choose_destination_5853e2))}},dismissButton={TextButton(onClick={exportConfirm=false}) {Text(androidx.compose.ui.res.stringResource(R.string.cancel_19766e))}})
+   if(importing) AlertDialog(onDismissRequest={importing=false;backupPassword=""},title={Text("Restore a backup")},text={Column {Text("Choose JSON or an encrypted PTB backup. Records are restored as new copies. Existing records are kept.");Row(verticalAlignment=Alignment.CenterVertically) {Checkbox(importEncrypted,{importEncrypted=it});Text("Encrypted PTB file")};if(importEncrypted) OutlinedTextField(backupPassword,{backupPassword=it},label={Text("Backup password")},visualTransformation=androidx.compose.ui.text.input.PasswordVisualTransformation())}},confirmButton={TextButton(onClick={importing=false;restore.launch(arrayOf("*/*"))}) {Text("Choose file")}},dismissButton={TextButton(onClick={importing=false;backupPassword=""}) {Text("Cancel")}})
+   pendingImport?.let {entries->AlertDialog(onDismissRequest={pendingImport=null},title={Text("Restore ${entries.size} records?")},text={Text("This creates new copies, including any private details in the selected file. Importing the same backup again creates duplicates.")},confirmButton={TextButton(onClick={scope.launch {try {model.importCopies(entries);status="Restored ${entries.size} records as new copies."} catch(e:Exception) {status="Restore failed. No records were imported."}};pendingImport=null}) {Text("Restore copies")}},dismissButton={TextButton(onClick={pendingImport=null}) {Text("Cancel")}})}
+   if(exportConfirm) AlertDialog(onDismissRequest={exportConfirm=false;backupPassword=""},title={Text(androidx.compose.ui.res.stringResource(R.string.review_export_contents_521854))},text={Column {Text("$exportType export includes saved inventory, kit notes, checklists and reminders. Those notes may contain personal information. JSON can be restored as new copies. PTB uses password-protected encryption. Keep the password safe; it cannot be recovered.");if(exportType=="ptb") OutlinedTextField(backupPassword,{backupPassword=it},label={Text("Password (at least 12 characters)")},visualTransformation=androidx.compose.ui.text.input.PasswordVisualTransformation());Row(verticalAlignment=Alignment.CenterVertically) {Checkbox(sensitive,{sensitive=it});Text(androidx.compose.ui.res.stringResource(R.string.also_include_contacts_and_family_plans_331c8a))}}},confirmButton={TextButton(enabled=exportType!="ptb" || backupPassword.length>=12,onClick={exportConfirm=false;export.launch("PrepTrove-${LocalDate.now()}.$exportType")}) {Text(androidx.compose.ui.res.stringResource(R.string.choose_destination_5853e2))}},dismissButton={TextButton(onClick={exportConfirm=false;backupPassword=""}) {Text(androidx.compose.ui.res.stringResource(R.string.cancel_19766e))}})
    if(!onboarded) {var size by remember {mutableStateOf("1")};var region by remember {mutableStateOf("United Kingdom")};AlertDialog(onDismissRequest={model.onboard("","")},title={Text(androidx.compose.ui.res.stringResource(R.string.welcome_to_preptrove_2fb668))},text={Column(verticalArrangement=Arrangement.spacedBy(12.dp)) {Text(androidx.compose.ui.res.stringResource(R.string.prepared_today_ready_for_tomorrow_your_records_s_5cbed1));OutlinedTextField(size,{size=it.filter{c->c.isDigit()}.take(2)},label={Text(androidx.compose.ui.res.stringResource(R.string.household_size_optional_73a7cf))});OutlinedTextField(region,{region=it},label={Text(androidx.compose.ui.res.stringResource(R.string.country_or_region_8d2360))});Text(androidx.compose.ui.res.stringResource(R.string.reminders_and_microphone_access_are_optional_and_121a8c))}},confirmButton={TextButton(onClick={model.onboard(size,region)}) {Text(androidx.compose.ui.res.stringResource(R.string.start_planning_655059))}},dismissButton={TextButton(onClick={model.onboard("","")}) {Text(androidx.compose.ui.res.stringResource(R.string.skip_28d035))}})}
   }
  }
@@ -217,4 +240,10 @@ class MainActivity:ComponentActivity() {
   if(initial.kind in listOf("supply","kit")) OutlinedTextField(location,{location=it},label={Text(androidx.compose.ui.res.stringResource(R.string.storage_location_a59e28))})
   if(error.isNotEmpty()) Text(error,color=MaterialTheme.colorScheme.error)
  }},confirmButton={TextButton(onClick={val q=quantity.toDoubleOrNull();error=when {title.isBlank()->"Enter a name.";q==null||!q.isFinite()||q<0->"Enter a valid non-negative quantity.";date.isNotEmpty()&&runCatching {LocalDate.parse(date)}.isFailure->"Use a valid date in YYYY-MM-DD format.";else->""};if(error.isEmpty()) onSave(initial.copy(title=title.trim(),detail=detail,quantity=q!!,unit=unit,expiry=date,location=location,category=category,kitId=kit))}) {Text(androidx.compose.ui.res.stringResource(R.string.save_1509f5))}},dismissButton={TextButton(onClick=onClose) {Text(androidx.compose.ui.res.stringResource(R.string.cancel_19766e))}})
+}
+
+private fun java.io.InputStream.readBytesLimited(limit:Int):ByteArray {
+ val out=java.io.ByteArrayOutputStream();val buffer=ByteArray(8192)
+ while(true) {val count=read(buffer);if(count<0) break;require(out.size()+count<=limit);out.write(buffer,0,count)}
+ return out.toByteArray()
 }

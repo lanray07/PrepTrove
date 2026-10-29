@@ -23,7 +23,7 @@
   "enable_optional_reminders_4af429": "Enable optional reminders",
   "reminders_are_checked_periodically_usually_daily_226139": "Reminders are checked periodically, usually daily. Timing is controlled by the operating system. Mark complete to pause; edit the date to snooze.",
   "exports_2f4dcf": "Exports",
-  "exports_are_unencrypted_review_the_included_info_14b601": "Exports are unencrypted. Review the included information before saving.",
+  "exports_are_unencrypted_review_the_included_info_14b601": "PDF, CSV and JSON exports are unencrypted. PTB backups use password-protected encryption. Review the included information before saving.",
   "delete_all_saved_records_4e66b6": "Delete all saved records",
   "checked_today_d85745": "Checked today",
   "duplicate_02cdaa": "Duplicate",

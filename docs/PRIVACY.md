@@ -6,7 +6,7 @@ Microphone access is optional and is used only when you start voice recognition.
 
 Notifications are optional. Due reminders are periodically checked on the device. Timing depends on operating system restrictions.
 
-Exports are created only when you choose a destination. Files are not encrypted. Contacts and family plans are excluded unless you select them; notes in other categories may also contain personal information. Destination providers may sync files according to their settings. PrepTrove does not upload records on its own.
+Exports are created only when you choose a destination. PDF, CSV and JSON files are not encrypted. PTB backup files use password-protected encryption; the password cannot be recovered. Contacts and family plans are excluded unless you select them; notes in other categories may also contain personal information. Destination providers may sync files according to their settings. PrepTrove does not upload records on its own.
 
 Delete all saved records from Settings, or remove app data using device settings. Previously exported copies remain at their chosen destinations. PrepTrove does not claim secure erasure from flash storage.
 

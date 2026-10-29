@@ -28,7 +28,7 @@ Source update date: not supplied. This summary is stored offline. The source lin
   <string name="enable_optional_reminders_4af429">Enable optional reminders</string>
   <string name="reminders_are_checked_periodically_usually_daily_226139">Reminders are checked periodically, usually daily. Timing is controlled by the operating system. Mark complete to pause; edit the date to snooze.</string>
   <string name="exports_2f4dcf">Exports</string>
-  <string name="exports_are_unencrypted_review_the_included_info_14b601">Exports are unencrypted. Review the included information before saving.</string>
+  <string name="exports_are_unencrypted_review_the_included_info_14b601">PDF, CSV and JSON exports are unencrypted. PTB backups use password-protected encryption. Review the included information before saving.</string>
   <string name="delete_all_saved_records_4e66b6">Delete all saved records</string>
   <string name="checked_today_d85745">Checked today</string>
   <string name="duplicate_02cdaa">Duplicate</string>

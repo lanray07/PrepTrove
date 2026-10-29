@@ -9,52 +9,112 @@
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 173,
+      "line": 184,
+      "text": "Restore a backup"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 194,
       "text": "Add starter checklist tasks"
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 176,
+      "line": 197,
       "text": "Search $section"
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 180,
+      "line": 201,
       "text": "${e.quantity} ${e.unit} · ${e.category}"
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 181,
+      "line": 202,
       "text": "Stored: ${e.location}"
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 182,
+      "line": 203,
       "text": "Kit: ${records.find {it.id==e.kitId}?.title ?: "
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 183,
+      "line": 204,
       "text": "Date: ${e.expiry}"
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 184,
+      "line": 205,
       "text": "Last checked: ${e.checked}"
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 199,
+      "line": 220,
       "text": "Delete ${e.title}?"
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 201,
-      "text": "$exportType export includes saved inventory, kit notes, checklists and reminders. Those notes may contain personal information. JSON is a data export; restore is not yet implemented."
+      "line": 222,
+      "text": "Restore a backup"
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 216,
+      "line": 222,
+      "text": "Choose JSON or an encrypted PTB backup. Records are restored as new copies. Existing records are kept."
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 222,
+      "text": "Encrypted PTB file"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 222,
+      "text": "Backup password"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 222,
+      "text": "Choose file"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 222,
+      "text": "Cancel"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 223,
+      "text": "Restore ${entries.size} records?"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 223,
+      "text": "This creates new copies, including any private details in the selected file. Importing the same backup again creates duplicates."
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 223,
+      "text": "Restore copies"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 223,
+      "text": "Cancel"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 224,
+      "text": "$exportType export includes saved inventory, kit notes, checklists and reminders. Those notes may contain personal information. JSON can be restored as new copies. PTB uses password-protected encryption. Keep the password safe; it cannot be recovered."
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 224,
+      "text": "Password (at least 12 characters)"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 239,
       "text": "${if(initial.kind=="
     }
   ],

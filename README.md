@@ -16,7 +16,7 @@ APK: `app/build/outputs/apk/debug/app-debug.apk`. Debug signing is for developme
 
 ## Implemented
 
-Room persistence for kits, supplies, plan notes, manually entered contacts, grouped checklist tasks and reminders. Add, edit, duplicate, delete, search, assign kit, inspect supply, record completion, expiry review, optional onboarding and notifications. Adaptive navigation rail for tablets, scrollable phone tabs, persisted light/dark theme. Optional push-to-talk with transcript review, English typed commands and device TTS. SAF CSV, JSON and paginated PDF exports with explicit contact/plan inclusion. Local reference summary with source provenance. No account, advertising, analytics, location or contact-list permission.
+Room persistence for kits, supplies, plan notes, manually entered contacts, grouped checklist tasks and reminders. Add, edit, duplicate, delete, search, assign kit, inspect supply, record completion, expiry review, optional onboarding and notifications. Adaptive navigation rail for tablets, scrollable phone tabs, persisted light/dark theme. Optional push-to-talk with transcript review, English typed commands and device TTS. SAF CSV, JSON, password-protected PTB and paginated PDF exports; validated copy-based JSON/PTB restore with explicit contact/plan inclusion. Local reference summary with source provenance. No account, advertising, analytics, location or contact-list permission.
 
 ## Limits
 

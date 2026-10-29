@@ -20,6 +20,7 @@ data class Entry(@PrimaryKey val id:String=UUID.randomUUID().toString(), val kin
  @Upsert suspend fun save(entry:Entry)
  @Query("DELETE FROM records WHERE id=:id") suspend fun delete(id:String)
  @Query("DELETE FROM records") suspend fun clear()
+ @Transaction suspend fun importCopies(entries:List<Entry>) { entries.forEach { save(it) } }
  @Transaction suspend fun remove(entry:Entry) { if(entry.kind=="kit") all().filter { it.kitId==entry.id }.forEach { save(it.copy(kitId="")) }; delete(entry.id) }
 }
 @Database(entities=[Entry::class],version=1,exportSchema=false)
@@ -37,6 +38,7 @@ class PlannerModel(app:Application):AndroidViewModel(app) {
  val onboarded=app.preferences.data.map { it[booleanPreferencesKey("onboarded")] ?: false }.stateIn(viewModelScope,SharingStarted.Eagerly,false)
  fun save(e:Entry)=viewModelScope.launch { dao.save(e) }
  fun remove(e:Entry)=viewModelScope.launch { dao.remove(e) }
+ suspend fun importCopies(entries:List<Entry>) { dao.importCopies(entries) }
  fun clear()=viewModelScope.launch { dao.clear() }
  fun onboard(size:String,region:String)=viewModelScope.launch { getApplication<Application>().preferences.edit { it[booleanPreferencesKey("onboarded")]=true;it[stringPreferencesKey("household")]=size;it[stringPreferencesKey("region")]=region } }
 }
