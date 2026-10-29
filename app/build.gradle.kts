@@ -7,12 +7,14 @@ plugins {
 android {
  namespace = "com.preptrove.app"
  compileSdk = 35
- defaultConfig { applicationId = "com.preptrove.app"; minSdk = 26; targetSdk = 35; versionCode = 1; versionName = "0.1.0"; testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner" }
- buildFeatures { compose = true }
+ defaultConfig { applicationId = "com.preptrove.app"; minSdk = 26; targetSdk = 35; versionCode = 1; versionName = "0.1.0"; testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"; buildConfigField("String", "AMAZON_SKU", "\"" + providers.gradleProperty("amazonPremiumSku").getOrElse("").also { require(it.matches(Regex("[A-Za-z0-9._-]*"))) } + "\"") }
+ buildFeatures { compose = true; buildConfig = true }
+ defaultConfig {buildConfigField("boolean", "AMAZON_PURCHASES_ENABLED", providers.gradleProperty("amazonPurchasesEnabled").getOrElse("false").also {require(it in listOf("true","false"))})}
  compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
  kotlinOptions { jvmTarget = "17" }
 }
 dependencies {
+ implementation("com.amazon.device:amazon-appstore-sdk:3.0.9")
  implementation(platform("androidx.compose:compose-bom:2025.04.01"))
  implementation("androidx.activity:activity-compose:1.10.1")
  implementation("androidx.compose.material3:material3")
@@ -31,3 +33,5 @@ dependencies {
  androidTestImplementation("androidx.compose.ui:ui-test-junit4")
  debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
+
+ksp {arg("room.schemaLocation", "$projectDir/schemas")}

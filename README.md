@@ -34,3 +34,9 @@ Architecture uses one application module with UI, ViewModel, Room repository/DAO
 - `python tools/release_check.py` deliberately fails while production requirements remain open. `python tools/package_release.py --unsigned` builds a QA release and checksum manifest. Signing requires completed gates and local environment secrets; the tool never publishes.
 
 See [translation review instructions](docs/LOCALISATION.md).
+
+## Billing and expanded planner features
+
+Amazon SDK integration is present with checkout OFF by default. See [configuration and test boundaries](docs/AMAZON-BILLING.md). The unconfigured build never simulates a purchase or invents a price.
+
+Database version 2 adds structured household/contact fields, supply purchase dates, templates and recurring reminders. A tested migration preserves version 1 records. Completion history is local. Kit templates include copies of their supplies. Supply photos are bounded and stored privately; photo pixels/history are excluded from backups. Optional app lock uses OS device credentials, and PDFs include the structured plan fields.

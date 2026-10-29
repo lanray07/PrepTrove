@@ -34,7 +34,7 @@ object BackupCrypto {
 object BackupCodec {
  fun encode(entries:List<Entry>):ByteArray {
   val array=JSONArray()
-  entries.forEach {e->array.put(JSONObject().put("id",e.id).put("kind",e.kind).put("title",e.title).put("detail",e.detail).put("category",e.category).put("kitId",e.kitId).put("quantity",e.quantity).put("unit",e.unit).put("expiry",e.expiry).put("location",e.location).put("done",e.done).put("checked",e.checked))}
+  entries.forEach {e->array.put(JSONObject().put("id",e.id).put("kind",e.kind).put("title",e.title).put("detail",e.detail).put("category",e.category).put("kitId",e.kitId).put("quantity",e.quantity).put("unit",e.unit).put("expiry",e.expiry).put("location",e.location).put("done",e.done).put("checked",e.checked).put("extraData",e.extraData).put("purchasedDate",e.purchasedDate).put("intervalDays",e.intervalDays).put("isTemplate",e.isTemplate))}
   return JSONObject().put("schemaVersion",1).put("records",array).toString(2).toByteArray(Charsets.UTF_8)
  }
  fun decodeCopies(bytes:ByteArray):List<Entry> {
@@ -49,7 +49,10 @@ object BackupCodec {
    val title=o.getString("title");require(title.isNotBlank() && title.length<=500)
    val quantity=o.optDouble("quantity",1.0);require(quantity.isFinite() && quantity>=0)
    val expiry=value("expiry");val checked=value("checked");listOf(expiry,checked).filter {it.isNotEmpty()}.forEach {LocalDate.parse(it)}
-   Entry(id,kind,title,value("detail"),value("category","Other"),value("kitId"),quantity,value("unit","items"),expiry,value("location"),o.optBoolean("done",false),checked)
+   run {val purchased=value("purchasedDate");if(purchased.isNotEmpty()) LocalDate.parse(purchased)
+   val interval=o.optInt("intervalDays",0);require(interval in 0..3650)
+   val extra=value("extraData","{}");JSONObject(extra)
+   Entry(id,kind,title,value("detail"),value("category","Other"),value("kitId"),quantity,value("unit","items"),expiry,value("location"),o.optBoolean("done",false),checked,extra,purchased,interval,o.optBoolean("isTemplate",false))}
   }
   require(entries.map {it.id}.toSet().size==entries.size) {"Duplicate record IDs."}
   val ids=entries.associate {it.id to UUID.randomUUID().toString()};val kits=entries.filter {it.kind=="kit"}.map {it.id}.toSet()

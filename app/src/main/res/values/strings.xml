@@ -142,7 +142,7 @@
 <string name="msg_b749a0e44f52">Restored %1$d records as new copies.</string>
 <string name="msg_a6ed8cd2316c">Restore failed. No records were imported.</string>
 <string name="msg_f539a84db776">Restore copies</string>
-<string name="msg_6793524957eb">%1$s export includes saved inventory, kit notes, checklists and reminders. Those notes may contain personal information. JSON can be restored as new copies. PTB uses password-protected encryption. Keep the password safe; it cannot be recovered.</string>
+<string name="msg_6793524957eb">%1$s export includes selected saved records and templates. Notes may contain personal information. Photos and completion history are not included in backups. JSON can be restored as new copies. PTB backups require a password that cannot be recovered.</string>
 <string name="msg_03cf154b18e2">Password (at least 12 characters)</string>
 <string name="msg_dd73784cf848">PrepTrove-%1$s.%2$s</string>
 <string name="msg_8d23a6e37e0a">United Kingdom</string>
@@ -178,6 +178,51 @@
 <string name="kind_contact">Contact</string>
 <string name="kind_check">Checklist task</string>
 <string name="kind_reminder">Reminder</string>
+<string name="billing_title">PrepTrove Premium</string>
+<string name="billing_configuration">Amazon purchases are disabled until the catalogue SKU, app public key and checkout build switch are configured.</string>
+<string name="billing_unavailable">Amazon billing is unavailable. Try again or restore purchases later.</string>
+<string name="billing_ready">One-time purchase. Price is supplied by Amazon. Checkout remains disabled in builds without purchase authorisation.</string>
+<string name="billing_not_completed">The purchase was not completed. No entitlement was granted.</string>
+<string name="billing_updated">Purchase entitlement updated from Amazon.</string>
+<string name="billing_premium_active">Premium entitlement active on this device.</string>
+<string name="billing_price">One-time price: %1$s</string>
+<string name="billing_buy">Buy Premium</string>
+<string name="billing_restore">Restore purchases</string>
+<string name="template_label">Template: %1$s</string>
+<string name="template_save">Save template</string>
+<string name="template_use">Create from template</string>
+<string name="review_history">Recent completion history</string>
+<string name="reminder_snooze">Snooze 7 days</string>
+<string name="purchase_date_value">Purchased: %1$s</string>
+<string name="purchase_date_label">Purchase date: YYYY-MM-DD (optional)</string>
+<string name="reminder_interval">Repeat every N days (0 = one-time)</string>
+<string name="reminder_interval_error">Use an interval from 0 to 3650 days.</string>
+<string name="plan_members">Household members or nicknames</string>
+<string name="plan_meeting">Meeting points</string>
+<string name="plan_communication">Communication plan</string>
+<string name="plan_evacuation">Evacuation checklist</string>
+<string name="plan_shelter">Shelter-in-place checklist</string>
+<string name="plan_pets">Pet arrangements</string>
+<string name="plan_accessibility">Accessibility considerations</string>
+<string name="plan_documents">Important document reminders</string>
+<string name="plan_checkin">Expected check-in procedure</string>
+<string name="contact_phone">Phone number</string>
+<string name="contact_relationship">Relationship</string>
+<string name="contact_organisation">Organisation</string>
+<string name="reminder_pause">Pause reminder</string>
+<string name="reminder_resume">Resume reminder</string>
+<string name="lock_title">PrepTrove is locked</string>
+<string name="lock_prompt">Use your device screen-lock credential to open your saved plans.</string>
+<string name="lock_unlock">Unlock</string>
+<string name="lock_enable">Enable app lock</string>
+<string name="lock_disable">Disable app lock</string>
+<string name="lock_unavailable">Set a secure PIN, password or pattern in device settings before enabling app lock.</string>
+<string name="photo_description">Saved supply photograph</string>
+<string name="photo_missing">This photograph is not available on this device.</string>
+<string name="photo_add">Add supply photograph</string>
+<string name="photo_remove">Remove photograph from record</string>
+<string name="photo_error">Choose a valid image up to 8 MB and 16 megapixels. A maximum of 200 photos can be stored.</string>
+<string name="record_too_long">Shorten this record: names allow 500 characters and individual text fields allow 20,000.</string>
 <plurals name="reminders_due"><item quantity="one">%d saved reminder is due. Open your planner to review.</item><item quantity="other">%d saved reminders are due. Open your planner to review.</item></plurals>
 <plurals name="supplies_attention"><item quantity="one">%d supply expires within 30 days or is past its recorded date.</item><item quantity="other">%d supplies expire within 30 days or are past their recorded dates.</item></plurals>
 </resources>

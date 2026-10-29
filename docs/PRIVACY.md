@@ -11,3 +11,9 @@ Exports are created only when you choose a destination. PDF, CSV and JSON files 
 Delete all saved records from Settings, or remove app data using device settings. Previously exported copies remain at their chosen destinations. PrepTrove does not claim secure erasure from flash storage.
 
 Before public release: add the publisher's legal name, real support contact, jurisdiction-appropriate notices and hosted policy URL, and obtain legal review.
+
+Supply photos are copied into private, backup-excluded device storage after size/dimension validation and JPEG re-encoding. The original EXIF metadata is not copied. Removing a photo from a record unlinks it; the private file may still be used by duplicate records/templates. Delete all saved records also removes stored photo files and completion history. Exports do not contain photo pixels or completion history.
+
+Optional app lock uses the device screen-lock credential and blocks the app UI after backgrounding. It does not add database encryption. The app does not read or store the device credential.
+
+Amazon SDK purchase communication is disabled in the unconfigured development build. If enabled for a future commercial build, Amazon processes store account/transaction data; the app locally caches an account identifier and entitlement state. Household records are not sent by the billing adapter. Store SDK disclosures and the final privacy notice require release review.

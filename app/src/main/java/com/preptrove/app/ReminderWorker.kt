@@ -10,7 +10,7 @@ class ReminderWorker(context:Context,params:WorkerParameters):CoroutineWorker(co
  override suspend fun doWork():Result {
   val local=AppLanguages.wrap(applicationContext)
   val entries=(applicationContext as PrepTrove).db.entries().all()
-  val due=entries.filter { it.kind=="reminder" && !it.done && it.expiry.isNotEmpty() && it.expiry<=java.time.LocalDate.now().toString() }
+  val due=entries.filter { it.kind=="reminder" && !it.isTemplate && !it.done && it.expiry.isNotEmpty() && it.expiry<=java.time.LocalDate.now().toString() }
   if(due.isNotEmpty() && (Build.VERSION.SDK_INT<33 || applicationContext.checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS)==PackageManager.PERMISSION_GRANTED)) {
    val manager=applicationContext.getSystemService(NotificationManager::class.java)
    manager.createNotificationChannel(NotificationChannel("reviews",local.getString(R.string.notification_channel),NotificationManager.IMPORTANCE_DEFAULT))

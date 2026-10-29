@@ -17,3 +17,7 @@ Input files are bounded to 5 MiB and 5,000 records. Unsupported versions, duplic
 Contacts and plans require inclusion confirmation when exporting. Other notes may also contain sensitive information. Plaintext JSON, CSV and PDFs remain unencrypted. User-selected document providers may sync the selected files according to their own settings.
 
 The encryption uses standard Android/JVM cryptographic providers. A security audit, full Storage Access Framework journey tests and backup interoperability checks remain release requirements. No end-to-end encryption claim is made.
+
+## Database version 2 fields
+
+JSON/PTB records now preserve structured plan/contact data, purchase dates, recurring intervals and template flags. Older backups load those additions with safe defaults. Kit links continue to be remapped on copy-based restore. Photo pixels and completion-history events are not included; photo references may be unavailable on another device. These exclusions are stated in the export confirmation.

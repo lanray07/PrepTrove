@@ -35,3 +35,13 @@ APK SHA-256: `59006f688af27cb84850cde92efc1267fa613ffce1100aab59731712cafdd470`
 - Resource catalogue drift and placeholder checks passed. The single remaining inline Text call formats a supply quantity together with private user fields; those private fields are intentionally untranslated.
 - Production preflight intentionally exits nonzero and records remaining gates in release/readiness.json. Unsigned packaging tool ran successfully and wrote an SHA-256 manifest beside the unsigned APK. Signing credentials remain external; no keys were created or uploaded.
 - Latest debug APK SHA-256: `61cd4d1b9eab5730fbc67682cf3b0cb2cdc1c69a515c681e3392f647de8d8178`
+
+## Amazon billing and planner milestone — 29 October 2026
+
+- Debug and unsigned release builds passed. Final Android unit results: {'tests': 8, 'failures': 0, 'errors': 0}. Fire tablet instrumentation: {'tests': 16, 'failures': 0, 'errors': 0}. Python tooling: 3 tests passed.
+- Lint: {'Error': 0, 'Fatal': 0, 'Warning': 54}. The OS credential confirmation API is deprecated on newer Android but retained for Fire-compatible device-credential support; real credential flows remain unverified.
+- New automated coverage: receipt account/SKU/type validation and cancellation precedence; disabled billing configuration; Room v1-to-v2 migration; independent kit-template supplies; recurring completion/history; structured metadata backup round trip; bounded private photo handling; multipage PDF rendering; structured-plan UI save; and lock-screen content isolation.
+- No real purchase or App Tester transaction occurred. The owner has not configured the SKU/public key and requested that checkout remain disabled. Checkout additionally defaults OFF behind amazonPurchasesEnabled. Server-side RVS verification and production commercial limits remain release gates.
+- App-lock tests verify content isolation only. Actual credential entry/cancel, background/file-picker interactions, OS engine speech and notification timing require manual device validation. Image tests use generated fixtures; a broad photo/EXIF/orientation corpus and real picker flows remain pending. PDF pagination is tested; global typography requires visual review.
+- Photos and completion history are not included in JSON/PTB backups. This limitation is disclosed in export confirmation and docs/BACKUP.md.
+- Latest debug APK SHA-256: `a505e66830d52666aaf0e2e4de295284b94d6588bd19efc50723f34e8a3bc394`

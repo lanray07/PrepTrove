@@ -20,5 +20,17 @@ class PlannerJourneyTest {
   rule.waitUntil(10000) {rule.onAllNodesWithText(name).fetchSemanticsNodes().isNotEmpty()}
   rule.onNodeWithText(name).assertIsDisplayed()
  }
+ @Test fun structuredPlanCanBeSavedThroughTheEditor() {
+  val name="QA plan "+System.currentTimeMillis()
+  rule.waitForIdle()
+  if(rule.onAllNodesWithText("Skip").fetchSemanticsNodes().isNotEmpty()) rule.onNodeWithText("Skip").performClick()
+  rule.onNode(hasText("Family plans") and hasClickAction()).performClick()
+  rule.onNodeWithContentDescription("Add record").performClick()
+  rule.onNodeWithText("Name").performTextInput(name)
+  rule.onNodeWithText("Meeting points").performScrollTo().performTextInput("Library entrance")
+  rule.onNodeWithText("Save",substring=false).performClick()
+  rule.waitUntil(10000) {rule.onAllNodesWithText(name).fetchSemanticsNodes().isNotEmpty()}
+  rule.onNodeWithText("Library entrance").assertIsDisplayed()
+ }
 }
 

@@ -1,12 +1,12 @@
 {
   "productionReady": false,
   "remaining": [
-    "amazonCatalogueAndVerifiedReceipts: Configure entitlement SKU, SDK, receipt verification, restore and Amazon App Tester results.",
+    "amazonCatalogueAndVerifiedReceipts: SDK client implemented; owner SKU/public key, explicit checkout authorisation, App Tester results, RVS policy and commercial limits still pending.",
     "deviceCompatibilityAndVoice: Test phone, portrait, accessibility, RTL, speech engines and notification delivery.",
     "localisedScreenshotsAndMetadata: Capture actual reviewed UI for every approved listing locale; validate dimensions in Amazon console.",
     "regionalSafetyReview: Obtain qualified country-specific review; no automatically translated safety packs.",
     "publisherLegalAndSupport: Publisher identity, working support address, hosted privacy URL, legal and trademark review.",
-    "functionalCompleteness: Structured family plans, secure photos, templates, app lock, richer reminders and remaining master-brief functions.",
+    "functionalCompleteness: Expanded planner implemented; remaining voice intents, field-level exports, lifecycle draft persistence, media/history backups and full device acceptance still pending.",
     "ownerReleaseApproval: Owner approval of final price, territories, listing and signed release package.",
     "Translation review incomplete: ar",
     "Release reviewer and safety sign-off missing: ar",

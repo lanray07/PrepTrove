@@ -862,7 +862,7 @@
       "safetyReviewRequired": false
     },
     "msg_6793524957eb": {
-      "source": "%1$s export includes saved inventory, kit notes, checklists and reminders. Those notes may contain personal information. JSON can be restored as new copies. PTB uses password-protected encryption. Keep the password safe; it cannot be recovered.",
+      "source": "%1$s export includes selected saved records and templates. Notes may contain personal information. Photos and completion history are not included in backups. JSON can be restored as new copies. PTB backups require a password that cannot be recovered.",
       "translation": null,
       "reviewed": false,
       "safetyReviewRequired": false
@@ -1073,6 +1073,276 @@
     },
     "kind_reminder": {
       "source": "Reminder",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "billing_title": {
+      "source": "PrepTrove Premium",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "billing_configuration": {
+      "source": "Amazon purchases are disabled until the catalogue SKU, app public key and checkout build switch are configured.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "billing_unavailable": {
+      "source": "Amazon billing is unavailable. Try again or restore purchases later.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "billing_ready": {
+      "source": "One-time purchase. Price is supplied by Amazon. Checkout remains disabled in builds without purchase authorisation.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "billing_not_completed": {
+      "source": "The purchase was not completed. No entitlement was granted.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "billing_updated": {
+      "source": "Purchase entitlement updated from Amazon.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "billing_premium_active": {
+      "source": "Premium entitlement active on this device.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "billing_price": {
+      "source": "One-time price: %1$s",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "billing_buy": {
+      "source": "Buy Premium",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "billing_restore": {
+      "source": "Restore purchases",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "template_label": {
+      "source": "Template: %1$s",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "template_save": {
+      "source": "Save template",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "template_use": {
+      "source": "Create from template",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "review_history": {
+      "source": "Recent completion history",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "reminder_snooze": {
+      "source": "Snooze 7 days",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "purchase_date_value": {
+      "source": "Purchased: %1$s",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "purchase_date_label": {
+      "source": "Purchase date: YYYY-MM-DD (optional)",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "reminder_interval": {
+      "source": "Repeat every N days (0 = one-time)",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "reminder_interval_error": {
+      "source": "Use an interval from 0 to 3650 days.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "plan_members": {
+      "source": "Household members or nicknames",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "plan_meeting": {
+      "source": "Meeting points",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "plan_communication": {
+      "source": "Communication plan",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "plan_evacuation": {
+      "source": "Evacuation checklist",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "plan_shelter": {
+      "source": "Shelter-in-place checklist",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "plan_pets": {
+      "source": "Pet arrangements",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "plan_accessibility": {
+      "source": "Accessibility considerations",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "plan_documents": {
+      "source": "Important document reminders",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "plan_checkin": {
+      "source": "Expected check-in procedure",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "contact_phone": {
+      "source": "Phone number",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "contact_relationship": {
+      "source": "Relationship",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "contact_organisation": {
+      "source": "Organisation",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "reminder_pause": {
+      "source": "Pause reminder",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "reminder_resume": {
+      "source": "Resume reminder",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "lock_title": {
+      "source": "PrepTrove is locked",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "lock_prompt": {
+      "source": "Use your device screen-lock credential to open your saved plans.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "lock_unlock": {
+      "source": "Unlock",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "lock_enable": {
+      "source": "Enable app lock",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "lock_disable": {
+      "source": "Disable app lock",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "lock_unavailable": {
+      "source": "Set a secure PIN, password or pattern in device settings before enabling app lock.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "photo_description": {
+      "source": "Saved supply photograph",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "photo_missing": {
+      "source": "This photograph is not available on this device.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "photo_add": {
+      "source": "Add supply photograph",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "photo_remove": {
+      "source": "Remove photograph from record",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "photo_error": {
+      "source": "Choose a valid image up to 8 MB and 16 megapixels. A maximum of 200 photos can be stored.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "record_too_long": {
+      "source": "Shorten this record: names allow 500 characters and individual text fields allow 20,000.",
       "translation": null,
       "reviewed": false,
       "safetyReviewRequired": false
