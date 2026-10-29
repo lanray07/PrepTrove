@@ -1,0 +1,62 @@
+{
+  "resourceKeys": 52,
+  "missingKeys": [],
+  "remainingInlineTextCalls": [
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\ReminderWorker.kt",
+      "line": 17,
+      "text": "${due.size} saved reminders are due. Open your planner to review."
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 173,
+      "text": "Add starter checklist tasks"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 176,
+      "text": "Search $section"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 180,
+      "text": "${e.quantity} ${e.unit} · ${e.category}"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 181,
+      "text": "Stored: ${e.location}"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 182,
+      "text": "Kit: ${records.find {it.id==e.kitId}?.title ?: "
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 183,
+      "text": "Date: ${e.expiry}"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 184,
+      "text": "Last checked: ${e.checked}"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 199,
+      "text": "Delete ${e.title}?"
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 201,
+      "text": "$exportType export includes saved inventory, kit notes, checklists and reminders. Those notes may contain personal information. JSON is a data export; restore is not yet implemented."
+    },
+    {
+      "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
+      "line": 216,
+      "text": "${if(initial.kind=="
+    }
+  ],
+  "releaseReady": false
+}

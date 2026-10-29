@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="preptrove_c7187b">PrepTrove</string>
+  <string name="your_household_organised_96de4e">YOUR HOUSEHOLD, ORGANISED</string>
+  <string name="prepared_today_ready_for_tomorrow_6786a9">Prepared today. Ready for tomorrow.</string>
+  <string name="saved_records_work_offline_eceb81">●  Saved records work offline</string>
+  <string name="a_little_preparation_more_peace_of_mind_48526d">A little preparation.
+More peace of mind.</string>
+  <string name="your_essentials_and_household_plans_together_in__354383">Your essentials and household plans, together in one private place.</string>
+  <string name="organise_your_kit_e4829c">Organise your kit</string>
+  <string name="your_next_small_step_b68082">Your next small step</string>
+  <string name="planning_progress_is_not_a_guarantee_of_safety_f_26ae34">Planning progress is not a guarantee of safety. Follow local authorities during an emergency.</string>
+  <string name="saved_guidance_united_kingdom_8a9326">Saved guidance • United Kingdom</string>
+  <string name="general_planning_information_not_live_alerts_for_127afe">General planning information, not live alerts. For other countries, consult your local emergency-management authority.</string>
+  <string name="source_uk_government_prepare_https_prepare_campa_17bb7e">Source: UK Government Prepare
+https://prepare.campaign.gov.uk/get-prepared-for-emergencies/
+Reviewed: 28 October 2026 · Content version 1
+Source update date: not supplied. This summary is stored offline. The source link needs internet access.</string>
+  <string name="your_voice_your_planner_4e42c9">Your voice. Your planner.</string>
+  <string name="push_to_talk_then_review_the_transcript_your_dev_afdb27">Push to talk, then review the transcript. Your device’s recognition provider may use the network. PrepTrove does not save audio. English commands are available in this preview.</string>
+  <string name="transcript_or_typed_command_48008f">Transcript or typed command</string>
+  <string name="review_command_399b62">Review command</string>
+  <string name="read_response_aloud_ac4ff0">Read response aloud</string>
+  <string name="private_by_default_f52e06">Private by default</string>
+  <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">No account, ads, analytics, location tracking or automatic uploads. Records are stored in this app’s private device storage. Device encryption depends on your device settings.</string>
+  <string name="dark_theme_3f11a5">Dark theme</string>
+  <string name="interface_english_preview_other_languages_are_pe_364f22">Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.</string>
+  <string name="enable_optional_reminders_4af429">Enable optional reminders</string>
+  <string name="reminders_are_checked_periodically_usually_daily_226139">Reminders are checked periodically, usually daily. Timing is controlled by the operating system. Mark complete to pause; edit the date to snooze.</string>
+  <string name="exports_2f4dcf">Exports</string>
+  <string name="exports_are_unencrypted_review_the_included_info_14b601">Exports are unencrypted. Review the included information before saving.</string>
+  <string name="delete_all_saved_records_4e66b6">Delete all saved records</string>
+  <string name="checked_today_d85745">Checked today</string>
+  <string name="duplicate_02cdaa">Duplicate</string>
+  <string name="delete_e2d0a5">Delete</string>
+  <string name="this_cannot_be_undone_supplies_in_a_deleted_kit__54a684">This cannot be undone. Supplies in a deleted kit will become unassigned.</string>
+  <string name="cancel_19766e">Cancel</string>
+  <string name="delete_all_records_1dcbbc">Delete all records?</string>
+  <string name="all_kits_supplies_contacts_plans_reminders_and_c_bbd353">All kits, supplies, contacts, plans, reminders and checklist tasks will be permanently removed from this device.</string>
+  <string name="delete_everything_71eb8a">Delete everything</string>
+  <string name="review_export_contents_521854">Review export contents</string>
+  <string name="also_include_contacts_and_family_plans_331c8a">Also include contacts and family plans</string>
+  <string name="choose_destination_5853e2">Choose destination</string>
+  <string name="welcome_to_preptrove_2fb668">Welcome to PrepTrove</string>
+  <string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">Prepared today. Ready for tomorrow. Your records stay on this device. Interface language: English preview.</string>
+  <string name="household_size_optional_73a7cf">Household size (optional)</string>
+  <string name="country_or_region_8d2360">Country or region</string>
+  <string name="reminders_and_microphone_access_are_optional_and_121a8c">Reminders and microphone access are optional and requested only when you enable them.</string>
+  <string name="start_planning_655059">Start planning</string>
+  <string name="skip_28d035">Skip</string>
+  <string name="name_dcd1d5">Name</string>
+  <string name="category_checklist_group_0cf902">Category / checklist group</string>
+  <string name="quantity_822bab">Quantity</string>
+  <string name="unit_e_g_litres_bottles_3092cb">Unit (e.g. litres, bottles)</string>
+  <string name="assign_to_a_kit_ba9a85">Assign to a kit</string>
+  <string name="unassigned_14d33b">Unassigned</string>
+  <string name="storage_location_a59e28">Storage location</string>
+  <string name="save_1509f5">Save</string>
+</resources>
