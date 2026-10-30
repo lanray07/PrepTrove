@@ -1,12 +1,12 @@
 {
   "productionReady": false,
   "remaining": [
-    "amazonCatalogueAndVerifiedReceipts: SDK client implemented; owner SKU/public key, explicit checkout authorisation, App Tester results, RVS policy and commercial limits still pending.",
+    "amazonCatalogueAndVerifiedReceipts: App-specific public key installed; owner SKU, App Tester results, RVS policy and commercial limits remain pending. Checkout stays disabled.",
     "deviceCompatibilityAndVoice: Test phone, portrait, accessibility, RTL, speech engines and notification delivery.",
-    "localisedScreenshotsAndMetadata: Capture actual reviewed UI for every approved listing locale; validate dimensions in Amazon console.",
+    "localisedScreenshotsAndMetadata: 24 actual tablet captures across three English variants; English (U.S.) listing saved. Marketing approval and additional translated listing languages remain pending.",
     "regionalSafetyReview: Obtain qualified country-specific review; no automatically translated safety packs.",
-    "publisherLegalAndSupport: Publisher identity, working support address, hosted privacy URL, legal and trademark review.",
-    "functionalCompleteness: Expanded planner implemented; remaining voice intents, field-level exports, lifecycle draft persistence, media/history backups and full device acceptance still pending.",
+    "publisherLegalAndSupport: Support email supplied and GitHub privacy/deletion pages linked in console; publisher/legal/trademark review and support delivery verification remain pending.",
+    "functionalCompleteness: Planner, field-level export, PDF preview, saved draft state and English voice commands implemented; media/history backups and full device acceptance remain pending.",
     "ownerReleaseApproval: Owner approval of final price, territories, listing and signed release package.",
     "Translation review incomplete: ar",
     "Release reviewer and safety sign-off missing: ar",

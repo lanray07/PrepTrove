@@ -1,18 +1,30 @@
 {
- "date":"2026-10-30",
- "appId":"amzn1.devportal.mobileapp.0f1c699795b7408db7381c0afa86c195",
- "releaseId":"amzn1.devportal.apprelease.ab04182f761c4cb290d209ef6e2c01c7",
- "title":"PrepTrove Emergency Kit and Family Planner",
- "category":"Productivity",
- "subcategory":"Organizers & Assistants",
- "languageDeclaration":["English"],
- "englishDescription":"saved; Amazon reported Complete",
- "ratingQuestionnaire":"saved; Amazon reported Complete; owner review pending",
- "targetAudience":"18+ household organisers; owner review pending",
- "privacyPolicyUrl":"https://github.com/lanray07/PrepTrove/blob/main/docs/PRIVACY.md",
- "dataDeletionUrl":"https://github.com/lanray07/PrepTrove/blob/main/docs/DATA-DELETION.md",
- "publicKey":"downloaded from this app's Amazon console and installed in assets",
- "checkoutEnabled":false,
- "submitted":false,
- "remaining":["privacy questionnaire and policy review","signed release APK","store icons/screenshots","final device and release checks","owner approval"]
+  "date": "2026-10-30",
+  "appId": "amzn1.devportal.mobileapp.0f1c699795b7408db7381c0afa86c195",
+  "releaseId": "amzn1.devportal.apprelease.ab04182f761c4cb290d209ef6e2c01c7",
+  "title": "PrepTrove Emergency Kit and Family Planner",
+  "category": "Productivity",
+  "subcategory": "Organizers & Assistants",
+  "languageDeclaration": [
+    "English"
+  ],
+  "englishDescription": "saved; Amazon reported Complete",
+  "ratingQuestionnaire": "saved; Amazon reported Complete; owner review pending",
+  "targetAudience": "18+ household organisers; owner review pending",
+  "privacyPolicyUrl": "https://github.com/lanray07/PrepTrove/blob/main/docs/PRIVACY.md",
+  "dataDeletionUrl": "https://github.com/lanray07/PrepTrove/blob/main/docs/DATA-DELETION.md",
+  "publicKey": "downloaded from this app's Amazon console and installed in assets",
+  "checkoutEnabled": false,
+  "submitted": false,
+  "remaining": [
+    "publisher/legal review of privacy declarations and policies",
+    "signed release APK",
+    "reviewed translations and regional safety content",
+    "real speech, lock and broader device acceptance",
+    "Amazon SKU and sandbox validation before enabling purchases",
+    "final owner approval"
+  ],
+  "privacyQuestionnaire": "saved for review; publisher/legal approval pending",
+  "tabletIcons": "512x512 and 114x114 accepted",
+  "screenshots": "24 real 1920x1200 English-variant tablet captures generated; eight en-US panels accepted, Images and Videos reported Complete"
 }

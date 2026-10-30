@@ -82,8 +82,8 @@
       "safetyReviewRequired": false
     },
     "push_to_talk_then_review_the_transcript_your_dev_afdb27": {
-      "source": "Push to talk, then review the transcript. Your device’s recognition provider may use the network. PrepTrove does not save audio. English commands are available in this preview.",
-      "translation": "Push to talk, then review the transcript. Your device’s recognition provider may use the network. PrepTrove does not save audio. English commands are available in this preview.",
+      "source": "Push to talk, then review the transcript. Recognition and spoken feedback use installed device services, which may process audio or spoken text over the network. PrepTrove does not save recordings. Read private plans aloud only when you are comfortable with your speech provider and surroundings. English commands are available.",
+      "translation": "Push to talk, then review the transcript. Recognition and spoken feedback use installed device services, which may process audio or spoken text over the network. PrepTrove does not save recordings. Read private plans aloud only when you are comfortable with your speech provider and surroundings. English commands are available.",
       "reviewed": true,
       "safetyReviewRequired": false
     },
@@ -592,8 +592,8 @@
       "safetyReviewRequired": false
     },
     "msg_475a159ff59c": {
-      "source": "Try: add bottled water; what supplies are expiring soon; show my contacts; read my family plan; show my checklist.",
-      "translation": "Try: add bottled water; what supplies are expiring soon; show my contacts; read my family plan; show my checklist.",
+      "source": "Try: add bottled water; what supplies are expiring soon; mark batteries as checked; remind me to check the kit next month; show my contacts; read my family plan.",
+      "translation": "Try: add bottled water; what supplies are expiring soon; mark batteries as checked; remind me to check the kit next month; show my contacts; read my family plan.",
       "reviewed": true,
       "safetyReviewRequired": false
     },
@@ -1344,6 +1344,114 @@
     "record_too_long": {
       "source": "Shorten this record: names allow 500 characters and individual text fields allow 20,000.",
       "translation": "Shorten this record: names allow 500 characters and individual text fields allow 20,000.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "voice_reminder_review": {
+      "source": "Review the reminder date and save to confirm.",
+      "translation": "Review the reminder date and save to confirm.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "voice_checked": {
+      "source": "The supply inspection has been recorded.",
+      "translation": "The supply inspection has been recorded.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "voice_exact_supply": {
+      "source": "Use the exact name of one saved supply, or select it with touch. No inspection was recorded.",
+      "translation": "Use the exact name of one saved supply, or select it with touch. No inspection was recorded.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "export_field_warning": {
+      "source": "Selections remove named fields only. Other text may still contain personal details.",
+      "translation": "Selections remove named fields only. Other text may still contain personal details.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "export_notes": {
+      "source": "Include free-text notes",
+      "translation": "Include free-text notes",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "export_locations": {
+      "source": "Include storage locations and meeting points",
+      "translation": "Include storage locations and meeting points",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "export_phones": {
+      "source": "Include the contact phone field",
+      "translation": "Include the contact phone field",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "export_members": {
+      "source": "Include household member names",
+      "translation": "Include household member names",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "report_preview": {
+      "source": "PDF preview",
+      "translation": "PDF preview",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "report_previous": {
+      "source": "Previous page",
+      "translation": "Previous page",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "report_next": {
+      "source": "Next page",
+      "translation": "Next page",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "report_page": {
+      "source": "%1$d / %2$d",
+      "translation": "%1$d / %2$d",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "report_loading": {
+      "source": "Preparing the report preview…",
+      "translation": "Preparing the report preview…",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "voice_quantity": {
+      "source": "%1$s %2$s recorded for %3$s.",
+      "translation": "%1$s %2$s recorded for %3$s.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "voice_quantity_units": {
+      "source": "These quantities use different units or cannot be combined. Review the supply details.",
+      "translation": "These quantities use different units or cannot be combined. Review the supply details.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "support_privacy": {
+      "source": "Privacy notice (opens GitHub)",
+      "translation": "Privacy notice (opens GitHub)",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "support_deletion": {
+      "source": "Data deletion instructions (opens GitHub)",
+      "translation": "Data deletion instructions (opens GitHub)",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "support_browser_missing": {
+      "source": "No browser is available. View the PrepTrove privacy and deletion pages in the GitHub repository on another device.",
+      "translation": "No browser is available. View the PrepTrove privacy and deletion pages in the GitHub repository on another device.",
       "reviewed": true,
       "safetyReviewRequired": false
     },

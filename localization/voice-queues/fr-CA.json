@@ -20,6 +20,12 @@
     ],
     "quantity": [
       "how many {supply} do I have"
+    ],
+    "inspection": [
+      "mark {exact supply name} as checked"
+    ],
+    "reminder": [
+      "remind me to {task} next month"
     ]
   },
   "translations": {
@@ -28,6 +34,8 @@
     "contacts": null,
     "plans": null,
     "checklists": null,
-    "quantity": null
+    "quantity": null,
+    "inspection": null,
+    "reminder": null
   }
 }

@@ -35,3 +35,6 @@ References checked 29 October 2026:
 - https://developer.amazon.com/docs/appstore-sdk/integrate-appstore-sdk.html
 - https://developer.amazon.com/docs/in-app-purchasing/iap-implement-iap.html
 - https://repo.maven.apache.org/maven2/com/amazon/device/amazon-appstore-sdk/maven-metadata.xml
+
+
+Update 30 October 2026: The real app-specific public key has been downloaded from the saved Amazon draft and installed at app/src/main/assets/AppstoreAuthenticationKey.pem. It is a public verification key, not a signing key. SKU configuration, App Tester and independent receipt verification remain pending; checkout remains disabled. The older milestone statements about a missing public key are superseded by this update.

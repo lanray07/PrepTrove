@@ -32,5 +32,18 @@ class PlannerJourneyTest {
   rule.waitUntil(10000) {rule.onAllNodesWithText(name).fetchSemanticsNodes().isNotEmpty()}
   rule.onNodeWithText("Library entrance").assertIsDisplayed()
  }
+ @Test fun unsavedSupplyDraftSurvivesActivityRecreation() {
+  val name="QA draft "+System.currentTimeMillis()
+  rule.waitForIdle()
+  if(rule.onAllNodesWithText("Skip").fetchSemanticsNodes().isNotEmpty()) rule.onNodeWithText("Skip").performClick()
+  rule.onNode(hasText("Supplies") and hasClickAction()).performClick()
+  rule.onNodeWithContentDescription("Add record").performClick()
+  rule.onNodeWithText("Name").performTextInput(name)
+  rule.activityRule.scenario.recreate();rule.waitForIdle()
+  rule.onNodeWithText(name).assertIsDisplayed()
+  rule.onNodeWithText("Save",substring=false).performClick()
+  rule.onNodeWithText("Name",substring=false).assertDoesNotExist()
+  rule.waitUntil(10000) {rule.onAllNodesWithText(name).fetchSemanticsNodes().isNotEmpty()}
+ }
 }
 

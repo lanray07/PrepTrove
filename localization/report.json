@@ -1,34 +1,34 @@
 [
   {
     "locale": "en-GB",
-    "strings": 228,
-    "translated": 228,
-    "reviewed": 228,
+    "strings": 246,
+    "translated": 246,
+    "reviewed": 246,
     "resourceStatus": "generated",
     "releaseReady": false,
     "reviewType": "source English variant"
   },
   {
     "locale": "en-US",
-    "strings": 228,
-    "translated": 228,
-    "reviewed": 228,
+    "strings": 246,
+    "translated": 246,
+    "reviewed": 246,
     "resourceStatus": "generated",
     "releaseReady": false,
     "reviewType": "source English variant"
   },
   {
     "locale": "en-AU",
-    "strings": 228,
-    "translated": 228,
-    "reviewed": 228,
+    "strings": 246,
+    "translated": 246,
+    "reviewed": 246,
     "resourceStatus": "generated",
     "releaseReady": false,
     "reviewType": "source English variant"
   },
   {
     "locale": "es-ES",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -37,7 +37,7 @@
   },
   {
     "locale": "es-419",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -46,7 +46,7 @@
   },
   {
     "locale": "fr-FR",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -55,7 +55,7 @@
   },
   {
     "locale": "fr-CA",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -64,7 +64,7 @@
   },
   {
     "locale": "de-DE",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -73,7 +73,7 @@
   },
   {
     "locale": "it-IT",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -82,7 +82,7 @@
   },
   {
     "locale": "pt-BR",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -91,7 +91,7 @@
   },
   {
     "locale": "pt-PT",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -100,7 +100,7 @@
   },
   {
     "locale": "nl-NL",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -109,7 +109,7 @@
   },
   {
     "locale": "pl-PL",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -118,7 +118,7 @@
   },
   {
     "locale": "sv-SE",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -127,7 +127,7 @@
   },
   {
     "locale": "ja-JP",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -136,7 +136,7 @@
   },
   {
     "locale": "hi-IN",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -145,7 +145,7 @@
   },
   {
     "locale": "ar",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -154,7 +154,7 @@
   },
   {
     "locale": "tr-TR",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -163,7 +163,7 @@
   },
   {
     "locale": "id-ID",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -172,7 +172,7 @@
   },
   {
     "locale": "ko-KR",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -181,7 +181,7 @@
   },
   {
     "locale": "zh-Hans",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",
@@ -190,7 +190,7 @@
   },
   {
     "locale": "zh-Hant",
-    "strings": 228,
+    "strings": 246,
     "translated": 0,
     "reviewed": 0,
     "resourceStatus": "pending",

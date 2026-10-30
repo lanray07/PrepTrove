@@ -68,6 +68,8 @@ class PrepTrove:Application() {
 }
 class PlannerModel(app:Application):AndroidViewModel(app) {
  private val dao=(app as PrepTrove).db.entries()
+ val backupPassword=androidx.compose.runtime.mutableStateOf("")
+ suspend fun snapshot():List<Entry> = dao.all()
  val records=dao.observe().stateIn(viewModelScope,SharingStarted.WhileSubscribed(5000),emptyList())
  val reviews=dao.reviews().stateIn(viewModelScope,SharingStarted.WhileSubscribed(5000),emptyList())
  fun complete(e:Entry)=viewModelScope.launch {dao.complete(e,LocalDate.now().toString())}

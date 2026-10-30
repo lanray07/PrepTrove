@@ -20,6 +20,12 @@
     ],
     "quantity": [
       "how many {supply} do I have"
+    ],
+    "inspection": [
+      "mark {exact supply name} as checked"
+    ],
+    "reminder": [
+      "remind me to {task} next month"
     ]
   }
 }

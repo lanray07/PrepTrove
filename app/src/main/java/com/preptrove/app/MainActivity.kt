@@ -22,6 +22,7 @@ import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -34,6 +35,8 @@ import org.json.JSONObject
 import java.time.LocalDate
 import java.util.Locale
 import kotlinx.coroutines.launch
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.saveable.rememberSaveableStateHolder
 
 val Navy=Color(0xFF263B4D)
 val Teal=Color(0xFF2C7A7B)
@@ -82,7 +85,7 @@ class MainActivity:ComponentActivity() {
   lockEnabled=getSharedPreferences("privacy",MODE_PRIVATE).getBoolean("lock",false);locked=lockEnabled
   tts=TextToSpeech(this) { status-> speechReady=status==TextToSpeech.SUCCESS && (tts?.setLanguage(resources.configuration.locales[0]) ?: -1)>=0 }
   (application as PrepTrove).billing.start()
-  setContent {LaunchedEffect(lockEnabled) {if(lockEnabled) window.addFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE) else window.clearFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE)};if(locked) MaterialTheme {Surface(Modifier.fillMaxSize()) {Column(Modifier.padding(32.dp),verticalArrangement=Arrangement.Center) {Text(getString(R.string.lock_title),fontSize=28.sp);Text(getString(R.string.lock_prompt));Button(onClick={authenticate()}) {Text(getString(R.string.lock_unlock))}}}} else Planner() }
+  setContent {val plannerState=rememberSaveableStateHolder();LaunchedEffect(lockEnabled) {if(lockEnabled) window.addFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE) else window.clearFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE)};if(locked) MaterialTheme {Surface(Modifier.fillMaxSize()) {Column(Modifier.padding(32.dp),verticalArrangement=Arrangement.Center) {Text(getString(R.string.lock_title),fontSize=28.sp);Text(getString(R.string.lock_prompt));Button(onClick={authenticate()}) {Text(getString(R.string.lock_unlock))}}}} else plannerState.SaveableStateProvider("planner") {Planner()} }
  }
  override fun onResume() {super.onResume();(application as PrepTrove).billing.refresh()}
  override fun onDestroy() { recognizer?.destroy();tts?.stop();tts?.shutdown();super.onDestroy() }
@@ -113,23 +116,28 @@ class MainActivity:ComponentActivity() {
   val onboarded by model.onboarded.collectAsStateWithLifecycle()
   var chooseLanguage by remember { mutableStateOf(false) }
   var section by androidx.compose.runtime.saveable.rememberSaveable { mutableStateOf("Overview") }
-  var editing by remember { mutableStateOf<Entry?>(null) }
+  var editing by rememberSaveable(stateSaver=EntryStateSaver) { mutableStateOf<Entry?>(null) }
   var deleting by remember { mutableStateOf<Entry?>(null) }
   var wipe by remember { mutableStateOf(false) }
-  var search by remember { mutableStateOf("") }
+  var search by rememberSaveable { mutableStateOf("") }
   val dark by model.darkTheme.collectAsStateWithLifecycle()
-  var command by remember { mutableStateOf("") }
+  var command by rememberSaveable { mutableStateOf("") }
   var response by remember { mutableStateOf("") }
   var listening by remember { mutableStateOf(false) }
-  var exportType by remember { mutableStateOf("") }
+  var exportType by rememberSaveable { mutableStateOf("") }
+  var previewReport by rememberSaveable {mutableStateOf(false)}
   var exportConfirm by remember { mutableStateOf(false) }
-  var backupPassword by remember { mutableStateOf("") }
+  var backupPassword by model.backupPassword
   var importing by remember { mutableStateOf(false) }
-  var importEncrypted by remember { mutableStateOf(false) }
+  var importEncrypted by rememberSaveable { mutableStateOf(false) }
   var pendingImport by remember { mutableStateOf<List<Entry>?>(null) }
   val scope=rememberCoroutineScope()
-  var sensitive by remember { mutableStateOf(false) }
-  var status by remember { mutableStateOf("") }
+  var includeNotes by rememberSaveable {mutableStateOf(true)}
+  var includeLocations by rememberSaveable {mutableStateOf(false)}
+  var includePhones by rememberSaveable {mutableStateOf(false)}
+  var includeMembers by rememberSaveable {mutableStateOf(false)}
+  var sensitive by rememberSaveable { mutableStateOf(false) }
+  var status by rememberSaveable { mutableStateOf("") }
   val permission=rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted->if(granted) listen({command=it},{listening=it}) else {response=getString(R.string.msg_16cfda4cd82d)} }
   val notifications=rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { status=if(it) getString(R.string.msg_4bd4c7b77408) else getString(R.string.msg_52df1e1e5c92) }
   val restore=rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri->
@@ -146,18 +154,24 @@ class MainActivity:ComponentActivity() {
    }
   }
   val export=rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/octet-stream")) { uri->
-   if(uri!=null) try {
-    val chosen=records.filter { sensitive || (it.kind!="contact" && it.kind!="plan") }
-    contentResolver.openOutputStream(uri)?.use { stream->
-     when(exportType) {
-      "csv"->stream.write(Inventory.csv(chosen).toByteArray())
-      "json"->stream.write(BackupCodec.encode(chosen))
-      "ptb"->{val password=backupPassword.toCharArray();backupPassword="";try {stream.write(BackupCrypto.encrypt(BackupCodec.encode(chosen),password))} finally {password.fill('\u0000')}}
-      "pdf"->PdfReports.write(this@MainActivity,chosen,stream)
+   if(uri==null) backupPassword="" else scope.launch {
+    val format=exportType
+    val options=ExportPolicy.Options(sensitive,includeNotes,includeLocations,includePhones,includeMembers)
+    val password=backupPassword.toCharArray();backupPassword=""
+    try {
+     kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+      require(format in listOf("csv","json","ptb","pdf"))
+      val chosen=ExportPolicy.select(model.snapshot(),options)
+      contentResolver.openOutputStream(uri)?.use {stream->when(format) {
+       "csv"->stream.write(Inventory.csv(chosen).toByteArray())
+       "json"->stream.write(BackupCodec.encode(chosen))
+       "ptb"->stream.write(BackupCrypto.encrypt(BackupCodec.encode(chosen),password))
+       "pdf"->PdfReports.write(this@MainActivity,chosen,stream)
+      }} ?: error("Destination unavailable")
      }
-    } ?: error(getString(R.string.msg_730f66958d23))
-    status=getString(R.string.msg_3b92ecba1a57)
-   } catch(e:Exception) { status=getString(R.string.msg_e82ead9f0716) }
+     status=getString(R.string.msg_3b92ecba1a57)
+    } catch(e:Exception) {status=getString(R.string.msg_e82ead9f0716)} finally {password.fill('\u0000')}
+   }
   }
   MaterialTheme(colorScheme=if(dark) darkColorScheme(primary=Color(0xFF83CFCA),background=Color(0xFF152632),surface=Color(0xFF203746)) else lightColorScheme(primary=Teal,background=Ivory,surface=Color.White,onSurface=Navy)) {
    Surface(Modifier.fillMaxSize()) {
@@ -195,19 +209,22 @@ class MainActivity:ComponentActivity() {
           item {Text(androidx.compose.ui.res.stringResource(R.string.push_to_talk_then_review_the_transcript_your_dev_afdb27))}
           item {Button(onClick={if(checkSelfPermission(Manifest.permission.RECORD_AUDIO)==PackageManager.PERMISSION_GRANTED) listen({command=it},{listening=it}) else permission.launch(Manifest.permission.RECORD_AUDIO)}) {Icon(Icons.Outlined.Mic,null);Text(if(listening) getString(R.string.msg_bbb4106e8144) else getString(R.string.msg_4c15103c8011))} }
           item {OutlinedTextField(value=command,onValueChange={command=it},label={Text(androidx.compose.ui.res.stringResource(R.string.transcript_or_typed_command_48008f))},modifier=Modifier.fillMaxWidth())}
-          item {Button(onClick={val c=command.lowercase(Locale.ROOT);when {
+          item {Button(onClick={val c=command.lowercase(Locale.ROOT);val reminderDraft=VoiceDrafts.reminder(command);val inspection=VoiceDrafts.checkedSupply(command,records);when {
+           reminderDraft!=null->{editing=reminderDraft;response=getString(R.string.voice_reminder_review)}
+           inspection!=null->{if(inspection.size==1) {model.complete(inspection.single());response=getString(R.string.voice_checked)} else response=getString(R.string.voice_exact_supply)}
            "expiring" in c->{response=getString(R.string.msg_99d34c2615d3 ,Inventory.attention(records).size)}
            "contact" in c->{section="Contacts";response=getString(R.string.msg_ed7e19e138cd)}
            "checklist" in c->{section="Checklists";response=getString(R.string.msg_a66277f71e95)}
            "read" in c && "plan" in c->{response=records.filter {it.kind=="plan" && !it.isTemplate}.joinToString(". ") {it.title+". "+it.detail+". "+PdfReports.structuredLines(this@MainActivity,it).joinToString(". ")}.ifEmpty {getString(R.string.msg_7ac9410ea796)}}
            c.startsWith("add ")->{editing=Entry(kind="supply",title=command.drop(4).substringBefore(" to my "));response=getString(R.string.msg_186c6ec83f48)}
-           "how many " in c->{val term=c.substringAfter("how many ").substringBefore(" do i").trim();response=getString(R.string.msg_32668e0b1acf ,java.text.NumberFormat.getNumberInstance(resources.configuration.locales[0]).format(records.filter {it.kind=="supply" && !it.isTemplate && it.title.contains(term,true)}.sumOf {it.quantity}),term)}
+           VoiceDrafts.quantity(command,records)!=null->{val quantity=VoiceDrafts.quantity(command,records)!!;response=if(quantity.combinable) getString(R.string.voice_quantity,java.text.NumberFormat.getNumberInstance(resources.configuration.locales[0]).format(quantity.total),quantity.unit,quantity.phrase) else getString(R.string.voice_quantity_units)}
            else->response=getString(R.string.msg_475a159ff59c)
           }}) {Text(androidx.compose.ui.res.stringResource(R.string.review_command_399b62))} }
           item {Text(response);TextButton(onClick={speak(response)}) {Text(androidx.compose.ui.res.stringResource(R.string.read_response_aloud_ac4ff0))} }
          }
          "Settings"->{
           item {OutlinedButton(onClick={if(lockEnabled) {getSharedPreferences("privacy",MODE_PRIVATE).edit().putBoolean("lock",false).commit();lockEnabled=false} else if(getSystemService(android.app.KeyguardManager::class.java).isDeviceSecure) authenticate(true) else status=getString(R.string.lock_unavailable)}) {Text(getString(if(lockEnabled) R.string.lock_disable else R.string.lock_enable))} }
+          item {TextButton(onClick={runCatching {startActivity(Intent(Intent.ACTION_VIEW,android.net.Uri.parse("https://github.com/lanray07/PrepTrove/blob/main/docs/PRIVACY.md")))}.onFailure {status=getString(R.string.support_browser_missing)}}) {Text(getString(R.string.support_privacy))};TextButton(onClick={runCatching {startActivity(Intent(Intent.ACTION_VIEW,android.net.Uri.parse("https://github.com/lanray07/PrepTrove/blob/main/docs/DATA-DELETION.md")))}.onFailure {status=getString(R.string.support_browser_missing)}}) {Text(getString(R.string.support_deletion))} }
           item {OutlinedButton(onClick={chooseLanguage=true}) {Text(getString(R.string.language_label))} }
 
           item {Text(androidx.compose.ui.res.stringResource(R.string.private_by_default_f52e06),fontSize=26.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.no_account_ads_analytics_location_tracking_or_au_75a32c))}
@@ -251,7 +268,7 @@ class MainActivity:ComponentActivity() {
            if(e.checked.isNotEmpty()) Text(getString(R.string.msg_7273969a69f6 ,displayDate(e.checked)))
            Row(Modifier.horizontalScroll(rememberScrollState())) {
             TextButton(onClick={model.complete(e)}) {Text(androidx.compose.ui.res.stringResource(R.string.checked_today_d85745))}
-            TextButton(onClick={model.save(e.copy(id=java.util.UUID.randomUUID().toString(),title=e.title+getString(R.string.msg_d75612450689)))}) {Text(androidx.compose.ui.res.stringResource(R.string.duplicate_02cdaa))}
+            TextButton(onClick={model.save(e.copy(id=java.util.UUID.randomUUID().toString(),title=(e.title+getString(R.string.msg_d75612450689)).take(500)))}) {Text(androidx.compose.ui.res.stringResource(R.string.duplicate_02cdaa))}
             TextButton(onClick={model.makeTemplate(e)}) {Text(getString(R.string.template_save))}
             if(e.kind=="reminder") TextButton(onClick={model.save(e.copy(done=!e.done))}) {Text(getString(if(e.done) R.string.reminder_resume else R.string.reminder_pause))}
             if(e.kind=="reminder") TextButton(onClick={model.save(e.copy(expiry=LocalDate.now().plusDays(7).toString(),done=false))}) {Text(getString(R.string.reminder_snooze))}
@@ -275,7 +292,8 @@ class MainActivity:ComponentActivity() {
    if(wipe) AlertDialog(onDismissRequest={wipe=false},title={Text(androidx.compose.ui.res.stringResource(R.string.delete_all_records_1dcbbc))},text={Text(androidx.compose.ui.res.stringResource(R.string.all_kits_supplies_contacts_plans_reminders_and_c_bbd353))},confirmButton={TextButton(onClick={model.clear();wipe=false}) {Text(androidx.compose.ui.res.stringResource(R.string.delete_everything_71eb8a))}},dismissButton={TextButton(onClick={wipe=false}) {Text(androidx.compose.ui.res.stringResource(R.string.cancel_19766e))}})
    if(importing) AlertDialog(onDismissRequest={importing=false;backupPassword=""},title={Text(getString(R.string.msg_96276c8b3a4b))},text={Column {Text(getString(R.string.msg_591249e28bc1));Row(verticalAlignment=Alignment.CenterVertically) {Checkbox(importEncrypted,{importEncrypted=it});Text(getString(R.string.msg_f6a927e954b2))};if(importEncrypted) OutlinedTextField(backupPassword,{backupPassword=it},label={Text(getString(R.string.msg_3e39703b6e87))},visualTransformation=androidx.compose.ui.text.input.PasswordVisualTransformation())}},confirmButton={TextButton(onClick={importing=false;restore.launch(arrayOf("*/*"))}) {Text(getString(R.string.msg_b09c73d9d3f8))}},dismissButton={TextButton(onClick={importing=false;backupPassword=""}) {Text(getString(R.string.msg_19766ed6ccb2))}})
    pendingImport?.let {entries->AlertDialog(onDismissRequest={pendingImport=null},title={Text(getString(R.string.msg_3e69551e06f4 ,entries.size))},text={Text(getString(R.string.msg_4f1b416367bf))},confirmButton={TextButton(onClick={scope.launch {try {model.importCopies(entries);status=getString(R.string.msg_b749a0e44f52 ,entries.size)} catch(e:Exception) {status=getString(R.string.msg_a6ed8cd2316c)}};pendingImport=null}) {Text(getString(R.string.msg_f539a84db776))}},dismissButton={TextButton(onClick={pendingImport=null}) {Text(getString(R.string.msg_19766ed6ccb2))}})}
-   if(exportConfirm) AlertDialog(onDismissRequest={exportConfirm=false;backupPassword=""},title={Text(androidx.compose.ui.res.stringResource(R.string.review_export_contents_521854))},text={Column {Text(getString(R.string.msg_6793524957eb ,exportType));if(exportType=="ptb") OutlinedTextField(backupPassword,{backupPassword=it},label={Text(getString(R.string.msg_03cf154b18e2))},visualTransformation=androidx.compose.ui.text.input.PasswordVisualTransformation());Row(verticalAlignment=Alignment.CenterVertically) {Checkbox(sensitive,{sensitive=it});Text(androidx.compose.ui.res.stringResource(R.string.also_include_contacts_and_family_plans_331c8a))}}},confirmButton={TextButton(enabled=exportType!="ptb" || backupPassword.length>=12,onClick={exportConfirm=false;export.launch(getString(R.string.msg_dd73784cf848 ,LocalDate.now(),exportType))}) {Text(androidx.compose.ui.res.stringResource(R.string.choose_destination_5853e2))}},dismissButton={TextButton(onClick={exportConfirm=false;backupPassword=""}) {Text(androidx.compose.ui.res.stringResource(R.string.cancel_19766e))}})
+   if(previewReport) ReportPreview(ExportPolicy.select(records,ExportPolicy.Options(sensitive,includeNotes,includeLocations,includePhones,includeMembers)),{previewReport=false})
+   if(exportConfirm) AlertDialog(onDismissRequest={exportConfirm=false;backupPassword=""},title={Text(androidx.compose.ui.res.stringResource(R.string.review_export_contents_521854))},text={Column(Modifier.heightIn(max=420.dp).verticalScroll(rememberScrollState())) {Text(getString(R.string.msg_6793524957eb ,exportType));if(exportType=="ptb") OutlinedTextField(backupPassword,{backupPassword=it},label={Text(getString(R.string.msg_03cf154b18e2))},visualTransformation=androidx.compose.ui.text.input.PasswordVisualTransformation());ExportFieldOptions(includeNotes,{includeNotes=it},includeLocations,{includeLocations=it},includePhones,{includePhones=it},includeMembers,{includeMembers=it});Row(verticalAlignment=Alignment.CenterVertically) {Checkbox(sensitive,{sensitive=it},modifier=Modifier.testTag("export-sensitive"));Text(androidx.compose.ui.res.stringResource(R.string.also_include_contacts_and_family_plans_331c8a))};if(exportType=="pdf") TextButton(onClick={previewReport=true}) {Text(getString(R.string.report_preview))}}},confirmButton={TextButton(enabled=exportType!="ptb" || backupPassword.length>=12,onClick={exportConfirm=false;export.launch(getString(R.string.msg_dd73784cf848 ,LocalDate.now(),exportType))}) {Text(androidx.compose.ui.res.stringResource(R.string.choose_destination_5853e2))}},dismissButton={TextButton(onClick={exportConfirm=false;backupPassword=""}) {Text(androidx.compose.ui.res.stringResource(R.string.cancel_19766e))}})
    if(!onboarded) {var size by remember {mutableStateOf("1")};var region by remember {mutableStateOf(resources.configuration.locales[0].displayCountry)};AlertDialog(onDismissRequest={model.onboard("","")},title={Text(androidx.compose.ui.res.stringResource(R.string.welcome_to_preptrove_2fb668))},text={Column(verticalArrangement=Arrangement.spacedBy(12.dp)) {Text(androidx.compose.ui.res.stringResource(R.string.prepared_today_ready_for_tomorrow_your_records_s_5cbed1));OutlinedTextField(size,{size=it.filter{c->c.isDigit()}.take(2)},label={Text(androidx.compose.ui.res.stringResource(R.string.household_size_optional_73a7cf))});OutlinedTextField(region,{region=it},label={Text(androidx.compose.ui.res.stringResource(R.string.country_or_region_8d2360))});Text(androidx.compose.ui.res.stringResource(R.string.reminders_and_microphone_access_are_optional_and_121a8c))}},confirmButton={TextButton(onClick={model.onboard(size,region)}) {Text(androidx.compose.ui.res.stringResource(R.string.start_planning_655059))}},dismissButton={TextButton(onClick={model.onboard("","")}) {Text(androidx.compose.ui.res.stringResource(R.string.skip_28d035))}})}
   }
  }
@@ -286,7 +304,7 @@ class MainActivity:ComponentActivity() {
 @Composable fun EntryEditor(initial:Entry,kits:List<Entry>,onClose:()->Unit,onSave:(Entry)->Unit) {
  val editorContext=androidx.compose.ui.platform.LocalContext.current
  fun getString(id:Int,vararg args:Any):String=editorContext.getString(id,*args)
- var title by remember {mutableStateOf(initial.title)};var detail by remember {mutableStateOf(initial.detail)};var quantity by remember {mutableStateOf(LocalNumbers.input(initial.quantity,editorContext.resources.configuration.locales[0]))};var unit by remember {mutableStateOf(initial.unit)};var date by remember {mutableStateOf(initial.expiry)};var location by remember {mutableStateOf(initial.location)};var category by remember {mutableStateOf(initial.category)};var kit by remember {mutableStateOf(initial.kitId)};var error by remember {mutableStateOf("")};var extraData by remember {mutableStateOf(initial.extraData)};var purchased by remember {mutableStateOf(initial.purchasedDate)};var interval by remember {mutableStateOf(initial.intervalDays.toString())}
+ var title by rememberSaveable(initial.id) {mutableStateOf(initial.title)};var detail by rememberSaveable(initial.id) {mutableStateOf(initial.detail)};var quantity by rememberSaveable(initial.id) {mutableStateOf(LocalNumbers.input(initial.quantity,editorContext.resources.configuration.locales[0]))};var unit by rememberSaveable(initial.id) {mutableStateOf(initial.unit)};var date by rememberSaveable(initial.id) {mutableStateOf(initial.expiry)};var location by rememberSaveable(initial.id) {mutableStateOf(initial.location)};var category by rememberSaveable(initial.id) {mutableStateOf(initial.category)};var kit by rememberSaveable(initial.id) {mutableStateOf(initial.kitId)};var error by rememberSaveable(initial.id) {mutableStateOf("")};var extraData by rememberSaveable(initial.id) {mutableStateOf(initial.extraData)};var purchased by rememberSaveable(initial.id) {mutableStateOf(initial.purchasedDate)};var interval by rememberSaveable(initial.id) {mutableStateOf(initial.intervalDays.toString())}
  AlertDialog(onDismissRequest=onClose,title={Text(if(initial.title.isEmpty()) getString(R.string.msg_df4fe91a7edb ,kindLabel(editorContext,initial.kind)) else getString(R.string.msg_261e9c17ca74 ,kindLabel(editorContext,initial.kind)))},text={Column(Modifier.heightIn(max=460.dp).verticalScroll(rememberScrollState()),verticalArrangement=Arrangement.spacedBy(12.dp)) {
   OutlinedTextField(title,{title=it},label={Text(androidx.compose.ui.res.stringResource(R.string.name_dcd1d5))},singleLine=true)
   OutlinedTextField(detail,{detail=it},label={Text(if(initial.kind=="contact") getString(R.string.msg_fe367046458e) else getString(R.string.msg_774de0ec6b19))},minLines=3)

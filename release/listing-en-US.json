@@ -1,0 +1,13 @@
+{
+  "locale": "en-US",
+  "displayTitle": "PrepTrove Emergency Kit and Family Planner",
+  "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
+  "longDescription": "Prepared today. Ready for tomorrow.\n\nPrepTrove helps you organize emergency supplies and practical household plans in one place. Saved records work offline, and core planning does not require a separate account.\n\nBUILD AND REVIEW YOUR KITS\nCreate emergency kits, record storage locations, and organize supplies with quantities, notes, optional photos, purchase dates, and recorded expiration dates. Save reusable templates and review items that need attention.\n\nPLAN TOGETHER\nRecord household members or nicknames, meeting points, communication arrangements, pet needs, accessibility considerations, and check-in procedures. Enter important contacts manually without granting access to your device contact list.\n\nKEEP CHECKLISTS AND REMINDERS\nCreate editable checklist tasks and schedule inspection or replacement reminders. Recurring reviews, snooze, pause, and local completion history help you maintain your records. Notification timing depends on the operating system and device settings.\n\nKEEP CONTROL OF YOUR INFORMATION\nRecords stay in the app's private device storage. Export printable PDF reports, inventory CSV files, or JSON records to a destination you choose. Password-protected PTB backups are also available. Photos and completion history are not included in backups. Optional app lock uses your device's screen-lock credential; it does not add database encryption.\n\nOPTIONAL VOICE TOOLS\nUse push-to-talk or typed English commands to help navigate and add supplies. Recognition and spoken feedback depend on installed device services and may require internet access. PrepTrove does not save microphone recordings.\n\nIMPORTANT\nPrepTrove is a planning companion, not an emergency alert system or a replacement for emergency services or official guidance. Completing a checklist does not guarantee safety. The saved reference summary currently covers general UK planning guidance; it is not live information.\n\nAvailable interface resource variants: English (UK), English (US), and English (Australia). Other languages remain under development. Premium checkout is not enabled in this version.",
+  "status": "saved in Amazon draft; owner review pending",
+  "observedLimits": {
+    "displayTitle": 200,
+    "shortDescription": 1200,
+    "longDescription": 4000,
+    "featureBullets": 10
+  }
+}
