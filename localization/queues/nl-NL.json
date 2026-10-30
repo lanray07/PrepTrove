@@ -1473,6 +1473,24 @@
       "reviewed": false,
       "safetyReviewRequired": false
     },
+    "reminders_disable": {
+      "source": "Disable reminder notifications",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "reminders_disabled": {
+      "source": "Reminder notifications are off. Your saved reminders remain available.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "reminders_blocked": {
+      "source": "Reminders are enabled in PrepTrove, but notifications are blocked in device settings.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
     "reminders_due.one": {
       "source": "%d saved reminder is due. Open your planner to review.",
       "translation": null,

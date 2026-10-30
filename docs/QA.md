@@ -127,3 +127,14 @@ APK SHA-256: `59006f688af27cb84850cde92efc1267fa613ffce1100aab59731712cafdd470`
 - There are 251 catalogue entries per locale including plural forms. Three source English variants are generated; the other 19 remain pending. The saved Amazon description now matches the optional history backup behavior.
 
 The final rerun also verifies the fixed export-history selection snapshot and uniquely scoped kit/supply/plan searches. All 27 recorded device cases completed with zero failures/errors and the one expected screenshot-only skip.
+
+
+## Document providers and reminder opt-in — 30 October 2026
+
+- Final debug and unsigned release builds, JVM suite, lint and full physical Fire suite passed. JVM: 11 passed. KFTRWI / Fire OS 7.3.3.1 / API 28: 32 tests recorded, 31 passed, one screenshot-only test skipped, zero failures/errors. Seven Python tooling tests passed. Lint severity totals: {'Warning': 62, 'Hint': 1}; no errors/fatals.
+- A cross-process test ContentProvider with synthetic fixtures exercised encrypted restore and selected-history filtering, wrong-password rejection, CSV/JSON/PDF streams, invalid-format non-truncation, oversized input and missing documents. Non-content URIs were rejected without changing an existing app-local fixture. The production UI uses this tested PlannerDocuments path.
+- The fixture is Java because the standalone test-provider process does not inherit the target APK's Kotlin runtime. It is only in the test APK, restricts callers to target/test UIDs and cannot appear in the release manifest; the bundle checker rejects that component or authority.
+- Native NotificationManager checks passed for initial opt-out, localized singular/plural count text, replacement, empty-due cancellation and disable cancellation. The test used a unique tag and removed its own notice. The API 28 UI test enabled the persisted setting, recreated the activity and disabled it; it restored the original setting afterward. Real API 33+ permission dialogs and long-running delivery remain manual checks.
+- A single-job rerun followed an initial overlapping-build file lock. Another run exposed the test fixture's missing Kotlin runtime; conversion to Java resolved it. No tests or production gates were bypassed.
+- Source catalogue: 254 entries per locale including plural forms. Three source English variants remain available; the other 19 queues still await provider/human review.
+- Latest unsigned APK SHA-256: `a3decd2297ce5b4efdcafdd41de9bf04a976b8c63f04cc2c7b214a32f4c78e11`. The package remains unsigned, non-debuggable and compiled with purchases disabled. The report records all packaged file hashes and verifies the test provider is absent.

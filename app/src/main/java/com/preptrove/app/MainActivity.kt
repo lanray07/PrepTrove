@@ -111,6 +111,7 @@ class MainActivity:ComponentActivity() {
  @Composable fun Planner(model:PlannerModel=viewModel()) {
   val records by model.records.collectAsStateWithLifecycle()
   val reviews by model.reviews.collectAsStateWithLifecycle()
+  val remindersEnabled by model.remindersEnabled.collectAsStateWithLifecycle()
   val billing=(application as PrepTrove).billing
   val purchase by billing.state.collectAsStateWithLifecycle()
   val onboarded by model.onboarded.collectAsStateWithLifecycle()
@@ -141,15 +142,14 @@ class MainActivity:ComponentActivity() {
   var sensitive by rememberSaveable { mutableStateOf(false) }
   var status by rememberSaveable { mutableStateOf("") }
   val permission=rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted->if(granted) listen({command=it},{listening=it}) else {response=getString(R.string.msg_16cfda4cd82d)} }
-  val notifications=rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { status=if(it) getString(R.string.msg_4bd4c7b77408) else getString(R.string.msg_52df1e1e5c92) }
+  val notifications=rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { model.setRemindersEnabled(it);status=if(it) getString(R.string.msg_4bd4c7b77408) else getString(R.string.msg_52df1e1e5c92) }
   val restore=rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri->
    if(uri!=null) scope.launch {
     status=getString(R.string.msg_e72fbb36b74a)
     val password=backupPassword.toCharArray();backupPassword=""
     try {
      val restored=kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
-      val bytes=contentResolver.openInputStream(uri)?.use {it.readBytesLimited(BackupCrypto.MAX_BYTES)} ?: error(getString(R.string.msg_ca8f3e592a42))
-      BackupCodec.decodeSnapshotCopies(if(importEncrypted) BackupCrypto.decrypt(bytes,password) else bytes)
+      PlannerDocuments.read(this@MainActivity,uri,importEncrypted,password)
      }
      pendingImport=restored;status=getString(R.string.msg_8c5bd585f189)
     } catch(e:Exception) {status=getString(R.string.msg_6cf8046d34d7)} finally {password.fill('\u0000')}
@@ -163,17 +163,7 @@ class MainActivity:ComponentActivity() {
     val password=backupPassword.toCharArray();backupPassword=""
     try {
      kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
-      require(format in listOf("csv","json","ptb","pdf"))
-      val snapshot=model.backupSnapshot()
-      val chosen=ExportPolicy.select(snapshot.entries,options)
-      val history=if(historyEnabled) snapshot.reviews else emptyList()
-      val backupBytes=when(format) {"json"->BackupCodec.encode(chosen,history);"ptb"->BackupCrypto.encrypt(BackupCodec.encode(chosen,history),password);else->null}
-      contentResolver.openOutputStream(uri)?.use {stream->when(format) {
-       "csv"->stream.write(Inventory.csv(chosen).toByteArray())
-       "json"->stream.write(backupBytes!!)
-       "ptb"->stream.write(backupBytes!!)
-       "pdf"->PdfReports.write(this@MainActivity,chosen,stream)
-      }} ?: error("Destination unavailable")
+      PlannerDocuments.write(this@MainActivity,uri,model.backupSnapshot(),format,options,historyEnabled,password)
      }
      status=getString(R.string.msg_3b92ecba1a57)
     } catch(e:Exception) {status=getString(R.string.msg_e82ead9f0716)} finally {password.fill('\u0000')}
@@ -236,7 +226,7 @@ class MainActivity:ComponentActivity() {
           item {Text(androidx.compose.ui.res.stringResource(R.string.private_by_default_f52e06),fontSize=26.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.no_account_ads_analytics_location_tracking_or_au_75a32c))}
           item {Row(verticalAlignment=Alignment.CenterVertically) {Switch(checked=dark,onCheckedChange={model.setDarkTheme(it)});Text(androidx.compose.ui.res.stringResource(R.string.dark_theme_3f11a5))} }
           item {Text(androidx.compose.ui.res.stringResource(R.string.interface_english_preview_other_languages_are_pe_364f22))}
-          item {Button(onClick={if(android.os.Build.VERSION.SDK_INT>=33) notifications.launch(Manifest.permission.POST_NOTIFICATIONS) else status=getString(R.string.msg_182831393f70)}) {Text(androidx.compose.ui.res.stringResource(R.string.enable_optional_reminders_4af429))} }
+          item {Button(onClick={if(remindersEnabled) {model.setRemindersEnabled(false);status=getString(R.string.reminders_disabled)} else if(android.os.Build.VERSION.SDK_INT>=33) notifications.launch(Manifest.permission.POST_NOTIFICATIONS) else {model.setRemindersEnabled(true);status=getString(if(getSystemService(android.app.NotificationManager::class.java).areNotificationsEnabled()) R.string.msg_4bd4c7b77408 else R.string.reminders_blocked)}}) {Text(getString(if(remindersEnabled) R.string.reminders_disable else R.string.enable_optional_reminders_4af429))} }
           item {Text(androidx.compose.ui.res.stringResource(R.string.reminders_are_checked_periodically_usually_daily_226139))}
           item {Text(androidx.compose.ui.res.stringResource(R.string.exports_2f4dcf),fontSize=22.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.exports_are_unencrypted_review_the_included_info_14b601))}
           item {Row {listOf("pdf","csv","json","ptb").forEach {type->TextButton(onClick={exportType=type;exportConfirm=true;backupPassword=""}) {Text(type.uppercase())}}} }
@@ -326,11 +316,7 @@ class MainActivity:ComponentActivity() {
  }},confirmButton={TextButton(onClick={val q=LocalNumbers.parse(quantity,editorContext.resources.configuration.locales[0]);error=when {title.isBlank()->getString(R.string.msg_099f9079ba79);title.length>500 || detail.length>20000 || extraData.length>20000 || category.length>20000 || location.length>20000 || unit.length>20000->getString(R.string.record_too_long);q==null||!q.isFinite()||q<0->getString(R.string.msg_d81b36d718f3);purchased.isNotEmpty()&&runCatching {LocalDate.parse(purchased)}.isFailure->getString(R.string.msg_032613d09381);interval.toIntOrNull()==null || interval.toInt() !in 0..3650->getString(R.string.reminder_interval_error);date.isNotEmpty()&&runCatching {LocalDate.parse(date)}.isFailure->getString(R.string.msg_032613d09381);else->""};if(error.isEmpty()) onSave(initial.copy(title=title.trim(),detail=detail,quantity=q!!,unit=unit,expiry=date,location=location,category=category,kitId=kit,extraData=extraData,purchasedDate=purchased,intervalDays=interval.toInt()))}) {Text(androidx.compose.ui.res.stringResource(R.string.save_1509f5))}},dismissButton={TextButton(onClick=onClose) {Text(androidx.compose.ui.res.stringResource(R.string.cancel_19766e))}})
 }
 
-private fun java.io.InputStream.readBytesLimited(limit:Int):ByteArray {
- val out=java.io.ByteArrayOutputStream();val buffer=ByteArray(8192)
- while(true) {val count=read(buffer);if(count<0) break;require(out.size()+count<=limit);out.write(buffer,0,count)}
- return out.toByteArray()
-}
+
 
 private fun android.content.Context.displayDate(value:String):String=runCatching {
  java.time.LocalDate.parse(value).format(java.time.format.DateTimeFormatter.ofLocalizedDate(java.time.format.FormatStyle.MEDIUM).withLocale(resources.configuration.locales[0]))

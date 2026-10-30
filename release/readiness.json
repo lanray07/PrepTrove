@@ -2,11 +2,11 @@
   "productionReady": false,
   "remaining": [
     "amazonCatalogueAndVerifiedReceipts: App-specific public key installed; owner SKU, App Tester results, RVS policy and commercial limits remain pending. Checkout stays disabled.",
-    "deviceCompatibilityAndVoice: 26 physical Fire instrumentation checks passed, including portrait preview, 200% text/mirrored-layout Settings smoke and missing-recognizer fallback. Real TalkBack, broader RTL/layout coverage, speech engines, credential entry and notification timing remain pending; API 36 emulator lacks host hypervisor driver.",
+    "deviceCompatibilityAndVoice: 31 Fire instrumentation checks passed, including persisted reminder opt-in and actual notification post/replace/clear, portrait preview, 200% text/RTL smoke and voice fallback. API 33+ prompts, TalkBack, real speech/credential flows, long-running delivery and more devices remain pending; API 36 emulator lacks host driver.",
     "localisedScreenshotsAndMetadata: 24 actual tablet captures across three English variants; English (U.S.) listing saved. Marketing approval and additional translated listing languages remain pending.",
     "regionalSafetyReview: Obtain qualified country-specific review; no automatically translated safety packs.",
     "publisherLegalAndSupport: Publisher name O.Bankole and support email supplied; GitHub privacy/deletion pages linked. Publisher country, legal/trademark review and support delivery verification remain pending.",
-    "functionalCompleteness: Opt-in completion-history JSON/PTB backups, filtered history, fresh copy IDs, atomic restore and encrypted round trip tested. Photo pixels remain excluded; full document-provider and device acceptance remain pending.",
+    "functionalCompleteness: Provider-stream JSON/PTB/CSV/PDF I/O, file-URI rejection, selected-history restore and atomic import tested with synthetic cross-process fixtures. Real file-picker/cloud-provider and lock/process-death acceptance remain pending. Photo pixels remain excluded.",
     "ownerReleaseApproval: No keystore available; owner requested unsigned review bundle. Final signing, territories, legal/listing review and submission approval remain pending.",
     "Translation review incomplete: ar",
     "Release reviewer and safety sign-off missing: ar",

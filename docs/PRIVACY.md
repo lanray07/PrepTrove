@@ -4,7 +4,7 @@ PrepTrove stores the records you enter in its private application storage on thi
 
 Microphone access is optional and is used only when you start voice recognition. Recognition is provided by a device service that may process audio over the internet under its own terms. PrepTrove does not retain microphone recordings. Spoken plan content may be heard by nearby people. TTS may use installed provider services.
 
-Notifications are optional. Due reminders are periodically checked on the device. Timing depends on operating system restrictions.
+Reminder notifications are off until you enable them in PrepTrove Settings. You can disable them again without deleting saved reminders. The choice stays on this device and is not enabled by a restored backup. Due reminders are checked periodically, with additional best-effort refreshes after reminder changes. Notices contain a generic title and due count, without household names, notes, locations or record titles. Empty or disabled notices are cleared. Timing and availability depend on operating system restrictions and notification settings.
 
 Exports are created only when you choose a destination. PDF, CSV and JSON files are not encrypted. PTB backup files use password-protected encryption; the password cannot be recovered. Contacts and family plans are excluded unless you select them; notes in other categories may also contain personal information. Destination providers may sync files according to their settings. PrepTrove does not upload records on its own.
 

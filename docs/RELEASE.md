@@ -67,3 +67,12 @@ JSON/PTB export now offers an unchecked completion-history option. Only events b
 The physical Fire suite now covers encrypted history round trip, excluded-record history, fresh identifiers, invalid history, transaction rollback, 200% text with a mirrored Settings layout and the no-recognition-service typed-input fallback. These are targeted mechanical tests, not a full TalkBack, Arabic translation or global accessibility review. PDF temporary-file allocation failures now use the existing error screen, and page controls can scroll horizontally when text needs more room. See [voice capability boundaries](VOICE.md).
 
 The Amazon English draft description has been saved with the updated optional-history disclosure. Existing accepted screenshots still show implemented screens; the unchanged capture files remain marked for human marketing review. No binary upload, signing, purchase or final submission occurred.
+
+
+## Document I/O and reminder controls — 30 October 2026
+
+PlannerDocuments centralizes bounded provider reads, validated export encoding and streaming. Tests use a real Android ContentProvider in the test APK with synthetic records. The provider is restricted to the target/test UIDs, has no picker intent filter, and must be absent from the release manifest. This is a framework/provider integration check; system picker and cloud-provider acceptance remain open.
+
+Reminder notifications now require an explicit, persisted Settings opt-in, defaulting off when no choice exists. OS permission is requested only when enabling on API 33+. Turning off clears the notice. Empty due lists also clear it, and model changes request an additional best-effort refresh. Preference changes and worker publication are serialized within the app process. Earlier preview users need to enable the new persisted choice; saved reminder records are preserved. See NOTIFICATIONS.md for OS/delivery boundaries.
+
+The unsigned review bundle now includes NOTIFICATIONS.md and verifies that no test document-provider component appears in the actual release manifest. Purchases remain compiled off. No production keystore, signed build, binary upload or final submission is created by this work.

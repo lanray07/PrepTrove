@@ -79,17 +79,21 @@ class PlannerModel(app:Application):AndroidViewModel(app) {
  suspend fun backupSnapshot():BackupSnapshot = dao.backupSnapshot()
  val records=dao.observe().stateIn(viewModelScope,SharingStarted.WhileSubscribed(5000),emptyList())
  val reviews=dao.reviews().stateIn(viewModelScope,SharingStarted.WhileSubscribed(5000),emptyList())
- fun complete(e:Entry)=viewModelScope.launch {dao.complete(e,LocalDate.now().toString())}
+ fun complete(e:Entry)=viewModelScope.launch {dao.complete(e,LocalDate.now().toString());ReminderWorker.refresh(getApplication())}
  fun makeTemplate(e:Entry)=viewModelScope.launch {dao.makeTemplate(e)}
- fun useTemplate(e:Entry)=viewModelScope.launch {dao.useTemplate(e)}
+ fun useTemplate(e:Entry)=viewModelScope.launch {dao.useTemplate(e);ReminderWorker.refresh(getApplication())}
  val darkTheme=app.preferences.data.map { it[booleanPreferencesKey("darkTheme")] ?: false }.stateIn(viewModelScope,SharingStarted.Eagerly,false)
  fun setDarkTheme(value:Boolean)=viewModelScope.launch { getApplication<Application>().preferences.edit { it[booleanPreferencesKey("darkTheme")]=value } }
+ val remindersEnabled=app.preferences.data.map {it[booleanPreferencesKey("remindersEnabled")] ?: false}.stateIn(viewModelScope,SharingStarted.Eagerly,false)
+ fun setRemindersEnabled(value:Boolean)=viewModelScope.launch {
+  ReminderWorker.setEnabled(getApplication(),value)
+ }
  val onboarded=app.preferences.data.map { it[booleanPreferencesKey("onboarded")] ?: false }.stateIn(viewModelScope,SharingStarted.Eagerly,false)
- fun save(e:Entry)=viewModelScope.launch { dao.save(e) }
- fun remove(e:Entry)=viewModelScope.launch { dao.remove(e) }
- suspend fun importCopies(entries:List<Entry>) { dao.importCopies(entries) }
- suspend fun importSnapshot(snapshot:BackupSnapshot) {dao.importSnapshot(snapshot)}
- fun clear()=viewModelScope.launch { getApplication<Application>().dbClear() ;getApplication<Application>().preferences.edit {it.remove(stringPreferencesKey("household"));it.remove(stringPreferencesKey("region"))} }
+ fun save(e:Entry)=viewModelScope.launch { dao.save(e);ReminderWorker.refresh(getApplication()) }
+ fun remove(e:Entry)=viewModelScope.launch { dao.remove(e);ReminderWorker.refresh(getApplication()) }
+ suspend fun importCopies(entries:List<Entry>) { dao.importCopies(entries);ReminderWorker.refresh(getApplication()) }
+ suspend fun importSnapshot(snapshot:BackupSnapshot) {dao.importSnapshot(snapshot);ReminderWorker.refresh(getApplication())}
+ fun clear()=viewModelScope.launch { getApplication<Application>().dbClear() ;getApplication<Application>().preferences.edit {it.remove(stringPreferencesKey("household"));it.remove(stringPreferencesKey("region"))};ReminderWorker.setEnabled(getApplication(),false) }
  fun onboard(size:String,region:String)=viewModelScope.launch { getApplication<Application>().preferences.edit { it[booleanPreferencesKey("onboarded")]=true;it[stringPreferencesKey("household")]=size;it[stringPreferencesKey("region")]=region } }
 }
 object Inventory {

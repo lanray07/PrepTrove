@@ -30,5 +30,6 @@
   "publisherName": "O.Bankole",
   "publisherCountry": null,
   "signingStatus": "No production keystore available; owner requested unsigned review package",
-  "submissionBundle": "artifacts/amazon-review.zip; unsigned review only"
+  "submissionBundle": "artifacts/amazon-review.zip; unsigned review only",
+  "unsignedPackageStatus": "Refreshed 2026-10-30; persisted reminder controls, provider-stream tests and test-provider exclusion verified. No APK upload or final submission."
 }

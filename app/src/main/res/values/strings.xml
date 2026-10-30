@@ -247,4 +247,7 @@
 <string name="export_history">Include completion history for the selected records</string>
 <plurals name="restore_reviews"><item quantity="one">This backup also contains %d completion-history event. It will be restored as a new copy with its record.</item><item quantity="other">This backup also contains %d completion-history events. They will be restored as new copies with their records.</item></plurals>
 <string name="voice_tts_unavailable">Spoken output is not available right now. Read the response on screen, or check your installed text-to-speech service and language settings.</string>
+<string name="reminders_disable">Disable reminder notifications</string>
+<string name="reminders_disabled">Reminder notifications are off. Your saved reminders remain available.</string>
+<string name="reminders_blocked">Reminders are enabled in PrepTrove, but notifications are blocked in device settings.</string>
 </resources>

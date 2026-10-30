@@ -45,3 +45,6 @@ Database version 2 adds structured household/contact fields, supply purchase dat
 ## Amazon review package
 
 Run `python tools/submission_bundle.py` after the validation commands in [the submission handoff](docs/AMAZON-SUBMISSION.md). It produces an unsigned review ZIP, checksum and report in ignored `artifacts/`. It checks the actual APK identity, debug flag, permissions, ZIP alignment, unsigned status, checkout build setting and screenshot hashes; failing test/lint evidence blocks assembly. CI uploads this review package automatically. A generated package does not close legal, translation, signing, real-store or device acceptance gates.
+
+
+Reminder notifications now have a persistent Settings opt-in and disable action; they default off until enabled, including after upgrading an earlier preview without a saved choice. Generic count-only notices clear when off or no longer due, and data changes request a best-effort refresh. See [notification behavior and acceptance boundaries](docs/NOTIFICATIONS.md). Document I/O is covered through a synthetic cross-process provider; real picker/cloud-provider and credential-lock acceptance remain open.

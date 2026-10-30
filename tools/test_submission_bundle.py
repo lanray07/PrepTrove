@@ -2,10 +2,15 @@ import hashlib
 import tempfile
 import unittest
 from pathlib import Path
-from submission_bundle import validate_badging, validate_screenshots, test_summary
+from submission_bundle import validate_badging, validate_screenshots, test_summary, validate_release_manifest
 
 
 class SubmissionValidation(unittest.TestCase):
+    def test_release_rejects_document_test_components(self):
+        validate_release_manifest('Application MainActivity')
+        for value in ['provider com.preptrove.app.QaDocumentProvider', 'authority com.preptrove.app.test.documents']:
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                validate_release_manifest(value)
     BADGING = """package: name='com.preptrove.app' versionCode='1'
 sdkVersion:'26'
 targetSdkVersion:'35'

@@ -5,7 +5,7 @@
   },
   "deviceCompatibilityAndVoice": {
     "status": "pending",
-    "evidence": "26 physical Fire instrumentation checks passed, including portrait preview, 200% text/mirrored-layout Settings smoke and missing-recognizer fallback. Real TalkBack, broader RTL/layout coverage, speech engines, credential entry and notification timing remain pending; API 36 emulator lacks host hypervisor driver."
+    "evidence": "31 Fire instrumentation checks passed, including persisted reminder opt-in and actual notification post/replace/clear, portrait preview, 200% text/RTL smoke and voice fallback. API 33+ prompts, TalkBack, real speech/credential flows, long-running delivery and more devices remain pending; API 36 emulator lacks host driver."
   },
   "localisedScreenshotsAndMetadata": {
     "status": "pending",
@@ -21,7 +21,7 @@
   },
   "functionalCompleteness": {
     "status": "pending",
-    "evidence": "Opt-in completion-history JSON/PTB backups, filtered history, fresh copy IDs, atomic restore and encrypted round trip tested. Photo pixels remain excluded; full document-provider and device acceptance remain pending."
+    "evidence": "Provider-stream JSON/PTB/CSV/PDF I/O, file-URI rejection, selected-history restore and atomic import tested with synthetic cross-process fixtures. Real file-picker/cloud-provider and lock/process-death acceptance remain pending. Photo pixels remain excluded."
   },
   "ownerReleaseApproval": {
     "status": "pending",

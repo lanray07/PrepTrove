@@ -243,5 +243,8 @@
   "support_deletion": "Data deletion instructions (opens GitHub)",
   "support_browser_missing": "No browser is available. View the PrepTrove privacy and deletion pages in the GitHub repository on another device.",
   "export_history": "Include completion history for the selected records",
-  "voice_tts_unavailable": "Spoken output is not available right now. Read the response on screen, or check your installed text-to-speech service and language settings."
+  "voice_tts_unavailable": "Spoken output is not available right now. Read the response on screen, or check your installed text-to-speech service and language settings.",
+  "reminders_disable": "Disable reminder notifications",
+  "reminders_disabled": "Reminder notifications are off. Your saved reminders remain available.",
+  "reminders_blocked": "Reminders are enabled in PrepTrove, but notifications are blocked in device settings."
 }

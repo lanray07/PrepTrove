@@ -42,3 +42,6 @@ Only allowlisted app assets and documents are bundled. Keystores, passwords, env
 
 
 Latest functionality: completion-history backup is an explicit JSON/PTB option, with selected-record filtering and atomic copy-based restore. The saved Amazon English draft has been updated to match. Photos remain excluded. See BACKUP.md and VOICE.md for format and service boundaries.
+
+
+Reminder notifications now have a persistent in-app opt-in and an off action; prior preview users must enable the new saved choice. The unsigned package includes NOTIFICATIONS.md. Provider-stream integration tests use synthetic content in a test-only component; this does not replace real picker/cloud-provider or app-lock testing. The package checker verifies that the component is absent from the actual release manifest.
