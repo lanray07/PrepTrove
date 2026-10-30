@@ -6,6 +6,8 @@ import android.os.ParcelFileDescriptor
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.ui.Modifier
@@ -39,9 +41,10 @@ private data class PreviewResult(val page:PreviewPage?=null,val failed:Boolean=f
 @Composable fun ReportPreview(entries:List<Entry>,onClose:()->Unit) {
  val context=LocalContext.current
  var page by rememberSaveable {mutableStateOf(0)}
- val file=remember(entries) {File.createTempFile("preptrove-preview-",".pdf",context.cacheDir)}
- DisposableEffect(file) {onDispose {file.delete()}}
+ val file=remember(entries) {runCatching {File.createTempFile("preptrove-preview-",".pdf",context.cacheDir)}.getOrNull()}
+ DisposableEffect(file) {onDispose {file?.delete()}}
  val preview by produceState(PreviewResult(),file,page) {
+  if(file==null) {value=PreviewResult(failed=true);return@produceState}
   value=PreviewResult()
   value=withContext(Dispatchers.IO) {try {
    if(file.length()==0L)file.outputStream().use {PdfReports.write(context,entries,it)}
@@ -53,7 +56,7 @@ private data class PreviewResult(val page:PreviewPage?=null,val failed:Boolean=f
   Surface(Modifier.fillMaxSize()) {Column(Modifier.padding(20.dp)) {
    Row {Text(stringResource(R.string.report_preview),modifier=Modifier.weight(1f));TextButton(onClick=onClose,modifier=Modifier.testTag("report-close")) {Text(stringResource(R.string.language_close))}}
    preview.page?.let {value->
-    Row {TextButton(enabled=value.index>0,onClick={page=value.index-1}) {Text(stringResource(R.string.report_previous))};Text(stringResource(R.string.report_page,value.index+1,value.count));TextButton(enabled=value.index+1<value.count,onClick={page=value.index+1}) {Text(stringResource(R.string.report_next))}}
+    Row(Modifier.horizontalScroll(rememberScrollState())) {TextButton(enabled=value.index>0,onClick={page=value.index-1}) {Text(stringResource(R.string.report_previous))};Text(stringResource(R.string.report_page,value.index+1,value.count));TextButton(enabled=value.index+1<value.count,onClick={page=value.index+1}) {Text(stringResource(R.string.report_next))}}
     Image(value.image.asImageBitmap(),stringResource(R.string.report_preview),modifier=Modifier.fillMaxSize())
    } ?: Text(stringResource(if(preview.failed) R.string.report_error else R.string.report_loading))
   }}

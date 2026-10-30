@@ -7,6 +7,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.material3.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 @Composable fun ExportFieldOptions(notes:Boolean,onNotes:(Boolean)->Unit,locations:Boolean,onLocations:(Boolean)->Unit,phones:Boolean,onPhones:(Boolean)->Unit,members:Boolean,onMembers:(Boolean)->Unit) {
  Column {
   Text(stringResource(R.string.export_field_warning))
@@ -16,4 +17,4 @@ import androidx.compose.ui.res.stringResource
   ExportFieldToggle(members,onMembers,R.string.export_members)
  }
 }
-@Composable private fun ExportFieldToggle(value:Boolean,onChange:(Boolean)->Unit,label:Int) {Row(Modifier.fillMaxWidth().toggleable(value=value,role=Role.Checkbox,onValueChange=onChange),verticalAlignment=Alignment.CenterVertically) {Checkbox(value,null);Text(stringResource(label))}}
+@Composable fun ExportFieldToggle(value:Boolean,onChange:(Boolean)->Unit,label:Int,modifier:Modifier=Modifier) {Row(modifier.fillMaxWidth().heightIn(min=48.dp).toggleable(value=value,role=Role.Checkbox,onValueChange=onChange),verticalAlignment=Alignment.CenterVertically) {Checkbox(value,null);Text(stringResource(label))}}

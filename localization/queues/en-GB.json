@@ -862,8 +862,8 @@
       "safetyReviewRequired": false
     },
     "msg_6793524957eb": {
-      "source": "%1$s export includes selected saved records and templates. Notes may contain personal information. Photos and completion history are not included in backups. JSON can be restored as new copies. PTB backups require a password that cannot be recovered.",
-      "translation": "%1$s export includes selected saved records and templates. Notes may contain personal information. Photos and completion history are not included in backups. JSON can be restored as new copies. PTB backups require a password that cannot be recovered.",
+      "source": "%1$s export includes selected saved records and templates. Notes may contain personal information. Photos are not included. Completion history is included in JSON/PTB backups only when selected and may contain earlier record titles. JSON can be restored as new copies. PTB backups require a password that cannot be recovered.",
+      "translation": "%1$s export includes selected saved records and templates. Notes may contain personal information. Photos are not included. Completion history is included in JSON/PTB backups only when selected and may contain earlier record titles. JSON can be restored as new copies. PTB backups require a password that cannot be recovered.",
       "reviewed": true,
       "safetyReviewRequired": false
     },
@@ -1461,6 +1461,18 @@
       "reviewed": true,
       "safetyReviewRequired": false
     },
+    "export_history": {
+      "source": "Include completion history for the selected records",
+      "translation": "Include completion history for the selected records",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "voice_tts_unavailable": {
+      "source": "Spoken output is not available right now. Read the response on screen, or check your installed text-to-speech service and language settings.",
+      "translation": "Spoken output is not available right now. Read the response on screen, or check your installed text-to-speech service and language settings.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
     "reminders_due.one": {
       "source": "%d saved reminder is due. Open your planner to review.",
       "translation": "%d saved reminder is due. Open your planner to review.",
@@ -1482,6 +1494,18 @@
     "supplies_attention.other": {
       "source": "%d supplies expire within 30 days or are past their recorded dates.",
       "translation": "%d supplies expire within 30 days or are past their recorded dates.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "restore_reviews.one": {
+      "source": "This backup also contains %d completion-history event. It will be restored as a new copy with its record.",
+      "translation": "This backup also contains %d completion-history event. It will be restored as a new copy with its record.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "restore_reviews.other": {
+      "source": "This backup also contains %d completion-history events. They will be restored as new copies with their records.",
+      "translation": "This backup also contains %d completion-history events. They will be restored as new copies with their records.",
       "reviewed": true,
       "safetyReviewRequired": false
     }

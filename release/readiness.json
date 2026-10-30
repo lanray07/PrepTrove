@@ -2,11 +2,11 @@
   "productionReady": false,
   "remaining": [
     "amazonCatalogueAndVerifiedReceipts: App-specific public key installed; owner SKU, App Tester results, RVS policy and commercial limits remain pending. Checkout stays disabled.",
-    "deviceCompatibilityAndVoice: 21 physical Fire instrumentation checks passed, including portrait export preview. API 36 emulator unavailable: missing host hypervisor driver. TalkBack, large fonts, RTL, real speech engines, credential entry and notification delivery remain pending.",
+    "deviceCompatibilityAndVoice: 26 physical Fire instrumentation checks passed, including portrait preview, 200% text/mirrored-layout Settings smoke and missing-recognizer fallback. Real TalkBack, broader RTL/layout coverage, speech engines, credential entry and notification timing remain pending; API 36 emulator lacks host hypervisor driver.",
     "localisedScreenshotsAndMetadata: 24 actual tablet captures across three English variants; English (U.S.) listing saved. Marketing approval and additional translated listing languages remain pending.",
     "regionalSafetyReview: Obtain qualified country-specific review; no automatically translated safety packs.",
     "publisherLegalAndSupport: Publisher name O.Bankole and support email supplied; GitHub privacy/deletion pages linked. Publisher country, legal/trademark review and support delivery verification remain pending.",
-    "functionalCompleteness: Planner, field-level export, PDF preview, saved draft state and English voice commands implemented; media/history backups and full device acceptance remain pending.",
+    "functionalCompleteness: Opt-in completion-history JSON/PTB backups, filtered history, fresh copy IDs, atomic restore and encrypted round trip tested. Photo pixels remain excluded; full document-provider and device acceptance remain pending.",
     "ownerReleaseApproval: No keystore available; owner requested unsigned review bundle. Final signing, territories, legal/listing review and submission approval remain pending.",
     "Translation review incomplete: ar",
     "Release reviewer and safety sign-off missing: ar",

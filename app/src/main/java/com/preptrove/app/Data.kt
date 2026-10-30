@@ -18,6 +18,8 @@ data class Entry(@PrimaryKey val id:String=UUID.randomUUID().toString(), val kin
 data class ReviewEvent(@PrimaryKey val id:String=UUID.randomUUID().toString(),val entryId:String,val title:String,val completedOn:String)
 @Dao interface EntryDao {
  @Query("SELECT * FROM review_events ORDER BY completedOn DESC") fun reviews():Flow<List<ReviewEvent>>
+ @Query("SELECT * FROM review_events ORDER BY completedOn DESC") suspend fun allReviews():List<ReviewEvent>
+ @Transaction suspend fun backupSnapshot():BackupSnapshot = BackupSnapshot(all(),allReviews())
  @Query("DELETE FROM review_events") suspend fun clearReviews()
  @Query("DELETE FROM review_events WHERE entryId=:id") suspend fun deleteReviews(id:String)
  @Insert suspend fun insertReview(event:ReviewEvent)
@@ -43,6 +45,10 @@ data class ReviewEvent(@PrimaryKey val id:String=UUID.randomUUID().toString(),va
  @Query("DELETE FROM records WHERE id=:id") suspend fun delete(id:String)
  @Query("DELETE FROM records") suspend fun clear()
  @Transaction suspend fun importCopies(entries:List<Entry>) { entries.forEach { save(it) } }
+ @Transaction suspend fun importSnapshot(snapshot:BackupSnapshot) {
+  importCopies(snapshot.entries)
+  snapshot.reviews.forEach {insertReview(it)}
+ }
  @Transaction suspend fun remove(entry:Entry) { if(entry.kind=="kit") all().filter { it.kitId==entry.id }.forEach { if(entry.isTemplate && it.isTemplate) {deleteReviews(it.id);delete(it.id)} else save(it.copy(kitId="")) }; deleteReviews(entry.id); delete(entry.id) }
 }
 @Database(entities=[Entry::class,ReviewEvent::class],version=2,exportSchema=true)
@@ -70,6 +76,7 @@ class PlannerModel(app:Application):AndroidViewModel(app) {
  private val dao=(app as PrepTrove).db.entries()
  val backupPassword=androidx.compose.runtime.mutableStateOf("")
  suspend fun snapshot():List<Entry> = dao.all()
+ suspend fun backupSnapshot():BackupSnapshot = dao.backupSnapshot()
  val records=dao.observe().stateIn(viewModelScope,SharingStarted.WhileSubscribed(5000),emptyList())
  val reviews=dao.reviews().stateIn(viewModelScope,SharingStarted.WhileSubscribed(5000),emptyList())
  fun complete(e:Entry)=viewModelScope.launch {dao.complete(e,LocalDate.now().toString())}
@@ -81,6 +88,7 @@ class PlannerModel(app:Application):AndroidViewModel(app) {
  fun save(e:Entry)=viewModelScope.launch { dao.save(e) }
  fun remove(e:Entry)=viewModelScope.launch { dao.remove(e) }
  suspend fun importCopies(entries:List<Entry>) { dao.importCopies(entries) }
+ suspend fun importSnapshot(snapshot:BackupSnapshot) {dao.importSnapshot(snapshot)}
  fun clear()=viewModelScope.launch { getApplication<Application>().dbClear() ;getApplication<Application>().preferences.edit {it.remove(stringPreferencesKey("household"));it.remove(stringPreferencesKey("region"))} }
  fun onboard(size:String,region:String)=viewModelScope.launch { getApplication<Application>().preferences.edit { it[booleanPreferencesKey("onboarded")]=true;it[stringPreferencesKey("household")]=size;it[stringPreferencesKey("region")]=region } }
 }

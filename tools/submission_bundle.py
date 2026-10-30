@@ -125,7 +125,7 @@ def main():
     files = [apk, manifest_path, *screenshots,
              ROOT / 'assets/store/icon-512.png', ROOT / 'assets/store/icon-114.png',
              *[ROOT / 'release' / name for name in ['amazon-draft.json', 'listing-en-US.json', 'gates.json']],
-             *[ROOT / 'docs' / name for name in ['RELEASE.md', 'QA.md', 'PRIVACY.md', 'DATA-DELETION.md', 'BACKUP.md', 'AMAZON-BILLING.md', 'AMAZON-SUBMISSION.md']],
+             *[ROOT / 'docs' / name for name in ['RELEASE.md', 'QA.md', 'PRIVACY.md', 'DATA-DELETION.md', 'BACKUP.md', 'AMAZON-BILLING.md', 'AMAZON-SUBMISSION.md', 'VOICE.md']],
              ROOT / 'README.md',
              ROOT / 'localization/report.json']
     report = {'kind': 'unsigned_review_only', 'productionReady': False, 'signed': False,

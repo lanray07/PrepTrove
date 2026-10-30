@@ -142,7 +142,7 @@
   "msg_b749a0e44f52": "Restored %1$d records as new copies.",
   "msg_a6ed8cd2316c": "Restore failed. No records were imported.",
   "msg_f539a84db776": "Restore copies",
-  "msg_6793524957eb": "%1$s export includes selected saved records and templates. Notes may contain personal information. Photos and completion history are not included in backups. JSON can be restored as new copies. PTB backups require a password that cannot be recovered.",
+  "msg_6793524957eb": "%1$s export includes selected saved records and templates. Notes may contain personal information. Photos are not included. Completion history is included in JSON/PTB backups only when selected and may contain earlier record titles. JSON can be restored as new copies. PTB backups require a password that cannot be recovered.",
   "msg_03cf154b18e2": "Password (at least 12 characters)",
   "msg_dd73784cf848": "PrepTrove-%1$s.%2$s",
   "msg_8d23a6e37e0a": "United Kingdom",
@@ -241,5 +241,7 @@
   "voice_quantity_units": "These quantities use different units or cannot be combined. Review the supply details.",
   "support_privacy": "Privacy notice (opens GitHub)",
   "support_deletion": "Data deletion instructions (opens GitHub)",
-  "support_browser_missing": "No browser is available. View the PrepTrove privacy and deletion pages in the GitHub repository on another device."
+  "support_browser_missing": "No browser is available. View the PrepTrove privacy and deletion pages in the GitHub repository on another device.",
+  "export_history": "Include completion history for the selected records",
+  "voice_tts_unavailable": "Spoken output is not available right now. Read the response on screen, or check your installed text-to-speech service and language settings."
 }

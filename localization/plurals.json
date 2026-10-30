@@ -6,5 +6,9 @@
   "supplies_attention": {
     "one": "%d supply expires within 30 days or is past its recorded date.",
     "other": "%d supplies expire within 30 days or are past their recorded dates."
+  },
+  "restore_reviews": {
+    "one": "This backup also contains %d completion-history event. It will be restored as a new copy with its record.",
+    "other": "This backup also contains %d completion-history events. They will be restored as new copies with their records."
   }
 }

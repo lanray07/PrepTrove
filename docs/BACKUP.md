@@ -20,4 +20,13 @@ The encryption uses standard Android/JVM cryptographic providers. A security aud
 
 ## Database version 2 fields
 
-JSON/PTB records now preserve structured plan/contact data, purchase dates, recurring intervals and template flags. Older backups load those additions with safe defaults. Kit links continue to be remapped on copy-based restore. Photo pixels and completion-history events are not included; photo references may be unavailable on another device. These exclusions are stated in the export confirmation.
+JSON/PTB records now preserve structured plan/contact data, purchase dates, recurring intervals and template flags. Older backups load those additions with safe defaults. Kit links continue to be remapped on copy-based restore. Photo pixels are not included; photo references may be unavailable on another device. Completion history can be explicitly selected for JSON/PTB backups. This is disclosed in the export confirmation.
+
+
+## Optional completion history (JSON schema 2)
+
+The export dialog offers an unchecked history option for JSON/PTB only. History is filtered to records actually included after the contact/plan and field selections. Historical event titles may contain earlier personal names even if a record has since been renamed; include history only when appropriate for the destination. PDF/CSV do not include history.
+
+Backups without history retain schema 1 for compatibility. A backup with history uses schema 2 and a `reviews` array of ID, entry ID, title and ISO completion date. The reader accepts both schemas. All record, kit and event links are remapped to new IDs, so repeated imports remain independent copies. Malformed/orphaned/duplicate review IDs and invalid dates are rejected before any database mutation. Records and history import atomically; a failure rolls back both.
+
+The size bound remains 5 MiB for the complete encrypted container. JSON export enforces the same plaintext budget (minus container overhead) so a newly created backup fits the restore limit. Limits are 5,000 records and 50,000 history events within that shared byte budget. Large histories may need a smaller selection; the app reports export failure instead of claiming success. The encrypted PTB1 envelope and cryptographic parameters are unchanged. Cross-device provider and encrypted interoperability acceptance still requires manual review.

@@ -12,7 +12,7 @@ Delete all saved records from Settings, or remove app data using device settings
 
 Publisher/controller name supplied by the owner: **O.Bankole**. Public support contact: **banksmi@mail.com**. Publisher country, jurisdiction-appropriate notices, support retention and final legal review remain unconfirmed.
 
-Supply photos are copied into private, backup-excluded device storage after size/dimension validation and JPEG re-encoding. The original EXIF metadata is not copied. Removing a photo from a record unlinks it; the private file may still be used by duplicate records/templates. Delete all saved records also removes stored photo files and completion history. Exports do not contain photo pixels or completion history.
+Supply photos are copied into private, backup-excluded device storage after size/dimension validation and JPEG re-encoding. The original EXIF metadata is not copied. Removing a photo from a record unlinks it; the private file may still be used by duplicate records/templates. Delete all saved records also removes stored photo files and completion history. Exports do not contain photo pixels. Completion-history events are included only when you select the history option for JSON/PTB backups; their earlier record titles may contain personal details.
 
 Optional app lock uses the device screen-lock credential and blocks the app UI after backgrounding. It does not add database encryption. The app does not read or store the device credential.
 

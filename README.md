@@ -39,7 +39,7 @@ See [translation review instructions](docs/LOCALISATION.md).
 
 Amazon SDK integration is present with checkout OFF by default. See [configuration and test boundaries](docs/AMAZON-BILLING.md). The unconfigured build never simulates a purchase or invents a price.
 
-Database version 2 adds structured household/contact fields, supply purchase dates, templates and recurring reminders. A tested migration preserves version 1 records. Completion history is local. Kit templates include copies of their supplies. Supply photos are bounded and stored privately; photo pixels/history are excluded from backups. Optional app lock uses OS device credentials, and PDFs include the structured plan fields.
+Database version 2 adds structured household/contact fields, supply purchase dates, templates and recurring reminders. A tested migration preserves version 1 records. Completion history is local. Kit templates include copies of their supplies. Supply photos are bounded and stored privately; photo pixels are excluded from backups; completion history can be explicitly included in JSON/PTB backups. Optional app lock uses OS device credentials, and PDFs include the structured plan fields.
 
 
 ## Amazon review package

@@ -39,3 +39,6 @@ Only allowlisted app assets and documents are bundled. Keystores, passwords, env
 - [Amazon presubmission checklist](https://developer.amazon.com/docs/app-submission/presubmission-checklist.html): physical-device testing, accurate privacy declarations, required listing images and compatible device targeting.
 - [Understanding Amazon submission](https://developer.amazon.com/docs/app-submission/understanding-submission.html): APK alignment and Amazon re-signing/wrapping. Amazon's distribution wrapper has its own store communication and data handling even when DRM is not selected; distinguish this from publisher-added analytics.
 - [Fire OS compatibility](https://developer.amazon.com/docs/app-submission/device-filtering-and-compatibility.html): manifest/API filtering and final console device selection. This tablet build targets API 35 with minimum API 26; no support for untested Fire OS versions is claimed.
+
+
+Latest functionality: completion-history backup is an explicit JSON/PTB option, with selected-record filtering and atomic copy-based restore. The saved Amazon English draft has been updated to match. Photos remain excluded. See BACKUP.md and VOICE.md for format and service boundaries.

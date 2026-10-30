@@ -114,3 +114,16 @@ APK SHA-256: `59006f688af27cb84850cde92efc1267fa613ffce1100aab59731712cafdd470`
 - API 36 emulator launch failed before Android boot: Android Emulator hypervisor driver is not installed. This is an untested platform boundary, not an app test success. No driver/system security change was attempted.
 - Resource queues contain 247 entries per locale, including native plural forms. Three English variants are generated; other 19 remain pending provider/human review. The new PDF-error message and privacy wording are included in these queues.
 - Latest unsigned APK SHA-256: `a7dfd149dd761fc5e770573ba21fe28c15648dde209e621087b4562d3c82e07a`. The review report records the APK and every packaged asset/document hash. Packaging does not certify production readiness.
+
+
+## Completion history and accessibility checks — 30 October 2026
+
+- Final debug/unsigned release builds, unit suite, full physical Fire suite and lint passed. JVM: 11 passed. KFTRWI / Fire OS 7.3.3.1 / API 28: 27 tests recorded, 26 passed, one screenshot-only test skipped, zero failures/errors. Six Python tooling tests passed.
+- New coverage includes schema 1 compatibility, opt-in schema 2 history, encrypted history round trip, selected-record scoping, independent restore IDs, invalid history and byte-limit rejection, and transaction rollback when a history insert conflicts.
+- The Settings/export-history control remained reachable at 200% Compose text scale with RTL layout direction. This does not establish full RTL translation, all-screen large-text support or TalkBack acceptance. Export choices now expose their labels as part of a checkbox row with a minimum 48dp target.
+- On this device, the no-recognizer test passed: it displayed the fallback without requesting microphone permission and retained typed-command access. TTS engine availability and real audible output remain separate checks in docs/VOICE.md.
+- Two earlier runs stopped in the structured-plan test: first while locating its field, then while asserting a saved detail outside the visible list. The test now waits after navigation and searches its unique plan name before asserting the detail; the complete rerun passed. No acceptance gate was bypassed or test removed.
+- Latest unsigned APK SHA-256: `a80eded602e5cff2c46060c4c409df1d773f2e64d84eb789257688e46fd5d6d6`.
+- There are 251 catalogue entries per locale including plural forms. Three source English variants are generated; the other 19 remain pending. The saved Amazon description now matches the optional history backup behavior.
+
+The final rerun also verifies the fixed export-history selection snapshot and uniquely scoped kit/supply/plan searches. All 27 recorded device cases completed with zero failures/errors and the one expected screenshot-only skip.
