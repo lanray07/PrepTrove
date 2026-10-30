@@ -178,7 +178,7 @@ class MainActivity:ComponentActivity() {
     BoxWithConstraints {
      val wide=maxWidth>=840.dp
      Row {
-      if(wide) Column(Modifier.width(220.dp).fillMaxHeight().background(Navy).padding(20.dp)) {
+      if(wide) Column(Modifier.width(220.dp).fillMaxHeight().background(Navy).verticalScroll(rememberScrollState()).padding(20.dp)) {
        Text(androidx.compose.ui.res.stringResource(R.string.preptrove_c7187b),color=Color.White,fontSize=27.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.your_household_organised_96de4e),color=Amber,fontSize=10.sp)
        Spacer(Modifier.height(32.dp))
        sections.forEach { s->TextButton(onClick={section=s;search=""},modifier=Modifier.fillMaxWidth().heightIn(min=48.dp),colors=ButtonDefaults.textButtonColors(contentColor=if(section==s) Amber else Color.White)) {Text(screenLabel(s),modifier=Modifier.fillMaxWidth())} }

@@ -112,8 +112,8 @@
       "safetyReviewRequired": false
     },
     "no_account_ads_analytics_location_tracking_or_au_75a32c": {
-      "source": "No account, ads, analytics, location tracking or automatic uploads. Records are stored in this app’s private device storage. Device encryption depends on your device settings.",
-      "translation": "No account, ads, analytics, location tracking or automatic uploads. Records are stored in this app’s private device storage. Device encryption depends on your device settings.",
+      "source": "No PrepTrove account or ads. The app adds no publisher analytics and does not automatically upload household records or track location. Amazon distribution and optional device services may process data under their own terms. Records are stored in this app’s private device storage. Device encryption depends on your device settings.",
+      "translation": "No PrepTrove account or ads. The app adds no publisher analytics and does not automatically upload household records or track location. Amazon distribution and optional device services may process data under their own terms. Records are stored in this app’s private device storage. Device encryption depends on your device settings.",
       "reviewed": true,
       "safetyReviewRequired": false
     },
@@ -1422,6 +1422,12 @@
     "report_loading": {
       "source": "Preparing the report preview…",
       "translation": "Preparing the report preview…",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "report_error": {
+      "source": "The report preview could not be prepared. Close this preview and try again. Your saved records have not changed.",
+      "translation": "The report preview could not be prepared. Close this preview and try again. Your saved records have not changed.",
       "reviewed": true,
       "safetyReviewRequired": false
     },

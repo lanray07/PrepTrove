@@ -17,7 +17,7 @@
 <string name="review_command_399b62">Review command</string>
 <string name="read_response_aloud_ac4ff0">Read response aloud</string>
 <string name="private_by_default_f52e06">Private by default</string>
-<string name="no_account_ads_analytics_location_tracking_or_au_75a32c">No account, ads, analytics, location tracking or automatic uploads. Records are stored in this app’s private device storage. Device encryption depends on your device settings.</string>
+<string name="no_account_ads_analytics_location_tracking_or_au_75a32c">No PrepTrove account or ads. The app adds no publisher analytics and does not automatically upload household records or track location. Amazon distribution and optional device services may process data under their own terms. Records are stored in this app’s private device storage. Device encryption depends on your device settings.</string>
 <string name="dark_theme_3f11a5">Dark theme</string>
 <string name="interface_english_preview_other_languages_are_pe_364f22">Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.</string>
 <string name="enable_optional_reminders_4af429">Enable optional reminders</string>
@@ -236,6 +236,7 @@
 <string name="report_next">Next page</string>
 <string name="report_page">%1$d / %2$d</string>
 <string name="report_loading">Preparing the report preview…</string>
+<string name="report_error">The report preview could not be prepared. Close this preview and try again. Your saved records have not changed.</string>
 <string name="voice_quantity">%1$s %2$s recorded for %3$s.</string>
 <string name="voice_quantity_units">These quantities use different units or cannot be combined. Review the supply details.</string>
 <string name="support_privacy">Privacy notice (opens GitHub)</string>

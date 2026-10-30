@@ -5,7 +5,7 @@
   },
   "deviceCompatibilityAndVoice": {
     "status": "pending",
-    "evidence": "Test phone, portrait, accessibility, RTL, speech engines and notification delivery."
+    "evidence": "21 physical Fire instrumentation checks passed, including portrait export preview. API 36 emulator unavailable: missing host hypervisor driver. TalkBack, large fonts, RTL, real speech engines, credential entry and notification delivery remain pending."
   },
   "localisedScreenshotsAndMetadata": {
     "status": "pending",
@@ -17,7 +17,7 @@
   },
   "publisherLegalAndSupport": {
     "status": "pending",
-    "evidence": "Support email supplied and GitHub privacy/deletion pages linked in console; publisher/legal/trademark review and support delivery verification remain pending."
+    "evidence": "Publisher name O.Bankole and support email supplied; GitHub privacy/deletion pages linked. Publisher country, legal/trademark review and support delivery verification remain pending."
   },
   "functionalCompleteness": {
     "status": "pending",
@@ -25,6 +25,6 @@
   },
   "ownerReleaseApproval": {
     "status": "pending",
-    "evidence": "Owner approval of final price, territories, listing and signed release package."
+    "evidence": "No keystore available; owner requested unsigned review bundle. Final signing, territories, legal/listing review and submission approval remain pending."
   }
 }

@@ -103,3 +103,14 @@ APK SHA-256: `59006f688af27cb84850cde92efc1267fa613ffce1100aab59731712cafdd470`
 - 246 catalogue entries per locale; three English source variants are generated. The other 19 locale packs remain queued with no translation provider, as requested. Human and qualified safety review remain required.
 - Amazon draft forms, English listing, original icons and GitHub policy/deletion links were saved. These are draft declarations requiring publisher review. No production APK or final submission was sent; no paid transaction occurred.
 - Production preflight remains intentionally blocked; release/readiness.json records the current outstanding gates. Only unsigned QA release packaging is available.
+
+
+## Unsigned package and portrait acceptance — 30 October 2026
+
+- Final debug/unsigned release builds, JVM tests and lint passed. 11 JVM unit tests passed. Physical KFTRWI (Android API 28 / Fire OS 7) results: 22 tests recorded, 21 passed, one screenshot-only test skipped, zero failures/errors. Six Python tooling tests passed. Lint remains at 60 warnings and one hint, with zero errors/fatals.
+- Added physical portrait Settings/export/PDF preview journey and PDF renderer valid-page/clamping/corrupt-input checks. The original orientation is restored after the test.
+- The release APK is non-debuggable, targets API 35, requires API 26 and touchscreen hardware, and retains microphone as optional. ZIP alignment was checked with Android build tools. Signature verification establishes that this review artifact is unsigned. Checkout is compiled disabled. No release-signed runtime or real purchase was tested.
+- Submission-tool tests reject wrong packages/debug variants/unreviewed permissions, altered or escaping screenshot files, and failing test evidence; missing device evidence is distinct from a pass.
+- API 36 emulator launch failed before Android boot: Android Emulator hypervisor driver is not installed. This is an untested platform boundary, not an app test success. No driver/system security change was attempted.
+- Resource queues contain 247 entries per locale, including native plural forms. Three English variants are generated; other 19 remain pending provider/human review. The new PDF-error message and privacy wording are included in these queues.
+- Latest unsigned APK SHA-256: `a7dfd149dd761fc5e770573ba21fe28c15648dde209e621087b4562d3c82e07a`. The review report records the APK and every packaged asset/document hash. Packaging does not certify production readiness.

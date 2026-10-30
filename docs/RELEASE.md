@@ -49,3 +49,12 @@ The isolated screenshot build uses com.preptrove.app.storecapture and labelled e
 4. Keep signing keys outside the repository. Build signed release, record SHA-256 and retain secure key backup.
 5. Capture implemented, translated screens with labelled deterministic demonstration data; generate manifest and review crops and typography for each approved listing locale.
 6. Owner reviews final submission package and authorises publication.
+
+
+## Unsigned submission review package — 30 October 2026
+
+The owner confirmed no production signing keystore is available and requested an unsigned package. `python tools/submission_bundle.py` assembles the actual unsigned release APK, saved listing, 24 captured screenshots, icons, policy/release documents and a hashed evidence report. It checks package identity, SDK/launcher/touchscreen manifest entries, non-debuggable state, reviewed permissions, ZIP alignment, unsigned signature status and compiled checkout disabled. Unit/lint failures and modified screenshot hashes block assembly. CI now uploads this bundle. See [the submission handoff](AMAZON-SUBMISSION.md) for exact commands and owner actions.
+
+PDF preview now reports rendering errors instead of leaving an indefinite loading message. Its renderer is covered for valid rendering, page clamping and corrupt-file rejection. The tablet navigation column scrolls for overflow. A physical Fire test rotates to portrait, navigates to Settings and opens/closes the real PDF preview, then cancels export. It restores the original orientation.
+
+The publisher/controller name supplied is O.Bankole; country and final legal approval are still unconfirmed. The privacy review copy now distinguishes publisher-added analytics from Amazon's documented distribution wrapper. API 36 emulator testing was attempted but could not start because the host lacks the hypervisor driver. No emulator success or universal device compatibility is claimed.

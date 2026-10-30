@@ -22,7 +22,7 @@ Room persistence for kits, supplies, plan notes, manually entered contacts, grou
 
 Read [release gates](docs/RELEASE.md) before distributing. This is a working foundation, not completion of the full master brief. Source brief supplied by the user stops partway through section 23; later requirements were not available.
 
-Architecture uses one application module with UI, ViewModel, Room repository/DAO and a WorkManager task. Feature module separation, typed structured family plans, complete locale support and production entitlement handling are still required. No encryption or security guarantee is claimed.
+Architecture uses one application module with UI, ViewModel, Room repository/DAO and a WorkManager task. Feature module separation, complete locale support and production entitlement handling are still required. No encryption or security guarantee is claimed.
 
 ## Localisation and release tooling
 
@@ -40,3 +40,8 @@ See [translation review instructions](docs/LOCALISATION.md).
 Amazon SDK integration is present with checkout OFF by default. See [configuration and test boundaries](docs/AMAZON-BILLING.md). The unconfigured build never simulates a purchase or invents a price.
 
 Database version 2 adds structured household/contact fields, supply purchase dates, templates and recurring reminders. A tested migration preserves version 1 records. Completion history is local. Kit templates include copies of their supplies. Supply photos are bounded and stored privately; photo pixels/history are excluded from backups. Optional app lock uses OS device credentials, and PDFs include the structured plan fields.
+
+
+## Amazon review package
+
+Run `python tools/submission_bundle.py` after the validation commands in [the submission handoff](docs/AMAZON-SUBMISSION.md). It produces an unsigned review ZIP, checksum and report in ignored `artifacts/`. It checks the actual APK identity, debug flag, permissions, ZIP alignment, unsigned status, checkout build setting and screenshot hashes; failing test/lint evidence blocks assembly. CI uploads this review package automatically. A generated package does not close legal, translation, signing, real-store or device acceptance gates.

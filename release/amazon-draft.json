@@ -26,5 +26,9 @@
   ],
   "privacyQuestionnaire": "saved for review; publisher/legal approval pending",
   "tabletIcons": "512x512 and 114x114 accepted",
-  "screenshots": "24 real 1920x1200 English-variant tablet captures generated; eight en-US panels accepted, Images and Videos reported Complete"
+  "screenshots": "24 real 1920x1200 English-variant tablet captures generated; eight en-US panels accepted, Images and Videos reported Complete",
+  "publisherName": "O.Bankole",
+  "publisherCountry": null,
+  "signingStatus": "No production keystore available; owner requested unsigned review package",
+  "submissionBundle": "artifacts/amazon-review.zip; unsigned review only"
 }
