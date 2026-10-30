@@ -17,3 +17,9 @@ Supply photos are copied into private, backup-excluded device storage after size
 Optional app lock uses the device screen-lock credential and blocks the app UI after backgrounding. It does not add database encryption. The app does not read or store the device credential.
 
 Amazon SDK purchase communication is disabled in the unconfigured development build. If enabled for a future commercial build, Amazon processes store account/transaction data; the app locally caches an account identifier and entitlement state. Household records are not sent by the billing adapter. Store SDK disclosures and the final privacy notice require release review.
+
+## Submission contact and review status — 30 October 2026
+
+Support contact: banksmi@mail.com. Data deletion instructions: [PrepTrove data deletion](DATA-DELETION.md). When you email support, your address and message are shared with the publisher and its email provider so that support can respond. Do not send private plans, recordings, backup passwords or sensitive household details. Support retention and the final publisher/controller identity require the owner's review before release.
+
+The owner requested these GitHub-hosted pages for the submission draft. They are review copies, not a claim of legal compliance or final legal approval.
