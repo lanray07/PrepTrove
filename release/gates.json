@@ -25,6 +25,6 @@
   },
   "ownerReleaseApproval": {
     "status": "pending",
-    "evidence": "Owner requested submission on 2026-11-02. Amazon-managed signing supports unsigned APKs; local keystore not inherently required. Final launch scope, declarations and actual console submission remain unresolved."
+    "evidence": "Owner explicitly requested submission and selected a full worldwide launch on 2026-11-02. Authorization and launch scope are recorded. Actual translation/safety/privacy acceptance, console validation and submission remain pending; unseen binding agreements require action-time confirmation."
   }
 }

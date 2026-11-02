@@ -17,12 +17,11 @@
   "checkoutEnabled": false,
   "submitted": false,
   "remaining": [
-    "publisher/legal review of privacy declarations and policies",
-    "signed release APK",
-    "reviewed translations and regional safety content",
-    "real speech, lock and broader device acceptance",
-    "Amazon SKU and sandbox validation before enabling purchases",
-    "final owner approval"
+    "reviewed worldwide UI translations, voice resources, localized store listings and screenshots",
+    "qualified regional safety review and publisher approval of policies and console declarations",
+    "real speech, lock, document picker and broader device acceptance",
+    "upload release APK through Amazon-managed signing, then resolve console validation and targeting",
+    "final console review; action-time confirmation if a binding agreement is presented"
   ],
   "privacyQuestionnaire": "saved for review; publisher/legal approval pending",
   "tabletIcons": "512x512 and 114x114 accepted",
@@ -36,5 +35,8 @@
   "submissionRequested": true,
   "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html",
   "launchScope": "full worldwide release; no English-only initial release",
-  "submissionDeferredReason": "Owner chose to wait for the full worldwide release on 2026-11-02. Translation, localized listing/screenshot and regional safety reviews remain required."
+  "submissionDeferredReason": "Owner chose to wait for the full worldwide release on 2026-11-02. Translation, localized listing/screenshot and regional safety reviews remain required.",
+  "purchaseActivationPrerequisites": "Deferred while purchases are disabled: real SKU, App Tester, restore and receipt-verification validation before any future paid release.",
+  "consoleVerifiedDate": "2026-11-02",
+  "consoleVerifiedState": "Incomplete; English (U.S.) description and images Complete. Browser access restored; no APK upload or submission performed."
 }
