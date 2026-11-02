@@ -1,6 +1,6 @@
 {
   "locale": "es-ES",
-  "reviewer": "",
+  "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
   "qualifiedSafetyReview": false,
   "strings": {
     "preptrove_c7187b": {
@@ -95,15 +95,17 @@
     },
     "review_command_399b62": {
       "source": "Review command",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Revisar la orden",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "read_response_aloud_ac4ff0": {
       "source": "Read response aloud",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Leer la respuesta en voz alta",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "private_by_default_f52e06": {
       "source": "Private by default",
@@ -119,9 +121,10 @@
     },
     "dark_theme_3f11a5": {
       "source": "Dark theme",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Tema oscuro",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "interface_english_preview_other_languages_are_pe_364f22": {
       "source": "Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.",
@@ -143,9 +146,10 @@
     },
     "exports_2f4dcf": {
       "source": "Exports",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Exportaciones",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "exports_are_unencrypted_review_the_included_info_14b601": {
       "source": "PDF, CSV and JSON exports are unencrypted. PTB backups use password-protected encryption. Review the included information before saving.",
@@ -167,15 +171,17 @@
     },
     "duplicate_02cdaa": {
       "source": "Duplicate",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Duplicar",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "delete_e2d0a5": {
       "source": "Delete",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Eliminar",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "this_cannot_be_undone_supplies_in_a_deleted_kit__54a684": {
       "source": "This cannot be undone. Supplies in a deleted kit will become unassigned.",
@@ -185,9 +191,10 @@
     },
     "cancel_19766e": {
       "source": "Cancel",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Cancelar",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "delete_all_records_1dcbbc": {
       "source": "Delete all records?",
@@ -257,21 +264,24 @@
     },
     "start_planning_655059": {
       "source": "Start planning",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Empezar a planificar",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "skip_28d035": {
       "source": "Skip",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Omitir",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "name_dcd1d5": {
       "source": "Name",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Nombre",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "category_checklist_group_0cf902": {
       "source": "Category / checklist group",
@@ -281,9 +291,10 @@
     },
     "quantity_822bab": {
       "source": "Quantity",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Cantidad",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "unit_e_g_litres_bottles_3092cb": {
       "source": "Unit (e.g. litres, bottles)",
@@ -299,27 +310,31 @@
     },
     "unassigned_14d33b": {
       "source": "Unassigned",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Sin asignar",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "storage_location_a59e28": {
       "source": "Storage location",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Lugar de almacenamiento",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "save_1509f5": {
       "source": "Save",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Guardar",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_a772ed394d2a": {
       "source": "Family plans",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Planes familiares",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_79f24e0d59e2": {
       "source": "No recognition service is installed. Type your command below.",
@@ -827,9 +842,10 @@
     },
     "msg_19766ed6ccb2": {
       "source": "Cancel",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Cancelar",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_3e69551e06f4": {
       "source": "Restore %1$d records?",
@@ -929,87 +945,101 @@
     },
     "nav_overview": {
       "source": "Overview",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Resumen",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "nav_kits": {
       "source": "Kits",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Kits",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "nav_supplies": {
       "source": "Supplies",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Suministros",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "nav_family_plans": {
       "source": "Family plans",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Planes familiares",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "nav_contacts": {
       "source": "Contacts",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Contactos",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "nav_checklists": {
       "source": "Checklists",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Listas de comprobación",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "nav_reminders": {
       "source": "Reminders",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Recordatorios",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "nav_reference": {
       "source": "Reference",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Referencia",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "nav_voice": {
       "source": "Voice",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Voz",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "nav_settings": {
       "source": "Settings",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Ajustes",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "language_label": {
       "source": "App language",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Idioma de la aplicación",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "language_system": {
       "source": "Use device language",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Usar el idioma del dispositivo",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "language_pending": {
       "source": "Translation pending",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Traducción pendiente",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "language_close": {
       "source": "Close",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Cerrar",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "language_review_notice": {
       "source": "Only completed resource packs can be selected. Other languages are queued for translation and review. Your private records are never translated.",
@@ -1019,15 +1049,17 @@
     },
     "date_due": {
       "source": "Due",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Vencimiento",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "date_expiry": {
       "source": "Expiry",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Caducidad",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "notification_channel": {
       "source": "Preparedness reviews",
@@ -1043,39 +1075,45 @@
     },
     "kind_kit": {
       "source": "Kit",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Kit",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "kind_supply": {
       "source": "Supply",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Suministro",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "kind_plan": {
       "source": "Family plan",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Plan familiar",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "kind_contact": {
       "source": "Contact",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Contacto",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "kind_check": {
       "source": "Checklist task",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Tarea de la lista",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "kind_reminder": {
       "source": "Reminder",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Recordatorio",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "billing_title": {
       "source": "PrepTrove Premium",
@@ -1145,27 +1183,31 @@
     },
     "template_save": {
       "source": "Save template",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Guardar plantilla",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "template_use": {
       "source": "Create from template",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Crear a partir de la plantilla",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "review_history": {
       "source": "Recent completion history",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Historial reciente de tareas completadas",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "reminder_snooze": {
       "source": "Snooze 7 days",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Posponer 7 días",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "purchase_date_value": {
       "source": "Purchased: %1$s",
@@ -1265,15 +1307,17 @@
     },
     "reminder_pause": {
       "source": "Pause reminder",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Pausar recordatorio",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "reminder_resume": {
       "source": "Resume reminder",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Reanudar recordatorio",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "lock_title": {
       "source": "PrepTrove is locked",
@@ -1289,21 +1333,24 @@
     },
     "lock_unlock": {
       "source": "Unlock",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Desbloquear",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "lock_enable": {
       "source": "Enable app lock",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Activar el bloqueo de la aplicación",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "lock_disable": {
       "source": "Disable app lock",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Desactivar el bloqueo de la aplicación",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "lock_unavailable": {
       "source": "Set a secure PIN, password or pattern in device settings before enabling app lock.",
@@ -1325,15 +1372,17 @@
     },
     "photo_add": {
       "source": "Add supply photograph",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Añadir foto del suministro",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "photo_remove": {
       "source": "Remove photograph from record",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Quitar foto del registro",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "photo_error": {
       "source": "Choose a valid image up to 8 MB and 16 megapixels. A maximum of 200 photos can be stored.",
@@ -1373,45 +1422,52 @@
     },
     "export_notes": {
       "source": "Include free-text notes",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Incluir notas de texto libre",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "export_locations": {
       "source": "Include storage locations and meeting points",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Incluir lugares de almacenamiento y puntos de encuentro",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "export_phones": {
       "source": "Include the contact phone field",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Incluir el campo de teléfono del contacto",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "export_members": {
       "source": "Include household member names",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Incluir los nombres de los miembros del hogar",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "report_preview": {
       "source": "PDF preview",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Vista previa del PDF",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "report_previous": {
       "source": "Previous page",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Página anterior",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "report_next": {
       "source": "Next page",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Página siguiente",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "report_page": {
       "source": "%1$d / %2$d",
@@ -1463,9 +1519,10 @@
     },
     "export_history": {
       "source": "Include completion history for the selected records",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Incluir el historial de tareas completadas de los registros seleccionados",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "voice_tts_unavailable": {
       "source": "Spoken output is not available right now. Read the response on screen, or check your installed text-to-speech service and language settings.",
@@ -1475,9 +1532,10 @@
     },
     "reminders_disable": {
       "source": "Disable reminder notifications",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": false
+      "translation": "Desactivar las notificaciones de recordatorio",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "reminders_disabled": {
       "source": "Reminder notifications are off. Your saved reminders remain available.",
@@ -1503,6 +1561,12 @@
       "reviewed": false,
       "safetyReviewRequired": false
     },
+    "reminders_due.many": {
+      "source": "%d saved reminders are due. Open your planner to review.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
     "supplies_attention.one": {
       "source": "%d supply expires within 30 days or is past its recorded date.",
       "translation": null,
@@ -1515,6 +1579,12 @@
       "reviewed": false,
       "safetyReviewRequired": false
     },
+    "supplies_attention.many": {
+      "source": "%d supplies expire within 30 days or are past their recorded dates.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
     "restore_reviews.one": {
       "source": "This backup also contains %d completion-history event. It will be restored as a new copy with its record.",
       "translation": null,
@@ -1522,6 +1592,12 @@
       "safetyReviewRequired": false
     },
     "restore_reviews.other": {
+      "source": "This backup also contains %d completion-history events. They will be restored as new copies with their records.",
+      "translation": null,
+      "reviewed": false,
+      "safetyReviewRequired": false
+    },
+    "restore_reviews.many": {
       "source": "This backup also contains %d completion-history events. They will be restored as new copies with their records.",
       "translation": null,
       "reviewed": false,

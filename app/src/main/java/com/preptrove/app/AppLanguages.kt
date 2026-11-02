@@ -8,8 +8,9 @@ object AppLanguages {
  fun select(context:Context,tag:String) {require(tag.isEmpty() || tag in available);context.getSharedPreferences("app-language",Context.MODE_PRIVATE).edit().putString("tag",tag).commit()}
  fun wrap(base:Context):Context {
   val tag=base.getSharedPreferences("app-language",Context.MODE_PRIVATE).getString("tag","").orEmpty()
-  if(tag.isEmpty()) return base
-  val locale=Locale.forLanguageTag(tag);val config=Configuration(base.resources.configuration);config.setLocale(locale);config.setLayoutDirection(locale)
+  val deviceLocales=base.resources.configuration.locales
+  val requested=if(tag in available) listOf(Locale.forLanguageTag(tag)) else (0 until deviceLocales.size()).map {deviceLocales[it]}
+  val locale=LanguageResolver.resolve(requested,available);val config=Configuration(base.resources.configuration);config.setLocale(locale);config.setLayoutDirection(locale)
   return base.createConfigurationContext(config)
  }
 }

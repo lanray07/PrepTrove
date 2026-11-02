@@ -13,7 +13,7 @@ class SubmissionValidation(unittest.TestCase):
                 validate_release_manifest(value)
     BADGING = """package: name='com.preptrove.app' versionCode='1'
 sdkVersion:'26'
-targetSdkVersion:'35'
+targetSdkVersion:'36'
 launchable-activity: name='com.preptrove.app.MainActivity'
 uses-feature: name='android.hardware.touchscreen'
 uses-permission: name='android.permission.RECORD_AUDIO'
@@ -23,7 +23,7 @@ uses-permission: name='android.permission.RECORD_AUDIO'
         self.assertFalse(validate_badging(self.BADGING)['debuggable'])
         for invalid in [self.BADGING.replace("name='com.preptrove.app'", "name='com.preptrove.app.storecapture'"),
                         self.BADGING + '\napplication-debuggable',
-                        self.BADGING.replace("targetSdkVersion:'35'", "targetSdkVersion:'28'"),
+                        self.BADGING.replace("targetSdkVersion:'36'", "targetSdkVersion:'35'"),
                         self.BADGING.replace("uses-feature: name='android.hardware.touchscreen'", ''),
                         self.BADGING + "\nuses-permission: name='android.permission.CAMERA'"]:
             with self.subTest(invalid=invalid), self.assertRaises(ValueError):

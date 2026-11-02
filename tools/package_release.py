@@ -3,7 +3,7 @@ Production signing secrets are read by apksigner from environment variables.
 """
 from pathlib import Path
 import argparse,os,subprocess,hashlib,json
-from release_check import ROOT,check
+from release_check import ROOT,check,disabled_purchase_build
 p=argparse.ArgumentParser();p.add_argument('--unsigned',action='store_true');args=p.parse_args()
 if not args.unsigned:
  failures=check()
@@ -12,6 +12,10 @@ if not args.unsigned:
   if not os.environ.get(name):raise SystemExit('Missing signing configuration: '+name)
 wrapper=ROOT/('gradlew.bat' if os.name=='nt' else 'gradlew')
 subprocess.run([str(wrapper),':app:assembleRelease','--console=plain'],cwd=ROOT,check=True)
+if not args.unsigned:
+ gates=json.loads((ROOT/'release/gates.json').read_text(encoding='utf-8'))
+ if gates.get('amazonCatalogueAndVerifiedReceipts',{}).get('status')=='deferred_while_disabled' and not disabled_purchase_build():
+  raise SystemExit('Paid-release validation is deferred: the newly built APK must keep purchases disabled.')
 apk=ROOT/'app/build/outputs/apk/release/app-release-unsigned.apk'
 if not args.unsigned:
  sdk=Path(os.environ['ANDROID_HOME']);candidates=sorted((sdk/'build-tools').glob('*/apksigner'+('.bat' if os.name=='nt' else '')))

@@ -6,8 +6,8 @@ plugins {
 }
 android {
  namespace = "com.preptrove.app"
- compileSdk = 35
- defaultConfig { applicationId = "com.preptrove.app"; minSdk = 26; targetSdk = 35; versionCode = 1; versionName = "0.1.0"; testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"; buildConfigField("String", "AMAZON_SKU", "\"" + providers.gradleProperty("amazonPremiumSku").getOrElse("").also { require(it.matches(Regex("[A-Za-z0-9._-]*"))) } + "\"") }
+ compileSdk = 36
+ defaultConfig { applicationId = "com.preptrove.app"; minSdk = 26; targetSdk = 36; versionCode = 1; versionName = "0.1.0"; testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"; buildConfigField("String", "AMAZON_SKU", "\"" + providers.gradleProperty("amazonPremiumSku").getOrElse("").also { require(it.matches(Regex("[A-Za-z0-9._-]*"))) } + "\"") }
  buildTypes {create("screenshots") {initWith(getByName("debug"));applicationIdSuffix=".storecapture";matchingFallbacks.add("debug")}}
  testBuildType=if(providers.gradleProperty("storeScreenshots").getOrElse("false")=="true") "screenshots" else "debug"
  buildFeatures { compose = true; buildConfig = true }

@@ -16,11 +16,12 @@ jobs:
           java-version: '17'
       - uses: android-actions/setup-android@v3
         with:
-          packages: "platform-tools platforms;android-35 build-tools;35.0.0"
+          packages: "platform-tools platforms;android-36 build-tools;36.0.0"
           log-accepted-android-sdk-licenses: false
       - uses: gradle/actions/setup-gradle@v4
       - run: chmod +x gradlew
       - run: python3 tools/localize.py
+      - run: python3 tools/review_packets.py
       - run: python3 tools/audit_localization.py
       - run: python3 tools/extract_resources.py --check
       - run: python3 -m unittest discover -s tools -p 'test_*.py'
@@ -34,6 +35,7 @@ jobs:
             app/build/outputs/apk/release/*unsigned.apk
             app/build/reports/
             localization/report.json
+            artifacts/localization-review.zip
             artifacts/amazon-review.zip
             artifacts/amazon-review.zip.sha256
             artifacts/amazon-review-report.json

@@ -1,15 +1,15 @@
 {
   "amazonCatalogueAndVerifiedReceipts": {
-    "status": "pending",
-    "evidence": "App-specific public key installed; owner SKU, App Tester results, RVS policy and commercial limits remain pending. Checkout stays disabled."
+    "status": "deferred_while_disabled",
+    "evidence": "The current release keeps purchases disabled. SKU, App Tester and receipt verification are deferred paid-release requirements, not evidence of working billing. Preflight permits this deferral only when the actual release BuildConfig compiles purchases off."
   },
   "deviceCompatibilityAndVoice": {
     "status": "pending",
-    "evidence": "Fresh unlocked Fire run on 2026-11-02: 32 passed, one screenshot-only skip. API 33+ prompts, TalkBack, speech/credential flows, long-running delivery and more devices remain pending."
+    "evidence": "Earlier API 35 physical run passed 33 cases with one skip; 13 JVM and 15 tooling tests pass. The final API 36/PDF-locale physical run was blocked by tablet sleep/lock and explicitly stopped (instrumentation process-crash failure); a fresh unlocked run is required. API 33+/36 runtime prompts, TalkBack, speech/credential flows, delivery and more devices remain pending."
   },
   "localisedScreenshotsAndMetadata": {
     "status": "pending",
-    "evidence": "Owner explicitly requires full worldwide release before submission (2026-11-02). Three source English variants and captures exist; the other 19 locale packs, localized listings/screenshots and human/safety reviews remain pending. No English-only launch."
+    "evidence": "Full worldwide launch required. AI-assisted translation/review: 246 of 257 entries each for fr-FR/fr-CA; 58 entries each for the other 17 non-English targets (1,478 total). Safety-tagged text, remaining copy, localized full listings/screenshots and device reviews remain pending. Only the three complete source English variants ship; no English-only launch."
   },
   "regionalSafetyReview": {
     "status": "pending",

@@ -1,10 +1,12 @@
 # Release gates and implementation status
 
-Last assessed: 2026-10-30. Package com.preptrove.app, version 0.1.0.
+Last assessed: 2026-11-02. Package com.preptrove.app, version 0.1.0.
+
+Current launch scope is the full worldwide release, with purchases disabled. Amazon-managed signing accepts an unsigned APK; a local keystore is not a requirement for this route. Paid catalogue and receipt checks are deferred only while the compiled release keeps checkout off. The latest localisation work is AI-assisted, not human or specialist safety approval: 1,478 translated entries, with partial packs excluded from the release build. See LOCALISATION.md and the latest QA entry. Earlier milestone notes below describe their original state.
 
 ## Amazon draft and latest implementation
 
-The Amazon app draft, English (U.S.) description, content-rating answers and privacy questionnaire are saved for review. Public support is banksmi@mail.com. The privacy and data-deletion links point to the public GitHub documents; these documents still require publisher/legal approval. The original 512px and 114px tablet icons and eight actual en-US tablet screenshots were accepted; Amazon reports the English image section Complete. No APK has been uploaded and no final submission has been made. See release/amazon-draft.json.
+The Amazon app draft, English (U.S.) description, content-rating answers and privacy questionnaire are saved for review. Public support is banksmi@mail.com. The privacy and data-deletion links point to the public GitHub documents; these documents still require publisher/legal approval. The original 512px and 114px tablet icons and eight actual en-US tablet screenshots were accepted; Amazon reports the English image section Complete. A tested unsigned APK has now been accepted into the draft for validation; the API 36 replacement is under final test. No final submission has been made. See release/amazon-draft.json.
 
 New implementation includes individually selectable export fields, native PDF preview, draft recovery after activity recreation, English reminder drafts, exact-name supply inspection commands and quantity answers that preserve units. The optional credential lock still requires manual credential/background/file-picker verification. Passwords are held in memory, excluded from saved instance state and cleared on cancellation/use. Export reads a fresh database snapshot.
 

@@ -147,3 +147,29 @@ The final rerun also verifies the fixed export-history selection snapshot and un
 - The new provider test confirms that transported backup exports and legacy/external restores drop local photo references, preserve other structured fields, and preserve local draft photo references through EntryStateSaver. Photo pixels remain excluded.
 - Publisher country United Kingdom was supplied by the owner and added to the privacy review copy. This is not legal approval or an Amazon account-country change.
 - Unsigned APK SHA-256: `d2b4858b4af2ece99e79beb2f4c90acaf91b4dfc92d5a6da4e6926ede1c5c678`. Purchases remain disabled. Signing, professional/human reviews and the manual acceptance boundaries in RELEASE.md remain open.
+
+
+## Worldwide localisation architecture — 2 November 2026
+
+- Debug and unsigned release APKs built successfully. Thirteen JVM tests passed, including device-preference order, regional fallback and Chinese script separation.
+- Physical KFTRWI instrumentation recorded 34 cases: 33 passed, one screenshot-only skip, zero failures/errors. The new Android test verifies unsupported Arabic falls through to a preferred complete English pack with LTR direction, and withdrawn persisted language choices cannot reactivate unavailable packs.
+- Lint: 62 warnings, one hint, zero Error/Fatal. This is not a complete accessibility or global typography review.
+- Fifteen Python tooling tests passed. Coverage includes locale-specific plural categories, repeated/escaped printf placeholders, rejecting stale/wrong-locale/duplicate CSV rows, clearing old approvals after import, and allowing paid-release checks to be deferred only for a verified checkout-disabled build.
+- Source extraction and resource audit pass: 248 string keys, no missing resource references; two inline Text calls are a user-field quantity row and the PDF brand/page footer.
+- AI translation/linguistic review covers 1,478 non-English entries. French and Canadian French each contain 246/257 entries, with the 11 safety-tagged entries pending qualified review. The other 17 targets each contain 58 entries. No non-English pack is enabled in the release app; screenshots and actual speech/typography for those packs remain unverified.
+- Complete offline CSV/store/voice review packets are exported for all 22 targets; no private records enter the packets. Store sources now match the complete current English listing, including feature bullets and keywords.
+- Release APK SHA-256: `2668ebca642da02764c71c9de2cbb73b270c13b2ee1324dbb772faa5b7e5036e`. Purchases compile disabled.
+- Logs: worldwide-build-log.txt and worldwide-device-log.txt (local ignored evidence). Production preflight remains intentionally unsuccessful while worldwide acceptance is incomplete.
+
+
+## API 36 and PDF locale validation — 2 November 2026
+
+Amazon accepted the earlier unsigned API 35 APK as a draft; its device targeting disabled six Fire OS 16 tablet variants. Amazon requires target API 36 for Fire OS 16, so compile/target and CI SDK/package checks now use 36. Minimum SDK remains 26. This addresses manifest eligibility, not demonstrated runtime compatibility.
+
+PDF paragraphs now use the selected app context for language, typography and first-strong text direction; dates and page numbers use locale formatting. Added native assertions cover RTL neutral-number paragraphs, Arabic text and a rendered Arabic PDF, plus French dates.
+
+The API 36 debug/release builds, 13 JVM tests and lint passed in fire16-offdevice-validation-log.txt. Lint counts: {"Warning": 60, "Hint": 1}. Fifteen tooling tests pass, including rejecting target API 35 review packages.
+
+The final physical suite could not begin while the tablet was asleep and locked. It was explicitly stopped after zero completed tests, resulting in an instrumentation process-crash failure. This is not a successful native test run for the API 36/PDF changes; user unlock and a full fresh run are required. The earlier 33-pass result above predates those changes. No device lock was bypassed. Local submission bundling correctly rejects the failed/empty device evidence; the existing ZIP remains the earlier API 35 review package.
+
+API 36 unsigned APK SHA-256: `63a3749220384bc33546d6c20adcd2e639149b8fc6c1c8727129bacfd2fb156a`. It has not replaced the earlier Amazon validation draft. Worldwide translations, localized captures and qualified safety review remain incomplete, so no final submission is made.

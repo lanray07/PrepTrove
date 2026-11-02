@@ -1,9 +1,8 @@
 {
   "productionReady": false,
   "remaining": [
-    "amazonCatalogueAndVerifiedReceipts: App-specific public key installed; owner SKU, App Tester results, RVS policy and commercial limits remain pending. Checkout stays disabled.",
-    "deviceCompatibilityAndVoice: Fresh unlocked Fire run on 2026-11-02: 32 passed, one screenshot-only skip. API 33+ prompts, TalkBack, speech/credential flows, long-running delivery and more devices remain pending.",
-    "localisedScreenshotsAndMetadata: Owner explicitly requires full worldwide release before submission (2026-11-02). Three source English variants and captures exist; the other 19 locale packs, localized listings/screenshots and human/safety reviews remain pending. No English-only launch.",
+    "deviceCompatibilityAndVoice: Earlier API 35 physical run passed 33 cases with one skip; 13 JVM and 15 tooling tests pass. The final API 36/PDF-locale physical run was blocked by tablet sleep/lock and explicitly stopped (instrumentation process-crash failure); a fresh unlocked run is required. API 33+/36 runtime prompts, TalkBack, speech/credential flows, delivery and more devices remain pending.",
+    "localisedScreenshotsAndMetadata: Full worldwide launch required. AI-assisted translation/review: 246 of 257 entries each for fr-FR/fr-CA; 58 entries each for the other 17 non-English targets (1,478 total). Safety-tagged text, remaining copy, localized full listings/screenshots and device reviews remain pending. Only the three complete source English variants ship; no English-only launch.",
     "regionalSafetyReview: Obtain qualified country-specific review; no automatically translated safety packs.",
     "publisherLegalAndSupport: Publisher O.Bankole, United Kingdom and support email supplied; GitHub privacy/deletion pages linked. Final legal/trademark review and support delivery verification remain pending.",
     "functionalCompleteness: Provider-stream backups, file-URI rejection, atomic history import and transport photo-reference removal tested. Local draft photo links preserved. Photo pixels excluded; real picker/cloud-provider and lock/process-death acceptance remain pending.",

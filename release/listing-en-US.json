@@ -9,5 +9,18 @@
     "shortDescription": 1200,
     "longDescription": 4000,
     "featureBullets": 10
-  }
+  },
+  "featureBullets": [
+    "Organize emergency kits and supply inventories",
+    "Record quantities, storage locations, and expiration dates",
+    "Build structured household plans and save important contacts",
+    "Create editable checklist tasks and reusable kit templates",
+    "Set recurring reviews with snooze and pause controls",
+    "Access saved planning records offline without a separate account",
+    "Export PDF, CSV, and JSON records to a chosen destination",
+    "Create password-protected PTB backups",
+    "Use optional device-credential app lock",
+    "Try supported push-to-talk and typed English commands"
+  ],
+  "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
 }

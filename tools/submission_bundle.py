@@ -46,7 +46,7 @@ def validate_badging(text):
     if set(permissions) - allowed:
         raise ValueError('APK permissions changed; review the allowlist and privacy declarations')
     target = re.search(r"targetSdkVersion:'(\d+)'", text)
-    if not target or int(target[1]) < 35:
+    if not target or int(target[1]) < 36:
         raise ValueError('Unexpected target SDK')
     return {'applicationId': 'com.preptrove.app', 'minSdk': 26,
             'targetSdk': int(target[1]), 'debuggable': False,

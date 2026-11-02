@@ -20,8 +20,8 @@
     "reviewed worldwide UI translations, voice resources, localized store listings and screenshots",
     "qualified regional safety review and publisher approval of policies and console declarations",
     "real speech, lock, document picker and broader device acceptance",
-    "upload release APK through Amazon-managed signing, then resolve console validation and targeting",
-    "final console review; action-time confirmation if a binding agreement is presented"
+    "final console review; action-time confirmation if a binding agreement is presented",
+    "replace draft APK with validated final build and resolve device targeting/console checklist"
   ],
   "privacyQuestionnaire": "saved for review; publisher/legal approval pending",
   "tabletIcons": "512x512 and 114x114 accepted",
@@ -30,7 +30,7 @@
   "publisherCountry": "United Kingdom",
   "signingStatus": "Amazon documentation permits unsigned APK upload and applies an Amazon signature; local signing is not inherently required for Amazon-managed submission.",
   "submissionBundle": "artifacts/amazon-review.zip; unsigned review only",
-  "unsignedPackageStatus": "Refreshed 2026-11-02; publisher country United Kingdom recorded and transported photo references removed. No APK upload or final submission.",
+  "unsignedPackageStatus": "Current API 36 source builds successfully with purchases disabled, but local review bundle refresh is blocked by the aborted locked-device test evidence. Existing review ZIP predates the API 36/PDF changes. The console still has the earlier tested API 35 validation draft.",
   "publisherCountryCode": "GB",
   "submissionRequested": true,
   "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html",
@@ -38,5 +38,14 @@
   "submissionDeferredReason": "Owner chose to wait for the full worldwide release on 2026-11-02. Translation, localized listing/screenshot and regional safety reviews remain required.",
   "purchaseActivationPrerequisites": "Deferred while purchases are disabled: real SKU, App Tester, restore and receipt-verification validation before any future paid release.",
   "consoleVerifiedDate": "2026-11-02",
-  "consoleVerifiedState": "Incomplete; English (U.S.) description and images Complete. Browser access restored; no APK upload or submission performed."
+  "consoleVerifiedState": "Unsigned APK accepted in draft; version code 1, DRM No. Productivity > Organizers & Assistants saved. Target API 35 selected 12 tablets, no TV/automotive, with six API-36-only models disabled. Replacement API 36 build is under final validation; no submission.",
+  "binaryUpload": {
+    "status": "accepted_into_draft",
+    "file": "app-release-unsigned.apk",
+    "versionCode": 1,
+    "targetSdk": 35,
+    "sha256": "2668ebca642da02764c71c9de2cbb73b270c13b2ee1324dbb772faa5b7e5036e",
+    "submitted": false,
+    "replacementPending": "API 36 / locale-aware PDF build under final validation"
+  }
 }

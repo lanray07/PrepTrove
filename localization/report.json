@@ -6,7 +6,9 @@
     "reviewed": 254,
     "resourceStatus": "generated",
     "releaseReady": false,
-    "reviewType": "source English variant"
+    "reviewType": "source English variant",
+    "reviewer": null,
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "en-US",
@@ -15,7 +17,9 @@
     "reviewed": 254,
     "resourceStatus": "generated",
     "releaseReady": false,
-    "reviewType": "source English variant"
+    "reviewType": "source English variant",
+    "reviewer": null,
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "en-AU",
@@ -24,177 +28,217 @@
     "reviewed": 254,
     "resourceStatus": "generated",
     "releaseReady": false,
-    "reviewType": "source English variant"
+    "reviewType": "source English variant",
+    "reviewer": null,
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "es-ES",
-    "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "strings": 257,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "es-419",
-    "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "strings": 257,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "fr-FR",
-    "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "strings": 257,
+    "translated": 246,
+    "reviewed": 246,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "fr-CA",
-    "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "strings": 257,
+    "translated": 246,
+    "reviewed": 246,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "de-DE",
     "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "it-IT",
-    "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "strings": 257,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "pt-BR",
-    "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "strings": 257,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "pt-PT",
-    "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "strings": 257,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "nl-NL",
     "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "pl-PL",
-    "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "strings": 260,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "sv-SE",
     "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "ja-JP",
     "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "hi-IN",
     "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "ar",
-    "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "strings": 266,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "tr-TR",
     "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "id-ID",
     "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "ko-KR",
     "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "zh-Hans",
     "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   },
   {
     "locale": "zh-Hant",
     "strings": 254,
-    "translated": 0,
-    "reviewed": 0,
+    "translated": 58,
+    "reviewed": 58,
     "resourceStatus": "pending",
     "releaseReady": false,
-    "reviewType": "human review required"
+    "reviewType": "AI-assisted partial linguistic review",
+    "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+    "qualifiedSafetyReview": false
   }
 ]
