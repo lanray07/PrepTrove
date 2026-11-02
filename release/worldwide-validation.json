@@ -1,55 +1,81 @@
 {
   "date": "2026-11-02",
-  "kind": "isolated_qa_not_store_approval",
+  "kind": "neutral_planner_scope_validation_in_progress",
   "productionReady": false,
   "purchasesEnabled": false,
-  "sourceStrings": 251,
-  "localeCount": 22,
-  "stringComparisons": 5522,
-  "captures": 88,
-  "nativeTestSeconds": 113.686,
-  "device": "KFTRWI / API28",
-  "appApkSha256": "f033494c7e4637b6f7c29d8c7948c45ea6887e9acd27a4140f31782ead0f6588",
-  "testApkSha256": "6001d79619d5d2e8388ec986b86396859c9e7df236da4e2edee39485a2753977",
-  "expectationsSha256": "f18f451fbc197f1e8f8d3879c928a383e4108f4791f67eb895ffdb593c0fab3a",
-  "captureManifestSha256": "52a034f2b2831041b588993113e80a4e4b6d41349a2773a4293a0d96aa0d00ca",
-  "pythonTestsPassed": 24,
-  "jvmTestsPassed": 18,
-  "storeFields": 308,
+  "sourceStrings": 256,
+  "generatedLocalePacks": 22,
+  "reviewedUiPluralEntries": 5803,
   "voiceTemplates": 235,
-  "nonEnglishReviewedEntries": 4713,
-  "withheldNonEnglishSafetyEntries": 209,
-  "visualReview": "Codex AI samples: en-GB settings; ja-JP/ar/fr-FR editor and 200% settings. Date overflow, header clipping and nav wrapping resolved in inspected samples.",
-  "limitations": [
-    "Qualified safety review absent",
-    "Non-English production resource activation withheld",
-    "Localized marketing assets and store eligibility review pending",
-    "Actual speech/TTS and broader hardware/accessibility acceptance pending",
-    "No final Amazon submission"
-  ],
-  "emptyQuantityFallback": "Active UI locale default unit; validated by parser regression assertion",
-  "lint": {
-    "errors": 0,
-    "fatal": 0,
-    "warnings": 61,
-    "hints": 1
+  "currentNativeStatus": "pending hosted API36 execution; physical Fire disconnected",
+  "currentScreenshotsStatus": "pending176raw and176nativeheadlinepanels",
+  "currentUnitTestsPassed": 18,
+  "currentToolTestsPassed": 30,
+  "officialSources": 21,
+  "cachedAdvice": false,
+  "qualifiedSafetyReviewClaimed": false,
+  "consoleDescriptions": {
+    "locales": 15,
+    "status": "Complete after reload",
+    "map": "release/amazon-locales.json"
   },
-  "primaryDeviceTests": {
-    "tests": 36,
-    "failures": 0,
-    "errors": 0,
-    "skipped": 2,
-    "passed": 34
-  },
-  "storeCapture": {
-    "testPassed": true,
-    "seconds": 29.437,
-    "images": 24,
-    "locales": [
-      "en-US",
-      "en-GB",
-      "en-AU"
-    ],
-    "marketingApproval": false
+  "historicalEvidence": {
+    "sourceCommit": "fb0bdb1fe9c488f8e26575801148d8b42ce308a5",
+    "scope": "Previous development scope; not proof for the current neutral planner build",
+    "results": {
+      "date": "2026-11-02",
+      "kind": "isolated_qa_not_store_approval",
+      "productionReady": false,
+      "purchasesEnabled": false,
+      "sourceStrings": 251,
+      "localeCount": 22,
+      "stringComparisons": 5522,
+      "captures": 88,
+      "nativeTestSeconds": 113.686,
+      "device": "KFTRWI / API28",
+      "appApkSha256": "f033494c7e4637b6f7c29d8c7948c45ea6887e9acd27a4140f31782ead0f6588",
+      "testApkSha256": "6001d79619d5d2e8388ec986b86396859c9e7df236da4e2edee39485a2753977",
+      "expectationsSha256": "f18f451fbc197f1e8f8d3879c928a383e4108f4791f67eb895ffdb593c0fab3a",
+      "captureManifestSha256": "52a034f2b2831041b588993113e80a4e4b6d41349a2773a4293a0d96aa0d00ca",
+      "pythonTestsPassed": 24,
+      "jvmTestsPassed": 18,
+      "storeFields": 308,
+      "voiceTemplates": 235,
+      "nonEnglishReviewedEntries": 4713,
+      "withheldNonEnglishSafetyEntries": 209,
+      "visualReview": "Codex AI samples: en-GB settings; ja-JP/ar/fr-FR editor and 200% settings. Date overflow, header clipping and nav wrapping resolved in inspected samples.",
+      "limitations": [
+        "Qualified safety review absent",
+        "Non-English production resource activation withheld",
+        "Localized marketing assets and store eligibility review pending",
+        "Actual speech/TTS and broader hardware/accessibility acceptance pending",
+        "No final Amazon submission"
+      ],
+      "emptyQuantityFallback": "Active UI locale default unit; validated by parser regression assertion",
+      "lint": {
+        "errors": 0,
+        "fatal": 0,
+        "warnings": 61,
+        "hints": 1
+      },
+      "primaryDeviceTests": {
+        "tests": 36,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2,
+        "passed": 34
+      },
+      "storeCapture": {
+        "testPassed": true,
+        "seconds": 29.437,
+        "images": 24,
+        "locales": [
+          "en-US",
+          "en-GB",
+          "en-AU"
+        ],
+        "marketingApproval": false
+      }
+    }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "scope": "planner_official_links_only",
+  "ownerScopeApproval": "2026-11-02: Yes—use the recommended worldwide planner scope",
+  "cachedSafetyRecommendationsAllowed": false,
+  "qualifiedSafetyReviewClaimed": false,
+  "safetyCriticalKeys": [],
+  "changes": {
+    "planning_progress_is_not_a_guarantee_of_safety_f_26ae34": {
+      "previous": "Planning progress is not a guarantee of safety. Follow local authorities during an emergency.",
+      "current": "PrepTrove organises your records. It does not provide emergency alerts or assess whether you are safe. Use official guidance for your location.",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    },
+    "saved_guidance_united_kingdom_8a9326": {
+      "previous": "Saved guidance • United Kingdom",
+      "current": "Official guidance links",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    },
+    "general_planning_information_not_live_alerts_for_127afe": {
+      "previous": "General planning information, not live alerts. For other countries, consult your local emergency-management authority.",
+      "current": "These links open external websites and need internet access. Choose the authority for your location. Saved planner records remain available offline.",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    },
+    "source_uk_government_prepare_https_prepare_campa_17bb7e": {
+      "previous": "Source: UK Government Prepare\nhttps://prepare.campaign.gov.uk/get-prepared-for-emergencies/\nReviewed: 28 October 2026 · Content version 1\nSource update date: not supplied. This summary is stored offline. The source link needs internet access.",
+      "current": "This directory links to external publishers. PrepTrove does not store, translate or verify their advice.",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    },
+    "msg_6079021c3755": {
+      "previous": "Record a meeting point and how you’ll check in.",
+      "current": "Keep your household’s chosen meeting place and check-in details together.",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    },
+    "msg_64807d95473b": {
+      "previous": "Consider a torch, phone power bank, drinking water and food suited to your household. Keep supplies easy to find and review their condition.",
+      "current": "Open the UK Government’s Prepare website for its published information. The website is external and needs internet access.",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    },
+    "msg_54c27d3dfa89": {
+      "previous": "Source: UK Government Prepare",
+      "current": "Open UK Government Prepare",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    },
+    "msg_1a856e66963c": {
+      "previous": "Talk through your plan",
+      "current": "Your household plan",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    },
+    "msg_78d63721f142": {
+      "previous": "Discuss a meeting point, communication arrangements and any support your household may need.",
+      "current": "Record the arrangements you have chosen. Notes can be edited at any time.",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    },
+    "msg_9894105732a6": {
+      "previous": "Review official local guidance",
+      "current": "Official guidance links",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    },
+    "msg_4db74eab28d5": {
+      "previous": "Use notes for meeting points, communication, pets and accessibility arrangements. Sensitive details are optional.",
+      "current": "Use notes for your own household arrangements. Sensitive details are optional.",
+      "reason": "Removed cached recommendation or recast as neutral UI/product limitation under the owner-approved link-only scope."
+    }
+  },
+  "futureRequirement": "Any safety-critical guidance requires authoritative sourcing, qualified review and safety-key classification before activation."
+}

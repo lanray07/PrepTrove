@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Tous vos plans du foyer réunis",
+    "02-supplies": "Gardez une trace de chaque réserve",
+    "03-family-plan": "Créez un plan adapté à votre foyer",
+    "04-reminders": "Planifiez vos vérifications régulières",
+    "05-checklists": "Transformez votre plan en tâches simples",
+    "06-voice": "Saisissez ou dictez une commande prise en charge",
+    "07-saved-offline-kit": "Vos kits enregistrés restent accessibles hors ligne",
+    "08-report-preview": "Vérifiez un rapport avant de le partager"
+  },
+  "kitTitle": "Articles essentiels du foyer · exemple",
+  "kitLocation": "Placard de l’entrée",
+  "kitDetail": "Exemples de fiches. Remplacez-les par les réserves de votre foyer.",
+  "supplies": [
+    "Eau en bouteille",
+    "Lampe de poche",
+    "Piles de rechange",
+    "Aliments prêts à consommer",
+    "Radio portable",
+    "Batterie externe"
+  ],
+  "unitBottles": "bouteilles",
+  "unitItems": "unités",
+  "unitTins": "boîtes",
+  "category": "Réserves d’exemple",
+  "planTitle": "Plan du foyer · exemple",
+  "planDetail": "Exemple de plan. Adaptez les détails à votre foyer.",
+  "members": "Membre du foyer A ; Membre du foyer B",
+  "meeting": "Entrée de la bibliothèque (exemple)",
+  "communication": "Contact et moyen convenus pour donner des nouvelles (exemple)",
+  "pets": "Emplacement de la caisse de transport (exemple)",
+  "checkIn": "Heure convenue pour donner des nouvelles (exemple)",
+  "contactTitle": "Contact de confiance · exemple",
+  "contactDetail": "Ajoutez les coordonnées de votre contact de confiance.",
+  "relationship": "Contact de confiance",
+  "checkTitles": [
+    "Vérifier les fiches des réserves",
+    "Vérifier les coordonnées des membres du foyer",
+    "Relire les notes des kits enregistrés"
+  ],
+  "checkGroup": "Vérification du foyer",
+  "reminderKit": "Vérifier le kit du foyer",
+  "reminderBatteries": "Vérifier les piles de rechange",
+  "locale": "fr-CA",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

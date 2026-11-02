@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Semua rencana rumah tangga dalam satu tempat",
+    "02-supplies": "Pantau setiap persediaan",
+    "03-family-plan": "Buat rencana yang sesuai dengan rumah tangga Anda",
+    "04-reminders": "Jadwalkan peninjauan secara teratur",
+    "05-checklists": "Ubah rencana menjadi tugas sederhana",
+    "06-voice": "Ketik atau ucapkan perintah yang didukung",
+    "07-saved-offline-kit": "Perlengkapan tersimpan dapat diakses offline",
+    "08-report-preview": "Tinjau laporan sebelum membagikannya"
+  },
+  "kitTitle": "Kebutuhan rumah tangga · contoh",
+  "kitLocation": "Lemari di ruang depan",
+  "kitDetail": "Catatan contoh. Ganti dengan persediaan rumah tangga Anda.",
+  "supplies": [
+    "Air minum dalam botol",
+    "Senter",
+    "Baterai cadangan",
+    "Makanan siap santap",
+    "Radio portabel",
+    "Power bank"
+  ],
+  "unitBottles": "botol",
+  "unitItems": "unit",
+  "unitTins": "kaleng",
+  "category": "Persediaan contoh",
+  "planTitle": "Rencana rumah tangga · contoh",
+  "planDetail": "Rencana contoh. Sesuaikan detailnya dengan rumah tangga Anda.",
+  "members": "Anggota rumah tangga A; Anggota rumah tangga B",
+  "meeting": "Pintu masuk perpustakaan (contoh)",
+  "communication": "Kontak dan cara memberi kabar yang disepakati (contoh)",
+  "pets": "Lokasi kandang pembawa hewan (contoh)",
+  "checkIn": "Waktu memberi kabar yang disepakati (contoh)",
+  "contactTitle": "Kontak tepercaya · contoh",
+  "contactDetail": "Tambahkan detail kontak tepercaya Anda.",
+  "relationship": "Kontak tepercaya",
+  "checkTitles": [
+    "Tinjau catatan persediaan",
+    "Tinjau detail kontak rumah tangga",
+    "Tinjau catatan perlengkapan tersimpan"
+  ],
+  "checkGroup": "Peninjauan rumah tangga",
+  "reminderKit": "Tinjau perlengkapan rumah tangga",
+  "reminderBatteries": "Periksa baterai cadangan",
+  "locale": "id-ID",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

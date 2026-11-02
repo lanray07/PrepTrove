@@ -1,0 +1,112 @@
+{
+  "scope": "external_links_only",
+  "checkedDate": "2026-11-02",
+  "adviceCached": false,
+  "sources": [
+    {
+      "country": "GB",
+      "publisher": "GOV.UK · Be Ready",
+      "url": "https://beready.campaign.gov.uk/"
+    },
+    {
+      "country": "US",
+      "publisher": "Ready.gov · FEMA",
+      "url": "https://www.ready.gov/"
+    },
+    {
+      "country": "AU",
+      "publisher": "NEMA",
+      "url": "https://www.nema.gov.au/"
+    },
+    {
+      "country": "FR",
+      "publisher": "Géorisques",
+      "url": "https://www.georisques.gouv.fr/me-preparer-me-proteger"
+    },
+    {
+      "country": "CA",
+      "publisher": "Public Safety Canada · Get Prepared",
+      "url": "https://www.canada.ca/en/services/policing/emergencies/preparedness/get-prepared.html"
+    },
+    {
+      "country": "ES",
+      "publisher": "Protección Civil y Emergencias",
+      "url": "https://www.proteccioncivil.es/"
+    },
+    {
+      "country": "MX",
+      "publisher": "CENAPRED",
+      "url": "https://www.gob.mx/cenapred"
+    },
+    {
+      "country": "DE",
+      "publisher": "BBK",
+      "url": "https://www.bbk.bund.de/"
+    },
+    {
+      "country": "IT",
+      "publisher": "Dipartimento della Protezione Civile",
+      "url": "https://www.protezionecivile.gov.it/"
+    },
+    {
+      "country": "BR",
+      "publisher": "Proteção e Defesa Civil",
+      "url": "https://www.gov.br/mdr/pt-br/assuntos/protecao-e-defesa-civil"
+    },
+    {
+      "country": "PT",
+      "publisher": "ANEPC",
+      "url": "https://prociv.gov.pt/pt/home/"
+    },
+    {
+      "country": "NL",
+      "publisher": "Denk vooruit",
+      "url": "https://www.denkvooruit.nl/"
+    },
+    {
+      "country": "PL",
+      "publisher": "Rządowe Centrum Bezpieczeństwa",
+      "url": "https://www.gov.pl/web/rcb"
+    },
+    {
+      "country": "SE",
+      "publisher": "Myndigheten för civilt försvar",
+      "url": "https://www.mcf.se/"
+    },
+    {
+      "country": "JP",
+      "publisher": "防災庁",
+      "url": "https://www.bousai.go.jp/"
+    },
+    {
+      "country": "IN",
+      "publisher": "NDMA",
+      "url": "https://ndma.gov.in/"
+    },
+    {
+      "country": "TR",
+      "publisher": "AFAD",
+      "url": "https://www.afad.gov.tr/"
+    },
+    {
+      "country": "ID",
+      "publisher": "BNPB",
+      "url": "https://bnpb.go.id/"
+    },
+    {
+      "country": "KR",
+      "publisher": "국민재난안전포털",
+      "url": "https://www.safekorea.go.kr/"
+    },
+    {
+      "country": "CN",
+      "publisher": "中华人民共和国应急管理部",
+      "url": "https://www.mem.gov.cn/"
+    },
+    {
+      "country": "TW",
+      "publisher": "內政部消防署",
+      "url": "https://www.nfa.gov.tw/cht/index.php"
+    }
+  ]
+}

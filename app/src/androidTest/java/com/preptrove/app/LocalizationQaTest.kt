@@ -94,6 +94,18 @@ class LocalizationQaTest {
     val answer=localized.resources.getQuantityString(R.plurals.supplies_attention,1,1)
     rule.onNodeWithText(answer,substring=false).performScrollTo().assertIsDisplayed()
     capture("04-typed-voice")
+    if(!android.speech.SpeechRecognizer.isRecognitionAvailable(context)) {
+     rule.onNodeWithText(localized.getString(R.string.msg_4c15103c8011)).performScrollTo().performClick()
+     rule.onNodeWithText(localized.getString(R.string.msg_79f24e0d59e2)).performScrollTo().assertIsDisplayed()
+    }
+    scenario.onActivity {GuidanceDirectory.select(it,"GB")}
+    // Re-enter to render a freshly persisted manual directory choice.
+    section(R.string.nav_reference)
+    rule.onNodeWithTag("guidance-country").performClick()
+    val country=java.util.Locale("","GB").getDisplayCountry(java.util.Locale.forLanguageTag(locale))
+    rule.onNode(hasText(country) and hasAnyAncestor(isDialog())).performScrollTo().performClick()
+    rule.onNodeWithText("GOV.UK · Be Ready",substring=true).assertIsDisplayed()
+    capture("05-official-links")
     section(R.string.nav_supplies)
     rule.onNodeWithContentDescription(localized.getString(R.string.msg_950eea0391cc)).performClick()
     rule.onNodeWithText(localized.getString(R.string.save_1509f5),substring=false).performClick()
@@ -110,7 +122,7 @@ class LocalizationQaTest {
     capture("03-settings-200percent")
     scenario.onActivity {it.window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)}
    }
-   results.put(locale,JSONObject().put("stringResourcesChecked",checked).put("captures",4).put("typedCommandPassed",true).put("fontScaleStress",2.0).put("safetyTranslationApproved",false))
+   results.put(locale,JSONObject().put("stringResourcesChecked",checked).put("captures",5).put("typedCommandPassed",true).put("fontScaleStress",2.0).put("safetyTranslationApproved",false))
   }
   File(output,"results.json").writeText(JSONObject().put("kind","qa_only_not_store").put("locales",results).toString(2))
  }

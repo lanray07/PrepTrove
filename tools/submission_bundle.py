@@ -4,6 +4,7 @@ Run after Gradle validation: python tools/submission_bundle.py
 Only explicitly allowlisted public assets/documents enter artifacts/amazon-review.zip.
 """
 from pathlib import Path
+from asset_provenance import production,capture
 import datetime
 import hashlib
 import json
@@ -58,19 +59,20 @@ def validate_badging(text):
             'permissions': permissions}
 
 
-def validate_screenshots(root, manifest):
+def validate_screenshots(root, manifest, locales=None, directory="assets/store/screenshots"):
+    locales=locales or ["en-US","en-GB","en-AU"]
     paths = []
     for screen in manifest['screens']:
         path = root / screen['file']
-        if not path.resolve().is_relative_to((root / 'assets/store/screenshots').resolve()):
+        if not path.resolve().is_relative_to((root / directory).resolve()):
             raise ValueError('Screenshot escapes the allowlisted directory')
         if path.suffix != '.png' or digest(path) != screen['sha256']:
             raise ValueError('Screenshot missing or modified since capture: ' + screen['file'])
         paths.append(path)
-    for locale in ['en-US', 'en-GB', 'en-AU']:
+    for locale in locales:
         if len([s for s in manifest['screens'] if s['locale'] == locale]) != 8:
-            raise ValueError('Expected eight real screens per English resource variant')
-    if len(set(paths)) != 24 or len(paths) != 24:
+            raise ValueError('Expected eight images per approved resource locale')
+    if {s['locale'] for s in manifest['screens']}!=set(locales) or len(set(paths)) != 8*len(locales) or len(paths) != 8*len(locales):
         raise ValueError('Duplicate or unexpected screenshot inventory')
     return paths
 
@@ -117,7 +119,14 @@ def main():
     if 'Missing META-INF/MANIFEST.MF' not in signature.stderr:
         raise ValueError('Unable to establish unsigned APK status: ' + signature.stderr)
     manifest_path = ROOT / 'assets/store/screenshots/manifest.json'
-    screenshots = validate_screenshots(ROOT, json.loads(manifest_path.read_text(encoding='utf-8')))
+    locales=re.findall(r'"([^"]+)"',(ROOT/'app/src/main/java/com/preptrove/app/ApprovedLanguages.kt').read_text(encoding='utf-8'))
+    screenshots = validate_screenshots(ROOT, json.loads(manifest_path.read_text(encoding='utf-8')),locales)
+    marketing_manifest=ROOT/'assets/store/marketing/manifest.json'
+    panels=validate_screenshots(ROOT,json.loads(marketing_manifest.read_text(encoding='utf-8')),locales,'assets/store/marketing')
+    for asset_manifest in [manifest_path,marketing_manifest]:
+        data=json.loads(asset_manifest.read_text(encoding='utf-8'))
+        if data.get('productionFingerprint')!=production(ROOT) or data.get('captureFingerprint')!=capture(ROOT):
+            raise ValueError('Store assets are stale for current production/fixture source: '+asset_manifest.name)
     unit = test_summary(ROOT / 'app/build/test-results/testDebugUnitTest')
     if unit['status'] != 'recorded_pass':
         raise ValueError('Run JVM validation before assembling the review bundle')
@@ -138,19 +147,19 @@ def main():
         lint[severity] = lint.get(severity, 0) + 1
     if lint.get('Error', 0) or lint.get('Fatal', 0):
         raise ValueError('Lint contains release-blocking errors')
-    files = [apk, manifest_path, *screenshots,
+    files = [apk, manifest_path, *screenshots, marketing_manifest, *panels,
              ROOT / 'assets/store/icon-512.png', ROOT / 'assets/store/icon-114.png',
-             *[ROOT / 'release' / name for name in ['amazon-draft.json', 'listing-en-US.json', 'gates.json', 'amazon-testing-instructions.txt', 'worldwide-validation.json']],
-             *[ROOT / 'docs' / name for name in ['RELEASE.md', 'QA.md', 'PRIVACY.md', 'DATA-DELETION.md', 'BACKUP.md', 'AMAZON-BILLING.md', 'AMAZON-SUBMISSION.md', 'VOICE.md', 'NOTIFICATIONS.md', 'LOCALISATION.md', 'WORLDWIDE-VALIDATION.md']],
+             *[ROOT / 'release' / name for name in ['amazon-draft.json', 'listing-en-US.json', 'gates.json', 'amazon-testing-instructions.txt', 'worldwide-validation.json', 'amazon-locales.json']],
+             *[ROOT / 'docs' / name for name in ['RELEASE.md', 'QA.md', 'PRIVACY.md', 'DATA-DELETION.md', 'BACKUP.md', 'AMAZON-BILLING.md', 'AMAZON-SUBMISSION.md', 'VOICE.md', 'NOTIFICATIONS.md', 'LOCALISATION.md', 'WORLDWIDE-VALIDATION.md', 'SOURCE-DIRECTORY.md']],
              ROOT / 'README.md',
-             ROOT / 'localization/report.json']
+             *sorted((ROOT/'localization/store-queues').glob('*.json')), ROOT / 'localization/report.json', ROOT / 'localization/content-policy.json', ROOT / 'app/src/main/assets/official-sources.json']
     report = {'kind': 'unsigned_review_only', 'productionReady': False, 'signed': False,
               'submitted': False, 'checkoutEnabled': False,
               'buildConfigSha256': digest(config_path),
               'sourceCommit': revision, 'workingTreeDirty': dirty,
               'apk': apk_report, 'apkSha256': digest(apk), 'zipAlignmentVerified': True,
               'testProviderAbsent': True, 'localizationQaResourcesAbsent': True,
-              'unitTests': unit, 'deviceTests': device, 'lint': lint,
+              'unitTests': unit, 'deviceTests': device, 'systemUiTests': test_summary(ROOT/'artifacts/system-ui-results'), 'lint': lint,
               'remaining': remaining, 'files': {p.relative_to(ROOT).as_posix(): digest(p) for p in files}}
     output = ROOT / 'artifacts'
     output.mkdir(exist_ok=True)

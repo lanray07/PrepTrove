@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Tus planes del hogar, en un solo lugar",
+    "02-supplies": "Lleva el control de todos tus suministros",
+    "03-family-plan": "Crea un plan adaptado a tu hogar",
+    "04-reminders": "Mantén tus revisiones al día",
+    "05-checklists": "Convierte tu plan en tareas sencillas",
+    "06-voice": "Escribe o di un comando compatible",
+    "07-saved-offline-kit": "Tus kits guardados funcionan sin conexión",
+    "08-report-preview": "Revisa el informe antes de compartirlo"
+  },
+  "kitTitle": "Artículos básicos del hogar · ejemplo",
+  "kitLocation": "Armario de la entrada",
+  "kitDetail": "Registros de ejemplo. Sustitúyelos por los suministros de tu hogar.",
+  "supplies": [
+    "Agua embotellada",
+    "Linterna",
+    "Pilas de repuesto",
+    "Comida lista para consumir",
+    "Radio portátil",
+    "Batería externa"
+  ],
+  "unitBottles": "botellas",
+  "unitItems": "unidades",
+  "unitTins": "latas",
+  "category": "Suministros de ejemplo",
+  "planTitle": "Plan del hogar · ejemplo",
+  "planDetail": "Plan de ejemplo. Adapta los detalles a tu hogar.",
+  "members": "Miembro del hogar A; Miembro del hogar B",
+  "meeting": "Entrada de la biblioteca (ejemplo)",
+  "communication": "Contacto y método acordados para confirmar que están bien (ejemplo)",
+  "pets": "Ubicación del transportín (ejemplo)",
+  "checkIn": "Hora acordada para confirmar que están bien (ejemplo)",
+  "contactTitle": "Contacto de confianza · ejemplo",
+  "contactDetail": "Añade los datos de tu contacto de confianza.",
+  "relationship": "Contacto de confianza",
+  "checkTitles": [
+    "Revisar los registros de suministros",
+    "Revisar los datos de contacto del hogar",
+    "Revisar las notas de los kits guardados"
+  ],
+  "checkGroup": "Revisión del hogar",
+  "reminderKit": "Revisar el kit del hogar",
+  "reminderBatteries": "Revisar las pilas de repuesto",
+  "locale": "es-419",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

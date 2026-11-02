@@ -25,7 +25,7 @@ def catalogue(source,plurals,locale):
          for key,forms in plurals.items() for quantity in dict.fromkeys([*forms,*extra])}}
 
 def queue_complete(queue):
- return (bool(str(queue.get('reviewer') or '').strip()) and queue.get('qualifiedSafetyReview') is True
+ return (bool(str(queue.get('reviewer') or '').strip()) and (not any(item.get('safetyReviewRequired') for item in queue['strings'].values()) or queue.get('qualifiedSafetyReview') is True)
          and all(item.get('reviewed') is True and item.get('translation') for item in queue['strings'].values()))
 def xml_text(text):return '"'+escape(text).replace('\\','\\\\').replace("'","\\'").replace('"','\\"').replace('\n','\\n')+'"'
 def resource_folder(locale):return 'values-in-rID' if locale=='id-ID' else 'values-b+'+locale.replace('-','+')

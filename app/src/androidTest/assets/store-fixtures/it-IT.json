@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "I piani della tua famiglia, insieme",
+    "02-supplies": "Tieni traccia di ogni provvista",
+    "03-family-plan": "Un piano adatto alla tua famiglia",
+    "04-reminders": "Programma le tue verifiche",
+    "05-checklists": "Trasforma il piano in attività semplici",
+    "06-voice": "Digita o pronuncia un comando supportato",
+    "07-saved-offline-kit": "I kit salvati funzionano offline",
+    "08-report-preview": "Visualizza un rapporto prima di condividerlo"
+  },
+  "kitTitle": "Essenziali per la casa · esempio",
+  "kitLocation": "Armadio dell’ingresso",
+  "kitDetail": "Dati di esempio. Sostituiscili con le provviste della tua famiglia.",
+  "supplies": [
+    "Acqua in bottiglia",
+    "Torcia",
+    "Batterie di ricambio",
+    "Alimenti pronti al consumo",
+    "Radio portatile",
+    "Batteria esterna"
+  ],
+  "unitBottles": "bottiglie",
+  "unitItems": "pezzi",
+  "unitTins": "scatolette",
+  "category": "Provviste di esempio",
+  "planTitle": "Piano familiare · esempio",
+  "planDetail": "Piano di esempio. Adatta i dettagli alla tua famiglia.",
+  "members": "Componente A; Componente B",
+  "meeting": "Ingresso della biblioteca (esempio)",
+  "communication": "Metodo concordato per contatti e conferme (esempio)",
+  "pets": "Posizione del trasportino (esempio)",
+  "checkIn": "Orario concordato per dare conferma (esempio)",
+  "contactTitle": "Contatto di fiducia · esempio",
+  "contactDetail": "Aggiungi i dati del tuo contatto di fiducia.",
+  "relationship": "Contatto di fiducia",
+  "checkTitles": [
+    "Verifica i dati delle provviste",
+    "Verifica i contatti della famiglia",
+    "Verifica le note dei kit salvati"
+  ],
+  "checkGroup": "Verifica familiare",
+  "reminderKit": "Verifica il kit di casa",
+  "reminderBatteries": "Controlla le batterie di ricambio",
+  "locale": "it-IT",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

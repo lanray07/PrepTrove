@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Eure Haushaltspläne an einem Ort",
+    "02-supplies": "Alle Vorräte im Blick",
+    "03-family-plan": "Ein Plan, der zu eurem Haushalt passt",
+    "04-reminders": "Regelmäßige Überprüfungen planen",
+    "05-checklists": "Aus eurem Plan werden einfache Aufgaben",
+    "06-voice": "Unterstützte Befehle tippen oder sprechen",
+    "07-saved-offline-kit": "Gespeicherte Notfallsets offline nutzen",
+    "08-report-preview": "Berichte vor dem Teilen ansehen"
+  },
+  "kitTitle": "Grundausstattung zu Hause · Beispiel",
+  "kitLocation": "Flurschrank",
+  "kitDetail": "Beispieleinträge. Ersetze sie durch eure eigenen Haushaltsvorräte.",
+  "supplies": [
+    "Trinkwasser in Flaschen",
+    "Taschenlampe",
+    "Ersatzbatterien",
+    "Verzehrfertige Lebensmittel",
+    "Tragbares Radio",
+    "Powerbank"
+  ],
+  "unitBottles": "Flaschen",
+  "unitItems": "Stück",
+  "unitTins": "Dosen",
+  "category": "Beispielvorräte",
+  "planTitle": "Haushaltsplan · Beispiel",
+  "planDetail": "Beispielplan. Passe die Angaben an euren Haushalt an.",
+  "members": "Haushaltsmitglied A; Haushaltsmitglied B",
+  "meeting": "Bibliothekseingang (Beispiel)",
+  "communication": "Vereinbarte Kontakt- und Rückmeldemethode (Beispiel)",
+  "pets": "Standort der Tiertransportbox (Beispiel)",
+  "checkIn": "Vereinbarte Rückmeldezeit (Beispiel)",
+  "contactTitle": "Vertrauensperson · Beispiel",
+  "contactDetail": "Trage die Angaben eurer Vertrauensperson ein.",
+  "relationship": "Vertrauensperson",
+  "checkTitles": [
+    "Vorratseinträge überprüfen",
+    "Kontaktdaten des Haushalts überprüfen",
+    "Gespeicherte Notfallset-Notizen überprüfen"
+  ],
+  "checkGroup": "Haushaltsüberprüfung",
+  "reminderKit": "Notfallset zu Hause überprüfen",
+  "reminderBatteries": "Ersatzbatterien überprüfen",
+  "locale": "de-DE",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

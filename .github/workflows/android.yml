@@ -29,7 +29,7 @@ jobs:
       - run: python3 -m unittest discover -s tools -p 'test_*.py'
       - run: ./gradlew :app:assembleDebug :app:assembleRelease :app:testDebugUnitTest :app:lintDebug
       - run: ./gradlew :app:assembleLocalizationQa :app:assembleLocalizationQaAndroidTest -PlocalizationQa=true
-      - run: python3 tools/submission_bundle.py
+      - run: python3 tools/ci_bundle.py
       - uses: actions/upload-artifact@v4
         with:
           name: development-build-and-reports
@@ -43,3 +43,51 @@ jobs:
             artifacts/amazon-review.zip
             artifacts/amazon-review.zip.sha256
             artifacts/amazon-review-report.json
+            artifacts/package-status.json
+
+  native-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: "platform-tools platforms;android-36 build-tools;36.0.0"
+          log-accepted-android-sdk-licenses: false
+      - uses: gradle/actions/setup-gradle@v4
+      - run: chmod +x gradlew
+      - run: python3 -m pip install Pillow
+      - run: python3 tools/localize.py && python3 tools/generate_voice.py && python3 tools/localization_qa.py
+      - name: Enable emulator KVM for this disposable runner
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Native API 36 acceptance and worldwide captures
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 36
+          target: google_apis
+          arch: x86_64
+          profile: pixel_7
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          script: bash tools/run_ci_native.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-api36-evidence-and-store-assets
+          path: |
+            assets/store/screenshots/
+            assets/store/marketing/
+            artifacts/localization-qa-capture-manifest.json
+            artifacts/localization-qa-captures/
+            artifacts/system-ui-results/
+            artifacts/device-acceptance/
+            artifacts/amazon-review*
+            app/build/outputs/androidTest-results/
+            app/build/reports/

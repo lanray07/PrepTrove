@@ -16,7 +16,7 @@ APK: `app/build/outputs/apk/debug/app-debug.apk`. Debug signing is for developme
 
 ## Implemented
 
-Room persistence for kits, supplies, plan notes, manually entered contacts, grouped checklist tasks and reminders. Add, edit, duplicate, delete, search, assign kit, inspect supply, record completion, expiry review, optional onboarding and notifications. Adaptive navigation rail for tablets, scrollable phone tabs, persisted light/dark theme. Optional push-to-talk with transcript review, locale-specific typed commands and device TTS. SAF CSV, JSON, password-protected PTB and paginated PDF exports; validated copy-based JSON/PTB restore with explicit contact/plan inclusion. Local reference summary with source provenance. No account, advertising, analytics, location or contact-list permission.
+Room persistence for kits, supplies, plan notes, manually entered contacts, grouped checklist tasks and reminders. Add, edit, duplicate, delete, search, assign kit, inspect supply, record completion, expiry review, optional onboarding and notifications. Adaptive navigation rail for tablets, scrollable phone tabs, persisted light/dark theme. Optional push-to-talk with transcript review, locale-specific typed commands and device TTS. SAF CSV, JSON, password-protected PTB and paginated PDF exports; validated copy-based JSON/PTB restore with explicit contact/plan inclusion. Official-source directory with country choice and external links. No account, advertising, analytics, location or contact-list permission.
 
 ## Limits
 
@@ -26,12 +26,12 @@ Architecture uses one application module with UI, ViewModel, Room repository/DAO
 
 ## Localisation and release tooling
 
-- UI resource variants available: en-GB, en-US, en-AU. They are source-English variants, not evidence of full store-language approval.
-- All non-safety UI entries in 19 additional locale packs have AI linguistic review. All 22 targets have full store-copy drafts and deterministic voice templates. The 209 non-English safety slots remain withheld pending qualified review; worldwide release resources are not activated.
-- Settings offers manual language selection; pending languages are disabled. Device-language fallback never translates private records. Speech recognition/TTS use the active app locale; command parsing supports the documented 22-locale template set with English fallback. Speech engine language support still depends on the device.
-- Run `python tools/extract_resources.py --check`, `python tools/localize.py`, `python tools/audit_localization.py`, and `python -m unittest discover -s tools -p 'test_*.py'`.
-- Review workflow: fill the locale queue, identify the reviewer, review each string and safety flag, then use `python tools/localize.py --approve LOCALE`. Machine output is never treated as human-reviewed.
-- `python tools/release_check.py` deliberately fails while production requirements remain open. `python tools/package_release.py --unsigned` builds a QA release and checksum manifest. Signing requires completed gates and local environment secrets; the tool never publishes.
+- UI resources now cover all 22 target locales under the owner-approved neutral planner scope. Private records are never automatically translated.
+- Official-source links have a manually chosen country independent of language; external advice is not downloaded, translated or cached. Future critical guidance requires qualified review before activation.
+- 22 locale queues, 308 store fields and 235 typed-command templates have Codex AI linguistic review; it is not professional safety approval or human speech testing.
+- Run `python tools/localize.py`, `python tools/generate_voice.py`, `python tools/extract_resources.py --check`, and `python -m unittest discover -s tools -p 'test_*.py'`.
+- The hosted `native-qa` workflow tests API 36, real system document/credential UI in a fresh disposable emulator, 22-language QA and real localized screenshots. It does not substitute for Fire/VoiceView/human speech evidence.
+- `python tools/release_check.py` remains nonzero while release acceptance is open. `python tools/ci_bundle.py` records a missing-assets status instead of producing a misleading package; strict `submission_bundle.py` requires current source-bound raw and marketing assets for every active locale.
 
 See [translation review instructions](docs/LOCALISATION.md).
 

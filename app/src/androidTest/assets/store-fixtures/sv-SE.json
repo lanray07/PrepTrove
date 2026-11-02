@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Hushållets planer samlade",
+    "02-supplies": "Håll koll på alla förnödenheter",
+    "03-family-plan": "En plan som passar ditt hushåll",
+    "04-reminders": "Planera regelbundna genomgångar",
+    "05-checklists": "Gör planen till enkla uppgifter",
+    "06-voice": "Skriv eller säg ett kommando som stöds",
+    "07-saved-offline-kit": "Dina sparade krislådor fungerar offline",
+    "08-report-preview": "Förhandsgranska rapporten innan du delar"
+  },
+  "kitTitle": "Basutrustning hemma · exempel",
+  "kitLocation": "Skåpet i hallen",
+  "kitDetail": "Exempelposter. Ersätt dem med hushållets egna förnödenheter.",
+  "supplies": [
+    "Vatten på flaska",
+    "Ficklampa",
+    "Reservbatterier",
+    "Ätfärdig mat",
+    "Bärbar radio",
+    "Powerbank"
+  ],
+  "unitBottles": "flaskor",
+  "unitItems": "stycken",
+  "unitTins": "konservburkar",
+  "category": "Exempel på förnödenheter",
+  "planTitle": "Hushållsplan · exempel",
+  "planDetail": "Exempelplan. Anpassa uppgifterna till ditt hushåll.",
+  "members": "Hushållsmedlem A; Hushållsmedlem B",
+  "meeting": "Bibliotekets entré (exempel)",
+  "communication": "Överenskommet sätt att kontakta och stämma av (exempel)",
+  "pets": "Plats för djurets transportbur (exempel)",
+  "checkIn": "Överenskommen tid för avstämning (exempel)",
+  "contactTitle": "Betrodd kontakt · exempel",
+  "contactDetail": "Lägg till uppgifter om din betrodda kontakt.",
+  "relationship": "Betrodd kontakt",
+  "checkTitles": [
+    "Granska uppgifter om förnödenheter",
+    "Granska hushållets kontaktuppgifter",
+    "Granska sparade anteckningar om krislådan"
+  ],
+  "checkGroup": "Hushållsgenomgång",
+  "reminderKit": "Gå igenom krislådan hemma",
+  "reminderBatteries": "Kontrollera reservbatterier",
+  "locale": "sv-SE",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Ev planlarınız bir arada",
+    "02-supplies": "Her malzemenin kaydını tutun",
+    "03-family-plan": "Evinize uygun bir plan oluşturun",
+    "04-reminders": "Kontrollerinizi zamanında yapın",
+    "05-checklists": "Planınızı basit görevlere dönüştürün",
+    "06-voice": "Desteklenen bir komutu yazın veya söyleyin",
+    "07-saved-offline-kit": "Kayıtlı kitlerinize çevrimdışı erişin",
+    "08-report-preview": "Paylaşmadan önce raporu inceleyin"
+  },
+  "kitTitle": "Ev için temel malzemeler · örnek",
+  "kitLocation": "Antre dolabı",
+  "kitDetail": "Örnek kayıtlar. Bunları kendi evinizdeki malzemelerle değiştirin.",
+  "supplies": [
+    "Şişelenmiş su",
+    "El feneri",
+    "Yedek piller",
+    "Tüketime hazır gıda",
+    "Taşınabilir radyo",
+    "Taşınabilir şarj cihazı"
+  ],
+  "unitBottles": "şişe",
+  "unitItems": "adet",
+  "unitTins": "kutu",
+  "category": "Örnek malzemeler",
+  "planTitle": "Ev planı · örnek",
+  "planDetail": "Örnek plan. Ayrıntıları kendi evinize göre uyarlayın.",
+  "members": "Ev üyesi A; Ev üyesi B",
+  "meeting": "Kütüphane girişi (örnek)",
+  "communication": "Kararlaştırılan kişi ve haberleşme yöntemi (örnek)",
+  "pets": "Evcil hayvan taşıma çantasının yeri (örnek)",
+  "checkIn": "Kararlaştırılan haberleşme saati (örnek)",
+  "contactTitle": "Güvenilen kişi · örnek",
+  "contactDetail": "Güvendiğiniz kişinin bilgilerini ekleyin.",
+  "relationship": "Güvenilen kişi",
+  "checkTitles": [
+    "Malzeme kayıtlarını inceleyin",
+    "Evdeki kişilerin iletişim bilgilerini inceleyin",
+    "Kayıtlı kit notlarını inceleyin"
+  ],
+  "checkGroup": "Ev planı kontrolü",
+  "reminderKit": "Ev kitini kontrol edin",
+  "reminderBatteries": "Yedek pilleri kontrol edin",
+  "locale": "tr-TR",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Your household plans, together",
+    "02-supplies": "Keep track of every supply",
+    "03-family-plan": "Make a plan that fits your household",
+    "04-reminders": "Keep your reviews on schedule",
+    "05-checklists": "Turn your plan into simple tasks",
+    "06-voice": "Type or speak a supported command",
+    "07-saved-offline-kit": "Your saved kits work offline",
+    "08-report-preview": "Preview a report before sharing"
+  },
+  "kitTitle": "Home essentials · example",
+  "kitLocation": "Hall cupboard",
+  "kitDetail": "Example records. Replace these with your own household supplies.",
+  "supplies": [
+    "Bottled water",
+    "Torch",
+    "Spare batteries",
+    "Ready-to-eat food",
+    "Portable radio",
+    "Power bank"
+  ],
+  "unitBottles": "bottles",
+  "unitItems": "items",
+  "unitTins": "tins",
+  "category": "Example supplies",
+  "planTitle": "Household plan · example",
+  "planDetail": "Example plan. Adapt the details to your household.",
+  "members": "Household member A; Household member B",
+  "meeting": "Library entrance (example)",
+  "communication": "Agreed contact and check-in method (example)",
+  "pets": "Pet carrier location (example)",
+  "checkIn": "Agreed check-in time (example)",
+  "contactTitle": "Trusted contact · example",
+  "contactDetail": "Add your trusted contact’s details.",
+  "relationship": "Trusted contact",
+  "checkTitles": [
+    "Review supply records",
+    "Review household contact details",
+    "Review saved kit notes"
+  ],
+  "checkGroup": "Household review",
+  "reminderKit": "Review home kit",
+  "reminderBatteries": "Inspect spare batteries",
+  "locale": "en-AU",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

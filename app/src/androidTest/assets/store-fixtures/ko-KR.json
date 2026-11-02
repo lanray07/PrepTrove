@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "가족의 계획을 한곳에",
+    "02-supplies": "모든 물품을 빠짐없이 관리",
+    "03-family-plan": "우리 가정에 맞는 계획 만들기",
+    "04-reminders": "정기 점검 일정을 놓치지 않게",
+    "05-checklists": "계획을 간단한 할 일로",
+    "06-voice": "지원되는 명령을 입력하거나 말하기",
+    "07-saved-offline-kit": "저장한 키트는 오프라인에서도",
+    "08-report-preview": "공유하기 전에 보고서 미리 보기"
+  },
+  "kitTitle": "가정 필수품 · 예시",
+  "kitLocation": "현관 수납장",
+  "kitDetail": "예시 기록입니다. 우리 가정의 물품으로 바꿔 주세요.",
+  "supplies": [
+    "생수",
+    "손전등",
+    "예비 건전지",
+    "바로 먹을 수 있는 식품",
+    "휴대용 라디오",
+    "보조 배터리"
+  ],
+  "unitBottles": "병",
+  "unitItems": "개",
+  "unitTins": "캔",
+  "category": "예시 물품",
+  "planTitle": "가정 계획 · 예시",
+  "planDetail": "예시 계획입니다. 우리 가정에 맞게 내용을 수정하세요.",
+  "members": "가족 구성원 A; 가족 구성원 B",
+  "meeting": "도서관 입구(예시)",
+  "communication": "미리 정한 연락 및 안부 확인 방법(예시)",
+  "pets": "반려동물 이동장 보관 위치(예시)",
+  "checkIn": "미리 정한 안부 확인 시간(예시)",
+  "contactTitle": "믿을 수 있는 연락처 · 예시",
+  "contactDetail": "믿을 수 있는 사람의 연락처를 추가하세요.",
+  "relationship": "믿을 수 있는 연락처",
+  "checkTitles": [
+    "물품 기록 검토",
+    "가족 연락처 검토",
+    "저장된 키트 메모 검토"
+  ],
+  "checkGroup": "가정 정보 검토",
+  "reminderKit": "가정용 키트 검토",
+  "reminderBatteries": "예비 건전지 점검",
+  "locale": "ko-KR",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

@@ -10,13 +10,13 @@ Open the relevant section, choose Delete on the saved record, and confirm. Delet
 
 ## Delete all saved planning data
 
-Open PrepTrove, go to Settings, select Delete all saved records, then confirm Delete everything. This removes saved kits, supplies, contacts, plans, templates, reminders, completion history and stored photo files. Household size and country preferences recorded during onboarding are cleared. Appearance, language, optional app-lock settings and cached store entitlement are separate settings.
+Open PrepTrove, go to Settings, select Delete all saved records, then confirm Delete everything. This removes saved kits, supplies, contacts, plans, templates, reminders, completion history and stored photo files. Household size and country preferences recorded during onboarding are cleared. Appearance, language, the official-source directory country choice, optional app-lock settings and cached store entitlement are separate settings.
 
 To reset every local app setting as well, use your device's app settings to clear PrepTrove's storage, or uninstall the app. Device menus vary by Fire OS/Android version. Clearing storage cannot cancel an Amazon purchase or remove Amazon's transaction records.
 
 ## Exported files and device services
 
-PDF, CSV, JSON and PTB files previously saved to a document provider are separate copies. Delete them at their chosen destination, including any provider trash or synced copies as appropriate. Photo pixels and completion history are not included in PrepTrove backups.
+PDF, CSV, JSON and PTB files previously saved to a document provider are separate copies. Delete them at their chosen destination, including any provider trash or synced copies as appropriate. Photo pixels are not included in PrepTrove backups. Completion history can be included when you explicitly select that option for a JSON/PTB backup; delete those exported copies at their destination too.
 
 PrepTrove does not store microphone recordings. If your optional speech provider retains recordings or history, manage them using that provider's controls and policy. PrepTrove cannot delete data held independently by that service.
 

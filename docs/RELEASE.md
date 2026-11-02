@@ -2,7 +2,9 @@
 
 Last assessed: 2026-11-02. Package com.preptrove.app, version 0.1.0.
 
-Current launch scope is the full worldwide release, with purchases disabled. Amazon-managed signing accepts an unsigned APK; a local keystore is not a requirement for this route. Paid catalogue and receipt checks are deferred only while the compiled release keeps checkout off. The latest localisation work is AI-assisted, not human or specialist safety approval: 4,713 non-English translated/reviewed entries, with all non-safety copy complete. The 209 safety slots remain withheld and these packs remain excluded from the release build. All 308 store fields and 235 deterministic voice templates are prepared. See LOCALISATION.md and the latest QA entry. Earlier milestone notes below describe their original state.
+Current launch scope is a worldwide planner with neutral prompts and official-source links, explicitly approved by the owner on 2 November 2026. Cached safety recommendations are removed. All 22 UI packs are generated with AI linguistic review; qualified safety approval is not claimed. Future safety-critical guidance still requires qualified review before activation. Purchases remain disabled and its unfinished card is hidden.
+
+Current code builds and unit/tooling checks passed. Hosted API 36 native acceptance and source-bound worldwide captures are now configured; their results are pending. Historical device results below belong to their original source snapshots. Amazon's 15 supported description locales are saved and show Complete after reload, while current image/binary refresh and final acceptance remain open. See WORLDWIDE-VALIDATION.md and release/amazon-locales.json.
 
 ## Amazon draft and latest implementation
 

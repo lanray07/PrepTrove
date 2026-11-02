@@ -28,3 +28,7 @@ The owner requested these GitHub-hosted pages for the submission draft. They are
 ## Amazon distribution services
 
 Amazon documents that its distribution process re-signs and wraps uploaded Android apps. The distributed app communicates with the Amazon Appstore client, including when Amazon DRM is not enabled. Amazon describes store analytics, policy evaluation and aggregated reporting among the wrapper purposes. These platform services are distinct from publisher-added analytics, which PrepTrove does not integrate. Review Amazon's applicable terms and privacy information alongside the final publisher notice. Source checked 30 October 2026: [Understanding Amazon Appstore submission](https://developer.amazon.com/docs/app-submission/understanding-submission.html).
+
+## Official-source directory
+
+The optional country/region choice for official-source links is stored on this device independently of app language. PrepTrove does not use location permission or infer your physical location for this directory. Choosing Open official website sends the selected public URL to your browser. The external publisher and browser may process network/device information under their own policies; PrepTrove does not download, translate or cache the external advice. The directory preference is a separate app setting, reset by clearing app storage or uninstalling.

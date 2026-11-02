@@ -20,15 +20,20 @@ def check():
  from localize import LOCALES,validate,catalogue
  queue_files=list((ROOT/'localization/queues').glob('*.json'))
  if {p.stem for p in queue_files}!=set(LOCALES):failures.append('Target locale queue set is incomplete')
+ safety=set(json.loads((ROOT/'localization/safety-keys.json').read_text(encoding='utf-8')))
+ policy=json.loads((ROOT/'localization/content-policy.json').read_text(encoding='utf-8'))
+ if policy.get('scope')!='planner_official_links_only' or policy.get('cachedSafetyRecommendationsAllowed') is not False or not policy.get('ownerScopeApproval') or set(policy.get('safetyCriticalKeys',[]))!=safety:
+  failures.append('Content scope policy is incomplete or inconsistent')
  for queue_file in sorted((ROOT/'localization/queues').glob('*.json')):
   queue=json.loads(queue_file.read_text(encoding='utf-8'));items=queue['strings']
   expected=catalogue(source,plurals,queue['locale'])
+  if any(item.get('safetyReviewRequired') is not (key in safety or key.rsplit('.',1)[0] in safety) for key,item in items.items()):failures.append('Safety classification mismatch: '+queue['locale'])
   if set(items)!=set(expected) or any(items.get(k,{}).get('source')!=v or items.get(k,{}).get('reviewed') is not True or not items.get(k,{}).get('translation') for k,v in expected.items()):failures.append('Translation review incomplete: '+queue['locale'])
   else:
    try:
     for key,value in expected.items():validate(value,items[key]['translation'])
    except (ValueError,KeyError):failures.append('Invalid translation placeholders: '+queue['locale'])
-  if not isinstance(queue.get('reviewer'),str) or not queue['reviewer'].strip() or queue.get('qualifiedSafetyReview') is not True:failures.append('Release reviewer and safety sign-off missing: '+queue['locale'])
+  if not isinstance(queue.get('reviewer'),str) or not queue['reviewer'].strip() or (any(item.get('safetyReviewRequired') for item in items.values()) and queue.get('qualifiedSafetyReview') is not True):failures.append('Release reviewer and safety sign-off missing: '+queue['locale'])
  return failures
 if __name__=='__main__':
  failures=check();report={'productionReady':not failures,'remaining':failures}

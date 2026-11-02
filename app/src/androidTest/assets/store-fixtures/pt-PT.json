@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Os planos da sua casa, reunidos",
+    "02-supplies": "Acompanhe cada artigo das provisões",
+    "03-family-plan": "Um plano adaptado à sua casa",
+    "04-reminders": "Mantenha as suas revisões em dia",
+    "05-checklists": "Transforme o seu plano em tarefas simples",
+    "06-voice": "Escreva ou diga um comando suportado",
+    "07-saved-offline-kit": "Os kits guardados funcionam offline",
+    "08-report-preview": "Pré-visualize um relatório antes de partilhar"
+  },
+  "kitTitle": "Artigos essenciais de casa · exemplo",
+  "kitLocation": "Armário do corredor",
+  "kitDetail": "Registos de exemplo. Substitua-os pelas provisões da sua casa.",
+  "supplies": [
+    "Água engarrafada",
+    "Lanterna",
+    "Pilhas de reserva",
+    "Alimentos prontos a consumir",
+    "Rádio portátil",
+    "Bateria externa"
+  ],
+  "unitBottles": "garrafas",
+  "unitItems": "artigos",
+  "unitTins": "latas",
+  "category": "Provisões de exemplo",
+  "planTitle": "Plano doméstico · exemplo",
+  "planDetail": "Plano de exemplo. Adapte os detalhes à sua casa.",
+  "members": "Membro do agregado A; Membro do agregado B",
+  "meeting": "Entrada da biblioteca (exemplo)",
+  "communication": "Método acordado para contacto e confirmação (exemplo)",
+  "pets": "Local da caixa de transporte do animal (exemplo)",
+  "checkIn": "Hora acordada para confirmação (exemplo)",
+  "contactTitle": "Contacto de confiança · exemplo",
+  "contactDetail": "Adicione os dados do seu contacto de confiança.",
+  "relationship": "Contacto de confiança",
+  "checkTitles": [
+    "Rever registos de provisões",
+    "Rever contactos dos membros do agregado",
+    "Rever notas dos kits guardados"
+  ],
+  "checkGroup": "Revisão doméstica",
+  "reminderKit": "Rever kit de casa",
+  "reminderBatteries": "Inspecionar pilhas de reserva",
+  "locale": "pt-PT",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

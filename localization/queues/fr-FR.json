@@ -1,6 +1,6 @@
 {
   "locale": "fr-FR",
-  "reviewer": "Codex AI linguistic review of translated entries only; not independent human or specialist safety approval",
+  "reviewer": "Codex AI linguistic review; not independent human, specialist safety, speech-device or final store approval",
   "qualifiedSafetyReview": false,
   "strings": {
     "preptrove_c7187b": {
@@ -60,28 +60,32 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "planning_progress_is_not_a_guarantee_of_safety_f_26ae34": {
-      "source": "Planning progress is not a guarantee of safety. Follow local authorities during an emergency.",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "PrepTrove organises your records. It does not provide emergency alerts or assess whether you are safe. Use official guidance for your location.",
+      "translation": "PrepTrove organise vos fiches. L’application ne fournit pas d’alertes d’urgence et n’évalue pas votre sécurité. Consultez les consignes officielles de votre région.",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "saved_guidance_united_kingdom_8a9326": {
-      "source": "Saved guidance • United Kingdom",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "Official guidance links",
+      "translation": "Liens vers les consignes officielles",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "general_planning_information_not_live_alerts_for_127afe": {
-      "source": "General planning information, not live alerts. For other countries, consult your local emergency-management authority.",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "These links open external websites and need internet access. Choose the authority for your location. Saved planner records remain available offline.",
+      "translation": "Ces liens ouvrent des sites externes et nécessitent Internet. Choisissez l’autorité compétente pour votre région. Vos fiches enregistrées restent accessibles hors ligne.",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "source_uk_government_prepare_https_prepare_campa_17bb7e": {
-      "source": "Source: UK Government Prepare\nhttps://prepare.campaign.gov.uk/get-prepared-for-emergencies/\nReviewed: 28 October 2026 · Content version 1\nSource update date: not supplied. This summary is stored offline. The source link needs internet access.",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "This directory links to external publishers. PrepTrove does not store, translate or verify their advice.",
+      "translation": "Ce répertoire renvoie vers des éditeurs externes. PrepTrove ne conserve, ne traduit ni ne vérifie leurs conseils.",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "your_voice_your_planner_4e42c9": {
       "source": "Your voice. Your planner.",
@@ -91,8 +95,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "push_to_talk_then_review_the_transcript_your_dev_afdb27": {
-      "source": "Push to talk, then review the transcript. Recognition and spoken feedback use installed device services, which may process audio or spoken text over the network. PrepTrove does not save recordings. Read private plans aloud only when you are comfortable with your speech provider and surroundings. English commands are available.",
-      "translation": "Appuyez pour parler, puis vérifiez la transcription. La reconnaissance et la lecture vocales utilisent les services installés sur votre appareil, qui peuvent traiter l’audio ou le texte lu sur le réseau. PrepTrove ne conserve aucun enregistrement. Ne faites lire vos plans privés à voix haute que si le service vocal et votre environnement vous conviennent. Les commandes sont disponibles en anglais.",
+      "source": "Push to talk, then review the transcript. Recognition and spoken feedback use installed device services, which may process audio or spoken text over the network. PrepTrove does not save recordings. Read private plans aloud only when you are comfortable with your speech provider and surroundings. Supported commands use the selected app language.",
+      "translation": "Appuyez pour parler, puis vérifiez la transcription. La reconnaissance et la lecture vocales utilisent les services installés sur l’appareil, qui peuvent traiter l’audio ou le texte lu via le réseau. PrepTrove ne conserve aucun enregistrement. Ne faites lire vos plans privés à voix haute que si votre fournisseur vocal et votre environnement vous conviennent. Les commandes prises en charge utilisent la langue sélectionnée de l’application.",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"
@@ -504,10 +508,11 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_6079021c3755": {
-      "source": "Record a meeting point and how you’ll check in.",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "Keep your household’s chosen meeting place and check-in details together.",
+      "translation": "Gardez ensemble le lieu de rendez-vous choisi par votre foyer et les modalités pour donner des nouvelles.",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_ed39c4413dda": {
       "source": "Open family plans",
@@ -566,28 +571,32 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_64807d95473b": {
-      "source": "Consider a torch, phone power bank, drinking water and food suited to your household. Keep supplies easy to find and review their condition.",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "Open the UK Government’s Prepare website for its published information. The website is external and needs internet access.",
+      "translation": "Ouvrez le site Prepare du gouvernement britannique pour consulter les informations qu’il publie. Ce site est externe et nécessite Internet.",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_54c27d3dfa89": {
-      "source": "Source: UK Government Prepare",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "Open UK Government Prepare",
+      "translation": "Ouvrir Prepare du gouvernement britannique",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_1a856e66963c": {
-      "source": "Talk through your plan",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "Your household plan",
+      "translation": "Le plan de votre foyer",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_78d63721f142": {
-      "source": "Discuss a meeting point, communication arrangements and any support your household may need.",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "Record the arrangements you have chosen. Notes can be edited at any time.",
+      "translation": "Notez les dispositions que vous avez choisies. Vous pouvez modifier les notes à tout moment.",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_d879aface73a": {
       "source": "Review your household plan",
@@ -793,10 +802,11 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_9894105732a6": {
-      "source": "Review official local guidance",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "Official guidance links",
+      "translation": "Liens vers les consignes officielles",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_ceda0ef368ce": {
       "source": "Discuss household needs and arrangements",
@@ -820,10 +830,11 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_4db74eab28d5": {
-      "source": "Use notes for meeting points, communication, pets and accessibility arrangements. Sensitive details are optional.",
-      "translation": null,
-      "reviewed": false,
-      "safetyReviewRequired": true
+      "source": "Use notes for your own household arrangements. Sensitive details are optional.",
+      "translation": "Utilisez les notes pour les dispositions de votre foyer. Les renseignements sensibles sont facultatifs.",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "msg_0d4f4e9b3444": {
       "source": "Each record is an editable checklist task. Group tasks with the category field.",
@@ -1748,6 +1759,41 @@
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; concise input label"
+    },
+    "guidance_country": {
+      "source": "Guidance country or region",
+      "translation": "Pays ou région des consignes",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
+    },
+    "guidance_choose": {
+      "source": "Choose a country or region",
+      "translation": "Choisissez un pays ou une région",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
+    },
+    "guidance_open": {
+      "source": "Open official website",
+      "translation": "Ouvrir le site officiel",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
+    },
+    "guidance_no_offline": {
+      "source": "Official websites need internet access. PrepTrove does not download or translate their advice.",
+      "translation": "Les sites officiels nécessitent Internet. PrepTrove ne télécharge ni ne traduit leurs conseils.",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
+    },
+    "guidance_browser_missing": {
+      "source": "No browser is available. Open the displayed official URL on another device.",
+      "translation": "Aucun navigateur n’est disponible. Ouvrez l’adresse officielle affichée sur un autre appareil.",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "reminders_due.one": {
       "source": "%d saved reminder is due. Open your planner to review.",

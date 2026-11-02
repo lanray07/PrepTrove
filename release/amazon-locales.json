@@ -1,0 +1,83 @@
+{
+  "observedDate": "2026-11-02",
+  "source": "Amazon appstore-details language-selection dialog",
+  "appInterfaceLocaleCount": 22,
+  "storeLocales": [
+    {
+      "locale": "de-DE",
+      "label": "German",
+      "contentLocale": "de-DE"
+    },
+    {
+      "locale": "en-AU",
+      "label": "English (Australia)",
+      "contentLocale": "en-AU"
+    },
+    {
+      "locale": "en-GB",
+      "label": "English (U.K.)",
+      "contentLocale": "en-GB"
+    },
+    {
+      "locale": "en-IN",
+      "label": "English (India)",
+      "contentLocale": "en-GB"
+    },
+    {
+      "locale": "en-US",
+      "label": "English (U.S.)",
+      "contentLocale": "en-US"
+    },
+    {
+      "locale": "es-ES",
+      "label": "Spanish",
+      "contentLocale": "es-ES"
+    },
+    {
+      "locale": "es-MX",
+      "label": "Spanish (Mexico)",
+      "contentLocale": "es-419"
+    },
+    {
+      "locale": "fr-FR",
+      "label": "French",
+      "contentLocale": "fr-FR"
+    },
+    {
+      "locale": "it-IT",
+      "label": "Italian",
+      "contentLocale": "it-IT"
+    },
+    {
+      "locale": "ja-JP",
+      "label": "Japanese",
+      "contentLocale": "ja-JP"
+    },
+    {
+      "locale": "nl-NL",
+      "label": "Dutch (Netherlands)",
+      "contentLocale": "nl-NL"
+    },
+    {
+      "locale": "pl-PL",
+      "label": "Polish (Poland)",
+      "contentLocale": "pl-PL"
+    },
+    {
+      "locale": "pt-BR",
+      "label": "Portuguese (Brazil)",
+      "contentLocale": "pt-BR"
+    },
+    {
+      "locale": "pt-PT",
+      "label": "Portuguese (Portugal)",
+      "contentLocale": "pt-PT"
+    },
+    {
+      "locale": "sv-SE",
+      "label": "Swedish (Sweden)",
+      "contentLocale": "sv-SE"
+    }
+  ],
+  "note": "Amazon supports15 listing locales in this draft. en-IN uses English copy/UI fallback; es-MX uses reviewed LatinAmerican Spanish. Other interface languages remain supported by the app and retain prepared store drafts, but are not invented as console options."
+}

@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "家族みんなの計画を、ひとつに",
+    "02-supplies": "備蓄品をひとつずつ管理",
+    "03-family-plan": "ご家庭に合った計画を作成",
+    "04-reminders": "見直しの予定を忘れずに",
+    "05-checklists": "計画をわかりやすいタスクに",
+    "06-voice": "対応するコマンドを入力、または発話",
+    "07-saved-offline-kit": "保存した備蓄セットはオフラインでも",
+    "08-report-preview": "共有する前にレポートを確認"
+  },
+  "kitTitle": "家庭の必需品・記入例",
+  "kitLocation": "玄関の収納棚",
+  "kitDetail": "記入例です。ご家庭の備蓄品に置き換えてください。",
+  "supplies": [
+    "飲料水",
+    "懐中電灯",
+    "予備の電池",
+    "そのまま食べられる食品",
+    "携帯ラジオ",
+    "モバイルバッテリー"
+  ],
+  "unitBottles": "本",
+  "unitItems": "個",
+  "unitTins": "缶",
+  "category": "備蓄品の記入例",
+  "planTitle": "家族の計画・記入例",
+  "planDetail": "記入例です。内容をご家庭に合わせて変更してください。",
+  "members": "家族A；家族B",
+  "meeting": "図書館の入口（例）",
+  "communication": "決めておいた連絡方法と安否確認方法（例）",
+  "pets": "ペット用キャリーの保管場所（例）",
+  "checkIn": "決めておいた安否確認の時刻（例）",
+  "contactTitle": "信頼できる連絡先・記入例",
+  "contactDetail": "信頼できる相手の連絡先を登録してください。",
+  "relationship": "信頼できる連絡先",
+  "checkTitles": [
+    "備蓄品の記録を見直す",
+    "家族の連絡先を見直す",
+    "保存した備蓄セットのメモを見直す"
+  ],
+  "checkGroup": "家族の情報の見直し",
+  "reminderKit": "家庭の備蓄セットを見直す",
+  "reminderBatteries": "予備の電池を確認する",
+  "locale": "ja-JP",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

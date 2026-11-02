@@ -28,6 +28,13 @@ class TranslationValidation(unittest.TestCase):
   self.assertTrue(queue_complete(queue))
   queue['strings']['x']['reviewed']='false'
   self.assertFalse(queue_complete(queue))
+ def test_qualified_review_remains_mandatory_for_critical_content(self):
+  queue={'reviewer':'Codex AI linguistic review','qualifiedSafetyReview':False,'strings':{'x':{'translation':'neutral prompt','reviewed':True,'safetyReviewRequired':False}}}
+  self.assertTrue(queue_complete(queue))
+  queue['strings']['x']['safetyReviewRequired']=True
+  self.assertFalse(queue_complete(queue))
+  queue['qualifiedSafetyReview']=True
+  self.assertTrue(queue_complete(queue))
  def test_render_escapes_xml_and_protects_android_quotes(self):
   root=ET.fromstring(render({"example":"Don't lose A & B"},{"count":{"one":"%d item","other":"%d items"}}))
   self.assertEqual(2,len(root));self.assertIn("&",root.find('string').text)

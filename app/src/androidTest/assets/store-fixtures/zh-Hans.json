@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "全家计划，集中管理",
+    "02-supplies": "每件物资，清楚掌握",
+    "03-family-plan": "制定适合您家的计划",
+    "04-reminders": "按时回顾，不遗漏",
+    "05-checklists": "将计划化为简单任务",
+    "06-voice": "输入或说出支持的指令",
+    "07-saved-offline-kit": "已保存的应急包可离线查看",
+    "08-report-preview": "分享之前，先预览报告"
+  },
+  "kitTitle": "家庭必需品 · 示例",
+  "kitLocation": "门厅储物柜",
+  "kitDetail": "示例记录，请替换为您家的实际物资。",
+  "supplies": [
+    "瓶装水",
+    "手电筒",
+    "备用电池",
+    "即食食品",
+    "便携收音机",
+    "充电宝"
+  ],
+  "unitBottles": "瓶",
+  "unitItems": "件",
+  "unitTins": "罐",
+  "category": "示例物资",
+  "planTitle": "家庭计划 · 示例",
+  "planDetail": "示例计划，请根据您家的情况调整内容。",
+  "members": "家庭成员甲；家庭成员乙",
+  "meeting": "图书馆入口（示例）",
+  "communication": "约定的联系与报平安方式（示例）",
+  "pets": "宠物航空箱存放位置（示例）",
+  "checkIn": "约定的报平安时间（示例）",
+  "contactTitle": "可信联系人 · 示例",
+  "contactDetail": "添加您信任的联系人的详细信息。",
+  "relationship": "可信联系人",
+  "checkTitles": [
+    "回顾物资记录",
+    "核对家庭联系信息",
+    "回顾已保存的应急包备注"
+  ],
+  "checkGroup": "家庭信息回顾",
+  "reminderKit": "回顾家用应急包",
+  "reminderBatteries": "检查备用电池",
+  "locale": "zh-Hans",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

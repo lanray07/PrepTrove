@@ -1,6 +1,6 @@
 {
   "locale": "en-GB",
-  "reviewer": "",
+  "reviewer": "Codex AI linguistic review; owner-approved neutral planner scope",
   "qualifiedSafetyReview": false,
   "strings": {
     "preptrove_c7187b": {
@@ -52,28 +52,28 @@
       "safetyReviewRequired": false
     },
     "planning_progress_is_not_a_guarantee_of_safety_f_26ae34": {
-      "source": "Planning progress is not a guarantee of safety. Follow local authorities during an emergency.",
-      "translation": "Planning progress is not a guarantee of safety. Follow local authorities during an emergency.",
+      "source": "PrepTrove organises your records. It does not provide emergency alerts or assess whether you are safe. Use official guidance for your location.",
+      "translation": "PrepTrove organises your records. It does not provide emergency alerts or assess whether you are safe. Use official guidance for your location.",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "saved_guidance_united_kingdom_8a9326": {
-      "source": "Saved guidance • United Kingdom",
-      "translation": "Saved guidance • United Kingdom",
+      "source": "Official guidance links",
+      "translation": "Official guidance links",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "general_planning_information_not_live_alerts_for_127afe": {
-      "source": "General planning information, not live alerts. For other countries, consult your local emergency-management authority.",
-      "translation": "General planning information, not live alerts. For other countries, consult your local emergency-management authority.",
+      "source": "These links open external websites and need internet access. Choose the authority for your location. Saved planner records remain available offline.",
+      "translation": "These links open external websites and need internet access. Choose the authority for your location. Saved planner records remain available offline.",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "source_uk_government_prepare_https_prepare_campa_17bb7e": {
-      "source": "Source: UK Government Prepare\nhttps://prepare.campaign.gov.uk/get-prepared-for-emergencies/\nReviewed: 28 October 2026 · Content version 1\nSource update date: not supplied. This summary is stored offline. The source link needs internet access.",
-      "translation": "Source: UK Government Prepare\nhttps://prepare.campaign.gov.uk/get-prepared-for-emergencies/\nReviewed: 28 October 2026 · Content version 1\nSource update date: not supplied. This summary is stored offline. The source link needs internet access.",
+      "source": "This directory links to external publishers. PrepTrove does not store, translate or verify their advice.",
+      "translation": "This directory links to external publishers. PrepTrove does not store, translate or verify their advice.",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "your_voice_your_planner_4e42c9": {
       "source": "Your voice. Your planner.",
@@ -82,8 +82,8 @@
       "safetyReviewRequired": false
     },
     "push_to_talk_then_review_the_transcript_your_dev_afdb27": {
-      "source": "Push to talk, then review the transcript. Recognition and spoken feedback use installed device services, which may process audio or spoken text over the network. PrepTrove does not save recordings. Read private plans aloud only when you are comfortable with your speech provider and surroundings. English commands are available.",
-      "translation": "Push to talk, then review the transcript. Recognition and spoken feedback use installed device services, which may process audio or spoken text over the network. PrepTrove does not save recordings. Read private plans aloud only when you are comfortable with your speech provider and surroundings. English commands are available.",
+      "source": "Push to talk, then review the transcript. Recognition and spoken feedback use installed device services, which may process audio or spoken text over the network. PrepTrove does not save recordings. Read private plans aloud only when you are comfortable with your speech provider and surroundings. Supported commands use the selected app language.",
+      "translation": "Push to talk, then review the transcript. Recognition and spoken feedback use installed device services, which may process audio or spoken text over the network. PrepTrove does not save recordings. Read private plans aloud only when you are comfortable with your speech provider and surroundings. Supported commands use the selected app language.",
       "reviewed": true,
       "safetyReviewRequired": false
     },
@@ -436,10 +436,10 @@
       "safetyReviewRequired": false
     },
     "msg_6079021c3755": {
-      "source": "Record a meeting point and how you’ll check in.",
-      "translation": "Record a meeting point and how you’ll check in.",
+      "source": "Keep your household’s chosen meeting place and check-in details together.",
+      "translation": "Keep your household’s chosen meeting place and check-in details together.",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "msg_ed39c4413dda": {
       "source": "Open family plans",
@@ -490,28 +490,28 @@
       "safetyReviewRequired": false
     },
     "msg_64807d95473b": {
-      "source": "Consider a torch, phone power bank, drinking water and food suited to your household. Keep supplies easy to find and review their condition.",
-      "translation": "Consider a torch, phone power bank, drinking water and food suited to your household. Keep supplies easy to find and review their condition.",
+      "source": "Open the UK Government’s Prepare website for its published information. The website is external and needs internet access.",
+      "translation": "Open the UK Government’s Prepare website for its published information. The website is external and needs internet access.",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "msg_54c27d3dfa89": {
-      "source": "Source: UK Government Prepare",
-      "translation": "Source: UK Government Prepare",
+      "source": "Open UK Government Prepare",
+      "translation": "Open UK Government Prepare",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "msg_1a856e66963c": {
-      "source": "Talk through your plan",
-      "translation": "Talk through your plan",
+      "source": "Your household plan",
+      "translation": "Your household plan",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "msg_78d63721f142": {
-      "source": "Discuss a meeting point, communication arrangements and any support your household may need.",
-      "translation": "Discuss a meeting point, communication arrangements and any support your household may need.",
+      "source": "Record the arrangements you have chosen. Notes can be edited at any time.",
+      "translation": "Record the arrangements you have chosen. Notes can be edited at any time.",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "msg_d879aface73a": {
       "source": "Review your household plan",
@@ -688,10 +688,10 @@
       "safetyReviewRequired": false
     },
     "msg_9894105732a6": {
-      "source": "Review official local guidance",
-      "translation": "Review official local guidance",
+      "source": "Official guidance links",
+      "translation": "Official guidance links",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "msg_ceda0ef368ce": {
       "source": "Discuss household needs and arrangements",
@@ -712,10 +712,10 @@
       "safetyReviewRequired": false
     },
     "msg_4db74eab28d5": {
-      "source": "Use notes for meeting points, communication, pets and accessibility arrangements. Sensitive details are optional.",
-      "translation": "Use notes for meeting points, communication, pets and accessibility arrangements. Sensitive details are optional.",
+      "source": "Use notes for your own household arrangements. Sensitive details are optional.",
+      "translation": "Use notes for your own household arrangements. Sensitive details are optional.",
       "reviewed": true,
-      "safetyReviewRequired": true
+      "safetyReviewRequired": false
     },
     "msg_0d4f4e9b3444": {
       "source": "Each record is an editable checklist task. Group tasks with the category field.",
@@ -1495,22 +1495,49 @@
       "source": "Other",
       "translation": "Other",
       "reviewed": true,
-      "safetyReviewRequired": false,
-      "origin": "Codex AI translation and linguistic review; new-record default only"
+      "safetyReviewRequired": false
     },
     "default_unit_items": {
       "source": "items",
       "translation": "items",
       "reviewed": true,
-      "safetyReviewRequired": false,
-      "origin": "Codex AI translation and linguistic review; new-record default only"
+      "safetyReviewRequired": false
     },
     "purchase_date_short": {
       "source": "Purchase date",
       "translation": "Purchase date",
       "reviewed": true,
-      "safetyReviewRequired": false,
-      "origin": "Codex AI translation and linguistic review; concise input label"
+      "safetyReviewRequired": false
+    },
+    "guidance_country": {
+      "source": "Guidance country or region",
+      "translation": "Guidance country or region",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "guidance_choose": {
+      "source": "Choose a country or region",
+      "translation": "Choose a country or region",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "guidance_open": {
+      "source": "Open official website",
+      "translation": "Open official website",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "guidance_no_offline": {
+      "source": "Official websites need internet access. PrepTrove does not download or translate their advice.",
+      "translation": "Official websites need internet access. PrepTrove does not download or translate their advice.",
+      "reviewed": true,
+      "safetyReviewRequired": false
+    },
+    "guidance_browser_missing": {
+      "source": "No browser is available. Open the displayed official URL on another device.",
+      "translation": "No browser is available. Open the displayed official URL on another device.",
+      "reviewed": true,
+      "safetyReviewRequired": false
     },
     "reminders_due.one": {
       "source": "%d saved reminder is due. Open your planner to review.",

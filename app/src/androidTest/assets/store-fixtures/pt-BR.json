@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Os planos da sua casa, reunidos",
+    "02-supplies": "Acompanhe cada item dos suprimentos",
+    "03-family-plan": "Um plano que combina com sua casa",
+    "04-reminders": "Mantenha suas revisões em dia",
+    "05-checklists": "Transforme seu plano em tarefas simples",
+    "06-voice": "Digite ou fale um comando compatível",
+    "07-saved-offline-kit": "Seus kits salvos funcionam offline",
+    "08-report-preview": "Confira um relatório antes de compartilhar"
+  },
+  "kitTitle": "Itens essenciais de casa · exemplo",
+  "kitLocation": "Armário do corredor",
+  "kitDetail": "Registros de exemplo. Substitua-os pelos suprimentos da sua casa.",
+  "supplies": [
+    "Água engarrafada",
+    "Lanterna",
+    "Pilhas de reserva",
+    "Alimentos prontos para consumo",
+    "Rádio portátil",
+    "Carregador portátil"
+  ],
+  "unitBottles": "garrafas",
+  "unitItems": "itens",
+  "unitTins": "latas",
+  "category": "Suprimentos de exemplo",
+  "planTitle": "Plano doméstico · exemplo",
+  "planDetail": "Plano de exemplo. Adapte os detalhes à sua casa.",
+  "members": "Morador A; Morador B",
+  "meeting": "Entrada da biblioteca (exemplo)",
+  "communication": "Método combinado para contato e confirmação (exemplo)",
+  "pets": "Local da caixa de transporte do animal (exemplo)",
+  "checkIn": "Horário combinado para confirmação (exemplo)",
+  "contactTitle": "Contato de confiança · exemplo",
+  "contactDetail": "Adicione os dados do seu contato de confiança.",
+  "relationship": "Contato de confiança",
+  "checkTitles": [
+    "Revisar registros de suprimentos",
+    "Revisar contatos dos moradores",
+    "Revisar notas dos kits salvos"
+  ],
+  "checkGroup": "Revisão doméstica",
+  "reminderKit": "Revisar kit de casa",
+  "reminderBatteries": "Inspecionar pilhas de reserva",
+  "locale": "pt-BR",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

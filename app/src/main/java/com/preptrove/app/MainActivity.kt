@@ -117,6 +117,9 @@ class MainActivity:ComponentActivity() {
   val purchase by billing.state.collectAsStateWithLifecycle()
   val onboarded by model.onboarded.collectAsStateWithLifecycle()
   var chooseLanguage by remember { mutableStateOf(false) }
+  val guidanceSources=remember {GuidanceDirectory.entries(this)}
+  var guidanceCountry by remember {mutableStateOf(GuidanceDirectory.selected(this))}
+  var chooseGuidanceCountry by remember {mutableStateOf(false)}
   var section by androidx.compose.runtime.saveable.rememberSaveable { mutableStateOf("Overview") }
   var editing by rememberSaveable(stateSaver=EntryStateSaver) { mutableStateOf<Entry?>(null) }
   var deleting by remember { mutableStateOf<Entry?>(null) }
@@ -196,13 +199,18 @@ class MainActivity:ComponentActivity() {
           item {Text(androidx.compose.ui.res.stringResource(R.string.planning_progress_is_not_a_guarantee_of_safety_f_26ae34),fontSize=12.sp)}
          }
          "Reference"->{
-          item {Text(androidx.compose.ui.res.stringResource(R.string.saved_guidance_united_kingdom_8a9326),fontSize=24.sp,fontWeight=FontWeight.Bold)}
-          item {Text(androidx.compose.ui.res.stringResource(R.string.general_planning_information_not_live_alerts_for_127afe))}
-          item {InfoCard(getString(R.string.msg_763918ef854e),getString(R.string.msg_64807d95473b),getString(R.string.msg_54c27d3dfa89)) {startActivity(Intent(Intent.ACTION_VIEW,android.net.Uri.parse("https://prepare.campaign.gov.uk/get-prepared-for-emergencies/")))} }
-          item {InfoCard(getString(R.string.msg_1a856e66963c),getString(R.string.msg_78d63721f142),getString(R.string.msg_d879aface73a)) {section="Family plans"} }
-          item {Text(androidx.compose.ui.res.stringResource(R.string.source_uk_government_prepare_https_prepare_campa_17bb7e),fontSize=12.sp)}
-         }
-         "Voice"->{
+           item {Text(getString(R.string.saved_guidance_united_kingdom_8a9326),fontSize=24.sp,fontWeight=FontWeight.Bold)}
+           item {Text(getString(R.string.general_planning_information_not_live_alerts_for_127afe))}
+           item {OutlinedButton(onClick={chooseGuidanceCountry=true},modifier=Modifier.testTag("guidance-country")) {Text(guidanceSources.find {it.country==guidanceCountry}?.countryName(resources.configuration.locales[0]) ?: getString(R.string.guidance_choose))}}
+           guidanceSources.find {it.country==guidanceCountry}?.let {source->item {
+            InfoCard(source.countryName(resources.configuration.locales[0]),source.publisher+"\n"+source.url,getString(R.string.guidance_open)) {
+             runCatching {startActivity(Intent(Intent.ACTION_VIEW,android.net.Uri.parse(source.url)))}.onFailure {status=getString(R.string.guidance_browser_missing)}
+            }
+           }}
+           item {Text(getString(R.string.guidance_no_offline))}
+           item {Text(getString(R.string.source_uk_government_prepare_https_prepare_campa_17bb7e),fontSize=12.sp)}
+           }
+           "Voice"->{
           item {Text(androidx.compose.ui.res.stringResource(R.string.your_voice_your_planner_4e42c9),fontSize=26.sp,fontWeight=FontWeight.Bold)}
           item {Text(androidx.compose.ui.res.stringResource(R.string.push_to_talk_then_review_the_transcript_your_dev_afdb27))}
           item {Button(onClick={if(!SpeechRecognizer.isRecognitionAvailable(this@MainActivity)) response=getString(R.string.msg_79f24e0d59e2) else if(checkSelfPermission(Manifest.permission.RECORD_AUDIO)==PackageManager.PERMISSION_GRANTED) listen({command=it},{listening=it}) else permission.launch(Manifest.permission.RECORD_AUDIO)}) {Icon(Icons.Outlined.Mic,null);Text(if(listening) getString(R.string.msg_bbb4106e8144) else getString(R.string.msg_4c15103c8011))} }
@@ -233,7 +241,7 @@ class MainActivity:ComponentActivity() {
           item {Text(androidx.compose.ui.res.stringResource(R.string.exports_2f4dcf),fontSize=22.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.exports_are_unencrypted_review_the_included_info_14b601))}
           item {Row {listOf("pdf","csv","json","ptb").forEach {type->TextButton(onClick={exportType=type;exportConfirm=true;backupPassword=""}) {Text(type.uppercase())}}} }
           item {OutlinedButton(onClick={importing=true;backupPassword=""}) {Text(getString(R.string.msg_96276c8b3a4b))} }
-          item {Card(Modifier.fillMaxWidth()) {Column(Modifier.padding(20.dp)) {
+          if(BuildConfig.AMAZON_PURCHASES_ENABLED) item {Card(Modifier.fillMaxWidth()) {Column(Modifier.padding(20.dp)) {
            Text(getString(R.string.billing_title),fontSize=22.sp)
            Text(getString(purchase.message))
            if(purchase.premium) Text(getString(R.string.billing_premium_active))
@@ -280,6 +288,9 @@ class MainActivity:ComponentActivity() {
      }
     }
    }
+   if(chooseGuidanceCountry) AlertDialog(onDismissRequest={chooseGuidanceCountry=false},title={Text(getString(R.string.guidance_country))},text={Column(Modifier.heightIn(max=400.dp).verticalScroll(rememberScrollState())) {
+    guidanceSources.sortedBy {it.countryName(resources.configuration.locales[0])}.forEach {source->TextButton(onClick={GuidanceDirectory.select(this@MainActivity,source.country);guidanceCountry=source.country;chooseGuidanceCountry=false}) {Text(source.countryName(resources.configuration.locales[0]))}}
+   }},confirmButton={TextButton(onClick={chooseGuidanceCountry=false}) {Text(getString(R.string.language_close))}})
    if(chooseLanguage) AlertDialog(onDismissRequest={chooseLanguage=false},title={Text(getString(R.string.language_label))},text={Column(Modifier.heightIn(max=400.dp).verticalScroll(rememberScrollState())) {
     Text(getString(R.string.language_review_notice))
     TextButton(onClick={AppLanguages.select(this@MainActivity,"");recreate()}) {Text(getString(R.string.language_system))}

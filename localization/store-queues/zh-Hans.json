@@ -1,11 +1,11 @@
 {
   "locale": "zh-Hans",
   "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
-  "reviewer": "Codex AI linguistic review; not independent human or specialist safety approval",
+  "reviewer": "Codex AI linguistic review; not human or specialist approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
     "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
-    "longDescription": "Prepared today. Ready for tomorrow.\n\nPrepTrove helps you organize emergency supplies and practical household plans in one place. Saved records work offline, and core planning does not require a separate account.\n\nBUILD AND REVIEW YOUR KITS\nCreate emergency kits, record storage locations, and organize supplies with quantities, notes, optional photos, purchase dates, and recorded expiration dates. Save reusable templates and review items that need attention.\n\nPLAN TOGETHER\nRecord household members or nicknames, meeting points, communication arrangements, pet needs, accessibility considerations, and check-in procedures. Enter important contacts manually without granting access to your device contact list.\n\nKEEP CHECKLISTS AND REMINDERS\nCreate editable checklist tasks and schedule inspection or replacement reminders. Recurring reviews, snooze, pause, and local completion history help you maintain your records. Notification timing depends on the operating system and device settings.\n\nKEEP CONTROL OF YOUR INFORMATION\nRecords stay in the app's private device storage. Export printable PDF reports, inventory CSV files, or JSON records to a destination you choose. Password-protected PTB backups are also available. Photos are not included in backups. You can choose to include completion history in JSON or PTB backups. Optional app lock uses your device's screen-lock credential; it does not add database encryption.\n\nOPTIONAL VOICE TOOLS\nUse push-to-talk or typed English commands to help navigate and add supplies. Recognition and spoken feedback depend on installed device services and may require internet access. PrepTrove does not save microphone recordings.\n\nIMPORTANT\nPrepTrove is a planning companion, not an emergency alert system or a replacement for emergency services or official guidance. Completing a checklist does not guarantee safety. The saved reference summary currently covers general UK planning guidance; it is not live information.\n\nAvailable interface resource variants: English (UK), English (US), and English (Australia). Other languages remain under development. Premium checkout is not enabled in this version.",
+    "longDescription": "Prepared today. Ready for tomorrow.\n\nPrepTrove helps you organize emergency supplies and practical household plans in one place. Saved records work offline, and core planning does not require a separate account.\n\nBUILD AND REVIEW YOUR KITS\nCreate emergency kits, record storage locations, and organize supplies with quantities, notes, optional photos, purchase dates, and recorded expiration dates. Save reusable templates and review items that need attention.\n\nPLAN TOGETHER\nRecord household members or nicknames, meeting points, communication arrangements, pet needs, accessibility considerations, and check-in procedures. Enter important contacts manually without granting access to your device contact list.\n\nKEEP CHECKLISTS AND REMINDERS\nCreate editable checklist tasks and schedule inspection or replacement reminders. Recurring reviews, snooze, pause, and local completion history help you maintain your records. Notification timing depends on the operating system and device settings.\n\nKEEP CONTROL OF YOUR INFORMATION\nRecords stay in the app's private device storage. Export printable PDF reports, inventory CSV files, or JSON records to a destination you choose. Password-protected PTB backups are also available. Photos are not included in backups. You can choose to include completion history in JSON or PTB backups. Optional app lock uses your device's screen-lock credential; it does not add database encryption.\n\nOPTIONAL VOICE TOOLS\nUse push-to-talk or typed commands in the selected app language to help navigate and add supplies. Recognition and spoken feedback depend on installed device services and may require internet access. PrepTrove does not save microphone recordings.\n\nIMPORTANT\nPrepTrove is a planning companion, not an emergency alert system or a replacement for emergency services or official guidance. Completing a checklist does not guarantee safety. The reference directory opens official-source websites for the selected country or region. It needs internet access; PrepTrove does not download or translate the external advice.\n\nInterface languages: English, French, Spanish, German, Italian, Portuguese, Dutch, Polish, Swedish, Arabic, Hindi, Japanese, Korean, Simplified Chinese, Traditional Chinese, Turkish and Indonesian, including regional variants. Speech recognition and spoken feedback languages depend on installed device services. Premium checkout is not enabled in this version.",
     "featureBullet.1": "Organize emergency kits and supply inventories",
     "featureBullet.2": "Record quantities, storage locations, and expiration dates",
     "featureBullet.3": "Build structured household plans and save important contacts",
@@ -15,13 +15,12 @@
     "featureBullet.7": "Export PDF, CSV, and JSON records to a chosen destination",
     "featureBullet.8": "Create password-protected PTB backups",
     "featureBullet.9": "Use optional device-credential app lock",
-    "featureBullet.10": "Try supported push-to-talk and typed English commands",
+    "featureBullet.10": "Try supported push-to-talk and typed commands in the selected app language",
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
   "translation": {
     "displayTitle": "PrepTrove 应急包与家庭准备计划",
     "shortDescription": "离线整理应急物资、家庭计划、联系人和实用检查清单。",
-    "longDescription": "今天做好准备，从容面对明天。\n\nPrepTrove帮助您将应急物资和实用的家庭计划整理在一起。已保存的记录可离线使用，核心计划功能无需单独创建账户。\n\n建立和检查应急包\n创建应急包，记录存放位置，并通过数量、备注、可选照片、购买日期和记录的有效期管理物资。保存可重复使用的模板，检查需要留意的物品。\n\n一起制定计划\n记录家庭成员或昵称、集合地点、沟通安排、宠物需求、无障碍需求和报平安流程。重要联系人的信息可手动输入，无需授予设备联系人访问权限。\n\n清单与提醒\n创建可编辑的清单任务，安排检查或更换提醒。重复检查、延后、暂停以及本地完成历史，有助于持续管理记录。通知时间取决于操作系统和设备设置。\n\n自主掌控信息\n记录保存在设备的应用专属私有存储空间中。您可以将可打印的PDF报告、物资CSV文件或JSON记录导出到自行选择的位置，也可以创建密码保护的PTB备份。备份不包含照片。您可以选择在JSON或PTB备份中包含完成历史。可选应用锁使用设备锁屏凭据，但不会额外加密数据库。\n\n可选语音工具\n按下按钮说话或输入英语指令，辅助导航和添加物资。语音识别及朗读取决于设备上安装的服务，可能需要互联网连接。PrepTrove不会保存麦克风录音。\n\n重要说明\nPrepTrove是计划辅助工具，不是紧急警报系统，也不能替代紧急服务或官方指引。完成检查清单并不能保证安全。当前保存的参考摘要仅涵盖英国的一般准备指引，并非实时信息。\n\n当前界面资源提供英国英语、美国英语和澳大利亚英语版本。其他语言仍在开发中。此版本未启用Premium购买功能。",
     "featureBullet.1": "整理应急包和物资清单",
     "featureBullet.2": "记录数量、存放位置和有效期",
     "featureBullet.3": "制定结构化家庭计划并保存重要联系人",
@@ -31,8 +30,9 @@
     "featureBullet.7": "将PDF、CSV和JSON记录导出至所选位置",
     "featureBullet.8": "创建密码保护的PTB备份",
     "featureBullet.9": "可选启用使用设备锁屏凭据的应用锁",
-    "featureBullet.10": "尝试支持的按下说话功能和英语文字指令",
-    "keywords": "停电, 应急准备, 应急包, 紧急情况, 家庭, 检查清单, 电源, 家人, 物资管理, 计划, 储备物资, 准备"
+    "keywords": "停电, 应急准备, 应急包, 紧急情况, 家庭, 检查清单, 电源, 家人, 物资管理, 计划, 储备物资, 准备",
+    "longDescription": "今天做好准备，从容面对明天。\n\nPrepTrove帮助您将应急物资和实用的家庭计划整理在一起。已保存的记录可离线使用，核心计划功能无需单独创建账户。\n\n建立和检查应急包\n创建应急包，记录存放位置，并通过数量、备注、可选照片、购买日期和记录的有效期管理物资。保存可重复使用的模板，检查需要留意的物品。\n\n一起制定计划\n记录家庭成员或昵称、集合地点、沟通安排、宠物需求、无障碍需求和报平安流程。重要联系人的信息可手动输入，无需授予设备联系人访问权限。\n\n清单与提醒\n创建可编辑的清单任务，安排检查或更换提醒。重复检查、延后、暂停以及本地完成历史，有助于持续管理记录。通知时间取决于操作系统和设备设置。\n\n自主掌控信息\n记录保存在设备的应用专属私有存储空间中。您可以将可打印的PDF报告、物资CSV文件或JSON记录导出到自行选择的位置，也可以创建密码保护的PTB备份。备份不包含照片。您可以选择在JSON或PTB备份中包含完成历史。可选应用锁使用设备锁屏凭据，但不会额外加密数据库。\n\n可选语音工具\n按下按钮说话或输入所选应用语言的指令，辅助导航和添加物资。语音识别及朗读取决于设备上安装的服务，可能需要互联网连接。PrepTrove不会保存麦克风录音。\n\n重要说明\nPrepTrove是计划辅助工具，不是紧急警报系统，也不能替代紧急服务或官方指引。完成检查清单并不能保证安全。参考目录会打开所选国家或地区的官方来源网站，需要互联网连接；PrepTrove不下载或翻译外部建议。\n\n界面语言：英语、法语、西班牙语、德语、意大利语、葡萄牙语、荷兰语、波兰语、瑞典语、阿拉伯语、印地语、日语、韩语、简体中文、繁体中文、土耳其语和印度尼西亚语，包括部分地区变体。语音识别和朗读的支持语言取决于设备上安装的服务。此版本未启用Premium购买功能。",
+    "featureBullet.10": "使用所选应用语言，尝试支持的语音和文字指令"
   },
   "screenshots": {
     "status": "pending real localised captures",
@@ -40,6 +40,6 @@
   },
   "linguisticReviewType": "AI-assisted",
   "qualifiedSafetyReview": false,
-  "reviewType": null,
+  "reviewType": "Codex AI translation and linguistic review",
   "listingEligibilityReviewed": false
 }

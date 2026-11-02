@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Jullie huishoudplannen bij elkaar",
+    "02-supplies": "Houd elk voorraadartikel bij",
+    "03-family-plan": "Een plan dat bij jullie huishouden past",
+    "04-reminders": "Plan regelmatige controles",
+    "05-checklists": "Maak van jullie plan eenvoudige taken",
+    "06-voice": "Typ of spreek een ondersteunde opdracht",
+    "07-saved-offline-kit": "Je opgeslagen noodpakketten werken offline",
+    "08-report-preview": "Bekijk een rapport voordat je het deelt"
+  },
+  "kitTitle": "Basisvoorraad thuis · voorbeeld",
+  "kitLocation": "Gangkast",
+  "kitDetail": "Voorbeeldgegevens. Vervang ze door jullie eigen huishoudvoorraad.",
+  "supplies": [
+    "Flessen water",
+    "Zaklamp",
+    "Reservebatterijen",
+    "Kant-en-klaar voedsel",
+    "Draagbare radio",
+    "Powerbank"
+  ],
+  "unitBottles": "flessen",
+  "unitItems": "stuks",
+  "unitTins": "blikken",
+  "category": "Voorbeeldvoorraad",
+  "planTitle": "Huishoudplan · voorbeeld",
+  "planDetail": "Voorbeeldplan. Pas de gegevens aan jullie huishouden aan.",
+  "members": "Huisgenoot A; Huisgenoot B",
+  "meeting": "Ingang van de bibliotheek (voorbeeld)",
+  "communication": "Afgesproken contactmethode en meldmomenten (voorbeeld)",
+  "pets": "Locatie van de dierenreismand (voorbeeld)",
+  "checkIn": "Afgesproken meldtijd (voorbeeld)",
+  "contactTitle": "Vertrouwde contactpersoon · voorbeeld",
+  "contactDetail": "Voeg de gegevens van jullie vertrouwde contactpersoon toe.",
+  "relationship": "Vertrouwde contactpersoon",
+  "checkTitles": [
+    "Voorraadgegevens controleren",
+    "Contactgegevens van het huishouden controleren",
+    "Opgeslagen pakketnotities controleren"
+  ],
+  "checkGroup": "Huishoudcontrole",
+  "reminderKit": "Noodpakket thuis controleren",
+  "reminderBatteries": "Reservebatterijen controleren",
+  "locale": "nl-NL",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

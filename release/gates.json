@@ -5,15 +5,15 @@
   },
   "deviceCompatibilityAndVoice": {
     "status": "pending",
-    "evidence": "Target API 36 builds, 18 JVM and 24 tooling tests passed. Final 22 locale isolated Fire/API 28 QA passed 5,522 string comparisons, plurals, typed expiry commands and 88 captures at 200% text stress. Final primary Fire regression passed 34 cases, with 2 variant-only skips and zero failures/errors. Separate isolated store capture passed and refreshed 24 real English-variant images. Actual speech/TTS, credential/provider acceptance, VoiceView and newer Fire/API 33+ devices remain pending."
+    "evidence": "Neutral worldwide code compiled debug/release/QA/screenshot variants; 18 JVM and 30 tooling tests passed. New hosted API 36 native acceptance/22-locale capture job prepared; actual new-scope runtime results pending. Physical Fire disconnected; local API 36 emulator did not boot and was stopped. Old fb0bdb1 physical results are historical only. Actual human speech/audio/VoiceView and broader device claims remain limited."
   },
   "localisedScreenshotsAndMetadata": {
     "status": "pending",
-    "evidence": "Full worldwide launch required. All non-safety UI entries across 22 locale queues are AI-reviewed, including 4,713 non-English entries; 308 store fields and 235 voice templates prepared. 209 safety slots remain withheld. Production remains 3 English variants. Isolated multilingual QA captures are not approved marketing assets; worldwide release and localized store assets remain pending."
+    "evidence": "All 22 UI packs now generated for owner-approved neutral planner scope; 256 ordinary keys and 5,803 reviewed UI/plural entries, 308 store fields, 235 voice templates. Amazon 15 supported listing locales saved Complete after reload. Current 22×8 raw +22×8 native headline capture pipeline and fully translated fixtures prepared; current native captures/visual review/image uploads pending."
   },
   "regionalSafetyReview": {
-    "status": "pending",
-    "evidence": "Obtain qualified country-specific review; no automatically translated safety packs."
+    "status": "passed",
+    "evidence": "Owner explicitly approved the worldwide planner/official-links-only scope on 2026-11-02. Cached safety recommendations were removed and 11 tagged strings recast as neutral UI/product-limit text, recorded before/after in localization/content-policy.json. Directory holds only 21 country/publisher/HTTPS URLs, no advice. All 22 linguistic queues are AI-reviewed; qualifiedSafetyReview stays false. Any future critical guidance still requires classification and qualified review."
   },
   "publisherLegalAndSupport": {
     "status": "pending",

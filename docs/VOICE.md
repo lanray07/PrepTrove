@@ -6,7 +6,7 @@ Assessed 2 November 2026. Typed command parsing, installed speech services and p
 
 PrepTrove checks Android speech-recognition availability before requesting microphone access. With a recognizer installed, push-to-talk requests permission when needed and presents the transcript for explicit review. Typed input is available independently. The app does not save microphone recordings. Recognition and optional text-to-speech use installed services, which may process audio or spoken text over a network under their own terms.
 
-The deterministic parser now compiles 235 AI-reviewed templates across 22 locale targets from `localization/voice-queues/`. The eight intents are expiry review, contacts, checklists, saved plans, add-supply drafts, next-calendar-month reminder drafts, exact-name supply inspection and quantity queries. These are bounded command forms, not unrestricted natural-language understanding. Only three English UI variants remain selectable in production while non-English safety review is incomplete. The other command dictionaries are exercised through the isolated QA app; they do not establish worldwide release readiness or multilingual microphone support.
+The deterministic parser now compiles 235 AI-reviewed templates across 22 locale targets from `localization/voice-queues/`. The eight intents are expiry review, contacts, checklists, saved plans, add-supply drafts, next-calendar-month reminder drafts, exact-name supply inspection and quantity queries. These are bounded command forms, not unrestricted natural-language understanding. All 22 generated UI locale packs are now selectable under the owner-approved neutral planner scope. The dictionaries do not establish multilingual microphone support; installed services and actual device availability remain separate.
 
 The parser resolves the requested locale against available dictionaries and also accepts the en-GB fallback. Templates match the whole command, tolerate whitespace and straight/curly apostrophe differences, ignore command case and allow limited trailing punctuation. It rejects multiline or overlong input. `tools/generate_voice.py` validates all intent groups and exact slot placeholders before producing `VoicePatterns.kt`.
 
@@ -31,7 +31,7 @@ An earlier API 36 emulator attempt was blocked by a missing host hypervisor driv
 - Test microphone grant, denial, retry and actual transcription with each intended recognizer and locale.
 - Verify installed language/voice selection, audible output, interruption, audio routing and offline/network behavior on intended TTS engines.
 - Review TalkBack, hearing/speech accessibility and localized error/output behavior on representative hardware.
-- Complete latest layout review, regional language/safety approval and production language gating before advertising non-English voice support.
+- Complete the current hosted native checks, layout review and real installed-service acceptance before making device-specific voice claims.
 
 AI linguistic review is recorded explicitly in the queues. It is not human, speech-device or specialist safety approval. Purchases remain disabled.
 

@@ -201,3 +201,14 @@ Latest lint has zero errors/fatal issues, 61 warnings and 1 hint. Warnings inclu
 Post-fix main-app native regression passed:36 recorded cases, 34 passed, 2 variant-only skips, zero failures/errors (worldwide-fallback-primary-regression-log.txt, 1m23s). XML totals are authoritative; the Gradle progress console double-counts case events.
 
 Final isolated store-capture test passed in 29.437 seconds and regenerated 24 real 1920×1200 English-variant images, dimension/hash validated. Source/test capture packages were removed; no primary app data were seeded or cleared. Log: worldwide-fallback-store-capture-log.txt. Worldwide marketing review remains pending.
+
+
+## Owner-approved neutral worldwide planner — 2 November 2026
+
+The owner approved replacing cached safety recommendations with neutral planning prompts and official-source links. Current resources contain 256 ordinary keys, 5,803 reviewed string/plural entries and 22 generated locale packs. Qualified safety approval remains false; the current app contains no cached safety advice. The explicit before/after scope record is localization/content-policy.json.
+
+Current debug, unsigned release, localisation QA and screenshot builds compiled; 18 JVM and 30 tooling tests passed. The extractor now round-trips Android quote/escape syntax without discarding unchanged translations, with regression coverage. Native screenshot instrumentation also compiled. The final normal debug/instrumentation compilation passed after hiding the billing card when purchases are disabled.
+
+Current device testing is pending: Fire is disconnected, the local API 36 emulator did not boot and was stopped. The new hosted native-qa job uses a fresh API 36 emulator for actual system-picker and synthetic-credential acceptance, the primary suite, 22-locale resource/layout/typed-voice/official-link checks and 176 raw + 176 headline screenshots. These are planned checks until their run succeeds. They must not be confused with the historical fb0bdb1 Fire evidence above. Credential setup/cleanup tests cannot run on a physical or already-secured device and require an explicit ephemeral CI argument.
+
+Amazon supports 15 listing locales in the observed dialog. All 15 translated descriptions were entered and reported Complete after a reload. Mapping and regional fallbacks are recorded in release/amazon-locales.json. Images and binary still require refresh after current native validation. Export compliance remains unchecked; no submission occurred.

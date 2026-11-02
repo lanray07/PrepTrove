@@ -7,12 +7,12 @@
 <string name="your_essentials_and_household_plans_together_in__354383">"Your essentials and household plans, together in one private place."</string>
 <string name="organise_your_kit_e4829c">"Organize your kit"</string>
 <string name="your_next_small_step_b68082">"Your next small step"</string>
-<string name="planning_progress_is_not_a_guarantee_of_safety_f_26ae34">"Planning progress is not a guarantee of safety. Follow local authorities during an emergency."</string>
-<string name="saved_guidance_united_kingdom_8a9326">"Saved guidance • United Kingdom"</string>
-<string name="general_planning_information_not_live_alerts_for_127afe">"General planning information, not live alerts. For other countries, consult your local emergency-management authority."</string>
-<string name="source_uk_government_prepare_https_prepare_campa_17bb7e">"Source: UK Government Prepare\nhttps://prepare.campaign.gov.uk/get-prepared-for-emergencies/\nReviewed: 28 October 2026 · Content version 1\nSource update date: not supplied. This summary is stored offline. The source link needs internet access."</string>
+<string name="planning_progress_is_not_a_guarantee_of_safety_f_26ae34">"PrepTrove organizes your records. It does not provide emergency alerts or assess whether you are safe. Use official guidance for your location."</string>
+<string name="saved_guidance_united_kingdom_8a9326">"Official guidance links"</string>
+<string name="general_planning_information_not_live_alerts_for_127afe">"These links open external websites and need internet access. Choose the authority for your location. Saved planner records remain available offline."</string>
+<string name="source_uk_government_prepare_https_prepare_campa_17bb7e">"This directory links to external publishers. PrepTrove does not store, translate or verify their advice."</string>
 <string name="your_voice_your_planner_4e42c9">"Your voice. Your planner."</string>
-<string name="push_to_talk_then_review_the_transcript_your_dev_afdb27">"Push to talk, then review the transcript. Recognition and spoken feedback use installed device services, which may process audio or spoken text over the network. PrepTrove does not save recordings. Read private plans aloud only when you are comfortable with your speech provider and surroundings. English commands are available."</string>
+<string name="push_to_talk_then_review_the_transcript_your_dev_afdb27">"Push to talk, then review the transcript. Recognition and spoken feedback use installed device services, which may process audio or spoken text over the network. PrepTrove does not save recordings. Read private plans aloud only when you are comfortable with your speech provider and surroundings. Supported commands use the selected app language."</string>
 <string name="transcript_or_typed_command_48008f">"Transcript or typed command"</string>
 <string name="review_command_399b62">"Review command"</string>
 <string name="read_response_aloud_ac4ff0">"Read response aloud"</string>
@@ -71,7 +71,7 @@
 <string name="msg_950eea0391cc">"Add record"</string>
 <string name="msg_9a9143036dec">"Due soon"</string>
 <string name="msg_d2dbe2559ba6">"Build a household plan"</string>
-<string name="msg_6079021c3755">"Record a meeting point and how you’ll check in."</string>
+<string name="msg_6079021c3755">"Keep your household’s chosen meeting place and check-in details together."</string>
 <string name="msg_ed39c4413dda">"Open family plans"</string>
 <string name="msg_46e7e7653a2f">"Supplies to review"</string>
 <string name="msg_17e01f62f29d">"%1$d supplies expire within 30 days or are past their recorded date."</string>
@@ -80,10 +80,10 @@
 <string name="msg_e0d1c3905d20">"Save phone numbers manually, with no access to your device contacts."</string>
 <string name="msg_e2f452853253">"Open contacts"</string>
 <string name="msg_763918ef854e">"Start with what you have"</string>
-<string name="msg_64807d95473b">"Consider a torch, phone power bank, drinking water and food suited to your household. Keep supplies easy to find and review their condition."</string>
-<string name="msg_54c27d3dfa89">"Source: UK Government Prepare"</string>
-<string name="msg_1a856e66963c">"Talk through your plan"</string>
-<string name="msg_78d63721f142">"Discuss a meeting point, communication arrangements and any support your household may need."</string>
+<string name="msg_64807d95473b">"Open the UK Government’s Prepare website for its published information. The website is external and needs internet access."</string>
+<string name="msg_54c27d3dfa89">"Open UK Government Prepare"</string>
+<string name="msg_1a856e66963c">"Your household plan"</string>
+<string name="msg_78d63721f142">"Record the arrangements you have chosen. Notes can be edited at any time."</string>
 <string name="msg_d879aface73a">"Review your household plan"</string>
 <string name="msg_bbb4106e8144">"Listening…"</string>
 <string name="msg_4c15103c8011">"Start listening"</string>
@@ -113,11 +113,11 @@
 <string name="msg_45474e80fd18">"Pet Preparedness"</string>
 <string name="msg_1503c09ae775">"Emergency Document Organisation"</string>
 <string name="msg_c22e78a7a25a">"Supply Inspection"</string>
-<string name="msg_9894105732a6">"Review official local guidance"</string>
+<string name="msg_9894105732a6">"Official guidance links"</string>
 <string name="msg_ceda0ef368ce">"Discuss household needs and arrangements"</string>
 <string name="msg_5d8d8b9627ca">"Review relevant supplies and contacts"</string>
 <string name="msg_b836676c3c6d">"Add starter checklist tasks"</string>
-<string name="msg_4db74eab28d5">"Use notes for meeting points, communication, pets and accessibility arrangements. Sensitive details are optional."</string>
+<string name="msg_4db74eab28d5">"Use notes for your own household arrangements. Sensitive details are optional."</string>
 <string name="msg_0d4f4e9b3444">"Each record is an editable checklist task. Group tasks with the category field."</string>
 <string name="msg_a36a7fd80438">"Enter a phone number in notes. No device contacts permission is used."</string>
 <string name="msg_ffacb0664095">"Keep the details that matter to your household."</string>
@@ -250,6 +250,11 @@
 <string name="default_category_other">"Other"</string>
 <string name="default_unit_items">"items"</string>
 <string name="purchase_date_short">"Purchase date"</string>
+<string name="guidance_country">"Guidance country or region"</string>
+<string name="guidance_choose">"Choose a country or region"</string>
+<string name="guidance_open">"Open official website"</string>
+<string name="guidance_no_offline">"Official websites need internet access. PrepTrove does not download or translate their advice."</string>
+<string name="guidance_browser_missing">"No browser is available. Open the displayed official URL on another device."</string>
 <plurals name="reminders_due"><item quantity="one">"%d saved reminder is due. Open your planner to review."</item><item quantity="other">"%d saved reminders are due. Open your planner to review."</item></plurals>
 <plurals name="supplies_attention"><item quantity="one">"%d supply expires within 30 days or is past its recorded date."</item><item quantity="other">"%d supplies expire within 30 days or are past their recorded dates."</item></plurals>
 <plurals name="restore_reviews"><item quantity="one">"This backup also contains %d completion-history event. It will be restored as a new copy with its record."</item><item quantity="other">"This backup also contains %d completion-history events. They will be restored as new copies with their records."</item></plurals>

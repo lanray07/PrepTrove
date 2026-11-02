@@ -50,7 +50,7 @@ def main():
     if set(results['locales'])!=set(LOCALES):raise ValueError('Locale result set differs')
     screens=[]
     for locale in LOCALES:
-        for name in ['01-overview','02-editor-error','03-settings-200percent','04-typed-voice']:
+        for name in ['01-overview','02-editor-error','03-settings-200percent','04-typed-voice','05-official-links']:
             path=folder/locale/(name+'.png')
             with Image.open(path) as frame:width,height=frame.size
             screens.append({'locale':locale,'file':path.relative_to(ROOT).as_posix(),

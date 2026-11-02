@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "全家計畫，集中管理",
+    "02-supplies": "每件物資，清楚掌握",
+    "03-family-plan": "制定適合您家的計畫",
+    "04-reminders": "按時檢視，不遺漏",
+    "05-checklists": "將計畫化為簡單任務",
+    "06-voice": "輸入或說出支援的指令",
+    "07-saved-offline-kit": "已儲存的應急包可離線查看",
+    "08-report-preview": "分享之前，先預覽報告"
+  },
+  "kitTitle": "家庭必需品 · 範例",
+  "kitLocation": "玄關收納櫃",
+  "kitDetail": "範例記錄，請替換為您家的實際物資。",
+  "supplies": [
+    "瓶裝水",
+    "手電筒",
+    "備用電池",
+    "即食食品",
+    "攜帶式收音機",
+    "行動電源"
+  ],
+  "unitBottles": "瓶",
+  "unitItems": "件",
+  "unitTins": "罐",
+  "category": "範例物資",
+  "planTitle": "家庭計畫 · 範例",
+  "planDetail": "範例計畫，請依照您家的情況調整內容。",
+  "members": "家庭成員甲；家庭成員乙",
+  "meeting": "圖書館入口（範例）",
+  "communication": "約定的聯絡與報平安方式（範例）",
+  "pets": "寵物外出籠存放位置（範例）",
+  "checkIn": "約定的報平安時間（範例）",
+  "contactTitle": "可信任的聯絡人 · 範例",
+  "contactDetail": "新增您信任的聯絡人的詳細資料。",
+  "relationship": "可信任的聯絡人",
+  "checkTitles": [
+    "檢視物資記錄",
+    "核對家庭聯絡資料",
+    "檢視已儲存的應急包備註"
+  ],
+  "checkGroup": "家庭資料檢視",
+  "reminderKit": "檢視家用應急包",
+  "reminderBatteries": "檢查備用電池",
+  "locale": "zh-Hant",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}

@@ -1,0 +1,48 @@
+{
+  "headlines": {
+    "01-overview": "Plany domowników w jednym miejscu",
+    "02-supplies": "Kontroluj stan wszystkich zapasów",
+    "03-family-plan": "Plan dopasowany do domowników",
+    "04-reminders": "Zaplanuj regularne przeglądy",
+    "05-checklists": "Zamień plan w proste zadania",
+    "06-voice": "Wpisz lub wypowiedz obsługiwane polecenie",
+    "07-saved-offline-kit": "Zapisane zestawy działają offline",
+    "08-report-preview": "Sprawdź raport przed udostępnieniem"
+  },
+  "kitTitle": "Podstawowe wyposażenie domu · przykład",
+  "kitLocation": "Szafka w przedpokoju",
+  "kitDetail": "Przykładowe wpisy. Zastąp je własnymi zapasami domowymi.",
+  "supplies": [
+    "Woda butelkowana",
+    "Latarka",
+    "Zapasowe baterie",
+    "Żywność gotowa do spożycia",
+    "Przenośne radio",
+    "Powerbank"
+  ],
+  "unitBottles": "butelki",
+  "unitItems": "sztuki",
+  "unitTins": "puszki",
+  "category": "Przykładowe zapasy",
+  "planTitle": "Plan domowy · przykład",
+  "planDetail": "Przykładowy plan. Dostosuj szczegóły do domowników.",
+  "members": "Domownik A; Domownik B",
+  "meeting": "Wejście do biblioteki (przykład)",
+  "communication": "Uzgodniona metoda kontaktu i potwierdzania obecności (przykład)",
+  "pets": "Miejsce przechowywania transportera dla zwierzęcia (przykład)",
+  "checkIn": "Uzgodniona godzina potwierdzenia obecności (przykład)",
+  "contactTitle": "Zaufana osoba kontaktowa · przykład",
+  "contactDetail": "Dodaj dane zaufanej osoby kontaktowej.",
+  "relationship": "Zaufana osoba kontaktowa",
+  "checkTitles": [
+    "Sprawdź wpisy dotyczące zapasów",
+    "Sprawdź dane kontaktowe domowników",
+    "Sprawdź zapisane notatki zestawu"
+  ],
+  "checkGroup": "Przegląd domowy",
+  "reminderKit": "Sprawdź zestaw domowy",
+  "reminderBatteries": "Sprawdź zapasowe baterie",
+  "locale": "pl-PL",
+  "reviewType": "Codex AI language review; synthetic sample records",
+  "reviewer": "Codex AI"
+}
