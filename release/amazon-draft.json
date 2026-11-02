@@ -34,5 +34,7 @@
   "unsignedPackageStatus": "Refreshed 2026-11-02; publisher country United Kingdom recorded and transported photo references removed. No APK upload or final submission.",
   "publisherCountryCode": "GB",
   "submissionRequested": true,
-  "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html"
+  "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html",
+  "launchScope": "full worldwide release; no English-only initial release",
+  "submissionDeferredReason": "Owner chose to wait for the full worldwide release on 2026-11-02. Translation, localized listing/screenshot and regional safety reviews remain required."
 }

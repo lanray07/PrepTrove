@@ -3,11 +3,11 @@
   "remaining": [
     "amazonCatalogueAndVerifiedReceipts: App-specific public key installed; owner SKU, App Tester results, RVS policy and commercial limits remain pending. Checkout stays disabled.",
     "deviceCompatibilityAndVoice: Fresh unlocked Fire run on 2026-11-02: 32 passed, one screenshot-only skip. API 33+ prompts, TalkBack, speech/credential flows, long-running delivery and more devices remain pending.",
-    "localisedScreenshotsAndMetadata: 24 actual tablet captures across three English variants; English (U.S.) listing saved. Marketing approval and additional translated listing languages remain pending.",
+    "localisedScreenshotsAndMetadata: Owner explicitly requires full worldwide release before submission (2026-11-02). Three source English variants and captures exist; the other 19 locale packs, localized listings/screenshots and human/safety reviews remain pending. No English-only launch.",
     "regionalSafetyReview: Obtain qualified country-specific review; no automatically translated safety packs.",
     "publisherLegalAndSupport: Publisher O.Bankole, United Kingdom and support email supplied; GitHub privacy/deletion pages linked. Final legal/trademark review and support delivery verification remain pending.",
     "functionalCompleteness: Provider-stream backups, file-URI rejection, atomic history import and transport photo-reference removal tested. Local draft photo links preserved. Photo pixels excluded; real picker/cloud-provider and lock/process-death acceptance remain pending.",
-    "ownerReleaseApproval: No keystore available; owner requested unsigned review bundle. Final signing, territories, legal/listing review and submission approval remain pending.",
+    "ownerReleaseApproval: Owner requested submission on 2026-11-02. Amazon-managed signing supports unsigned APKs; local keystore not inherently required. Final launch scope, declarations and actual console submission remain unresolved.",
     "Translation review incomplete: ar",
     "Release reviewer and safety sign-off missing: ar",
     "Translation review incomplete: de-DE",
