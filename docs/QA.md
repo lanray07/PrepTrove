@@ -138,3 +138,12 @@ The final rerun also verifies the fixed export-history selection snapshot and un
 - A single-job rerun followed an initial overlapping-build file lock. Another run exposed the test fixture's missing Kotlin runtime; conversion to Java resolved it. No tests or production gates were bypassed.
 - Source catalogue: 254 entries per locale including plural forms. Three source English variants remain available; the other 19 queues still await provider/human review.
 - Latest unsigned APK SHA-256: `a3decd2297ce5b4efdcafdd41de9bf04a976b8c63f04cc2c7b214a32f4c78e11`. The package remains unsigned, non-debuggable and compiled with purchases disabled. The report records all packaged file hashes and verifies the test provider is absent.
+
+
+## Final handoff — 2 November 2026
+
+- Debug and unsigned release builds, 11 JVM unit tests and lint passed. Seven Python tooling tests passed. The fresh unlocked-device run recorded 33 tests: 32 passed, one screenshot-only skip, zero failures/errors.
+- The initial hardware run was stalled by the sleeping/locked tablet and was interrupted; it is not counted as a pass. The owner unlocked the device and the complete suite was rerun successfully.
+- The new provider test confirms that transported backup exports and legacy/external restores drop local photo references, preserve other structured fields, and preserve local draft photo references through EntryStateSaver. Photo pixels remain excluded.
+- Publisher country United Kingdom was supplied by the owner and added to the privacy review copy. This is not legal approval or an Amazon account-country change.
+- Unsigned APK SHA-256: `d2b4858b4af2ece99e79beb2f4c90acaf91b4dfc92d5a6da4e6926ede1c5c678`. Purchases remain disabled. Signing, professional/human reviews and the manual acceptance boundaries in RELEASE.md remain open.

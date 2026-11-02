@@ -7,6 +7,21 @@ import org.junit.Assert.*
 import org.junit.Test
 
 class PlannerDocumentsTest {
+ @Test fun transportedBackupsDropLocalPhotoLinksButDraftStateKeepsThem() {
+  val uri=create()
+  val entry=Entry(kind="supply",title="Synthetic photo record",extraData="{\"photo\":\"00000000-0000-0000-0000-000000000000.jpg\",\"source\":\"Synthetic shop\"}")
+  try {
+   PlannerDocuments.write(context,uri,BackupSnapshot(listOf(entry)),"json",ExportPolicy.Options(),false,charArrayOf())
+   assertFalse(bytes(uri).toString(Charsets.UTF_8).contains("00000000-0000-0000-0000-000000000000.jpg"))
+   // A legacy or externally supplied backup must not attach an existing private local image.
+   context.contentResolver.openOutputStream(uri,"wt")!!.use {it.write(BackupCodec.encode(listOf(entry)))}
+   val restored=PlannerDocuments.read(context,uri,false,charArrayOf()).entries.single()
+   assertFalse(StructuredFields.read(restored.extraData).has("photo"))
+   assertEquals("Synthetic shop",StructuredFields.read(restored.extraData).getString("source"))
+   val draft=with(EntryStateSaver) {(object:androidx.compose.runtime.saveable.SaverScope {override fun canBeSaved(value:Any)=true}).save(entry)}!!
+   assertEquals(entry.extraData,EntryStateSaver.restore(draft)!!.extraData)
+  } finally {context.contentResolver.delete(uri,null,null)}
+ }
  private val instrumentation=InstrumentationRegistry.getInstrumentation()
  private val context=instrumentation.targetContext
  private fun create():Uri = context.contentResolver.insert(Uri.parse("content://"+instrumentation.context.packageName+".documents"),android.content.ContentValues())!!

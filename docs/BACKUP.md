@@ -20,7 +20,7 @@ The encryption uses standard Android/JVM cryptographic providers. A security aud
 
 ## Database version 2 fields
 
-JSON/PTB records now preserve structured plan/contact data, purchase dates, recurring intervals and template flags. Older backups load those additions with safe defaults. Kit links continue to be remapped on copy-based restore. Photo pixels are not included; photo references may be unavailable on another device. Completion history can be explicitly selected for JSON/PTB backups. This is disclosed in the export confirmation.
+JSON/PTB records now preserve structured plan/contact data, purchase dates, recurring intervals and template flags. Older backups load those additions with safe defaults. Kit links continue to be remapped on copy-based restore. Photo pixels are not included. Local photo references are removed from transported exports and restored files, including legacy backups, so they cannot attach an unrelated private image on the destination device. On-device draft recovery retains its local references. Completion history can be explicitly selected for JSON/PTB backups. This is disclosed in the export confirmation.
 
 
 ## Optional completion history (JSON schema 2)

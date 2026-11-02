@@ -5,7 +5,7 @@
   },
   "deviceCompatibilityAndVoice": {
     "status": "pending",
-    "evidence": "31 Fire instrumentation checks passed, including persisted reminder opt-in and actual notification post/replace/clear, portrait preview, 200% text/RTL smoke and voice fallback. API 33+ prompts, TalkBack, real speech/credential flows, long-running delivery and more devices remain pending; API 36 emulator lacks host driver."
+    "evidence": "Fresh unlocked Fire run on 2026-11-02: 32 passed, one screenshot-only skip. API 33+ prompts, TalkBack, speech/credential flows, long-running delivery and more devices remain pending."
   },
   "localisedScreenshotsAndMetadata": {
     "status": "pending",
@@ -17,11 +17,11 @@
   },
   "publisherLegalAndSupport": {
     "status": "pending",
-    "evidence": "Publisher name O.Bankole and support email supplied; GitHub privacy/deletion pages linked. Publisher country, legal/trademark review and support delivery verification remain pending."
+    "evidence": "Publisher O.Bankole, United Kingdom and support email supplied; GitHub privacy/deletion pages linked. Final legal/trademark review and support delivery verification remain pending."
   },
   "functionalCompleteness": {
     "status": "pending",
-    "evidence": "Provider-stream JSON/PTB/CSV/PDF I/O, file-URI rejection, selected-history restore and atomic import tested with synthetic cross-process fixtures. Real file-picker/cloud-provider and lock/process-death acceptance remain pending. Photo pixels remain excluded."
+    "evidence": "Provider-stream backups, file-URI rejection, atomic history import and transport photo-reference removal tested. Local draft photo links preserved. Photo pixels excluded; real picker/cloud-provider and lock/process-death acceptance remain pending."
   },
   "ownerReleaseApproval": {
     "status": "pending",

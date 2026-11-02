@@ -76,3 +76,12 @@ PlannerDocuments centralizes bounded provider reads, validated export encoding a
 Reminder notifications now require an explicit, persisted Settings opt-in, defaulting off when no choice exists. OS permission is requested only when enabling on API 33+. Turning off clears the notice. Empty due lists also clear it, and model changes request an additional best-effort refresh. Preference changes and worker publication are serialized within the app process. Earlier preview users need to enable the new persisted choice; saved reminder records are preserved. See NOTIFICATIONS.md for OS/delivery boundaries.
 
 The unsigned review bundle now includes NOTIFICATIONS.md and verifies that no test document-provider component appears in the actual release manifest. Purchases remain compiled off. No production keystore, signed build, binary upload or final submission is created by this work.
+
+
+## Final unsigned handoff — 2 November 2026
+
+Publisher/controller details supplied by the owner are O.Bankole, United Kingdom, with banksmi@mail.com for support. The privacy review copy records these details. They do not constitute legal approval or an Amazon account-country change.
+
+Transported JSON/PTB backups now omit local photo-file references, and import also removes references from older/external backups. This matches the exclusion of photo pixels and prevents a restored record from attaching an unrelated existing private image. Local activity-draft recovery retains its own photo reference. Other structured fields and selected completion history remain preserved.
+
+The authorised delivery remains an unsigned review package with purchases disabled and translation review queues prepared. It is not a signed, approved, worldwide release. Remaining external acceptance requirements are production signing/key backup, publisher legal/trademark and regional safety review, reviewed translations/listing assets, support-mailbox verification, actual credential/speech/picker/provider and wider device acceptance, final territory selection and owner submission approval. Configure and test the Amazon SKU/receipt flow only before enabling paid features. No final submission has been performed.

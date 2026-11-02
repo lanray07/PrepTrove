@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-02",
   "appId": "amzn1.devportal.mobileapp.0f1c699795b7408db7381c0afa86c195",
   "releaseId": "amzn1.devportal.apprelease.ab04182f761c4cb290d209ef6e2c01c7",
   "title": "PrepTrove Emergency Kit and Family Planner",
@@ -28,8 +28,9 @@
   "tabletIcons": "512x512 and 114x114 accepted",
   "screenshots": "24 real 1920x1200 English-variant tablet captures generated; eight en-US panels accepted, Images and Videos reported Complete",
   "publisherName": "O.Bankole",
-  "publisherCountry": null,
+  "publisherCountry": "United Kingdom",
   "signingStatus": "No production keystore available; owner requested unsigned review package",
   "submissionBundle": "artifacts/amazon-review.zip; unsigned review only",
-  "unsignedPackageStatus": "Refreshed 2026-10-30; persisted reminder controls, provider-stream tests and test-provider exclusion verified. No APK upload or final submission."
+  "unsignedPackageStatus": "Refreshed 2026-11-02; publisher country United Kingdom recorded and transported photo references removed. No APK upload or final submission.",
+  "publisherCountryCode": "GB"
 }

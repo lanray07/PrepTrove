@@ -1,6 +1,6 @@
 # Amazon submission handoff
 
-Updated 30 October 2026. This is a review package, not an approval or a production-ready claim.
+Updated 2 November 2026. This is a review package, not an approval or a production-ready claim.
 
 ## Current destination and release scope
 
@@ -45,3 +45,6 @@ Latest functionality: completion-history backup is an explicit JSON/PTB option, 
 
 
 Reminder notifications now have a persistent in-app opt-in and an off action; prior preview users must enable the new saved choice. The unsigned package includes NOTIFICATIONS.md. Provider-stream integration tests use synthetic content in a test-only component; this does not replace real picker/cloud-provider or app-lock testing. The package checker verifies that the component is absent from the actual release manifest.
+
+
+The owner supplied United Kingdom as the publisher country on 2 November 2026; the privacy review copy and draft manifest now record it. Final legal approval remains pending. Signing remains unavailable, purchases stay disabled and no final submission is authorized by the unsigned packaging workflow.

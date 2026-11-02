@@ -10,7 +10,7 @@ Exports are created only when you choose a destination. PDF, CSV and JSON files 
 
 Delete all saved records from Settings, or remove app data using device settings. Previously exported copies remain at their chosen destinations. PrepTrove does not claim secure erasure from flash storage.
 
-Publisher/controller name supplied by the owner: **O.Bankole**. Public support contact: **banksmi@mail.com**. Publisher country, jurisdiction-appropriate notices, support retention and final legal review remain unconfirmed.
+Publisher/controller name supplied by the owner: **O.Bankole**. Public support contact: **banksmi@mail.com**. Publisher country supplied by the owner: **United Kingdom (UK)**. Jurisdiction-appropriate notices, support retention and final legal review remain unconfirmed.
 
 Supply photos are copied into private, backup-excluded device storage after size/dimension validation and JPEG re-encoding. The original EXIF metadata is not copied. Removing a photo from a record unlinks it; the private file may still be used by duplicate records/templates. Delete all saved records also removes stored photo files and completion history. Exports do not contain photo pixels. Completion-history events are included only when you select the history option for JSON/PTB backups; their earlier record titles may contain personal details.
 
@@ -20,7 +20,7 @@ Amazon SDK purchase communication is disabled in the unconfigured development bu
 
 ## Submission contact and review status — 30 October 2026
 
-Support contact: banksmi@mail.com. Data deletion instructions: [PrepTrove data deletion](DATA-DELETION.md). When you email support, your address and message are shared with the publisher and its email provider so that support can respond. Do not send private plans, recordings, backup passwords or sensitive household details. Support retention, publisher country and the final notice require the owner's review before release.
+Support contact: banksmi@mail.com. Data deletion instructions: [PrepTrove data deletion](DATA-DELETION.md). When you email support, your address and message are shared with the publisher and its email provider so that support can respond. Do not send private plans, recordings, backup passwords or sensitive household details. Support retention and the final notice require the owner's review before release.
 
 The owner requested these GitHub-hosted pages for the submission draft. They are review copies, not a claim of legal compliance or final legal approval.
 

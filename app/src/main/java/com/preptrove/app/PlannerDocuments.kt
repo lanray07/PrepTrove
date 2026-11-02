@@ -6,6 +6,7 @@ import java.io.ByteArrayOutputStream
 
 /** File-provider I/O only. Parsing never mutates the database; the UI confirms restore separately. */
 object PlannerDocuments {
+ private fun withoutLocalPhotos(entry:Entry):Entry = entry.copy(extraData=StructuredFields.read(entry.extraData).apply {remove("photo")}.toString())
  private fun validateUri(uri:Uri) {
   require(uri.scheme==android.content.ContentResolver.SCHEME_CONTENT && !uri.authority.isNullOrBlank()) {"A document-provider URI is required."}
  }
@@ -19,13 +20,14 @@ object PlannerDocuments {
    }
    output.toByteArray()
   } ?: error("Source unavailable")
-  return BackupCodec.decodeSnapshotCopies(if(encrypted) BackupCrypto.decrypt(bytes,password) else bytes)
+  val snapshot=BackupCodec.decodeSnapshotCopies(if(encrypted) BackupCrypto.decrypt(bytes,password) else bytes)
+  return snapshot.copy(entries=snapshot.entries.map(::withoutLocalPhotos))
  }
 
  fun write(context:Context,uri:Uri,snapshot:BackupSnapshot,format:String,options:ExportPolicy.Options,includeHistory:Boolean,password:CharArray) {
   validateUri(uri)
   require(format in listOf("csv","json","ptb","pdf"))
-  val chosen=ExportPolicy.select(snapshot.entries,options)
+  val chosen=ExportPolicy.select(snapshot.entries,options).map(::withoutLocalPhotos)
   val history=if(includeHistory) snapshot.reviews else emptyList()
   // Validate/encode before opening a provider destination, which may truncate an existing file.
   val bytes=when(format) {
