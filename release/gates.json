@@ -25,6 +25,6 @@
   },
   "ownerReleaseApproval": {
     "status": "pending",
-    "evidence": "No keystore available; owner requested unsigned review bundle. Final signing, territories, legal/listing review and submission approval remain pending."
+    "evidence": "Owner requested submission on 2026-11-02. Amazon-managed signing supports unsigned APKs; local keystore not inherently required. Final launch scope, declarations and actual console submission remain unresolved."
   }
 }

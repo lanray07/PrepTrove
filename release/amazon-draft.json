@@ -29,8 +29,10 @@
   "screenshots": "24 real 1920x1200 English-variant tablet captures generated; eight en-US panels accepted, Images and Videos reported Complete",
   "publisherName": "O.Bankole",
   "publisherCountry": "United Kingdom",
-  "signingStatus": "No production keystore available; owner requested unsigned review package",
+  "signingStatus": "Amazon documentation permits unsigned APK upload and applies an Amazon signature; local signing is not inherently required for Amazon-managed submission.",
   "submissionBundle": "artifacts/amazon-review.zip; unsigned review only",
   "unsignedPackageStatus": "Refreshed 2026-11-02; publisher country United Kingdom recorded and transported photo references removed. No APK upload or final submission.",
-  "publisherCountryCode": "GB"
+  "publisherCountryCode": "GB",
+  "submissionRequested": true,
+  "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html"
 }

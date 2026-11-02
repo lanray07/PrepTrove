@@ -48,3 +48,10 @@ Reminder notifications now have a persistent in-app opt-in and an off action; pr
 
 
 The owner supplied United Kingdom as the publisher country on 2 November 2026; the privacy review copy and draft manifest now record it. Final legal approval remains pending. Signing remains unavailable, purchases stay disabled and no final submission is authorized by the unsigned packaging workflow.
+
+
+## Amazon signing correction — 2 November 2026
+
+Amazon's official Appstore SDK submission documentation explicitly states that Amazon applies its signature whether the uploaded APK is signed or unsigned: https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html . A local production keystore is therefore not inherently required for Amazon-managed APK submission. Earlier statements in this handoff requiring a locally signed binary for every Amazon submission are superseded by this correction. The review ZIP is not itself an app binary: select the APK within it when uploading, after resolving release acceptance and declarations. The optional local signing tool remains available for distributions that require publisher signing. Amazon console validation and final agreement requirements must still be checked.
+
+The owner explicitly requested submission on 2 November 2026. That authorizes submission work; it does not establish completed translation/safety/privacy reviews or acceptance of unseen binding declarations. Browser control currently fails to initialize, so no binary upload or final submission has been attempted in this request.
