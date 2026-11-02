@@ -68,7 +68,7 @@ def main():
     request=urllib.request.Request(endpoint,data=json.dumps({'text':[text],'source_lang':'EN','target_lang':TARGET[locale],'tag_handling':'xml','ignore_tags':['x']}).encode(),headers={'Authorization':'DeepL-Auth-Key '+token,'Content-Type':'application/json'})
     result=json.load(urllib.request.urlopen(request,timeout=30))['translations'][0]['text']
     for n,token_value in enumerate(tokens):result=re.sub(r'<x\s+id="'+str(n)+r'"\s*/>',lambda _:token_value,result)
-    validate(item['source'],result);item['translation']=result;item['reviewed']=False
+    validate(item['source'],result);item['translation']=result;item['reviewed']=False;item['origin']='DeepL machine translation; linguistic review pending'
     file.write_text(json.dumps(queue,ensure_ascii=False,indent=2),encoding='utf-8')
   if args.approve==locale:
    assert queue['reviewer'].strip(),'Record the reviewer identity and review type in the queue file'

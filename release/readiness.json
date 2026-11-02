@@ -1,12 +1,12 @@
 {
   "productionReady": false,
   "remaining": [
-    "deviceCompatibilityAndVoice: Earlier API 35 physical run passed 33 cases with one skip; 13 JVM and 15 tooling tests pass. The final API 36/PDF-locale physical run was blocked by tablet sleep/lock and explicitly stopped (instrumentation process-crash failure); a fresh unlocked run is required. API 33+/36 runtime prompts, TalkBack, speech/credential flows, delivery and more devices remain pending.",
+    "deviceCompatibilityAndVoice: Final API 36/PDF-locale build passed on unlocked physical Fire: 34 cases passed, one screenshot-only skip, zero failures/errors (2026-11-02). Separate isolated screenshot test passed and refreshed 24 English-variant captures. Thirteen JVM and 15 tooling tests passed; code commit 971dbb1 CI succeeded. New Fire OS 16 hardware, API 33+/36 runtime prompts, TalkBack, actual speech/credential flows, delivery and broader devices remain pending.",
     "localisedScreenshotsAndMetadata: Full worldwide launch required. AI-assisted translation/review: 246 of 257 entries each for fr-FR/fr-CA; 58 entries each for the other 17 non-English targets (1,478 total). Safety-tagged text, remaining copy, localized full listings/screenshots and device reviews remain pending. Only the three complete source English variants ship; no English-only launch.",
     "regionalSafetyReview: Obtain qualified country-specific review; no automatically translated safety packs.",
     "publisherLegalAndSupport: Publisher O.Bankole, United Kingdom and support email supplied; GitHub privacy/deletion pages linked. Final legal/trademark review and support delivery verification remain pending.",
     "functionalCompleteness: Provider-stream backups, file-URI rejection, atomic history import and transport photo-reference removal tested. Local draft photo links preserved. Photo pixels excluded; real picker/cloud-provider and lock/process-death acceptance remain pending.",
-    "ownerReleaseApproval: Owner explicitly requested submission and selected a full worldwide launch on 2026-11-02. Authorization and launch scope are recorded. Actual translation/safety/privacy acceptance, console validation and submission remain pending; unseen binding agreements require action-time confirmation.",
+    "ownerReleaseApproval: Owner authorization and full worldwide scope are recorded. Final submission remains pending while worldwide acceptance is incomplete. Amazon export/encryption-law certification is unchecked; the category edit/review discrepancy and final tester notes also require resolution before the final console action.",
     "Translation review incomplete: ar",
     "Release reviewer and safety sign-off missing: ar",
     "Translation review incomplete: de-DE",

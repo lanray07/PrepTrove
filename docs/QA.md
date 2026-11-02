@@ -173,3 +173,12 @@ The API 36 debug/release builds, 13 JVM tests and lint passed in fire16-offdevic
 The final physical suite could not begin while the tablet was asleep and locked. It was explicitly stopped after zero completed tests, resulting in an instrumentation process-crash failure. This is not a successful native test run for the API 36/PDF changes; user unlock and a full fresh run are required. The earlier 33-pass result above predates those changes. No device lock was bypassed. Local submission bundling correctly rejects the failed/empty device evidence; the existing ZIP remains the earlier API 35 review package.
 
 API 36 unsigned APK SHA-256: `63a3749220384bc33546d6c20adcd2e639149b8fc6c1c8727129bacfd2fb156a`. It has not replaced the earlier Amazon validation draft. Worldwide translations, localized captures and qualified safety review remain incomplete, so no final submission is made.
+
+
+## Successful unlocked final run — 2 November 2026
+
+After the owner unlocked the Fire tablet, the complete final API 36/PDF-locale suite was rerun successfully: 35 recorded cases, 34 passed, one screenshot-only skip, zero failures/errors. This supersedes the interrupted locked-device attempt above. The Arabic PDF direction/rendering and French date assertions passed. Log: fire16-unlocked-device-log.txt.
+
+The isolated store-capture instrumentation then passed its separate test and regenerated all 24 real English-variant tablet images (en-US/en-GB/en-AU), validated for dimensions and hashes. The source/test capture packages were uninstalled; the primary installation was not seeded or cleared. Representative PDF and supplies captures were visually inspected. These are actual raw UI images, not approved worldwide marketing compositions. Log: fire16-store-capture-log.txt.
+
+GitHub CI for code commit 971dbb1 passed: https://github.com/lanray07/PrepTrove/actions/runs/41531897101 . This CI run has no physical-device execution; hardware evidence above was recorded locally.

@@ -131,7 +131,7 @@ def main():
         raise ValueError('Lint contains release-blocking errors')
     files = [apk, manifest_path, *screenshots,
              ROOT / 'assets/store/icon-512.png', ROOT / 'assets/store/icon-114.png',
-             *[ROOT / 'release' / name for name in ['amazon-draft.json', 'listing-en-US.json', 'gates.json']],
+             *[ROOT / 'release' / name for name in ['amazon-draft.json', 'listing-en-US.json', 'gates.json', 'amazon-testing-instructions.txt']],
              *[ROOT / 'docs' / name for name in ['RELEASE.md', 'QA.md', 'PRIVACY.md', 'DATA-DELETION.md', 'BACKUP.md', 'AMAZON-BILLING.md', 'AMAZON-SUBMISSION.md', 'VOICE.md', 'NOTIFICATIONS.md']],
              ROOT / 'README.md',
              ROOT / 'localization/report.json']

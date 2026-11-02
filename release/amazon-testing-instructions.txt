@@ -1,0 +1,13 @@
+No login, account or test credentials are required. Purchases are intentionally disabled; no paid entitlement is required for the available planning tools.
+
+Complete or skip onboarding. Create a kit, add a supply and assign it to the kit. Edit quantity, unit, storage location and an optional date. Save a household plan and a manually entered contact. Reopen the app to verify local persistence.
+
+Create a reminder and explicitly enable notifications in Settings if desired. Notification delivery is best-effort and depends on OS settings. Completion, snooze, pause and completion history are available.
+
+Settings offers PDF, CSV, JSON and password-protected PTB exports through the device document picker. Sensitive contacts/plans and completion history are optional selections. Photos are excluded from backups. JSON/PTB restore creates copies and preserves existing records. Keep the chosen PTB password; it cannot be recovered.
+
+Voice recognition and text-to-speech depend on installed device services. If recognition is absent or microphone permission is declined, use the typed-command field. Current commands are English, for example: add bottled water; what supplies are expiring soon; show my contacts. Review drafts before saving.
+
+Optional app lock uses the device screen-lock credential. It is not a separate PrepTrove PIN and does not add database encryption. A secure device credential is needed before enabling it.
+
+Saved records work offline. PrepTrove is not a live emergency-alert service; the saved reference summary is general UK planning information.
