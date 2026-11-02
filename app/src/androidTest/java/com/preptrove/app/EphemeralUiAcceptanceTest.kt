@@ -24,7 +24,7 @@ import java.util.UUID
 class EphemeralUiAcceptanceTest {
  @get:Rule val rule = createEmptyComposeRule()
 
- @Test fun countryChoicePersistsAndJsonUsesRealSystemCreateDocument() = runBlocking {
+ @Test fun countryChoicePersistsAndJsonUsesRealSystemCreateDocument() = runBlocking<Unit> {
   val instrumentation = InstrumentationRegistry.getInstrumentation()
   val context = instrumentation.targetContext
   // Every mutation, including fixture setup and evidence files, follows all three guards.

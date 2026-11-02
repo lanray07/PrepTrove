@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
+collect_failure_evidence() { adb pull /sdcard/Android/data/com.preptrove.app/files/acceptance artifacts/device-acceptance >/dev/null 2>&1 || true; }
+trap collect_failure_evidence EXIT
 adb shell wm size 1920x1200
 adb shell wm density 240
 ./gradlew :app:assembleDebugAndroidTest :app:assembleRelease :app:testDebugUnitTest :app:lintDebug --no-parallel --console=plain
