@@ -1,7 +1,7 @@
 {
   "locale": "nl-NL",
-  "status": "pending listing-locale eligibility and human review",
-  "reviewer": null,
+  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "reviewer": "Codex AI linguistic draft review; not independent human or specialist safety approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
     "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
@@ -18,9 +18,28 @@
     "featureBullet.10": "Try supported push-to-talk and typed English commands",
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
-  "translation": null,
+  "translation": {
+    "displayTitle": "PrepTrove Noodpakket en gezinsplanner",
+    "shortDescription": "Organiseer noodvoorraden, huishoudplannen, contacten en praktische checklists offline.",
+    "longDescription": "Vandaag voorbereid. Klaar voor morgen.\n\nPrepTrove helpt je noodvoorraden en praktische huishoudplannen op één plek te organiseren. Opgeslagen vermeldingen werken offline en voor de basisplanning heb je geen apart account nodig.\n\nNOODPAKKETTEN MAKEN EN CONTROLEREN\nMaak noodpakketten, leg bewaarplaatsen vast en organiseer voorraden met hoeveelheden, notities, optionele foto’s, aankoopdatums en opgegeven houdbaarheidsdatums. Bewaar herbruikbare sjablonen en controleer artikelen die aandacht nodig hebben.\n\nSAMEN PLANNEN\nLeg huishoudleden of bijnamen, ontmoetingspunten, communicatieafspraken, behoeften van huisdieren, aandachtspunten voor toegankelijkheid en afspraken om contact te houden vast. Voer belangrijke contacten handmatig in zonder toegang tot de contactenlijst van je apparaat te geven.\n\nCHECKLISTS EN HERINNERINGEN BIJHOUDEN\nMaak bewerkbare checklisttaken en plan herinneringen voor controle of vervanging. Terugkerende controles, uitstellen, pauzeren en een lokale voltooiingsgeschiedenis helpen je vermeldingen bij te houden. Het meldingsmoment hangt af van het besturingssysteem en de apparaatinstellingen.\n\nHOUD CONTROLE OVER JE INFORMATIE\nVermeldingen blijven in de privéopslag van de app op het apparaat. Exporteer afdrukbare PDF-rapporten, CSV-voorraadlijsten of JSON-vermeldingen naar een zelfgekozen bestemming. PTB-back-ups met wachtwoordbeveiliging zijn ook beschikbaar. Foto’s worden niet in back-ups opgenomen. Je kunt ervoor kiezen de voltooiingsgeschiedenis in JSON- of PTB-back-ups op te nemen. De optionele app-vergrendeling gebruikt de schermvergrendeling van je apparaat en voegt geen databaseversleuteling toe.\n\nOPTIONELE SPRAAKFUNCTIES\nGebruik indrukken om te spreken of getypte Engelse opdrachten om te navigeren en voorraden toe te voegen. Herkenning en voorlezen hangen af van geïnstalleerde apparaatdiensten en kunnen internettoegang vereisen. PrepTrove slaat geen microfoonopnamen op.\n\nBELANGRIJK\nPrepTrove ondersteunt je planning. De app is geen noodwaarschuwingssysteem en vervangt geen hulpdiensten of officiële aanwijzingen. Een checklist voltooien garandeert geen veiligheid. De opgeslagen referentiesamenvatting bevat momenteel algemene planningsinformatie voor het Verenigd Koninkrijk, geen live-informatie.\n\nBeschikbare interfacevarianten: Engels (VK), Engels (VS) en Engels (Australië). Andere talen zijn nog in ontwikkeling. Premium-aankopen zijn in deze versie niet ingeschakeld.",
+    "featureBullet.1": "Organiseer noodpakketten en voorraadlijsten",
+    "featureBullet.2": "Leg hoeveelheden, bewaarplaatsen en houdbaarheidsdatums vast",
+    "featureBullet.3": "Maak gestructureerde huishoudplannen en bewaar belangrijke contacten",
+    "featureBullet.4": "Maak bewerkbare checklisttaken en herbruikbare noodpakketsjablonen",
+    "featureBullet.5": "Stel terugkerende controles in met uitstellen en pauzeren",
+    "featureBullet.6": "Bekijk opgeslagen planningsgegevens offline zonder apart account",
+    "featureBullet.7": "Exporteer PDF-, CSV- en JSON-vermeldingen naar een gekozen bestemming",
+    "featureBullet.8": "Maak PTB-back-ups met wachtwoordbeveiliging",
+    "featureBullet.9": "Gebruik optionele app-vergrendeling met de ontgrendeling van je apparaat",
+    "featureBullet.10": "Probeer ondersteunde spraakbediening en getypte Engelse opdrachten",
+    "keywords": "stroomuitval, voorbereiding, noodpakket, noodsituatie, huishouden, checklist, stroom, gezin, voorraad, planner, benodigdheden, organiseren"
+  },
   "screenshots": {
     "status": "pending real localised captures",
     "countRequiredByProduct": 8
-  }
+  },
+  "reviewType": "AI-assisted linguistic draft; qualified safety and store review pending",
+  "reviewed": false,
+  "qualifiedSafetyReview": false,
+  "listingEligibilityReviewed": false
 }

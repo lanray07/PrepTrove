@@ -42,6 +42,7 @@ val Navy=Color(0xFF263B4D)
 val Teal=Color(0xFF2C7A7B)
 val Ivory=Color(0xFFF8F6F0)
 val Amber=Color(0xFFD7A65C)
+internal const val LOCALIZATION_QA_NOTICE="LOCALISATION QA — NOT FOR RELEASE"
 val sections=listOf("Overview","Kits","Supplies","Family plans","Contacts","Checklists","Reminders","Reference","Voice","Settings")
 val kinds=mapOf("Kits" to "kit","Supplies" to "supply","Family plans" to "plan","Contacts" to "contact","Checklists" to "check","Reminders" to "reminder")
 
@@ -172,14 +173,15 @@ class MainActivity:ComponentActivity() {
   MaterialTheme(colorScheme=if(dark) darkColorScheme(primary=Color(0xFF83CFCA),background=Color(0xFF152632),surface=Color(0xFF203746)) else lightColorScheme(primary=Teal,background=Ivory,surface=Color.White,onSurface=Navy)) {
    Surface(Modifier.fillMaxSize()) {
     BoxWithConstraints {
+     val fontScale=androidx.compose.ui.platform.LocalDensity.current.fontScale
      val wide=maxWidth>=840.dp
      Row {
-      if(wide) Column(Modifier.width(220.dp).fillMaxHeight().background(Navy).verticalScroll(rememberScrollState()).padding(20.dp)) {
+      if(wide) Column(Modifier.width(if(fontScale>=1.5f) 320.dp else 220.dp).fillMaxHeight().background(Navy).verticalScroll(rememberScrollState()).padding(20.dp)) {
        Text(androidx.compose.ui.res.stringResource(R.string.preptrove_c7187b),color=Color.White,fontSize=27.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.your_household_organised_96de4e),color=Amber,fontSize=10.sp)
        Spacer(Modifier.height(32.dp))
        sections.forEach { s->TextButton(onClick={section=s;search=""},modifier=Modifier.fillMaxWidth().heightIn(min=48.dp),colors=ButtonDefaults.textButtonColors(contentColor=if(section==s) Amber else Color.White)) {Text(screenLabel(s),modifier=Modifier.fillMaxWidth())} }
       }
-      Scaffold(modifier=Modifier.weight(1f),topBar={TopAppBar(title={Column {Text(if(wide) screenLabel(section) else "PrepTrove",fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.prepared_today_ready_for_tomorrow_6786a9),fontSize=12.sp)}},actions={IconButton(onClick={section="Voice"}) {Icon(Icons.Outlined.Mic,getString(R.string.msg_290b79b6acea))}})},floatingActionButton={if(section in kinds) FloatingActionButton(onClick={editing=Entry(kind=kinds.getValue(section),title="")}) {Icon(Icons.Outlined.Add,getString(R.string.msg_950eea0391cc))}},bottomBar={if(!wide) ScrollableTabRow(selectedTabIndex=sections.indexOf(section),edgePadding=0.dp) {sections.forEach {s->Tab(selected=section==s,onClick={section=s;search=""},text={Text(screenLabel(s))})}}}) { padding->
+      Scaffold(modifier=Modifier.weight(1f),topBar={TopAppBar(title={Column {Text(if(wide) screenLabel(section) else "PrepTrove",fontWeight=FontWeight.Bold);if(fontScale<1.5f) Text(androidx.compose.ui.res.stringResource(R.string.prepared_today_ready_for_tomorrow_6786a9),fontSize=12.sp)}},actions={IconButton(onClick={section="Voice"}) {Icon(Icons.Outlined.Mic,getString(R.string.msg_290b79b6acea))}})},snackbarHost={if(BuildConfig.LOCALIZATION_QA) Surface(color=Color(0xFF8B1A1A),contentColor=Color.White) {Text(LOCALIZATION_QA_NOTICE,Modifier.padding(8.dp),fontWeight=FontWeight.Bold)}},floatingActionButton={if(section in kinds) FloatingActionButton(onClick={editing=newPlannerRecord(kinds.getValue(section))}) {Icon(Icons.Outlined.Add,getString(R.string.msg_950eea0391cc))}},bottomBar={if(!wide) ScrollableTabRow(selectedTabIndex=sections.indexOf(section),edgePadding=0.dp) {sections.forEach {s->Tab(selected=section==s,onClick={section=s;search=""},text={Text(screenLabel(s))})}}}) { padding->
        LazyColumn(Modifier.padding(padding).fillMaxSize().padding(horizontal=if(wide) 32.dp else 20.dp),verticalArrangement=Arrangement.spacedBy(16.dp),contentPadding=PaddingValues(top=16.dp,bottom=100.dp)) {
         item { Text(androidx.compose.ui.res.stringResource(R.string.saved_records_work_offline_eceb81),color=MaterialTheme.colorScheme.primary,fontSize=12.sp) }
         if(status.isNotEmpty()) item { Text(status) }
@@ -205,16 +207,16 @@ class MainActivity:ComponentActivity() {
           item {Text(androidx.compose.ui.res.stringResource(R.string.push_to_talk_then_review_the_transcript_your_dev_afdb27))}
           item {Button(onClick={if(!SpeechRecognizer.isRecognitionAvailable(this@MainActivity)) response=getString(R.string.msg_79f24e0d59e2) else if(checkSelfPermission(Manifest.permission.RECORD_AUDIO)==PackageManager.PERMISSION_GRANTED) listen({command=it},{listening=it}) else permission.launch(Manifest.permission.RECORD_AUDIO)}) {Icon(Icons.Outlined.Mic,null);Text(if(listening) getString(R.string.msg_bbb4106e8144) else getString(R.string.msg_4c15103c8011))} }
           item {OutlinedTextField(value=command,onValueChange={command=it},label={Text(androidx.compose.ui.res.stringResource(R.string.transcript_or_typed_command_48008f))},modifier=Modifier.fillMaxWidth())}
-          item {Button(onClick={val c=command.lowercase(Locale.ROOT);val reminderDraft=VoiceDrafts.reminder(command);val inspection=VoiceDrafts.checkedSupply(command,records);when {
-           reminderDraft!=null->{editing=reminderDraft;response=getString(R.string.voice_reminder_review)}
-           inspection!=null->{if(inspection.size==1) {model.complete(inspection.single());response=getString(R.string.voice_checked)} else response=getString(R.string.voice_exact_supply)}
-           "expiring" in c->{response=getString(R.string.msg_99d34c2615d3 ,Inventory.attention(records).size)}
-           "contact" in c->{section="Contacts";response=getString(R.string.msg_ed7e19e138cd)}
-           "checklist" in c->{section="Checklists";response=getString(R.string.msg_a66277f71e95)}
-           "read" in c && "plan" in c->{response=records.filter {it.kind=="plan" && !it.isTemplate}.joinToString(". ") {it.title+". "+it.detail+". "+PdfReports.structuredLines(this@MainActivity,it).joinToString(". ")}.ifEmpty {getString(R.string.msg_7ac9410ea796)}}
-           c.startsWith("add ")->{editing=Entry(kind="supply",title=command.drop(4).substringBefore(" to my "));response=getString(R.string.msg_186c6ec83f48)}
-           VoiceDrafts.quantity(command,records)!=null->{val quantity=VoiceDrafts.quantity(command,records)!!;response=if(quantity.combinable) getString(R.string.voice_quantity,java.text.NumberFormat.getNumberInstance(resources.configuration.locales[0]).format(quantity.total),quantity.unit,quantity.phrase) else getString(R.string.voice_quantity_units)}
-           else->response=getString(R.string.msg_475a159ff59c)
+          item {Button(onClick={val locale=resources.configuration.locales[0].toLanguageTag();val parsed=VoiceCommands.parse(command,locale);when(parsed?.action) {
+           VoiceAction.REMINDER->{VoiceDrafts.reminder(command,localeTag=locale)?.let {editing=newPlannerRecord("reminder",it.title).copy(expiry=it.expiry)};response=getString(R.string.voice_reminder_review)}
+           VoiceAction.INSPECTION->{val inspection=VoiceDrafts.checkedSupply(command,records,locale).orEmpty();if(inspection.size==1) {model.complete(inspection.single());response=getString(R.string.voice_checked)} else response=getString(R.string.voice_exact_supply)}
+           VoiceAction.EXPIRY->{val count=Inventory.attention(records).size;response=resources.getQuantityString(R.plurals.supplies_attention,count,count)}
+           VoiceAction.CONTACTS->{section="Contacts";response=getString(R.string.msg_ed7e19e138cd)}
+           VoiceAction.CHECKLISTS->{section="Checklists";response=getString(R.string.msg_a66277f71e95)}
+           VoiceAction.PLANS->{response=records.filter {it.kind=="plan" && !it.isTemplate}.joinToString(". ") {it.title+". "+it.detail+". "+PdfReports.structuredLines(this@MainActivity,it).joinToString(". ")}.ifEmpty {getString(R.string.msg_7ac9410ea796)}}
+           VoiceAction.ADD_SUPPLY->{editing=newPlannerRecord("supply",parsed.value.substringBefore(" to my "));response=getString(R.string.msg_186c6ec83f48)}
+           VoiceAction.QUANTITY->{val quantity=VoiceDrafts.quantity(command,records,locale,getString(R.string.default_unit_items));response=if(quantity==null) getString(R.string.msg_475a159ff59c) else if(quantity.combinable) getString(R.string.voice_quantity,java.text.NumberFormat.getNumberInstance(resources.configuration.locales[0]).format(quantity.total),quantity.unit,quantity.phrase) else getString(R.string.voice_quantity_units)}
+           null->response=getString(R.string.msg_475a159ff59c)
           }}) {Text(androidx.compose.ui.res.stringResource(R.string.review_command_399b62))} }
           item {Text(response);TextButton(enabled=response.isNotBlank(),onClick={speechFailed= !speak(response)}) {Text(androidx.compose.ui.res.stringResource(R.string.read_response_aloud_ac4ff0))};if(speechFailed) Text(getString(R.string.voice_tts_unavailable)) }
          }
@@ -244,7 +246,7 @@ class MainActivity:ComponentActivity() {
           val kind=kinds[section]
           if(kind=="check") item {OutlinedButton(onClick={
            listOf(getString(R.string.msg_dab9ab319759),getString(R.string.msg_bd48c42d9275),getString(R.string.msg_e53d1915f2aa),getString(R.string.msg_0c32b624fed5),getString(R.string.msg_c1f91d2d0d07),getString(R.string.msg_445cbef5c132),getString(R.string.msg_45474e80fd18),getString(R.string.msg_1503c09ae775),getString(R.string.msg_c22e78a7a25a)).forEach { group->
-            listOf(getString(R.string.msg_9894105732a6), getString(R.string.msg_ceda0ef368ce), getString(R.string.msg_5d8d8b9627ca)).forEach { task->if(records.none {it.kind=="check" && it.category==group && it.title==task}) model.save(Entry(kind="check",title=task,category=group)) }
+            listOf(getString(R.string.msg_9894105732a6), getString(R.string.msg_ceda0ef368ce), getString(R.string.msg_5d8d8b9627ca)).forEach { task->if(records.none {it.kind=="check" && it.category==group && it.title==task}) model.save(newPlannerRecord("check",task).copy(category=group)) }
            }
           }) {Text(getString(R.string.msg_b836676c3c6d))} }
           val visible=records.filter {!it.isTemplate && it.kind==kind && (it.title.contains(search,true)||it.detail.contains(search,true))}
@@ -252,7 +254,7 @@ class MainActivity:ComponentActivity() {
           item {OutlinedTextField(search,{search=it},label={Text(getString(R.string.msg_7d76ac75b53e ,screenLabel(section)))},modifier=Modifier.fillMaxWidth(),leadingIcon={Icon(Icons.Outlined.Search,null)})}
           items(records.filter {it.kind==kind && it.isTemplate && it.kitId.isEmpty()},key={"template-"+it.id}) {template->Card {Column(Modifier.padding(16.dp)) {Text(getString(R.string.template_label,template.title));Row {TextButton(onClick={model.useTemplate(template)}) {Text(getString(R.string.template_use))};TextButton(onClick={deleting=template}) {Text(getString(R.string.delete_e2d0a5))}}}}}
           if(section=="Reminders") item {Text(getString(R.string.review_history));reviews.take(20).forEach {Text(it.title+" · "+displayDate(it.completedOn))}}
-          if(visible.isEmpty()) item {InfoCard(getString(R.string.msg_357221fd3aac),getString(R.string.msg_ac8bbdb90299),getString(R.string.msg_f841d822b35e)) {editing=Entry(kind=kind ?: "supply",title="")} }
+          if(visible.isEmpty()) item {InfoCard(getString(R.string.msg_357221fd3aac),getString(R.string.msg_ac8bbdb90299),getString(R.string.msg_f841d822b35e)) {editing=newPlannerRecord(kind ?: "supply")} }
           items(visible,key={it.id}) {e->Card(shape=RoundedCornerShape(18.dp)) {Column(Modifier.padding(20.dp)) {
            Row(verticalAlignment=Alignment.CenterVertically) {if(kind in listOf("check","reminder")) Checkbox(e.done,{if(it) model.complete(e) else model.save(e.copy(done=false))});Text(e.title,fontSize=20.sp,fontWeight=FontWeight.SemiBold,modifier=Modifier.weight(1f));IconButton(onClick={editing=e}) {Icon(Icons.Outlined.Edit,getString(R.string.msg_261e9c17ca74 ,e.title))}}
            Text(e.detail);if(kind=="supply") Text("${java.text.NumberFormat.getNumberInstance(resources.configuration.locales[0]).format(e.quantity)} ${e.unit} · ${e.category}")
@@ -306,11 +308,11 @@ class MainActivity:ComponentActivity() {
   OutlinedTextField(detail,{detail=it},label={Text(if(initial.kind=="contact") getString(R.string.msg_fe367046458e) else getString(R.string.msg_774de0ec6b19))},minLines=3)
   if(initial.kind=="supply") PhotoEditor(extraData,{extraData=it})
   if(initial.kind=="plan" || initial.kind=="contact") StructuredEditor(initial.kind,extraData,{extraData=it})
-  if(initial.kind=="supply") OutlinedTextField(purchased,{purchased=it},label={Text(getString(R.string.purchase_date_label))})
+  if(initial.kind=="supply") OutlinedTextField(purchased,{purchased=it},modifier=Modifier.fillMaxWidth(),label={Text(getString(R.string.purchase_date_short))},supportingText={Text(getString(R.string.purchase_date_label),modifier=Modifier.fillMaxWidth())})
   if(initial.kind=="reminder") OutlinedTextField(interval,{interval=it},label={Text(getString(R.string.reminder_interval))})
   OutlinedTextField(category,{category=it},label={Text(androidx.compose.ui.res.stringResource(R.string.category_checklist_group_0cf902))})
   if(initial.kind=="supply") {OutlinedTextField(quantity,{quantity=it},label={Text(androidx.compose.ui.res.stringResource(R.string.quantity_822bab))});OutlinedTextField(unit,{unit=it},label={Text(androidx.compose.ui.res.stringResource(R.string.unit_e_g_litres_bottles_3092cb))});Text(androidx.compose.ui.res.stringResource(R.string.assign_to_a_kit_ba9a85));Row(Modifier.horizontalScroll(rememberScrollState())) {FilterChip(selected=kit.isEmpty(),onClick={kit=""},label={Text(androidx.compose.ui.res.stringResource(R.string.unassigned_14d33b))});kits.forEach {k->FilterChip(selected=kit==k.id,onClick={kit=k.id},label={Text(k.title)})}}}
-  if(initial.kind in listOf("supply","reminder")) OutlinedTextField(date,{date=it},label={Text(getString(R.string.msg_5c542b734931 ,if(initial.kind=="reminder") getString(R.string.date_due) else getString(R.string.date_expiry)))})
+  if(initial.kind in listOf("supply","reminder")) OutlinedTextField(date,{date=it},modifier=Modifier.fillMaxWidth(),label={Text(getString(if(initial.kind=="reminder") R.string.date_due else R.string.date_expiry))},supportingText={Text(getString(R.string.msg_5c542b734931,if(initial.kind=="reminder") getString(R.string.date_due) else getString(R.string.date_expiry)),modifier=Modifier.fillMaxWidth())})
   if(initial.kind in listOf("supply","kit")) OutlinedTextField(location,{location=it},label={Text(androidx.compose.ui.res.stringResource(R.string.storage_location_a59e28))})
   if(error.isNotEmpty()) Text(error,color=MaterialTheme.colorScheme.error)
  }},confirmButton={TextButton(onClick={val q=LocalNumbers.parse(quantity,editorContext.resources.configuration.locales[0]);error=when {title.isBlank()->getString(R.string.msg_099f9079ba79);title.length>500 || detail.length>20000 || extraData.length>20000 || category.length>20000 || location.length>20000 || unit.length>20000->getString(R.string.record_too_long);q==null||!q.isFinite()||q<0->getString(R.string.msg_d81b36d718f3);purchased.isNotEmpty()&&runCatching {LocalDate.parse(purchased)}.isFailure->getString(R.string.msg_032613d09381);interval.toIntOrNull()==null || interval.toInt() !in 0..3650->getString(R.string.reminder_interval_error);date.isNotEmpty()&&runCatching {LocalDate.parse(date)}.isFailure->getString(R.string.msg_032613d09381);else->""};if(error.isEmpty()) onSave(initial.copy(title=title.trim(),detail=detail,quantity=q!!,unit=unit,expiry=date,location=location,category=category,kitId=kit,extraData=extraData,purchasedDate=purchased,intervalDays=interval.toInt()))}) {Text(androidx.compose.ui.res.stringResource(R.string.save_1509f5))}},dismissButton={TextButton(onClick=onClose) {Text(androidx.compose.ui.res.stringResource(R.string.cancel_19766e))}})

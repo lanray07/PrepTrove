@@ -1,7 +1,7 @@
 {
   "locale": "es-ES",
-  "status": "pending translation and device validation",
-  "reviewer": null,
+  "status": "linguistic templates drafted; parser and speech-device validation pending",
+  "reviewer": "Codex AI linguistic review of documented intent examples; not human, speech-device or specialist safety approval",
   "intents": {
     "addSupply": [
       "add {supply}"
@@ -29,13 +29,38 @@
     ]
   },
   "translations": {
-    "addSupply": null,
-    "expiry": null,
-    "contacts": null,
-    "plans": null,
-    "checklists": null,
-    "quantity": null,
-    "inspection": null,
-    "reminder": null
-  }
+    "addSupply": [
+      "añade {supply}"
+    ],
+    "expiry": [
+      "qué suministros caducan pronto"
+    ],
+    "contacts": [
+      "muestra mis contactos"
+    ],
+    "plans": [
+      "lee mi plan familiar"
+    ],
+    "checklists": [
+      "muestra mi lista de comprobación"
+    ],
+    "quantity": [
+      "qué cantidad de {supply} tengo",
+      "cuántos {supply} tengo",
+      "cuánta {supply} tengo",
+      "cuántas {supply} tengo",
+      "cuánto {supply} tengo"
+    ],
+    "inspection": [
+      "marca {exact supply name} como revisado",
+      "marca {exact supply name} como revisada",
+      "marca {exact supply name} como revisados",
+      "marca {exact supply name} como revisadas"
+    ],
+    "reminder": [
+      "recuérdame {task} el próximo mes"
+    ]
+  },
+  "reviewType": "AI-assisted linguistic templates",
+  "qualifiedSafetyReview": false
 }

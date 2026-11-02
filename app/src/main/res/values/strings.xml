@@ -250,4 +250,7 @@
 <string name="reminders_disable">Disable reminder notifications</string>
 <string name="reminders_disabled">Reminder notifications are off. Your saved reminders remain available.</string>
 <string name="reminders_blocked">Reminders are enabled in PrepTrove, but notifications are blocked in device settings.</string>
+<string name="default_category_other">Other</string>
+<string name="default_unit_items">items</string>
+<string name="purchase_date_short">Purchase date</string>
 </resources>

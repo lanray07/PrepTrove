@@ -4,7 +4,7 @@ import android.content.res.Configuration
 import java.util.Locale
 object AppLanguages {
  val targets=listOf("en-GB","en-US","en-AU","es-ES","es-419","fr-FR","fr-CA","de-DE","it-IT","pt-BR","pt-PT","nl-NL","pl-PL","sv-SE","ja-JP","hi-IN","ar","tr-TR","id-ID","ko-KR","zh-Hans","zh-Hant")
- val available get()=approvedResourceLocales
+ val available get()=if(BuildConfig.LOCALIZATION_QA) targets else approvedResourceLocales
  fun select(context:Context,tag:String) {require(tag.isEmpty() || tag in available);context.getSharedPreferences("app-language",Context.MODE_PRIVATE).edit().putString("tag",tag).commit()}
  fun wrap(base:Context):Context {
   val tag=base.getSharedPreferences("app-language",Context.MODE_PRIVATE).getString("tag","").orEmpty()

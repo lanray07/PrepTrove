@@ -1,7 +1,7 @@
 {
   "locale": "fr-CA",
-  "status": "pending translation and device validation",
-  "reviewer": null,
+  "status": "linguistic templates drafted; parser and speech-device validation pending",
+  "reviewer": "Codex AI linguistic review of documented intent examples; not human, speech-device or specialist safety approval",
   "intents": {
     "addSupply": [
       "add {supply}"
@@ -29,13 +29,36 @@
     ]
   },
   "translations": {
-    "addSupply": null,
-    "expiry": null,
-    "contacts": null,
-    "plans": null,
-    "checklists": null,
-    "quantity": null,
-    "inspection": null,
-    "reminder": null
-  }
+    "addSupply": [
+      "ajoute {supply}"
+    ],
+    "expiry": [
+      "quelles provisions expirent bientôt"
+    ],
+    "contacts": [
+      "affiche mes contacts"
+    ],
+    "plans": [
+      "lis mon plan familial"
+    ],
+    "checklists": [
+      "affiche ma liste de vérification"
+    ],
+    "quantity": [
+      "combien de {supply} ai-je",
+      "combien d'{supply} ai-je"
+    ],
+    "inspection": [
+      "marque {exact supply name} comme vérifié",
+      "marque {exact supply name} comme vérifiée",
+      "marque {exact supply name} comme vérifiés",
+      "marque {exact supply name} comme vérifiées"
+    ],
+    "reminder": [
+      "rappelle-moi de {task} le mois prochain",
+      "rappelle-moi d'{task} le mois prochain"
+    ]
+  },
+  "reviewType": "AI-assisted linguistic templates",
+  "qualifiedSafetyReview": false
 }

@@ -1,7 +1,7 @@
 {
   "locale": "es-ES",
-  "status": "pending listing-locale eligibility and human review",
-  "reviewer": null,
+  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "reviewer": "Codex AI linguistic review; not human or specialist safety approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
     "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
@@ -18,9 +18,27 @@
     "featureBullet.10": "Try supported push-to-talk and typed English commands",
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
-  "translation": null,
+  "translation": {
+    "displayTitle": "PrepTrove – Kit de emergencia y planes familiares",
+    "shortDescription": "Organiza sin conexión los suministros, planes, contactos y listas de tu hogar.",
+    "longDescription": "Prepárate hoy. Ten todo listo para mañana.\n\nPrepTrove te ayuda a organizar suministros de emergencia y planes prácticos del hogar en un solo lugar. Los registros guardados funcionan sin conexión y las herramientas básicas de planificación no requieren una cuenta aparte.\n\nCREA Y REVISA TUS KITS\nCrea kits de emergencia, anota dónde se guardan y organiza los suministros con cantidades, notas, fotos opcionales, fechas de compra y fechas de caducidad registradas. Guarda plantillas reutilizables y revisa lo que necesita atención.\n\nPLANIFICA EN FAMILIA\nAnota los miembros del hogar o sus apodos, puntos de encuentro, medios de comunicación, necesidades de las mascotas, necesidades de accesibilidad y procedimientos para avisar de vuestra situación. Introduce contactos importantes manualmente, sin permitir el acceso a los contactos del dispositivo.\n\nMANTÉN TUS LISTAS Y RECORDATORIOS\nCrea tareas editables y programa recordatorios de revisión o sustitución. Las revisiones periódicas, las opciones de posponer y pausar, y el historial local de tareas completadas te ayudan a mantener tus registros. El horario de las notificaciones depende del sistema operativo y la configuración del dispositivo.\n\nCONTROLA TU INFORMACIÓN\nLos registros permanecen en el almacenamiento privado de la aplicación en tu dispositivo. Exporta informes PDF para imprimir, inventarios CSV o registros JSON al destino que elijas. También hay copias de seguridad PTB protegidas con contraseña. Las fotos no se incluyen en las copias de seguridad. Puedes incluir el historial de tareas completadas en las copias JSON o PTB. El bloqueo opcional usa el PIN, la contraseña o el patrón del dispositivo; no añade cifrado a la base de datos.\n\nHERRAMIENTAS DE VOZ OPCIONALES\nUsa el botón para hablar o escribe comandos en inglés para navegar y añadir suministros. El reconocimiento y la lectura por voz dependen de los servicios instalados y pueden necesitar Internet. PrepTrove no guarda grabaciones del micrófono.\n\nIMPORTANTE\nPrepTrove es una herramienta de planificación, no un sistema de alertas de emergencia ni un sustituto de los servicios de emergencia o las indicaciones oficiales. Completar una lista no garantiza la seguridad. El resumen de referencia guardado trata actualmente sobre la preparación general en el Reino Unido; no contiene información en tiempo real.\n\nVariantes de interfaz disponibles: inglés del Reino Unido, Estados Unidos y Australia. Los demás idiomas están en desarrollo. Las compras Premium no están activadas en esta versión.",
+    "featureBullet.1": "Organiza kits de emergencia e inventarios de suministros",
+    "featureBullet.2": "Registra cantidades, lugares de almacenamiento y fechas de caducidad",
+    "featureBullet.3": "Crea planes familiares estructurados y guarda contactos importantes",
+    "featureBullet.4": "Crea tareas editables y plantillas de kits reutilizables",
+    "featureBullet.5": "Programa revisiones periódicas con opciones de posponer y pausar",
+    "featureBullet.6": "Accede a los registros guardados sin conexión y sin una cuenta aparte",
+    "featureBullet.7": "Exporta registros PDF, CSV y JSON al destino que elijas",
+    "featureBullet.8": "Crea copias de seguridad PTB protegidas con contraseña",
+    "featureBullet.9": "Usa el bloqueo opcional con las credenciales del dispositivo",
+    "featureBullet.10": "Prueba los comandos admitidos, hablados o escritos en inglés",
+    "keywords": "apagón, preparación, kit, emergencia, hogar, lista, electricidad, familia, inventario, planificador, suministros"
+  },
   "screenshots": {
     "status": "pending real localised captures",
     "countRequiredByProduct": 8
-  }
+  },
+  "reviewType": "AI-assisted",
+  "qualifiedSafetyReview": false,
+  "listingEligibilityReviewed": false
 }

@@ -8,8 +8,13 @@ android {
  namespace = "com.preptrove.app"
  compileSdk = 36
  defaultConfig { applicationId = "com.preptrove.app"; minSdk = 26; targetSdk = 36; versionCode = 1; versionName = "0.1.0"; testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"; buildConfigField("String", "AMAZON_SKU", "\"" + providers.gradleProperty("amazonPremiumSku").getOrElse("").also { require(it.matches(Regex("[A-Za-z0-9._-]*"))) } + "\"") }
- buildTypes {create("screenshots") {initWith(getByName("debug"));applicationIdSuffix=".storecapture";matchingFallbacks.add("debug")}}
- testBuildType=if(providers.gradleProperty("storeScreenshots").getOrElse("false")=="true") "screenshots" else "debug"
+ defaultConfig {buildConfigField("boolean","LOCALIZATION_QA","false")}
+ buildTypes {
+  create("screenshots") {initWith(getByName("debug"));applicationIdSuffix=".storecapture";matchingFallbacks.add("debug")}
+  create("localizationQa") {initWith(getByName("debug"));applicationIdSuffix=".localizationqa";matchingFallbacks.add("debug");buildConfigField("boolean","LOCALIZATION_QA","true");buildConfigField("boolean","AMAZON_PURCHASES_ENABLED","false")}
+ }
+ require(!(providers.gradleProperty("storeScreenshots").getOrElse("false")=="true" && providers.gradleProperty("localizationQa").getOrElse("false")=="true")) {"Choose one isolated test variant"}
+ testBuildType=when {providers.gradleProperty("localizationQa").getOrElse("false")=="true"->"localizationQa";providers.gradleProperty("storeScreenshots").getOrElse("false")=="true"->"screenshots";else->"debug"}
  buildFeatures { compose = true; buildConfig = true }
  defaultConfig {buildConfigField("boolean", "AMAZON_PURCHASES_ENABLED", providers.gradleProperty("amazonPurchasesEnabled").getOrElse("false").also {require(it in listOf("true","false"))})}
  compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }

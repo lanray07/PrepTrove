@@ -1,7 +1,7 @@
 {
   "locale": "pt-PT",
-  "status": "pending listing-locale eligibility and human review",
-  "reviewer": null,
+  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "reviewer": "Codex AI linguistic draft review; not independent human or specialist safety approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
     "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
@@ -18,9 +18,28 @@
     "featureBullet.10": "Try supported push-to-talk and typed English commands",
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
-  "translation": null,
+  "translation": {
+    "displayTitle": "PrepTrove Kit de emergência e planos familiares",
+    "shortDescription": "Organize provisões de emergência, planos familiares, contactos e listas de verificação offline.",
+    "longDescription": "Prepare hoje. Esteja pronto para amanhã.\n\nO PrepTrove ajuda a organizar provisões de emergência e planos familiares práticos num só lugar. Os registos guardados funcionam offline e o planeamento básico não exige uma conta separada.\n\nCRIE E REVEJA OS SEUS KITS\nCrie kits de emergência, registe locais de armazenamento e organize provisões com quantidades, notas, fotografias opcionais, datas de compra e prazos de validade registados. Guarde modelos reutilizáveis e reveja os artigos que precisam de atenção.\n\nPLANEIEM EM CONJUNTO\nRegiste os membros do agregado familiar ou alcunhas, pontos de encontro, acordos de comunicação, necessidades dos animais de estimação, questões de acessibilidade e procedimentos para dar notícias. Introduza contactos importantes manualmente, sem permitir o acesso à lista de contactos do dispositivo.\n\nMANTENHA LISTAS E LEMBRETES\nCrie tarefas editáveis nas listas de verificação e programe lembretes de inspeção ou substituição. As revisões recorrentes, o adiamento, a suspensão e o histórico local de conclusões ajudam a manter os registos atualizados. Os horários das notificações dependem do sistema operativo e das definições do dispositivo.\n\nMANTENHA O CONTROLO DAS SUAS INFORMAÇÕES\nOs registos ficam no armazenamento privado da aplicação no dispositivo. Exporte relatórios PDF para impressão, inventários CSV ou registos JSON para o destino que escolher. Também estão disponíveis cópias de segurança PTB protegidas por palavra-passe. As fotografias não são incluídas nas cópias de segurança. Pode incluir o histórico de conclusões nas cópias JSON ou PTB. O bloqueio opcional da aplicação usa a credencial de bloqueio do ecrã do dispositivo e não adiciona encriptação à base de dados.\n\nFERRAMENTAS DE VOZ OPCIONAIS\nUse a função premir para falar ou comandos escritos em inglês para navegar e adicionar provisões. O reconhecimento e a reprodução de voz dependem dos serviços instalados no dispositivo e podem exigir acesso à Internet. O PrepTrove não guarda gravações do microfone.\n\nIMPORTANTE\nO PrepTrove é um apoio ao planeamento, não um sistema de alerta de emergência nem um substituto dos serviços de emergência ou das orientações oficiais. Concluir uma lista não garante segurança. O resumo de referência guardado contém atualmente orientações gerais de planeamento do Reino Unido, não informações em tempo real.\n\nVariantes de interface disponíveis: inglês (Reino Unido), inglês (EUA) e inglês (Austrália). Os outros idiomas continuam em desenvolvimento. As compras Premium não estão ativadas nesta versão.",
+    "featureBullet.1": "Organize kits de emergência e inventários de provisões",
+    "featureBullet.2": "Registe quantidades, locais de armazenamento e prazos de validade",
+    "featureBullet.3": "Crie planos familiares estruturados e guarde contactos importantes",
+    "featureBullet.4": "Crie tarefas editáveis e modelos de kits reutilizáveis",
+    "featureBullet.5": "Configure revisões recorrentes com adiamento e suspensão",
+    "featureBullet.6": "Aceda aos registos de planeamento offline, sem uma conta separada",
+    "featureBullet.7": "Exporte registos PDF, CSV e JSON para o destino escolhido",
+    "featureBullet.8": "Crie cópias de segurança PTB protegidas por palavra-passe",
+    "featureBullet.9": "Use o bloqueio opcional da aplicação com a credencial do dispositivo",
+    "featureBullet.10": "Experimente a função premir para falar e os comandos escritos em inglês suportados",
+    "keywords": "falha energia, preparação, kit, emergência, casa, lista verificação, eletricidade, família, inventário, planeador, provisões, organização"
+  },
   "screenshots": {
     "status": "pending real localised captures",
     "countRequiredByProduct": 8
-  }
+  },
+  "reviewType": "AI-assisted linguistic draft; qualified safety and store review pending",
+  "reviewed": false,
+  "qualifiedSafetyReview": false,
+  "listingEligibilityReviewed": false
 }

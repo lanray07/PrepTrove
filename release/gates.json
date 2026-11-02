@@ -5,11 +5,11 @@
   },
   "deviceCompatibilityAndVoice": {
     "status": "pending",
-    "evidence": "Final API 36/PDF-locale build passed on unlocked physical Fire: 34 cases passed, one screenshot-only skip, zero failures/errors (2026-11-02). Separate isolated screenshot test passed and refreshed 24 English-variant captures. Thirteen JVM and 15 tooling tests passed; code commit 971dbb1 CI succeeded. New Fire OS 16 hardware, API 33+/36 runtime prompts, TalkBack, actual speech/credential flows, delivery and broader devices remain pending."
+    "evidence": "Target API 36 builds, 18 JVM and 24 tooling tests passed. Final 22 locale isolated Fire/API 28 QA passed 5,522 string comparisons, plurals, typed expiry commands and 88 captures at 200% text stress. Final primary Fire regression passed 34 cases, with 2 variant-only skips and zero failures/errors. Separate isolated store capture passed and refreshed 24 real English-variant images. Actual speech/TTS, credential/provider acceptance, VoiceView and newer Fire/API 33+ devices remain pending."
   },
   "localisedScreenshotsAndMetadata": {
     "status": "pending",
-    "evidence": "Full worldwide launch required. AI-assisted translation/review: 246 of 257 entries each for fr-FR/fr-CA; 58 entries each for the other 17 non-English targets (1,478 total). Safety-tagged text, remaining copy, localized full listings/screenshots and device reviews remain pending. Only the three complete source English variants ship; no English-only launch."
+    "evidence": "Full worldwide launch required. All non-safety UI entries across 22 locale queues are AI-reviewed, including 4,713 non-English entries; 308 store fields and 235 voice templates prepared. 209 safety slots remain withheld. Production remains 3 English variants. Isolated multilingual QA captures are not approved marketing assets; worldwide release and localized store assets remain pending."
   },
   "regionalSafetyReview": {
     "status": "pending",

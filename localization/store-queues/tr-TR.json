@@ -1,7 +1,7 @@
 {
   "locale": "tr-TR",
-  "status": "pending listing-locale eligibility and human review",
-  "reviewer": null,
+  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "reviewer": "Codex AI linguistic review; not human, specialist safety, listing eligibility or device approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
     "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
@@ -18,9 +18,28 @@
     "featureBullet.10": "Try supported push-to-talk and typed English commands",
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
-  "translation": null,
+  "translation": {
+    "displayTitle": "PrepTrove — acil durum kiti ve aile planlayıcısı",
+    "shortDescription": "Acil durum malzemelerini, hane planlarını, kişileri ve pratik kontrol listelerini çevrimdışı düzenleyin.",
+    "longDescription": "Bugünden hazırlanın. Yarına hazır olun.\n\nPrepTrove, acil durum malzemelerinizi ve pratik hane planlarınızı tek yerde düzenlemenize yardımcı olur. Kaydedilen kayıtlar çevrimdışı çalışır ve temel planlama için ayrı bir hesap gerekmez.\n\nKİTLERİNİZİ OLUŞTURUN VE GÖZDEN GEÇİRİN\nAcil durum kitleri oluşturun, saklama yerlerini kaydedin ve malzemelerinizi miktar, not, isteğe bağlı fotoğraf, satın alma tarihi ve kayıtlı son kullanma tarihiyle düzenleyin. Yeniden kullanılabilir şablonlar kaydedin ve ilgilenilmesi gerekenleri gözden geçirin.\n\nBİRLİKTE PLANLAYIN\nHane üyelerini veya takma adlarını, buluşma noktalarını, iletişim düzenlemelerini, evcil hayvan ihtiyaçlarını, erişilebilirlik gereksinimlerini ve haber verme yöntemlerini kaydedin. Cihazın kişi listesine erişim vermeden önemli kişileri elle girin.\n\nKONTROL LİSTELERİ VE HATIRLATICILAR\nDüzenlenebilir görevler oluşturun; kontrol veya yenileme hatırlatıcıları planlayın. Tekrarlayan gözden geçirmeler, erteleme, duraklatma ve yerel tamamlama geçmişi kayıtlarınızı güncel tutmanıza yardımcı olur. Bildirimlerin zamanlaması işletim sistemine ve cihaz ayarlarına bağlıdır.\n\nBİLGİLERİNİZİN KONTROLÜ SİZDE OLSUN\nKayıtlar, uygulamanın cihazdaki özel depolama alanında kalır. Yazdırılabilir PDF raporlarını, envanter CSV dosyalarını veya JSON kayıtlarını seçtiğiniz bir hedefe aktarın. Parola korumalı PTB yedekleri de kullanılabilir. Fotoğraflar yedeklere dahil edilmez. JSON veya PTB yedeklerine tamamlama geçmişini eklemeyi seçebilirsiniz. İsteğe bağlı uygulama kilidi cihazın ekran kilidi kimlik bilgisini kullanır; veritabanı şifrelemesi eklemez.\n\nİSTEĞE BAĞLI SES ARAÇLARI\nGezinmek ve malzeme eklemek için bas-konuş özelliğini veya yazılı İngilizce komutları kullanın. Tanıma ve sesli geri bildirim, yüklü cihaz hizmetlerine bağlıdır ve internet gerektirebilir. PrepTrove mikrofon kayıtlarını saklamaz.\n\nÖNEMLİ\nPrepTrove bir planlama yardımcısıdır; acil durum uyarı sistemi değildir ve acil yardım hizmetlerinin veya resmî yönlendirmelerin yerini almaz. Kontrol listesini tamamlamak güvenliği garanti etmez. Kaydedilen başvuru özeti şu anda Birleşik Krallık için genel hazırlık bilgilerini kapsar; canlı bilgi değildir.\n\nMevcut arayüz kaynakları: Birleşik Krallık, ABD ve Avustralya İngilizcesi. Diğer diller geliştirilmektedir. Bu sürümde Premium satın alma etkin değildir.",
+    "featureBullet.1": "Acil durum kitlerini ve malzeme envanterini düzenleyin",
+    "featureBullet.2": "Miktarları, saklama yerlerini ve son kullanma tarihlerini kaydedin",
+    "featureBullet.3": "Yapılandırılmış hane planları oluşturun ve önemli kişileri kaydedin",
+    "featureBullet.4": "Düzenlenebilir kontrol görevleri ve yeniden kullanılabilir kit şablonları oluşturun",
+    "featureBullet.5": "Erteleme ve duraklatma seçenekleriyle tekrarlayan gözden geçirmeler ayarlayın",
+    "featureBullet.6": "Ayrı hesap olmadan kaydedilen planlara çevrimdışı erişin",
+    "featureBullet.7": "PDF, CSV ve JSON kayıtlarını seçtiğiniz hedefe aktarın",
+    "featureBullet.8": "Parola korumalı PTB yedekleri oluşturun",
+    "featureBullet.9": "Cihaz ekran kilidini kullanan isteğe bağlı uygulama kilidini kullanın",
+    "featureBullet.10": "Desteklenen bas-konuş ve yazılı İngilizce komutları deneyin",
+    "keywords": "elektrik kesintisi, hazırlık, kit, acil durum, hane, kontrol listesi, elektrik, aile, envanter, planlayıcı, malzeme, planlama"
+  },
   "screenshots": {
     "status": "pending real localised captures",
     "countRequiredByProduct": 8
-  }
+  },
+  "reviewType": "AI-assisted linguistic review; safety/device/eligibility pending",
+  "reviewed": false,
+  "qualifiedSafetyReview": false,
+  "listingEligibilityReviewed": false
 }

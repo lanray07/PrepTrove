@@ -59,17 +59,17 @@ The owner explicitly requested submission on 2 November 2026. That authorizes su
 
 ## Confirmed worldwide launch scope â€” 2 November 2026
 
-The owner chose to wait for the full worldwide release rather than submit an English-only initial version. Keep the Amazon draft unsubmitted until the planned locale packs, localized listings/screenshots and regional safety reviews are complete. Purchases remain disabled. No translation provider is configured; the existing instruction is to prepare review queues. Do not infer human translation or safety approval from generated resource files, machine output or this submission request. Amazon-managed signing remains a possible route; it does not close the localization and acceptance gates.
+The owner chose to wait for the full worldwide release rather than submit an English-only initial version. Keep the Amazon draft unsubmitted until the planned locale packs, localized listings/screenshots and regional safety reviews are complete. Purchases remain disabled. No external translation provider is configured. Codex AI has completed non-safety linguistic drafts/review across all 22 locale queues, all 308 store fields and 235 deterministic voice templates. The 209 non-English safety entries remain withheld. Do not infer human translation or safety approval from generated resource files, machine output or this submission request. Amazon-managed signing remains a possible route; it does not close the localization and acceptance gates.
 
 
-## Draft binary validation — 2 November 2026
+## Draft binary validation â€” 2 November 2026
 
 Amazon accepted the tested unsigned API 35 APK (version code 1, DRM No) into the draft. The saved classification was corrected to Productivity > Organizers & Assistants. The console selected 12 tablets and zero Fire TV/automotive devices. Its disabled-device panel identified six newer Alexa/Kids tablet variants; Amazon documentation requires target API 36 for Fire OS 16. Compile/target SDK and the CI/package validation baseline have therefore been raised to 36. This does not establish runtime compatibility with new devices. The first API 36 test attempt was interrupted by a locked/asleep tablet. After the owner unlocked it, the final suite passed (34 cases and one screenshot-only skip). The API 36 replacement was then accepted; Amazon Manifest Details confirms minimum SDK 26 and target SDK 36. No lock was bypassed.
 
-The uploaded binary is a validation draft, not approval to release English-only. The final binary, declared languages and reviewed localised listing assets must match before submission. The owner assigned linguistic review to Codex; 1,478 AI-reviewed entries now exist. Qualified safety approval and the remaining acceptance requirements are still open.
+The uploaded binary is a validation draft, not approval to release English-only. The final binary, declared languages and reviewed localised listing assets must match before submission. The owner assigned linguistic review to Codex; 4,713 non-English translated/reviewed entries now exist. Qualified safety approval and the remaining acceptance requirements are still open.
 
 
-## Final tested draft update — 2 November 2026
+## Final tested draft update â€” 2 November 2026
 
 The uploaded API 36 APK SHA-256 is `63a3749220384bc33546d6c20adcd2e639149b8fc6c1c8727129bacfd2fb156a`. The console parsed package com.preptrove.app, version 0.1.0/code 1, minimum SDK 26 and target SDK 36. The earlier minimum-target warning cleared after data loaded. Replacement preserves twelve selected Fire tablets and zero TV/automotive selections. Six newer Alexa/Kids tablet models still appear disabled; their runtime compatibility is not asserted. Amazon's manifest locale list contains dependency resources and must not be treated as completed PrepTrove language coverage.
 
@@ -78,3 +78,5 @@ The public project support website was saved and confirmed on Review & Submit. T
 The export-compliance checkbox explicitly certifies import/export and encryption-law compliance. It remains unchecked, and Submit App remains disabled. No declaration was accepted. This is an actual final console requirement, separate from the still-incomplete worldwide translation, localised assets and safety acceptance. Final confirmation should be sought only once the app and declarations are ready for review.
 
 All 24 real English-variant screenshots were refreshed locally and hashed; the eight older accepted en-US assets in Amazon have not been replaced. The unsigned review ZIP now includes the tested API 36 APK, latest local screenshots and prepared tester instructions. Purchases remain disabled.
+
+The latest worldwide native QA compares 5,522 packaged strings across 22 locales and records 88 QA-only captures, plural checks, typed expiry commands and 200% Settings. These isolated screenshots cannot be uploaded as release marketing assets. See WORLDWIDE-VALIDATION.md and release/worldwide-validation.json for hash-bound evidence and limits.

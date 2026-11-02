@@ -246,5 +246,8 @@
   "voice_tts_unavailable": "Spoken output is not available right now. Read the response on screen, or check your installed text-to-speech service and language settings.",
   "reminders_disable": "Disable reminder notifications",
   "reminders_disabled": "Reminder notifications are off. Your saved reminders remain available.",
-  "reminders_blocked": "Reminders are enabled in PrepTrove, but notifications are blocked in device settings."
+  "reminders_blocked": "Reminders are enabled in PrepTrove, but notifications are blocked in device settings.",
+  "default_category_other": "Other",
+  "default_unit_items": "items",
+  "purchase_date_short": "Purchase date"
 }

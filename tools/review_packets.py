@@ -51,6 +51,22 @@ def listing_source(root):
     return result
 
 
+def validate_store_queue(queue, source):
+    if queue.get('source') != source:
+        raise ValueError('Stale store source: ' + queue['locale'])
+    translated = queue.get('translation')
+    if translated is None:
+        return False
+    if not isinstance(translated, dict) or set(translated) != set(source):
+        raise ValueError('Store translation field set differs: ' + queue['locale'])
+    for key, text in translated.items():
+        validate(source[key], text)
+    for key, limit in [('displayTitle', 200), ('shortDescription', 1200), ('longDescription', 4000)]:
+        if len(translated[key]) > limit:
+            raise ValueError('Store text exceeds observed limit: ' + queue['locale'] + ':' + key)
+    return True
+
+
 def refresh_store_queues(root):
     source = listing_source(root)
     for locale in LOCALES:
@@ -62,7 +78,10 @@ def refresh_store_queues(root):
         queue = {**previous, 'source': source,
                  'translation': previous.get('translation') if same else None,
                  'reviewer': previous.get('reviewer') if same else None,
-                 'status': 'pending listing-locale eligibility and human review'}
+                 'reviewType': previous.get('reviewType') if same else None,
+                 'status': ('draft translated; listing eligibility, safety, screenshots and device review pending'
+                            if same and previous.get('translation') else 'pending translation and listing eligibility/safety/device review')}
+        validate_store_queue(queue, source)
         path.write_text(json.dumps(queue, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 

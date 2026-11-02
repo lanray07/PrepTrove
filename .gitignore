@@ -8,6 +8,8 @@
 *.pyc
 /*-log.txt
 /artifacts/
+/app/src/localizationQa/res/
+/app/src/localizationQa/assets/
 *.keystore
 .env.*
 !.env.example

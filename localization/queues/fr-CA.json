@@ -1044,7 +1044,7 @@
     },
     "msg_5c542b734931": {
       "source": "%1$s date: YYYY-MM-DD (optional)",
-      "translation": "Date %1$s : YYYY-MM-DD (facultatif)",
+      "translation": "%1$s: YYYY-MM-DD (facultatif)",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"
@@ -1727,6 +1727,27 @@
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"
+    },
+    "default_category_other": {
+      "source": "Other",
+      "translation": "Autre",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; new-record default only"
+    },
+    "default_unit_items": {
+      "source": "items",
+      "translation": "unités",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; new-record default only"
+    },
+    "purchase_date_short": {
+      "source": "Purchase date",
+      "translation": "Date d’achat",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; concise input label"
     },
     "reminders_due.one": {
       "source": "%d saved reminder is due. Open your planner to review.",

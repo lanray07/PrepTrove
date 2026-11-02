@@ -1,10 +1,19 @@
 import csv
 import io
 import unittest
-from review_packets import import_translations
+from review_packets import import_translations, validate_store_queue
 
 
 class ReviewImportTest(unittest.TestCase):
+    def test_store_validation_rejects_missing_fields_stale_source_and_overflow(self):
+        source = {'displayTitle': 'PrepTrove', 'shortDescription': 'Planner', 'longDescription': 'Household planner'}
+        queue = {'locale': 'fr-FR', 'source': source, 'translation': {'displayTitle': 'PrepTrove', 'shortDescription': 'Planificateur', 'longDescription': 'Planificateur du foyer'}}
+        self.assertTrue(validate_store_queue(queue, source))
+        for changed in [dict(queue['translation'], extra='x'), dict(queue['translation'], displayTitle='PrepTrove' + 'x' * 200)]:
+            with self.assertRaises(ValueError):
+                validate_store_queue(dict(queue, translation=changed), source)
+        with self.assertRaises(ValueError):
+            validate_store_queue(dict(queue, source={}), source)
     def queue(self):
         return {'locale': 'fr-FR', 'reviewer': 'Prior reviewer', 'qualifiedSafetyReview': True,
                 'strings': {'count': {'source': '%d records', 'translation': '%d fiches', 'reviewed': True}}}

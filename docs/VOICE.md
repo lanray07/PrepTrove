@@ -1,26 +1,38 @@
 # Voice capability and acceptance report
 
-Assessed 30 October 2026. These are capability boundaries, not a claim that every speech engine or language works.
+Assessed 2 November 2026. Typed command parsing, installed speech services and production language approval are separate capabilities.
 
-## Implemented
+## Implemented interaction
 
-PrepTrove checks Android speech-recognition availability before requesting microphone access. On a device with a recognition service, push-to-talk requests permission when needed and presents the transcript for explicit review. The app does not retain microphone recordings. Recognition and optional text-to-speech use installed device services, which can process audio or spoken text over the network under their own terms. Typed input is available independently.
+PrepTrove checks Android speech-recognition availability before requesting microphone access. With a recognizer installed, push-to-talk requests permission when needed and presents the transcript for explicit review. Typed input is available independently. The app does not save microphone recordings. Recognition and optional text-to-speech use installed services, which may process audio or spoken text over a network under their own terms.
 
-The command parser supports the documented English subset: expiry review, navigation to contacts/checklists, add-supply drafts, read saved plans, next-month reminder drafts, exact-name supply inspection and unit-aware quantity queries. Destructive commands are unsupported. Ambiguous exact-name inspection does not change records. Quantity answers do not combine different units. Multilingual dictionaries remain queued; English UI variants do not establish support for other command languages.
+The deterministic parser now compiles 235 AI-reviewed templates across 22 locale targets from `localization/voice-queues/`. The eight intents are expiry review, contacts, checklists, saved plans, add-supply drafts, next-calendar-month reminder drafts, exact-name supply inspection and quantity queries. These are bounded command forms, not unrestricted natural-language understanding. Only three English UI variants remain selectable in production while non-English safety review is incomplete. The other command dictionaries are exercised through the isolated QA app; they do not establish worldwide release readiness or multilingual microphone support.
 
-Spoken output is only user initiated. The read-response button is disabled for an empty response. If the TTS service/language is unavailable or rejects a request, the screen keeps the response text and explains how to use the text alternative or check the installed service. Recognition is cancelled and speech stopped when the activity backgrounds. A successful TTS request is not proof that audio was heard.
+The parser resolves the requested locale against available dictionaries and also accepts the en-GB fallback. Templates match the whole command, tolerate whitespace and straight/curly apostrophe differences, ignore command case and allow limited trailing punctuation. It rejects multiline or overlong input. `tools/generate_voice.py` validates all intent groups and exact slot placeholders before producing `VoicePatterns.kt`.
 
-## Observed physical device
+Private slot values are preserved with their original case, Unicode and internal spacing; outer whitespace is trimmed. No slot translation or external language service is used. Reminder and supply creation opens an editable draft requiring Save. Reminder dates use one calendar month, including end-of-month adjustment. Destructive commands, calls, purchases and emergency-service actions are unsupported.
 
-The connected KFTRWI reports Fire OS 7.3.3.1, Android API 28. Android service discovery reported no recognition service. TTS discovery reported IVONA and Pico services. Installed TTS services alone do not establish language availability, audible output or voice quality.
+Inspection collects matches from every applicable inspection template. It excludes reusable templates and compares saved supply names using the matched command locale. A record is marked checked only when exactly one record matches; duplicate names or overlapping grammar that identifies different records produce the exact-name clarification instead of an automatic choice.
 
-The no-recognition fallback is covered by an instrumentation test which is conditional on the device having no recognizer. It checks the unavailable-service message, unchanged microphone permission and continued typed-command access. A conditional skip on another device is not a successful recognition test. Parser behavior is covered independently by JVM tests.
+Quantity queries use locale-aware case-insensitive exact saved names for non-English templates. English queries additionally support token matching and a small documented set of English singular/regional aliases, such as torches/flashlights. This is not general multilingual inflection. Quantities are combined only when trimmed unit strings are identical and the sum is finite. Unit case is significant: `mL` and `ML` remain different; the parser performs no unit conversion. Quantity answers use locale number formatting and keep private names and units intact.
 
-## Still required
+Spoken output is user initiated; the read-response button is disabled for an empty response. When TTS is missing, lacks the requested language or rejects a request, the response stays visible with a text alternative. Recognition is cancelled and speech stopped when the activity backgrounds. A successful TTS request does not prove audible output.
 
-- Actual microphone grant/deny/retry and transcription with each intended supported recognizer.
-- Installed language/voice selection, audible output, interruption, audio routing and offline/network behavior for the intended TTS engines.
-- TalkBack interaction, hearing/speech accessibility review and localized error/output review.
-- Additional Fire hardware/OS versions and approved multilingual dictionaries.
+## Evidence and limits
 
-API 36 emulator boot was previously attempted but blocked by the missing host hypervisor driver. That attempt provides no speech compatibility evidence. No account, purchase, phone call or emergency-service action is initiated by the voice parser.
+JVM tests cover every generated template's intended action and private-slot preservation, anchored/rejected input, reminder calendar behavior, exact-name ambiguity, overlapping Polish inspection grammar, excluded reusable templates and case-sensitive mixed-unit handling. The previous isolated native localisation run exercised typed commands in all 22 locale configurations. These tests validate command behavior rather than speech recognition accuracy, audio output or language quality on every device. The latest 251-key layout rerun remains pending; previous captures are not proof of the current layout's acceptance.
+
+The observed physical KFTRWI reported Fire OS 7.3.3.1 / Android API 28 with no recognition service. IVONA and Pico TTS services were discoverable. Service presence alone does not establish installed languages, audible output or voice quality. The no-recognizer instrumentation test checks the fallback message, unchanged microphone permission and continued typed-command access when that condition is present. A conditional skip on another device is not a successful microphone test.
+
+An earlier API 36 emulator attempt was blocked by a missing host hypervisor driver; that attempt provides no speech compatibility evidence. Later native layout or typed-command execution also cannot establish real recognizer or TTS engine support.
+
+## Remaining acceptance work
+
+- Test microphone grant, denial, retry and actual transcription with each intended recognizer and locale.
+- Verify installed language/voice selection, audible output, interruption, audio routing and offline/network behavior on intended TTS engines.
+- Review TalkBack, hearing/speech accessibility and localized error/output behavior on representative hardware.
+- Complete latest layout review, regional language/safety approval and production language gating before advertising non-English voice support.
+
+AI linguistic review is recorded explicitly in the queues. It is not human, speech-device or specialist safety approval. Purchases remain disabled.
+
+Zero-match quantity answers use the active UI locale’s default unit. Existing saved unit labels retain their original case and wording. The empty-result fallback is covered by the parser unit test.

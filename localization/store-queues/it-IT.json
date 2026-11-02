@@ -1,7 +1,7 @@
 {
   "locale": "it-IT",
-  "status": "pending listing-locale eligibility and human review",
-  "reviewer": null,
+  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "reviewer": "Codex AI linguistic draft review; not independent human or specialist safety approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
     "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
@@ -18,9 +18,28 @@
     "featureBullet.10": "Try supported push-to-talk and typed English commands",
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
-  "translation": null,
+  "translation": {
+    "displayTitle": "PrepTrove Kit di emergenza e piani familiari",
+    "shortDescription": "Organizza offline scorte di emergenza, piani familiari, contatti e pratiche liste di controllo.",
+    "longDescription": "Preparati oggi. Pronti per domani.\n\nPrepTrove ti aiuta a organizzare scorte di emergenza e piani familiari pratici in un solo posto. Le schede salvate funzionano offline e la pianificazione di base non richiede un account separato.\n\nCREA E CONTROLLA I TUOI KIT\nCrea kit di emergenza, registra dove sono conservati e organizza le scorte con quantità, note, foto facoltative, date di acquisto e scadenze registrate. Salva modelli riutilizzabili e controlla gli articoli che richiedono attenzione.\n\nPIANIFICA INSIEME\nRegistra membri del nucleo familiare o soprannomi, punti di ritrovo, accordi di comunicazione, esigenze degli animali domestici, necessità di accessibilità e procedure per dare notizie. Inserisci manualmente i contatti importanti senza concedere accesso alla rubrica del dispositivo.\n\nGESTISCI LISTE E PROMEMORIA\nCrea attività modificabili nelle liste di controllo e programma promemoria per ispezioni o sostituzioni. Verifiche ricorrenti, rinvio, sospensione e cronologia locale delle attività completate ti aiutano a mantenere aggiornate le schede. Gli orari delle notifiche dipendono dal sistema operativo e dalle impostazioni del dispositivo.\n\nMANTIENI IL CONTROLLO DELLE TUE INFORMAZIONI\nLe schede restano nello spazio di archiviazione privato dell’app sul dispositivo. Esporta rapporti PDF stampabili, inventari CSV o schede JSON nella destinazione che scegli. Sono disponibili anche backup PTB protetti da password. Le foto non sono incluse nei backup. Puoi scegliere di includere la cronologia delle attività completate nei backup JSON o PTB. Il blocco facoltativo dell’app usa le credenziali di blocco schermo del dispositivo e non aggiunge crittografia al database.\n\nSTRUMENTI VOCALI FACOLTATIVI\nUsa la funzione premi per parlare o comandi digitati in inglese per navigare e aggiungere scorte. Il riconoscimento e la riproduzione vocale dipendono dai servizi installati sul dispositivo e potrebbero richiedere una connessione Internet. PrepTrove non salva registrazioni del microfono.\n\nIMPORTANTE\nPrepTrove è un supporto alla pianificazione, non un sistema di allerta di emergenza né un sostituto dei servizi di emergenza o delle indicazioni ufficiali. Completare una lista non garantisce sicurezza. Il riepilogo di riferimento salvato contiene attualmente indicazioni generali di pianificazione per il Regno Unito, non informazioni in tempo reale.\n\nVarianti dell’interfaccia disponibili: inglese (Regno Unito), inglese (USA) e inglese (Australia). Le altre lingue sono in sviluppo. Gli acquisti Premium non sono attivati in questa versione.",
+    "featureBullet.1": "Organizza kit di emergenza e inventari delle scorte",
+    "featureBullet.2": "Registra quantità, luoghi di conservazione e date di scadenza",
+    "featureBullet.3": "Crea piani familiari strutturati e salva i contatti importanti",
+    "featureBullet.4": "Crea attività modificabili e modelli di kit riutilizzabili",
+    "featureBullet.5": "Imposta verifiche ricorrenti con rinvio e sospensione",
+    "featureBullet.6": "Accedi offline alle schede di pianificazione senza un account separato",
+    "featureBullet.7": "Esporta schede PDF, CSV e JSON nella destinazione scelta",
+    "featureBullet.8": "Crea backup PTB protetti da password",
+    "featureBullet.9": "Usa il blocco facoltativo dell’app con le credenziali del dispositivo",
+    "featureBullet.10": "Prova la funzione premi per parlare e i comandi digitati in inglese supportati",
+    "keywords": "interruzione corrente, preparazione, kit, emergenza, casa, lista controllo, energia, famiglia, inventario, agenda, scorte, organizzazione"
+  },
   "screenshots": {
     "status": "pending real localised captures",
     "countRequiredByProduct": 8
-  }
+  },
+  "reviewType": "AI-assisted linguistic draft; qualified safety and store review pending",
+  "reviewed": false,
+  "qualifiedSafetyReview": false,
+  "listingEligibilityReviewed": false
 }

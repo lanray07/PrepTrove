@@ -1,7 +1,7 @@
 {
   "locale": "ja-JP",
-  "status": "pending translation and device validation",
-  "reviewer": null,
+  "status": "linguistic templates drafted; parser and speech-device validation pending",
+  "reviewer": "Codex AI linguistic review of documented intent examples; not human, speech-device or specialist safety approval",
   "intents": {
     "addSupply": [
       "add {supply}"
@@ -29,13 +29,31 @@
     ]
   },
   "translations": {
-    "addSupply": null,
-    "expiry": null,
-    "contacts": null,
-    "plans": null,
-    "checklists": null,
-    "quantity": null,
-    "inspection": null,
-    "reminder": null
-  }
+    "addSupply": [
+      "{supply}を追加して"
+    ],
+    "expiry": [
+      "もうすぐ期限が切れる備蓄品を教えて"
+    ],
+    "contacts": [
+      "連絡先を表示して"
+    ],
+    "plans": [
+      "家族の計画を読んで"
+    ],
+    "checklists": [
+      "チェックリストを表示して"
+    ],
+    "quantity": [
+      "{supply}はどのくらいある"
+    ],
+    "inspection": [
+      "{exact supply name}を確認済みにして"
+    ],
+    "reminder": [
+      "来月{task}ように知らせて"
+    ]
+  },
+  "reviewType": "AI-assisted linguistic templates",
+  "qualifiedSafetyReview": false
 }

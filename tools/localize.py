@@ -27,7 +27,8 @@ def catalogue(source,plurals,locale):
 def queue_complete(queue):
  return (bool(str(queue.get('reviewer') or '').strip()) and queue.get('qualifiedSafetyReview') is True
          and all(item.get('reviewed') is True and item.get('translation') for item in queue['strings'].values()))
-def xml_text(text):return escape(text).replace("'","\\'").replace('"','\\"').replace('\n','\\n')
+def xml_text(text):return '"'+escape(text).replace('\\','\\\\').replace("'","\\'").replace('"','\\"').replace('\n','\\n')+'"'
+def resource_folder(locale):return 'values-in-rID' if locale=='id-ID' else 'values-b+'+locale.replace('-','+')
 def render(strings,plurals):
  return '<resources>\n'+''.join(f'<string name="{k}">{xml_text(v)}</string>\n' for k,v in strings.items())+''.join('<plurals name="'+k+'">'+''.join('<item quantity="'+q+'">'+xml_text(v)+'</item>' for q,v in forms.items())+'</plurals>\n' for k,forms in plurals.items())+'</resources>\n'
 def validate(source,translation):
@@ -76,7 +77,9 @@ def main():
    assert queue['qualifiedSafetyReview'] or not safety,'Qualified safety review is required'
    for item in items.values():validate(item['source'],item['translation'])
   complete=english or queue_complete(queue)
-  out=ROOT/'app/src/main/res'/('values-b+'+locale.replace('-','+'))/'strings.xml'
+  out=ROOT/'app/src/main/res'/resource_folder(locale)/'strings.xml'
+  legacy=ROOT/'app/src/main/res'/('values-b+'+locale.replace('-','+'))/'strings.xml'
+  if legacy!=out and legacy.exists():legacy.unlink()
   if complete:
    for item in items.values():validate(item['source'],item['translation'])
    out.parent.mkdir(exist_ok=True)

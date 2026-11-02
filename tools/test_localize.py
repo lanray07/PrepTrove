@@ -1,7 +1,10 @@
 import unittest
-from localize import placeholders,validate,render,catalogue,queue_complete
+from localize import placeholders,validate,render,catalogue,queue_complete,resource_folder
 import xml.etree.ElementTree as ET
 class TranslationValidation(unittest.TestCase):
+ def test_indonesian_uses_the_android_legacy_resource_language(self):
+  self.assertEqual('values-in-rID',resource_folder('id-ID'))
+  self.assertEqual('values-b+zh+Hant',resource_folder('zh-Hant'))
  def test_placeholders_preserve_repeated_arguments(self):
   validate("%1$s: %1$s", "%1$s : %1$s")
   with self.assertRaises(ValueError):validate("%1$s: %1$s", "%1$s")
@@ -28,4 +31,7 @@ class TranslationValidation(unittest.TestCase):
  def test_render_escapes_xml_and_protects_android_quotes(self):
   root=ET.fromstring(render({"example":"Don't lose A & B"},{"count":{"one":"%d item","other":"%d items"}}))
   self.assertEqual(2,len(root));self.assertIn("&",root.find('string').text)
+ def test_android_quotes_preserve_edge_and_repeated_whitespace(self):
+  root=ET.fromstring(render({'example':' add  water '},{}))
+  self.assertEqual('" add  water "',root.find('string').text)
 if __name__=='__main__':unittest.main()

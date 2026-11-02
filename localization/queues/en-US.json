@@ -1491,6 +1491,27 @@
       "reviewed": true,
       "safetyReviewRequired": false
     },
+    "default_category_other": {
+      "source": "Other",
+      "translation": "Other",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; new-record default only"
+    },
+    "default_unit_items": {
+      "source": "items",
+      "translation": "items",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; new-record default only"
+    },
+    "purchase_date_short": {
+      "source": "Purchase date",
+      "translation": "Purchase date",
+      "reviewed": true,
+      "safetyReviewRequired": false,
+      "origin": "Codex AI translation and linguistic review; concise input label"
+    },
     "reminders_due.one": {
       "source": "%d saved reminder is due. Open your planner to review.",
       "translation": "%d saved reminder is due. Open your planner to review.",

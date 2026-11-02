@@ -1,7 +1,7 @@
 {
   "locale": "en-AU",
-  "status": "source English",
-  "reviewer": null,
+  "status": "linguistic templates drafted; parser and speech-device validation pending",
+  "reviewer": "Codex AI linguistic review of documented intent examples; not human, speech-device or specialist safety approval",
   "intents": {
     "addSupply": [
       "add {supply}"
@@ -27,5 +27,34 @@
     "reminder": [
       "remind me to {task} next month"
     ]
-  }
+  },
+  "translations": {
+    "addSupply": [
+      "add {supply}"
+    ],
+    "expiry": [
+      "what supplies are expiring soon"
+    ],
+    "contacts": [
+      "show my contacts"
+    ],
+    "plans": [
+      "read my family plan"
+    ],
+    "checklists": [
+      "show my checklist"
+    ],
+    "quantity": [
+      "how many {supply} do I have",
+      "how many {supply}"
+    ],
+    "inspection": [
+      "mark {exact supply name} as checked"
+    ],
+    "reminder": [
+      "remind me to {task} next month"
+    ]
+  },
+  "reviewType": "AI-assisted linguistic templates",
+  "qualifiedSafetyReview": false
 }

@@ -1,7 +1,7 @@
 {
   "locale": "pl-PL",
-  "status": "pending listing-locale eligibility and human review",
-  "reviewer": null,
+  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "reviewer": "Codex AI linguistic review; not human, specialist safety, listing eligibility or device approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
     "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
@@ -18,9 +18,28 @@
     "featureBullet.10": "Try supported push-to-talk and typed English commands",
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
-  "translation": null,
+  "translation": {
+    "displayTitle": "PrepTrove — zestaw awaryjny i planer rodzinny",
+    "shortDescription": "Porządkuj zapasy awaryjne, plany domowe, kontakty i praktyczne listy kontrolne offline.",
+    "longDescription": "Przygotuj się dziś. Bądź gotowy na jutro.\n\nPrepTrove pomaga zebrać zapasy awaryjne i praktyczne plany domowe w jednym miejscu. Zapisane wpisy działają offline, a podstawowe planowanie nie wymaga osobnego konta.\n\nTWÓRZ I SPRAWDZAJ ZESTAWY\nTwórz zestawy awaryjne, zapisuj miejsca przechowywania i porządkuj zapasy z ilościami, notatkami, opcjonalnymi zdjęciami, datami zakupu i terminami ważności. Zapisuj szablony wielokrotnego użytku i sprawdzaj pozycje wymagające uwagi.\n\nPLANUJCIE RAZEM\nZapisuj domowników lub pseudonimy, miejsca spotkań, ustalenia dotyczące komunikacji, potrzeby zwierząt, kwestie dostępności i sposób potwierdzania, że wszystko w porządku. Wprowadzaj ważne kontakty ręcznie, bez udostępniania listy kontaktów urządzenia.\n\nLISTY KONTROLNE I PRZYPOMNIENIA\nTwórz edytowalne zadania i planuj przypomnienia o przeglądzie lub wymianie. Cykliczne przeglądy, odkładanie, wstrzymywanie i lokalna historia ukończenia pomagają aktualizować wpisy. Terminy powiadomień zależą od systemu operacyjnego i ustawień urządzenia.\n\nZACHOWAJ KONTROLĘ NAD INFORMACJAMI\nWpisy pozostają w prywatnej pamięci aplikacji na urządzeniu. Eksportuj raporty PDF do wydruku, pliki CSV zapasów lub wpisy JSON do wybranego miejsca. Dostępne są też kopie PTB chronione hasłem. Zdjęcia nie są dołączane do kopii zapasowych. Historię ukończenia możesz opcjonalnie uwzględnić w kopiach JSON lub PTB. Opcjonalna blokada aplikacji korzysta z blokady ekranu urządzenia; nie dodaje szyfrowania bazy danych.\n\nOPCJONALNE FUNKCJE GŁOSOWE\nUżywaj funkcji naciśnij i mów lub wpisywanych poleceń w języku angielskim do nawigacji i dodawania zapasów. Rozpoznawanie i odczytywanie mowy zależą od usług zainstalowanych na urządzeniu i mogą wymagać internetu. PrepTrove nie zapisuje nagrań z mikrofonu.\n\nWAŻNE\nPrepTrove wspiera planowanie. Nie jest systemem alarmowania i nie zastępuje służb ratunkowych ani oficjalnych zaleceń. Ukończenie listy kontrolnej nie gwarantuje bezpieczeństwa. Zapisane podsumowanie referencyjne obejmuje obecnie ogólne zalecenia dotyczące przygotowań w Wielkiej Brytanii; nie są to informacje na żywo.\n\nDostępne warianty interfejsu: angielski brytyjski, amerykański i australijski. Inne języki są w przygotowaniu. Zakupy Premium nie są włączone w tej wersji.",
+    "featureBullet.1": "Porządkuj zestawy awaryjne i zapasy",
+    "featureBullet.2": "Zapisuj ilości, miejsca przechowywania i terminy ważności",
+    "featureBullet.3": "Twórz uporządkowane plany domowe i zapisuj ważne kontakty",
+    "featureBullet.4": "Twórz edytowalne zadania i szablony zestawów wielokrotnego użytku",
+    "featureBullet.5": "Ustawiaj cykliczne przeglądy z odkładaniem i wstrzymywaniem",
+    "featureBullet.6": "Korzystaj z zapisanych planów offline bez osobnego konta",
+    "featureBullet.7": "Eksportuj wpisy PDF, CSV i JSON do wybranego miejsca",
+    "featureBullet.8": "Twórz kopie PTB chronione hasłem",
+    "featureBullet.9": "Korzystaj z opcjonalnej blokady aplikacji za pomocą blokady ekranu",
+    "featureBullet.10": "Wypróbuj obsługiwane komendy naciśnij i mów oraz tekstowe polecenia po angielsku",
+    "keywords": "awaria, przygotowanie, zestaw, sytuacja awaryjna, dom, lista kontrolna, prąd, rodzina, zapasy, planer, zaopatrzenie, planowanie"
+  },
   "screenshots": {
     "status": "pending real localised captures",
     "countRequiredByProduct": 8
-  }
+  },
+  "reviewType": "AI-assisted linguistic review; safety/device/eligibility pending",
+  "reviewed": false,
+  "qualifiedSafetyReview": false,
+  "listingEligibilityReviewed": false
 }

@@ -182,3 +182,22 @@ After the owner unlocked the Fire tablet, the complete final API 36/PDF-locale s
 The isolated store-capture instrumentation then passed its separate test and regenerated all 24 real English-variant tablet images (en-US/en-GB/en-AU), validated for dimensions and hashes. The source/test capture packages were uninstalled; the primary installation was not seeded or cleared. Representative PDF and supplies captures were visually inspected. These are actual raw UI images, not approved worldwide marketing compositions. Log: fire16-store-capture-log.txt.
 
 GitHub CI for code commit 971dbb1 passed: https://github.com/lanray07/PrepTrove/actions/runs/41531897101 . This CI run has no physical-device execution; hardware evidence above was recorded locally.
+
+
+## Worldwide localisation and voice validation — 2 November 2026
+
+Current source has 251 ordinary keys. All non-safety copy is AI-reviewed across 22 locale queues (4,713 non-English translated/reviewed entries), with 308 store fields and 235 closed voice templates. 209 non-English safety entries remain withheld; no specialist approval or production language activation is asserted.
+
+Final build command assembled debug, unsigned release, isolated localisation QA/test APKs, ran 18 JVM tests and lint successfully. All 24 Python tooling tests passed. The final isolated Fire/API28 native test passed in 113.686 seconds, compared 5,522 packaged strings, checked locale/plural selection and typed commands, and captured 88 images. Hash-bound evidence: artifacts/localization-qa-capture-manifest.json; log: worldwide-fallback-final-device-log.txt. This QA app is separately packaged and visibly marked, and cannot enter the submission bundle.
+
+AI visual reinspection of Japanese, Arabic and French editor/200%Settings captures, plus English settings, confirmed repaired date-label/help layout, wider navigation and removal of the clipped secondary header tagline. No missing glyphs or new overlap observed in those samples. This does not certify every screen, VoiceView, real microphone/TTS service or newer Fire hardware.
+
+Real-device resource checks caught Indonesian qualifier fallback and AAPT whitespace changes. Parser tests cover all 235 templates, private slots, ambiguous inspection names, calendar-month drafts and case-sensitive units. Purchases stay disabled. See WORLDWIDE-VALIDATION.md and VOICE.md for limits. Main-app regression and fresh English store capture results are recorded below when completed.
+
+The final zero-match quantity fallback now uses the active UI default unit, preserving saved unit text. Its regression assertion passed with all 18 JVM tests; the post-fix debug/release/localisation/screenshot app build and lint passed (worldwide-fallback-final-build-log.txt).
+
+Latest lint has zero errors/fatal issues, 61 warnings and 1 hint. Warnings include dependency updates, unused resources, plural candidates, Android App Bundle locale delivery configuration (this Amazon package is an APK), backup/icon recommendations and style/performance suggestions; they are not presented as a warning-free result.
+
+Post-fix main-app native regression passed:36 recorded cases, 34 passed, 2 variant-only skips, zero failures/errors (worldwide-fallback-primary-regression-log.txt, 1m23s). XML totals are authoritative; the Gradle progress console double-counts case events.
+
+Final isolated store-capture test passed in 29.437 seconds and regenerated 24 real 1920×1200 English-variant images, dimension/hash validated. Source/test capture packages were removed; no primary app data were seeded or cleared. Log: worldwide-fallback-store-capture-log.txt. Worldwide marketing review remains pending.

@@ -1,7 +1,7 @@
 {
   "locale": "ko-KR",
-  "status": "pending translation and device validation",
-  "reviewer": null,
+  "status": "linguistic templates drafted; parser and speech-device validation pending",
+  "reviewer": "Codex AI linguistic review of documented intent examples; not human, speech-device or specialist safety approval",
   "intents": {
     "addSupply": [
       "add {supply}"
@@ -29,13 +29,38 @@
     ]
   },
   "translations": {
-    "addSupply": null,
-    "expiry": null,
-    "contacts": null,
-    "plans": null,
-    "checklists": null,
-    "quantity": null,
-    "inspection": null,
-    "reminder": null
-  }
+    "addSupply": [
+      "{supply} 추가해 줘",
+      "{supply} 추가해줘"
+    ],
+    "expiry": [
+      "사용 기한이 임박한 비축품을 알려 줘",
+      "사용 기한이 임박한 비축품을 알려줘"
+    ],
+    "contacts": [
+      "내 연락처 보여 줘",
+      "내 연락처 보여줘"
+    ],
+    "plans": [
+      "내 가족 계획 읽어 줘",
+      "내 가족 계획 읽어줘"
+    ],
+    "checklists": [
+      "내 체크리스트 보여 줘",
+      "내 체크리스트 보여줘"
+    ],
+    "quantity": [
+      "내가 가진 {supply} 수량은 얼마야"
+    ],
+    "inspection": [
+      "{exact supply name} 점검을 기록해 줘",
+      "{exact supply name} 점검을 기록해줘"
+    ],
+    "reminder": [
+      "다음 달에 {task} 알림을 만들어 줘",
+      "다음 달에 {task} 알림을 만들어줘"
+    ]
+  },
+  "reviewType": "AI-assisted linguistic templates",
+  "qualifiedSafetyReview": false
 }

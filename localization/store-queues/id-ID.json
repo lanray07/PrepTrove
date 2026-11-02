@@ -1,7 +1,7 @@
 {
   "locale": "id-ID",
-  "status": "pending listing-locale eligibility and human review",
-  "reviewer": null,
+  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "reviewer": "Codex AI linguistic review; not human, specialist safety, listing eligibility or device approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
     "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
@@ -18,9 +18,28 @@
     "featureBullet.10": "Try supported push-to-talk and typed English commands",
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
-  "translation": null,
+  "translation": {
+    "displayTitle": "PrepTrove — perlengkapan darurat dan perencana keluarga",
+    "shortDescription": "Tata persediaan darurat, rencana rumah tangga, kontak, dan daftar periksa praktis secara offline.",
+    "longDescription": "Bersiap hari ini. Siap untuk esok.\n\nPrepTrove membantu Anda menata persediaan darurat dan rencana rumah tangga praktis dalam satu tempat. Catatan tersimpan dapat digunakan secara offline, dan perencanaan dasar tidak memerlukan akun terpisah.\n\nBUAT DAN TINJAU PERLENGKAPAN DARURAT\nBuat perlengkapan darurat, catat lokasi penyimpanan, dan tata persediaan dengan jumlah, catatan, foto opsional, tanggal pembelian, serta tanggal kedaluwarsa yang tercatat. Simpan templat yang dapat digunakan kembali dan tinjau barang yang perlu diperhatikan.\n\nRENCANAKAN BERSAMA\nCatat anggota rumah tangga atau nama panggilan, titik pertemuan, pengaturan komunikasi, kebutuhan hewan peliharaan, kebutuhan aksesibilitas, dan prosedur memberi kabar. Masukkan kontak penting secara manual tanpa memberikan akses ke daftar kontak perangkat.\n\nDAFTAR PERIKSA DAN PENGINGAT\nBuat tugas yang dapat diedit dan jadwalkan pengingat pemeriksaan atau penggantian. Tinjauan berkala, penundaan, jeda, dan riwayat penyelesaian lokal membantu menjaga catatan tetap terkini. Waktu notifikasi bergantung pada sistem operasi dan pengaturan perangkat.\n\nKENDALIKAN INFORMASI ANDA\nCatatan tetap berada di penyimpanan pribadi aplikasi pada perangkat. Ekspor laporan PDF yang dapat dicetak, file CSV inventaris, atau catatan JSON ke tujuan yang Anda pilih. Cadangan PTB yang dilindungi kata sandi juga tersedia. Foto tidak disertakan dalam cadangan. Anda dapat memilih untuk menyertakan riwayat penyelesaian dalam cadangan JSON atau PTB. Kunci aplikasi opsional menggunakan kredensial kunci layar perangkat; fitur ini tidak menambahkan enkripsi basis data.\n\nALAT SUARA OPSIONAL\nGunakan tekan untuk bicara atau perintah bahasa Inggris yang diketik untuk membantu navigasi dan menambah persediaan. Pengenalan dan pembacaan suara bergantung pada layanan yang terpasang di perangkat dan mungkin memerlukan internet. PrepTrove tidak menyimpan rekaman mikrofon.\n\nPENTING\nPrepTrove adalah pendamping perencanaan, bukan sistem peringatan darurat atau pengganti layanan darurat maupun panduan resmi. Menyelesaikan daftar periksa tidak menjamin keselamatan. Ringkasan referensi tersimpan saat ini berisi panduan persiapan umum untuk Britania Raya; ini bukan informasi langsung.\n\nVarian antarmuka yang tersedia: bahasa Inggris Britania Raya, Amerika Serikat, dan Australia. Bahasa lain masih dikembangkan. Pembelian Premium belum diaktifkan dalam versi ini.",
+    "featureBullet.1": "Tata perlengkapan darurat dan inventaris persediaan",
+    "featureBullet.2": "Catat jumlah, lokasi penyimpanan, dan tanggal kedaluwarsa",
+    "featureBullet.3": "Buat rencana rumah tangga terstruktur dan simpan kontak penting",
+    "featureBullet.4": "Buat tugas daftar periksa yang dapat diedit dan templat perlengkapan yang dapat digunakan kembali",
+    "featureBullet.5": "Atur tinjauan berulang dengan pilihan tunda dan jeda",
+    "featureBullet.6": "Akses catatan perencanaan tersimpan secara offline tanpa akun terpisah",
+    "featureBullet.7": "Ekspor catatan PDF, CSV, dan JSON ke tujuan pilihan Anda",
+    "featureBullet.8": "Buat cadangan PTB yang dilindungi kata sandi",
+    "featureBullet.9": "Gunakan kunci aplikasi opsional dengan kredensial kunci layar perangkat",
+    "featureBullet.10": "Coba fitur tekan untuk bicara yang didukung dan perintah bahasa Inggris yang diketik",
+    "keywords": "pemadaman, kesiapsiagaan, perlengkapan, darurat, rumah tangga, daftar periksa, listrik, keluarga, inventaris, perencana, persediaan, persiapan"
+  },
   "screenshots": {
     "status": "pending real localised captures",
     "countRequiredByProduct": 8
-  }
+  },
+  "reviewType": "AI-assisted linguistic review; safety/device/eligibility pending",
+  "reviewed": false,
+  "qualifiedSafetyReview": false,
+  "listingEligibilityReviewed": false
 }

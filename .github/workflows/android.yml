@@ -21,11 +21,14 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - run: chmod +x gradlew
       - run: python3 tools/localize.py
+      - run: python3 tools/generate_voice.py
       - run: python3 tools/review_packets.py
+      - run: python3 tools/localization_qa.py
       - run: python3 tools/audit_localization.py
       - run: python3 tools/extract_resources.py --check
       - run: python3 -m unittest discover -s tools -p 'test_*.py'
       - run: ./gradlew :app:assembleDebug :app:assembleRelease :app:testDebugUnitTest :app:lintDebug
+      - run: ./gradlew :app:assembleLocalizationQa :app:assembleLocalizationQaAndroidTest -PlocalizationQa=true
       - run: python3 tools/submission_bundle.py
       - uses: actions/upload-artifact@v4
         with:
@@ -35,6 +38,7 @@ jobs:
             app/build/outputs/apk/release/*unsigned.apk
             app/build/reports/
             localization/report.json
+            artifacts/localization-qa-report.json
             artifacts/localization-review.zip
             artifacts/amazon-review.zip
             artifacts/amazon-review.zip.sha256

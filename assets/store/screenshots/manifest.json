@@ -1,12 +1,12 @@
 {
-  "capturedUtc": "2026-11-02T21:56:13.885377+00:00",
+  "capturedUtc": "2026-11-02T22:55:39.481917+00:00",
   "screens": [
     {
       "file": "assets/store/screenshots/en-AU/01-overview.png",
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "99728de6a0c946cba187d788adb5da36366bfcf06a320c7b0da59a418535418b",
+      "sha256": "45342a9f96b5cd266565d16eaf7f846188232bcda13fc63c5c7fd10f5041e69a",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -16,7 +16,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "634941eeee0078972baff0a0743899f306616859f01624d1d50003e53746be0d",
+      "sha256": "07d4c5723a4cc123177c188551d23178c6977a2f5ac88bd4b32f5213f088b514",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -26,7 +26,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "f592c146f2d4d3ee51a2410c84be31ec2940ba085e30c13b5dab86e19c8a8d9d",
+      "sha256": "b6d1d85d44d588cc2896a3df4d94f8e5d8944562d1c700e0e28ed7b810e1e03d",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -36,7 +36,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "d1260fdba7672023ae0b6399cfe4147567dd5b9f80827dce90445e0662e46381",
+      "sha256": "5f983f623103a8a17fa59cf8f614573160074291e91d300e69e4a3aebc7d049e",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -46,7 +46,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "abc2a1e9ea0c1b1ac68b676afc31c2d29e51a1b35a18a4ce4039f76e4f1d8532",
+      "sha256": "4ef7cdb178645a971dd8349d83425cf4649f6dddcc26f1ab3b9f6778a0dd3a88",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -56,7 +56,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "c7e36481a6820656d510c964c56dfbbc05bd444b96d02ff25cd58dbc3ce3bcac",
+      "sha256": "95ac6d24a692bd5c107add5a2775ab09f3dbbe4f37840ddea96827193e805146",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -66,7 +66,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "8aa0e7968efd409259faca78f25723593abec729c6979282cb7e11c883cebadc",
+      "sha256": "f8da48a965bb276609bbce4f9298676b4db9e6027f6ef61725af6abe5db8f752",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -76,7 +76,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "9bcd113a8d7b62418d0e92430b060d97a3bc2c1ef0c0e278b8e10780b328e5a7",
+      "sha256": "a9e1b0c6523e68ad327f41f49e1da717e64b12d1f300b84fa95cf0c3f9a3d61b",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -86,7 +86,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "8f5eb17634d05a39ce3b7b10d04af3bc8bf1f4497048e4c3cc5c165cdecbed87",
+      "sha256": "5e8f171cace8c541a2f0ec19a97171ea5145d15f1201945a04007b6215f6fe15",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -96,7 +96,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "dfdef2fbf47b57e1116d17d09d5d3c9f43569575160ffe8ab4e1b5c3119b7b9d",
+      "sha256": "88f7ad49035ab2fe1e4811385b6e5fa4e3a2fb270cdab44dc5a3e6d68af5cacc",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -106,7 +106,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "3c96951f0e8be60fb279ac846dc0c0f81efebfe7bbcb109d48338a90b38b72c5",
+      "sha256": "b6d1d85d44d588cc2896a3df4d94f8e5d8944562d1c700e0e28ed7b810e1e03d",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -116,7 +116,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "d1260fdba7672023ae0b6399cfe4147567dd5b9f80827dce90445e0662e46381",
+      "sha256": "a09eaecb3bd01efa6c68baa4353501608e1f4275a2c725092fcbdd0d448fe8a2",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -126,7 +126,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "a3381c58ad6c5e8f8faa2eca651d83fe67c1e0d8c9bcbfea6fe4f30a2dcadbc4",
+      "sha256": "1e8e391cc4e8760659533c85fadca6d724cedc8a64397170c733dcc438ec02b8",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -136,7 +136,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "ae16e11e2927dee1e24b98f183ebd1ce758b394bbf036ea540d224b2dd907d71",
+      "sha256": "2c01b31a9daa8c49a8e782ed2f5e14a2f3645e7436c296b61472fb3efd2491bb",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -146,7 +146,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "8aa0e7968efd409259faca78f25723593abec729c6979282cb7e11c883cebadc",
+      "sha256": "a805594c665c4958ced2df71b5da9f7abb9395d5e988cd7cbc16ba533b0681fc",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -156,7 +156,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "9bcd113a8d7b62418d0e92430b060d97a3bc2c1ef0c0e278b8e10780b328e5a7",
+      "sha256": "a9e1b0c6523e68ad327f41f49e1da717e64b12d1f300b84fa95cf0c3f9a3d61b",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -166,7 +166,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "9a86560aa8b5869fd522b41502ad6e17757b860a04577f5987a7c8adb7fed475",
+      "sha256": "1c805ca64ad7a84d1211fdf5ba30e86e35244e7cf16772fbd291e7304e9fde0d",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -176,7 +176,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "840eb0756664e0643d7f746a581924de5c41afbceaa994744fa15de4947c6305",
+      "sha256": "9953d64c4908c3669563cac76f6f0e5667423a46e727cbe7b206bb562f9d9955",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -186,7 +186,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "f7aea9c6292e9eb5352e532471a771f316c6fcc4bebbfaf93a305a890103c489",
+      "sha256": "48fca1a4890895085e2cdec8e5597cc5dfc74b609539b8dc551aec0391618fc4",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -196,7 +196,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "33f697f361da3cb476bb9155d8638aeda00d4db890f5e3ef0559991f51af49d1",
+      "sha256": "12ec81ccb40f703c23218592623744b259f6acce3828bf617f47e76d92f701ce",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -206,7 +206,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "7e7c00f23dc4c08af63b14d76911b0d112514d5982d1280da7601d591cebcbe6",
+      "sha256": "4b5e311d1a6aaa1619a21669b01924bf758fcc40979a5d2e2f4104d9e18be827",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -216,7 +216,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "67461ece4f46ce3192f318184f260d90a69d73f65f83e3abae7e78ae6c9cb85c",
+      "sha256": "9616dfbdbf60a68d886f02f40459298963582bd4299305fd5da2f22fc0b1a2d5",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -226,7 +226,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "073ef50c34a874c2a82427e1783c74469e4d230943b7efdc6e821911bd074467",
+      "sha256": "f266f6f7d4f874de366ee7de48f28bb7984dc4284e374dfccd960555e963700f",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -236,7 +236,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "19e3eef8db39d28d7416c71e7830baf4b7a4dfb1571d331ff78e7281a0b6cb56",
+      "sha256": "604727cbe0e2dbd31aa310d51805239086ba5cf3ef1dec5bcb3258e69ea5fd4a",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false

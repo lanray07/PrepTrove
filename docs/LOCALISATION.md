@@ -1,36 +1,43 @@
 # Localisation delivery and review
 
-The Android source catalogue includes screen labels, confirmation/error text, dynamic placeholders, accessibility action labels and generated checklist defaults. Native plurals cover reminders and the dashboard expiry summary. The remaining raw interpolated supply row combines formatted numbers with private user fields and deliberately does not translate those fields. This audit does not establish total product translation coverage.
+Status assessed 2 November 2026. The source catalogue covers screen labels, onboarding/help, confirmation and error messages, dynamic placeholders, accessibility action labels and generated checklist defaults. Native plurals cover reminder and dashboard summaries. Private record titles, notes and custom units are not translated. Catalogue coverage measures these resources, not every possible screen, speech engine or user-entered field.
 
-The app offers three source English variants: en-GB, en-US and en-AU. Other target locales are queued and cannot be selected until resource packs pass review. Source-English release copy also requires final editorial and safety sign-off.
+## Current delivery
+
+All non-safety UI entries in the 22 locale queues have translations and Codex AI linguistic review, with parallel AI cross-review. The current queues contain 5,693 UI/plural entries in total, including 4,713 translated and reviewed entries across the 19 non-English locales. These counts include plural quantities separately. There are no missing non-safety translations. AI review is not independent human or specialist approval.
+
+Targets: en-GB, en-US, en-AU, fr-FR, fr-CA, es-ES, es-419, de-DE, it-IT, pt-BR, pt-PT, nl-NL, pl-PL, ar, hi-IN, ja-JP, ko-KR, zh-Hans, zh-Hant, tr-TR, id-ID and sv-SE.
+
+Each non-English queue still has 11 safety-tagged entries with null translations and no review approval: 209 outstanding safety translations altogether. Every queue retains `qualifiedSafetyReview: false`. Only the three source English variants are generated for the production language selector; their final editorial and safety sign-off also remains outstanding. Worldwide production localisation is not release-ready.
+
+All 22 store queues contain the full 14-field draft: title, short description, long description, ten feature bullets and keywords (308 fields). They preserve the current release disclosures, including the three English interface variants and disabled purchases. These drafts require listing eligibility, safety/disclosure review, localized store assets and final listing acceptance. A translated store listing does not enable its language in the app.
+
+The voice queues contain 235 AI-reviewed command templates across all 22 targets, compiled into the deterministic parser. Parser availability and speech-engine compatibility are separate from production UI approval; see [VOICE.md](VOICE.md).
+
+Counts are snapshots of the current files. Recalculate coverage from `localization/queues/*.json`, store `translation` objects and voice `translations` arrays after any source change. `localization/report.json` records resource/review status; refreshed generated reports must be kept consistent with the queues.
 
 ## Reproducible workflow
 
-1. Add or edit canonical Android strings and plurals. Run `python tools/extract_resources.py` to refresh catalogues.
-2. Run `python tools/localize.py` to refresh all 22 queues while retaining translations only for unchanged source text.
-3. Optionally configure DEEPL_AUTH_KEY locally and run `--translate`. No key is embedded in the APK. Provider output remains unreviewed, placeholders are validated, and safety-tagged strings are never sent for automatic translation.
-4. A reviewer fills missing text in localization/queues/LOCALE.json, verifies placeholders and plurals, sets each reviewed field, records reviewer identity and obtains qualifiedSafetyReview sign-off.
-5. `--approve LOCALE` validates the review. Only complete approved packs generate Android resources. Invalidated packs are removed so stale files cannot silently remain in a build.
-6. Generate app screens in the selected locale on representative devices, review RTL/expanded text/large fonts/TalkBack, and complete separate voice and store metadata queues. Those queues are not runtime language-support declarations.
+1. Edit canonical Android strings and plurals, then run `python tools/extract_resources.py` to refresh catalogues.
+2. Run `python tools/localize.py` to refresh all 22 queues. It retains translations only for unchanged source text. No translation API provider is configured. Optional local `DEEPL_AUTH_KEY` enables provider drafts with `--translate`; the key is never embedded in the APK, and safety-tagged strings are excluded from automatic translation.
+3. Fill translations in `localization/queues/LOCALE.json`, validate placeholders and plural categories, record the actual review identity and set per-entry review only for reviewed text. Qualified safety approval is a separate requirement and must not be inferred from AI linguistic review.
+4. Use `--approve LOCALE` only after the complete review requirements are met. Only complete approved packs generate production Android resources. Invalidated packs are removed to prevent stale translations remaining in builds.
+5. Review real screens, RTL layout, expanded text, large fonts and accessibility in representative configurations. Complete the separate voice, store metadata and localized screenshot reviews. None of those queues independently grants production language approval.
 
-## Voice and store differences
+Run `python tools/generate_voice.py` after editing voice queues. It validates the eight-intent set and exact private-slot placeholders before compiling templates. It does not approve UI languages or speech devices.
 
-Recognition and TTS availability depend on installed services and are not guaranteed by a resource translation. Intent parsing currently supports the documented English subset. Voice queue files contain source examples and slots for linguistic/device review; unimplemented dictionaries are not advertised.
+## Isolated layout evidence
 
-Store-listing locale availability must be validated separately in Amazon's console. A target UI locale does not imply an eligible listing or distribution country. No store metadata queue is approved. No translated headline is placed over an English app screen.
+`python tools/localization_qa.py` generates preview resources for the separate localisation QA application, without changing production-approved languages. Its safety strings remain source English and the app is visibly marked as QA-only. `python tools/capture_localization_qa.py` builds/runs the native resource and screen checks; generated captures are review evidence, not approved store screenshots.
 
-## Current external dependencies
+The previous native run completed all 22 isolated locale checks: 250 ordinary string resources per locale (5,500 checks), four captures each (88 images), typed-command checks and a 200% font-scale settings sample. Sample visual review found date-field label overflow and top-bar tagline clipping at large fonts. Shorter date labels, wrapping help text and removal of the decorative tagline at large font scales have since been implemented. The final rerun passed all 251 ordinary keys per locale (5,522 comparisons), plural and typed-command checks in 113.686 seconds, and refreshed 88 captures. Sample visual reinspection confirms the date help and large-font header fixes. Four sampled screens do not certify every screen or accessibility path.
 
-No translation API provider is configured. On 2 November 2026 the owner assigned linguistic review to Codex. The queues explicitly identify AI translation and review; no human or specialist safety review is implied. There are now 1,478 AI-translated/reviewed non-English entries: 246 of 257 each for fr-FR/fr-CA (all non-safety copy), and 58 each for the other 17 targets. The latter cover core navigation, record actions, export selections, photo controls and locking. The 11 safety-tagged French entries remain untranslated pending qualified review. Other copy and actual device typography remain pending; these partial packs cannot be selected in the release app.
+## Offline review packets and locale behavior
 
-Publisher/controller O.Bankole, United Kingdom and the GitHub support policy URLs are recorded. Regional safety review, full translated copy, device/layout acceptance, localized store assets and final privacy declarations remain open. Amazon catalogue setup is deferred while purchases remain disabled.
+`python tools/review_packets.py` exports 22 UTF-8 CSV files plus complete store and voice queues to `artifacts/localization-review/` and `artifacts/localization-review.zip`. Source changes invalidate corresponding translations/review. Import with `python tools/review_packets.py --import-csv FILE --locale fr-FR`. Unknown or duplicate keys, wrong locales, changed source and invalid placeholders fail before any queue is changed. A translation edit clears its review and the overall reviewer/safety sign-off; importing never approves a language. Private records are not input to the translation workflow.
 
-## Offline review packets
+Plural queues include Arabic zero/two/few/many, Polish few/many, and French/Spanish/Italian/Portuguese many. Resource generation and preflight require the complete locale-specific set. See [Android quantity strings](https://developer.android.com/topic/architecture/views/resources/string-resource-views) and [Unicode CLDR rules](https://unicode.org/cldr/charts/49/supplemental/language_plural_rules.html).
 
-Run `python tools/review_packets.py` after refreshing `localize.py`. This exports all 22 UTF-8 CSV files plus separate full store and voice queues to `artifacts/localization-review/` and the allowlisted `artifacts/localization-review.zip`. The store source now includes the actual current title, short and long descriptions, ten feature bullets and keywords, replacing the earlier three-field brief. Source changes invalidate the corresponding store translations and reviewer.
+Device language resolution selects an available complete pack in preference order and falls back to en-GB. It preserves Simplified/Traditional Chinese distinctions and applies the resolved language to resources and layout direction. A withdrawn manual selection falls back safely. Numbers and displayed dates use locale-aware formatting; editable ISO date values remain explicitly labelled. User-entered units and private fields retain their original text.
 
-Import a completed CSV with `python tools/review_packets.py --import-csv FILE --locale fr-FR`. Unknown/duplicate keys, wrong locales, changed source and invalid formatting placeholders fail before any queue is changed. Updating a translation clears its review and the overall reviewer/safety sign-off. Importing a file never approves a language. Private records are never input to this process.
-
-Review queues now include additional plural categories for Arabic (zero/two/few/many), Polish (few/many), and French/Spanish/Italian/Portuguese (many). The English other text provides context for these forms; translators must supply the target grammar. Resource generation and preflight require the complete locale-specific category set. See [Android quantity strings](https://developer.android.com/topic/architecture/views/resources/string-resource-views) and [Unicode CLDR rules](https://unicode.org/cldr/charts/49/supplemental/language_plural_rules.html).
-
-Device language selection now picks a complete available pack in preference order, falls back to en-GB, and preserves the Simplified/Traditional Chinese distinction. It applies the resolved language to both resources and layout direction, so an unavailable Arabic pack cannot leave English voice tools requesting Arabic speech recognition. Manual selections whose packs were withdrawn also fall back safely.
+Publisher/controller O.Bankole, United Kingdom and the GitHub privacy/data-deletion URLs are recorded. Regional safety review, latest device/layout acceptance, localized store assets, final privacy declarations and Amazon console acceptance remain release dependencies. Purchases remain disabled; Amazon catalogue setup is deferred.

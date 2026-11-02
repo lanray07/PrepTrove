@@ -1,7 +1,7 @@
 {
   "locale": "zh-Hans",
-  "status": "pending translation and device validation",
-  "reviewer": null,
+  "status": "linguistic templates drafted; parser and speech-device validation pending",
+  "reviewer": "Codex AI linguistic review of documented intent examples; not human, speech-device or specialist safety approval",
   "intents": {
     "addSupply": [
       "add {supply}"
@@ -29,13 +29,31 @@
     ]
   },
   "translations": {
-    "addSupply": null,
-    "expiry": null,
-    "contacts": null,
-    "plans": null,
-    "checklists": null,
-    "quantity": null,
-    "inspection": null,
-    "reminder": null
-  }
+    "addSupply": [
+      "添加{supply}"
+    ],
+    "expiry": [
+      "哪些物资快过期了"
+    ],
+    "contacts": [
+      "显示我的联系人"
+    ],
+    "plans": [
+      "读一下我的家庭计划"
+    ],
+    "checklists": [
+      "显示我的检查清单"
+    ],
+    "quantity": [
+      "我有多少{supply}"
+    ],
+    "inspection": [
+      "将{exact supply name}标记为已检查"
+    ],
+    "reminder": [
+      "下个月提醒我{task}"
+    ]
+  },
+  "reviewType": "AI-assisted linguistic templates",
+  "qualifiedSafetyReview": false
 }

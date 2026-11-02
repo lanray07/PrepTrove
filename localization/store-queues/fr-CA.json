@@ -1,7 +1,7 @@
 {
   "locale": "fr-CA",
-  "status": "pending listing-locale eligibility and human review",
-  "reviewer": null,
+  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "reviewer": "Codex AI linguistic review; not human or specialist safety approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
     "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
@@ -18,9 +18,27 @@
     "featureBullet.10": "Try supported push-to-talk and typed English commands",
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
-  "translation": null,
+  "translation": {
+    "displayTitle": "PrepTrove – Trousses d’urgence et plans familiaux",
+    "shortDescription": "Organisez hors connexion les provisions, les plans, les contacts et les listes de votre foyer.",
+    "longDescription": "Préparez aujourd’hui. Soyez prêt demain.\n\nPrepTrove vous aide à réunir les provisions d’urgence et les plans pratiques de votre foyer. Vos fiches enregistrées fonctionnent hors connexion, et aucun compte distinct n’est nécessaire pour les fonctions de planification de base.\n\nCRÉEZ ET VÉRIFIEZ VOS TROUSSES\nCréez des trousses d’urgence et indiquez leurs lieux de rangement. Organisez vos provisions avec quantités, notes, photos facultatives, dates d’achat et dates d’expiration enregistrées. Enregistrez des modèles réutilisables et vérifiez les éléments qui demandent votre attention.\n\nPLANIFIEZ ENSEMBLE\nNotez les membres du foyer ou leurs surnoms, les points de rendez-vous, les moyens de communication, les besoins des animaux, les besoins d’accessibilité et les procédures pour donner de vos nouvelles. Saisissez les contacts importants manuellement, sans autoriser l’accès aux contacts de votre appareil.\n\nGARDEZ VOS LISTES ET RAPPELS À JOUR\nCréez des tâches modifiables et des rappels d’inspection ou de remplacement. Les vérifications récurrentes, le report, la suspension et l’historique local des tâches terminées facilitent le suivi. L’horaire des notifications dépend du système d’exploitation et des paramètres de l’appareil.\n\nGARDEZ LE CONTRÔLE DE VOS INFORMATIONS\nLes fiches restent dans l’espace de stockage privé de l’application sur votre appareil. Exportez des rapports PDF imprimables, des inventaires CSV ou des fiches JSON vers la destination de votre choix. Des sauvegardes PTB protégées par mot de passe sont aussi disponibles. Les photos sont exclues des sauvegardes. Vous pouvez choisir d’inclure l’historique des tâches terminées dans les sauvegardes JSON ou PTB. Le verrouillage facultatif utilise le code, mot de passe ou schéma de l’appareil ; il n’ajoute pas de chiffrement de la base de données.\n\nOUTILS VOCAUX FACULTATIFS\nParlez en appuyant sur le bouton ou saisissez des commandes en anglais pour naviguer et ajouter des provisions. La reconnaissance et la lecture vocales dépendent des services installés et peuvent nécessiter Internet. PrepTrove ne conserve aucun enregistrement du microphone.\n\nIMPORTANT\nPrepTrove est un outil de planification, pas un système d’alerte d’urgence ni un substitut aux services d’urgence ou aux consignes officielles. Terminer une liste ne garantit pas votre sécurité. Le résumé de référence enregistré concerne actuellement la préparation générale au Royaume-Uni ; ce ne sont pas des informations en temps réel.\n\nVariantes d’interface disponibles : anglais du Royaume-Uni, des États-Unis et d’Australie. Les autres langues sont en développement. Les achats Premium ne sont pas activés dans cette version.",
+    "featureBullet.1": "Organisez vos trousses d’urgence et vos inventaires de provisions",
+    "featureBullet.2": "Notez les quantités, les lieux de rangement et les dates d’expiration",
+    "featureBullet.3": "Créez des plans familiaux structurés et enregistrez vos contacts importants",
+    "featureBullet.4": "Créez des tâches modifiables et des modèles de trousses réutilisables",
+    "featureBullet.5": "Planifiez des vérifications récurrentes avec report et suspension",
+    "featureBullet.6": "Consultez vos fiches hors connexion, sans compte distinct",
+    "featureBullet.7": "Exportez des fiches PDF, CSV et JSON vers la destination de votre choix",
+    "featureBullet.8": "Créez des sauvegardes PTB protégées par mot de passe",
+    "featureBullet.9": "Utilisez le verrouillage facultatif par le code de l’appareil",
+    "featureBullet.10": "Essayez les commandes prises en charge, vocales ou saisies en anglais",
+    "keywords": "coupure, préparation, trousse, urgence, foyer, liste, électricité, famille, inventaire, planification, provisions"
+  },
   "screenshots": {
     "status": "pending real localised captures",
     "countRequiredByProduct": 8
-  }
+  },
+  "reviewType": "AI-assisted",
+  "qualifiedSafetyReview": false,
+  "listingEligibilityReviewed": false
 }

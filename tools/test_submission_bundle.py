@@ -2,10 +2,14 @@ import hashlib
 import tempfile
 import unittest
 from pathlib import Path
-from submission_bundle import validate_badging, validate_screenshots, test_summary, validate_release_manifest
+from submission_bundle import validate_badging, validate_screenshots, test_summary, validate_release_manifest, validate_release_resources
 
 
 class SubmissionValidation(unittest.TestCase):
+    def test_release_rejects_draft_localization_resources(self):
+        validate_release_resources('resource com.preptrove.app:string/nav_settings')
+        with self.assertRaises(ValueError):
+            validate_release_resources('resource com.preptrove.app:string/localization_qa_marker')
     def test_release_rejects_document_test_components(self):
         validate_release_manifest('Application MainActivity')
         for value in ['provider com.preptrove.app.QaDocumentProvider', 'authority com.preptrove.app.test.documents']:

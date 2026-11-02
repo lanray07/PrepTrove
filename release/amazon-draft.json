@@ -17,7 +17,7 @@
   "checkoutEnabled": false,
   "submitted": false,
   "remaining": [
-    "reviewed worldwide UI translations, voice resources, localized store listings and screenshots",
+    "qualified safety wording/sign-off, production locale activation and worldwide localized marketing assets; AI-reviewed non-safety UI/store/voice drafts now complete",
     "qualified regional safety review and publisher approval of policies and console declarations",
     "real speech, lock, document picker and broader device acceptance",
     "final console review; action-time confirmation if a binding agreement is presented",
@@ -26,17 +26,17 @@
   ],
   "privacyQuestionnaire": "saved for review; publisher/legal approval pending",
   "tabletIcons": "512x512 and 114x114 accepted",
-  "screenshots": "24 fresh real 1920x1200 English-variant captures regenerated on 2026-11-02 for API 36 build; eight earlier en-US panels remain accepted in Amazon. Fresh local captures are not yet uploaded or approved as worldwide marketing assets.",
+  "screenshots": "24 final real 1920x1200 English-variant captures refreshed 2026-11-02. Eight older en-US panels remain accepted in Amazon. Fresh local captures are not uploaded or approved worldwide marketing assets.",
   "publisherName": "O.Bankole",
   "publisherCountry": "United Kingdom",
   "signingStatus": "Amazon documentation permits unsigned APK upload and applies an Amazon signature; local signing is not inherently required for Amazon-managed submission.",
   "submissionBundle": "artifacts/amazon-review.zip; unsigned review only",
-  "unsignedPackageStatus": "Refreshed for the API 36/PDF-locale build after successful unlocked physical validation: 34 passed, one screenshot-only skip; separate isolated capture passed with 24 refreshed English-variant images. Purchases disabled. Worldwide acceptance remains incomplete.",
+  "unsignedPackageStatus": "Final debug/release/localisation builds and lint passed; 18 JVM, 24 tooling and 34 primary Fire cases passed, 2 variant-only skips. Isolated 22 locale native QA passed 5,522 strings/plurals/typed expiry commands and 88 QA-only captures. Purchases disabled. All 24 real English-variant captures refreshed and hash-validated; full worldwide acceptance incomplete.",
   "publisherCountryCode": "GB",
   "submissionRequested": true,
   "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html",
   "launchScope": "full worldwide release; no English-only initial release",
-  "submissionDeferredReason": "Owner chose to wait for the full worldwide release on 2026-11-02. Translation, localized listing/screenshot and regional safety reviews remain required.",
+  "submissionDeferredReason": "Full worldwide scope retained. Non-safety UI/store/voice drafts complete; qualified safety review, production language activation, localized marketing assets and remaining acceptance are incomplete.",
   "purchaseActivationPrerequisites": "Deferred while purchases are disabled: real SKU, App Tester, restore and receipt-verification validation before any future paid release.",
   "consoleVerifiedDate": "2026-11-02",
   "consoleVerifiedState": "API 36 replacement accepted into draft; console Manifest Details confirms com.preptrove.app, version 0.1.0/code 1, minimum 26 and target 36. The target-API warning cleared after loading. Twelve tablets remain selected; no TV/automotive. No final submission.",
@@ -59,5 +59,22 @@
   "supportWebsite": "https://github.com/lanray07/PrepTrove",
   "categoryVerificationNotes": "Review page displays Productivity > Organizers & Assistants, but reopening the edit form shows Business > Organizers & Assistants. Verify this console inconsistency before final submission; no additional category changes were forced.",
   "testingInstructions": "Prepared in release/amazon-testing-instructions.txt. Text entered in console did not persist after step navigation; retain the file for final submission.",
-  "exportCompliance": "Required export/encryption-law certification remains unchecked; Submit App is disabled. No binding declaration accepted."
+  "exportCompliance": "Required export/encryption-law certification remains unchecked; Submit App is disabled. No binding declaration accepted.",
+  "localizationProgress": {
+    "locales": 22,
+    "sourceStrings": 251,
+    "nonEnglishTranslatedReviewedEntries": 4713,
+    "withheldNonEnglishSafetyEntries": 209,
+    "storeFields": 308,
+    "voiceTemplates": 235,
+    "reviewType": "Codex AI linguistic review; not qualified safety approval"
+  },
+  "localPreparedBinary": {
+    "file": "app/build/outputs/apk/release/app-release-unsigned.apk",
+    "sha256": "02884f1733bb4db2bfb4c2df49d0d44c5472dbe0a9e67633443fd6df637a74b7",
+    "targetSdk": 36,
+    "purchasesEnabled": false,
+    "uploaded": false,
+    "note": "Latest worldwide tooling/voice/layout build. Existing console upload remains the older recorded binary; full worldwide acceptance is not complete."
+  }
 }

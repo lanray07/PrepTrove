@@ -1,7 +1,7 @@
 {
   "locale": "de-DE",
-  "status": "pending listing-locale eligibility and human review",
-  "reviewer": null,
+  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "reviewer": "Codex AI linguistic draft review; not independent human or specialist safety approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
     "shortDescription": "Keep emergency supplies, household plans, contacts, and practical checklists organized offline.",
@@ -18,9 +18,28 @@
     "featureBullet.10": "Try supported push-to-talk and typed English commands",
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
-  "translation": null,
+  "translation": {
+    "displayTitle": "PrepTrove Notfallset- und Familienplaner",
+    "shortDescription": "Notfallvorräte, Haushaltspläne, Kontakte und praktische Checklisten offline organisieren.",
+    "longDescription": "Heute vorbereitet. Bereit für morgen.\n\nPrepTrove hilft dir, Notfallvorräte und praktische Haushaltspläne an einem Ort zu organisieren. Gespeicherte Einträge funktionieren offline; für die grundlegende Planung ist kein separates Konto erforderlich.\n\nNOTFALLSETS ERSTELLEN UND PRÜFEN\nErstelle Notfallsets, erfasse Aufbewahrungsorte und ordne Vorräte mit Mengen, Notizen, optionalen Fotos, Kaufdaten und eingetragenen Ablaufdaten. Speichere wiederverwendbare Vorlagen und prüfe Artikel, die Aufmerksamkeit benötigen.\n\nGEMEINSAM PLANEN\nHalte Haushaltsmitglieder oder Spitznamen, Treffpunkte, Kommunikationsabsprachen, Haustierbedürfnisse, Anforderungen an Barrierefreiheit und Rückmeldeverfahren fest. Trage wichtige Kontakte manuell ein, ohne Zugriff auf die Kontaktliste deines Geräts zu erteilen.\n\nCHECKLISTEN UND ERINNERUNGEN PFLEGEN\nErstelle bearbeitbare Checklistenaufgaben und plane Erinnerungen an Prüfungen oder Ersatzbeschaffungen. Wiederkehrende Prüfungen, Verschieben, Pausieren und ein lokaler Erledigungsverlauf helfen dir, deine Einträge aktuell zu halten. Der Benachrichtigungszeitpunkt hängt vom Betriebssystem und den Geräteeinstellungen ab.\n\nDIE KONTROLLE ÜBER DEINE DATEN BEHALTEN\nEinträge bleiben im privaten App-Speicher auf dem Gerät. Exportiere druckbare PDF-Berichte, CSV-Bestandslisten oder JSON-Einträge an ein selbst gewähltes Ziel. Passwortgeschützte PTB-Sicherungen sind ebenfalls verfügbar. Fotos sind nicht in Sicherungen enthalten. Bei JSON- oder PTB-Sicherungen kannst du den Erledigungsverlauf optional einschließen. Die optionale App-Sperre verwendet die Bildschirmsperre deines Geräts; sie fügt keine Datenbankverschlüsselung hinzu.\n\nOPTIONALE SPRACHFUNKTIONEN\nNutze Push-to-Talk oder getippte englische Befehle zum Navigieren und Hinzufügen von Vorräten. Erkennung und Sprachausgabe hängen von installierten Gerätediensten ab und können Internetzugriff benötigen. PrepTrove speichert keine Mikrofonaufnahmen.\n\nWICHTIG\nPrepTrove begleitet deine Planung. Die App ist kein Notfallwarnsystem und ersetzt weder Rettungsdienste noch offizielle Hinweise. Eine abgeschlossene Checkliste garantiert keine Sicherheit. Die gespeicherte Referenzzusammenfassung enthält derzeit allgemeine Planungshinweise für das Vereinigte Königreich und keine Live-Informationen.\n\nVerfügbare Oberflächenvarianten: Englisch (Vereinigtes Königreich), Englisch (USA) und Englisch (Australien). Weitere Sprachen sind in Entwicklung. Premium-Käufe sind in dieser Version nicht aktiviert.",
+    "featureBullet.1": "Notfallsets und Vorratsbestände organisieren",
+    "featureBullet.2": "Mengen, Aufbewahrungsorte und Ablaufdaten erfassen",
+    "featureBullet.3": "Strukturierte Haushaltspläne erstellen und wichtige Kontakte speichern",
+    "featureBullet.4": "Bearbeitbare Checklistenaufgaben und wiederverwendbare Set-Vorlagen erstellen",
+    "featureBullet.5": "Wiederkehrende Prüfungen mit Verschieben und Pausieren einrichten",
+    "featureBullet.6": "Gespeicherte Planungsdaten offline ohne separates Konto aufrufen",
+    "featureBullet.7": "PDF-, CSV- und JSON-Einträge an ein gewähltes Ziel exportieren",
+    "featureBullet.8": "Passwortgeschützte PTB-Sicherungen erstellen",
+    "featureBullet.9": "Optionale App-Sperre mit der Geräteentsperrmethode verwenden",
+    "featureBullet.10": "Unterstützte Push-to-Talk- und getippte englische Befehle ausprobieren",
+    "keywords": "Stromausfall, Vorsorge, Notfallset, Notfall, Haushalt, Checkliste, Strom, Familie, Bestand, Planer, Vorräte, Vorbereitung"
+  },
   "screenshots": {
     "status": "pending real localised captures",
     "countRequiredByProduct": 8
-  }
+  },
+  "reviewType": "AI-assisted linguistic draft; qualified safety and store review pending",
+  "reviewed": false,
+  "qualifiedSafetyReview": false,
+  "listingEligibilityReviewed": false
 }

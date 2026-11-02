@@ -25,6 +25,11 @@ def validate_release_manifest(text):
         raise ValueError('Test document provider must never be included in the release APK')
 
 
+def validate_release_resources(text):
+    if 'localization_qa_marker' in text:
+        raise ValueError('Draft localisation QA resources must never be included in the release APK')
+
+
 def validate_badging(text):
     """Fail closed if a wrong variant, debug APK or unexpected capability is bundled."""
     required = ["package: name='com.preptrove.app'", "sdkVersion:'26'",
@@ -101,6 +106,8 @@ def main():
     apk_report = validate_badging(badging)
     release_manifest = command([build_tools / ('aapt' + suffix), 'dump', 'xmltree', apk, 'AndroidManifest.xml']).stdout
     validate_release_manifest(release_manifest)
+    resources = command([build_tools / ('aapt' + suffix), 'dump', 'resources', apk]).stdout
+    validate_release_resources(resources)
     command([build_tools / ('zipalign' + suffix), '-c', '-P', '16', '4', apk])
     signer = build_tools / ('apksigner.bat' if os.name == 'nt' else 'apksigner')
     signature = command([signer, 'verify', apk], check_result=False)
@@ -119,6 +126,8 @@ def main():
     config = config_path.read_text(encoding='utf-8')
     if not re.search(r'AMAZON_PURCHASES_ENABLED\s*=\s*false\s*;', config):
         raise ValueError('This review workflow requires checkout disabled, as requested by the owner')
+    if not re.search(r'LOCALIZATION_QA\s*=\s*false\s*;', config):
+        raise ValueError('Localisation QA must be disabled in a submission build')
     remaining = check()
     revision = command(['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'rev-parse', 'HEAD']).stdout.strip()
     dirty = bool(command(['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'status', '--porcelain']).stdout.strip())
@@ -131,8 +140,8 @@ def main():
         raise ValueError('Lint contains release-blocking errors')
     files = [apk, manifest_path, *screenshots,
              ROOT / 'assets/store/icon-512.png', ROOT / 'assets/store/icon-114.png',
-             *[ROOT / 'release' / name for name in ['amazon-draft.json', 'listing-en-US.json', 'gates.json', 'amazon-testing-instructions.txt']],
-             *[ROOT / 'docs' / name for name in ['RELEASE.md', 'QA.md', 'PRIVACY.md', 'DATA-DELETION.md', 'BACKUP.md', 'AMAZON-BILLING.md', 'AMAZON-SUBMISSION.md', 'VOICE.md', 'NOTIFICATIONS.md']],
+             *[ROOT / 'release' / name for name in ['amazon-draft.json', 'listing-en-US.json', 'gates.json', 'amazon-testing-instructions.txt', 'worldwide-validation.json']],
+             *[ROOT / 'docs' / name for name in ['RELEASE.md', 'QA.md', 'PRIVACY.md', 'DATA-DELETION.md', 'BACKUP.md', 'AMAZON-BILLING.md', 'AMAZON-SUBMISSION.md', 'VOICE.md', 'NOTIFICATIONS.md', 'LOCALISATION.md', 'WORLDWIDE-VALIDATION.md']],
              ROOT / 'README.md',
              ROOT / 'localization/report.json']
     report = {'kind': 'unsigned_review_only', 'productionReady': False, 'signed': False,
@@ -140,7 +149,7 @@ def main():
               'buildConfigSha256': digest(config_path),
               'sourceCommit': revision, 'workingTreeDirty': dirty,
               'apk': apk_report, 'apkSha256': digest(apk), 'zipAlignmentVerified': True,
-              'testProviderAbsent': True,
+              'testProviderAbsent': True, 'localizationQaResourcesAbsent': True,
               'unitTests': unit, 'deviceTests': device, 'lint': lint,
               'remaining': remaining, 'files': {p.relative_to(ROOT).as_posix(): digest(p) for p in files}}
     output = ROOT / 'artifacts'
