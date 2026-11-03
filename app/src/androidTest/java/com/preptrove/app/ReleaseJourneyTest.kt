@@ -30,6 +30,10 @@ class ReleaseJourneyTest {
    rule.onNodeWithTag("report-close").assertIsDisplayed().performClick()
    rule.onNodeWithText("Choose destination",substring=false).assertIsDisplayed()
    rule.onNodeWithText("Cancel",substring=false).performClick()
+   // A new section starts at its own top instead of inheriting the deep
+   // Settings/PDF scroll position.
+   rule.onNode(hasText("Reference") and hasClickAction()).performScrollTo().performClick()
+   rule.onNodeWithText(rule.activity.getString(R.string.saved_guidance_united_kingdom_8a9326)).assertIsDisplayed()
   } finally {
    rule.activityRule.scenario.onActivity {it.requestedOrientation=originalOrientation}
   }

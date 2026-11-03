@@ -89,6 +89,9 @@ jobs:
             artifacts/system-ui-results/
             artifacts/device-acceptance/
             artifacts/preptrove-ci-evidence/
+            artifacts/localization-qa-partial/
+            artifacts/store-partial/
+            artifacts/marketing-partial/
             artifacts/amazon-review*
             app/build/outputs/androidTest-results/
             app/build/reports/

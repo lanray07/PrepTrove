@@ -55,7 +55,7 @@ def main():
             with Image.open(path) as frame:width,height=frame.size
             screens.append({'locale':locale,'file':path.relative_to(ROOT).as_posix(),
                             'width':width,'height':height,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
-    manifest={'kind':'qa_only_not_store','releaseApproved':False,'safetyContent':'source English, never translated automatically',
+    manifest={'kind':'qa_only_not_store','releaseApproved':False,'safetyContent':'neutral planner and external official links only; no cached safety recommendations',
               'appApkSha256':hashlib.sha256(app_apk.read_bytes()).hexdigest(),
               'testApkSha256':hashlib.sha256(test_apk.read_bytes()).hexdigest(),
               'expectationsSha256':hashlib.sha256(expected.read_bytes()).hexdigest(),'screens':screens,'results':results}

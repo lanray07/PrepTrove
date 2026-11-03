@@ -104,7 +104,7 @@ class LocalizationQaTest {
     rule.onNodeWithTag("guidance-country").performClick()
     val country=java.util.Locale("","GB").getDisplayCountry(java.util.Locale.forLanguageTag(locale))
     rule.onNode(hasText(country) and hasAnyAncestor(isDialog())).performScrollTo().performClick()
-    rule.onNodeWithText("GOV.UK · Be Ready",substring=true).assertIsDisplayed()
+     rule.onNodeWithText("GOV.UK Â· Be Ready",substring=true).performScrollTo().assertIsDisplayed()
     capture("05-official-links")
     section(R.string.nav_supplies)
     rule.onNodeWithContentDescription(localized.getString(R.string.msg_950eea0391cc)).performClick()

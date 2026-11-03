@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "kind": "neutral_planner_scope_validation_in_progress",
   "productionReady": false,
   "purchasesEnabled": false,
@@ -7,10 +7,10 @@
   "generatedLocalePacks": 22,
   "reviewedUiPluralEntries": 5803,
   "voiceTemplates": 235,
-  "currentNativeStatus": "pending hosted API36 execution; physical Fire disconnected",
+  "currentNativeStatus": "Hosted API36 run41551473058: 33 primary passes, 5 condition skips, zero failures/errors; separate real SAF/country persistence test passed. Full 22-language capture tests failed and are being repaired; navigation-source change awaits rerun. Physical Fire remains disconnected.",
   "currentScreenshotsStatus": "pending176raw and176nativeheadlinepanels",
   "currentUnitTestsPassed": 18,
-  "currentToolTestsPassed": 30,
+  "currentToolTestsPassed": 31,
   "officialSources": 21,
   "cachedAdvice": false,
   "qualifiedSafetyReviewClaimed": false,
@@ -77,5 +77,26 @@
         "marketingApproval": false
       }
     }
+  },
+  "hostedApi36Evidence": {
+    "run": "https://github.com/lanray07/PrepTrove/actions/runs/41551473058",
+    "commit": "71c90ad",
+    "primary": {
+      "tests": 38,
+      "passed": 33,
+      "skipped": 5,
+      "failures": 0,
+      "errors": 0
+    },
+    "systemUi": {
+      "tests": 1,
+      "passed": 1
+    },
+    "realCredentialEntryCancelBackgroundUnlock": true,
+    "realCreateDocumentJsonExport": true,
+    "officialSourceCountryPersistence": true,
+    "localizationCapture": "failed: official publisher not displayed; selector encoding/scroll correction awaits rerun",
+    "storeCapture": "failed: fixed fixture order did not account for translated title sort order; correction awaits rerun",
+    "acceptedWorldwideAssets": false
   }
 }

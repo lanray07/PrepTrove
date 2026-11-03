@@ -57,7 +57,12 @@ class StoreScreenshotsTest {
     }
     fun section(id:Int) {rule.onNode(hasText(label(id)) and hasClickAction()).performClick();rule.waitForIdle()}
     capture("01-overview")
-    section(R.string.nav_supplies);rule.onNodeWithText(supplies.getString(0)).assertIsDisplayed();capture("02-supplies")
+    section(R.string.nav_supplies)
+    // Translated names have a different database sort order in each locale.
+    rule.onNode(hasScrollToIndexAction()).performScrollToNode(hasText(supplies.getString(0)))
+    rule.onNodeWithText(supplies.getString(0)).assertIsDisplayed()
+    rule.onNode(hasScrollToIndexAction()).performScrollToIndex(0)
+    capture("02-supplies")
     section(R.string.nav_family_plans);capture("03-family-plan")
     section(R.string.nav_reminders);capture("04-reminders")
     section(R.string.nav_checklists);capture("05-checklists")

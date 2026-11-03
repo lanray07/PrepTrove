@@ -1,14 +1,26 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "appId": "amzn1.devportal.mobileapp.0f1c699795b7408db7381c0afa86c195",
   "releaseId": "amzn1.devportal.apprelease.ab04182f761c4cb290d209ef6e2c01c7",
   "title": "PrepTrove Emergency Kit and Family Planner",
   "category": "Productivity",
-  "subcategory": "Organizers & Assistants",
+  "subcategory": "Notes & Bookmarking",
   "languageDeclaration": [
-    "English"
+    "Arabic",
+    "Chinese",
+    "Dutch",
+    "English",
+    "French",
+    "German",
+    "Hindi",
+    "Italian",
+    "Japanese",
+    "Korean",
+    "Polish",
+    "Portuguese",
+    "Spanish"
   ],
-  "englishDescription": "saved; Amazon reported Complete; optional completion-history backup disclosure updated 2026-10-30",
+  "englishDescription": "All 15 supported description locales saved Complete after reload; worldwide neutral-planner scope.",
   "ratingQuestionnaire": "saved; Amazon reported Complete; owner review pending",
   "targetAudience": "18+ household organisers; owner review pending",
   "privacyPolicyUrl": "https://github.com/lanray07/PrepTrove/blob/main/docs/PRIVACY.md",
@@ -17,21 +29,19 @@
   "checkoutEnabled": false,
   "submitted": false,
   "remaining": [
-    "qualified safety wording/sign-off, production locale activation and worldwide localized marketing assets; AI-reviewed non-safety UI/store/voice drafts now complete",
-    "qualified regional safety review and publisher approval of policies and console declarations",
-    "real speech, lock, document picker and broader device acceptance",
-    "final console review; action-time confirmation if a binding agreement is presented",
-    "resolve category edit/review inconsistency; paste prepared tester instructions at final submission",
-    "export/encryption-law certification at final action time"
+    "current-scope native acceptance, localized asset review and image/binary refresh",
+    "publisher approval of final privacy and console declarations; support delivery verification",
+    "actual speech/audio and representative Fire accessibility acceptance; document service limits",
+    "final console review and export/encryption-law certification at action time"
   ],
   "privacyQuestionnaire": "saved for review; publisher/legal approval pending",
   "tabletIcons": "512x512 and 114x114 accepted",
-  "screenshots": "24 final real 1920x1200 English-variant captures refreshed 2026-11-02. Eight older en-US panels remain accepted in Amazon. Fresh local captures are not uploaded or approved worldwide marketing assets.",
+  "screenshots": "All 11 media locale sections selected. They currently inherit older English assets; current 22-locale captures, visual review and matching uploads remain pending.",
   "publisherName": "O.Bankole",
   "publisherCountry": "United Kingdom",
   "signingStatus": "Amazon documentation permits unsigned APK upload and applies an Amazon signature; local signing is not inherently required for Amazon-managed submission.",
   "submissionBundle": "artifacts/amazon-review.zip; unsigned review only",
-  "unsignedPackageStatus": "Final debug/release/localisation builds and lint passed; 18 JVM, 24 tooling and 34 primary Fire cases passed, 2 variant-only skips. Isolated 22 locale native QA passed 5,522 strings/plurals/typed expiry commands and 88 QA-only captures. Purchases disabled. All 24 real English-variant captures refreshed and hash-validated; full worldwide acceptance incomplete.",
+  "unsignedPackageStatus": "Current code build/lint/unit recheck in progress. Hosted API36 run41551473058: 33 primary passes, 5 condition skips, zero failures/errors; separate real system CreateDocument JSON export/country persistence test passed. Credential enable/cancel/background/unlock and portrait PDF preview passed. Worldwide capture tests failed; encoding, navigation scroll and translated sort-order corrections await rerun. No refreshed bundle yet.",
   "publisherCountryCode": "GB",
   "submissionRequested": true,
   "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html",
@@ -57,8 +67,8 @@
     "newAlexaTabletModels": "six remain disabled; no runtime compatibility claimed"
   },
   "supportWebsite": "https://github.com/lanray07/PrepTrove",
-  "categoryVerificationNotes": "Review page displays Productivity > Organizers & Assistants, but reopening the edit form shows Business > Organizers & Assistants. Verify this console inconsistency before final submission; no additional category changes were forced.",
-  "testingInstructions": "Prepared in release/amazon-testing-instructions.txt. Text entered in console did not persist after step navigation; retain the file for final submission.",
+  "categoryVerificationNotes": "Productivity > Notes & Bookmarking persisted in both edit selectors after reload and is the explicit App will be listed in category on Review. The console tooltip also shows a secondary Utilities > Notes & Bookmarking label; no hidden API was used to change that secondary mapping.",
+  "testingInstructions": "Updated worldwide neutral-planner and multilingual copy in release/amazon-testing-instructions.txt; paste at final review because earlier text did not persist.",
   "exportCompliance": "Required export/encryption-law certification remains unchecked; Submit App is disabled. No binding declaration accepted.",
   "localizationProgress": {
     "generatedUiPacks": 22,
@@ -78,6 +88,7 @@
   "consoleDescriptions": {
     "status": "all15supported locales Complete after reload",
     "mapping": "release/amazon-locales.json",
-    "proof": "artifacts/amazon-worldwide-listings.jpg"
-  }
+    "proof": "artifacts/amazon-worldwide-listings.jpg; category/language summary artifacts/amazon-worldwide-review.jpg"
+  },
+  "languageDeclarationNotes": "All 13 implemented language choices exposed by the console were selected and remained checked after reload. Swedish, Turkish and Indonesian have no console language checkbox; Chinese variants and regional packs are not separate checkboxes."
 }

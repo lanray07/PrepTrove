@@ -6,8 +6,10 @@ Create a reminder and explicitly enable notifications in Settings if desired. No
 
 Settings offers PDF, CSV, JSON and password-protected PTB exports through the device document picker. Sensitive contacts/plans and completion history are optional selections. Photos are excluded from backups. JSON/PTB restore creates copies and preserves existing records. Keep the chosen PTB password; it cannot be recovered.
 
-Voice recognition and text-to-speech depend on installed device services. If recognition is absent or microphone permission is declined, use the typed-command field. Current commands are English, for example: add bottled water; what supplies are expiring soon; show my contacts. Review drafts before saving.
+The interface supports 22 locale packs, including regional variants. Device language is detected, and Settings allows a manual language choice. Arabic uses a right-to-left layout. Dates, quantities and commands use the selected app language; existing user-entered records are not translated.
+
+Voice recognition and text-to-speech depend on installed device services and their supported languages. If recognition is absent or microphone permission is declined, use the typed-command field. Typed-command examples appear in the selected app language. In English, try: add bottled water; what supplies are expiring soon; show my contacts. Review drafts before saving. Recognition may require internet access; the app does not retain recordings.
 
 Optional app lock uses the device screen-lock credential. It is not a separate PrepTrove PIN and does not add database encryption. A secure device credential is needed before enabling it.
 
-Saved records work offline. PrepTrove is not a live emergency-alert service; the saved reference summary is general UK planning information.
+Saved planning records work offline. PrepTrove is not an emergency-alert service and does not provide cached emergency recommendations. Reference offers a country/region picker and opens an official publisher's website in an external browser. The directory choice is independent of app language and persists locally; it does not detect physical location. External websites require internet access and are not downloaded or translated by PrepTrove. Completing a checklist does not guarantee safety.

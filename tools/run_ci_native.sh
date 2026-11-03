@@ -4,6 +4,13 @@ collect_failure_evidence() {
   mkdir -p artifacts
   adb pull /data/local/tmp/preptrove-ci-evidence artifacts/ || true
   adb pull /sdcard/Android/data/com.preptrove.app/files/acceptance artifacts/device-acceptance || true
+  if adb shell test -d /sdcard/Android/data/com.preptrove.app.localizationqa/files/localization-qa; then
+    adb pull /sdcard/Android/data/com.preptrove.app.localizationqa/files/localization-qa artifacts/localization-qa-partial || true
+  fi
+  if adb shell test -d /sdcard/Android/data/com.preptrove.app.storecapture/files/store; then
+    adb pull /sdcard/Android/data/com.preptrove.app.storecapture/files/store artifacts/store-partial || true
+    adb pull /sdcard/Android/data/com.preptrove.app.storecapture/files/marketing artifacts/marketing-partial || true
+  fi
 }
 trap collect_failure_evidence EXIT
 # A phone-sized display exercises orientation requests on API 36; Android 16

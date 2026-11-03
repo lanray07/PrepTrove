@@ -15,6 +15,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -185,7 +186,8 @@ class MainActivity:ComponentActivity() {
        sections.forEach { s->TextButton(onClick={section=s;search=""},modifier=Modifier.fillMaxWidth().heightIn(min=48.dp),colors=ButtonDefaults.textButtonColors(contentColor=if(section==s) Amber else Color.White)) {Text(screenLabel(s),modifier=Modifier.fillMaxWidth())} }
       }
       Scaffold(modifier=Modifier.weight(1f),topBar={TopAppBar(title={Column {Text(if(wide) screenLabel(section) else "PrepTrove",fontWeight=FontWeight.Bold);if(fontScale<1.5f) Text(androidx.compose.ui.res.stringResource(R.string.prepared_today_ready_for_tomorrow_6786a9),fontSize=12.sp)}},actions={IconButton(onClick={section="Voice"}) {Icon(Icons.Outlined.Mic,getString(R.string.msg_290b79b6acea))}})},snackbarHost={if(BuildConfig.LOCALIZATION_QA) Surface(color=Color(0xFF8B1A1A),contentColor=Color.White) {Text(LOCALIZATION_QA_NOTICE,Modifier.padding(8.dp),fontWeight=FontWeight.Bold)}},floatingActionButton={if(section in kinds) FloatingActionButton(onClick={editing=newPlannerRecord(kinds.getValue(section))}) {Icon(Icons.Outlined.Add,getString(R.string.msg_950eea0391cc))}},bottomBar={if(!wide) ScrollableTabRow(selectedTabIndex=sections.indexOf(section),edgePadding=0.dp) {sections.forEach {s->Tab(selected=section==s,onClick={section=s;search=""},text={Text(screenLabel(s))})}}}) { padding->
-       LazyColumn(Modifier.padding(padding).fillMaxSize().padding(horizontal=if(wide) 32.dp else 20.dp),verticalArrangement=Arrangement.spacedBy(16.dp),contentPadding=PaddingValues(top=16.dp,bottom=100.dp)) {
+       val sectionListState=remember(section) {LazyListState()}
+       LazyColumn(Modifier.padding(padding).fillMaxSize().padding(horizontal=if(wide) 32.dp else 20.dp),state=sectionListState,verticalArrangement=Arrangement.spacedBy(16.dp),contentPadding=PaddingValues(top=16.dp,bottom=100.dp)) {
         item { Text(androidx.compose.ui.res.stringResource(R.string.saved_records_work_offline_eceb81),color=MaterialTheme.colorScheme.primary,fontSize=12.sp) }
         if(status.isNotEmpty()) item { Text(status) }
         when(section) {
