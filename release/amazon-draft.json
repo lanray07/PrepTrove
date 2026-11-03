@@ -29,14 +29,12 @@
   "checkoutEnabled": false,
   "submitted": false,
   "remaining": [
-    "confirmation to replace inherited Amazon images, then11 matching localized media uploads",
-    "publisher approval of final privacy and console declarations; support delivery verification",
-    "actual speech/audio and representative Fire accessibility acceptance; document service limits",
-    "final console review and export/encryption-law certification at action time"
+    "publisher approval of exact final public privacy/deletion notice and actual support/provider arrangements",
+    "action-time Amazon export/encryption certification and final Submit App"
   ],
-  "privacyQuestionnaire": "saved for review; publisher/legal approval pending",
+  "privacyQuestionnaire": "All39 data-type choices completed and saved for review. User-initiated export/disclosed voice transfers classified under Amazon exceptions; optional support correspondence, supply purchase dates and accessibility notes disclosed for app functionality. Critical changed values rechecked after reload. Publisher approval of the declared scope remains pending.",
   "tabletIcons": "512x512 and 114x114 accepted",
-  "screenshots": "Reviewed current22-locale asset sets ready. Eleven media sections still inherit older English images; Amazon delete confirmation is pending before replacement. Original files archived locally.",
+  "screenshots": "All11 available media locales now have8 reviewed matching PNGs,88 total. Every saved set was reloaded and original images downloaded to verify exact hashes and01–08 order. All22 app-locale asset sets are delivered locally. See amazon-media-validation.json.",
   "publisherName": "O.Bankole",
   "publisherCountry": "United Kingdom",
   "signingStatus": "Amazon documentation permits unsigned APK upload and applies an Amazon signature; local signing is not inherently required for Amazon-managed submission.",
@@ -46,10 +44,10 @@
   "submissionRequested": true,
   "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html",
   "launchScope": "Worldwide neutral planner with official-source links; cached safety recommendations removed by owner approval on2026-11-02; purchases disabled.",
-  "submissionDeferredReason": "Final current-source native/capture acceptance, localized media uploads, manual voice/accessibility checks and publisher declarations/export certification remain pending.",
+  "submissionDeferredReason": "All technical checks, owner-reported audio/VoiceView smoke checks and11 localized media uploads passed. Final publisher notice/declarations and binding export certification remain pending.",
   "purchaseActivationPrerequisites": "Deferred while purchases are disabled: real SKU, App Tester, restore and receipt-verification validation before any future paid release.",
   "consoleVerifiedDate": "2026-11-03",
-  "consoleVerifiedState": "API 36 replacement accepted into draft; console Manifest Details confirms com.preptrove.app, version 0.1.0/code 1, minimum 26 and target 36. The target-API warning cleared after loading. Twelve tablets remain selected; no TV/automotive. No final submission.",
+  "consoleVerifiedState": "Final Review shows expected APK/version, free price, primary Productivity > Notes & Bookmarking category,18+ target audience, all available countries,12 Fire tablets/0 TV/0 automotive, Complete content rating and descriptions/media. Export certification unchecked; Submit App disabled only pending compliance confirmation. No submission occurred.",
   "binaryUpload": {
     "status": "accepted_into_draft",
     "file": "app-release-unsigned.apk",
@@ -70,7 +68,7 @@
   },
   "supportWebsite": "https://github.com/lanray07/PrepTrove",
   "categoryVerificationNotes": "Productivity > Notes & Bookmarking persisted in both edit selectors after reload and is the explicit App will be listed in category on Review. The console tooltip also shows a secondary Utilities > Notes & Bookmarking label; no hidden API was used to change that secondary mapping.",
-  "testingInstructions": "Updated worldwide neutral-planner and multilingual copy in release/amazon-testing-instructions.txt; paste at final review because earlier text did not persist.",
+  "testingInstructions": "2364-character worldwide tester instructions entered and verified on final Review page; re-enter if Amazon clears them during navigation.",
   "exportCompliance": "Required export/encryption-law certification remains unchecked; Submit App is disabled. No binding declaration accepted.",
   "localizationProgress": {
     "generatedUiPacks": 22,
@@ -93,5 +91,5 @@
     "proof": "artifacts/amazon-worldwide-listings.jpg; category/language summary artifacts/amazon-worldwide-review.jpg"
   },
   "languageDeclarationNotes": "All 13 implemented language choices exposed by the console were selected and remained checked after reload. Swedish, Turkish and Indonesian have no console language checkbox; Chinese variants and regional packs are not separate checkboxes.",
-  "mediaReplacementConfirmation": "Requested at actual Confirm Delete dialog; no deletion accepted."
+  "mediaReplacementConfirmation": "Owner confirmed replacement across all11 locales; authorized replacement completed and saved."
 }

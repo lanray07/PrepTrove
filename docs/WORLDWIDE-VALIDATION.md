@@ -1,6 +1,6 @@
 # Worldwide localisation validation
 
-Evidence snapshot:3 November2026. Purchases remain disabled. Current hosted native/22-language capture checks pass and exact marketing hashes have scoped AI review. Final current-source Fire/manual service checks, Amazon media replacement and publisher declarations remain outstanding; no submission has occurred.
+Evidence snapshot:3 November2026. Purchases remain disabled. Current hosted native/22-language capture checks pass and exact marketing hashes have scoped AI review. Final current-source Fire/manual service checks, Only final publisher notice/declaration approval and export certification remain outstanding; no submission has occurred.
 
 ## Approved product scope and content policy
 
@@ -61,7 +61,7 @@ There are **308 translated store fields** across the 22 content locales and **23
 
 Debug, unsigned release, screenshot and isolated localisation-QA builds succeeded after the scope change. Reported checks also passed: **18 JVM tests**, **Android lint** and **30 tooling tests**. Tooling checks include resource escaping/extraction, translation placeholders, review/content policy and generation workflows. Unit tests cover deterministic command parsing, private-slot preservation, ambiguity and case-sensitive units. Build success and unit/static checks do not establish native user journeys, audible speech or complete accessibility.
 
-Hosted run 41561192222/source 8816674 passed 35 primary native cases with 4 condition/variant skips and1 separate system-file case. The22-language QA run compared 5632 strings and captured 110 screens; the store run captured 176 raw/176 panels. Physical Fire source 5383c1d separately passed 35 primary cases with 5 skips and110 QA captures; it predates the final Arabic counter wording. The tablet is currently locked for the final Fire rerun. See release/native-api36-validation.json and release/fire-device-validation.json for exact source/evidence boundaries.
+Hosted run 41561192222/source 8816674 passed 35 primary native cases with 4 condition/variant skips and1 separate system-file case. The22-language QA run compared 5632 strings and captured 110 screens; the store run captured 176 raw/176 panels. Physical Fire source 5383c1d separately passed 35 primary cases with 5 skips and110 QA captures; it predates the final Arabic counter wording. The final current-source Fire run now passes; see the final acceptance section below. See release/native-api36-validation.json and release/fire-device-validation.json for exact source/evidence boundaries.
 
 ## Historical evidence, separate from this scope
 
@@ -75,7 +75,7 @@ The NativeCanvas capture pipeline is prepared to render eight genuine app views 
 
 The separate QA application uses `.localizationqa`, an explicit QA marker/banner and isolated sample records. `tools/capture_localization_qa.py` binds capture evidence to APK/expectation hashes and exercises every locale, plural quantities, validation screens, a 200% Settings sample and typed commands. QA-banner images are unsuitable as marketing assets. Current hosted QA capture execution passed in 136.56 seconds; all 22 locale result records report256 string comparisons,5 captures and typed-command success.
 
-Amazon's observed listing choices are mapped in `release/amazon-locales.json`: de-DE, en-AU, en-GB, en-IN, en-US, es-ES, es-MX, fr-FR, it-IT, ja-JP, nl-NL, pl-PL, pt-BR, pt-PT and sv-SE. English India maps to en-GB content; Spanish Mexico maps to es-419. These fifteen listing choices are distinct from 22 interface locales or distribution-country eligibility. Descriptions were saved in the console and showed Complete after reload. Matching media uploads await action-time confirmation of Amazon's delete dialog for the inherited images. The corrected unsigned APK is accepted and download-hash verified. All 22 current-source screenshot sets are captured and checked; the unsigned review package keeps manual/publisher gates open. No final Amazon submission or approval is claimed.
+Amazon's observed listing choices are mapped in `release/amazon-locales.json`: de-DE, en-AU, en-GB, en-IN, en-US, es-ES, es-MX, fr-FR, it-IT, ja-JP, nl-NL, pl-PL, pt-BR, pt-PT and sv-SE. English India maps to en-GB content; Spanish Mexico maps to es-419. These fifteen listing choices are distinct from 22 interface locales or distribution-country eligibility. Descriptions were saved in the console and showed Complete after reload. All 11 available Amazon media locales now have eight matching saved images; exact downloaded hashes and order are verified. The corrected unsigned APK is accepted and download-hash verified. All 22 current-source screenshot sets are captured and checked; the unsigned review package keeps manual/publisher gates open. No final Amazon submission or approval is claimed.
 
 ## Remaining acceptance and release work
 
@@ -93,3 +93,8 @@ python tools/capture_localization_qa.py
 ```
 
 These commands remain reproducible workflow entry points. The exact completed hosted and physical results above have different source snapshots; keep their source/build hashes and reviewed asset manifests together. A passing emulator run or review ZIP does not establish final physical-service or publisher approval.
+
+
+## Final saved release evidence — 3 November 2026
+
+Current-source Fire primary, 22-language QA and 176-screen/176-panel capture runs pass. The owner separately reported working audible response and VoiceView navigation/controls. All 11 Amazon media locales are saved with eight matching panels; every downloaded original hash and 01–08 order was checked. The 39 privacy-type declarations are saved for publisher review. Exact evidence is in release/fire-device-validation.json, release/manual-accessibility-validation.json, release/amazon-media-validation.json and release/privacy-disclosure-review.json. Only final publisher notices/declarations and the export certification remain. Purchases stay disabled.

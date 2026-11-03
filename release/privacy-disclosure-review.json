@@ -1,0 +1,779 @@
+{
+  "date": "2026-11-03",
+  "status": "saved_for_publisher_review",
+  "dataTypesReviewed": 39,
+  "source": "https://developer.amazon.com/docs/app-submission/appstore-privacy-labels.html",
+  "policyBasis": "Amazon excludes service-provider processing and expected user-requested disclosures from third-party transfer labels. User-chosen exports and prominently disclosed voice actions are classified under those exceptions. These exclusions do not mean data can never leave the device.",
+  "scope": "Local planner input and optional support correspondence; no enabled checkout or publisher analytics. Amazon distribution services are separately disclosed in the proposed notice; no independent inspection of Amazon wrapper telemetry is claimed.",
+  "entries": [
+    {
+      "dataType": "Address",
+      "original": {
+        "dataType": "Address",
+        "collected": "Yes",
+        "transferred": "Yes",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": [
+          "App functionality"
+        ]
+      },
+      "saved": {
+        "dataType": "Address",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception"
+    },
+    {
+      "dataType": "Advertising ID",
+      "original": {
+        "dataType": "Advertising ID",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Advertising ID",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "App interactions",
+      "original": {
+        "dataType": "App interactions",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "App interactions",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Approximate location",
+      "original": {
+        "dataType": "Approximate location",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Approximate location",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Calendar events",
+      "original": {
+        "dataType": "Calendar events",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Calendar events",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Contacts / Phone Logs",
+      "original": {
+        "dataType": "Contacts / Phone Logs",
+        "collected": "Yes",
+        "transferred": "Yes",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": [
+          "App functionality"
+        ]
+      },
+      "saved": {
+        "dataType": "Contacts / Phone Logs",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Crash logs",
+      "original": {
+        "dataType": "Crash logs",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Crash logs",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Credit score",
+      "original": {
+        "dataType": "Credit score",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Credit score",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Device or other ID",
+      "original": {
+        "dataType": "Device or other ID",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Device or other ID",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Diagnostics",
+      "original": {
+        "dataType": "Diagnostics",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Diagnostics",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Email Address",
+      "original": {
+        "dataType": "Email Address",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Email Address",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "voluntary_customer_support_correspondence"
+    },
+    {
+      "dataType": "Emails",
+      "original": {
+        "dataType": "Emails",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Emails",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "voluntary_customer_support_correspondence"
+    },
+    {
+      "dataType": "Files and doc",
+      "original": {
+        "dataType": "Files and doc",
+        "collected": "Yes",
+        "transferred": "Yes",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": [
+          "App functionality"
+        ]
+      },
+      "saved": {
+        "dataType": "Files and doc",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Fitness info",
+      "original": {
+        "dataType": "Fitness info",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Fitness info",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Health & Biometrics Info",
+      "original": {
+        "dataType": "Health & Biometrics Info",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Health & Biometrics Info",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "optional_household_accessibility_notes"
+    },
+    {
+      "dataType": "In-app search history",
+      "original": {
+        "dataType": "In-app search history",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "In-app search history",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Installed apps",
+      "original": {
+        "dataType": "Installed apps",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Installed apps",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Music files",
+      "original": {
+        "dataType": "Music files",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Music files",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Name",
+      "original": {
+        "dataType": "Name",
+        "collected": "Yes",
+        "transferred": "Yes",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": [
+          "App functionality"
+        ]
+      },
+      "saved": {
+        "dataType": "Name",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception"
+    },
+    {
+      "dataType": "Other actions",
+      "original": {
+        "dataType": "Other actions",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Other actions",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Other app performance data",
+      "original": {
+        "dataType": "Other app performance data",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Other app performance data",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Other audio files",
+      "original": {
+        "dataType": "Other audio files",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Other audio files",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Other financial info",
+      "original": {
+        "dataType": "Other financial info",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Other financial info",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Other in-app messages",
+      "original": {
+        "dataType": "Other in-app messages",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Other in-app messages",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Other user info",
+      "original": {
+        "dataType": "Other user info",
+        "collected": "Yes",
+        "transferred": "Yes",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": [
+          "App functionality"
+        ]
+      },
+      "saved": {
+        "dataType": "Other user info",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception"
+    },
+    {
+      "dataType": "Other user-generated content",
+      "original": {
+        "dataType": "Other user-generated content",
+        "collected": "Yes",
+        "transferred": "Yes",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": [
+          "App functionality"
+        ]
+      },
+      "saved": {
+        "dataType": "Other user-generated content",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Phone number",
+      "original": {
+        "dataType": "Phone number",
+        "collected": "Yes",
+        "transferred": "Yes",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": [
+          "App functionality"
+        ]
+      },
+      "saved": {
+        "dataType": "Phone number",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception"
+    },
+    {
+      "dataType": "Photos",
+      "original": {
+        "dataType": "Photos",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Photos",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "reviewed_existing"
+    },
+    {
+      "dataType": "Political or religious beliefs",
+      "original": {
+        "dataType": "Political or religious beliefs",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Political or religious beliefs",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Precise location",
+      "original": {
+        "dataType": "Precise location",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Precise location",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Purchase history",
+      "original": {
+        "dataType": "Purchase history",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Purchase history",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_entered_supply_purchase_dates"
+    },
+    {
+      "dataType": "Race and ethnicity",
+      "original": {
+        "dataType": "Race and ethnicity",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Race and ethnicity",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "SMS or MMS",
+      "original": {
+        "dataType": "SMS or MMS",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "SMS or MMS",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Sexual orientation",
+      "original": {
+        "dataType": "Sexual orientation",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Sexual orientation",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "User IDs",
+      "original": {
+        "dataType": "User IDs",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "User IDs",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "User payment info",
+      "original": {
+        "dataType": "User payment info",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "User payment info",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Videos",
+      "original": {
+        "dataType": "Videos",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Videos",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Voice or sound recordings",
+      "original": {
+        "dataType": "Voice or sound recordings",
+        "collected": "Yes",
+        "transferred": "Yes",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": [
+          "App functionality"
+        ]
+      },
+      "saved": {
+        "dataType": "Voice or sound recordings",
+        "collected": "Yes",
+        "transferred": "No",
+        "collectionPurposes": [
+          "App functionality"
+        ],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    },
+    {
+      "dataType": "Web browsing history",
+      "original": {
+        "dataType": "Web browsing history",
+        "collected": "unanswered",
+        "transferred": "unanswered",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "saved": {
+        "dataType": "Web browsing history",
+        "collected": "No",
+        "transferred": "No",
+        "collectionPurposes": [],
+        "transferPurposes": []
+      },
+      "reasonCode": "user_initiated_exception_or_explicit_no"
+    }
+  ],
+  "savedStateVerification": "Questionnaire saved and reopened after reload; Name transferNo and Email/Purchase history/Health & Biometrics collectedYes for App functionality and transferNo rechecked.",
+  "rationaleNotes": {
+    "support": "Email Address and Emails cover voluntary customer-support correspondence, not access to the device email inbox.",
+    "purchaseHistory": "Only optional user-entered supply purchase dates; checkout/payment-account processing is disabled.",
+    "health": "Only optional user-entered household accessibility/support notes; no health-platform, fitness-sensor or biometric record access.",
+    "platform": "No publisher analytics/advertising or device-ID queries are integrated. Amazon distribution processing is documented separately; exact proprietary wrapper telemetry has not been independently inspected."
+  }
+}

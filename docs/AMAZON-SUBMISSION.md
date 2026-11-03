@@ -1,5 +1,7 @@
 # Amazon submission handoff
 
+Current handoff (3 November 2026): all current technical checks, owner audio/VoiceView smoke checks, 15 descriptions and 11 media locales are complete. All 88 remote PNG hashes/order are verified. The 39 privacy-type answers are saved for review. Exact final public-notice proposals are in release/publisher-review; publisher approval and Amazon export certification are the only remaining gates. Earlier entries below are historical. No final submission has occurred.
+
 Updated 3 November 2026. This is a review package, not an approval or a production-ready claim.
 
 ## Current destination and release scope

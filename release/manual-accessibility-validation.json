@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-03",
+  "reporter": "Owner/device operator",
+  "deviceModel": "KFTRWI",
+  "reportedResult": "Audio and VoiceView both work",
+  "requestedFlow": [
+    "Open Voice",
+    "Type what supplies are expiring soon",
+    "Review command",
+    "Read response aloud",
+    "Try navigation and controls with VoiceView"
+  ],
+  "audioOutputReportedWorking": true,
+  "voiceViewNavigationAndControlsReportedUsable": true,
+  "verificationType": "Owner-reported manual smoke test, not an automated or independent accessibility audit",
+  "voiceImplementationUnchangedSincePriorPhysicalBuild": true,
+  "exactManualApkDigestProvided": false,
+  "limitations": [
+    "No speech recognizer is installed on this Fire; actual transcription is unsupported and not claimed.",
+    "This is a smoke check on one device, not certification of every locale, engine, audio route or accessibility criterion."
+  ]
+}

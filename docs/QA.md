@@ -1,5 +1,7 @@
 # Verification report — 29 October 2026
 
+Current status: technical acceptance and localized Amazon media verification are complete. Only publisher notice/declaration approval and export certification remain. This document is a chronological evidence log; see RELEASE.md for the current summary.
+
 
 
 - Debug APK: built successfully with Gradle 8.13 / JDK 17 / SDK 35.
@@ -246,3 +248,10 @@ Run 41561192222/source 8816674 passed both jobs. JUnit records 39 primary cases:
 All 176 current marketing panels passed scoped AI visual/linguistic review;247 current reviewed/asset hashes were checked. Arabic explicit page/current/total wording resolves the earlier fraction ambiguity. A nonblocking retained Overview focus-style background appears in some emulator screenshots while the actual section has gold text; it is documented in the mixed-locale report. Raw companions are capture/hash validated, not universally individually inspected full size. No human, safety, accessibility or store approval is inferred.
 
 Amazon accepted the corrected unsigned APK; the stored download SHA256 matches local release aa3c8f1741ac21174ea13a319f5499103c51849e364b3ab2dc9812883752ad79. Matching localized media replacement is ready but awaits confirmation of the old-image deletion dialog. The tablet is locked for the final current-source Fire run. Manual audible output/VoiceView and publisher declarations remain pending.
+
+
+## Final physical and owner-reported acceptance — 3 November 2026
+
+The current production fingerprint passed the physical Fire rerun:40 primary cases,35 passed,5 environment/variant skips,zero failures; runner time43.481seconds. The updated debug APK was installed without uninstalling the primary application. Isolated22-language QA compared5632 strings and captured110 views in143.477seconds. Isolated store capture passed with176 raw/176 panels in257.985seconds. The final Arabic page-one-of-two label was inspected on the physical capture. These runtime captures are retained separately from the reviewed API36 Amazon panels; they do not silently replace approved image hashes.
+
+The owner answered “Audio and VoiceView both work” after the requested typed expiry query, Review command, Read response aloud and VoiceView navigation/control smoke check. This is attributed owner evidence on one device, not independent accessibility certification, proof of every speech locale or automated audio detection. No recognition service is installed on this Fire, so actual transcription remains unsupported; typed fallback is available.

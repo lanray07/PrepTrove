@@ -53,7 +53,7 @@
   "purchasesEnabled": false,
   "manualAudioVerified": false,
   "voiceViewVerified": false,
-  "physicalDevice": "Separate older-source Fire evidence in fire-device-validation.json; final current-source Fire rerun remains pending while device is locked.",
+  "physicalDevice": "Current-source Fire primary/22-language capture runs passed; separate report fire-device-validation.json. Owner audio/VoiceView smoke report is in manual-accessibility-validation.json, not emulator audio evidence.",
   "limitations": [
     "Emulator has no audio-output proof or human transcription test.",
     "AI linguistic/visual checks are not human, specialist safety or Amazon approval."
@@ -61,5 +61,12 @@
   "evidenceFiles": [
     "release/native-evidence/TEST-api36-primary.xml",
     "release/native-evidence/TEST-api36-system-ui.xml"
-  ]
+  ],
+  "additionalPassingRun": {
+    "runId": 41564100971,
+    "sourceCommit": "5688b4ad94c809859e9ae4f3d0b421b41aa4dd1c",
+    "build": "passed",
+    "native-qa": "passed",
+    "runUrl": "https://github.com/lanray07/PrepTrove/actions/runs/41564100971"
+  }
 }

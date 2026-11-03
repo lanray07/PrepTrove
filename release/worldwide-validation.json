@@ -7,8 +7,8 @@
   "generatedLocalePacks": 22,
   "reviewedUiPluralEntries": 5803,
   "voiceTemplates": 235,
-  "currentNativeStatus": "Hosted API36 run41561192222/source8816674 passed both jobs:35 primary passes,4 condition/variant skips,1 separate real system-file pass,18 JVM/31 tooling tests,5632 string checks/110 QA captures. Physical Fire source5383c1d evidence is separate; final current-source Fire run and manual audio/VoiceView remain pending.",
-  "currentScreenshotsStatus": "Current API36 captures176 raw and176 marketing panels. All176 panels pass scoped AI visual/linguistic review on exact hashes, with one nonblocking retained Overview keyboard-focus-style highlight documented. Arabic PDF counter reads explicit current page of total. Eleven matching Amazon media uploads pending.",
+  "currentNativeStatus": "Hosted API36 runs41561192222 and41564100971 passed both jobs. Current-source physical Fire passed35 primary cases with5 environment/variant skips,5632 resource checks/110 QA captures in143.477seconds, and176 raw/176 panel captures in257.985seconds. Owner reported audible output and usable VoiceView navigation/controls for the requested manual smoke check. Actual speech recognition is unavailable on this Fire; typed fallback passed.",
+  "currentScreenshotsStatus": "All176 current marketing panels have scoped AI review. All11 Amazon media locales have8 saved matching panels; all88 downloaded originals match reviewed hashes in01–08 order. Four description locales have no media option. All22 local asset sets remain delivered. One nonblocking emulator Overview focus-style highlight is documented.",
   "currentUnitTestsPassed": 18,
   "currentToolTestsPassed": 31,
   "officialSources": 21,
@@ -102,5 +102,6 @@
     "marketingPanels": 176,
     "visualApproval": false,
     "newRealPickerRestoreAndMicrophoneDenial": "compiled, runtime pending"
-  }
+  },
+  "manualAcceptance": "Owner-reported one-device audio and VoiceView smoke check, separately attributed in release/manual-accessibility-validation.json; not comprehensive accessibility or multilingual engine certification."
 }

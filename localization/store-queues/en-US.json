@@ -1,6 +1,6 @@
 {
   "locale": "en-US",
-  "status": "AI linguistic review complete; marketing panels reviewed; console and final acceptance pending",
+  "status": "AI linguistic/visual review complete; Amazon fields saved where available; publisher approval pending",
   "reviewer": "Codex AI linguistic review",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
@@ -35,7 +35,7 @@
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
   "screenshots": {
-    "status": "AI visual review complete for exact marketing hashes; Amazon replacement pending",
+    "status": "AI visual review complete; matching Amazon uploads verified where a media option exists",
     "countRequiredByProduct": 8,
     "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
     "files": [
@@ -77,7 +77,12 @@
       "docs/visual-review-english.json",
       "docs/visual-review-european.json",
       "docs/visual-review-mixed.json"
-    ]
+    ],
+    "amazonMediaLocales": [
+      "en-US"
+    ],
+    "amazonUploadStatus": "saved_and_hash_order_verified",
+    "remoteEvidence": "release/amazon-media-validation.json"
   },
   "reviewType": "Codex AI linguistic review; neutral planner with official-source links",
   "qualifiedSafetyReview": false,

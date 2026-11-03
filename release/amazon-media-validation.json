@@ -1,0 +1,563 @@
+{
+  "date": "2026-11-03",
+  "status": "saved_and_verified",
+  "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+  "captureFingerprint": "6454204bcb3e82a982819f8f85b1661fb396e1cebd5df678ea5156c3e482eaf2",
+  "storeLocaleCount": 11,
+  "totalImages": 88,
+  "originalDeletionAuthorization": "Owner confirmed replacement across all11 media locales at the displayed Amazon delete dialog.",
+  "method": "Each saved locale selected again after reload. Eight displayed original PNGs downloaded through the browser asset capability; exact hashes and01\u201308 order compared to the reviewed source.",
+  "localeSets": [
+    {
+      "storeLocale": "de-DE",
+      "contentLocale": "de-DE",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "af8356b310fcfa955a39f40b18218d669db2b3758d7b9dd6d3ca31a97cf1c478"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "594d61e0e9d89731db4471c9788d6f026862b0eb7dde18aa66ee3696e9b94197"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "49a58efae5b35e4c3b4d46d771c83b0eefa9cd114233b270bcd09bb352ff6d82"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "b73535f2a7bafaca168440fdd04cdf70d2b6876a06fb22431a41288a82dcd9c7"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "8d551b5bbc6af15c327c3176c1b65b8c174d63054d9c86dd794c050900387200"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "370a77e9c91e5d3931a66c9dc9b800da4fedfb2b5010f408da2b00e230582fee"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "9758f3ec15e18c804cdd6a90d74f919465c7392a1e403ff0e55fca2cdb41a59e"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "3454b7235e0214ae1f6f6493e6525d5ed5883923983e5603a708ea7f89465bc2"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.ca854689ae7d489c9bfc63b7e9ccf80e0",
+        "screenshot_amzn1.dex.asset.6cf6fbfca3e84259a4b4d72926db9b651",
+        "screenshot_amzn1.dex.asset.1ecee19b257c420d951af210761bc5112",
+        "screenshot_amzn1.dex.asset.304f957b837d4bdf9100b49da08e788e3",
+        "screenshot_amzn1.dex.asset.50f38bb6820a455693866c6be48f46904",
+        "screenshot_amzn1.dex.asset.cec1156a14424f86b7f1ae5f48f386a45",
+        "screenshot_amzn1.dex.asset.2d2e8f0095b94dabbc56ff9999b1344a6",
+        "screenshot_amzn1.dex.asset.e47a39e230f742c1b30b428869007b707"
+      ]
+    },
+    {
+      "storeLocale": "en-AU",
+      "contentLocale": "en-AU",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "424b615345191225491e3166577963fe3eca479250330e139ea373a83ec4962c"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "44d3357070e2d2b21feb7e6fb40eada3502934898db78c577b3b8f83c56c7028"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "abb58fe4a636204e2c2395b89e16b6107eb24b619c11b8ca7e6f734f62df3e32"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "2a9213591cf5b802a04b97eaa4e25234e13d8c261d8805e5739044b7abebe918"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "5b327b8b92e7fcc4d48e0ce23d8ae74b22fdee5d053539913690be32109df4a7"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "96787185f464a6c92c6d6bb901f7cb62a0562ab0ad7a9c9fb29be39773afc981"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "e357fedc1cdc68283ad429056acca85f203e5ddc863654e7979372bf6cf3f20b"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "42f3ba36e80a92d44d9acd28e2bf228ce2b3290c72092790820909da8c718e8a"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.06fdf0293dcc4dcbaa4d5203af42a6ff0",
+        "screenshot_amzn1.dex.asset.c78b6ae4f1ff435daacad4b1fec0e11c1",
+        "screenshot_amzn1.dex.asset.8355f4e3902e44ffbf2fff5732558a5e2",
+        "screenshot_amzn1.dex.asset.0e967023088448dc9457ce7be33b2c003",
+        "screenshot_amzn1.dex.asset.6d89affacca44e70a109c5f4e790534e4",
+        "screenshot_amzn1.dex.asset.f9308944bcdf431692f8e589ebd239ec5",
+        "screenshot_amzn1.dex.asset.84d45395715f40598a5231d73888e0b96",
+        "screenshot_amzn1.dex.asset.7223d2dc8ff54211b628db4cbae1fb067"
+      ]
+    },
+    {
+      "storeLocale": "en-GB",
+      "contentLocale": "en-GB",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "424b615345191225491e3166577963fe3eca479250330e139ea373a83ec4962c"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "44d3357070e2d2b21feb7e6fb40eada3502934898db78c577b3b8f83c56c7028"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "abb58fe4a636204e2c2395b89e16b6107eb24b619c11b8ca7e6f734f62df3e32"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "2a9213591cf5b802a04b97eaa4e25234e13d8c261d8805e5739044b7abebe918"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "5b327b8b92e7fcc4d48e0ce23d8ae74b22fdee5d053539913690be32109df4a7"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "96787185f464a6c92c6d6bb901f7cb62a0562ab0ad7a9c9fb29be39773afc981"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "e357fedc1cdc68283ad429056acca85f203e5ddc863654e7979372bf6cf3f20b"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "42f3ba36e80a92d44d9acd28e2bf228ce2b3290c72092790820909da8c718e8a"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.6bd3485c917f4376874eff5f4bab1d680",
+        "screenshot_amzn1.dex.asset.3e81e66ff8e741b594aaf9b4b548fd1c1",
+        "screenshot_amzn1.dex.asset.288211dcb6c0428098d9de382525b0a82",
+        "screenshot_amzn1.dex.asset.84c453ca144e4ff5bddb32c4777e486f3",
+        "screenshot_amzn1.dex.asset.50310c2252574a6d94a9494c798b639c4",
+        "screenshot_amzn1.dex.asset.1a1014bc7f284ee5a433eae861c4f0185",
+        "screenshot_amzn1.dex.asset.4d9086175ce447e7951a12d59cf522656",
+        "screenshot_amzn1.dex.asset.d8bdd7f8e8544a17b55a1560c25e86a77"
+      ]
+    },
+    {
+      "storeLocale": "en-IN",
+      "contentLocale": "en-GB",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "424b615345191225491e3166577963fe3eca479250330e139ea373a83ec4962c"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "44d3357070e2d2b21feb7e6fb40eada3502934898db78c577b3b8f83c56c7028"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "abb58fe4a636204e2c2395b89e16b6107eb24b619c11b8ca7e6f734f62df3e32"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "2a9213591cf5b802a04b97eaa4e25234e13d8c261d8805e5739044b7abebe918"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "5b327b8b92e7fcc4d48e0ce23d8ae74b22fdee5d053539913690be32109df4a7"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "96787185f464a6c92c6d6bb901f7cb62a0562ab0ad7a9c9fb29be39773afc981"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "e357fedc1cdc68283ad429056acca85f203e5ddc863654e7979372bf6cf3f20b"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "42f3ba36e80a92d44d9acd28e2bf228ce2b3290c72092790820909da8c718e8a"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.39346c105dd1482199de97e5baa22e1b0",
+        "screenshot_amzn1.dex.asset.e6fd58d305354bbf9c0ca73e33172a5f1",
+        "screenshot_amzn1.dex.asset.6a32f0e4a60c41aebd21476d351218262",
+        "screenshot_amzn1.dex.asset.db93658debfc46a5aff23c397373602d3",
+        "screenshot_amzn1.dex.asset.4c636a1ed2be48efa53900137bd052474",
+        "screenshot_amzn1.dex.asset.7f695c3cf8b04961baeb3fa388145bc85",
+        "screenshot_amzn1.dex.asset.a008efe00b254906b3025530e1bddb086",
+        "screenshot_amzn1.dex.asset.99737cf681594cf48be6dc3eb750a1c77"
+      ]
+    },
+    {
+      "storeLocale": "en-US",
+      "contentLocale": "en-US",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "bfee061673a6742319f855504899a82b368c68bf0f4562ce899fe88c1a639738"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "e26d38c5282a9f835ddfe7af02e4fec465b2729b2cce97093e0d805df01346dd"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "abb58fe4a636204e2c2395b89e16b6107eb24b619c11b8ca7e6f734f62df3e32"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "f065cc83140685f3381fc5a01d59894e3a00f1901ef385ce0451888ca46fe1f6"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "5b327b8b92e7fcc4d48e0ce23d8ae74b22fdee5d053539913690be32109df4a7"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "96787185f464a6c92c6d6bb901f7cb62a0562ab0ad7a9c9fb29be39773afc981"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "c2d110e1e2fbbb03ef9783ebc04c12ba09b576057401bafde821f4a7d2ccb9c5"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "1f95c53084df0a1af76adbf3cdf938d936a03c8d7e778eadd5cfeb4920ba46ec"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.708acb65163247e7933f13f8d21c95b20",
+        "screenshot_amzn1.dex.asset.8b332a3cba474a94a788858cc15991161",
+        "screenshot_amzn1.dex.asset.8844cc65279d4d3d8f8e14b443abac072",
+        "screenshot_amzn1.dex.asset.c1e0d6eb32ea4385b7a95db4d304c6a33",
+        "screenshot_amzn1.dex.asset.e8eaef36a9694a49be90ec66f3fa1d364",
+        "screenshot_amzn1.dex.asset.8d720a7b934a4652b30870acaa3588045",
+        "screenshot_amzn1.dex.asset.82291a1ed9294a3bb83edbd31355e3416",
+        "screenshot_amzn1.dex.asset.303b7b13b431401a849b21aad2b67e5f7"
+      ]
+    },
+    {
+      "storeLocale": "es-ES",
+      "contentLocale": "es-ES",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "20fe29611db45cbb14464c92a426a0c64b73ac741f40c995c3e325a9675332d7"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "289261b8931fa283f7dbb3ba0b48ef3c3013d2adc808349350d75f8b7f1b2191"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "476a643b4e7394a434df9f2a7f79ab0a838b96e20bcc599045fe3b42e8b9d19b"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "169c13f51096a5879e1c3d72d492316e468b7f6dfb682d5b50f758b95eb683a3"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "ef2ffcb32a4c16d7ba1481c1d83e41cc5de36a9a1988ca23e387f6896cfcf470"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "c5e17c4a74877b4c68e915ab317c599a9e47d96e984c501862760d853c5f929a"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "f9c973bcc3ac1da30f4af397fa52b4656023ba4b4c8771a568c03a059ff830f4"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "30dd9b31d67e8ea673eb1a8a452d78fb3879a18f96f5ebd5097edd712913065e"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.ac4aa6a5628046d9860e9ff4018d6cff0",
+        "screenshot_amzn1.dex.asset.da46a30c996c4c3a813144e28344ace11",
+        "screenshot_amzn1.dex.asset.506c22f12c414d27bd119f8a2f64af712",
+        "screenshot_amzn1.dex.asset.93d0c978cb4842b4b7ed7303114dcb243",
+        "screenshot_amzn1.dex.asset.ef6144b4666e4218925a646172bd49064",
+        "screenshot_amzn1.dex.asset.f1f922e801434045884fcf02f008042a5",
+        "screenshot_amzn1.dex.asset.6e90660ef1a2480288405797e53b2f3d6",
+        "screenshot_amzn1.dex.asset.11eef3bcccf24901aea91c1a268442907"
+      ]
+    },
+    {
+      "storeLocale": "es-MX",
+      "contentLocale": "es-419",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "5e529f86489df64bd046504000bc813c96a838dea252ac2d730ef019e09c449a"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "87ecc885d56de2e013e04a6a85c58ae3c5cb746184ea8d888da0d26c95eea9cc"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "145065e124722b1c8e9ce60063f3d60734516ed7f3e0296b14c2e1d43512f92c"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "09a10ffeab97b71c2c6e89cea89e9301977f48746ea660e5a1db0e622cab3767"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "26aa6c43f3330d6d37df7199513e60abdf8a72704f2c9b09381f7a0cef054868"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "ed5652ced1da848767ed4c0d59b144a022ded918c593d4a892b9c23b3aa47b6a"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "0c1cde32d136cbbbd87760e859fbe8f9c1d7ef91d3098fabe23cb139e300a1e3"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "7c0aef2947f405f346a50161b57e0cb741b0c2aea9d29e65f9a849fbaacedb0d"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.7894c45e99204d2196d89b513ea437540",
+        "screenshot_amzn1.dex.asset.deb7f9fbf159468f9abc02c9f083954e1",
+        "screenshot_amzn1.dex.asset.940c73d458c242238143dd14755f4af72",
+        "screenshot_amzn1.dex.asset.ada74b09637644839bf99c416d9bb0883",
+        "screenshot_amzn1.dex.asset.a675f045369f4239b9b50c3e5e9b2dda4",
+        "screenshot_amzn1.dex.asset.880ebf2d3ddc4a8a9699a158ac961ee65",
+        "screenshot_amzn1.dex.asset.843fc192ffff43c5958698e199ec67166",
+        "screenshot_amzn1.dex.asset.9b90c52d4b46451b883391d3187fede27"
+      ]
+    },
+    {
+      "storeLocale": "fr-FR",
+      "contentLocale": "fr-FR",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "14cf0857e63633e4b4aafd9bf8c04e56a2a3e03ce89f53fbe4a485a0820ce5ce"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "892d66083cf23d65d8612a0f30b7b313b3a524a97f58df87842bc2c76ddb00aa"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "2fb9290c6026b1b54effa7039f1ec17c497a431d61abab053d23f20063e0e242"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "562ef3760cf5e566353778e5922250b0ceadad24a12368e947c2068eda7d9377"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "e2780542bb4ffa3945bb0c9b9faff76a8e27138ea2b210b8df6e98693d6c4950"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "5cbaba895e31e6298a983de7beda2d5dac9198d3690d9b5e3eaac0717457992b"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "05f756ffaf8c253a943c2eb0aaac5f20279c77f527d08a45f6e12b87d1372b1e"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "3e6434496275194a9f5588a50955cd1019d065674868e244ef27f7036d50bbd6"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.0e577b7cafac485ca2082036ecc43d520",
+        "screenshot_amzn1.dex.asset.3e007fc85d2b4bfbae78fae77b6df68e1",
+        "screenshot_amzn1.dex.asset.760e071ea3c54c3c89c83b62b2051e762",
+        "screenshot_amzn1.dex.asset.308434f494744a5c8a74bccf04884da13",
+        "screenshot_amzn1.dex.asset.0aa8001ebc2c41c28d478c3e0b1ce8b24",
+        "screenshot_amzn1.dex.asset.6974f7c549654c06b425104376f139a45",
+        "screenshot_amzn1.dex.asset.7dbbb053d8ee4e9090f1bdc2911cc76e6",
+        "screenshot_amzn1.dex.asset.0562ab77cd5d4e828075224f2f4bb0db7"
+      ]
+    },
+    {
+      "storeLocale": "it-IT",
+      "contentLocale": "it-IT",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "3e6c55ae1531a157a970ac5328881d48da49ab6c04b48521051cc008939eac81"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "2c102ce6cf7466159ee2e58038772aad236d722c555c969f4a90f301a5f37320"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "c8f73e1a6f8232a588e2d4b5d5bc50ae525bfa8a433373c0a73000c9dbf09fd5"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "e48f73454b15365ac7e59359b8bd04ae9af328e8d2bf1f93c9a19cea527abc19"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "19357f257b93466b9965af6512645a7e3041961a364c3df362c1983c041d55d5"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "2908817ed50d39b1d7b5fcafba6ec75bcd9619cd21aab13618f0f40be577b773"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "23ab83a8f0a6713f9a5572591321327bb7b706cf6db0f578e382f233bddcb455"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "5c720a6bfd4ccf0519a3c47f67c2780a7c76c3f43e40a669f16dbf147456bbdb"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.e34093b14bf34b329fe2dc52f4cf72c10",
+        "screenshot_amzn1.dex.asset.c91e0384f31f4e94836f0269c73479aa1",
+        "screenshot_amzn1.dex.asset.00a96c3c8b0b4fb7945371565a4fd8842",
+        "screenshot_amzn1.dex.asset.55f054439a37447baecc35468db016c13",
+        "screenshot_amzn1.dex.asset.725e74de4dbf466d9a1117d40977143b4",
+        "screenshot_amzn1.dex.asset.2afdfba3fe9e40fba084c8ac9f2fb4dd5",
+        "screenshot_amzn1.dex.asset.64e46f7a56eb4b2abc976bd1df3889c16",
+        "screenshot_amzn1.dex.asset.e25209af30734b5193e44b08a28164947"
+      ]
+    },
+    {
+      "storeLocale": "ja-JP",
+      "contentLocale": "ja-JP",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "6cc8aaf2226957d1909f3fa209fc2fb843779d52a324ebbbc52529a588e8c660"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "e42a3a4ac5d470a93948c5c9656cace7e493955eb949f3152e3bddbe656595d9"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "1113d09d47dba924087b7df364cb9cbfe0d1267f2e056c5a932bf2859f168446"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "c41978a346bbbfff4ffb6c5c57f87b8f3c099869b31d953010bc3018849adb14"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "a61149a9851a4d7f4c4196eb620f61883cdba160935691096952d6d5a9ad2c84"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "250d649e03f5be3aa9acdc5449d088aafb527e141cdfe5bfe30ada10dcb2eddd"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "4513e0f96729dee0d4367343b033cb6169b5c9d113167a14dbc359573d5678ad"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "9d30dd35595b43796dc653b8f8db327822eefb8ac6d672b733a4b0f7d3ed48ba"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.c2d8611c27cd4b31abef14e773af17770",
+        "screenshot_amzn1.dex.asset.ca21abf8a3f448f6aae0c8a117d4c1ef1",
+        "screenshot_amzn1.dex.asset.3b6e7a6db9d14e6ba343febdfbb311b62",
+        "screenshot_amzn1.dex.asset.e6a1c0ff59f34fd6bb3669ae11de94633",
+        "screenshot_amzn1.dex.asset.523cd2996a804ed4ac1c0c34513375314",
+        "screenshot_amzn1.dex.asset.7a7f24a954f84734a9ab656a2fd47d665",
+        "screenshot_amzn1.dex.asset.59a13cd0dcf14cc3b1ced22a42b6b2776",
+        "screenshot_amzn1.dex.asset.fee779ce9ad94f8591fd2fd98e16879b7"
+      ]
+    },
+    {
+      "storeLocale": "pt-BR",
+      "contentLocale": "pt-BR",
+      "images": 8,
+      "verification": "Saved locale reloaded; eight downloaded original PNG hashes match reviewed source in01\u201308 order",
+      "files": [
+        {
+          "file": "01-overview.png",
+          "sha256": "4f244d798bc978c72af2c78f9ff9281791e3643ad4db7e9905971e903f3377b7"
+        },
+        {
+          "file": "02-supplies.png",
+          "sha256": "b7d851c498f69faac257117f652c48c68b2336b1f9e4793f9dc41a62bfc9e03c"
+        },
+        {
+          "file": "03-family-plan.png",
+          "sha256": "c5259eb898911be2149464e4cdf2b87659286e7b92f72bcbbdb54b64a5ed6628"
+        },
+        {
+          "file": "04-reminders.png",
+          "sha256": "83f10144ee51c44e37d3141d0a198380ee4f8710fccb7f2298552cc86a0efed6"
+        },
+        {
+          "file": "05-checklists.png",
+          "sha256": "21a557016c358c6d610d2f3fd4135cfff41d4480c00af636c25268cffb47a09e"
+        },
+        {
+          "file": "06-voice.png",
+          "sha256": "42a2553d55e8040846edab742375e0913f873de31541a2d676cd479838ad9cbd"
+        },
+        {
+          "file": "07-saved-offline-kit.png",
+          "sha256": "4a21b46e1b2978e4fc6289fe8055830ec8c73393299cc51951742530f5384bfe"
+        },
+        {
+          "file": "08-report-preview.png",
+          "sha256": "31f33a7e7ad407077ba80167bae52dabd5ac224663faed3f617641ddb11189ab"
+        }
+      ],
+      "assetIds": [
+        "screenshot_amzn1.dex.asset.6ae58eca5ed141c78e4a4525073478620",
+        "screenshot_amzn1.dex.asset.bf2cd318c13c4fc59cbeeac6d0f8bca71",
+        "screenshot_amzn1.dex.asset.e0c60659f2c340c5806b3d2a46de4dab2",
+        "screenshot_amzn1.dex.asset.acc1d8734ef8449bb99ddd387db503543",
+        "screenshot_amzn1.dex.asset.328d01bf2a7f4f06966e4940d0067d074",
+        "screenshot_amzn1.dex.asset.ca91f24906e147c58d0782baa6e2c9ec5",
+        "screenshot_amzn1.dex.asset.9c618c66e33d46cb86a0bb7d487b8ebe6",
+        "screenshot_amzn1.dex.asset.78bca3f7265f46e98e3bbdaaa933cf1e7"
+      ]
+    }
+  ],
+  "platformLimitation": "Fifteen description locales are available; only eleven media locale options are exposed. All22 app-locale asset sets are delivered in the repository/package."
+}

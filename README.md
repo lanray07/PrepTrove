@@ -52,3 +52,6 @@ Reminder notifications have a persistent Settings opt-in and disable action; the
 After current captures exist, `python tools/review_store_assets.py` creates indexed contact sheets for visual review. It never grants asset approval automatically.
 
 See [worldwide validation evidence and limits](docs/WORLDWIDE-VALIDATION.md). The isolated localisation QA package cannot be submitted: its marker is rejected by the submission packager.
+
+
+Final release handoff: current-source Fire and hosted API 36 acceptance pass; the owner reported working audio/VoiceView, and all 88 Amazon media uploads match reviewed hashes/order. Exact public-notice proposals await publisher approval in [release/publisher-review](release/publisher-review/README.md). Amazon's binding export certification remains unchecked; no final submission has occurred. See [current release status](docs/RELEASE.md).
