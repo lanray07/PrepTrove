@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.preptrove.app.EphemeralUiAcceptanceTest" tests="1" failures="0" errors="0" skipped="0" time="17.432" timestamp="2026-11-03T01:46:46" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 16" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="countryChoicePersistsAndJsonUsesRealSystemCreateDocument" classname="com.preptrove.app.EphemeralUiAcceptanceTest" time="15.999" />
+</testsuite>

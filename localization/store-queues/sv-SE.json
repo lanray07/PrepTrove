@@ -1,6 +1,6 @@
 {
   "locale": "sv-SE",
-  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "status": "AI linguistic review complete; marketing panels reviewed; console and final acceptance pending",
   "reviewer": "Codex AI linguistic draft review; not independent human or specialist safety approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
@@ -35,8 +35,49 @@
     "keywords": "strömavbrott, beredskap, beredskapspaket, nödläge, hushåll, checklista, el, familj, inventering, planerare, förnödenheter, förberedelse"
   },
   "screenshots": {
-    "status": "pending real localised captures",
-    "countRequiredByProduct": 8
+    "status": "AI visual review complete for exact marketing hashes; Amazon replacement pending",
+    "countRequiredByProduct": 8,
+    "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+    "files": [
+      {
+        "file": "assets/store/marketing/sv-SE/01-overview.png",
+        "sha256": "8643e60db702f66f85d1c6dfedc5991b6caf1cbef395ade60775287401b6a534"
+      },
+      {
+        "file": "assets/store/marketing/sv-SE/02-supplies.png",
+        "sha256": "b2e1f05bc03b83b516aa3ad4c143f4c62f6b4cd5cc8110cef20f8725dce6bf3a"
+      },
+      {
+        "file": "assets/store/marketing/sv-SE/03-family-plan.png",
+        "sha256": "dd7ea8b10fd405e8fd4f573fd3d4f3443201122a17e12b11daa25eced567a62e"
+      },
+      {
+        "file": "assets/store/marketing/sv-SE/04-reminders.png",
+        "sha256": "ecf4875c0b7f6aac6d823928ef54164c7d3b8affac9ed82c26e7b30e562b9c7b"
+      },
+      {
+        "file": "assets/store/marketing/sv-SE/05-checklists.png",
+        "sha256": "361a8f8c766551cd7076ab2d1882d8ca35a5e5ef3606752183b0decf2ee674a1"
+      },
+      {
+        "file": "assets/store/marketing/sv-SE/06-voice.png",
+        "sha256": "1c626b5e1c19a9b928023f51fbf30f2d9865690da619891ad149746954ff8c71"
+      },
+      {
+        "file": "assets/store/marketing/sv-SE/07-saved-offline-kit.png",
+        "sha256": "c1f21b5cf5aa3cced1f349c204d95c59645805caf6e6191b56c83f388841d1af"
+      },
+      {
+        "file": "assets/store/marketing/sv-SE/08-report-preview.png",
+        "sha256": "a5a2ba435335a3325b6562d71a70afe4067687d5dbfebd5525a7628ad54d2fcd"
+      }
+    ],
+    "reviewReports": [
+      "docs/visual-review-asian-arabic.json",
+      "docs/visual-review-english.json",
+      "docs/visual-review-european.json",
+      "docs/visual-review-mixed.json"
+    ]
   },
   "reviewType": "AI-assisted linguistic draft",
   "reviewed": false,

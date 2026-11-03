@@ -1,6 +1,6 @@
 {
   "locale": "zh-Hant",
-  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "status": "AI linguistic review complete; marketing panels reviewed; console and final acceptance pending",
   "reviewer": "Codex AI linguistic review; not human or specialist approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
@@ -35,8 +35,49 @@
     "featureBullet.10": "使用所選應用程式語言，嘗試支援的語音和文字指令"
   },
   "screenshots": {
-    "status": "pending real localised captures",
-    "countRequiredByProduct": 8
+    "status": "AI visual review complete for exact marketing hashes; Amazon replacement pending",
+    "countRequiredByProduct": 8,
+    "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+    "files": [
+      {
+        "file": "assets/store/marketing/zh-Hant/01-overview.png",
+        "sha256": "602f925873047b2c4525a178ab03471ab9fa7bd6e7d434ca87fbfdc350a8640e"
+      },
+      {
+        "file": "assets/store/marketing/zh-Hant/02-supplies.png",
+        "sha256": "addf2b7f8ddb232117c153ecc3be44204b746de23484d2449daefe2984b81978"
+      },
+      {
+        "file": "assets/store/marketing/zh-Hant/03-family-plan.png",
+        "sha256": "e2a342d109f16b5963ca82e1eb32c297ab7ce7ab742a71e8cf4be666199a1840"
+      },
+      {
+        "file": "assets/store/marketing/zh-Hant/04-reminders.png",
+        "sha256": "88bc1e80f0348a478854b8884a803b80b1b739aefc68c48a401898b6c1ed6a6d"
+      },
+      {
+        "file": "assets/store/marketing/zh-Hant/05-checklists.png",
+        "sha256": "00678df780c4e03eb6db08c66eebdcf408106cce6644a2eef6a155c3306fdb4d"
+      },
+      {
+        "file": "assets/store/marketing/zh-Hant/06-voice.png",
+        "sha256": "faa3391c8d7a5e084a5bec2f1c2257afdfe4fc7b425709a8d800b9f42e5b369d"
+      },
+      {
+        "file": "assets/store/marketing/zh-Hant/07-saved-offline-kit.png",
+        "sha256": "9dc5816d9f130f00a9f855b48932f5b72bba10190e3fb511c1710edb2026d01d"
+      },
+      {
+        "file": "assets/store/marketing/zh-Hant/08-report-preview.png",
+        "sha256": "900da50af9a54f5fd1f3b9f9dd37c0c129f7c0cec5823b31ebaa57b5f4490409"
+      }
+    ],
+    "reviewReports": [
+      "docs/visual-review-asian-arabic.json",
+      "docs/visual-review-english.json",
+      "docs/visual-review-european.json",
+      "docs/visual-review-mixed.json"
+    ]
   },
   "linguisticReviewType": "AI-assisted",
   "qualifiedSafetyReview": false,

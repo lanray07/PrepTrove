@@ -1,91 +1,43 @@
-# Release gates and implementation status
+# PrepTrove release status
 
-Last assessed: 2026-11-02. Package com.preptrove.app, version 0.1.0.
+Assessed 3 November 2026. Package `com.preptrove.app`, version 0.1.0/code 1, minimum API 26, target API 36. Purchases remain disabled. No Amazon submission has occurred.
 
-Current launch scope is a worldwide planner with neutral prompts and official-source links, explicitly approved by the owner on 2 November 2026. Cached safety recommendations are removed. All 22 UI packs are generated with AI linguistic review; qualified safety approval is not claimed. Future safety-critical guidance still requires qualified review before activation. Purchases remain disabled and its unfinished card is hidden.
+## Current launch scope
 
-Current code builds and unit/tooling checks passed. Hosted API 36 native acceptance and source-bound worldwide captures are now configured; their results are pending. Historical device results below belong to their original source snapshots. Amazon's 15 supported description locales are saved and show Complete after reload, while current image/binary refresh and final acceptance remain open. See WORLDWIDE-VALIDATION.md and release/amazon-locales.json.
+The owner approved worldwide household planning with neutral prompts and external official-source links. Saved records work offline. The app does not cache emergency recommendations, issue alerts, assess safety or translate linked advice. Synthetic screenshot records are examples. All 22 UI packs are implemented with explicitly recorded AI linguistic review; this is not human, specialist safety or store approval. Future safety-critical content still requires qualified review.
 
-## Amazon draft and latest implementation
+Implemented flows include local kits and supplies, optional photos, household-plan records, manual contacts, editable checklists, recurring review reminders, completion history, templates, typed supported commands, optional installed speech services, device-credential app locking, SAF exports, native PDF preview and copy-based JSON/PTB restore. Photos are excluded from backups. PTB backups use password-based encryption; app locking does not encrypt the Room database. See README, BACKUP.md, VOICE.md and NOTIFICATIONS.md for behavior and limits.
 
-The Amazon app draft, English (U.S.) description, content-rating answers and privacy questionnaire are saved for review. Public support is banksmi@mail.com. The privacy and data-deletion links point to the public GitHub documents; these documents still require publisher/legal approval. The original 512px and 114px tablet icons and eight actual en-US tablet screenshots were accepted; Amazon reports the English image section Complete. A tested unsigned APK has now been accepted into the draft for validation; the tested API 36 replacement has been accepted into the draft. No final submission has been made. See release/amazon-draft.json.
+This release scope does not assert that every later ambition in the original master brief is implemented. There is no cloud account, publisher analytics, emergency monitoring, automatic contact sharing or Fire TV experience.
 
-New implementation includes individually selectable export fields, native PDF preview, draft recovery after activity recreation, English reminder drafts, exact-name supply inspection commands and quantity answers that preserve units. The optional credential lock still requires manual credential/background/file-picker verification. Passwords are held in memory, excluded from saved instance state and cleared on cancellation/use. Export reads a fresh database snapshot.
+## Validation evidence
 
-The app-specific Amazon public key has been downloaded and installed. The SKU remains unconfigured and checkout remains disabled, as requested. This does not establish purchase or restore functionality in a real store environment.
+- Local release/debug builds, 18 JVM cases and 31 Python tooling cases pass. Lint has no Error/Fatal issues; remaining warnings are documented in its report.
+- Physical KFTRWI/API 28 primary acceptance on source 5383c1d passed 35 cases with five assumption/variant skips and zero failures. Its isolated 22-language run compared 5,632 packaged strings and captured 110 QA screens. QA assets are never store assets.
+- That Fire run also produced 176 raw store screens and 176 marketing panels. AI visual review resolved earlier layout/loading/count defects and identified an Arabic PDF page-counter ambiguity. Explicit Arabic current-page/total wording in 8816674 now passes hosted capture and scoped AI visual review. The final current-source Fire run is pending.
+- Current hosted API 36 acceptance exercises document export/restore, credential lifecycle and microphone-denial fallback on an isolated emulator. Run 41561192222 passed 35 primary cases with 4 skips and1 separate system-file case. See GitHub Actions and release/native-api36-validation.json for exact evidence.
+- The Fire has no recognizer. Typed controls and unavailable-service handling passed without requesting microphone permission. Its installed offline English TTS voice initialized; audible output and VoiceView still need manual verification. Other engines/locales require their own service checks.
 
-The isolated screenshot build uses com.preptrove.app.storecapture and labelled example records. It never seeds or clears the primary installation. Raw captures do not constitute approved marketing compositions or human translation review.
+Evidence is bound to production fingerprints, APK hashes and individual image hashes. Earlier snapshots are historical evidence and cannot prove a later source revision. Do not remove a pending gate merely because the build compiles.
 
-## Implemented development scope
+## Amazon draft
 
-- Persisted local records and kit assignment; safe kit deletion preserves supplies.
-- Supply quantities, units, optional expiry, notes, categories, storage and inspection date.
-- Editable family-plan notes and manual contacts; no automatic sharing or calling.
-- Grouped checklist tasks and user-triggered starter groups.
-- Persisted reminders: completion pauses, date editing snoozes; periodic best-effort notification.
-- Push-to-talk recognizer availability check, runtime microphone permission, transcript preview, locale-specific typed commands, optional TTS. No raw audio storage; recognition provider may transfer audio.
-- User-selected SAF export destination, PDF/CSV/JSON export and sensitive-category exclusion by default.
-- Local UK guidance summary with provenance; no live alerts or emergency-number assumptions.
+All 15 description locales exposed by the console are saved Complete. Thirteen available app-language checkboxes are selected. Eleven media locale sections are enabled, but replacing their inherited English images awaits action-time confirmation of Amazon's delete dialog. Reviewed matching uploads are ready. All 22 UI locale asset sets are produced locally; the console does not expose matching media choices for every UI/description locale. See release/amazon-locales.json.
 
-## Blocking full product release
+The corrected unsigned APK was accepted into the draft on 3 November. The stored download matches SHA-256 `aa3c8f1741ac21174ea13a319f5499103c51849e364b3ab2dc9812883752ad79`. Amazon parses the expected package/version/SDK values. Replacement preserves existing device selections: twelve Fire tablets and zero TV/automotive devices. Six newer disabled variants are not represented as runtime-tested. The primary category is Productivity > Notes & Bookmarking.
 
-- Amazon SDK 3.0.9 client integration, catalogue pricing, purchase callbacks, paginated restore, cancellation handling and local account-bound entitlement persistence are implemented. Owner SKU, authorised App Tester runs, RVS verification decision and production premium limits remain pending. Checkout has an explicit build switch defaulting OFF; no real purchase was attempted. See docs/AMAZON-BILLING.md.
-- Human-reviewed translations in all 19 product locales plus Korean, Simplified Chinese and Traditional Chinese from the standing requirements. Native screen and dynamic-message resources, plural notifications, manual language selection, device-language fallback, locale-aware quantities and date display are implemented. All 22 locales have review queues and separate voice/metadata queues. Three source English resource variants are generated. The other 19 now have all non-safety entries translated with Codex AI linguistic review; 235 voice templates and all 308 store fields are prepared. Qualified safety review, production activation and worldwide store assets remain pending. No worldwide localisation completion is claimed.
-- Qualified regional safety-content review and content packs. Only the UK summary exists. Country setting does not imply country-specific reference coverage.
-- Structured plan/contact fields, purchase dates, bounded private photo import, reusable templates (including kit supplies), recurring reminder intervals, snooze/pause and completion history are implemented. Completion-history JSON/PTB backup and atomic restore are implemented and tested. Photo-inclusive backup and complete device/provider journeys remain pending.
-- Optional device-credential app lock is implemented; actual credential entry/cancel/background flows need manual device verification. Individual export-field selection is implemented and covered by redaction tests. PDFs now include structured fields with measured, paginated native text layout; complex-script typography needs visual review. Backup encryption and copy-based restore are implemented; end-to-end file-picker and interoperability verification remain pending. PDF reports passed a long multipage render test but should not yet be advertised as globally reviewed.
-- English checked-item, next-month reminder and unit-aware quantity commands are implemented. Multilingual command dictionaries remain pending; destruction by voice is unsupported.
-- Feature-module decomposition, broader lifecycle/file-picker testing, accessibility audit and talkback, RTL, rotation and large-font tests.
-- Original full asset suite, splash and adaptive/monochrome icons, onboarding illustrations, all eight marketing compositions, phone/tablet and approved-language screenshots. Adaptive and monochrome launcher icons and an editable SVG master exist. Illustrations, promotional compositions and approved localised captures remain pending.
-- Marketing website, legal review, trademark clearance, support-channel verification, SEO/AI search content, store descriptions across approved languages, signed release APK (unsigned QA release builds are available), device compatibility and store certification.
+Amazon-managed signing permits the unsigned submission route used here; do not upload a debug or QA APK or invent a production keystore. No SKU is configured. Billing code is dormant and the unfinished purchase card is hidden. Real catalogue, purchase, restore and receipt-verification testing is mandatory before a future paid release, but is deferred for this disabled-purchase release.
 
-## Store references checked
+## Remaining gates
 
-- https://developer.amazon.com/docs/in-app-purchasing/iap-implement-iap.html (2026-10-28): integration entry point; receipt and catalogue handling required before selling.
-- https://www.developer.amazon.com/docs/app-submission/distribute-your-app-internationally.html (2026-10-28): UI language, device languages, listing localisation and distribution are distinct. Listing choices are not identical to the requested 19 UI locales. Country availability must be confirmed in the actual console.
-- Console inspected 2026-10-30: tablet screenshots require at least three and at most ten PNG/JPG images. Accepted landscape sizes include 800x480, 1024x600, 1280x720, 1280x800, 1920x1080, 1920x1200 and 2560x1600 (portrait counterparts accepted). Tablet icons are 512x512 and 114x114 PNG. Optional promotional image is 1024x500. The saved ASCII title is 42 characters; no claim is made about the maximum title length. Distribution currently includes the available countries and requires owner review. Amazon now targets Fire devices; the manifest requires touchscreen support to exclude the unimplemented Fire TV experience.
+1. Upload the eleven matching media sets after the old-image deletion confirmation. Current hosted native/capture checks and scoped AI visual reviews passed; final current-source Fire acceptance remains separate.
+2. Complete manual audible-output/accessibility checks and document installed-service limitations accurately.
+3. Publisher O.Bankole, United Kingdom must approve the final privacy/deletion notice and actual support handling at banksmi@mail.com. The concrete review proposal is in PUBLISHER-REVIEW.md. No email was sent or mailbox operation verified.
+4. Review console audience, privacy/content declarations and territories against the final build. Paste release/amazon-testing-instructions.txt at final review.
+5. Obtain action-time confirmation for Amazon's binding import/export/encryption-law certification before accepting it and submitting. It remains unchecked.
 
-## Submission procedure
+## Reproducible unsigned review package
 
-1. Close the functional and localisation gates above; run tests on representative Fire and Android devices.
-2. Obtain owner approval for final commercial SKU/price, legal texts and distribution countries.
-3. Configure Amazon catalogue and validate purchases using official test tooling; never ship a mock store.
-4. Keep signing keys outside the repository. Build signed release, record SHA-256 and retain secure key backup.
-5. Capture implemented, translated screens with labelled deterministic demonstration data; generate manifest and review crops and typography for each approved listing locale.
-6. Owner reviews final submission package and authorises publication.
+Run the documented Gradle checks, capture scripts and asset review, then `python tools/submission_bundle.py`. The allowlisted ZIP contains the unsigned release APK, all locale assets, metadata, policies, source-bound evidence and pending gates. It validates identity, non-debuggable production variant, API values, touchscreen, permissions, ZIP alignment, absent test/QA resources, unit/lint results and disabled checkout. It remains `unsigned_review_only` with `productionReady:false`; producing it does not publish or certify compliance.
 
-
-## Unsigned submission review package — 30 October 2026
-
-The owner confirmed no production signing keystore is available and requested an unsigned package. `python tools/submission_bundle.py` assembles the actual unsigned release APK, saved listing, 24 captured screenshots, icons, policy/release documents and a hashed evidence report. It checks package identity, SDK/launcher/touchscreen manifest entries, non-debuggable state, reviewed permissions, ZIP alignment, unsigned signature status and compiled checkout disabled. Unit/lint failures and modified screenshot hashes block assembly. CI now uploads this bundle. See [the submission handoff](AMAZON-SUBMISSION.md) for exact commands and owner actions.
-
-PDF preview now reports rendering errors instead of leaving an indefinite loading message. Its renderer is covered for valid rendering, page clamping and corrupt-file rejection. The tablet navigation column scrolls for overflow. A physical Fire test rotates to portrait, navigates to Settings and opens/closes the real PDF preview, then cancels export. It restores the original orientation.
-
-The publisher/controller name supplied is O.Bankole; country and final legal approval are still unconfirmed. The privacy review copy now distinguishes publisher-added analytics from Amazon's documented distribution wrapper. API 36 emulator testing was attempted but could not start because the host lacks the hypervisor driver. No emulator success or universal device compatibility is claimed.
-
-
-## History backup and accessibility acceptance — 30 October 2026
-
-JSON/PTB export now offers an unchecked completion-history option. Only events belonging to selected records are included. Historical titles may contain earlier personal details, so the export notice warns about this. Restoring schema 2 assigns fresh entry/event IDs and remaps links; records and history import atomically. Schema 1 backups and the PTB1 encryption envelope remain supported. Encoding now enforces a budget that fits the existing restore byte limit. Photo pixels remain excluded.
-
-The physical Fire suite now covers encrypted history round trip, excluded-record history, fresh identifiers, invalid history, transaction rollback, 200% text with a mirrored Settings layout and the no-recognition-service typed-input fallback. These are targeted mechanical tests, not a full TalkBack, Arabic translation or global accessibility review. PDF temporary-file allocation failures now use the existing error screen, and page controls can scroll horizontally when text needs more room. See [voice capability boundaries](VOICE.md).
-
-The Amazon English draft description has been saved with the updated optional-history disclosure. Existing accepted screenshots still show implemented screens; the unchanged capture files remain marked for human marketing review. No binary upload, signing, purchase or final submission occurred.
-
-
-## Document I/O and reminder controls — 30 October 2026
-
-PlannerDocuments centralizes bounded provider reads, validated export encoding and streaming. Tests use a real Android ContentProvider in the test APK with synthetic records. The provider is restricted to the target/test UIDs, has no picker intent filter, and must be absent from the release manifest. This is a framework/provider integration check; system picker and cloud-provider acceptance remain open.
-
-Reminder notifications now require an explicit, persisted Settings opt-in, defaulting off when no choice exists. OS permission is requested only when enabling on API 33+. Turning off clears the notice. Empty due lists also clear it, and model changes request an additional best-effort refresh. Preference changes and worker publication are serialized within the app process. Earlier preview users need to enable the new persisted choice; saved reminder records are preserved. See NOTIFICATIONS.md for OS/delivery boundaries.
-
-The unsigned review bundle now includes NOTIFICATIONS.md and verifies that no test document-provider component appears in the actual release manifest. Purchases remain compiled off. No production keystore, signed build, binary upload or final submission is created by this work.
-
-
-## Final unsigned handoff — 2 November 2026
-
-Publisher/controller details supplied by the owner are O.Bankole, United Kingdom, with banksmi@mail.com for support. The privacy review copy records these details. They do not constitute legal approval or an Amazon account-country change.
-
-Transported JSON/PTB backups now omit local photo-file references, and import also removes references from older/external backups. This matches the exclusion of photo pixels and prevents a restored record from attaching an unrelated existing private image. Local activity-draft recovery retains its own photo reference. Other structured fields and selected completion history remain preserved.
-
-The authorised delivery remains an unsigned review package with purchases disabled and translation review queues prepared. It is not a signed, approved, worldwide release. Remaining external acceptance requirements are production signing/key backup, publisher legal/trademark and regional safety review, reviewed translations/listing assets, support-mailbox verification, actual credential/speech/picker/provider and wider device acceptance, final territory selection and owner submission approval. Configure and test the Amazon SKU/receipt flow only before enabling paid features. No final submission has been performed.
+Use `python tools/release_check.py` for production preflight. Its nonzero result while a gate remains pending is intentional. Keep keys/passwords outside Git and retain owner-controlled signing material securely if another distribution route requires it.

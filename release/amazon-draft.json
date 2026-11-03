@@ -29,26 +29,26 @@
   "checkoutEnabled": false,
   "submitted": false,
   "remaining": [
-    "current-scope native acceptance, localized asset review and image/binary refresh",
+    "confirmation to replace inherited Amazon images, then11 matching localized media uploads",
     "publisher approval of final privacy and console declarations; support delivery verification",
     "actual speech/audio and representative Fire accessibility acceptance; document service limits",
     "final console review and export/encryption-law certification at action time"
   ],
   "privacyQuestionnaire": "saved for review; publisher/legal approval pending",
   "tabletIcons": "512x512 and 114x114 accepted",
-  "screenshots": "All 11 media locale sections selected. They currently inherit older English assets; current 22-locale captures, visual review and matching uploads remain pending.",
+  "screenshots": "Reviewed current22-locale asset sets ready. Eleven media sections still inherit older English images; Amazon delete confirmation is pending before replacement. Original files archived locally.",
   "publisherName": "O.Bankole",
   "publisherCountry": "United Kingdom",
   "signingStatus": "Amazon documentation permits unsigned APK upload and applies an Amazon signature; local signing is not inherently required for Amazon-managed submission.",
   "submissionBundle": "artifacts/amazon-review.zip; unsigned review only",
-  "unsignedPackageStatus": "Run41553161845/source4ad0e5d produced an unsigned full-22-locale review package after both CI jobs passed: 18JVM/31tooling,35primary+1systemUI cases,4condition skips,5632resource comparisons,110QAimages,176raw/176panels. Visual review rejected several rendering/capture/copy defects. Corrections and real picker-restore/microphone-denial extensions are compiled in the next candidate; fresh hosted validation/recapture pending. Existing Amazon binary/images are unchanged.",
+  "unsignedPackageStatus": "Corrected unsigned APK accepted and stored-download hash verified. Current hosted run41561192222 passed18 JVM/31 tooling,35 primary+1 system-file cases with4 skips,5632 resource checks/110 QA captures and176raw/176panels. All176 marketing panels pass scoped AI review. Unsigned review package records remaining manual/publisher/media gates.",
   "publisherCountryCode": "GB",
   "submissionRequested": true,
   "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html",
   "launchScope": "Worldwide neutral planner with official-source links; cached safety recommendations removed by owner approval on2026-11-02; purchases disabled.",
-  "submissionDeferredReason": "Current native runtime, source-bound worldwide assets and image/binary refresh pending; final publisher declarations/export certification remain unchecked.",
+  "submissionDeferredReason": "Final current-source native/capture acceptance, localized media uploads, manual voice/accessibility checks and publisher declarations/export certification remain pending.",
   "purchaseActivationPrerequisites": "Deferred while purchases are disabled: real SKU, App Tester, restore and receipt-verification validation before any future paid release.",
-  "consoleVerifiedDate": "2026-11-02",
+  "consoleVerifiedDate": "2026-11-03",
   "consoleVerifiedState": "API 36 replacement accepted into draft; console Manifest Details confirms com.preptrove.app, version 0.1.0/code 1, minimum 26 and target 36. The target-API warning cleared after loading. Twelve tablets remain selected; no TV/automotive. No final submission.",
   "binaryUpload": {
     "status": "accepted_into_draft",
@@ -58,13 +58,15 @@
     "applicationId": "com.preptrove.app",
     "minSdk": 26,
     "targetSdk": 36,
-    "sha256": "63a3749220384bc33546d6c20adcd2e639149b8fc6c1c8727129bacfd2fb156a",
+    "sha256": "aa3c8f1741ac21174ea13a319f5499103c51849e364b3ab2dc9812883752ad79",
     "submitted": false,
     "manifestVerifiedInConsole": true,
     "selectedFireTablets": 12,
     "selectedFireTv": 0,
     "selectedAutomotive": 0,
-    "newAlexaTabletModels": "six remain disabled; no runtime compatibility claimed"
+    "newAlexaTabletModels": "six remain disabled; no runtime compatibility claimed",
+    "downloadHashVerified": true,
+    "sourceCommit": "8816674"
   },
   "supportWebsite": "https://github.com/lanray07/PrepTrove",
   "categoryVerificationNotes": "Productivity > Notes & Bookmarking persisted in both edit selectors after reload and is the explicit App will be listed in category on Review. The console tooltip also shows a secondary Utilities > Notes & Bookmarking label; no hidden API was used to change that secondary mapping.",
@@ -90,5 +92,6 @@
     "mapping": "release/amazon-locales.json",
     "proof": "artifacts/amazon-worldwide-listings.jpg; category/language summary artifacts/amazon-worldwide-review.jpg"
   },
-  "languageDeclarationNotes": "All 13 implemented language choices exposed by the console were selected and remained checked after reload. Swedish, Turkish and Indonesian have no console language checkbox; Chinese variants and regional packs are not separate checkboxes."
+  "languageDeclarationNotes": "All 13 implemented language choices exposed by the console were selected and remained checked after reload. Swedish, Turkish and Indonesian have no console language checkbox; Chinese variants and regional packs are not separate checkboxes.",
+  "mediaReplacementConfirmation": "Requested at actual Confirm Delete dialog; no deletion accepted."
 }

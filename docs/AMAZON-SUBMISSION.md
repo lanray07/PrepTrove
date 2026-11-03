@@ -86,3 +86,8 @@ The export-compliance checkbox explicitly certifies import/export and encryption
 All 24 real English-variant screenshots were refreshed locally and hashed; the eight older accepted en-US assets in Amazon have not been replaced. The unsigned review ZIP now includes the tested API 36 APK, latest local screenshots and prepared tester instructions. Purchases remain disabled.
 
 The latest worldwide native QA compares 5,522 packaged strings across 22 locales and records 88 QA-only captures, plural checks, typed expiry commands and 200% Settings. These isolated screenshots cannot be uploaded as release marketing assets. See WORLDWIDE-VALIDATION.md and release/worldwide-validation.json for hash-bound evidence and limits.
+
+
+## Corrected worldwide draft — 3 November 2026
+
+Amazon accepted the corrected worldwide neutral-planner unsigned APK. Its stored download matches local SHA-256 `aa3c8f1741ac21174ea13a319f5499103c51849e364b3ab2dc9812883752ad79` exactly. Manifest Details confirms package `com.preptrove.app`, version0.1.0/code1, minimum26 and target36. Purchases remain disabled. Local build,18 JVM and31tooling checks passed; current hosted acceptance and final asset review are in progress. This supersedes the old binary hash and category uncertainty above: the verified primary category is Productivity > Notes & Bookmarking. Final declarations/export certification remain unchecked; no submission has occurred.

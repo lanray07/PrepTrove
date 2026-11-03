@@ -1,6 +1,6 @@
 {
   "locale": "ja-JP",
-  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "status": "AI linguistic review complete; marketing panels reviewed; console and final acceptance pending",
   "reviewer": "Codex AI linguistic review; not human or specialist approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
@@ -35,8 +35,49 @@
     "featureBullet.10": "選択したアプリの言語で、対応する音声コマンドや入力コマンドを試す"
   },
   "screenshots": {
-    "status": "pending real localised captures",
-    "countRequiredByProduct": 8
+    "status": "AI visual review complete for exact marketing hashes; Amazon replacement pending",
+    "countRequiredByProduct": 8,
+    "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+    "files": [
+      {
+        "file": "assets/store/marketing/ja-JP/01-overview.png",
+        "sha256": "6cc8aaf2226957d1909f3fa209fc2fb843779d52a324ebbbc52529a588e8c660"
+      },
+      {
+        "file": "assets/store/marketing/ja-JP/02-supplies.png",
+        "sha256": "e42a3a4ac5d470a93948c5c9656cace7e493955eb949f3152e3bddbe656595d9"
+      },
+      {
+        "file": "assets/store/marketing/ja-JP/03-family-plan.png",
+        "sha256": "1113d09d47dba924087b7df364cb9cbfe0d1267f2e056c5a932bf2859f168446"
+      },
+      {
+        "file": "assets/store/marketing/ja-JP/04-reminders.png",
+        "sha256": "c41978a346bbbfff4ffb6c5c57f87b8f3c099869b31d953010bc3018849adb14"
+      },
+      {
+        "file": "assets/store/marketing/ja-JP/05-checklists.png",
+        "sha256": "a61149a9851a4d7f4c4196eb620f61883cdba160935691096952d6d5a9ad2c84"
+      },
+      {
+        "file": "assets/store/marketing/ja-JP/06-voice.png",
+        "sha256": "250d649e03f5be3aa9acdc5449d088aafb527e141cdfe5bfe30ada10dcb2eddd"
+      },
+      {
+        "file": "assets/store/marketing/ja-JP/07-saved-offline-kit.png",
+        "sha256": "4513e0f96729dee0d4367343b033cb6169b5c9d113167a14dbc359573d5678ad"
+      },
+      {
+        "file": "assets/store/marketing/ja-JP/08-report-preview.png",
+        "sha256": "9d30dd35595b43796dc653b8f8db327822eefb8ac6d672b733a4b0f7d3ed48ba"
+      }
+    ],
+    "reviewReports": [
+      "docs/visual-review-asian-arabic.json",
+      "docs/visual-review-english.json",
+      "docs/visual-review-european.json",
+      "docs/visual-review-mixed.json"
+    ]
   },
   "linguisticReviewType": "AI-assisted",
   "qualifiedSafetyReview": false,

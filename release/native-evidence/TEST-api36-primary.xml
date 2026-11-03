@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.preptrove.app.AccessibilityLayoutTest" tests="39" failures="0" errors="0" skipped="4" time="113.503" timestamp="2026-11-03T01:48:49" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 16" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="doubleSizeTextAndMirroredLayoutKeepSettingsReachable" classname="com.preptrove.app.AccessibilityLayoutTest" time="6.622" />
+  <testcase name="rejectsMalformedRecordsBeforeAnyDatabaseWrites" classname="com.preptrove.app.BackupCodecTest" time="0.13" />
+  <testcase name="restoreCopiesKeepKitRelationshipsWithNewIds" classname="com.preptrove.app.BackupCodecTest" time="0.003" />
+  <testcase name="rejectsInvalidHistoryAndBackupsTooLargeToRestore" classname="com.preptrove.app.BackupCodecTest" time="1.218" />
+  <testcase name="historyIsExplicitScopedAndRemappedWithRestoredRecords" classname="com.preptrove.app.BackupCodecTest" time="2.586" />
+  <testcase name="reportInstalledSpeechCapabilitiesAndMissingRecognizerFallback" classname="com.preptrove.app.DeviceCapabilitiesTest" time="0.632" />
+  <testcase name="actualDeviceCredentialEnablesLocksCancelsAndUnlocks" classname="com.preptrove.app.EphemeralCredentialTest" time="57.175" />
+  <testcase name="notificationDenialOptInPersistenceAndGenericNotice" classname="com.preptrove.app.EphemeralNotificationsTest" time="10.716" />
+  <testcase name="namedFieldRedactionPreservesOriginalRecords" classname="com.preptrove.app.ExportPolicyTest" time="0.006" />
+  <testcase name="defaultExportDoesNotIncludeContactsOrPlans" classname="com.preptrove.app.ExportPolicyTest" time="0.032" />
+  <testcase name="recordsAndReviewHistoryImportAtomically" classname="com.preptrove.app.HistoryRestoreTest" time="0.191" />
+  <testcase name="unknownPacksCannotBeSelected" classname="com.preptrove.app.LanguageTest" time="0.009" />
+  <testcase name="selectionPersistsAndRegionalResourcesLoad" classname="com.preptrove.app.LanguageTest" time="0.079" />
+  <testcase name="remindersUseSingularAndPluralResources" classname="com.preptrove.app.LanguageTest" time="0.009" />
+  <testcase name="devicePreferenceKeepsArabicResourcesSpeechAndDirectionTogether" classname="com.preptrove.app.LanguageTest" time="0.054" />
+  <testcase name="resourceRoundTripAndExpandedLayoutsAcrossAllTargets" classname="com.preptrove.app.LocalizationQaTest" time="0.042">
+    <skipped />
+  </testcase>
+  <testcase name="lockedActivityDoesNotRenderSavedPlans" classname="com.preptrove.app.LockGateTest" time="1.541" />
+  <testcase name="upgradePreservesVersionOneSupplies" classname="com.preptrove.app.MigrationTest" time="0.742" />
+  <testcase name="reportLocaleControlsDirectionTypographyAndDatesIndependentlyOfDeviceLanguage" classname="com.preptrove.app.PdfReportsTest" time="0.449" />
+  <testcase name="previewRendererClampsPageAndRejectsCorruptFiles" classname="com.preptrove.app.PdfReportsTest" time="0.055" />
+  <testcase name="longStructuredPlansProduceReadableMultipagePdf" classname="com.preptrove.app.PdfReportsTest" time="0.026" />
+  <testcase name="importedImageIsStoredPrivatelyAndInvalidNamesAreRejected" classname="com.preptrove.app.PhotoStoreTest" time="0.029" />
+  <testcase name="transportedBackupsDropLocalPhotoLinksButDraftStateKeepsThem" classname="com.preptrove.app.PlannerDocumentsTest" time="0.027" />
+  <testcase name="reportsAndJsonUseProviderStreamsAndBadFormatDoesNotTruncate" classname="com.preptrove.app.PlannerDocumentsTest" time="0.029" />
+  <testcase name="encryptedProviderRoundTripPreservesOnlySelectedHistoryAndRecords" classname="com.preptrove.app.PlannerDocumentsTest" time="3.365" />
+  <testcase name="oversizedAndMissingDocumentsAreRejected" classname="com.preptrove.app.PlannerDocumentsTest" time="0.028" />
+  <testcase name="recurringReviewRecordsHistoryAndSchedulesNextDate" classname="com.preptrove.app.PlannerFeaturesTest" time="0.002" />
+  <testcase name="kitTemplateCreatesIndependentSupplies" classname="com.preptrove.app.PlannerFeaturesTest" time="0.041" />
+  <testcase name="missingStoreConfigurationCannotOfferPurchases" classname="com.preptrove.app.PlannerFeaturesTest" time="0.006" />
+  <testcase name="backupKeepsStructuredPlansAndPurchaseMetadata" classname="com.preptrove.app.PlannerFeaturesTest" time="0.002" />
+  <testcase name="structuredPlanCanBeSavedThroughTheEditor" classname="com.preptrove.app.PlannerJourneyTest" time="5.828" />
+  <testcase name="kitCanBeCreatedAndSurvivesActivityRecreation" classname="com.preptrove.app.PlannerJourneyTest" time="5.654" />
+  <testcase name="unsavedSupplyDraftSurvivesActivityRecreation" classname="com.preptrove.app.PlannerJourneyTest" time="5.71" />
+  <testcase name="portraitNavigationAndReportPreviewRemainUsable" classname="com.preptrove.app.ReleaseJourneyTest" time="4.084" />
+  <testcase name="reminderOptInSurvivesRecreationAndCanBeDisabled" classname="com.preptrove.app.ReminderPreferenceTest" time="2.261">
+    <skipped />
+  </testcase>
+  <testcase name="countOnlyNoticeIsReplacedAndClearedWhenDisabledOrNoLongerDue" classname="com.preptrove.app.ReviewNotificationsTest" time="0.074" />
+  <testcase name="deletingKitPreservesAndUnassignsSupplies" classname="com.preptrove.app.StorageTest" time="0.031" />
+  <testcase name="captureLocalisedDemoScreens" classname="com.preptrove.app.StoreScreenshotsTest" time="0.033">
+    <skipped />
+  </testcase>
+  <testcase name="missingRecognitionServiceKeepsTypedCommandsAvailableWithoutPermissionPrompt" classname="com.preptrove.app.VoiceFallbackTest" time="2.168">
+    <skipped />
+  </testcase>
+</testsuite>

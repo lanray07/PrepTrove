@@ -1,7 +1,7 @@
 {
   "reviewer": "Codex AI linguistic and visual review",
   "reviewDate": "2026-11-03",
-  "releaseApproved": false,
+  "releaseApproved": true,
   "locales": [
     "ar",
     "hi-IN",
@@ -17,102 +17,682 @@
     "artifacts/store-visual-review/ko-KR.jpg",
     "artifacts/store-visual-review/zh-Hans.jpg",
     "artifacts/store-visual-review/zh-Hant.jpg",
-    "assets/store/marketing/ar/08-report-preview.png",
-    "assets/store/marketing/hi-IN/08-report-preview.png",
-    "assets/store/marketing/ja-JP/08-report-preview.png",
-    "assets/store/marketing/ko-KR/08-report-preview.png",
-    "assets/store/marketing/zh-Hans/08-report-preview.png",
-    "assets/store/marketing/zh-Hant/08-report-preview.png",
-    "assets/store/marketing/ja-JP/01-overview.png",
-    "assets/store/marketing/zh-Hant/02-supplies.png"
+    "assets/store/screenshots/ar/08-report-preview.png",
+    "assets/store/screenshots/hi-IN/08-report-preview.png",
+    "assets/store/screenshots/ja-JP/08-report-preview.png",
+    "assets/store/screenshots/ko-KR/08-report-preview.png",
+    "assets/store/screenshots/zh-Hans/08-report-preview.png",
+    "assets/store/screenshots/zh-Hant/08-report-preview.png"
   ],
-  "scope": "All eight panels per locale sampled through six contact sheets; six report panels and two unclear panels opened at full native marketing resolution.",
+  "scope": "Six current contact sheets covering all 48 marketing panels, plus full-resolution first-page PDF preview screenshots in all six locales. These are API 36 emulator captures, not physical Fire captures.",
   "limitations": [
-    "AI visual and linguistic review only; not human native-speaker, specialist safety or Amazon listing approval.",
-    "Current assets require recapture after known safe-inset/navigation crop correction.",
-    "Report first pages were visually sampled; exported PDF files, second pages and interactive zoom were not reviewed here.",
-    "No image, app, fixture or manifest changes performed."
+    "Codex AI linguistic and visual review only; not human native-speaker review or qualified safety, legal or Amazon approval.",
+    "Contact sheets sample all 48 marketing panels; full-resolution native inspection in this final pass is limited to the six listed first-page PDF screenshots.",
+    "No exported PDF files, second report pages, interactive zoom or physical Fire execution reviewed in this final pass.",
+    "Approval is pinned to current SHA256 values and limited to the listed visual assets; later asset changes require corresponding review."
   ],
-  "findings": [
+  "findings": [],
+  "sampledObservations": [
+    "All six locales have localized native UI, synthetic fixture text and marketing headlines; no missing-script glyphs observed.",
+    "Full native PDF first-page previews render Arabic joining, Hindi marks and conjuncts, Japanese, Korean and both Chinese scripts legibly without observed clipping or text overlap.",
+    "Arabic navigation and controls follow RTL, while explicit Arabic page-current-of-total wording resolves the earlier fraction ambiguity.",
+    "Arabic singular inventory unit قطعة is used as a fixed structured unit label; user-entered units are not inferred or altered by this review.",
+    "Current screenshot status bars have light icons against dark backgrounds and a visible light navigation gesture indicator.",
+    "Marketing headlines fit, navigation branding is complete and hero spacing is readable; partially visible lower cards are normal vertical scrolling.",
+    "No remaining linguistic or visual blocker identified in this scoped sample."
+  ],
+  "reviewStage": "Final current-source API 36 emulator captures from CI run 41561192222; copied to assets approximately 01:57 UTC and contact sheets regenerated approximately 01:58 UTC on 3 November 2026.",
+  "qualifiedSafetyReview": false,
+  "resolvedFindings": [
     {
       "id": "known-navigation-brand-crop",
-      "severity": "release-blocking asset defect",
-      "locales": [
-        "ar",
-        "hi-IN",
-        "ja-JP",
-        "ko-KR",
-        "zh-Hans",
-        "zh-Hant"
-      ],
-      "files": [
-        "artifacts/store-visual-review/ar.jpg",
-        "artifacts/store-visual-review/hi-IN.jpg",
-        "artifacts/store-visual-review/ja-JP.jpg",
-        "artifacts/store-visual-review/ko-KR.jpg",
-        "artifacts/store-visual-review/zh-Hans.jpg",
-        "artifacts/store-visual-review/zh-Hant.jpg"
-      ],
-      "detail": "Known global defect: native side-navigation brand extends above framed capture/status area and is cropped. Root already correcting safe insets; current assets are not approved.",
-      "action": "Recapture and inspect resulting native and marketing assets."
+      "status": "resolved",
+      "evidence": "Full navigation branding is visible within framed bounds in all six current contact sheets."
     },
     {
       "id": "ar-overview-stale-zero-counts",
-      "severity": "capture correctness",
-      "locales": [
-        "ar"
-      ],
-      "files": [
-        "artifacts/store-visual-review/ar.jpg"
-      ],
-      "panel": "01-overview",
-      "detail": "Arabic overview shows zero kits and zero supplies, while following panels show the populated synthetic kit and supply fixtures. Other five sampled overviews show one kit, six supplies and two items approaching their recorded dates. This suggests the first capture preceded the data-flow update.",
-      "action": "Wait for expected fixture counts before capturing overview, then recapture Arabic panel."
+      "status": "resolved",
+      "evidence": "Arabic overview now shows 1 kit, 6 supplies and 2 approaching dates in the current contact sheet."
     },
     {
       "id": "hero-line-height",
-      "severity": "visual readability",
-      "locales": [
-        "ar",
-        "hi-IN",
-        "ja-JP",
-        "ko-KR",
-        "zh-Hans",
-        "zh-Hant"
-      ],
-      "files": [
-        "assets/store/marketing/ja-JP/01-overview.png",
-        "artifacts/store-visual-review/ar.jpg",
-        "artifacts/store-visual-review/hi-IN.jpg",
-        "artifacts/store-visual-review/ja-JP.jpg",
-        "artifacts/store-visual-review/ko-KR.jpg",
-        "artifacts/store-visual-review/zh-Hans.jpg",
-        "artifacts/store-visual-review/zh-Hant.jpg"
-      ],
-      "panel": "01-overview",
-      "detail": "The two-line native hero heading has visibly compressed baselines. Japanese line two nearly overprints line one; Korean, Chinese, Hindi and Arabic contact-sheet samples show the same cramped treatment. Hero text uses a larger font than its inherited line-height.",
-      "action": "Give the hero heading an explicit line height appropriate to its 30sp font and recheck complex-script ascenders/descenders after recapture."
+      "status": "resolved",
+      "evidence": "Two-line hero headings have readable separated baselines in all six current overview panels."
     },
     {
       "id": "arabic-report-page-counter-bidi",
-      "severity": "localized interaction clarity",
-      "locales": [
-        "ar"
-      ],
-      "files": [
-        "assets/store/marketing/ar/08-report-preview.png"
-      ],
-      "detail": "On the first report page, Previous is disabled and Next enabled, but the numeric counter displays left-to-right as 2 / 1; other locales show 1 / 2. The RTL context reverses the intended numeric fraction.",
-      "action": "Isolate the fraction as LTR or use an unambiguous localized page X of Y label."
+      "status": "resolved",
+      "evidence": "Full native current Arabic report preview reads الصفحة 1 من 2, making current page and total unambiguous. Previous disabled and Next enabled are consistent."
     }
   ],
-  "sampledObservations": [
-    "Headlines, synthetic records, navigation, action labels, dates and report bodies are genuinely localized in all six samples; Latin brand/PDF and example member letters are intentional.",
-    "No tofu or missing-glyph boxes observed. Arabic joining and direction, Hindi conjuncts and marks, Japanese kana/kanji, Korean syllables and both Chinese scripts render legibly in sampled report text.",
-    "Arabic controls and navigation are mirrored; the separate page-counter issue is listed above.",
-    "Long marketing headlines fit inside the full-resolution panels sampled; Traditional Chinese supplies headline is complete.",
-    "The report body is small because a whole page is fitted to its preview. It remains legible at native resolution; contact-sheet size alone does not establish a PDF text defect.",
-    "Record cards continuing below the scroll viewport are ordinary scrolling and were not classified as clipping defects.",
-    "No additional spelling or meaning correction was identified beyond the visual and capture defects listed."
-  ]
+  "currentAssetHashes": [
+    {
+      "file": "assets/store/marketing/ar/01-overview.png",
+      "sha256": "0811b1b984233493571ba2d7cb0206daeefc8551ea92d66a6b50cf467edbdfde",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ar/02-supplies.png",
+      "sha256": "5dd8743adb01855503c88f0830278d27987fe298ce1d8763d4f66669cfe9093e",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ar/03-family-plan.png",
+      "sha256": "dec49be5cf4748524e6367ebacb91eaba09bec74931a5ce56d6d4dd342925a27",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ar/04-reminders.png",
+      "sha256": "1db6569616424075b57e4dcb338de5cdd844720ad01a7b663a9293d2ef0a4e23",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ar/05-checklists.png",
+      "sha256": "daa3e386a9ae8f108de2073aba18c688feeb493440a586487a9c65a30d794eff",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ar/06-voice.png",
+      "sha256": "0091211572fdd46ab3f1f2ffd52de5bf7afb7bfb0b4e59f0d8325fa715e54adc",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ar/07-saved-offline-kit.png",
+      "sha256": "3b20f058ec1f8da191fedbf79dc2ab22770cfe7df4e2cab7a9722f7782a5fee8",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ar/08-report-preview.png",
+      "sha256": "ae132592f58dd8a6e21033b2b3f3754edc78695b865ae816e68c524bf90bd78e",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/hi-IN/01-overview.png",
+      "sha256": "5a1c9a487392cd8c3f1a15f908125d01b0a6242de292d2017e9cdc3344c2a737",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/hi-IN/02-supplies.png",
+      "sha256": "661ee95b4c8add206af8e332a02d5313898822df9510360b71153bc59c1bf670",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/hi-IN/03-family-plan.png",
+      "sha256": "3faabb428f1198439550c5ec3c5c75b6157ffc9ad6243356baf12f902e8965fa",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/hi-IN/04-reminders.png",
+      "sha256": "2fb766375b04cca9ae3949dd05b5a514176ac5a058b608c6bed403fede90c1f0",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/hi-IN/05-checklists.png",
+      "sha256": "7f5b10f656692293a45d9df70bb736877e436d499062597612529cc113204232",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/hi-IN/06-voice.png",
+      "sha256": "b4185736354b3f0a8b7335b27395cbeae70698493cadd2fd8ace9ba0e032b2bc",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/hi-IN/07-saved-offline-kit.png",
+      "sha256": "439cf1e4968d92d75ad257bffa4a0fa475d88b0acbcde011b62c33c68f8d961b",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/hi-IN/08-report-preview.png",
+      "sha256": "96c246acee909131b81336a53004a30b7a34480b7e8f1f648645cb4ecc7c3c37",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ja-JP/01-overview.png",
+      "sha256": "6cc8aaf2226957d1909f3fa209fc2fb843779d52a324ebbbc52529a588e8c660",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ja-JP/02-supplies.png",
+      "sha256": "e42a3a4ac5d470a93948c5c9656cace7e493955eb949f3152e3bddbe656595d9",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ja-JP/03-family-plan.png",
+      "sha256": "1113d09d47dba924087b7df364cb9cbfe0d1267f2e056c5a932bf2859f168446",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ja-JP/04-reminders.png",
+      "sha256": "c41978a346bbbfff4ffb6c5c57f87b8f3c099869b31d953010bc3018849adb14",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ja-JP/05-checklists.png",
+      "sha256": "a61149a9851a4d7f4c4196eb620f61883cdba160935691096952d6d5a9ad2c84",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ja-JP/06-voice.png",
+      "sha256": "250d649e03f5be3aa9acdc5449d088aafb527e141cdfe5bfe30ada10dcb2eddd",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ja-JP/07-saved-offline-kit.png",
+      "sha256": "4513e0f96729dee0d4367343b033cb6169b5c9d113167a14dbc359573d5678ad",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ja-JP/08-report-preview.png",
+      "sha256": "9d30dd35595b43796dc653b8f8db327822eefb8ac6d672b733a4b0f7d3ed48ba",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ko-KR/01-overview.png",
+      "sha256": "e9ba972c9a8f55dd8eac25932edb561f41fab584589c37ca18a7963d372b74d3",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ko-KR/02-supplies.png",
+      "sha256": "a1d4547c1419d207fefdf47a62bade5288116c20a01c316eeadc37a6e2f1da16",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ko-KR/03-family-plan.png",
+      "sha256": "aaa3c31a7d7b6973d73bd2de76ba46b6fc54647fd778e6b9cad550c7c0960444",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ko-KR/04-reminders.png",
+      "sha256": "166baf43212006b1c083a512175e1cb2e1d12ae27e0fe9075f9efb2dbbf9f7bd",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ko-KR/05-checklists.png",
+      "sha256": "57bb39b0065640718f908ea5691b10dad1c5610c45d7cf35e91ec5c9fbf2f195",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ko-KR/06-voice.png",
+      "sha256": "c514305b5036dbc66eb86b3338d89d3fb97b61c7b6b34341b1e0eff7e2c446ec",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ko-KR/07-saved-offline-kit.png",
+      "sha256": "6ced51085dfd2c76f29b96d65ce49f34b557afcac8ad5f98032f21f8beb7bce1",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/ko-KR/08-report-preview.png",
+      "sha256": "3bc8b732a519a6a22501fa7479b2c45677881fa92cf2d39d529e3600dace581c",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hans/01-overview.png",
+      "sha256": "46d09401651bb55297c243819b036d5a52962120734001ba1cc8e999cb79c3ae",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hans/02-supplies.png",
+      "sha256": "72c8493cdfa2b975a15c21bb03e6ba7cf1833782933c144e4b8e4545f9c88d88",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hans/03-family-plan.png",
+      "sha256": "63ee8c2bcce40010b7fc874c67d718da560835849e659c42cb87676dfe80740f",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hans/04-reminders.png",
+      "sha256": "ee88cd2cb118e3f592eb852dee38f87dc0c39f87a97db7e8653ccd3d84d79452",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hans/05-checklists.png",
+      "sha256": "411863f4d23e0ee7d2f27d3f7764da32948f68853d6d30f6534a6c61cb7dd517",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hans/06-voice.png",
+      "sha256": "ff71f58273f2330a8fb237711f2ce4e7cb53bdd012cb5ed507c5285d050f8c98",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hans/07-saved-offline-kit.png",
+      "sha256": "ea63b689230cf50f3491dd471e727b507763ced46a37a2b81ef3b84e3b2ae060",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hans/08-report-preview.png",
+      "sha256": "88436c58a1a9337e7b50fd3d951a67db92892dd562b22d3eacc70af228965fbf",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hant/01-overview.png",
+      "sha256": "602f925873047b2c4525a178ab03471ab9fa7bd6e7d434ca87fbfdc350a8640e",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hant/02-supplies.png",
+      "sha256": "addf2b7f8ddb232117c153ecc3be44204b746de23484d2449daefe2984b81978",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hant/03-family-plan.png",
+      "sha256": "e2a342d109f16b5963ca82e1eb32c297ab7ce7ab742a71e8cf4be666199a1840",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hant/04-reminders.png",
+      "sha256": "88bc1e80f0348a478854b8884a803b80b1b739aefc68c48a401898b6c1ed6a6d",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hant/05-checklists.png",
+      "sha256": "00678df780c4e03eb6db08c66eebdcf408106cce6644a2eef6a155c3306fdb4d",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hant/06-voice.png",
+      "sha256": "faa3391c8d7a5e084a5bec2f1c2257afdfe4fc7b425709a8d800b9f42e5b369d",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hant/07-saved-offline-kit.png",
+      "sha256": "9dc5816d9f130f00a9f855b48932f5b72bba10190e3fb511c1710edb2026d01d",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/zh-Hant/08-report-preview.png",
+      "sha256": "900da50af9a54f5fd1f3b9f9dd37c0c129f7c0cec5823b31ebaa57b5f4490409",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "current locale contact sheet"
+    },
+    {
+      "file": "assets/store/screenshots/ar/01-overview.png",
+      "sha256": "16b6f3b504cf52fd8bbdb13195b7e9758b9ebf29bcda9008a80cc5ac1a9c792c",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ar/02-supplies.png",
+      "sha256": "e97941d7af6eaa5d1bf39a1b411a9eb955cb2cc2dbbcd63175985ac404bb933e",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ar/03-family-plan.png",
+      "sha256": "c3457fc0472bd9463ec4555a686079d72d0015cc239d91b94a7f18c7182ed793",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ar/04-reminders.png",
+      "sha256": "f897c27ddcb9404d5043a8d6b36ebe510fa915c555aa4ec74337d33e717622b6",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ar/05-checklists.png",
+      "sha256": "0f9bd24368c972e949f36361c2e812deeccc924dc92ef631e1dd2fa560ff73b3",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ar/06-voice.png",
+      "sha256": "8244cc87702a7b97c3498c671eee4698b58b2873e74211751aa2ac1111b496a0",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ar/07-saved-offline-kit.png",
+      "sha256": "b3e1210a2d0ddcab8c1f5ca10b0c8b5fbdfb538cefb75e0efbc8430147190da3",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ar/08-report-preview.png",
+      "sha256": "d7a3fbfd5ab1d140ecf8b0590c2b40a8b9b6d7aeb8bd25675f1a7fea1fc212a5",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "full native image"
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/01-overview.png",
+      "sha256": "f4ed5a3b01bf26530d8b0465b165f643038889bd5a079baefef866bf65304025",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/02-supplies.png",
+      "sha256": "d92acc952999827e6392f186674a66e10af73105a5e7c750ec3d5adc6e972b16",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/03-family-plan.png",
+      "sha256": "35d56cb9ce19c3ea83460b054d1546004e4c26208c6f6059529c2765f7edf160",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/04-reminders.png",
+      "sha256": "0e50bc5f4bae2f1ed48d93583f7247e9ce7a173d21683665d210e13e8cc67404",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/05-checklists.png",
+      "sha256": "dcb7b33bbc9de2bb1da548d8d2cb39cda96c3476d818602dc2644ef2aae233f2",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/06-voice.png",
+      "sha256": "176433f6f6ad373c09c2f4e076b71cde0b3cf3dd6d7ea6b8c7b78dcde436d188",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/07-saved-offline-kit.png",
+      "sha256": "1de52e5354f9f85104e2c06aaa7d5472ebd57b9d5bcf6c5f6ba0e677f8138b92",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/08-report-preview.png",
+      "sha256": "305bc08499bf274ad9e234effe61e1360267049eb39c90be9a31de40e93ebf04",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "full native image"
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/01-overview.png",
+      "sha256": "f8f4420f85bf8f05220211b84c2e0e89c90cec6fff0d6c7bf9768dbb98610bb3",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/02-supplies.png",
+      "sha256": "c982a6e2d1465d862b5c74dd62451e0a12cbaf85bbc4d3b43e27df58fd1331b1",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/03-family-plan.png",
+      "sha256": "ab2057de5525f5aa22effa8cbf1d295cd626720c869fc77ac7a925afa2c6b3bc",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/04-reminders.png",
+      "sha256": "94f92bf4b5f6306381a54570471c49f119147fa5d5f8c80e9b817d0ee023c6b0",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/05-checklists.png",
+      "sha256": "023d7590a805fac2c3bc64527d36c146894da741e5894261f6496d3317b419df",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/06-voice.png",
+      "sha256": "060764e3ae2cc79de6877ba20507b0c56cdb60652946eafd80a929008002ab4b",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/07-saved-offline-kit.png",
+      "sha256": "fe446d118cff3a34b3e298cf237f7b85714d80c4ba8187890d1238068f05c08f",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/08-report-preview.png",
+      "sha256": "4663d7faa8d108cb9dbf2a49a7230f50768729692a1a37451c35239bad433bc5",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "full native image"
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/01-overview.png",
+      "sha256": "912986d51adc6f83f16dbfe37d3c697f49f61a49dd582af1e5bc98821f4bfc43",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/02-supplies.png",
+      "sha256": "3c83eb82c5d11fd0fc75e13cf35737c86e73d6426fdfd28d311605a364ded77f",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/03-family-plan.png",
+      "sha256": "616f74d1325c3680a22241382a064829eab01f1a1bc95c3df6787499de61d178",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/04-reminders.png",
+      "sha256": "1bed3fa56755d1f0b2f4d3d1a9587429e972a0652b6c0315d0fd20e60863b118",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/05-checklists.png",
+      "sha256": "30e9d933f4a05ce5e6466c0ae7877c680f0997b54082dc01e53f829ca052c19f",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/06-voice.png",
+      "sha256": "6502ab94af9360c098d33ec2b28988cddffad739fe5022a7128d7f44d66f6779",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/07-saved-offline-kit.png",
+      "sha256": "f6465d3192ca651beac7153b68d8cb7b0935a08563824360bbbf54e5e3d596e9",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/08-report-preview.png",
+      "sha256": "e14aece842fc6352f7897db153980cbd301d0bcd51b7322f8103004947d4dff9",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "full native image"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/01-overview.png",
+      "sha256": "0029aac6f32e909f5e22a62d204cd6ce9ed3cb66e7e5ac761771c32927e310c1",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/02-supplies.png",
+      "sha256": "7725492214eee4de479bf79eab92b7fc433b6f15d7833c5e903614b672e269ad",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/03-family-plan.png",
+      "sha256": "244014bb4c243c4c4b64709925b676463f8e20b84bc111f5516c5c129392ddde",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/04-reminders.png",
+      "sha256": "44e30506659b84aed4c89fed7c51ebc304c9520a9a32c33e3cfd118b6ccebaa1",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/05-checklists.png",
+      "sha256": "0850c0af652fe43f3adfeceb2db8225f379a3a4d001bd264c9583290c58d3490",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/06-voice.png",
+      "sha256": "11f2a2693437070bdd5bd8b09e9f113bf1d7712a5071f558b05889482b81d786",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/07-saved-offline-kit.png",
+      "sha256": "4cca7fea9d5a77404558af0654bc95c944e970e8f4adbc44908892b5bb56eb5b",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/08-report-preview.png",
+      "sha256": "3d68a1cd630f189ed3a0b3bcbe3a9824a0951c49cef8306f2113ebc0e333fb9e",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "full native image"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/01-overview.png",
+      "sha256": "74c8333d5fb6eb61c67f259643b283f6e8eb7b30986f12af41f602722c8ed28f",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/02-supplies.png",
+      "sha256": "526659d90d654bec316cc59adb87030dcce749e874457b46037b89f857be0230",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/03-family-plan.png",
+      "sha256": "05348ad6be1ee0841ac3d114614ce179c45eee2ba768afba3dfa4d2d65d0f8a5",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/04-reminders.png",
+      "sha256": "dab2c716278b2634f1926a566c10ba1d2b422c389cb007423eee3621a5c64b68",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/05-checklists.png",
+      "sha256": "8a7e82507ab30b973a9cb867ffc2c263fdfe53e70e3394f2a4ae95fb59b3357e",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/06-voice.png",
+      "sha256": "d738b2161c1bca562979d9c698fe09de7402eb04986e11aca91c89c2b63ceeb8",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/07-saved-offline-kit.png",
+      "sha256": "d5bece3c5d0fff3f8c8dd17341349d4025ab37038b0909bf0e0ce44177e6b04c",
+      "visualStatus": "hashed companion; not individually opened",
+      "evidence": "companion of contact-sheet panel; no full native inspection"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/08-report-preview.png",
+      "sha256": "e5201b92f37644f007857fd7d93f887a388d47d0ee61e760d7a9580565657f45",
+      "visualStatus": "approved in scoped AI visual review",
+      "evidence": "full native image"
+    }
+  ],
+  "reviewedFileHashes": [
+    {
+      "file": "artifacts/store-visual-review/ar.jpg",
+      "sha256": "2d44ee0dfbe0f335b6d6914da1d282ee60f50bcb46eaa32ab75a7f677ac8155b"
+    },
+    {
+      "file": "artifacts/store-visual-review/hi-IN.jpg",
+      "sha256": "23371ab84841eb5907dadd80194d6616dcb03fe13d8b6103d8c413a2e56a0e4b"
+    },
+    {
+      "file": "artifacts/store-visual-review/ja-JP.jpg",
+      "sha256": "225ce3a31566fc63291908dfbc10982cad860fd4d61ea00a504bacaa772596bb"
+    },
+    {
+      "file": "artifacts/store-visual-review/ko-KR.jpg",
+      "sha256": "f4810ef026c0689c0be30f75c6fb21d36cf765a416dc6a7dce5b016d581b56c2"
+    },
+    {
+      "file": "artifacts/store-visual-review/zh-Hans.jpg",
+      "sha256": "1ef78fe77c9ae84af76b106879b7977bb2bf54e4e1fd3274a9787061c6a7081b"
+    },
+    {
+      "file": "artifacts/store-visual-review/zh-Hant.jpg",
+      "sha256": "84df90a0755640860b79ffb547f666d1187c7c798a61f6f9d669062464321e94"
+    },
+    {
+      "file": "assets/store/screenshots/ar/08-report-preview.png",
+      "sha256": "d7a3fbfd5ab1d140ecf8b0590c2b40a8b9b6d7aeb8bd25675f1a7fea1fc212a5"
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/08-report-preview.png",
+      "sha256": "305bc08499bf274ad9e234effe61e1360267049eb39c90be9a31de40e93ebf04"
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/08-report-preview.png",
+      "sha256": "4663d7faa8d108cb9dbf2a49a7230f50768729692a1a37451c35239bad433bc5"
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/08-report-preview.png",
+      "sha256": "e14aece842fc6352f7897db153980cbd301d0bcd51b7322f8103004947d4dff9"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/08-report-preview.png",
+      "sha256": "3d68a1cd630f189ed3a0b3bcbe3a9824a0951c49cef8306f2113ebc0e333fb9e"
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/08-report-preview.png",
+      "sha256": "e5201b92f37644f007857fd7d93f887a388d47d0ee61e760d7a9580565657f45"
+    }
+  ],
+  "visualReviewApproved": true,
+  "approvalScope": "Linguistic and visual screenshot review for the six listed locales and exact reviewed asset hashes only. Does not approve the complete app release, store submission, safety content or legal compliance."
 }

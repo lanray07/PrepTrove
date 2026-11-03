@@ -1,0 +1,185 @@
+{
+  "reviewDate": "2026-11-03",
+  "reviewer": "Codex AI root",
+  "reviewType": "AI visual and English copy review",
+  "runId": 41561192222,
+  "captureDevice": "API36 emulator",
+  "locales": [
+    "en-GB",
+    "en-US",
+    "en-AU"
+  ],
+  "releaseAssetsApproved": true,
+  "approvalScope": "24 exact marketing panels in these three English locales; not app, safety, accessibility, human speech or Amazon approval.",
+  "reviewedFiles": [
+    {
+      "file": "artifacts/store-visual-review/en-GB.jpg",
+      "sha256": "886aa315b35452da1fc305fc0eeaa43624596cbfab1171adaefc00d2cbd6230d",
+      "review": "All eight panels inspected in contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/en-GB/01-overview.png",
+      "sha256": "424b615345191225491e3166577963fe3eca479250330e139ea373a83ec4962c",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-GB/02-supplies.png",
+      "sha256": "44d3357070e2d2b21feb7e6fb40eada3502934898db78c577b3b8f83c56c7028",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-GB/03-family-plan.png",
+      "sha256": "abb58fe4a636204e2c2395b89e16b6107eb24b619c11b8ca7e6f734f62df3e32",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-GB/04-reminders.png",
+      "sha256": "2a9213591cf5b802a04b97eaa4e25234e13d8c261d8805e5739044b7abebe918",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-GB/05-checklists.png",
+      "sha256": "5b327b8b92e7fcc4d48e0ce23d8ae74b22fdee5d053539913690be32109df4a7",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-GB/06-voice.png",
+      "sha256": "96787185f464a6c92c6d6bb901f7cb62a0562ab0ad7a9c9fb29be39773afc981",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-GB/07-saved-offline-kit.png",
+      "sha256": "e357fedc1cdc68283ad429056acca85f203e5ddc863654e7979372bf6cf3f20b",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-GB/08-report-preview.png",
+      "sha256": "42f3ba36e80a92d44d9acd28e2bf228ce2b3290c72092790820909da8c718e8a",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "artifacts/store-visual-review/en-US.jpg",
+      "sha256": "9fb5711d2c0a74298ba785ec197a4488688375a49217ade2f4e35aa5d7297f97",
+      "review": "All eight panels inspected in contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/en-US/01-overview.png",
+      "sha256": "bfee061673a6742319f855504899a82b368c68bf0f4562ce899fe88c1a639738",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-US/02-supplies.png",
+      "sha256": "e26d38c5282a9f835ddfe7af02e4fec465b2729b2cce97093e0d805df01346dd",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-US/03-family-plan.png",
+      "sha256": "abb58fe4a636204e2c2395b89e16b6107eb24b619c11b8ca7e6f734f62df3e32",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-US/04-reminders.png",
+      "sha256": "f065cc83140685f3381fc5a01d59894e3a00f1901ef385ce0451888ca46fe1f6",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-US/05-checklists.png",
+      "sha256": "5b327b8b92e7fcc4d48e0ce23d8ae74b22fdee5d053539913690be32109df4a7",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-US/06-voice.png",
+      "sha256": "96787185f464a6c92c6d6bb901f7cb62a0562ab0ad7a9c9fb29be39773afc981",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-US/07-saved-offline-kit.png",
+      "sha256": "c2d110e1e2fbbb03ef9783ebc04c12ba09b576057401bafde821f4a7d2ccb9c5",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-US/08-report-preview.png",
+      "sha256": "1f95c53084df0a1af76adbf3cdf938d936a03c8d7e778eadd5cfeb4920ba46ec",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "artifacts/store-visual-review/en-AU.jpg",
+      "sha256": "6aa536d890e881985c7eb7bfcecf2859546fcea75a3f17bd9a7d4b73fc95f3a9",
+      "review": "All eight panels inspected in contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/en-AU/01-overview.png",
+      "sha256": "424b615345191225491e3166577963fe3eca479250330e139ea373a83ec4962c",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-AU/02-supplies.png",
+      "sha256": "44d3357070e2d2b21feb7e6fb40eada3502934898db78c577b3b8f83c56c7028",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-AU/03-family-plan.png",
+      "sha256": "abb58fe4a636204e2c2395b89e16b6107eb24b619c11b8ca7e6f734f62df3e32",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-AU/04-reminders.png",
+      "sha256": "2a9213591cf5b802a04b97eaa4e25234e13d8c261d8805e5739044b7abebe918",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-AU/05-checklists.png",
+      "sha256": "5b327b8b92e7fcc4d48e0ce23d8ae74b22fdee5d053539913690be32109df4a7",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-AU/06-voice.png",
+      "sha256": "96787185f464a6c92c6d6bb901f7cb62a0562ab0ad7a9c9fb29be39773afc981",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-AU/07-saved-offline-kit.png",
+      "sha256": "e357fedc1cdc68283ad429056acca85f203e5ddc863654e7979372bf6cf3f20b",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-AU/08-report-preview.png",
+      "sha256": "42f3ba36e80a92d44d9acd28e2bf228ce2b3290c72092790820909da8c718e8a",
+      "review": "Reviewed through contact sheet; full-size samples recorded separately"
+    },
+    {
+      "file": "assets/store/marketing/en-GB/08-report-preview.png",
+      "sha256": "42f3ba36e80a92d44d9acd28e2bf228ce2b3290c72092790820909da8c718e8a",
+      "review": "Additional full-size inspection"
+    },
+    {
+      "file": "assets/store/screenshots/en-US/01-overview.png",
+      "sha256": "47f0cd4721f695331346de2351eb45c02ce8e7fc414203384e57f31da3242b2e",
+      "review": "Additional full-size inspection"
+    },
+    {
+      "file": "assets/store/marketing/en-AU/06-voice.png",
+      "sha256": "96787185f464a6c92c6d6bb901f7cb62a0562ab0ad7a9c9fb29be39773afc981",
+      "review": "Additional full-size inspection"
+    },
+    {
+      "file": "assets/store/screenshots/ar/08-report-preview.png",
+      "sha256": "d7a3fbfd5ab1d140ecf8b0590c2b40a8b9b6d7aeb8bd25675f1a7fea1fc212a5",
+      "review": "Additional full-size inspection"
+    }
+  ],
+  "findings": [],
+  "checks": [
+    "Headlines fit without clipping; brand stays inside panel",
+    "Overview counters1/6/2 match synthetic fixture",
+    "Sample quantities and English regional dates/terms are intelligible",
+    "PDF preview is rendered with page1/2 visible, not loading",
+    "Voice disclosure states installed-service/network limits and typed input alternative",
+    "Raw overview system-bar icons have contrasting dark background"
+  ],
+  "limitations": [
+    "All24 panels inspected through three contact sheets; only listed additional images inspected full size.",
+    "Tiny PDF body text and subsequent PDF pages are not fully reviewed by contact-sheet inspection.",
+    "No manual audio or screen-reader verification; no specialist safety review claimed."
+  ]
+}

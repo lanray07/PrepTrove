@@ -1,6 +1,6 @@
 {
   "locale": "hi-IN",
-  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "status": "AI linguistic review complete; marketing panels reviewed; console and final acceptance pending",
   "reviewer": "Codex AI linguistic review; not independent human, speech-device or final store approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
@@ -35,8 +35,49 @@
     "keywords": "बिजली कटौती, तैयारी, किट, आपातकाल, घर, जाँच सूची, बिजली, परिवार, भंडार, प्लानर, सामग्री, योजना"
   },
   "screenshots": {
-    "status": "pending real localised captures",
-    "countRequiredByProduct": 8
+    "status": "AI visual review complete for exact marketing hashes; Amazon replacement pending",
+    "countRequiredByProduct": 8,
+    "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+    "files": [
+      {
+        "file": "assets/store/marketing/hi-IN/01-overview.png",
+        "sha256": "5a1c9a487392cd8c3f1a15f908125d01b0a6242de292d2017e9cdc3344c2a737"
+      },
+      {
+        "file": "assets/store/marketing/hi-IN/02-supplies.png",
+        "sha256": "661ee95b4c8add206af8e332a02d5313898822df9510360b71153bc59c1bf670"
+      },
+      {
+        "file": "assets/store/marketing/hi-IN/03-family-plan.png",
+        "sha256": "3faabb428f1198439550c5ec3c5c75b6157ffc9ad6243356baf12f902e8965fa"
+      },
+      {
+        "file": "assets/store/marketing/hi-IN/04-reminders.png",
+        "sha256": "2fb766375b04cca9ae3949dd05b5a514176ac5a058b608c6bed403fede90c1f0"
+      },
+      {
+        "file": "assets/store/marketing/hi-IN/05-checklists.png",
+        "sha256": "7f5b10f656692293a45d9df70bb736877e436d499062597612529cc113204232"
+      },
+      {
+        "file": "assets/store/marketing/hi-IN/06-voice.png",
+        "sha256": "b4185736354b3f0a8b7335b27395cbeae70698493cadd2fd8ace9ba0e032b2bc"
+      },
+      {
+        "file": "assets/store/marketing/hi-IN/07-saved-offline-kit.png",
+        "sha256": "439cf1e4968d92d75ad257bffa4a0fa475d88b0acbcde011b62c33c68f8d961b"
+      },
+      {
+        "file": "assets/store/marketing/hi-IN/08-report-preview.png",
+        "sha256": "96c246acee909131b81336a53004a30b7a34480b7e8f1f648645cb4ecc7c3c37"
+      }
+    ],
+    "reviewReports": [
+      "docs/visual-review-asian-arabic.json",
+      "docs/visual-review-english.json",
+      "docs/visual-review-european.json",
+      "docs/visual-review-mixed.json"
+    ]
   },
   "reviewType": "Codex AI translation and linguistic review",
   "reviewed": false,

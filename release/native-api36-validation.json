@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-03",
+  "kind": "hosted_api36_emulator_acceptance",
+  "sourceCommit": "8816674c3fd556cb2ff0d7694ae72804b72aa01c",
+  "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+  "captureFingerprint": "6454204bcb3e82a982819f8f85b1661fb396e1cebd5df678ea5156c3e482eaf2",
+  "runId": 41561192222,
+  "runUrl": "https://github.com/lanray07/PrepTrove/actions/runs/41561192222",
+  "jobs": {
+    "build": "passed",
+    "native-qa": "passed"
+  },
+  "primary": {
+    "tests": 39,
+    "passed": 35,
+    "skipped": 4,
+    "failures": 0,
+    "errors": 0
+  },
+  "systemUi": {
+    "tests": 1,
+    "passed": 1,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "verifiedFlows": [
+    "Actual device-credential enable/background/cancel/unlock on isolated emulator",
+    "Real CreateDocument JSON export and OpenDocument copy restore with original preserved",
+    "Notification denial/opt-in and generic notice",
+    "Microphone denial followed by typed command without audio recording"
+  ],
+  "localizationQa": {
+    "localePacks": 22,
+    "stringComparisons": 5632,
+    "captures": 110,
+    "fontScaleStress": 2,
+    "seconds": 136.56,
+    "result": "passed",
+    "manifestSha256": "e10188efa993f59e3ae8b4f6030e30944fab0f4cfaa42408f101861517cbca9b",
+    "appApkSha256": "ae39ecc0528f2c9de560698e807a566d9aaee022869475f2151bc5cc65d5040b",
+    "testApkSha256": "6ee492c6d48c11b3fbc586efab7cf8693572189e301a06847dbcf0ba19225f1d"
+  },
+  "storeCapture": {
+    "rawScreens": 176,
+    "marketingPanels": 176,
+    "seconds": 163.92,
+    "result": "passed",
+    "visualApproval": "Separate hash-bound AI reports; capture success alone is not approval."
+  },
+  "jvmTestsPassed": 18,
+  "toolingTestsPassed": 31,
+  "purchasesEnabled": false,
+  "manualAudioVerified": false,
+  "voiceViewVerified": false,
+  "physicalDevice": "Separate older-source Fire evidence in fire-device-validation.json; final current-source Fire rerun remains pending while device is locked.",
+  "limitations": [
+    "Emulator has no audio-output proof or human transcription test.",
+    "AI linguistic/visual checks are not human, specialist safety or Amazon approval."
+  ],
+  "evidenceFiles": [
+    "release/native-evidence/TEST-api36-primary.xml",
+    "release/native-evidence/TEST-api36-system-ui.xml"
+  ]
+}

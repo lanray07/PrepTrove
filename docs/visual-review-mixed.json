@@ -1,5 +1,5 @@
 {
-  "reviewType": "Codex AI linguistic and visual localization review of actual rendered screenshots",
+  "reviewType": "Codex AI linguistic and visual localization review of rendered API 36 emulator captures",
   "reviewer": "Codex AI",
   "date": "2026-11-03",
   "locales": [
@@ -10,151 +10,481 @@
     "tr-TR",
     "id-ID"
   ],
-  "releaseAssetsApproved": false,
-  "limitations": [
-    "Not independent human or specialist approval.",
-    "Contact sheets cover eight panels per locale; full-size report-preview panel inspected separately for each locale. Other panels were assessed through the contact sheets.",
-    "Only the first visible PDF page was reviewed; the complete exported document was not inspected.",
-    "Known global API36 navigation-brand/status-bar crop defect is being fixed separately; current assets require recapture.",
-    "This review does not establish speech-engine support, safety compliance, final store acceptance or all-screen accessibility."
+  "status": "approved_for_reviewed_marketing_asset_visual_scope",
+  "releaseAssetsApproved": true,
+  "approvalScope": "The 48 current marketing PNGs listed with SHA-256 hashes below pass this AI linguistic/visual screenshot review with one minor navigation-highlight observation. This does not approve application release, external submission, safety guidance or store eligibility.",
+  "qualifiedSafetyApproval": false,
+  "approvedAssets": [
+    {
+      "file": "assets/store/marketing/pt-BR/01-overview.png",
+      "sha256": "4f244d798bc978c72af2c78f9ff9281791e3643ad4db7e9905971e903f3377b7"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/02-supplies.png",
+      "sha256": "b7d851c498f69faac257117f652c48c68b2336b1f9e4793f9dc41a62bfc9e03c"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/03-family-plan.png",
+      "sha256": "c5259eb898911be2149464e4cdf2b87659286e7b92f72bcbbdb54b64a5ed6628"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/04-reminders.png",
+      "sha256": "83f10144ee51c44e37d3141d0a198380ee4f8710fccb7f2298552cc86a0efed6"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/05-checklists.png",
+      "sha256": "21a557016c358c6d610d2f3fd4135cfff41d4480c00af636c25268cffb47a09e"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/06-voice.png",
+      "sha256": "42a2553d55e8040846edab742375e0913f873de31541a2d676cd479838ad9cbd"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/07-saved-offline-kit.png",
+      "sha256": "4a21b46e1b2978e4fc6289fe8055830ec8c73393299cc51951742530f5384bfe"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/08-report-preview.png",
+      "sha256": "31f33a7e7ad407077ba80167bae52dabd5ac224663faed3f617641ddb11189ab"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/01-overview.png",
+      "sha256": "15a5c0b86aea090fc21ac46a3903dc1b36376a3ee94ed0486cd03ee9c979022a"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/02-supplies.png",
+      "sha256": "3b5c463f987d7f7b3311c6e8d4941af68922280236373b0183ac0fe3c11aa4a6"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/03-family-plan.png",
+      "sha256": "a7a44356bd2324348a451e03acfa1d75a4e99d18fffb80cede28d7a363038816"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/04-reminders.png",
+      "sha256": "9293cccc93697919b436d844eba33a35f43796d63557b0f96966e386cd82be5e"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/05-checklists.png",
+      "sha256": "1b892427bd173bb56b7fd26181169c36061ee72ab4753cc813370945fe6fc769"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/06-voice.png",
+      "sha256": "675c40c5d66b7ff27d33da02152921d7a541275d3c8aa56467d0a07a285db3f8"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/07-saved-offline-kit.png",
+      "sha256": "fcb33efda011ebfbe472c50ec5fd19fa0bdba44fb28dec9af15f16607bbc85c0"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/08-report-preview.png",
+      "sha256": "9c9c6ae874a08a3d7c9ad766fe01fa393798c73148876a3b39f32b3bedcc0115"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/01-overview.png",
+      "sha256": "012140e14e7d684b3efff1552311e762f0e12d391e4807e8cef5408a3519cc9a"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/02-supplies.png",
+      "sha256": "f358beed28961620488d56490b85753a7bb0c2c6e9bb150bbee2b2e4adea4b54"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/03-family-plan.png",
+      "sha256": "dd1ff25ef24c6943b750cf9bba0ea6754c037596293075bc04a5ebbba6819a98"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/04-reminders.png",
+      "sha256": "0f7fee61396af1cd1929bd9c439499195470693a18b225a5ba11037b1020a19e"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/05-checklists.png",
+      "sha256": "831dbf7548420e39801c657dfa52b485107114b28dbcd45479a897d598e7624b"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/06-voice.png",
+      "sha256": "336aedc2be91bb8e13bc50d194f83eb093a58440b7b4e34c21edc2264cb8ab44"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/07-saved-offline-kit.png",
+      "sha256": "166c068673954b26212434177052fc7f636f4aa85f568a41a3f2254467a33d81"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/08-report-preview.png",
+      "sha256": "e2647f0cdcefac036d565f5036a6e5ef73ae280ee235b3d0f8df95ae7410cef7"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/01-overview.png",
+      "sha256": "8643e60db702f66f85d1c6dfedc5991b6caf1cbef395ade60775287401b6a534"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/02-supplies.png",
+      "sha256": "b2e1f05bc03b83b516aa3ad4c143f4c62f6b4cd5cc8110cef20f8725dce6bf3a"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/03-family-plan.png",
+      "sha256": "dd7ea8b10fd405e8fd4f573fd3d4f3443201122a17e12b11daa25eced567a62e"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/04-reminders.png",
+      "sha256": "ecf4875c0b7f6aac6d823928ef54164c7d3b8affac9ed82c26e7b30e562b9c7b"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/05-checklists.png",
+      "sha256": "361a8f8c766551cd7076ab2d1882d8ca35a5e5ef3606752183b0decf2ee674a1"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/06-voice.png",
+      "sha256": "1c626b5e1c19a9b928023f51fbf30f2d9865690da619891ad149746954ff8c71"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/07-saved-offline-kit.png",
+      "sha256": "c1f21b5cf5aa3cced1f349c204d95c59645805caf6e6191b56c83f388841d1af"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/08-report-preview.png",
+      "sha256": "a5a2ba435335a3325b6562d71a70afe4067687d5dbfebd5525a7628ad54d2fcd"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/01-overview.png",
+      "sha256": "602e4ffad73d268be363d3cef06bfb4832dd5b6d1253750b537df16fcbe7289c"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/02-supplies.png",
+      "sha256": "19633ba8afe8a12b55fcd245934ff9a0b395eb332ac0df826090bd4524ece07a"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/03-family-plan.png",
+      "sha256": "9ea6e70b642eb1377b564b02866d6c6cced197bca80b7408a4ec6091d97208d6"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/04-reminders.png",
+      "sha256": "79f655e1eecc7c8d9c89c381a5054406e282712c103738f0fb3da57a84b2f9bb"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/05-checklists.png",
+      "sha256": "674f2f1dacbdc1a30673024ad4657d3a8e04b13e488b9d65ce58684962d05e03"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/06-voice.png",
+      "sha256": "46e91d1687df2a4d956f70b31817947d8043d88857ecb86068abc91247b7f47c"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/07-saved-offline-kit.png",
+      "sha256": "d0bf6bcd26e6b87db728d831799b24dc97bdc915c6a8f57b4635f9c294b01bf2"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/08-report-preview.png",
+      "sha256": "c9e463b4fb71ceae21808fa57890b50e8a58d7bbfa6572f786eaef8f9a859c75"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/01-overview.png",
+      "sha256": "35ef11dbd31b813db7238a461c15232a93bacf32ef3ca83f2072204edee9d69f"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/02-supplies.png",
+      "sha256": "9f2fa1266170cafa3f10cf0bd83de8865675fb04450dfedf1bf7d64759645d17"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/03-family-plan.png",
+      "sha256": "0903885dc727905ae94824ed8a9cc0b98850ce07822e34c784b2c231e4abe865"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/04-reminders.png",
+      "sha256": "356f51a3629b141a00fb0ce7800c2b7cae6816ce794b8548297515c1f2a8e6dc"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/05-checklists.png",
+      "sha256": "4a4bbb934ac1f2a81339f83d652fee921c1547346681129ee89d47eb81347715"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/06-voice.png",
+      "sha256": "ce9c1f403d95b14977072282a2af4eeff9c38ceee2eba709fc28da4c04abf526"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/07-saved-offline-kit.png",
+      "sha256": "bfaca7e09f83bbbcdb3986e18df98ee020157761fe2cfa173a6d5a0ec40b5692"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/08-report-preview.png",
+      "sha256": "b31063c8e628dc06ffbbcfae7442f48cbe03f62f09eb086c483e820ec8760eae"
+    }
   ],
   "reviewedFiles": [
     {
       "file": "artifacts/store-visual-review/pt-BR.jpg",
-      "sha256": "8efddd7f4ffa3066fb163a832a60d6d2bb9df88275eb8c5e2ba2ddc37d684521",
-      "review": "visual inspection"
+      "sha256": "75213281ce1262be1049c9c7a96d9655e86dea6570851ab2db809e3c7327ae18",
+      "review": "current API 36 contact sheet: all eight panels visually rechecked"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/01-overview.png",
+      "sha256": "4f244d798bc978c72af2c78f9ff9281791e3643ad4db7e9905971e903f3377b7",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/02-supplies.png",
+      "sha256": "b7d851c498f69faac257117f652c48c68b2336b1f9e4793f9dc41a62bfc9e03c",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/03-family-plan.png",
+      "sha256": "c5259eb898911be2149464e4cdf2b87659286e7b92f72bcbbdb54b64a5ed6628",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/04-reminders.png",
+      "sha256": "83f10144ee51c44e37d3141d0a198380ee4f8710fccb7f2298552cc86a0efed6",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/05-checklists.png",
+      "sha256": "21a557016c358c6d610d2f3fd4135cfff41d4480c00af636c25268cffb47a09e",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/06-voice.png",
+      "sha256": "42a2553d55e8040846edab742375e0913f873de31541a2d676cd479838ad9cbd",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/07-saved-offline-kit.png",
+      "sha256": "4a21b46e1b2978e4fc6289fe8055830ec8c73393299cc51951742530f5384bfe",
+      "review": "current contact-sheet visual reinspection"
     },
     {
       "file": "assets/store/marketing/pt-BR/08-report-preview.png",
-      "sha256": "dff57fd826cdc2d276416deb21278af24f60c44a1acda996435dfa433108e234",
-      "review": "visual inspection"
-    },
-    {
-      "file": "app/src/androidTest/assets/store-fixtures/pt-BR.json",
-      "sha256": "c6ff67d43b7eda0ba206ac6ce3a4906adc8159cfbd82303d5dc39de36a7bd2b2",
-      "review": "fixture wording and unit-label comparison"
+      "sha256": "31f33a7e7ad407077ba80167bae52dabd5ac224663faed3f617641ddb11189ab",
+      "review": "contact sheet plus full-size report-preview reinspection"
     },
     {
       "file": "artifacts/store-visual-review/pt-PT.jpg",
-      "sha256": "73d669fb5aa7c4e1c3ee8531fe60a79eebba31b697561a2b0c9fa4096a36514e",
-      "review": "visual inspection"
+      "sha256": "051c61111320e78c5320b3b53fc29c921bbaee5b37e712d32f1169b1c40e4293",
+      "review": "current API 36 contact sheet: all eight panels visually rechecked"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/01-overview.png",
+      "sha256": "15a5c0b86aea090fc21ac46a3903dc1b36376a3ee94ed0486cd03ee9c979022a",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/02-supplies.png",
+      "sha256": "3b5c463f987d7f7b3311c6e8d4941af68922280236373b0183ac0fe3c11aa4a6",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/03-family-plan.png",
+      "sha256": "a7a44356bd2324348a451e03acfa1d75a4e99d18fffb80cede28d7a363038816",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/04-reminders.png",
+      "sha256": "9293cccc93697919b436d844eba33a35f43796d63557b0f96966e386cd82be5e",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/05-checklists.png",
+      "sha256": "1b892427bd173bb56b7fd26181169c36061ee72ab4753cc813370945fe6fc769",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/06-voice.png",
+      "sha256": "675c40c5d66b7ff27d33da02152921d7a541275d3c8aa56467d0a07a285db3f8",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/07-saved-offline-kit.png",
+      "sha256": "fcb33efda011ebfbe472c50ec5fd19fa0bdba44fb28dec9af15f16607bbc85c0",
+      "review": "current contact-sheet visual reinspection"
     },
     {
       "file": "assets/store/marketing/pt-PT/08-report-preview.png",
-      "sha256": "2d73b39e4cb1035ef4bec43ff248c3d7d2876dd7b50d76a40df002108c878fdb",
-      "review": "visual inspection"
-    },
-    {
-      "file": "app/src/androidTest/assets/store-fixtures/pt-PT.json",
-      "sha256": "d13d967b25d6b665113c9b3cd907a83e46949326dbee68dabcbd4132d24a84b7",
-      "review": "fixture wording and unit-label comparison"
+      "sha256": "9c9c6ae874a08a3d7c9ad766fe01fa393798c73148876a3b39f32b3bedcc0115",
+      "review": "contact sheet plus full-size report-preview reinspection"
     },
     {
       "file": "artifacts/store-visual-review/pl-PL.jpg",
-      "sha256": "81399a88fc4db7b0870b0236f0d65ddca4b144438032b35a64d051ed7e63086c",
-      "review": "visual inspection"
+      "sha256": "2fa497d7ac405b155c7b670ca19326f1a88f11844806729b62e61f7bffda6ebd",
+      "review": "current API 36 contact sheet: all eight panels visually rechecked"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/01-overview.png",
+      "sha256": "012140e14e7d684b3efff1552311e762f0e12d391e4807e8cef5408a3519cc9a",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/02-supplies.png",
+      "sha256": "f358beed28961620488d56490b85753a7bb0c2c6e9bb150bbee2b2e4adea4b54",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/03-family-plan.png",
+      "sha256": "dd1ff25ef24c6943b750cf9bba0ea6754c037596293075bc04a5ebbba6819a98",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/04-reminders.png",
+      "sha256": "0f7fee61396af1cd1929bd9c439499195470693a18b225a5ba11037b1020a19e",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/05-checklists.png",
+      "sha256": "831dbf7548420e39801c657dfa52b485107114b28dbcd45479a897d598e7624b",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/06-voice.png",
+      "sha256": "336aedc2be91bb8e13bc50d194f83eb093a58440b7b4e34c21edc2264cb8ab44",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/07-saved-offline-kit.png",
+      "sha256": "166c068673954b26212434177052fc7f636f4aa85f568a41a3f2254467a33d81",
+      "review": "current contact-sheet visual reinspection"
     },
     {
       "file": "assets/store/marketing/pl-PL/08-report-preview.png",
-      "sha256": "d5382c9b233df2e85f32bd1f60582c1d276879a8fbb3b34b5b9f243ec00367d6",
-      "review": "visual inspection"
-    },
-    {
-      "file": "app/src/androidTest/assets/store-fixtures/pl-PL.json",
-      "sha256": "26804319922db0ecb64b2faf40aa2f939da0b04cc5f613873360e07ed02470aa",
-      "review": "fixture wording and unit-label comparison"
+      "sha256": "e2647f0cdcefac036d565f5036a6e5ef73ae280ee235b3d0f8df95ae7410cef7",
+      "review": "contact sheet plus full-size report-preview reinspection"
     },
     {
       "file": "artifacts/store-visual-review/sv-SE.jpg",
-      "sha256": "a052360e683ec429ae8a469df4e9b927175183dea78ee72ae20b234906632db2",
-      "review": "visual inspection"
+      "sha256": "5997286e12292b97c2c9110036775464626cccb1f6bc778c242f20ec94baf241",
+      "review": "current API 36 contact sheet: all eight panels visually rechecked"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/01-overview.png",
+      "sha256": "8643e60db702f66f85d1c6dfedc5991b6caf1cbef395ade60775287401b6a534",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/02-supplies.png",
+      "sha256": "b2e1f05bc03b83b516aa3ad4c143f4c62f6b4cd5cc8110cef20f8725dce6bf3a",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/03-family-plan.png",
+      "sha256": "dd7ea8b10fd405e8fd4f573fd3d4f3443201122a17e12b11daa25eced567a62e",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/04-reminders.png",
+      "sha256": "ecf4875c0b7f6aac6d823928ef54164c7d3b8affac9ed82c26e7b30e562b9c7b",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/05-checklists.png",
+      "sha256": "361a8f8c766551cd7076ab2d1882d8ca35a5e5ef3606752183b0decf2ee674a1",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/06-voice.png",
+      "sha256": "1c626b5e1c19a9b928023f51fbf30f2d9865690da619891ad149746954ff8c71",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/07-saved-offline-kit.png",
+      "sha256": "c1f21b5cf5aa3cced1f349c204d95c59645805caf6e6191b56c83f388841d1af",
+      "review": "current contact-sheet visual reinspection"
     },
     {
       "file": "assets/store/marketing/sv-SE/08-report-preview.png",
-      "sha256": "9076570655bfa472889e4e1101f3bb806b6b7fb6b5965b4e51f098566ecf5c0c",
-      "review": "visual inspection"
-    },
-    {
-      "file": "app/src/androidTest/assets/store-fixtures/sv-SE.json",
-      "sha256": "0d393032e5cbe2e9b28fd66e0d71deebd7a046349b4909ffac7bd84b82eb47b1",
-      "review": "fixture wording and unit-label comparison"
+      "sha256": "a5a2ba435335a3325b6562d71a70afe4067687d5dbfebd5525a7628ad54d2fcd",
+      "review": "contact sheet plus full-size report-preview reinspection"
     },
     {
       "file": "artifacts/store-visual-review/tr-TR.jpg",
-      "sha256": "dd1c99ccc4a19563f446071fbb277d5a0df229c0dae334e263646225d405d1ef",
-      "review": "visual inspection"
+      "sha256": "a4226e604ab7f01ca168faa9d3071bc38af1654de4e2a2812b41edbaadcfd6d0",
+      "review": "current API 36 contact sheet: all eight panels visually rechecked"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/01-overview.png",
+      "sha256": "602e4ffad73d268be363d3cef06bfb4832dd5b6d1253750b537df16fcbe7289c",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/02-supplies.png",
+      "sha256": "19633ba8afe8a12b55fcd245934ff9a0b395eb332ac0df826090bd4524ece07a",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/03-family-plan.png",
+      "sha256": "9ea6e70b642eb1377b564b02866d6c6cced197bca80b7408a4ec6091d97208d6",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/04-reminders.png",
+      "sha256": "79f655e1eecc7c8d9c89c381a5054406e282712c103738f0fb3da57a84b2f9bb",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/05-checklists.png",
+      "sha256": "674f2f1dacbdc1a30673024ad4657d3a8e04b13e488b9d65ce58684962d05e03",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/06-voice.png",
+      "sha256": "46e91d1687df2a4d956f70b31817947d8043d88857ecb86068abc91247b7f47c",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/07-saved-offline-kit.png",
+      "sha256": "d0bf6bcd26e6b87db728d831799b24dc97bdc915c6a8f57b4635f9c294b01bf2",
+      "review": "current contact-sheet visual reinspection"
     },
     {
       "file": "assets/store/marketing/tr-TR/08-report-preview.png",
-      "sha256": "a51556f12068292158a7e9366e97373bf718d9ec4efdd34b7f37d5e59cbba3e4",
-      "review": "visual inspection"
-    },
-    {
-      "file": "app/src/androidTest/assets/store-fixtures/tr-TR.json",
-      "sha256": "ca9a9ef2d25dc58da13554c94093834f326574089920485cead0bd891097b28b",
-      "review": "fixture wording and unit-label comparison"
+      "sha256": "c9e463b4fb71ceae21808fa57890b50e8a58d7bbfa6572f786eaef8f9a859c75",
+      "review": "contact sheet plus full-size report-preview reinspection"
     },
     {
       "file": "artifacts/store-visual-review/id-ID.jpg",
-      "sha256": "144d93933b34f350097d15e8dc53d376249c229d4a73cd71d69c3e866dd8a672",
-      "review": "visual inspection"
+      "sha256": "8bf95d61d998c0ef83733f67c8a20e6da06013131cf98a82c0f6c9fef74af8d5",
+      "review": "current API 36 contact sheet: all eight panels visually rechecked"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/01-overview.png",
+      "sha256": "35ef11dbd31b813db7238a461c15232a93bacf32ef3ca83f2072204edee9d69f",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/02-supplies.png",
+      "sha256": "9f2fa1266170cafa3f10cf0bd83de8865675fb04450dfedf1bf7d64759645d17",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/03-family-plan.png",
+      "sha256": "0903885dc727905ae94824ed8a9cc0b98850ce07822e34c784b2c231e4abe865",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/04-reminders.png",
+      "sha256": "356f51a3629b141a00fb0ce7800c2b7cae6816ce794b8548297515c1f2a8e6dc",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/05-checklists.png",
+      "sha256": "4a4bbb934ac1f2a81339f83d652fee921c1547346681129ee89d47eb81347715",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/06-voice.png",
+      "sha256": "ce9c1f403d95b14977072282a2af4eeff9c38ceee2eba709fc28da4c04abf526",
+      "review": "current contact-sheet visual reinspection"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/07-saved-offline-kit.png",
+      "sha256": "bfaca7e09f83bbbcdb3986e18df98ee020157761fe2cfa173a6d5a0ec40b5692",
+      "review": "current contact-sheet visual reinspection"
     },
     {
       "file": "assets/store/marketing/id-ID/08-report-preview.png",
-      "sha256": "c4b181c38dcc961ea36a8c7e773628ef0b17c70b430b9a98c9549e129e46e8f6",
-      "review": "visual inspection"
-    },
-    {
-      "file": "app/src/androidTest/assets/store-fixtures/id-ID.json",
-      "sha256": "8720e4eb7b6592b2d9e89cb5c522f92efa533068aac1774684bec206d6074f84",
-      "review": "fixture wording and unit-label comparison"
+      "sha256": "b31063c8e628dc06ffbbcfae7442f48cbe03f62f09eb086c483e820ec8760eae",
+      "review": "contact sheet plus full-size report-preview reinspection"
     }
   ],
   "findings": [
     {
-      "id": "mixed-01",
-      "severity": "release-asset-blocker",
-      "locales": [
-        "id-ID"
-      ],
-      "files": [
-        "assets/store/marketing/id-ID/08-report-preview.png"
-      ],
-      "observed": "Report preview remains at Menyiapkan pratinjau laporan... with no PDF page or pagination visible.",
-      "recommendation": "Wait for actual PDF rendering and pagination before capturing; fail the capture instead of exporting the loading state. Reinspect regenerated Indonesian report panel."
-    },
-    {
-      "id": "mixed-02",
-      "severity": "linguistic-correction",
-      "locales": [
-        "pt-BR",
-        "pt-PT",
-        "pl-PL",
-        "sv-SE"
-      ],
-      "files": [
-        "assets/store/marketing/pt-BR/08-report-preview.png",
-        "assets/store/marketing/pt-PT/08-report-preview.png",
-        "assets/store/marketing/pl-PL/08-report-preview.png",
-        "assets/store/marketing/sv-SE/08-report-preview.png"
-      ],
-      "observed": {
-        "pt-BR": "Radio quantity reads 1 itens.",
-        "pt-PT": "Radio quantity reads 1 artigos.",
-        "pl-PL": "Radio reads 1 sztuki; batteries read 12 sztuki; water reads 6 butelki.",
-        "sv-SE": "Radio reads 1 stycken (also visible in panel 02)."
-      },
-      "cause": "Synthetic fixture unitItems/unitBottles strings are reused with multiple numerical quantities; they are not count-aware.",
-      "recommendation": {
-        "pt-BR": "Use quantity-neutral abbreviation un. for unitItems.",
-        "pt-PT": "Use quantity-neutral abbreviation un. for unitItems.",
-        "pl-PL": "Use szt. for unitItems; for the fixed six-bottle and eight-tin fixtures use butelek and puszek respectively, or generate unit inflections by count.",
-        "sv-SE": "Use quantity-neutral abbreviation st for unitItems."
-      }
-    },
-    {
-      "id": "mixed-known-global",
-      "severity": "known-release-asset-blocker",
+      "id": "mixed-03",
+      "severity": "minor-visual-polish",
+      "blocking": false,
       "locales": [
         "pt-BR",
         "pt-PT",
@@ -163,16 +493,398 @@
         "tr-TR",
         "id-ID"
       ],
-      "observed": "In-app navigation brand is clipped under the status bar/crop in the native screenshot embedded in panels 01–07.",
-      "recommendation": "Use root-owned safe-inset fix and recapture; do not approve the current assets.",
-      "alreadyKnown": true
+      "observed": "In current API 36 panels 02–07 the Overview navigation background pill remains filled, while the actual section is identified by gold navigation text and matching page title/content. The earlier physical Fire set showed the filled pill on the active section.",
+      "examples": [
+        "assets/store/marketing/id-ID/03-family-plan.png",
+        "assets/store/marketing/pt-BR/06-voice.png"
+      ],
+      "recommendation": "Consider waiting for the navigation selection-background transition to finish before capture. No incorrect record content, missing glyph or clipped action was observed."
+    }
+  ],
+  "blockers": [],
+  "resolvedFindings": [
+    {
+      "id": "mixed-01",
+      "status": "resolved_on_current_capture",
+      "evidence": "id-ID/08-report-preview.png now displays a complete first PDF page, localized labels/records and 1 / 2 pagination; the loading-only image is gone."
+    },
+    {
+      "id": "mixed-02",
+      "status": "resolved_on_current_capture",
+      "evidence": "The radio is now quantity 2: pt-BR 2 itens, pt-PT 2 artigos and sv-SE 2 stycken are grammatical. Polish report uses 2 szt., 12 szt. and 6 butelek. No incorrect singular unit remains in the inspected first pages."
+    },
+    {
+      "id": "mixed-known-global",
+      "status": "resolved_on_current_capture",
+      "evidence": "PrepTrove brand and translated tagline are fully visible in panels 01–07 across all six contact sheets. Full native id-ID/pl-PL overview images confirm the brand begins below the status bar. Overview hero lines no longer overlap."
     }
   ],
   "observations": [
-    "All six locales show genuinely localized navigation, core headings, synthetic record values and typed expiry commands; brand/technical PDF terminology is retained intentionally.",
-    "No missing glyphs or broken diacritics observed in the reviewed Portuguese, Polish, Swedish, Turkish or Indonesian text.",
-    "Long marketing headlines fit within their panels in the current contact sheets.",
-    "The five fully rendered report-preview panels show localized report labels and records with no observed text overlap or cutoff; body type is small because the page is shown at fit-page scale.",
-    "Cards continuing below the scroll viewport are normal scrolling content and were not reported as clipping."
+    "All eight marketing panels per locale were reviewed through the current contact sheets; all six report previews were additionally viewed at full PNG size.",
+    "Headlines, navigation, typed commands and synthetic records are localized. Brand names, PDF and accepted loanwords are intentional.",
+    "No remaining observed glyph loss, text overlap or material clipping in these marketing assets. Scrolling content continuing below the viewport is not a clipping defect.",
+    "The six report-preview first pages render localized records/diacritics correctly. The fit-page body text is small but coherent at full-size PNG inspection.",
+    "All six first-page PDF panels render, all reviewed quantity labels remain grammatical, the brand is visible and hero lines do not overlap. No blocking localization/render defect observed on this current API 36 set."
+  ],
+  "limitations": [
+    "AI linguistic/visual review, not independent human or specialist certification.",
+    "All eight panels per locale were reviewed via newly generated contact sheets; the six report-preview panels were additionally viewed at full PNG size. Native screenshot originals were not separately inspected during this API 36 recheck.",
+    "Only the first visible PDF page was inspected; no complete multipage PDF audit is claimed.",
+    "These current images are API 36 emulator captures from coordinating-agent-reported CI run 41561192222, not physical Fire captures.",
+    "No speech recognition, audio output, screen reader, safety, legal compliance, store eligibility or final release approval is established by this screenshot review.",
+    "Approval applies only to the exact listed hashes and includes the disclosed minor navigation-highlight observation. Modified or recaptured images require review."
+  ],
+  "priorReview": {
+    "releaseAssetsApproved": false,
+    "findings": [
+      {
+        "id": "mixed-01",
+        "severity": "release-asset-blocker",
+        "locales": [
+          "id-ID"
+        ],
+        "files": [
+          "assets/store/marketing/id-ID/08-report-preview.png"
+        ],
+        "observed": "Report preview remains at Menyiapkan pratinjau laporan... with no PDF page or pagination visible.",
+        "recommendation": "Wait for actual PDF rendering and pagination before capturing; fail the capture instead of exporting the loading state. Reinspect regenerated Indonesian report panel."
+      },
+      {
+        "id": "mixed-02",
+        "severity": "linguistic-correction",
+        "locales": [
+          "pt-BR",
+          "pt-PT",
+          "pl-PL",
+          "sv-SE"
+        ],
+        "files": [
+          "assets/store/marketing/pt-BR/08-report-preview.png",
+          "assets/store/marketing/pt-PT/08-report-preview.png",
+          "assets/store/marketing/pl-PL/08-report-preview.png",
+          "assets/store/marketing/sv-SE/08-report-preview.png"
+        ],
+        "observed": {
+          "pt-BR": "Radio quantity reads 1 itens.",
+          "pt-PT": "Radio quantity reads 1 artigos.",
+          "pl-PL": "Radio reads 1 sztuki; batteries read 12 sztuki; water reads 6 butelki.",
+          "sv-SE": "Radio reads 1 stycken (also visible in panel 02)."
+        },
+        "cause": "Synthetic fixture unitItems/unitBottles strings are reused with multiple numerical quantities; they are not count-aware.",
+        "recommendation": {
+          "pt-BR": "Use quantity-neutral abbreviation un. for unitItems.",
+          "pt-PT": "Use quantity-neutral abbreviation un. for unitItems.",
+          "pl-PL": "Use szt. for unitItems; for the fixed six-bottle and eight-tin fixtures use butelek and puszek respectively, or generate unit inflections by count.",
+          "sv-SE": "Use quantity-neutral abbreviation st for unitItems."
+        }
+      },
+      {
+        "id": "mixed-known-global",
+        "severity": "known-release-asset-blocker",
+        "locales": [
+          "pt-BR",
+          "pt-PT",
+          "pl-PL",
+          "sv-SE",
+          "tr-TR",
+          "id-ID"
+        ],
+        "observed": "In-app navigation brand is clipped under the status bar/crop in the native screenshot embedded in panels 01–07.",
+        "recommendation": "Use root-owned safe-inset fix and recapture; do not approve the current assets.",
+        "alreadyKnown": true
+      }
+    ],
+    "reviewedFiles": [
+      {
+        "file": "artifacts/store-visual-review/pt-BR.jpg",
+        "sha256": "8efddd7f4ffa3066fb163a832a60d6d2bb9df88275eb8c5e2ba2ddc37d684521",
+        "review": "visual inspection"
+      },
+      {
+        "file": "assets/store/marketing/pt-BR/08-report-preview.png",
+        "sha256": "dff57fd826cdc2d276416deb21278af24f60c44a1acda996435dfa433108e234",
+        "review": "visual inspection"
+      },
+      {
+        "file": "app/src/androidTest/assets/store-fixtures/pt-BR.json",
+        "sha256": "c6ff67d43b7eda0ba206ac6ce3a4906adc8159cfbd82303d5dc39de36a7bd2b2",
+        "review": "fixture wording and unit-label comparison"
+      },
+      {
+        "file": "artifacts/store-visual-review/pt-PT.jpg",
+        "sha256": "73d669fb5aa7c4e1c3ee8531fe60a79eebba31b697561a2b0c9fa4096a36514e",
+        "review": "visual inspection"
+      },
+      {
+        "file": "assets/store/marketing/pt-PT/08-report-preview.png",
+        "sha256": "2d73b39e4cb1035ef4bec43ff248c3d7d2876dd7b50d76a40df002108c878fdb",
+        "review": "visual inspection"
+      },
+      {
+        "file": "app/src/androidTest/assets/store-fixtures/pt-PT.json",
+        "sha256": "d13d967b25d6b665113c9b3cd907a83e46949326dbee68dabcbd4132d24a84b7",
+        "review": "fixture wording and unit-label comparison"
+      },
+      {
+        "file": "artifacts/store-visual-review/pl-PL.jpg",
+        "sha256": "81399a88fc4db7b0870b0236f0d65ddca4b144438032b35a64d051ed7e63086c",
+        "review": "visual inspection"
+      },
+      {
+        "file": "assets/store/marketing/pl-PL/08-report-preview.png",
+        "sha256": "d5382c9b233df2e85f32bd1f60582c1d276879a8fbb3b34b5b9f243ec00367d6",
+        "review": "visual inspection"
+      },
+      {
+        "file": "app/src/androidTest/assets/store-fixtures/pl-PL.json",
+        "sha256": "26804319922db0ecb64b2faf40aa2f939da0b04cc5f613873360e07ed02470aa",
+        "review": "fixture wording and unit-label comparison"
+      },
+      {
+        "file": "artifacts/store-visual-review/sv-SE.jpg",
+        "sha256": "a052360e683ec429ae8a469df4e9b927175183dea78ee72ae20b234906632db2",
+        "review": "visual inspection"
+      },
+      {
+        "file": "assets/store/marketing/sv-SE/08-report-preview.png",
+        "sha256": "9076570655bfa472889e4e1101f3bb806b6b7fb6b5965b4e51f098566ecf5c0c",
+        "review": "visual inspection"
+      },
+      {
+        "file": "app/src/androidTest/assets/store-fixtures/sv-SE.json",
+        "sha256": "0d393032e5cbe2e9b28fd66e0d71deebd7a046349b4909ffac7bd84b82eb47b1",
+        "review": "fixture wording and unit-label comparison"
+      },
+      {
+        "file": "artifacts/store-visual-review/tr-TR.jpg",
+        "sha256": "dd1c99ccc4a19563f446071fbb277d5a0df229c0dae334e263646225d405d1ef",
+        "review": "visual inspection"
+      },
+      {
+        "file": "assets/store/marketing/tr-TR/08-report-preview.png",
+        "sha256": "a51556f12068292158a7e9366e97373bf718d9ec4efdd34b7f37d5e59cbba3e4",
+        "review": "visual inspection"
+      },
+      {
+        "file": "app/src/androidTest/assets/store-fixtures/tr-TR.json",
+        "sha256": "ca9a9ef2d25dc58da13554c94093834f326574089920485cead0bd891097b28b",
+        "review": "fixture wording and unit-label comparison"
+      },
+      {
+        "file": "artifacts/store-visual-review/id-ID.jpg",
+        "sha256": "144d93933b34f350097d15e8dc53d376249c229d4a73cd71d69c3e866dd8a672",
+        "review": "visual inspection"
+      },
+      {
+        "file": "assets/store/marketing/id-ID/08-report-preview.png",
+        "sha256": "c4b181c38dcc961ea36a8c7e773628ef0b17c70b430b9a98c9549e129e46e8f6",
+        "review": "visual inspection"
+      },
+      {
+        "file": "app/src/androidTest/assets/store-fixtures/id-ID.json",
+        "sha256": "8720e4eb7b6592b2d9e89cb5c522f92efa533068aac1774684bec206d6074f84",
+        "review": "fixture wording and unit-label comparison"
+      }
+    ]
+  },
+  "captureProvenance": {
+    "platform": "API 36 emulator",
+    "ciRun": "41561192222",
+    "ciRunStatus": "passed, as reported by coordinating agent",
+    "physicalFireCapture": false
+  },
+  "previousApprovedMarketingHashes": [
+    {
+      "file": "assets/store/marketing/pt-BR/01-overview.png",
+      "sha256": "b7de47aed805065d51a1743dc398feb52ba4bd648288c701ee0dfbbc5abd8b71"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/02-supplies.png",
+      "sha256": "79266607a5042d4e99f9c395f46efc070170879790943809476fc19b0ebf26d8"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/03-family-plan.png",
+      "sha256": "bce20fc417d19c0512b034172cf1896a82688b9dd47a5eec2c7e15264d46f823"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/04-reminders.png",
+      "sha256": "9c5f8781a3d9babfe890e6665b729b67eba644cbb56f4a349aee53fc16b5dd57"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/05-checklists.png",
+      "sha256": "e6421a8dd31d4ca1c81ffd2ec1ef0c45c758def5411fa0bf8542d24025d5ff9f"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/06-voice.png",
+      "sha256": "2cca25c0eea6a0d66cd124e4054d8e3101af2e00526844e173d63fef588440b1"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/07-saved-offline-kit.png",
+      "sha256": "748b4dad6c10185010b7fc7d89981a9fad52224d746eb90ccd8c0d371dcdbd4b"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/08-report-preview.png",
+      "sha256": "e4d4808576a02840ba1b24dbd3568160ef6adb06583b93e50d43d61477028d8d"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/01-overview.png",
+      "sha256": "ef92b9c996d1ca1e2bd338167e6424c711a736aa59ccb38e3b109eca8aa6374f"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/02-supplies.png",
+      "sha256": "5f503cc406fbb45ad49b03bc98b07694528dacf481a3401325012b2deb073427"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/03-family-plan.png",
+      "sha256": "2840dfbcc25b130d6aa6758e9abeaecaf885e13ff0cc96c15f6be5432bf0c603"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/04-reminders.png",
+      "sha256": "4f6967d5a4bc7eb55065086f437adb44eaa09fb3d1e0afc40e62978bf4b3964d"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/05-checklists.png",
+      "sha256": "8044d97087c72d79fcba3ae2e70c3462f6909254d8d87b029d4f2cdb071e24b9"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/06-voice.png",
+      "sha256": "e525cb0f4ccd72012a12911ca02707ea0598625806297ef0c15c4fae30f236f5"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/07-saved-offline-kit.png",
+      "sha256": "cc2af80c052e0c2cd51bae1e27d4022329812785d2dba5b778969e50eba204d8"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/08-report-preview.png",
+      "sha256": "4bf6a91631936e247a43f669a46a00bcbe6c250f35d7c3751faaa83987313568"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/01-overview.png",
+      "sha256": "964692b2c69340c804ec0f3f3c80f364cd5e908057152b7574dd10f88de5778e"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/02-supplies.png",
+      "sha256": "315e85c716beca1b380e58c41770e7705224fd108a9edcf4c6bc66fdbbab9d96"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/03-family-plan.png",
+      "sha256": "1c065c8feb59c36707f8b5161f4441bdb537874440cb87e009cd4f78bd9b6786"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/04-reminders.png",
+      "sha256": "78dc785db1339ddd4b656cd1b2f8091d7831d32a107ec0cb80f7d5078dd6226a"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/05-checklists.png",
+      "sha256": "8146d0fe60b3d9805059bf63fbcef91cf633b717613bbfeccfee84088114be1e"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/06-voice.png",
+      "sha256": "912cec2582ebf38df375b411bb1dd9532ba720d5fdb12103280ce1f7b493b9d9"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/07-saved-offline-kit.png",
+      "sha256": "3cb026944e8d39081a01e7e22f5c1efd2ca43cd4e4e5d0978e2b096124b1030c"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/08-report-preview.png",
+      "sha256": "f3017969058e51ccc87de5644677eae4e2e9a9de94885750caeaf324119403f2"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/01-overview.png",
+      "sha256": "5822ec7039664e7f138d87b61adeec034c97b585a6cafecc3ebfae709df9bc6d"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/02-supplies.png",
+      "sha256": "7cb972c37809c76e34ebba7af7e334ff4d7a62c45619db17fe6c08103669f8e0"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/03-family-plan.png",
+      "sha256": "adda241e9489e26656154f00634fbfffcb693ac675c8907ffd9e27d60e964415"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/04-reminders.png",
+      "sha256": "a5e844b921d44d5e9f9910a758340fc3559cc1359e5c702a928f7216bcf7df52"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/05-checklists.png",
+      "sha256": "c4238fd2e0a934fc4297810fb40a4084b692ab6e0223bb3f3f84d13995810bd1"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/06-voice.png",
+      "sha256": "2866b3d944c960c581fcf5028c6beb9f0ac6f38fed05aa45cb6eff1f4f458f53"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/07-saved-offline-kit.png",
+      "sha256": "5104389318cc7ec74958d0deec50dc91f9a27ea97186c033e29b02ec3a6327e5"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/08-report-preview.png",
+      "sha256": "d70aad78987bf6ff35bba82bfac97a0aa32dd6b713bc939f9a145a9670a4cc74"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/01-overview.png",
+      "sha256": "7193436ae51aea96c57aac67a231443373c5a3873a0dc5f09546653f7718d4d8"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/02-supplies.png",
+      "sha256": "1923e38fa7a44adc27c0e14eedd5b9a5d21508e119741e0d838327e0162cf8e5"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/03-family-plan.png",
+      "sha256": "4a232b61bc98bdd8143dde0fe60c885c38856db5837350267186dfb64f81eb04"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/04-reminders.png",
+      "sha256": "e4e1f9c1b0b54b700e5e2b12669c06f62b86f4dd19b9332ff1764e9720454b48"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/05-checklists.png",
+      "sha256": "f56ef544ff30a677d026e69c487533b585e7c47d240e1ca79ed768115ef505a6"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/06-voice.png",
+      "sha256": "f032c1979da52f86184c95c5d2c60e362ce1666d93f6ae60feadf6ffff4b2bed"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/07-saved-offline-kit.png",
+      "sha256": "ffd8b03c54eb603d859ecdf141f22eaa4122f11fd7acbf07da048feef32f69f2"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/08-report-preview.png",
+      "sha256": "365bb131a076a19db18cc5017e27036210764a524a58321c537fcd7fbfb4172f"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/01-overview.png",
+      "sha256": "33c12825fb678aa5f26e170d425caa94be087113c34100f4dbddc2a25d912c4b"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/02-supplies.png",
+      "sha256": "035e5fd4e37546124b493a2cf4660ebfee417aef4fa97797eb5e738a4c5907ce"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/03-family-plan.png",
+      "sha256": "e59c79a4d8b63f816e4a5ba783c58f91af30783342d67f1fca20f8e0b8cfc0bf"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/04-reminders.png",
+      "sha256": "82b5738ddd36494625e8b77bc0f94ae3f651485f6528d2eadd15306b0878f0a8"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/05-checklists.png",
+      "sha256": "c105517a40fc95cbc735c6f00fa40de0876e8d99538bba7611fee5df6ad947e9"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/06-voice.png",
+      "sha256": "5b91caacb16c4c86fe2db2a40eb9c1a8b6520c970ba7996f8eca7f3c711d1cd0"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/07-saved-offline-kit.png",
+      "sha256": "9809f2e55c08a773cda8dabc6ba6460221af3cc779c2ab30ae934b659309f103"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/08-report-preview.png",
+      "sha256": "dc6e0de53d4d36420513d06f0e9e2f3899de6c8e4c2e16043974d8364c91725e"
+    }
   ]
 }

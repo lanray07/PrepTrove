@@ -65,7 +65,7 @@ def main():
     assets.mkdir(parents=True, exist_ok=True)
     (assets / 'qa-expectations.json').write_text(json.dumps(expectations, ensure_ascii=False), encoding='utf-8')
     report = {'kind': 'qa_only_not_store', 'releaseApproved': False,
-              'safetyContent': 'source English only; no specialist sign-off granted',
+              'safetyContent': 'neutral planner and external official links only; no cached safety recommendations or specialist sign-off claimed',
               'locales': {locale: {'strings': len(data[0]), 'pluralGroups': len(data[1]),
                                     'sourceEnglishSafetyKeys': data[2]} for locale, data in prepared.items()}}
     output = ROOT / 'artifacts'

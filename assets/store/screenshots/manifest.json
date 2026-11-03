@@ -1,12 +1,176 @@
 {
-  "capturedUtc": "2026-11-02T22:55:39.481917+00:00",
+  "capturedUtc": "2026-11-03T01:54:49.476012+00:00",
+  "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+  "captureFingerprint": "6454204bcb3e82a982819f8f85b1661fb396e1cebd5df678ea5156c3e482eaf2",
+  "appApkSha256": "134d1b9ff23bf3c370d3bab2cbc299c506764aa1fed66a55c841d6a3e331de7e",
+  "testApkSha256": "cddabb1edeb1743ca4744f2ea3facd62e0ca7c5ba4dbfc189737f531fd02459b",
   "screens": [
+    {
+      "file": "assets/store/screenshots/ar/01-overview.png",
+      "locale": "ar",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "16b6f3b504cf52fd8bbdb13195b7e9758b9ebf29bcda9008a80cc5ac1a9c792c",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ar/02-supplies.png",
+      "locale": "ar",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "e97941d7af6eaa5d1bf39a1b411a9eb955cb2cc2dbbcd63175985ac404bb933e",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ar/03-family-plan.png",
+      "locale": "ar",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "c3457fc0472bd9463ec4555a686079d72d0015cc239d91b94a7f18c7182ed793",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ar/04-reminders.png",
+      "locale": "ar",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "f897c27ddcb9404d5043a8d6b36ebe510fa915c555aa4ec74337d33e717622b6",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ar/05-checklists.png",
+      "locale": "ar",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0f9bd24368c972e949f36361c2e812deeccc924dc92ef631e1dd2fa560ff73b3",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ar/06-voice.png",
+      "locale": "ar",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "8244cc87702a7b97c3498c671eee4698b58b2873e74211751aa2ac1111b496a0",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ar/07-saved-offline-kit.png",
+      "locale": "ar",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "b3e1210a2d0ddcab8c1f5ca10b0c8b5fbdfb538cefb75e0efbc8430147190da3",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ar/08-report-preview.png",
+      "locale": "ar",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "d7a3fbfd5ab1d140ecf8b0590c2b40a8b9b6d7aeb8bd25675f1a7fea1fc212a5",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/de-DE/01-overview.png",
+      "locale": "de-DE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "5ab6f568cbe516688ba2c1d1ddda7151906b4d6425d4a8f2307ea1d93202a2e2",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/de-DE/02-supplies.png",
+      "locale": "de-DE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "7a17d03d4f2c662651a26bc72304ce763d74a02eccb746cc090e30378c8f3d40",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/de-DE/03-family-plan.png",
+      "locale": "de-DE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "be696663e702c570d11087f28d910695e77a5e1ea1a11b6826b4e71d7619a685",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/de-DE/04-reminders.png",
+      "locale": "de-DE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "ab882e9b1e19a52d635594605bd95c01f937a372180230aaf5589e1c8d478ca5",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/de-DE/05-checklists.png",
+      "locale": "de-DE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "dd4f347414d964746e1f6d88bcb5aae17bed3fd8fc71fe27d02ede6e574e4d93",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/de-DE/06-voice.png",
+      "locale": "de-DE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "26917de6b5bd2b102bf6704201f7d2796618773b66d52d22e3f123a7bdfc62f3",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/de-DE/07-saved-offline-kit.png",
+      "locale": "de-DE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "e8b607103b1e5a929a89e6d6ca51d16bc3e79fcc14f6a20fe5cac477c7321e72",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/de-DE/08-report-preview.png",
+      "locale": "de-DE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "aaddf93fc26a668213fc51f776c0db00da96144a8eb9705135045d8a2861413d",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
     {
       "file": "assets/store/screenshots/en-AU/01-overview.png",
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "45342a9f96b5cd266565d16eaf7f846188232bcda13fc63c5c7fd10f5041e69a",
+      "sha256": "6341e707af3631c98de5e0c286eeec842166c6ce0ed9f441e0083f65946f56b2",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -16,7 +180,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "07d4c5723a4cc123177c188551d23178c6977a2f5ac88bd4b32f5213f088b514",
+      "sha256": "55dbeef5dcc6329fa36d455937ac5e235069f1c8d194ea3fea4f0048b210d9c2",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -26,7 +190,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "b6d1d85d44d588cc2896a3df4d94f8e5d8944562d1c700e0e28ed7b810e1e03d",
+      "sha256": "439514c2cb7022e56ab73a3502cbeb7985d49be37fc841d77b6eccc0b6cbb9f0",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -36,7 +200,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "5f983f623103a8a17fa59cf8f614573160074291e91d300e69e4a3aebc7d049e",
+      "sha256": "75fe70b2af622fc325244be51ef554fe6855bb49a737698b341a9ba1586f9095",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -46,7 +210,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "4ef7cdb178645a971dd8349d83425cf4649f6dddcc26f1ab3b9f6778a0dd3a88",
+      "sha256": "cabec006e617fc1983d35dcd78844c2945d6ac1bdfa7ef0772412c6528415438",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -56,7 +220,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "95ac6d24a692bd5c107add5a2775ab09f3dbbe4f37840ddea96827193e805146",
+      "sha256": "892f925dc7ab72fca1b73bcbee8c7dd2194ffddf222166e3a98c5268a8b2ff51",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -66,7 +230,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "f8da48a965bb276609bbce4f9298676b4db9e6027f6ef61725af6abe5db8f752",
+      "sha256": "c4d3fa81b4a235b40da7afbfb03f0a6718a1875f27c68a5bfc29480e5b13dd49",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -76,7 +240,7 @@
       "locale": "en-AU",
       "width": 1920,
       "height": 1200,
-      "sha256": "a9e1b0c6523e68ad327f41f49e1da717e64b12d1f300b84fa95cf0c3f9a3d61b",
+      "sha256": "473b263bbdfe0812679ab4074c1a6f015b619f47c0cd2e393b83e6cf1165836a",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -86,7 +250,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "5e8f171cace8c541a2f0ec19a97171ea5145d15f1201945a04007b6215f6fe15",
+      "sha256": "d5be681908decdc52c3b768499813cf3c23a5d3efdb7c72eeaa9c57b77752742",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -96,7 +260,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "88f7ad49035ab2fe1e4811385b6e5fa4e3a2fb270cdab44dc5a3e6d68af5cacc",
+      "sha256": "5fd707495ed322fdfcf4e2944d502fc9cf7c288a3cd672e8327b2150ce0e42d1",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -106,7 +270,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "b6d1d85d44d588cc2896a3df4d94f8e5d8944562d1c700e0e28ed7b810e1e03d",
+      "sha256": "a6e0254804b9c739100736226dc3d56dd27b21a9760f069e904fa153f9acb8b7",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -116,7 +280,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "a09eaecb3bd01efa6c68baa4353501608e1f4275a2c725092fcbdd0d448fe8a2",
+      "sha256": "c66b2ceae3312e632f996b53f4a1ebcc416050149ed84db178e52e86c9341f4c",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -126,7 +290,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "1e8e391cc4e8760659533c85fadca6d724cedc8a64397170c733dcc438ec02b8",
+      "sha256": "25dd4b7838a1615e8d5d272401c87c5d3ad0adec77700cda43f8e07bb6720dbb",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -136,7 +300,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "2c01b31a9daa8c49a8e782ed2f5e14a2f3645e7436c296b61472fb3efd2491bb",
+      "sha256": "892f925dc7ab72fca1b73bcbee8c7dd2194ffddf222166e3a98c5268a8b2ff51",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -146,7 +310,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "a805594c665c4958ced2df71b5da9f7abb9395d5e988cd7cbc16ba533b0681fc",
+      "sha256": "c4d3fa81b4a235b40da7afbfb03f0a6718a1875f27c68a5bfc29480e5b13dd49",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -156,7 +320,7 @@
       "locale": "en-GB",
       "width": 1920,
       "height": 1200,
-      "sha256": "a9e1b0c6523e68ad327f41f49e1da717e64b12d1f300b84fa95cf0c3f9a3d61b",
+      "sha256": "473b263bbdfe0812679ab4074c1a6f015b619f47c0cd2e393b83e6cf1165836a",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -166,7 +330,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "1c805ca64ad7a84d1211fdf5ba30e86e35244e7cf16772fbd291e7304e9fde0d",
+      "sha256": "47f0cd4721f695331346de2351eb45c02ce8e7fc414203384e57f31da3242b2e",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -176,7 +340,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "9953d64c4908c3669563cac76f6f0e5667423a46e727cbe7b206bb562f9d9955",
+      "sha256": "bd04b5adc1992686d79cbc0566fcdb54be9c1aa1079d7db32920e41aa5e9d64d",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -186,7 +350,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "48fca1a4890895085e2cdec8e5597cc5dfc74b609539b8dc551aec0391618fc4",
+      "sha256": "439514c2cb7022e56ab73a3502cbeb7985d49be37fc841d77b6eccc0b6cbb9f0",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -196,7 +360,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "12ec81ccb40f703c23218592623744b259f6acce3828bf617f47e76d92f701ce",
+      "sha256": "473596819bcd8254faf497524e4751662f3894aea07c81941ab91a46880badb1",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -206,7 +370,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "4b5e311d1a6aaa1619a21669b01924bf758fcc40979a5d2e2f4104d9e18be827",
+      "sha256": "cabec006e617fc1983d35dcd78844c2945d6ac1bdfa7ef0772412c6528415438",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -216,7 +380,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "9616dfbdbf60a68d886f02f40459298963582bd4299305fd5da2f22fc0b1a2d5",
+      "sha256": "892f925dc7ab72fca1b73bcbee8c7dd2194ffddf222166e3a98c5268a8b2ff51",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -226,7 +390,7 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "f266f6f7d4f874de366ee7de48f28bb7984dc4284e374dfccd960555e963700f",
+      "sha256": "6daecdeccab17b4ab8bc613c0af87c314f813806ce7f7634b8b9c710d0679b74",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false
@@ -236,7 +400,1367 @@
       "locale": "en-US",
       "width": 1920,
       "height": 1200,
-      "sha256": "604727cbe0e2dbd31aa310d51805239086ba5cf3ef1dec5bcb3258e69ea5fd4a",
+      "sha256": "8492284f878983ae179445ec6af157bb7e2e8492fbb3578f0b85b64ec3dc813a",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-419/01-overview.png",
+      "locale": "es-419",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "f0a19a36402b799f435c5ed121a2b6d3998979b0d3d9bd38a7cdfa0093516708",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-419/02-supplies.png",
+      "locale": "es-419",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "eac7a1ffcf129fa2a16a674d28148db7ab491ccbfab4f7b6d0f005f3920871ca",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-419/03-family-plan.png",
+      "locale": "es-419",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "a061b7eeb53eabd11cabacb8c41c4175a85e228262442680135b88c1d24c0f6c",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-419/04-reminders.png",
+      "locale": "es-419",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "3b05d59a4f94849d0a9d32be0d31be7448ba39f9ab8d9172354a24d46316a273",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-419/05-checklists.png",
+      "locale": "es-419",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "1f5e9891e9ad1b93853a4a1692eb45737af1af903acc2b2960c8e7fcb93705cf",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-419/06-voice.png",
+      "locale": "es-419",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "1b4b098a109e07462d9520630b358d8b18da0b7c5886505162a4777218cecc73",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-419/07-saved-offline-kit.png",
+      "locale": "es-419",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "da76dc7bb9d26c21541ab67efcce407726b86ae249f78ac5e0a967e5a38ef242",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-419/08-report-preview.png",
+      "locale": "es-419",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "6f1fe88fc22ea881d137ae21ae840db660dbbb7d79bcb2cad9f71db47804e19f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-ES/01-overview.png",
+      "locale": "es-ES",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "48027fc2e467e028865ded3d693f9076956d7deeda42f677a6e4038391dc5245",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-ES/02-supplies.png",
+      "locale": "es-ES",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0cd7424cd6358b4033fdbc5ad418ca98eec1d93f97a313bb57eb98f0d051ceec",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-ES/03-family-plan.png",
+      "locale": "es-ES",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "ea7bffa21cc9d484909a9dc9cabd3826cd34471a7c1c6629af0a7e21f86a38fd",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-ES/04-reminders.png",
+      "locale": "es-ES",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "5e68c962b11e1c79ef5aacf8ad2b290e36b328c338de305e26ee781bfea8973c",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-ES/05-checklists.png",
+      "locale": "es-ES",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "870a09f1c8c13016a45453c62ea0521a8ef037d74aa9c43d4b9accef5b128f45",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-ES/06-voice.png",
+      "locale": "es-ES",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "7fb5fefb17544a61cc98630693e03072f3d9d5ac2213ad4cb13ebd70441357ea",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-ES/07-saved-offline-kit.png",
+      "locale": "es-ES",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "1df1f654d9087659e6a0eee9ec0660f47a5d3b3f7e4ca78627d344461356199d",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/es-ES/08-report-preview.png",
+      "locale": "es-ES",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "bce9b479b1c65dbba16104f628f63d0054e741263c8a417e91acc48f1745cc58",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-CA/01-overview.png",
+      "locale": "fr-CA",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "7d911b9e24cf239abcd374601ea325c69516d9847b82799bcb78988415d077de",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-CA/02-supplies.png",
+      "locale": "fr-CA",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "3106444e539d1cf91801d3099129e6f36f5bb719b6461d0587504cd0e9f1d176",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-CA/03-family-plan.png",
+      "locale": "fr-CA",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "23c723d074c6c37c2b9da615ba5f30779f3420fd2d7a8ee70d6f33fb1ac74b82",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-CA/04-reminders.png",
+      "locale": "fr-CA",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0e3cdeeae8207a80e652564d0c174252f7dc763d473c5e5c360dc87d6a9ff35f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-CA/05-checklists.png",
+      "locale": "fr-CA",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "15885aea1cb0d70ed35bf4f209ef71d46e8031fd93db534ec8efcacc5ccf9bb0",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-CA/06-voice.png",
+      "locale": "fr-CA",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "42ac3b5c632367016d7e4d221a855b2a1f35508ea7c00e3fcd7c04b9d12a9adb",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-CA/07-saved-offline-kit.png",
+      "locale": "fr-CA",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "09404b88f3bc5e1ef9ec80bca72de540ce96fba74c0105fe40d152aebafe69d9",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-CA/08-report-preview.png",
+      "locale": "fr-CA",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "dc880e65cac7554a1ad8a713d7c8b9ef415006f2b2b8e80e4b0aa09d1b28c51f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-FR/01-overview.png",
+      "locale": "fr-FR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "4f214e4e466b17f9ed8e3a4c9e51db22b95600ed832270703723e2c3e050069c",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-FR/02-supplies.png",
+      "locale": "fr-FR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "fafc59cf4958af22b096d21255e751ef96185cc5090b5c9a7a86600cc051e51f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-FR/03-family-plan.png",
+      "locale": "fr-FR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "7412aa2cca711bb50e2cd999061ca9c48fbb62fd69e66601a96c0b8bf5396483",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-FR/04-reminders.png",
+      "locale": "fr-FR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "a8d0674180df6da4080bcc90e3065180d636ab8583ec3d1f6f7c91251e7d6de5",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-FR/05-checklists.png",
+      "locale": "fr-FR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "5c795b51a0ae1642d90521072e2e48115a8a443e59f5f53dfbb22ebc21aaa7fc",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-FR/06-voice.png",
+      "locale": "fr-FR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "94fee7f19727aebb127f1f328d76491142aefedc2d07ae183be1e91d3540c9d7",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-FR/07-saved-offline-kit.png",
+      "locale": "fr-FR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "a4977ad9141c6b149d9f885b9d70f53cf8c225f33f0e3763ff9ad85ca6f3ba9c",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/fr-FR/08-report-preview.png",
+      "locale": "fr-FR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "08d564ac63937f31ad995c6ca9822a247f6519b2a6b9d9adc464c5ee18bff3fe",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/01-overview.png",
+      "locale": "hi-IN",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "f4ed5a3b01bf26530d8b0465b165f643038889bd5a079baefef866bf65304025",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/02-supplies.png",
+      "locale": "hi-IN",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "d92acc952999827e6392f186674a66e10af73105a5e7c750ec3d5adc6e972b16",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/03-family-plan.png",
+      "locale": "hi-IN",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "35d56cb9ce19c3ea83460b054d1546004e4c26208c6f6059529c2765f7edf160",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/04-reminders.png",
+      "locale": "hi-IN",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0e50bc5f4bae2f1ed48d93583f7247e9ce7a173d21683665d210e13e8cc67404",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/05-checklists.png",
+      "locale": "hi-IN",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "dcb7b33bbc9de2bb1da548d8d2cb39cda96c3476d818602dc2644ef2aae233f2",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/06-voice.png",
+      "locale": "hi-IN",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "176433f6f6ad373c09c2f4e076b71cde0b3cf3dd6d7ea6b8c7b78dcde436d188",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/07-saved-offline-kit.png",
+      "locale": "hi-IN",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "1de52e5354f9f85104e2c06aaa7d5472ebd57b9d5bcf6c5f6ba0e677f8138b92",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/hi-IN/08-report-preview.png",
+      "locale": "hi-IN",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "305bc08499bf274ad9e234effe61e1360267049eb39c90be9a31de40e93ebf04",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/id-ID/01-overview.png",
+      "locale": "id-ID",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "3ca55bcd72463f6d7eff53e62009c7f7ab69809829727a46ceb4eb2c3190111e",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/id-ID/02-supplies.png",
+      "locale": "id-ID",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "aa4a726fa0e5bb5e99a63c01024e88bee2d410d62e798a3d5ffefb8bb4f8ec73",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/id-ID/03-family-plan.png",
+      "locale": "id-ID",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "2e82ee09e4e994f63401c3a6b33fdc96f4567f654346b5426ab1099bfb2199c8",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/id-ID/04-reminders.png",
+      "locale": "id-ID",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "67483e10962087f3765e85054b03a3a5ab541a4ffdf8c28a46d431d1f56c0e9f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/id-ID/05-checklists.png",
+      "locale": "id-ID",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "3d415833884735acdb028412c4fec99b9e617f8d987b323b11f780f393e8bcb1",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/id-ID/06-voice.png",
+      "locale": "id-ID",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "75c56f42eb05a85337908057f1c262decf2037524b59f40ab9d1a0f4a073ba08",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/id-ID/07-saved-offline-kit.png",
+      "locale": "id-ID",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "5e7a0a14e899044dfe7d66077691beb268276fe65a52a5ca4f27ab26475aa418",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/id-ID/08-report-preview.png",
+      "locale": "id-ID",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0ef84531ac992f51b8edd4ca6e6c93b3b94fc378d17f228800cbf257786b36be",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/it-IT/01-overview.png",
+      "locale": "it-IT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "1eef1f0524f9aa7af1c73605a7949fd33e0ed4f91a525b5c5aa6a9633c7b7460",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/it-IT/02-supplies.png",
+      "locale": "it-IT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "a99f3b74f8b5e0d7300c908ac7ec62a24aace9419e5fa3598d6bb5001e947d65",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/it-IT/03-family-plan.png",
+      "locale": "it-IT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "7dc74ce28f3a154b6367b1d1f96710e66618808a2c45682c73fcc7a335f9192a",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/it-IT/04-reminders.png",
+      "locale": "it-IT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "ba817bc938d909bcd5cfa407efe21379eff0b8df487fd33836b21eba01105238",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/it-IT/05-checklists.png",
+      "locale": "it-IT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0d60c0646f93df33a9ed9673bd57abe0a91afedfb2a486f959bbfcfe93f4094c",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/it-IT/06-voice.png",
+      "locale": "it-IT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "6a2c7c1542a378aacca6157b039783363c60ec5f0daab822b24835c4721a5f28",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/it-IT/07-saved-offline-kit.png",
+      "locale": "it-IT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "8ea92f9fe6c51b9cfb625e8fef613c8cb20e95be3ba95befb336f69d7462114e",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/it-IT/08-report-preview.png",
+      "locale": "it-IT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "b20778a99505f9741bf63acd56dfa3cecfa9fc728f8324696687072e2f32af95",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/01-overview.png",
+      "locale": "ja-JP",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "f8f4420f85bf8f05220211b84c2e0e89c90cec6fff0d6c7bf9768dbb98610bb3",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/02-supplies.png",
+      "locale": "ja-JP",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "c982a6e2d1465d862b5c74dd62451e0a12cbaf85bbc4d3b43e27df58fd1331b1",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/03-family-plan.png",
+      "locale": "ja-JP",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "ab2057de5525f5aa22effa8cbf1d295cd626720c869fc77ac7a925afa2c6b3bc",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/04-reminders.png",
+      "locale": "ja-JP",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "94f92bf4b5f6306381a54570471c49f119147fa5d5f8c80e9b817d0ee023c6b0",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/05-checklists.png",
+      "locale": "ja-JP",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "023d7590a805fac2c3bc64527d36c146894da741e5894261f6496d3317b419df",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/06-voice.png",
+      "locale": "ja-JP",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "060764e3ae2cc79de6877ba20507b0c56cdb60652946eafd80a929008002ab4b",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/07-saved-offline-kit.png",
+      "locale": "ja-JP",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "fe446d118cff3a34b3e298cf237f7b85714d80c4ba8187890d1238068f05c08f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ja-JP/08-report-preview.png",
+      "locale": "ja-JP",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "4663d7faa8d108cb9dbf2a49a7230f50768729692a1a37451c35239bad433bc5",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/01-overview.png",
+      "locale": "ko-KR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "912986d51adc6f83f16dbfe37d3c697f49f61a49dd582af1e5bc98821f4bfc43",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/02-supplies.png",
+      "locale": "ko-KR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "3c83eb82c5d11fd0fc75e13cf35737c86e73d6426fdfd28d311605a364ded77f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/03-family-plan.png",
+      "locale": "ko-KR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "616f74d1325c3680a22241382a064829eab01f1a1bc95c3df6787499de61d178",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/04-reminders.png",
+      "locale": "ko-KR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "1bed3fa56755d1f0b2f4d3d1a9587429e972a0652b6c0315d0fd20e60863b118",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/05-checklists.png",
+      "locale": "ko-KR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "30e9d933f4a05ce5e6466c0ae7877c680f0997b54082dc01e53f829ca052c19f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/06-voice.png",
+      "locale": "ko-KR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "6502ab94af9360c098d33ec2b28988cddffad739fe5022a7128d7f44d66f6779",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/07-saved-offline-kit.png",
+      "locale": "ko-KR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "f6465d3192ca651beac7153b68d8cb7b0935a08563824360bbbf54e5e3d596e9",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/ko-KR/08-report-preview.png",
+      "locale": "ko-KR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "e14aece842fc6352f7897db153980cbd301d0bcd51b7322f8103004947d4dff9",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/nl-NL/01-overview.png",
+      "locale": "nl-NL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "7cb33217a400e898e9b6f1be9e8ca33481638294d4cd4c67834933b854b5dc82",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/nl-NL/02-supplies.png",
+      "locale": "nl-NL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "8564315b83aaa706e7307cb5b5596ab15ec8a1ac385cbc969480bc385d137df5",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/nl-NL/03-family-plan.png",
+      "locale": "nl-NL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "4ffc293a32e0c968445ec56dce4da996f849a1d951fadf20d2f6c4b6622951b9",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/nl-NL/04-reminders.png",
+      "locale": "nl-NL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "2e8e8a0db89e0e35d2c9d8e555a666f2e164cef0c6f981dce6f83e06b466088f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/nl-NL/05-checklists.png",
+      "locale": "nl-NL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "172002a04c6f42b95e433db267dd26b65bcd79368495bb96865f7f6bdcf1eb32",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/nl-NL/06-voice.png",
+      "locale": "nl-NL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "df8cec3c70863ff5ea9b2be258bed541a45a6909ea9f766908c2bed7451630da",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/nl-NL/07-saved-offline-kit.png",
+      "locale": "nl-NL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "5997da2f9bd5eef48579a376a85ec8e8634c049064b84efe10e1e6392a69b3ea",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/nl-NL/08-report-preview.png",
+      "locale": "nl-NL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "46ea72af90a5da832511b65d2a7c119cf6ea3b703f079d22db814db49f3ee6a0",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pl-PL/01-overview.png",
+      "locale": "pl-PL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "722d94a1c5b49c0874abb64b425476dc86bc924834f6cb0bd40190fa658e5b6f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pl-PL/02-supplies.png",
+      "locale": "pl-PL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "5053ca2b61fb0b6a79a2274740e06a7d9e47fc948408a593a61946deaa06cb46",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pl-PL/03-family-plan.png",
+      "locale": "pl-PL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "b6c668e012e9fd3f8e159b0ea64e08fd923a2824def9ca0e321d71b83c46c413",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pl-PL/04-reminders.png",
+      "locale": "pl-PL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "56717640408bc904ae5534c3eb15b6d351986c0a5fa244141a30afde8921f456",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pl-PL/05-checklists.png",
+      "locale": "pl-PL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "d67c4ccfe693c009fe4a3f1c9ee96fb675f9c28fa4e10118f806d36d1fbf8c48",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pl-PL/06-voice.png",
+      "locale": "pl-PL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "007164f1c6130c0b28ae6793c0161fc0db4b0eb9298fdaa9c6e5daed1250fe15",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pl-PL/07-saved-offline-kit.png",
+      "locale": "pl-PL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "7e9417896aa05532e247ff2aaec37257e151416ea637c1484d1dfde29a80de3c",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pl-PL/08-report-preview.png",
+      "locale": "pl-PL",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "58ed44a60ba1a21c8afb742b86365e11bb9903c498a43ca88e056041d5f957f5",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-BR/01-overview.png",
+      "locale": "pt-BR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "ca2ad332ce3f2ee352f52441c245f36e2d8d789612e9bcfa57cac0f4afe2c720",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-BR/02-supplies.png",
+      "locale": "pt-BR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "ea25c00c47d2a367a428736ca6aa86067fbb843d1bb43f72e6302711b503b400",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-BR/03-family-plan.png",
+      "locale": "pt-BR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "2461246e519b35f4e96d421d575a9074c4091f05a63b148132e171fbb04fe9f7",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-BR/04-reminders.png",
+      "locale": "pt-BR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "aedd968023b919dd879671bbf7b24fe1adcb446fd7ec18198df287f7f36d38f6",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-BR/05-checklists.png",
+      "locale": "pt-BR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "730269b97a9348ef3bd7febe27acf565d6f68cfc26865a41dd892b66823c6282",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-BR/06-voice.png",
+      "locale": "pt-BR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0da568c99695936dc6aaf7ce316dbed4610edc481082210efc2894f54bcbccc7",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-BR/07-saved-offline-kit.png",
+      "locale": "pt-BR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "950bf2afab8ae05c8b9a214f0cfc22e0e866dec0a2ca289320259b57dd920f4f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-BR/08-report-preview.png",
+      "locale": "pt-BR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "23f5a78793d8ed5c057fb14f6d192041820aa9b4337555f6e1a4520eeaae0056",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-PT/01-overview.png",
+      "locale": "pt-PT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "4ac27147ba47c07ed3c7a3b877e41011c8228af1cc0763b94454e4b230e140be",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-PT/02-supplies.png",
+      "locale": "pt-PT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "a23efe940b0d0fbab473c4738d9cc9e745a46b406b497456ebbdf25ed06f6b21",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-PT/03-family-plan.png",
+      "locale": "pt-PT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "4f3afa46312c1f7ae3a3ff1f90a822f8456604bded603f92df181167f9885aac",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-PT/04-reminders.png",
+      "locale": "pt-PT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "76c471a194605c33d39665a8b637850c7b820049bfe7b7003f6820832ecc1b56",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-PT/05-checklists.png",
+      "locale": "pt-PT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "a852a36e6fdd9db74c53225f6f86f4882b56191164a62ab51d771ea8d466e416",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-PT/06-voice.png",
+      "locale": "pt-PT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "5e216df630a8ea4dd9c49774c56837201525c05f677bf8cc0eb85f436bbafd49",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-PT/07-saved-offline-kit.png",
+      "locale": "pt-PT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "263d55ffe58e3a162804a9da5299dc4c961884a12f5031955ae070cbdcfaa562",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/pt-PT/08-report-preview.png",
+      "locale": "pt-PT",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "7d2c106316c1fdef7d9570317ca3c5e9325ceb29371643df7d660459c18425bf",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/sv-SE/01-overview.png",
+      "locale": "sv-SE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "be260f3652c2a09f03904de445e6dcf051145de97862a1ccae2b46ef1c71098b",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/sv-SE/02-supplies.png",
+      "locale": "sv-SE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "e298e8f86865a395d283b4517567e2c9d6f02870f4e7d1ff490a295502cfcdd1",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/sv-SE/03-family-plan.png",
+      "locale": "sv-SE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "80b45cacb0771c61c04caa4afba62f9e834ea772dc6c17b51b0ecd54263f0587",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/sv-SE/04-reminders.png",
+      "locale": "sv-SE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "ea5b0f9f20b4523ffa1735c5050925982cd5c6ad69b00701183f9a7a4d4075fe",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/sv-SE/05-checklists.png",
+      "locale": "sv-SE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0e2c9ca8454761cfb984770bc957778bb8bc6559d12b97a4255d5b86f9b6b46c",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/sv-SE/06-voice.png",
+      "locale": "sv-SE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "ce0198ebea3000a4ea277b7391044af4987b78d3928652185169492e8180432b",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/sv-SE/07-saved-offline-kit.png",
+      "locale": "sv-SE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "8c9c9624e429c950b4f3440a651f4bde27d09a48958cd1a4e4a0e81f815c7474",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/sv-SE/08-report-preview.png",
+      "locale": "sv-SE",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "b33858577b85a0cd31931a528fd7f01d448168f0d5892210843773397de1a121",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/tr-TR/01-overview.png",
+      "locale": "tr-TR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0e6e5e24761db89502372205a5c373719004bcf577b90578898f22459fb9ab0f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/tr-TR/02-supplies.png",
+      "locale": "tr-TR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "f76e80e5db6b675ccaeb2f3954ea8fb4bb7427e93dc6050a871d89d0d698c174",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/tr-TR/03-family-plan.png",
+      "locale": "tr-TR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "03d5efaf514b9bd1e6a60425e3306807ec7b2ce71eb35056c2acfad7ea999636",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/tr-TR/04-reminders.png",
+      "locale": "tr-TR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "5ce7f767e841344b777a3309de33a306864a02c91bc6654440b28aedf61ddd99",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/tr-TR/05-checklists.png",
+      "locale": "tr-TR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "83f7e6582cf6b2739baa1e831a3597067e3eb7fb73ba4d1b2f868c5d0e55d504",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/tr-TR/06-voice.png",
+      "locale": "tr-TR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "fe38894afe070ae6c299b2f731e9941639458840d1bce02037e62218e9b82c00",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/tr-TR/07-saved-offline-kit.png",
+      "locale": "tr-TR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "b5639462c9792e0d108b4f301d8b44561715673d2e6b91d5017b14bf74dcf705",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/tr-TR/08-report-preview.png",
+      "locale": "tr-TR",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "d3b8bdec89172417d95f33332a0cb65275f54012f576bb0b51ea0e5daec9ef8b",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/01-overview.png",
+      "locale": "zh-Hans",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0029aac6f32e909f5e22a62d204cd6ce9ed3cb66e7e5ac761771c32927e310c1",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/02-supplies.png",
+      "locale": "zh-Hans",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "7725492214eee4de479bf79eab92b7fc433b6f15d7833c5e903614b672e269ad",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/03-family-plan.png",
+      "locale": "zh-Hans",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "244014bb4c243c4c4b64709925b676463f8e20b84bc111f5516c5c129392ddde",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/04-reminders.png",
+      "locale": "zh-Hans",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "44e30506659b84aed4c89fed7c51ebc304c9520a9a32c33e3cfd118b6ccebaa1",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/05-checklists.png",
+      "locale": "zh-Hans",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "0850c0af652fe43f3adfeceb2db8225f379a3a4d001bd264c9583290c58d3490",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/06-voice.png",
+      "locale": "zh-Hans",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "11f2a2693437070bdd5bd8b09e9f113bf1d7712a5071f558b05889482b81d786",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/07-saved-offline-kit.png",
+      "locale": "zh-Hans",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "4cca7fea9d5a77404558af0654bc95c944e970e8f4adbc44908892b5bb56eb5b",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hans/08-report-preview.png",
+      "locale": "zh-Hans",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "3d68a1cd630f189ed3a0b3bcbe3a9824a0951c49cef8306f2113ebc0e333fb9e",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/01-overview.png",
+      "locale": "zh-Hant",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "74c8333d5fb6eb61c67f259643b283f6e8eb7b30986f12af41f602722c8ed28f",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/02-supplies.png",
+      "locale": "zh-Hant",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "526659d90d654bec316cc59adb87030dcce749e874457b46037b89f857be0230",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/03-family-plan.png",
+      "locale": "zh-Hant",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "05348ad6be1ee0841ac3d114614ce179c45eee2ba768afba3dfa4d2d65d0f8a5",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/04-reminders.png",
+      "locale": "zh-Hant",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "dab2c716278b2634f1926a566c10ba1d2b422c389cb007423eee3621a5c64b68",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/05-checklists.png",
+      "locale": "zh-Hant",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "8a7e82507ab30b973a9cb867ffc2c263fdfe53e70e3394f2a4ae95fb59b3357e",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/06-voice.png",
+      "locale": "zh-Hant",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "d738b2161c1bca562979d9c698fe09de7402eb04986e11aca91c89c2b63ceeb8",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/07-saved-offline-kit.png",
+      "locale": "zh-Hant",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "d5bece3c5d0fff3f8c8dd17341349d4025ab37038b0909bf0e0ce44177e6b04c",
+      "source": "actual isolated app with labelled example records",
+      "marketingComposition": false,
+      "reviewApproved": false
+    },
+    {
+      "file": "assets/store/screenshots/zh-Hant/08-report-preview.png",
+      "locale": "zh-Hant",
+      "width": 1920,
+      "height": 1200,
+      "sha256": "e5201b92f37644f007857fd7d93f887a388d47d0ee61e760d7a9580565657f45",
       "source": "actual isolated app with labelled example records",
       "marketingComposition": false,
       "reviewApproved": false

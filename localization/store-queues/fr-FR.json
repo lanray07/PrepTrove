@@ -1,6 +1,6 @@
 {
   "locale": "fr-FR",
-  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "status": "AI linguistic review complete; marketing panels reviewed; console and final acceptance pending",
   "reviewer": "Codex AI linguistic review; not independent human, speech-device or final store approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
@@ -35,8 +35,49 @@
     "keywords": "coupure, préparation, kit, urgence, foyer, liste, électricité, famille, inventaire, planification, provisions"
   },
   "screenshots": {
-    "status": "pending real localised captures",
-    "countRequiredByProduct": 8
+    "status": "AI visual review complete for exact marketing hashes; Amazon replacement pending",
+    "countRequiredByProduct": 8,
+    "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+    "files": [
+      {
+        "file": "assets/store/marketing/fr-FR/01-overview.png",
+        "sha256": "14cf0857e63633e4b4aafd9bf8c04e56a2a3e03ce89f53fbe4a485a0820ce5ce"
+      },
+      {
+        "file": "assets/store/marketing/fr-FR/02-supplies.png",
+        "sha256": "892d66083cf23d65d8612a0f30b7b313b3a524a97f58df87842bc2c76ddb00aa"
+      },
+      {
+        "file": "assets/store/marketing/fr-FR/03-family-plan.png",
+        "sha256": "2fb9290c6026b1b54effa7039f1ec17c497a431d61abab053d23f20063e0e242"
+      },
+      {
+        "file": "assets/store/marketing/fr-FR/04-reminders.png",
+        "sha256": "562ef3760cf5e566353778e5922250b0ceadad24a12368e947c2068eda7d9377"
+      },
+      {
+        "file": "assets/store/marketing/fr-FR/05-checklists.png",
+        "sha256": "e2780542bb4ffa3945bb0c9b9faff76a8e27138ea2b210b8df6e98693d6c4950"
+      },
+      {
+        "file": "assets/store/marketing/fr-FR/06-voice.png",
+        "sha256": "5cbaba895e31e6298a983de7beda2d5dac9198d3690d9b5e3eaac0717457992b"
+      },
+      {
+        "file": "assets/store/marketing/fr-FR/07-saved-offline-kit.png",
+        "sha256": "05f756ffaf8c253a943c2eb0aaac5f20279c77f527d08a45f6e12b87d1372b1e"
+      },
+      {
+        "file": "assets/store/marketing/fr-FR/08-report-preview.png",
+        "sha256": "3e6434496275194a9f5588a50955cd1019d065674868e244ef27f7036d50bbd6"
+      }
+    ],
+    "reviewReports": [
+      "docs/visual-review-asian-arabic.json",
+      "docs/visual-review-english.json",
+      "docs/visual-review-european.json",
+      "docs/visual-review-mixed.json"
+    ]
   },
   "reviewType": "Codex AI translation and linguistic review",
   "qualifiedSafetyReview": false,

@@ -79,7 +79,7 @@ def refresh_store_queues(root):
                  'translation': previous.get('translation') if same else None,
                  'reviewer': previous.get('reviewer') if same else None,
                  'reviewType': previous.get('reviewType') if same else None,
-                 'status': ('draft translated; listing eligibility, safety, screenshots and device review pending'
+                 'status': ((previous.get('status') or 'draft translated; listing eligibility, screenshots and device review pending')
                             if same and previous.get('translation') else 'pending translation and listing eligibility/safety/device review')}
         validate_store_queue(queue, source)
         path.write_text(json.dumps(queue, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

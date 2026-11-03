@@ -13,6 +13,16 @@ for f in files:
  missing.extend({'file':str(f.relative_to(root)),'key':k} for k in re.findall(r'R\.string\.(\w+)',text) if k not in resources)
  literals.extend({'file':str(f.relative_to(root)),'line':text[:m.start()].count('\n')+1,'text':m.group(1)} for m in re.finditer(r'Text\("([^"\n]+)"',text))
 assert not missing,missing
-report={'resourceKeys':len(source),'missingKeys':missing,'remainingInlineTextCalls':literals,'releaseReady':False}
+# Exact, reviewed non-translatable calls; new or changed literals remain visible.
+reviewed={
+ ('MainActivity.kt','${java.text.NumberFormat.getNumberInstance(resources.configuration.locales[0]).format(e.quantity)} ${e.unit} \u00b7 ${e.category}'):'Locale-formatted quantity plus original user-entered unit/category; private records are not translated.',
+ ('PdfReports.kt','PrepTrove \u00b7 '):'Product name plus punctuation; PDF drawing helper, not untranslated interface prose.'
+}
+classified=[];unclassified=[]
+for item in literals:
+ reason=reviewed.get((Path(item['file']).name,item['text']))
+ if reason:classified.append({**item,'reason':reason})
+ else:unclassified.append(item)
+report={'resourceKeys':len(source),'missingKeys':missing,'remainingInlineTextCalls':unclassified,'reviewedInlineTextCalls':classified,'staticInventoryComplete':not missing and not unclassified,'releaseReady':False,'limitation':'Static inventory does not establish rendered-language quality, accessibility or release approval.'}
 (root/'localization/coverage.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
-print(f'{len(source)} resource keys checked; {len(literals)} inline Text calls require review. Full UI coverage remains pending.')
+print(f'{len(source)} resource keys checked; {len(classified)} non-translatable calls reviewed; {len(unclassified)} inline calls remain unclassified. Runtime and release approval are separate.')

@@ -1,17 +1,22 @@
 {
   "resourceKeys": 256,
   "missingKeys": [],
-  "remainingInlineTextCalls": [
+  "remainingInlineTextCalls": [],
+  "reviewedInlineTextCalls": [
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
       "line": 270,
-      "text": "${java.text.NumberFormat.getNumberInstance(resources.configuration.locales[0]).format(e.quantity)} ${e.unit} · ${e.category}"
+      "text": "${java.text.NumberFormat.getNumberInstance(resources.configuration.locales[0]).format(e.quantity)} ${e.unit} · ${e.category}",
+      "reason": "Locale-formatted quantity plus original user-entered unit/category; private records are not translated."
     },
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\PdfReports.kt",
       "line": 28,
-      "text": "PrepTrove · "
+      "text": "PrepTrove · ",
+      "reason": "Product name plus punctuation; PDF drawing helper, not untranslated interface prose."
     }
   ],
-  "releaseReady": false
+  "staticInventoryComplete": true,
+  "releaseReady": false,
+  "limitation": "Static inventory does not establish rendered-language quality, accessibility or release approval."
 }

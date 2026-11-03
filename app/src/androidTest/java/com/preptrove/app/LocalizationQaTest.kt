@@ -22,7 +22,7 @@ import org.junit.Rule
 import org.junit.Test
 import java.io.File
 
-/** Isolated draft-language QA. English safety text and a visible banner prevent marketing reuse. */
+/** Isolated language QA. A visible QA banner prevents marketing reuse; production content policy still applies. */
 class LocalizationQaTest {
  @get:Rule val rule=createEmptyComposeRule()
  @Test fun resourceRoundTripAndExpandedLayoutsAcrossAllTargets()=runBlocking {

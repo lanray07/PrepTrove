@@ -20,9 +20,9 @@ Spoken output is user initiated; the read-response button is disabled for an emp
 
 ## Evidence and limits
 
-JVM tests cover every generated template's intended action and private-slot preservation, anchored/rejected input, reminder calendar behavior, exact-name ambiguity, overlapping Polish inspection grammar, excluded reusable templates and case-sensitive mixed-unit handling. The previous isolated native localisation run exercised typed commands in all 22 locale configurations. These tests validate command behavior rather than speech recognition accuracy, audio output or language quality on every device. The current 256-key neutral-planner layout run remains pending; previous captures are not proof of this scope's acceptance.
+JVM tests cover every generated template's intended action and private-slot preservation, anchored/rejected input, reminder calendar behavior, exact-name ambiguity, overlapping Polish inspection grammar, excluded reusable templates and case-sensitive mixed-unit handling. The previous isolated native localisation run exercised typed commands in all 22 locale configurations. These tests validate command behavior rather than speech recognition accuracy, audio output or language quality on every device. The physical Fire neutral-planner QA run on source 5383c1d compared 5,632 packaged strings across 22 locales and captured 110 QA screens. The subsequent Arabic PDF counter wording correction passed current hosted validation in 41561192222; voice command resources did not change. The final current-source Fire run is pending.
 
-The observed physical KFTRWI reported Fire OS 7.3.3.1 / Android API 28 with no recognition service. IVONA and Pico TTS services were discoverable. Service presence alone does not establish installed languages, audible output or voice quality. The no-recognizer instrumentation test checks the fallback message, unchanged microphone permission and continued typed-command access when that condition is present. A conditional skip on another device is not a successful microphone test.
+The observed physical KFTRWI reported Fire OS 7.3.3.1 / Android API 28 with no recognition service. IVONA and Pico TTS services were discoverable. On 3 November, TTS initialization succeeded and its default IVONA engine reported one installed offline en-GB Amy voice. This metadata does not establish audible output or voice quality. Manual audio and VoiceView checks remain pending. The no-recognizer instrumentation test checks the fallback message, unchanged microphone permission and continued typed-command access when that condition is present. A conditional skip on another device is not a successful microphone test.
 
 An earlier API 36 emulator attempt was blocked by a missing host hypervisor driver; that attempt provides no speech compatibility evidence. Later native layout or typed-command execution also cannot establish real recognizer or TTS engine support.
 
@@ -31,7 +31,7 @@ An earlier API 36 emulator attempt was blocked by a missing host hypervisor driv
 - Test microphone grant, denial, retry and actual transcription with each intended recognizer and locale.
 - Verify installed language/voice selection, audible output, interruption, audio routing and offline/network behavior on intended TTS engines.
 - Review TalkBack, hearing/speech accessibility and localized error/output behavior on representative hardware.
-- Complete the current hosted native checks, layout review and real installed-service acceptance before making device-specific voice claims.
+- Hosted native/22-language layout checks passed in 41561192222. Complete current-source Fire and real installed-service/manual accessibility acceptance before making further device-specific voice claims.
 
 AI linguistic review is recorded explicitly in the queues. It is not human, speech-device or specialist safety approval. Purchases remain disabled.
 

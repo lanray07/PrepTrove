@@ -1,6 +1,6 @@
 {
   "locale": "ar",
-  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "status": "AI linguistic review complete; marketing panels reviewed; console and final acceptance pending",
   "reviewer": "Codex AI linguistic review; not human or specialist approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
@@ -35,8 +35,49 @@
     "featureBullet.10": "جرّب الأوامر الصوتية والمكتوبة المدعومة بلغة التطبيق المحددة"
   },
   "screenshots": {
-    "status": "pending real localised captures",
-    "countRequiredByProduct": 8
+    "status": "AI visual review complete for exact marketing hashes; Amazon replacement pending",
+    "countRequiredByProduct": 8,
+    "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+    "files": [
+      {
+        "file": "assets/store/marketing/ar/01-overview.png",
+        "sha256": "0811b1b984233493571ba2d7cb0206daeefc8551ea92d66a6b50cf467edbdfde"
+      },
+      {
+        "file": "assets/store/marketing/ar/02-supplies.png",
+        "sha256": "5dd8743adb01855503c88f0830278d27987fe298ce1d8763d4f66669cfe9093e"
+      },
+      {
+        "file": "assets/store/marketing/ar/03-family-plan.png",
+        "sha256": "dec49be5cf4748524e6367ebacb91eaba09bec74931a5ce56d6d4dd342925a27"
+      },
+      {
+        "file": "assets/store/marketing/ar/04-reminders.png",
+        "sha256": "1db6569616424075b57e4dcb338de5cdd844720ad01a7b663a9293d2ef0a4e23"
+      },
+      {
+        "file": "assets/store/marketing/ar/05-checklists.png",
+        "sha256": "daa3e386a9ae8f108de2073aba18c688feeb493440a586487a9c65a30d794eff"
+      },
+      {
+        "file": "assets/store/marketing/ar/06-voice.png",
+        "sha256": "0091211572fdd46ab3f1f2ffd52de5bf7afb7bfb0b4e59f0d8325fa715e54adc"
+      },
+      {
+        "file": "assets/store/marketing/ar/07-saved-offline-kit.png",
+        "sha256": "3b20f058ec1f8da191fedbf79dc2ab22770cfe7df4e2cab7a9722f7782a5fee8"
+      },
+      {
+        "file": "assets/store/marketing/ar/08-report-preview.png",
+        "sha256": "ae132592f58dd8a6e21033b2b3f3754edc78695b865ae816e68c524bf90bd78e"
+      }
+    ],
+    "reviewReports": [
+      "docs/visual-review-asian-arabic.json",
+      "docs/visual-review-english.json",
+      "docs/visual-review-european.json",
+      "docs/visual-review-mixed.json"
+    ]
   },
   "linguisticReviewType": "AI-assisted",
   "qualifiedSafetyReview": false,

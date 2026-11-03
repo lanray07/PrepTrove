@@ -1,6 +1,6 @@
 {
   "locale": "ko-KR",
-  "status": "draft translated; listing eligibility, safety, screenshots and device review pending",
+  "status": "AI linguistic review complete; marketing panels reviewed; console and final acceptance pending",
   "reviewer": "Codex AI linguistic review; not human or specialist approval",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
@@ -35,8 +35,49 @@
     "featureBullet.10": "선택한 앱 언어로 지원되는 음성 명령과 입력 명령 사용"
   },
   "screenshots": {
-    "status": "pending real localised captures",
-    "countRequiredByProduct": 8
+    "status": "AI visual review complete for exact marketing hashes; Amazon replacement pending",
+    "countRequiredByProduct": 8,
+    "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+    "files": [
+      {
+        "file": "assets/store/marketing/ko-KR/01-overview.png",
+        "sha256": "e9ba972c9a8f55dd8eac25932edb561f41fab584589c37ca18a7963d372b74d3"
+      },
+      {
+        "file": "assets/store/marketing/ko-KR/02-supplies.png",
+        "sha256": "a1d4547c1419d207fefdf47a62bade5288116c20a01c316eeadc37a6e2f1da16"
+      },
+      {
+        "file": "assets/store/marketing/ko-KR/03-family-plan.png",
+        "sha256": "aaa3c31a7d7b6973d73bd2de76ba46b6fc54647fd778e6b9cad550c7c0960444"
+      },
+      {
+        "file": "assets/store/marketing/ko-KR/04-reminders.png",
+        "sha256": "166baf43212006b1c083a512175e1cb2e1d12ae27e0fe9075f9efb2dbbf9f7bd"
+      },
+      {
+        "file": "assets/store/marketing/ko-KR/05-checklists.png",
+        "sha256": "57bb39b0065640718f908ea5691b10dad1c5610c45d7cf35e91ec5c9fbf2f195"
+      },
+      {
+        "file": "assets/store/marketing/ko-KR/06-voice.png",
+        "sha256": "c514305b5036dbc66eb86b3338d89d3fb97b61c7b6b34341b1e0eff7e2c446ec"
+      },
+      {
+        "file": "assets/store/marketing/ko-KR/07-saved-offline-kit.png",
+        "sha256": "6ced51085dfd2c76f29b96d65ce49f34b557afcac8ad5f98032f21f8beb7bce1"
+      },
+      {
+        "file": "assets/store/marketing/ko-KR/08-report-preview.png",
+        "sha256": "3bc8b732a519a6a22501fa7479b2c45677881fa92cf2d39d529e3600dace581c"
+      }
+    ],
+    "reviewReports": [
+      "docs/visual-review-asian-arabic.json",
+      "docs/visual-review-english.json",
+      "docs/visual-review-european.json",
+      "docs/visual-review-mixed.json"
+    ]
   },
   "linguisticReviewType": "AI-assisted",
   "qualifiedSafetyReview": false,

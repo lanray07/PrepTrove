@@ -5,11 +5,11 @@
   },
   "deviceCompatibilityAndVoice": {
     "status": "pending",
-    "evidence": "API36 run41553161845 passed 35primary+1systemUI cases with4condition skips, 18JVM/31tooling tests, 5632string checks/110QA captures. Visual/source fixes and added real JSON restore/microphone-denial flows require rerun. Human speech/audio, VoiceView and representative Fire acceptance remain limited; physical Fire disconnected."
+    "evidence": "Physical KFTRWI/API 28 on source 5383c1d passed 35 primary cases with five assumption/variant skips and no failures; 5,632 packaged-string checks and 110 QA captures passed. The tablet is locked for the final current-source rerun. Hosted API 36 run 41561192222 now passes. Missing-recognizer typed fallback passed; audible TTS and VoiceView remain manual checks."
   },
   "localisedScreenshotsAndMetadata": {
     "status": "pending",
-    "evidence": "All22 locale packs and308store fields AI-reviewed;15Amazon descriptions Complete;13available language checkboxes saved. Produced176raw+176panels, but AIvisual review rejected insets, line spacing, stale counters/loading frames and sample copy. Corrections need recapture/review before11supported media uploads. Platform exposes no media option for4description locales."
+    "evidence": "All 22 UI packs and 308 store fields have AI linguistic review; 15 Amazon descriptions are Complete. Current API 36 source-bound 176 marketing panels pass four scoped AI visual reports, with 247 current reviewed/asset hashes verified. Arabic pagination is explicit. Confirmation at Amazon's old-image deletion dialog is pending before 11 matching media uploads. Four description locales have no media option. Raw companions are capture/hash validated, not universally individually full-size reviewed."
   },
   "regionalSafetyReview": {
     "status": "passed",
@@ -20,11 +20,11 @@
     "evidence": "Publisher O.Bankole, UK and support email supplied; GitHub privacy/deletion drafts linked. Concrete support-processing proposal and unverified provider/transfer details are in docs/PUBLISHER-REVIEW.md; final publisher notice/declarations and support handling approval pending."
   },
   "functionalCompleteness": {
-    "status": "pending",
-    "evidence": "Provider-stream backups, atomic copy restore, file-URI rejection, history filtering, transport photo removal, actual device-credential enable/cancel/background/unlock and real CreateDocument JSON export passed. Actual OpenDocument JSON restoration and microphone-denial fallback compiled for next run. Current visual defects are corrected in source but runtime/recapture pending."
+    "status": "passed",
+    "evidence": "Current production fingerprint2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610 passed hosted run41561192222:35 primary cases with4 condition/variant skips,1 separate real system-file case,18 JVM/31 tooling checks,5632 string comparisons/110 QA layouts and176 raw/176 panel captures. Actual credential lifecycle, JSON export/copy restore and microphone-denial typed fallback passed. This covers the implemented neutral-planner scope; optional actual speech/manual accessibility and publisher declarations remain separate pending gates."
   },
   "ownerReleaseApproval": {
     "status": "pending",
-    "evidence": "Owner authorized worldwide neutral-planner scope, GitHub push and Amazon submission. Final action awaits corrected current assets/runtime acceptance and publisher declarations. Required Amazon export/encryption-law certification remains unchecked; no submission occurred."
+    "evidence": "Owner authorized the worldwide neutral-planner scope, GitHub push and Amazon submission. Final action awaits confirmation to replace old media, current Fire/manual service checks and publisher declarations. Amazon export/encryption-law certification remains unchecked; no submission occurred."
   }
 }

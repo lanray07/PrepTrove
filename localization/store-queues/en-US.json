@@ -1,6 +1,6 @@
 {
   "locale": "en-US",
-  "status": "AI linguistic review complete; asset and final acceptance pending",
+  "status": "AI linguistic review complete; marketing panels reviewed; console and final acceptance pending",
   "reviewer": "Codex AI linguistic review",
   "source": {
     "displayTitle": "PrepTrove Emergency Kit and Family Planner",
@@ -35,8 +35,49 @@
     "keywords": "outage, preparedness, kit, emergency, household, checklist, power, family, inventory, planner, supply, preparation"
   },
   "screenshots": {
-    "status": "pending real localised captures",
-    "countRequiredByProduct": 8
+    "status": "AI visual review complete for exact marketing hashes; Amazon replacement pending",
+    "countRequiredByProduct": 8,
+    "productionFingerprint": "2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610",
+    "files": [
+      {
+        "file": "assets/store/marketing/en-US/01-overview.png",
+        "sha256": "bfee061673a6742319f855504899a82b368c68bf0f4562ce899fe88c1a639738"
+      },
+      {
+        "file": "assets/store/marketing/en-US/02-supplies.png",
+        "sha256": "e26d38c5282a9f835ddfe7af02e4fec465b2729b2cce97093e0d805df01346dd"
+      },
+      {
+        "file": "assets/store/marketing/en-US/03-family-plan.png",
+        "sha256": "abb58fe4a636204e2c2395b89e16b6107eb24b619c11b8ca7e6f734f62df3e32"
+      },
+      {
+        "file": "assets/store/marketing/en-US/04-reminders.png",
+        "sha256": "f065cc83140685f3381fc5a01d59894e3a00f1901ef385ce0451888ca46fe1f6"
+      },
+      {
+        "file": "assets/store/marketing/en-US/05-checklists.png",
+        "sha256": "5b327b8b92e7fcc4d48e0ce23d8ae74b22fdee5d053539913690be32109df4a7"
+      },
+      {
+        "file": "assets/store/marketing/en-US/06-voice.png",
+        "sha256": "96787185f464a6c92c6d6bb901f7cb62a0562ab0ad7a9c9fb29be39773afc981"
+      },
+      {
+        "file": "assets/store/marketing/en-US/07-saved-offline-kit.png",
+        "sha256": "c2d110e1e2fbbb03ef9783ebc04c12ba09b576057401bafde821f4a7d2ccb9c5"
+      },
+      {
+        "file": "assets/store/marketing/en-US/08-report-preview.png",
+        "sha256": "1f95c53084df0a1af76adbf3cdf938d936a03c8d7e778eadd5cfeb4920ba46ec"
+      }
+    ],
+    "reviewReports": [
+      "docs/visual-review-asian-arabic.json",
+      "docs/visual-review-english.json",
+      "docs/visual-review-european.json",
+      "docs/visual-review-mixed.json"
+    ]
   },
   "reviewType": "Codex AI linguistic review; neutral planner with official-source links",
   "qualifiedSafetyReview": false,
