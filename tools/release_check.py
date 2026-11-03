@@ -15,6 +15,11 @@ def disabled_purchase_build():
 def check():
  gates=json.loads((ROOT/'release/gates.json').read_text(encoding='utf-8'))
  failures=gate_failures(gates,disabled_purchase_build())
+ physical=ROOT/'release/fire-device-validation.json'
+ if physical.exists():
+  from asset_provenance import production
+  if json.loads(physical.read_text(encoding='utf-8')).get('productionFingerprint')!=production(ROOT):
+   failures.append('Physical Fire evidence is stale for the current production source')
  source=json.loads((ROOT/'localization/source.json').read_text(encoding='utf-8'))
  plurals=json.loads((ROOT/'localization/plurals.json').read_text(encoding='utf-8'))
  from localize import LOCALES,validate,catalogue

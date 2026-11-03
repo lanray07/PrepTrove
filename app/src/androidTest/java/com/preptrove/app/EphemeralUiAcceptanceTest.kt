@@ -138,7 +138,7 @@ class EphemeralUiAcceptanceTest {
      fail("Real DocumentsUI could not select the freshly exported synthetic backup")
     }
     report.put("realOpenDocumentSelection",true)
-    rule.waitUntil(20_000) {rule.onAllNodesWithText(localized.getString(R.string.msg_f539a84db776)).fetchSemanticsNodes().isNotEmpty()}
+    rule.waitUntil(20_000) {runCatching {rule.onAllNodesWithText(localized.getString(R.string.msg_f539a84db776)).fetchSemanticsNodes().isNotEmpty()}.getOrDefault(false)}
     rule.onNodeWithText(localized.getString(R.string.msg_f539a84db776)).performClick()
     rule.waitUntil(20_000) {runBlocking {dao.all().size==2}}
     val restored=dao.all()
@@ -177,7 +177,9 @@ class EphemeralUiAcceptanceTest {
 
  private fun clickNodeOrAncestor(node: AccessibilityNodeInfo): Boolean {
   var current: AccessibilityNodeInfo? = node
-  repeat(5) {
+  // DocumentsUI grid rows place their clickable item_root above several nested
+  // card/nameplate wrappers. Walk bounded ancestors of this exact selected node.
+  repeat(12) {
    val candidate = current ?: return false
    if (candidate.packageName?.toString() !in DOCUMENTS_PACKAGES) return false
    if (candidate.isClickable && candidate.isEnabled) return candidate.performAction(AccessibilityNodeInfo.ACTION_CLICK)

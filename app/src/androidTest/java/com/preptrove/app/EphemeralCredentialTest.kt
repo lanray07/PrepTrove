@@ -129,25 +129,25 @@ class EphemeralCredentialTest {
    eventually("Enabling lock did not persist after real credential authentication") {
     privacy.getBoolean("lock", false)
    }
-   rule.onNodeWithText(localized.getString(R.string.lock_disable)).assertExists()
+   rule.waitUntil(15_000) {runCatching {rule.onNodeWithText(localized.getString(R.string.lock_disable)).assertExists();true}.getOrDefault(false)}
 
    // Background and recreate the real activity; no private lock-state hooks or stubs.
    scenario.moveToState(androidx.lifecycle.Lifecycle.State.CREATED)
    scenario.close()
    scenario = ActivityScenario.launch(MainActivity::class.java)
-   rule.onNodeWithText(localized.getString(R.string.lock_title)).assertIsDisplayed()
+   rule.waitUntil(15_000) {runCatching {rule.onNodeWithText(localized.getString(R.string.lock_title)).assertIsDisplayed();true}.getOrDefault(false)}
    rule.onNodeWithText(localized.getString(R.string.lock_unlock)).performClick()
    awaitCredentialUi()
    shell("input keyevent KEYCODE_BACK")
    eventually("Cancelled credential UI did not close") {
     credentialField()?.let { it.recycle(); false } ?: true
    }
-   rule.onNodeWithText(localized.getString(R.string.lock_title)).assertIsDisplayed()
+   rule.waitUntil(15_000) {runCatching {rule.onNodeWithText(localized.getString(R.string.lock_title)).assertIsDisplayed();true}.getOrDefault(false)}
    assertTrue("Cancellation disabled app lock", privacy.getBoolean("lock", false))
    rule.onNodeWithText(localized.getString(R.string.lock_unlock)).performClick()
    authenticateSyntheticPin()
    rule.waitUntil(15_000) {
-    rule.onAllNodesWithText(localized.getString(R.string.lock_unlock)).fetchSemanticsNodes().isEmpty()
+    runCatching {rule.onNode(hasText(localized.getString(R.string.nav_overview)) and hasClickAction()).assertExists();true}.getOrDefault(false)
    }
    rule.onNode(hasText(localized.getString(R.string.nav_overview)) and hasClickAction()).assertExists()
    assertTrue("Unlocking unexpectedly disabled app lock", privacy.getBoolean("lock", false))

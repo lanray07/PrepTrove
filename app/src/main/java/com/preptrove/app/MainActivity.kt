@@ -87,7 +87,7 @@ class MainActivity:ComponentActivity() {
   lockEnabled=getSharedPreferences("privacy",MODE_PRIVATE).getBoolean("lock",false);locked=lockEnabled
   tts=TextToSpeech(this) { status-> speechReady=status==TextToSpeech.SUCCESS && (tts?.setLanguage(resources.configuration.locales[0]) ?: -1)>=0 }
   (application as PrepTrove).billing.start()
-  setContent {val plannerState=rememberSaveableStateHolder();LaunchedEffect(lockEnabled) {if(lockEnabled) window.addFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE) else window.clearFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE)};if(locked) MaterialTheme {Surface(Modifier.fillMaxSize()) {Column(Modifier.padding(32.dp),verticalArrangement=Arrangement.Center) {Text(getString(R.string.lock_title),fontSize=28.sp,lineHeight=36.sp);Text(getString(R.string.lock_prompt));Button(onClick={authenticate()}) {Text(getString(R.string.lock_unlock))}}}} else plannerState.SaveableStateProvider("planner") {Planner()} }
+  setContent {val plannerState=rememberSaveableStateHolder();LaunchedEffect(lockEnabled) {if(lockEnabled) window.addFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE) else window.clearFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE)};if(locked) MaterialTheme {Surface(Modifier.fillMaxSize().background(Navy).windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))) {Column(Modifier.padding(32.dp),verticalArrangement=Arrangement.Center) {Text(getString(R.string.lock_title),fontSize=28.sp,lineHeight=36.sp);Text(getString(R.string.lock_prompt));Button(onClick={authenticate()}) {Text(getString(R.string.lock_unlock))}}}} else plannerState.SaveableStateProvider("planner") {Planner()} }
  }
  override fun onResume() {super.onResume();(application as PrepTrove).billing.refresh()}
  override fun onDestroy() { recognizer?.destroy();tts?.stop();tts?.shutdown();super.onDestroy() }
@@ -175,12 +175,12 @@ class MainActivity:ComponentActivity() {
    }
   }
   MaterialTheme(colorScheme=if(dark) darkColorScheme(primary=Color(0xFF83CFCA),background=Color(0xFF152632),surface=Color(0xFF203746)) else lightColorScheme(primary=Teal,background=Ivory,surface=Color.White,onSurface=Navy)) {
-   Surface(Modifier.fillMaxSize()) {
+   Surface(Modifier.fillMaxSize().background(Navy).windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))) {
     BoxWithConstraints {
      val fontScale=androidx.compose.ui.platform.LocalDensity.current.fontScale
      val wide=maxWidth>=840.dp
      Row {
-      if(wide) Column(Modifier.width(if(fontScale>=1.5f) 320.dp else 220.dp).fillMaxHeight().background(Navy).windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical)).verticalScroll(rememberScrollState()).padding(20.dp)) {
+      if(wide) Column(Modifier.width(if(fontScale>=1.5f) 320.dp else 220.dp).fillMaxHeight().background(Navy).verticalScroll(rememberScrollState()).padding(20.dp)) {
        Text(androidx.compose.ui.res.stringResource(R.string.preptrove_c7187b),color=Color.White,fontSize=27.sp,lineHeight=35.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.your_household_organised_96de4e),color=Amber,fontSize=10.sp)
        Spacer(Modifier.height(32.dp))
        sections.forEach { s->TextButton(onClick={section=s;search=""},modifier=Modifier.fillMaxWidth().heightIn(min=48.dp),colors=ButtonDefaults.textButtonColors(contentColor=if(section==s) Amber else Color.White)) {Text(screenLabel(s),modifier=Modifier.fillMaxWidth())} }

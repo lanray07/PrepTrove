@@ -152,6 +152,7 @@ def main():
              *[ROOT / 'release' / name for name in ['amazon-draft.json', 'listing-en-US.json', 'gates.json', 'amazon-testing-instructions.txt', 'worldwide-validation.json', 'amazon-locales.json']],
              *[ROOT / 'docs' / name for name in ['RELEASE.md', 'QA.md', 'PRIVACY.md', 'DATA-DELETION.md', 'BACKUP.md', 'AMAZON-BILLING.md', 'AMAZON-SUBMISSION.md', 'VOICE.md', 'NOTIFICATIONS.md', 'LOCALISATION.md', 'WORLDWIDE-VALIDATION.md', 'SOURCE-DIRECTORY.md']],
              ROOT / 'README.md', ROOT / 'docs/PUBLISHER-REVIEW.md', *sorted((ROOT/'docs').glob('visual-review-*.json')),
+             *[p for p in [ROOT/'release/fire-device-validation.json',ROOT/'release/evidence/TEST-fire-api28.xml'] if p.exists()],
              *sorted((ROOT/'localization/store-queues').glob('*.json')), ROOT / 'localization/report.json', ROOT / 'localization/content-policy.json', ROOT / 'app/src/main/assets/official-sources.json']
     report = {'kind': 'unsigned_review_only', 'productionReady': False, 'signed': False,
               'submitted': False, 'checkoutEnabled': False,
@@ -159,7 +160,7 @@ def main():
               'sourceCommit': revision, 'workingTreeDirty': dirty,
               'apk': apk_report, 'apkSha256': digest(apk), 'zipAlignmentVerified': True,
               'testProviderAbsent': True, 'localizationQaResourcesAbsent': True,
-              'unitTests': unit, 'deviceTests': device, 'systemUiTests': test_summary(ROOT/'artifacts/system-ui-results'), 'lint': lint,
+              'unitTests': unit, 'deviceTests': device, 'systemUiTests': test_summary(ROOT/'artifacts/system-ui-results'), 'physicalFireTests': test_summary(ROOT/'release/evidence'), 'lint': lint,
               'remaining': remaining, 'files': {p.relative_to(ROOT).as_posix(): digest(p) for p in files}}
     output = ROOT / 'artifacts'
     output.mkdir(exist_ok=True)

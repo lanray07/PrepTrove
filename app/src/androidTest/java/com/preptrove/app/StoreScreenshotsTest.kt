@@ -40,7 +40,8 @@ class StoreScreenshotsTest {
    dao.save(Entry(kind="reminder",title=fixture.getString("reminderKit"),expiry=today.plusDays(13).toString(),intervalDays=30))
    dao.save(Entry(kind="reminder",title=fixture.getString("reminderBatteries"),expiry=today.plusDays(18).toString(),intervalDays=60))
    ActivityScenario.launch(MainActivity::class.java).use {scenario->
-    scenario.onActivity {it.window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)}
+    scenario.onActivity {it.requestedOrientation=android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;it.window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)}
+    rule.waitUntil(15_000) {var landscape=false;scenario.onActivity {landscape=it.resources.configuration.orientation==android.content.res.Configuration.ORIENTATION_LANDSCAPE};landscape}
     fun assertFixtureCounts() {
      val numbers=java.text.NumberFormat.getIntegerInstance(java.util.Locale.forLanguageTag(locale))
      rule.onNodeWithTag("metric-kits").assertTextEquals(numbers.format(1))
@@ -73,7 +74,7 @@ class StoreScreenshotsTest {
      File(marketing,name+".png").outputStream().use {panel.compress(Bitmap.CompressFormat.PNG,100,it)}
      panel.recycle();bitmap.recycle()
     }
-    fun section(id:Int) {rule.onNode(hasText(label(id)) and hasClickAction()).performClick();rule.waitForIdle()}
+    fun section(id:Int) {rule.onNode(hasText(label(id)) and hasClickAction()).performScrollTo().performClick();rule.waitForIdle()}
     capture("01-overview")
     section(R.string.nav_supplies)
     // Translated names have a different database sort order in each locale.

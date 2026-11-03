@@ -1,0 +1,46 @@
+{
+  "kind": "physical_fire_primary_acceptance",
+  "date": "2026-11-03",
+  "deviceModel": "KFTRWI",
+  "api": 28,
+  "productionFingerprint": "2455a67d740c33cf88c5e5410bfdc8b947e8203b0ed9b3d14a4288d0a4319775",
+  "appApkSha256": "a9d549908ef8ed528d1828d462a0c3377ece52a023b7b99ef903544d8daec973",
+  "result": {
+    "tests": 40,
+    "passed": 35,
+    "skipped": 5,
+    "failures": 0
+  },
+  "logSha256": "5b0a1aa35cd7fed0c283408ba9913747ba44c72ca19ca3b3390cc1e2dc688fba",
+  "sourceIdentification": "Production-source fingerprint; tested after the system-bar inset correction on top of 9bf1b44.",
+  "installation": "Fresh local debug install in active tablet profile; primary app was not uninstalled by the runner.",
+  "runner": "AndroidJUnitRunner raw instrumentation: 40 terminal case events converted and counted; 35 passed, 5 assumption/variant skips.",
+  "recognitionAvailable": false,
+  "missingRecognizerFallback": "passed: unavailable-service message and typed-command controls visible",
+  "microphonePermissionBefore": -1,
+  "microphonePermissionAfter": -1,
+  "ttsDefaultEngine": "com.ivona.tts.oem",
+  "ttsInitStatus": 0,
+  "audioOutputVerified": false,
+  "humanTranscriptionVerified": false,
+  "voiceViewVerified": false,
+  "junitEvidence": "release/evidence/TEST-fire-api28.xml",
+  "localizationQa": {
+    "locales": 22,
+    "packagedStringComparisons": 5632,
+    "captures": 110,
+    "result": "passed",
+    "seconds": 145.227,
+    "manifestSha256": "5ddbe34ca94eda5b84986feacab18783b66dede7f34ebb4f0a036503c28995ed",
+    "appApkSha256": "9af3616e1bd8b7b5bfd6e39ee38bc8d85b9e74eb5a720eaa879b22af98d55ed2",
+    "testApkSha256": "9496275c085451c6e98d15e4c2047ace9731058d8a09e8384a30a2bc9ccb9e60",
+    "scope": "Isolated QA app; five screens per locale including 200 percent settings, typed commands and selected official-source link."
+  },
+  "storeCapture": {
+    "result": "passed",
+    "seconds": 256.876,
+    "rawScreens": 176,
+    "marketingPanels": 176,
+    "visualApproval": "Separate review reports; capture success does not grant visual approval."
+  }
+}

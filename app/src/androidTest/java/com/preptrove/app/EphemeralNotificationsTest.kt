@@ -97,7 +97,10 @@ class EphemeralNotificationsTest {
     val recognizer=android.speech.SpeechRecognizer.isRecognitionAvailable(context)
     if(recognizer)choosePermission(false)
     val fallback=localized.getString(if(recognizer) R.string.msg_16cfda4cd82d else R.string.msg_79f24e0d59e2)
-    rule.waitUntil(15_000) {rule.onAllNodesWithText(fallback).fetchSemanticsNodes().isNotEmpty()}
+    rule.waitUntil(15_000) {runCatching {
+     rule.onNode(hasScrollToIndexAction()).performScrollToNode(hasText(fallback))
+     rule.onNodeWithText(fallback).assertIsDisplayed();true
+    }.getOrDefault(false)}
     rule.onNodeWithText(fallback).performScrollTo().assertIsDisplayed()
     assertEquals(PackageManager.PERMISSION_DENIED,context.checkSelfPermission(Manifest.permission.RECORD_AUDIO))
     rule.onNodeWithText(localized.getString(R.string.transcript_or_typed_command_48008f)).performScrollTo().performTextInput("What supplies are expiring soon?")
