@@ -81,8 +81,11 @@ class EphemeralCredentialTest {
   awaitCredentialUi()
   val field = credentialField() ?: error("Native credential field disappeared")
   try {
-   assertTrue("Could not focus native credential input",
-    field.performAction(AccessibilityNodeInfo.ACTION_FOCUS))
+   // A focused platform password field can reject a redundant ACTION_FOCUS.
+   if (!field.isFocused) {
+    field.performAction(AccessibilityNodeInfo.ACTION_FOCUS)
+    if (!field.refresh() || !field.isFocused) field.performAction(AccessibilityNodeInfo.ACTION_CLICK)
+   }
    val arguments = Bundle().apply {
     putCharSequence(AccessibilityNodeInfo.ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE, SYNTHETIC_PIN)
    }

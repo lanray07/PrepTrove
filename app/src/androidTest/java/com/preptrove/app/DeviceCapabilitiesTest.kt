@@ -128,6 +128,7 @@ class DeviceCapabilitiesTest {
   } finally {
    report.put("microphonePermissionAfter", context.checkSelfPermission(Manifest.permission.RECORD_AUDIO))
    saveReport()
+   preserveCiEvidence(context)
   }
  }
 }

@@ -79,5 +79,25 @@
       "contentLocale": "sv-SE"
     }
   ],
-  "note": "Amazon supports15 listing locales in this draft. en-IN uses English copy/UI fallback; es-MX uses reviewed LatinAmerican Spanish. Other interface languages remain supported by the app and retain prepared store drafts, but are not invented as console options."
+  "note": "Amazon supports15 listing locales in this draft. en-IN uses English copy/UI fallback; es-MX uses reviewed LatinAmerican Spanish. Other interface languages remain supported by the app and retain prepared store drafts, but are not invented as console options.",
+  "mediaLocaleOptions": [
+    "de-DE",
+    "en-AU",
+    "en-GB",
+    "en-IN",
+    "en-US",
+    "es-ES",
+    "es-MX",
+    "fr-FR",
+    "it-IT",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "descriptionLocalesWithoutMediaOption": [
+    "nl-NL",
+    "pl-PL",
+    "pt-PT",
+    "sv-SE"
+  ],
+  "mediaLimitation": "Observed image-selection dialog exposes 11 options versus 15 description locales. All 22 app-locale asset sets will be produced; do not invent upload fields or claim unsupported localized-image uploads. Newly added media entries copy existing default assets and must be replaced with reviewed matching-locale captures."
 }

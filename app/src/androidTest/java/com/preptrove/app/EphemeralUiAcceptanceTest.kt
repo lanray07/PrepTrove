@@ -129,6 +129,7 @@ class EphemeralUiAcceptanceTest {
   } finally {
    output.mkdirs()
    File(output, "ephemeral-ui-acceptance.json").writeText(report.toString(2))
+   preserveCiEvidence(context)
   }
  }
 
