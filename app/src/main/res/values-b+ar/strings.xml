@@ -234,7 +234,7 @@
 <string name="report_preview">"معاينة PDF"</string>
 <string name="report_previous">"الصفحة السابقة"</string>
 <string name="report_next">"الصفحة التالية"</string>
-<string name="report_page">"%1$d / %2$d"</string>
+<string name="report_page">"الصفحة %1$d من %2$d"</string>
 <string name="report_loading">"جارٍ إعداد معاينة التقرير…"</string>
 <string name="report_error">"تعذر إعداد معاينة التقرير. أغلق هذه المعاينة وحاول مجددًا. لم تتغير سجلاتك المحفوظة."</string>
 <string name="voice_quantity">"تم تسجيل %1$s %2$s للمستلزم %3$s."</string>

@@ -57,7 +57,7 @@ private data class PreviewResult(val page:PreviewPage?=null,val failed:Boolean=f
   Surface(Modifier.fillMaxSize()) {Column(Modifier.padding(20.dp)) {
    Row {Text(stringResource(R.string.report_preview),modifier=Modifier.weight(1f));TextButton(onClick=onClose,modifier=Modifier.testTag("report-close")) {Text(stringResource(R.string.language_close))}}
    preview.page?.let {value->
-    Row(Modifier.horizontalScroll(rememberScrollState())) {TextButton(enabled=value.index>0,onClick={page=value.index-1}) {Text(stringResource(R.string.report_previous))};Text(stringResource(R.string.report_page,value.index+1,value.count),style=LocalTextStyle.current.copy(textDirection=TextDirection.Ltr));TextButton(enabled=value.index+1<value.count,onClick={page=value.index+1}) {Text(stringResource(R.string.report_next))}}
+    Row(Modifier.horizontalScroll(rememberScrollState())) {TextButton(enabled=value.index>0,onClick={page=value.index-1}) {Text(stringResource(R.string.report_previous))};Text(stringResource(R.string.report_page,value.index+1,value.count),style=LocalTextStyle.current.copy(textDirection=TextDirection.Content));TextButton(enabled=value.index+1<value.count,onClick={page=value.index+1}) {Text(stringResource(R.string.report_next))}}
     Image(value.image.asImageBitmap(),stringResource(R.string.report_preview),modifier=Modifier.fillMaxSize().testTag("report-rendered-page"))
    } ?: Text(stringResource(if(preview.failed) R.string.report_error else R.string.report_loading))
   }}

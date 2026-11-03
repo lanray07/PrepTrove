@@ -1650,10 +1650,10 @@
     },
     "report_page": {
       "source": "%1$d / %2$d",
-      "translation": "%1$d / %2$d",
+      "translation": "الصفحة %1$d من %2$d",
       "reviewed": true,
       "safetyReviewRequired": false,
-      "origin": "Codex AI translation and linguistic review; device review pending"
+      "origin": "Codex AI linguistic review: explicit current page and total to prevent RTL fraction ambiguity"
     },
     "report_loading": {
       "source": "Preparing the report preview…",
