@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"الخصوصية افتراضيًا"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"لا يحتاج PrepTrove إلى حساب ولا يعرض إعلانات. لا يضيف التطبيق أدوات تحليلات للناشر ولا يرفع سجلات المنزل تلقائيًا أو يتتبع الموقع. قد تعالج خدمات توزيع Amazon وخدمات الجهاز الاختيارية البيانات وفق شروطها الخاصة. تُحفظ السجلات في مساحة التطبيق الخاصة على الجهاز. يعتمد تشفير الجهاز على إعداداته."</string>
 <string name="dark_theme_3f11a5">"المظهر الداكن"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"الواجهة: نسخة معاينة باللغة الإنجليزية. اللغات الأخرى بانتظار الترجمة والمراجعة. تعتمد الإمكانات الصوتية على الخدمات المثبتة على الجهاز."</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"يمكنك تغيير لغة التطبيق هنا. يعتمد التعرف على الكلام والرد الصوتي على خدمات الجهاز المثبتة."</string>
 <string name="enable_optional_reminders_4af429">"تفعيل التذكيرات الاختيارية"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"تُفحص التذكيرات دوريًا، وعادةً كل يوم. يتحكم نظام التشغيل في التوقيت. علّم التذكير كمكتمل لإيقافه مؤقتًا، أو عدّل التاريخ لتأجيله."</string>
 <string name="exports_2f4dcf">"عمليات التصدير"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"تضمين جهات الاتصال والخطط العائلية أيضًا"</string>
 <string name="choose_destination_5853e2">"اختيار وجهة الحفظ"</string>
 <string name="welcome_to_preptrove_2fb668">"مرحبًا بك في PrepTrove"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"استعد اليوم لتكون جاهزًا للغد. تبقى سجلاتك على هذا الجهاز. لغة الواجهة: معاينة باللغة الإنجليزية."</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"استعد اليوم لتكون جاهزًا للغد. تبقى سجلاتك على هذا الجهاز. يمكنك تغيير لغة التطبيق من الإعدادات."</string>
 <string name="household_size_optional_73a7cf">"عدد أفراد المنزل (اختياري)"</string>
 <string name="country_or_region_8d2360">"البلد أو المنطقة"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"التذكيرات والوصول إلى الميكروفون اختياريان، ولا تُطلب الأذونات إلا عند تفعيلهما."</string>

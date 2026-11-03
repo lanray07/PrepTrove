@@ -81,6 +81,7 @@ class LocalizationQaTest {
     val folder=File(output,locale).apply {mkdirs()}
     fun capture(name:String) {
      rule.waitForIdle()
+     awaitCaptureFrames(scenario)
      val bitmap=instrumentation.uiAutomation.takeScreenshot()
      File(folder,"$name.png").outputStream().use {bitmap.compress(Bitmap.CompressFormat.PNG,100,it)}
      bitmap.recycle()

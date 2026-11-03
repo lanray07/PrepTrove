@@ -20,9 +20,9 @@
     "Przenośne radio",
     "Powerbank"
   ],
-  "unitBottles": "butelki",
-  "unitItems": "sztuki",
-  "unitTins": "puszki",
+  "unitBottles": "butelek",
+  "unitItems": "szt.",
+  "unitTins": "puszek",
   "category": "Przykładowe zapasy",
   "planTitle": "Plan domowy · przykład",
   "planDetail": "Przykładowy plan. Dostosuj szczegóły do domowników.",

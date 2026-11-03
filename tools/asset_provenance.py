@@ -15,4 +15,4 @@ def production(root):
 
 def capture(root):
  base=root/'app/src/androidTest'
- return fingerprint(root,[p for p in (base/'assets/store-fixtures').glob('*.json')]+[base/'java/com/preptrove/app'/name for name in ['StorePanel.kt','StoreScreenshotsTest.kt']])
+ return fingerprint(root,[p for p in (base/'assets/store-fixtures').glob('*.json')]+[base/'java/com/preptrove/app'/name for name in ['StorePanel.kt','StoreScreenshotsTest.kt','CaptureFrames.kt']])

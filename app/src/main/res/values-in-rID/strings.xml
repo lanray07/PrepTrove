@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"Privat secara default"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"Tanpa akun PrepTrove atau iklan. Aplikasi tidak menambahkan analitik penerbit, tidak mengunggah catatan rumah tangga secara otomatis, dan tidak melacak lokasi. Distribusi Amazon dan layanan perangkat opsional dapat memproses data sesuai ketentuannya sendiri. Catatan disimpan di ruang penyimpanan pribadi aplikasi pada perangkat ini. Enkripsi perangkat bergantung pada pengaturan perangkat."</string>
 <string name="dark_theme_3f11a5">"Tema gelap"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"Antarmuka: pratinjau bahasa Inggris. Bahasa lain menunggu penerjemahan dan peninjauan. Kemampuan suara bergantung pada layanan yang terpasang di perangkat."</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"Anda dapat mengubah bahasa aplikasi di sini. Pengenalan dan pembacaan suara bergantung pada layanan yang terpasang di perangkat."</string>
 <string name="enable_optional_reminders_4af429">"Aktifkan pengingat opsional"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"Pengingat diperiksa secara berkala, biasanya setiap hari. Waktunya dikendalikan oleh sistem operasi. Tandai selesai untuk menjeda; ubah tanggal untuk menunda."</string>
 <string name="exports_2f4dcf">"Ekspor"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"Sertakan juga kontak dan rencana keluarga"</string>
 <string name="choose_destination_5853e2">"Pilih tujuan"</string>
 <string name="welcome_to_preptrove_2fb668">"Selamat datang di PrepTrove"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Bersiap hari ini. Siap untuk esok. Catatan Anda tetap berada di perangkat ini. Bahasa antarmuka: pratinjau bahasa Inggris."</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Bersiap hari ini. Siap untuk esok. Catatan Anda tetap berada di perangkat ini. Anda dapat mengubah bahasa aplikasi di Pengaturan."</string>
 <string name="household_size_optional_73a7cf">"Jumlah anggota rumah tangga (opsional)"</string>
 <string name="country_or_region_8d2360">"Negara atau wilayah"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"Pengingat dan akses mikrofon bersifat opsional dan izinnya hanya diminta saat Anda mengaktifkannya."</string>

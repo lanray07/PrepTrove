@@ -7,8 +7,8 @@
   "generatedLocalePacks": 22,
   "reviewedUiPluralEntries": 5803,
   "voiceTemplates": 235,
-  "currentNativeStatus": "Hosted API36 run41551473058: 33 primary passes, 5 condition skips, zero failures/errors; separate real SAF/country persistence test passed. Full 22-language capture tests failed and are being repaired; navigation-source change awaits rerun. Physical Fire remains disconnected.",
-  "currentScreenshotsStatus": "pending176raw and176nativeheadlinepanels",
+  "currentNativeStatus": "Run41553161845/source4ad0e5d passed: 35primary+1systemUI cases, 4condition skips, 5632string checks and 110QA images. Subsequent visual/wording/capture-readiness corrections require fresh hosted validation; physical Fire disconnected.",
+  "currentScreenshotsStatus": "176raw and176panels produced, then rejected in visual review; corrected source now requires recapture. No new images uploaded to Amazon.",
   "currentUnitTestsPassed": 18,
   "currentToolTestsPassed": 31,
   "officialSources": 21,
@@ -79,12 +79,12 @@
     }
   },
   "hostedApi36Evidence": {
-    "run": "https://github.com/lanray07/PrepTrove/actions/runs/41551473058",
-    "commit": "71c90ad",
+    "run": "https://github.com/lanray07/PrepTrove/actions/runs/41553161845",
+    "commit": "4ad0e5de3a4d49832919c6075d795cba856bbe4a",
     "primary": {
-      "tests": 38,
-      "passed": 33,
-      "skipped": 5,
+      "tests": 39,
+      "passed": 35,
+      "skipped": 4,
       "failures": 0,
       "errors": 0
     },
@@ -94,9 +94,13 @@
     },
     "realCredentialEntryCancelBackgroundUnlock": true,
     "realCreateDocumentJsonExport": true,
+    "notificationDenialGrantPersistenceAndGenericNotice": true,
     "officialSourceCountryPersistence": true,
-    "localizationCapture": "failed: official publisher not displayed; selector encoding/scroll correction awaits rerun",
-    "storeCapture": "failed: fixed fixture order did not account for translated title sort order; correction awaits rerun",
-    "acceptedWorldwideAssets": false
+    "stringComparisons": 5632,
+    "qaImages": 110,
+    "rawStoreImages": 176,
+    "marketingPanels": 176,
+    "visualApproval": false,
+    "newRealPickerRestoreAndMicrophoneDenial": "compiled, runtime pending"
   }
 }

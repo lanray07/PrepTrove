@@ -41,7 +41,7 @@
   "publisherCountry": "United Kingdom",
   "signingStatus": "Amazon documentation permits unsigned APK upload and applies an Amazon signature; local signing is not inherently required for Amazon-managed submission.",
   "submissionBundle": "artifacts/amazon-review.zip; unsigned review only",
-  "unsignedPackageStatus": "Current code build/lint/unit recheck in progress. Hosted API36 run41551473058: 33 primary passes, 5 condition skips, zero failures/errors; separate real system CreateDocument JSON export/country persistence test passed. Credential enable/cancel/background/unlock and portrait PDF preview passed. Worldwide capture tests failed; encoding, navigation scroll and translated sort-order corrections await rerun. No refreshed bundle yet.",
+  "unsignedPackageStatus": "Run41553161845/source4ad0e5d produced an unsigned full-22-locale review package after both CI jobs passed: 18JVM/31tooling,35primary+1systemUI cases,4condition skips,5632resource comparisons,110QAimages,176raw/176panels. Visual review rejected several rendering/capture/copy defects. Corrections and real picker-restore/microphone-denial extensions are compiled in the next candidate; fresh hosted validation/recapture pending. Existing Amazon binary/images are unchanged.",
   "publisherCountryCode": "GB",
   "submissionRequested": true,
   "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html",
@@ -80,13 +80,13 @@
     "reviewType": "Codex AI linguistic review under owner-approved link-only scope; no qualified safety approval claimed"
   },
   "localPreparedBinary": {
-    "status": "new neutral-scope unsigned build prepared; current hosted native validation pending",
+    "status": "Corrected visual/readiness/localized-copy source compiled locally; hosted runtime and recapture pending.",
     "uploaded": false,
     "targetSdk": 36,
     "purchasesEnabled": false
   },
   "consoleDescriptions": {
-    "status": "all15supported locales Complete after reload",
+    "status": "All15 supported locales Complete after reload; Italian opening wording corrected to consistent singular imperative on2026-11-03.",
     "mapping": "release/amazon-locales.json",
     "proof": "artifacts/amazon-worldwide-listings.jpg; category/language summary artifacts/amazon-worldwide-review.jpg"
   },

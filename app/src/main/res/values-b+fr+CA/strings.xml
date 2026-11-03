@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"Privé par défaut"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"Aucun compte PrepTrove ni publicité. L’application n’ajoute aucun outil d’analyse de l’éditeur, ne téléverse pas automatiquement les fiches du foyer et ne suit pas votre position. La distribution Amazon et les services facultatifs de l’appareil peuvent traiter des données selon leurs propres conditions. Les fiches restent dans l’espace de stockage privé de l’application sur votre appareil. Le chiffrement de l’appareil dépend de ses paramètres."</string>
 <string name="dark_theme_3f11a5">"Thème sombre"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"Interface : aperçu en anglais. La traduction et la vérification des autres langues sont en cours. Les fonctions vocales dépendent des services installés sur l’appareil."</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"Vous pouvez changer la langue de l’application ici. La reconnaissance et la lecture vocales dépendent des services installés sur l’appareil."</string>
 <string name="enable_optional_reminders_4af429">"Activer les rappels facultatifs"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"Les rappels sont vérifiés régulièrement, généralement chaque jour. Le système d’exploitation contrôle leur horaire. Marquez un rappel comme terminé pour le suspendre ; modifiez sa date pour le reporter."</string>
 <string name="exports_2f4dcf">"Exportations"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"Inclure aussi les contacts et les plans familiaux"</string>
 <string name="choose_destination_5853e2">"Choisir la destination"</string>
 <string name="welcome_to_preptrove_2fb668">"Bienvenue dans PrepTrove"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Préparez aujourd’hui. Soyez prêt demain. Vos fiches restent sur cet appareil. Langue de l’interface : aperçu en anglais."</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Préparez aujourd’hui. Soyez prêt demain. Vos données restent sur cet appareil. Vous pouvez changer la langue de l’application dans les paramètres."</string>
 <string name="household_size_optional_73a7cf">"Nombre de personnes dans le foyer (facultatif)"</string>
 <string name="country_or_region_8d2360">"Pays ou région"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"Les rappels et l’accès au microphone sont facultatifs. Les autorisations ne sont demandées que lorsque vous activez ces fonctions."</string>

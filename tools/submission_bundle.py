@@ -151,7 +151,7 @@ def main():
              ROOT / 'assets/store/icon-512.png', ROOT / 'assets/store/icon-114.png',
              *[ROOT / 'release' / name for name in ['amazon-draft.json', 'listing-en-US.json', 'gates.json', 'amazon-testing-instructions.txt', 'worldwide-validation.json', 'amazon-locales.json']],
              *[ROOT / 'docs' / name for name in ['RELEASE.md', 'QA.md', 'PRIVACY.md', 'DATA-DELETION.md', 'BACKUP.md', 'AMAZON-BILLING.md', 'AMAZON-SUBMISSION.md', 'VOICE.md', 'NOTIFICATIONS.md', 'LOCALISATION.md', 'WORLDWIDE-VALIDATION.md', 'SOURCE-DIRECTORY.md']],
-             ROOT / 'README.md',
+             ROOT / 'README.md', ROOT / 'docs/PUBLISHER-REVIEW.md', *sorted((ROOT/'docs').glob('visual-review-*.json')),
              *sorted((ROOT/'localization/store-queues').glob('*.json')), ROOT / 'localization/report.json', ROOT / 'localization/content-policy.json', ROOT / 'app/src/main/assets/official-sources.json']
     report = {'kind': 'unsigned_review_only', 'productionReady': False, 'signed': False,
               'submitted': False, 'checkoutEnabled': False,

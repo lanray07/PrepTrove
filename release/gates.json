@@ -5,11 +5,11 @@
   },
   "deviceCompatibilityAndVoice": {
     "status": "pending",
-    "evidence": "Neutral worldwide code compiled debug/release/QA/screenshot variants; 18 JVM and 30 tooling tests passed. New hosted API 36 native acceptance/22-locale capture job prepared; actual new-scope runtime results pending. Physical Fire disconnected; local API 36 emulator did not boot and was stopped. Old fb0bdb1 physical results are historical only. Actual human speech/audio/VoiceView and broader device claims remain limited."
+    "evidence": "API36 run41553161845 passed 35primary+1systemUI cases with4condition skips, 18JVM/31tooling tests, 5632string checks/110QA captures. Visual/source fixes and added real JSON restore/microphone-denial flows require rerun. Human speech/audio, VoiceView and representative Fire acceptance remain limited; physical Fire disconnected."
   },
   "localisedScreenshotsAndMetadata": {
     "status": "pending",
-    "evidence": "All 22 UI packs now generated for owner-approved neutral planner scope; 256 ordinary keys and 5,803 reviewed UI/plural entries, 308 store fields, 235 voice templates. Amazon 15 supported listing locales saved Complete after reload. Current 22×8 raw +22×8 native headline capture pipeline and fully translated fixtures prepared; current native captures/visual review/image uploads pending."
+    "evidence": "All22 locale packs and308store fields AI-reviewed;15Amazon descriptions Complete;13available language checkboxes saved. Produced176raw+176panels, but AIvisual review rejected insets, line spacing, stale counters/loading frames and sample copy. Corrections need recapture/review before11supported media uploads. Platform exposes no media option for4description locales."
   },
   "regionalSafetyReview": {
     "status": "passed",
@@ -17,14 +17,14 @@
   },
   "publisherLegalAndSupport": {
     "status": "pending",
-    "evidence": "Publisher O.Bankole, United Kingdom and support email supplied; GitHub privacy/deletion pages linked. Final legal/trademark review and support delivery verification remain pending."
+    "evidence": "Publisher O.Bankole, UK and support email supplied; GitHub privacy/deletion drafts linked. Concrete support-processing proposal and unverified provider/transfer details are in docs/PUBLISHER-REVIEW.md; final publisher notice/declarations and support handling approval pending."
   },
   "functionalCompleteness": {
     "status": "pending",
-    "evidence": "Provider-stream backups, file-URI rejection, atomic history import and transport photo-reference removal tested. Local draft photo links preserved. Photo pixels excluded; real picker/cloud-provider and lock/process-death acceptance remain pending."
+    "evidence": "Provider-stream backups, atomic copy restore, file-URI rejection, history filtering, transport photo removal, actual device-credential enable/cancel/background/unlock and real CreateDocument JSON export passed. Actual OpenDocument JSON restoration and microphone-denial fallback compiled for next run. Current visual defects are corrected in source but runtime/recapture pending."
   },
   "ownerReleaseApproval": {
     "status": "pending",
-    "evidence": "Owner authorization and full worldwide scope are recorded. Final submission remains pending while worldwide acceptance is incomplete. Amazon export/encryption-law certification is unchecked; the category edit/review discrepancy and final tester notes also require resolution before the final console action."
+    "evidence": "Owner authorized worldwide neutral-planner scope, GitHub push and Amazon submission. Final action awaits corrected current assets/runtime acceptance and publisher declarations. Required Amazon export/encryption-law certification remains unchecked; no submission occurred."
   }
 }

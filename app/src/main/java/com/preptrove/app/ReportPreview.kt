@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
@@ -43,10 +44,10 @@ private data class PreviewResult(val page:PreviewPage?=null,val failed:Boolean=f
  var page by rememberSaveable {mutableStateOf(0)}
  val file=remember(entries) {runCatching {File.createTempFile("preptrove-preview-",".pdf",context.cacheDir)}.getOrNull()}
  DisposableEffect(file) {onDispose {file?.delete()}}
- val preview by produceState(PreviewResult(),file,page) {
-  if(file==null) {value=PreviewResult(failed=true);return@produceState}
-  value=PreviewResult()
-  value=withContext(Dispatchers.IO) {try {
+ var preview by remember(file,page) {mutableStateOf(PreviewResult())}
+ LaunchedEffect(file,page) {
+  if(file==null) {preview=PreviewResult(failed=true);return@LaunchedEffect}
+  preview=withContext(Dispatchers.IO) {try {
    if(file.length()==0L)file.outputStream().use {PdfReports.write(context,entries,it)}
    PreviewResult(page=PdfPreviewRenderer.render(file,page))
   } catch(error:kotlinx.coroutines.CancellationException) {throw error}
@@ -56,8 +57,8 @@ private data class PreviewResult(val page:PreviewPage?=null,val failed:Boolean=f
   Surface(Modifier.fillMaxSize()) {Column(Modifier.padding(20.dp)) {
    Row {Text(stringResource(R.string.report_preview),modifier=Modifier.weight(1f));TextButton(onClick=onClose,modifier=Modifier.testTag("report-close")) {Text(stringResource(R.string.language_close))}}
    preview.page?.let {value->
-    Row(Modifier.horizontalScroll(rememberScrollState())) {TextButton(enabled=value.index>0,onClick={page=value.index-1}) {Text(stringResource(R.string.report_previous))};Text(stringResource(R.string.report_page,value.index+1,value.count));TextButton(enabled=value.index+1<value.count,onClick={page=value.index+1}) {Text(stringResource(R.string.report_next))}}
-    Image(value.image.asImageBitmap(),stringResource(R.string.report_preview),modifier=Modifier.fillMaxSize())
+    Row(Modifier.horizontalScroll(rememberScrollState())) {TextButton(enabled=value.index>0,onClick={page=value.index-1}) {Text(stringResource(R.string.report_previous))};Text(stringResource(R.string.report_page,value.index+1,value.count),style=LocalTextStyle.current.copy(textDirection=TextDirection.Ltr));TextButton(enabled=value.index+1<value.count,onClick={page=value.index+1}) {Text(stringResource(R.string.report_next))}}
+    Image(value.image.asImageBitmap(),stringResource(R.string.report_preview),modifier=Modifier.fillMaxSize().testTag("report-rendered-page"))
    } ?: Text(stringResource(if(preview.failed) R.string.report_error else R.string.report_loading))
   }}
  }

@@ -124,10 +124,11 @@
       "safetyReviewRequired": false
     },
     "interface_english_preview_other_languages_are_pe_364f22": {
-      "source": "Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.",
-      "translation": "Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.",
+      "source": "You can change the app language here. Voice recognition and spoken feedback depend on installed device services.",
+      "translation": "You can change the app language here. Voice recognition and spoken feedback depend on installed device services.",
       "reviewed": true,
-      "safetyReviewRequired": false
+      "safetyReviewRequired": false,
+      "origin": "Codex AI source English wording review, 2026-11-03"
     },
     "enable_optional_reminders_4af429": {
       "source": "Enable optional reminders",
@@ -232,10 +233,11 @@
       "safetyReviewRequired": false
     },
     "prepared_today_ready_for_tomorrow_your_records_s_5cbed1": {
-      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. Interface language: English preview.",
-      "translation": "Prepared today. Ready for tomorrow. Your records stay on this device. Interface language: English preview.",
+      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. You can change the app language in Settings.",
+      "translation": "Prepared today. Ready for tomorrow. Your records stay on this device. You can change the app language in Settings.",
       "reviewed": true,
-      "safetyReviewRequired": false
+      "safetyReviewRequired": false,
+      "origin": "Codex AI source English wording review, 2026-11-03"
     },
     "household_size_optional_73a7cf": {
       "source": "Household size (optional)",

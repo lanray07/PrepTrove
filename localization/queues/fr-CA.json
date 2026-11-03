@@ -144,8 +144,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "interface_english_preview_other_languages_are_pe_364f22": {
-      "source": "Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.",
-      "translation": "Interface : aperçu en anglais. La traduction et la vérification des autres langues sont en cours. Les fonctions vocales dépendent des services installés sur l’appareil.",
+      "source": "You can change the app language here. Voice recognition and spoken feedback depend on installed device services.",
+      "translation": "Vous pouvez changer la langue de l’application ici. La reconnaissance et la lecture vocales dépendent des services installés sur l’appareil.",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"
@@ -270,8 +270,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "prepared_today_ready_for_tomorrow_your_records_s_5cbed1": {
-      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. Interface language: English preview.",
-      "translation": "Préparez aujourd’hui. Soyez prêt demain. Vos fiches restent sur cet appareil. Langue de l’interface : aperçu en anglais.",
+      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. You can change the app language in Settings.",
+      "translation": "Préparez aujourd’hui. Soyez prêt demain. Vos données restent sur cet appareil. Vous pouvez changer la langue de l’application dans les paramètres.",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"

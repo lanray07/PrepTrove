@@ -22,7 +22,7 @@ Room persistence for kits, supplies, plan notes, manually entered contacts, grou
 
 Read [release gates](docs/RELEASE.md) before distributing. This is a working foundation, not completion of the full master brief. Source brief supplied by the user stops partway through section 23; later requirements were not available.
 
-Architecture uses one application module with UI, ViewModel, Room repository/DAO and a WorkManager task. Feature module separation, complete locale support and production entitlement handling are still required. No encryption or security guarantee is claimed.
+Architecture uses one application module with Compose UI, ViewModel, Room DAO/storage and WorkManager, with separate Kotlin components for voice, reports, backups, localization and billing. Further feature-module separation remains architectural follow-up. All 22 locale packs are implemented; runtime/layout acceptance and release gates are tracked separately. Production purchase validation is deferred while checkout is disabled. No encryption or security guarantee is claimed.
 
 ## Localisation and release tooling
 
@@ -47,6 +47,8 @@ Database version 2 adds structured household/contact fields, supply purchase dat
 Run `python tools/submission_bundle.py` after the validation commands in [the submission handoff](docs/AMAZON-SUBMISSION.md). It produces an unsigned review ZIP, checksum and report in ignored `artifacts/`. It checks the actual APK identity, debug flag, permissions, ZIP alignment, unsigned status, checkout build setting and screenshot hashes; failing test/lint evidence blocks assembly. CI uploads this review package automatically. A generated package does not close legal, regional safety, worldwide assets, real-store or device acceptance gates.
 
 
-Reminder notifications now have a persistent Settings opt-in and disable action; they default off until enabled, including after upgrading an earlier preview without a saved choice. Generic count-only notices clear when off or no longer due, and data changes request a best-effort refresh. See [notification behavior and acceptance boundaries](docs/NOTIFICATIONS.md). Document I/O is covered through a synthetic cross-process provider; real picker/cloud-provider and credential-lock acceptance remain open.
+Reminder notifications have a persistent Settings opt-in and disable action; they default off until enabled, including after upgrading an earlier preview without a saved choice. Generic count-only notices clear when off or no longer due, and data changes request a best-effort refresh. See [notification behavior and acceptance boundaries](docs/NOTIFICATIONS.md). Hosted API 36 evidence now includes a real DocumentsUI JSON export and actual synthetic-device credential entry/cancel/background/unlock. Real JSON picker restore is prepared for the next run; cloud-provider, human audio and representative Fire accessibility acceptance remain limited. See [current evidence](release/worldwide-validation.json) and [publisher review](docs/PUBLISHER-REVIEW.md).
+
+After current captures exist, `python tools/review_store_assets.py` creates indexed contact sheets for visual review. It never grants asset approval automatically.
 
 See [worldwide validation evidence and limits](docs/WORLDWIDE-VALIDATION.md). The isolated localisation QA package cannot be submitted: its marker is rejected by the submission packager.

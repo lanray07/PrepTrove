@@ -46,7 +46,8 @@ class EphemeralUiAcceptanceTest {
    assertTrue("Requires a fresh CI review history", dao.allReviews().isEmpty())
    AppLanguages.select(context, "en-GB")
    context.preferences.edit { it[booleanPreferencesKey("onboarded")] = true }
-   dao.save(Entry(id = "ci-saf-${UUID.randomUUID()}", kind = "supply", title = "Synthetic CI export item", quantity = 2.0, unit = "items", detail = "Synthetic acceptance record; no personal information."))
+   val original=Entry(id = "ci-saf-${UUID.randomUUID()}", kind = "supply", title = "Synthetic CI export item", quantity = 2.0, unit = "items", detail = "Synthetic acceptance record; no personal information.")
+   dao.save(original)
    val localized = AppLanguages.wrap(context)
    ActivityScenario.launch(MainActivity::class.java).use { scenario ->
     fun section(id: Int) {
@@ -117,6 +118,36 @@ class EphemeralUiAcceptanceTest {
     rule.onNodeWithText(localized.getString(R.string.msg_3b92ecba1a57)).performScrollTo().assertIsDisplayed()
     report.put("localizedExportSavedMessageVisible", true)
     report.put("exportResult", "passed: real CreateDocument selection followed by app write-success message")
+    rule.onNode(hasScrollToIndexAction()).performScrollToNode(hasText(localized.getString(R.string.msg_96276c8b3a4b)))
+    rule.onNodeWithText(localized.getString(R.string.msg_96276c8b3a4b)).performClick()
+    rule.onNodeWithText(localized.getString(R.string.msg_b09c73d9d3f8)).performClick()
+    val importDeadline=SystemClock.uptimeMillis()+15_000
+    var documentChosen=false
+    while(SystemClock.uptimeMillis()<importDeadline && !documentChosen) {
+     val root=automation.rootInActiveWindow
+     if(root!=null && root.packageName?.toString() in DOCUMENTS_PACKAGES) {
+      lastTree=describeTree(root)
+      descendants(root).firstOrNull {it.text?.toString()==filename && it.isVisibleToUser && it.isEnabled}
+       ?.let {documentChosen=clickNodeOrAncestor(it)}
+     }
+     if(!documentChosen)SystemClock.sleep(150)
+    }
+    if(!documentChosen) {
+     output.mkdirs()
+     File(output,"saf-open-selector-failure.txt").writeText(lastTree)
+     fail("Real DocumentsUI could not select the freshly exported synthetic backup")
+    }
+    report.put("realOpenDocumentSelection",true)
+    rule.waitUntil(20_000) {rule.onAllNodesWithText(localized.getString(R.string.msg_f539a84db776)).fetchSemanticsNodes().isNotEmpty()}
+    rule.onNodeWithText(localized.getString(R.string.msg_f539a84db776)).performClick()
+    rule.waitUntil(20_000) {runBlocking {dao.all().size==2}}
+    val restored=dao.all()
+    assertEquals(original,restored.single {it.id==original.id})
+    val copied=restored.single {it.id!=original.id}
+    assertEquals(original.title,copied.title)
+    assertEquals(original.quantity,copied.quantity,0.0)
+    assertEquals(original.unit,copied.unit)
+    report.put("realDocumentRestoreCreatesCopyAndPreservesOriginal",true)
     // No URI interception, fake provider, direct filesystem substitute, cloud account or network flow.
    }
   } catch (error: Throwable) {

@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"Privado por predefinição"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"Sem conta PrepTrove nem anúncios. A aplicação não adiciona ferramentas de análise do editor, não envia automaticamente registos familiares nem monitoriza a localização. A distribuição Amazon e os serviços opcionais do dispositivo podem processar dados segundo os seus próprios termos. Os registos ficam no armazenamento privado desta aplicação no dispositivo. A encriptação do dispositivo depende das respetivas definições."</string>
 <string name="dark_theme_3f11a5">"Tema escuro"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"Interface: pré-visualização em inglês. Os outros idiomas aguardam tradução e revisão. Os recursos de voz dependem dos serviços instalados no dispositivo."</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"Pode alterar o idioma da aplicação aqui. O reconhecimento de voz e as respostas faladas dependem dos serviços instalados no dispositivo."</string>
 <string name="enable_optional_reminders_4af429">"Ativar lembretes opcionais"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"Os lembretes são verificados periodicamente, em geral diariamente. O sistema operativo controla os horários. Marque como concluído para pausar; altere a data para adiar."</string>
 <string name="exports_2f4dcf">"Exportações"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"Incluir também contactos e planos familiares"</string>
 <string name="choose_destination_5853e2">"Escolher destino"</string>
 <string name="welcome_to_preptrove_2fb668">"Boas-vindas ao PrepTrove"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Prepare hoje. Esteja pronto para amanhã. Os seus registos ficam neste dispositivo. Idioma da interface: pré-visualização em inglês."</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Prepare hoje. Esteja pronto para amanhã. Os seus registos ficam neste dispositivo. Pode alterar o idioma da aplicação nas Definições."</string>
 <string name="household_size_optional_73a7cf">"Número de pessoas na casa (opcional)"</string>
 <string name="country_or_region_8d2360">"País ou região"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"Os lembretes e o acesso ao microfone são opcionais. As permissões só são solicitadas quando ativa esses recursos."</string>

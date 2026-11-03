@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"默认保护隐私"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"无需PrepTrove账户，也没有广告。应用不会添加开发者分析工具，不会自动上传家庭记录或追踪位置。Amazon分发功能及可选设备服务可能根据各自的条款处理数据。记录保存在设备的应用专属私有存储空间中。设备加密取决于设备设置。"</string>
 <string name="dark_theme_3f11a5">"深色主题"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"界面为英语预览版。其他语言仍在等待翻译和审核。语音功能取决于设备上安装的服务。"</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"您可以在这里更改应用语言。语音识别和朗读取决于设备上安装的服务。"</string>
 <string name="enable_optional_reminders_4af429">"启用可选提醒"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"系统会定期检查提醒，通常每天一次。具体时间由操作系统控制。标记完成可暂停提醒，修改日期可延后提醒。"</string>
 <string name="exports_2f4dcf">"导出"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"同时包含联系人和家庭计划"</string>
 <string name="choose_destination_5853e2">"选择保存位置"</string>
 <string name="welcome_to_preptrove_2fb668">"欢迎使用PrepTrove"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"今天做好准备，从容面对明天。您的记录保留在此设备上。界面语言为英语预览版。"</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"今天做好准备，从容面对明天。您的记录保存在此设备上。您可以在设置中更改应用语言。"</string>
 <string name="household_size_optional_73a7cf">"家庭人数（选填）"</string>
 <string name="country_or_region_8d2360">"国家或地区"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"提醒和麦克风权限均为可选，仅在您启用相关功能时才会请求。"</string>

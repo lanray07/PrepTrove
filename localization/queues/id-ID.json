@@ -144,8 +144,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "interface_english_preview_other_languages_are_pe_364f22": {
-      "source": "Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.",
-      "translation": "Antarmuka: pratinjau bahasa Inggris. Bahasa lain menunggu penerjemahan dan peninjauan. Kemampuan suara bergantung pada layanan yang terpasang di perangkat.",
+      "source": "You can change the app language here. Voice recognition and spoken feedback depend on installed device services.",
+      "translation": "Anda dapat mengubah bahasa aplikasi di sini. Pengenalan dan pembacaan suara bergantung pada layanan yang terpasang di perangkat.",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"
@@ -270,8 +270,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "prepared_today_ready_for_tomorrow_your_records_s_5cbed1": {
-      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. Interface language: English preview.",
-      "translation": "Bersiap hari ini. Siap untuk esok. Catatan Anda tetap berada di perangkat ini. Bahasa antarmuka: pratinjau bahasa Inggris.",
+      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. You can change the app language in Settings.",
+      "translation": "Bersiap hari ini. Siap untuk esok. Catatan Anda tetap berada di perangkat ini. Anda dapat mengubah bahasa aplikasi di Pengaturan.",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"

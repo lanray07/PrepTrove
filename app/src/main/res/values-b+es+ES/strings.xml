@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"Privacidad desde el principio"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"Sin cuenta de PrepTrove ni anuncios. La aplicación no incorpora herramientas de análisis del editor, no sube automáticamente los registros del hogar ni rastrea tu ubicación. La distribución de Amazon y los servicios opcionales del dispositivo pueden procesar datos según sus propias condiciones. Los registros se guardan en el almacenamiento privado de la aplicación en tu dispositivo. El cifrado del dispositivo depende de su configuración."</string>
 <string name="dark_theme_3f11a5">"Tema oscuro"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"Interfaz: versión preliminar en inglés. Los demás idiomas están pendientes de traducción y revisión. Las funciones de voz dependen de los servicios instalados en el dispositivo."</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"Puedes cambiar el idioma de la aplicación aquí. El reconocimiento y la lectura por voz dependen de los servicios instalados en el dispositivo."</string>
 <string name="enable_optional_reminders_4af429">"Activar recordatorios opcionales"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"Los recordatorios se comprueban periódicamente, normalmente cada día. El sistema operativo controla el horario. Márcalos como completados para pausarlos o cambia la fecha para posponerlos."</string>
 <string name="exports_2f4dcf">"Exportaciones"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"Incluir también contactos y planes familiares"</string>
 <string name="choose_destination_5853e2">"Elegir destino"</string>
 <string name="welcome_to_preptrove_2fb668">"Te damos la bienvenida a PrepTrove"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Prepárate hoy. Ten todo listo para mañana. Tus registros permanecen en este dispositivo. Idioma de la interfaz: versión preliminar en inglés."</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Prepárate hoy. Ten todo listo para mañana. Tus registros permanecen en este dispositivo. Puedes cambiar el idioma de la aplicación en Ajustes."</string>
 <string name="household_size_optional_73a7cf">"Número de personas en el hogar (opcional)"</string>
 <string name="country_or_region_8d2360">"País o región"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"Los recordatorios y el acceso al micrófono son opcionales. Los permisos se solicitan solo cuando activas estas funciones."</string>

@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"Standaard privé"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"Geen PrepTrove-account of advertenties. De app voegt geen analysetools van de uitgever toe, uploadt huishoudgegevens niet automatisch en volgt geen locatie. Amazon-distributie en optionele apparaatdiensten kunnen gegevens volgens hun eigen voorwaarden verwerken. Vermeldingen staan in de privéopslag van deze app op het apparaat. Apparaatversleuteling hangt af van je apparaatinstellingen."</string>
 <string name="dark_theme_3f11a5">"Donker thema"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"Interface: Engelse voorvertoning. Andere talen wachten op vertaling en controle. Spraakfuncties hangen af van de geïnstalleerde apparaatdiensten."</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"Je kunt hier de app-taal wijzigen. Spraakherkenning en gesproken feedback zijn afhankelijk van geïnstalleerde apparaatservices."</string>
 <string name="enable_optional_reminders_4af429">"Optionele herinneringen inschakelen"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"Herinneringen worden regelmatig gecontroleerd, meestal dagelijks. Het besturingssysteem bepaalt het tijdstip. Markeer als voltooid om te pauzeren; wijzig de datum om uit te stellen."</string>
 <string name="exports_2f4dcf">"Exports"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"Ook contacten en gezinsplannen opnemen"</string>
 <string name="choose_destination_5853e2">"Bestemming kiezen"</string>
 <string name="welcome_to_preptrove_2fb668">"Welkom bij PrepTrove"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Vandaag voorbereid. Klaar voor morgen. Je vermeldingen blijven op dit apparaat. Interfacetaal: Engelse voorvertoning."</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Vandaag voorbereid. Klaar voor morgen. Je gegevens blijven op dit apparaat. Je kunt de app-taal wijzigen via Instellingen."</string>
 <string name="household_size_optional_73a7cf">"Aantal personen in het huishouden (optioneel)"</string>
 <string name="country_or_region_8d2360">"Land of regio"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"Herinneringen en microfoontoegang zijn optioneel en worden pas aangevraagd wanneer je ze inschakelt."</string>

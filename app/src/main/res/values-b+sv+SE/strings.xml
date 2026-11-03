@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"Privat som standard"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"Inget PrepTrove-konto och ingen reklam. Appen lägger inte till utgivarens analystjänster, laddar inte automatiskt upp hushållsposter och spårar inte plats. Amazons distribution och valfria enhetstjänster kan behandla uppgifter enligt sina egna villkor. Poster lagras i appens privata lagringsutrymme på enheten. Enhetens kryptering beror på dess inställningar."</string>
 <string name="dark_theme_3f11a5">"Mörkt tema"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"Gränssnitt: engelsk förhandsversion. Andra språk väntar på översättning och granskning. Röstfunktionerna beror på installerade enhetstjänster."</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"Du kan ändra appspråket här. Taligenkänning och talade svar beror på installerade enhetstjänster."</string>
 <string name="enable_optional_reminders_4af429">"Aktivera valfria påminnelser"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"Påminnelser kontrolleras regelbundet, vanligtvis dagligen. Operativsystemet styr tidpunkten. Markera som slutförd för att pausa; ändra datumet för att skjuta upp."</string>
 <string name="exports_2f4dcf">"Exporter"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"Ta även med kontakter och familjeplaner"</string>
 <string name="choose_destination_5853e2">"Välj destination"</string>
 <string name="welcome_to_preptrove_2fb668">"Välkommen till PrepTrove"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Förberedd i dag. Redo för i morgon. Dina poster stannar på den här enheten. Gränssnittsspråk: engelsk förhandsversion."</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Förberedd i dag. Redo för i morgon. Dina uppgifter stannar på den här enheten. Du kan ändra appspråket i Inställningar."</string>
 <string name="household_size_optional_73a7cf">"Antal personer i hushållet (valfritt)"</string>
 <string name="country_or_region_8d2360">"Land eller region"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"Påminnelser och mikrofonåtkomst är valfria. Behörigheter begärs bara när du aktiverar funktionerna."</string>

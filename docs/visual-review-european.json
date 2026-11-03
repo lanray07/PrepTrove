@@ -1,0 +1,197 @@
+{
+  "reviewDate": "2026-11-03",
+  "reviewer": "Codex AI",
+  "reviewType": "AI linguistic and visual review of rendered screenshots",
+  "locales": [
+    "fr-FR",
+    "fr-CA",
+    "de-DE",
+    "it-IT",
+    "es-ES",
+    "es-419",
+    "nl-NL"
+  ],
+  "releaseAssetsApproved": false,
+  "limitations": [
+    "AI review is not human/native-speaker, professional safety, accessibility or store approval.",
+    "Reviewed eight panels per locale via contact sheets; inspected each report-preview panel and listed additional panels at full size. Other small text is limited by contact-sheet scale.",
+    "Known navigation brand/status-bar overlap and panel crop require corrected recapture; this review does not approve current assets.",
+    "PDF page1 is visible in the screenshot; page2 and interactive zoom/pagination were not exercised.",
+    "Image hashes identify this reviewed snapshot; future recaptures require reinspection."
+  ],
+  "reviewedFiles": [
+    {
+      "file": "artifacts/store-visual-review/fr-FR.jpg",
+      "sha256": "b60d09f4b5bc1ef8d9579a52e050607c428ae0d45363b8ef6f6a9aa6bc4881e4",
+      "review": "Eight-panel contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/fr-FR/08-report-preview.png",
+      "sha256": "6d79b661fe6bc70d42147cb9ff072195f78c085339807bf14ac9739dcf050ea2",
+      "review": "Full-size rendered panel"
+    },
+    {
+      "file": "artifacts/store-visual-review/fr-CA.jpg",
+      "sha256": "c4e31e38a866872dd152c310ccd3a78d7fa459d2c032925107d770512ef7e562",
+      "review": "Eight-panel contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/fr-CA/08-report-preview.png",
+      "sha256": "4172625963e7d7459e981033cfe2176c4315c8b4ca7189ad1998275e1df4aded",
+      "review": "Full-size rendered panel"
+    },
+    {
+      "file": "artifacts/store-visual-review/de-DE.jpg",
+      "sha256": "b530db61bea1eba6a9dd9a2303ac971066dcaf32c64bc97c158f8cadf64ae060",
+      "review": "Eight-panel contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/de-DE/08-report-preview.png",
+      "sha256": "aee7facc972d0a80fe1bdb6f15084757e6a426c820dcb4477855b563fd832131",
+      "review": "Full-size rendered panel"
+    },
+    {
+      "file": "artifacts/store-visual-review/it-IT.jpg",
+      "sha256": "65fd775759967fe6ac639698ec56699d8042015841e7c0d8f0a00a42de0afed5",
+      "review": "Eight-panel contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/it-IT/08-report-preview.png",
+      "sha256": "ea883fb8d38f58b4ebcd09e02cb55bd35b49006d577923c194b2d38674a5dfa4",
+      "review": "Full-size rendered panel"
+    },
+    {
+      "file": "artifacts/store-visual-review/es-ES.jpg",
+      "sha256": "3c498874c27969bb3fb9bf4bea5e09844aea8a3639bbc8a6406e07fe2bca7f13",
+      "review": "Eight-panel contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/es-ES/08-report-preview.png",
+      "sha256": "881490669d022ab62acbe9b6aeadf6bec929cb0e1d572cc10e450451cd075756",
+      "review": "Full-size rendered panel"
+    },
+    {
+      "file": "artifacts/store-visual-review/es-419.jpg",
+      "sha256": "1a04338e4791bc5a4db62ae86caa524a3a54c48ec64f30bb3931e6c27482835f",
+      "review": "Eight-panel contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/es-419/08-report-preview.png",
+      "sha256": "93896680c54d973304abf690beff031e34782f25d351d575ceb4e73c750ac1dd",
+      "review": "Full-size rendered panel"
+    },
+    {
+      "file": "artifacts/store-visual-review/nl-NL.jpg",
+      "sha256": "8456507d1157ad6c199d7d60fac9ae0743971e724a7e0e821bad0b6e6d20495f",
+      "review": "Eight-panel contact sheet"
+    },
+    {
+      "file": "assets/store/marketing/nl-NL/08-report-preview.png",
+      "sha256": "d585a11daa503b7d79d5cc36d26597fb0d4b9e93cd2102d49124bbc83565aab2",
+      "review": "Full-size rendered panel"
+    },
+    {
+      "file": "assets/store/marketing/fr-CA/05-checklists.png",
+      "sha256": "ebb9fc7fe4ea44f84bcece0e10c40560c97b0a5880d7494e8cd15693c2e65bc4",
+      "review": "Full-size rendered panel"
+    },
+    {
+      "file": "assets/store/marketing/fr-CA/07-saved-offline-kit.png",
+      "sha256": "db57acebded61fcfddb44f1e77d08c5880abe8cd4f6273b4f2a402767925251b",
+      "review": "Full-size rendered panel"
+    },
+    {
+      "file": "assets/store/marketing/it-IT/01-overview.png",
+      "sha256": "37bed31281f15e5df9b665b83abf64407c0aa48b13e063376cdd205fd5a8b2fe",
+      "review": "Full-size rendered panel"
+    }
+  ],
+  "fixtureFilesRead": [
+    "app/src/androidTest/assets/store-fixtures/fr-CA.json",
+    "app/src/androidTest/assets/store-fixtures/it-IT.json"
+  ],
+  "findings": [
+    {
+      "id": "EU-01",
+      "severity": "medium",
+      "locales": [
+        "fr-CA"
+      ],
+      "files": [
+        "assets/store/marketing/fr-CA/05-checklists.png",
+        "assets/store/marketing/fr-CA/07-saved-offline-kit.png",
+        "assets/store/marketing/fr-CA/08-report-preview.png"
+      ],
+      "keys": [
+        "headlines.07-saved-offline-kit",
+        "checkTitles[2]"
+      ],
+      "observed": "The app navigation and section title use Trousses, but the screenshot headline says Vos kits enregistrés restent accessibles hors ligne and the checklist example says Relire les notes des kits enregistrés. The checklist text also appears in the PDF.",
+      "recommended": "Use Vos trousses enregistrées restent accessibles hors ligne and Relire les notes des trousses enregistrées in the fr-CA fixture, then recapture."
+    },
+    {
+      "id": "EU-02",
+      "severity": "medium",
+      "locales": [
+        "fr-FR",
+        "fr-CA",
+        "it-IT",
+        "es-ES",
+        "es-419",
+        "nl-NL"
+      ],
+      "files": [
+        "assets/store/marketing/fr-FR/08-report-preview.png",
+        "assets/store/marketing/fr-CA/08-report-preview.png",
+        "assets/store/marketing/it-IT/08-report-preview.png",
+        "assets/store/marketing/es-ES/08-report-preview.png",
+        "assets/store/marketing/es-419/08-report-preview.png",
+        "assets/store/marketing/nl-NL/08-report-preview.png"
+      ],
+      "keys": [
+        "unitItems",
+        "synthetic portable-radio quantity"
+      ],
+      "observed": "Quantity1 is paired with a plural unit: French 1 unités; Italian 1 pezzi; Spanish 1 unidades; Dutch 1 stuks. The report sample therefore contains grammatical errors. German 1 Stück is correct.",
+      "recommended": "Give this synthetic example a quantity greater than1 while keeping unitItems appropriate to other examples, or implement correct singular/plural rendering without rewriting private custom units."
+    },
+    {
+      "id": "EU-03",
+      "severity": "medium",
+      "locales": [
+        "it-IT"
+      ],
+      "files": [
+        "assets/store/marketing/it-IT/01-overview.png"
+      ],
+      "keys": [
+        "a_little_preparation_more_peace_of_mind_48526d",
+        "shared overview hero typography"
+      ],
+      "observed": "The hero lines Un po’ di preparazione. and Più tranquillità. touch/overlap vertically in the full-size rendered panel.",
+      "recommended": "Increase the shared multiline hero line height to fit its font metrics and inspect other locales before recapture."
+    },
+    {
+      "id": "EU-04",
+      "severity": "low",
+      "locales": [
+        "it-IT"
+      ],
+      "files": [
+        "assets/store/marketing/it-IT/01-overview.png"
+      ],
+      "keys": [
+        "prepared_today_ready_for_tomorrow_6786a9"
+      ],
+      "observed": "Preparati oggi. Pronti per domani. shifts from singular imperative to plural adjective.",
+      "recommended": "Use a consistent gender-neutral formulation such as Preparati oggi per il domani. and propagate to matching store wording if retained there."
+    }
+  ],
+  "observations": [
+    "All seven contact sheets show genuinely localized interface navigation, headings, command examples, responses and sample records rather than translated headlines over English UI.",
+    "No missing glyph/tofu or wrong-direction text was observed in the sampled Latin-script layouts.",
+    "Apart from the reported hero typography and known global brand crop, no additional confirmed text clipping or action overlap was observed. Partially visible bottom cards are normal scrollable viewport boundaries.",
+    "Report-preview labels and sampled PDF text are localized; diacritics render correctly and no PDF text overlap was observed. PDF body is small at fit-page scale, so the review is limited to the full-size panel visibility.",
+    "Synthetic records are labelled as examples and do not advertise prescribed supply quantities or safety guarantees."
+  ]
+}

@@ -43,7 +43,7 @@ class EphemeralNotificationsTest {
    for(index in 0 until node.childCount)node.getChild(index)?.let {find(it)?.let {found->return found}}
    return null
   }
-  await("Real Android notification permission choice was not available") {
+  await("Real Android permission choice was not available") {
    val root=instrumentation.uiAutomation.rootInActiveWindow ?: return@await false
    if(root.packageName?.toString() !in setOf("com.android.permissioncontroller","com.google.android.permissioncontroller"))return@await false
    find(root)?.performAction(AccessibilityNodeInfo.ACTION_CLICK)==true
@@ -88,6 +88,22 @@ class EphemeralNotificationsTest {
     await("Disabled generic notification did not clear"){manager.activeNotifications.none {it.tag==tag}}
     rule.onNodeWithText(localized.getString(R.string.reminders_disable)).performClick()
     await("Opt-out did not persist"){!enabled()}
+
+    // Decline the real microphone request; this test never grants access or
+    // records audio. Missing recognition services take the explicit fallback.
+    assertEquals(PackageManager.PERMISSION_DENIED,context.checkSelfPermission(Manifest.permission.RECORD_AUDIO))
+    rule.onNode(hasText(localized.getString(R.string.nav_voice)) and hasClickAction()).performScrollTo().performClick()
+    rule.onNodeWithText(localized.getString(R.string.msg_4c15103c8011)).performScrollTo().performClick()
+    val recognizer=android.speech.SpeechRecognizer.isRecognitionAvailable(context)
+    if(recognizer)choosePermission(false)
+    val fallback=localized.getString(if(recognizer) R.string.msg_16cfda4cd82d else R.string.msg_79f24e0d59e2)
+    rule.waitUntil(15_000) {rule.onAllNodesWithText(fallback).fetchSemanticsNodes().isNotEmpty()}
+    rule.onNodeWithText(fallback).performScrollTo().assertIsDisplayed()
+    assertEquals(PackageManager.PERMISSION_DENIED,context.checkSelfPermission(Manifest.permission.RECORD_AUDIO))
+    rule.onNodeWithText(localized.getString(R.string.transcript_or_typed_command_48008f)).performScrollTo().performTextInput("What supplies are expiring soon?")
+    androidx.test.espresso.Espresso.closeSoftKeyboard()
+    rule.onNodeWithText(localized.getString(R.string.review_command_399b62)).performScrollTo().performClick()
+    rule.onNodeWithText(localized.getString(R.string.read_response_aloud_ac4ff0)).performScrollTo().assertIsDisplayed()
    }
   } finally {
    notices.clear()

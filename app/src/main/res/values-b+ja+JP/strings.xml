@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"プライバシーを大切に"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"PrepTroveのアカウントや広告はありません。アプリの開発者によるアクセス解析は追加しておらず、家庭の記録を自動送信したり位置情報を追跡したりしません。Amazonの配信機能や任意の端末サービスは、それぞれの規約に基づきデータを処理する場合があります。記録は端末内のアプリ専用領域に保存されます。端末の暗号化は端末設定によって異なります。"</string>
 <string name="dark_theme_3f11a5">"ダークテーマ"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"インターフェースは英語のプレビュー版です。他の言語は翻訳と確認の準備中です。音声機能の対応状況は、端末にインストールされたサービスによって異なります。"</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"アプリの言語はここで変更できます。音声認識と読み上げは、端末にインストールされたサービスによって利用できる機能が異なります。"</string>
 <string name="enable_optional_reminders_4af429">"任意のリマインダーを有効にする"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"リマインダーは定期的に、通常は毎日確認されます。通知の時刻はOSが管理します。完了にすると一時停止し、日付を変更すると延期できます。"</string>
 <string name="exports_2f4dcf">"エクスポート"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"連絡先と家族の計画も含める"</string>
 <string name="choose_destination_5853e2">"保存先を選択"</string>
 <string name="welcome_to_preptrove_2fb668">"PrepTroveへようこそ"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"今日の備えが、明日の安心に。記録はこの端末に保存されます。インターフェースの言語は英語のプレビュー版です。"</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"今日の備えが、明日の安心に。記録はこの端末に保存されます。アプリの言語は設定で変更できます。"</string>
 <string name="household_size_optional_73a7cf">"世帯人数（任意）"</string>
 <string name="country_or_region_8d2360">"国または地域"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"リマインダーとマイクの利用は任意です。有効にしたときにのみアクセス許可を求めます。"</string>

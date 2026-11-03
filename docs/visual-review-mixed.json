@@ -1,0 +1,178 @@
+{
+  "reviewType": "Codex AI linguistic and visual localization review of actual rendered screenshots",
+  "reviewer": "Codex AI",
+  "date": "2026-11-03",
+  "locales": [
+    "pt-BR",
+    "pt-PT",
+    "pl-PL",
+    "sv-SE",
+    "tr-TR",
+    "id-ID"
+  ],
+  "releaseAssetsApproved": false,
+  "limitations": [
+    "Not independent human or specialist approval.",
+    "Contact sheets cover eight panels per locale; full-size report-preview panel inspected separately for each locale. Other panels were assessed through the contact sheets.",
+    "Only the first visible PDF page was reviewed; the complete exported document was not inspected.",
+    "Known global API36 navigation-brand/status-bar crop defect is being fixed separately; current assets require recapture.",
+    "This review does not establish speech-engine support, safety compliance, final store acceptance or all-screen accessibility."
+  ],
+  "reviewedFiles": [
+    {
+      "file": "artifacts/store-visual-review/pt-BR.jpg",
+      "sha256": "8efddd7f4ffa3066fb163a832a60d6d2bb9df88275eb8c5e2ba2ddc37d684521",
+      "review": "visual inspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-BR/08-report-preview.png",
+      "sha256": "dff57fd826cdc2d276416deb21278af24f60c44a1acda996435dfa433108e234",
+      "review": "visual inspection"
+    },
+    {
+      "file": "app/src/androidTest/assets/store-fixtures/pt-BR.json",
+      "sha256": "c6ff67d43b7eda0ba206ac6ce3a4906adc8159cfbd82303d5dc39de36a7bd2b2",
+      "review": "fixture wording and unit-label comparison"
+    },
+    {
+      "file": "artifacts/store-visual-review/pt-PT.jpg",
+      "sha256": "73d669fb5aa7c4e1c3ee8531fe60a79eebba31b697561a2b0c9fa4096a36514e",
+      "review": "visual inspection"
+    },
+    {
+      "file": "assets/store/marketing/pt-PT/08-report-preview.png",
+      "sha256": "2d73b39e4cb1035ef4bec43ff248c3d7d2876dd7b50d76a40df002108c878fdb",
+      "review": "visual inspection"
+    },
+    {
+      "file": "app/src/androidTest/assets/store-fixtures/pt-PT.json",
+      "sha256": "d13d967b25d6b665113c9b3cd907a83e46949326dbee68dabcbd4132d24a84b7",
+      "review": "fixture wording and unit-label comparison"
+    },
+    {
+      "file": "artifacts/store-visual-review/pl-PL.jpg",
+      "sha256": "81399a88fc4db7b0870b0236f0d65ddca4b144438032b35a64d051ed7e63086c",
+      "review": "visual inspection"
+    },
+    {
+      "file": "assets/store/marketing/pl-PL/08-report-preview.png",
+      "sha256": "d5382c9b233df2e85f32bd1f60582c1d276879a8fbb3b34b5b9f243ec00367d6",
+      "review": "visual inspection"
+    },
+    {
+      "file": "app/src/androidTest/assets/store-fixtures/pl-PL.json",
+      "sha256": "26804319922db0ecb64b2faf40aa2f939da0b04cc5f613873360e07ed02470aa",
+      "review": "fixture wording and unit-label comparison"
+    },
+    {
+      "file": "artifacts/store-visual-review/sv-SE.jpg",
+      "sha256": "a052360e683ec429ae8a469df4e9b927175183dea78ee72ae20b234906632db2",
+      "review": "visual inspection"
+    },
+    {
+      "file": "assets/store/marketing/sv-SE/08-report-preview.png",
+      "sha256": "9076570655bfa472889e4e1101f3bb806b6b7fb6b5965b4e51f098566ecf5c0c",
+      "review": "visual inspection"
+    },
+    {
+      "file": "app/src/androidTest/assets/store-fixtures/sv-SE.json",
+      "sha256": "0d393032e5cbe2e9b28fd66e0d71deebd7a046349b4909ffac7bd84b82eb47b1",
+      "review": "fixture wording and unit-label comparison"
+    },
+    {
+      "file": "artifacts/store-visual-review/tr-TR.jpg",
+      "sha256": "dd1c99ccc4a19563f446071fbb277d5a0df229c0dae334e263646225d405d1ef",
+      "review": "visual inspection"
+    },
+    {
+      "file": "assets/store/marketing/tr-TR/08-report-preview.png",
+      "sha256": "a51556f12068292158a7e9366e97373bf718d9ec4efdd34b7f37d5e59cbba3e4",
+      "review": "visual inspection"
+    },
+    {
+      "file": "app/src/androidTest/assets/store-fixtures/tr-TR.json",
+      "sha256": "ca9a9ef2d25dc58da13554c94093834f326574089920485cead0bd891097b28b",
+      "review": "fixture wording and unit-label comparison"
+    },
+    {
+      "file": "artifacts/store-visual-review/id-ID.jpg",
+      "sha256": "144d93933b34f350097d15e8dc53d376249c229d4a73cd71d69c3e866dd8a672",
+      "review": "visual inspection"
+    },
+    {
+      "file": "assets/store/marketing/id-ID/08-report-preview.png",
+      "sha256": "c4b181c38dcc961ea36a8c7e773628ef0b17c70b430b9a98c9549e129e46e8f6",
+      "review": "visual inspection"
+    },
+    {
+      "file": "app/src/androidTest/assets/store-fixtures/id-ID.json",
+      "sha256": "8720e4eb7b6592b2d9e89cb5c522f92efa533068aac1774684bec206d6074f84",
+      "review": "fixture wording and unit-label comparison"
+    }
+  ],
+  "findings": [
+    {
+      "id": "mixed-01",
+      "severity": "release-asset-blocker",
+      "locales": [
+        "id-ID"
+      ],
+      "files": [
+        "assets/store/marketing/id-ID/08-report-preview.png"
+      ],
+      "observed": "Report preview remains at Menyiapkan pratinjau laporan... with no PDF page or pagination visible.",
+      "recommendation": "Wait for actual PDF rendering and pagination before capturing; fail the capture instead of exporting the loading state. Reinspect regenerated Indonesian report panel."
+    },
+    {
+      "id": "mixed-02",
+      "severity": "linguistic-correction",
+      "locales": [
+        "pt-BR",
+        "pt-PT",
+        "pl-PL",
+        "sv-SE"
+      ],
+      "files": [
+        "assets/store/marketing/pt-BR/08-report-preview.png",
+        "assets/store/marketing/pt-PT/08-report-preview.png",
+        "assets/store/marketing/pl-PL/08-report-preview.png",
+        "assets/store/marketing/sv-SE/08-report-preview.png"
+      ],
+      "observed": {
+        "pt-BR": "Radio quantity reads 1 itens.",
+        "pt-PT": "Radio quantity reads 1 artigos.",
+        "pl-PL": "Radio reads 1 sztuki; batteries read 12 sztuki; water reads 6 butelki.",
+        "sv-SE": "Radio reads 1 stycken (also visible in panel 02)."
+      },
+      "cause": "Synthetic fixture unitItems/unitBottles strings are reused with multiple numerical quantities; they are not count-aware.",
+      "recommendation": {
+        "pt-BR": "Use quantity-neutral abbreviation un. for unitItems.",
+        "pt-PT": "Use quantity-neutral abbreviation un. for unitItems.",
+        "pl-PL": "Use szt. for unitItems; for the fixed six-bottle and eight-tin fixtures use butelek and puszek respectively, or generate unit inflections by count.",
+        "sv-SE": "Use quantity-neutral abbreviation st for unitItems."
+      }
+    },
+    {
+      "id": "mixed-known-global",
+      "severity": "known-release-asset-blocker",
+      "locales": [
+        "pt-BR",
+        "pt-PT",
+        "pl-PL",
+        "sv-SE",
+        "tr-TR",
+        "id-ID"
+      ],
+      "observed": "In-app navigation brand is clipped under the status bar/crop in the native screenshot embedded in panels 01–07.",
+      "recommendation": "Use root-owned safe-inset fix and recapture; do not approve the current assets.",
+      "alreadyKnown": true
+    }
+  ],
+  "observations": [
+    "All six locales show genuinely localized navigation, core headings, synthetic record values and typed expiry commands; brand/technical PDF terminology is retained intentionally.",
+    "No missing glyphs or broken diacritics observed in the reviewed Portuguese, Polish, Swedish, Turkish or Indonesian text.",
+    "Long marketing headlines fit within their panels in the current contact sheets.",
+    "The five fully rendered report-preview panels show localized report labels and records with no observed text overlap or cutoff; body type is small because the page is shown at fit-page scale.",
+    "Cards continuing below the scroll viewport are normal scrolling content and were not reported as clipping."
+  ]
+}

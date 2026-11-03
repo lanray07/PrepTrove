@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"डिफ़ॉल्ट रूप से निजी"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"PrepTrove अकाउंट या विज्ञापन नहीं हैं। ऐप प्रकाशक के एनालिटिक्स नहीं जोड़ता, घर के रिकॉर्ड अपने-आप अपलोड नहीं करता और लोकेशन ट्रैक नहीं करता। Amazon वितरण और डिवाइस की वैकल्पिक सेवाएँ अपनी शर्तों के अनुसार डेटा प्रोसेस कर सकती हैं। रिकॉर्ड इस डिवाइस पर ऐप के निजी स्टोरेज में रहते हैं। डिवाइस का एन्क्रिप्शन उसकी सेटिंग पर निर्भर करता है।"</string>
 <string name="dark_theme_3f11a5">"डार्क थीम"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"इंटरफ़ेस: अंग्रेज़ी पूर्वावलोकन। अन्य भाषाओं का अनुवाद और समीक्षा बाकी है। आवाज़ और बोलने की सुविधाएँ डिवाइस पर इंस्टॉल सेवाओं पर निर्भर करती हैं।"</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"आप यहाँ ऐप की भाषा बदल सकते हैं। आवाज़ पहचानना और जवाब बोलकर सुनाना डिवाइस पर इंस्टॉल सेवाओं पर निर्भर करते हैं।"</string>
 <string name="enable_optional_reminders_4af429">"वैकल्पिक रिमाइंडर चालू करें"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"रिमाइंडर समय-समय पर जाँचे जाते हैं, आमतौर पर रोज़। समय ऑपरेटिंग सिस्टम तय करता है। रोकने के लिए पूरा हुआ चिह्नित करें; टालने के लिए तारीख बदलें।"</string>
 <string name="exports_2f4dcf">"निर्यात"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"संपर्क और पारिवारिक योजनाएँ भी शामिल करें"</string>
 <string name="choose_destination_5853e2">"सहेजने की जगह चुनें"</string>
 <string name="welcome_to_preptrove_2fb668">"PrepTrove में आपका स्वागत है"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"आज तैयारी करें। कल के लिए तैयार रहें। आपके रिकॉर्ड इस डिवाइस पर रहते हैं। इंटरफ़ेस की भाषा: अंग्रेज़ी पूर्वावलोकन।"</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"आज तैयारी करें। कल के लिए तैयार रहें। आपके रिकॉर्ड इसी डिवाइस पर रहते हैं। आप सेटिंग में ऐप की भाषा बदल सकते हैं।"</string>
 <string name="household_size_optional_73a7cf">"घर के सदस्यों की संख्या (वैकल्पिक)"</string>
 <string name="country_or_region_8d2360">"देश या क्षेत्र"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"रिमाइंडर और माइक्रोफ़ोन का इस्तेमाल वैकल्पिक है। अनुमतियाँ केवल इन्हें चालू करने पर माँगी जाती हैं।"</string>

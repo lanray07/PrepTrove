@@ -144,8 +144,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "interface_english_preview_other_languages_are_pe_364f22": {
-      "source": "Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.",
-      "translation": "인터페이스는 영어 미리보기 버전입니다. 다른 언어는 번역과 검토를 준비 중입니다. 음성 기능은 기기에 설치된 서비스에 따라 달라집니다.",
+      "source": "You can change the app language here. Voice recognition and spoken feedback depend on installed device services.",
+      "translation": "여기에서 앱 언어를 변경할 수 있습니다. 음성 인식과 읽어주기는 기기에 설치된 서비스에 따라 달라집니다.",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"
@@ -270,8 +270,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "prepared_today_ready_for_tomorrow_your_records_s_5cbed1": {
-      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. Interface language: English preview.",
-      "translation": "오늘 준비하고, 내일에 대비하세요. 기록은 이 기기에 저장됩니다. 인터페이스 언어는 영어 미리보기 버전입니다.",
+      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. You can change the app language in Settings.",
+      "translation": "오늘 준비하고, 내일에 대비하세요. 기록은 이 기기에 보관됩니다. 설정에서 앱 언어를 변경할 수 있습니다.",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"

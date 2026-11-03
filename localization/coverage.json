@@ -4,7 +4,7 @@
   "remainingInlineTextCalls": [
     {
       "file": "app\\src\\main\\java\\com\\preptrove\\app\\MainActivity.kt",
-      "line": 268,
+      "line": 270,
       "text": "${java.text.NumberFormat.getNumberInstance(resources.configuration.locales[0]).format(e.quantity)} ${e.unit} · ${e.category}"
     },
     {

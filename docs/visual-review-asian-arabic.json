@@ -1,0 +1,118 @@
+{
+  "reviewer": "Codex AI linguistic and visual review",
+  "reviewDate": "2026-11-03",
+  "releaseApproved": false,
+  "locales": [
+    "ar",
+    "hi-IN",
+    "ja-JP",
+    "ko-KR",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "reviewedFiles": [
+    "artifacts/store-visual-review/ar.jpg",
+    "artifacts/store-visual-review/hi-IN.jpg",
+    "artifacts/store-visual-review/ja-JP.jpg",
+    "artifacts/store-visual-review/ko-KR.jpg",
+    "artifacts/store-visual-review/zh-Hans.jpg",
+    "artifacts/store-visual-review/zh-Hant.jpg",
+    "assets/store/marketing/ar/08-report-preview.png",
+    "assets/store/marketing/hi-IN/08-report-preview.png",
+    "assets/store/marketing/ja-JP/08-report-preview.png",
+    "assets/store/marketing/ko-KR/08-report-preview.png",
+    "assets/store/marketing/zh-Hans/08-report-preview.png",
+    "assets/store/marketing/zh-Hant/08-report-preview.png",
+    "assets/store/marketing/ja-JP/01-overview.png",
+    "assets/store/marketing/zh-Hant/02-supplies.png"
+  ],
+  "scope": "All eight panels per locale sampled through six contact sheets; six report panels and two unclear panels opened at full native marketing resolution.",
+  "limitations": [
+    "AI visual and linguistic review only; not human native-speaker, specialist safety or Amazon listing approval.",
+    "Current assets require recapture after known safe-inset/navigation crop correction.",
+    "Report first pages were visually sampled; exported PDF files, second pages and interactive zoom were not reviewed here.",
+    "No image, app, fixture or manifest changes performed."
+  ],
+  "findings": [
+    {
+      "id": "known-navigation-brand-crop",
+      "severity": "release-blocking asset defect",
+      "locales": [
+        "ar",
+        "hi-IN",
+        "ja-JP",
+        "ko-KR",
+        "zh-Hans",
+        "zh-Hant"
+      ],
+      "files": [
+        "artifacts/store-visual-review/ar.jpg",
+        "artifacts/store-visual-review/hi-IN.jpg",
+        "artifacts/store-visual-review/ja-JP.jpg",
+        "artifacts/store-visual-review/ko-KR.jpg",
+        "artifacts/store-visual-review/zh-Hans.jpg",
+        "artifacts/store-visual-review/zh-Hant.jpg"
+      ],
+      "detail": "Known global defect: native side-navigation brand extends above framed capture/status area and is cropped. Root already correcting safe insets; current assets are not approved.",
+      "action": "Recapture and inspect resulting native and marketing assets."
+    },
+    {
+      "id": "ar-overview-stale-zero-counts",
+      "severity": "capture correctness",
+      "locales": [
+        "ar"
+      ],
+      "files": [
+        "artifacts/store-visual-review/ar.jpg"
+      ],
+      "panel": "01-overview",
+      "detail": "Arabic overview shows zero kits and zero supplies, while following panels show the populated synthetic kit and supply fixtures. Other five sampled overviews show one kit, six supplies and two items approaching their recorded dates. This suggests the first capture preceded the data-flow update.",
+      "action": "Wait for expected fixture counts before capturing overview, then recapture Arabic panel."
+    },
+    {
+      "id": "hero-line-height",
+      "severity": "visual readability",
+      "locales": [
+        "ar",
+        "hi-IN",
+        "ja-JP",
+        "ko-KR",
+        "zh-Hans",
+        "zh-Hant"
+      ],
+      "files": [
+        "assets/store/marketing/ja-JP/01-overview.png",
+        "artifacts/store-visual-review/ar.jpg",
+        "artifacts/store-visual-review/hi-IN.jpg",
+        "artifacts/store-visual-review/ja-JP.jpg",
+        "artifacts/store-visual-review/ko-KR.jpg",
+        "artifacts/store-visual-review/zh-Hans.jpg",
+        "artifacts/store-visual-review/zh-Hant.jpg"
+      ],
+      "panel": "01-overview",
+      "detail": "The two-line native hero heading has visibly compressed baselines. Japanese line two nearly overprints line one; Korean, Chinese, Hindi and Arabic contact-sheet samples show the same cramped treatment. Hero text uses a larger font than its inherited line-height.",
+      "action": "Give the hero heading an explicit line height appropriate to its 30sp font and recheck complex-script ascenders/descenders after recapture."
+    },
+    {
+      "id": "arabic-report-page-counter-bidi",
+      "severity": "localized interaction clarity",
+      "locales": [
+        "ar"
+      ],
+      "files": [
+        "assets/store/marketing/ar/08-report-preview.png"
+      ],
+      "detail": "On the first report page, Previous is disabled and Next enabled, but the numeric counter displays left-to-right as 2 / 1; other locales show 1 / 2. The RTL context reverses the intended numeric fraction.",
+      "action": "Isolate the fraction as LTR or use an unambiguous localized page X of Y label."
+    }
+  ],
+  "sampledObservations": [
+    "Headlines, synthetic records, navigation, action labels, dates and report bodies are genuinely localized in all six samples; Latin brand/PDF and example member letters are intentional.",
+    "No tofu or missing-glyph boxes observed. Arabic joining and direction, Hindi conjuncts and marks, Japanese kana/kanji, Korean syllables and both Chinese scripts render legibly in sampled report text.",
+    "Arabic controls and navigation are mirrored; the separate page-counter issue is listed above.",
+    "Long marketing headlines fit inside the full-resolution panels sampled; Traditional Chinese supplies headline is complete.",
+    "The report body is small because a whole page is fitted to its preview. It remains legible at native resolution; contact-sheet size alone does not establish a PDF text defect.",
+    "Record cards continuing below the scroll viewport are ordinary scrolling and were not classified as clipping defects.",
+    "No additional spelling or meaning correction was identified beyond the visual and capture defects listed."
+  ]
+}

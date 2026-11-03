@@ -144,8 +144,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "interface_english_preview_other_languages_are_pe_364f22": {
-      "source": "Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.",
-      "translation": "इंटरफ़ेस: अंग्रेज़ी पूर्वावलोकन। अन्य भाषाओं का अनुवाद और समीक्षा बाकी है। आवाज़ और बोलने की सुविधाएँ डिवाइस पर इंस्टॉल सेवाओं पर निर्भर करती हैं।",
+      "source": "You can change the app language here. Voice recognition and spoken feedback depend on installed device services.",
+      "translation": "आप यहाँ ऐप की भाषा बदल सकते हैं। आवाज़ पहचानना और जवाब बोलकर सुनाना डिवाइस पर इंस्टॉल सेवाओं पर निर्भर करते हैं।",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"
@@ -270,8 +270,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "prepared_today_ready_for_tomorrow_your_records_s_5cbed1": {
-      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. Interface language: English preview.",
-      "translation": "आज तैयारी करें। कल के लिए तैयार रहें। आपके रिकॉर्ड इस डिवाइस पर रहते हैं। इंटरफ़ेस की भाषा: अंग्रेज़ी पूर्वावलोकन।",
+      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. You can change the app language in Settings.",
+      "translation": "आज तैयारी करें। कल के लिए तैयार रहें। आपके रिकॉर्ड इसी डिवाइस पर रहते हैं। आप सेटिंग में ऐप की भाषा बदल सकते हैं।",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"

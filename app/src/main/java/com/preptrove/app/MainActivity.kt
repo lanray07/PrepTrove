@@ -87,7 +87,7 @@ class MainActivity:ComponentActivity() {
   lockEnabled=getSharedPreferences("privacy",MODE_PRIVATE).getBoolean("lock",false);locked=lockEnabled
   tts=TextToSpeech(this) { status-> speechReady=status==TextToSpeech.SUCCESS && (tts?.setLanguage(resources.configuration.locales[0]) ?: -1)>=0 }
   (application as PrepTrove).billing.start()
-  setContent {val plannerState=rememberSaveableStateHolder();LaunchedEffect(lockEnabled) {if(lockEnabled) window.addFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE) else window.clearFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE)};if(locked) MaterialTheme {Surface(Modifier.fillMaxSize()) {Column(Modifier.padding(32.dp),verticalArrangement=Arrangement.Center) {Text(getString(R.string.lock_title),fontSize=28.sp);Text(getString(R.string.lock_prompt));Button(onClick={authenticate()}) {Text(getString(R.string.lock_unlock))}}}} else plannerState.SaveableStateProvider("planner") {Planner()} }
+  setContent {val plannerState=rememberSaveableStateHolder();LaunchedEffect(lockEnabled) {if(lockEnabled) window.addFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE) else window.clearFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE)};if(locked) MaterialTheme {Surface(Modifier.fillMaxSize()) {Column(Modifier.padding(32.dp),verticalArrangement=Arrangement.Center) {Text(getString(R.string.lock_title),fontSize=28.sp,lineHeight=36.sp);Text(getString(R.string.lock_prompt));Button(onClick={authenticate()}) {Text(getString(R.string.lock_unlock))}}}} else plannerState.SaveableStateProvider("planner") {Planner()} }
  }
  override fun onResume() {super.onResume();(application as PrepTrove).billing.refresh()}
  override fun onDestroy() { recognizer?.destroy();tts?.stop();tts?.shutdown();super.onDestroy() }
@@ -180,8 +180,8 @@ class MainActivity:ComponentActivity() {
      val fontScale=androidx.compose.ui.platform.LocalDensity.current.fontScale
      val wide=maxWidth>=840.dp
      Row {
-      if(wide) Column(Modifier.width(if(fontScale>=1.5f) 320.dp else 220.dp).fillMaxHeight().background(Navy).verticalScroll(rememberScrollState()).padding(20.dp)) {
-       Text(androidx.compose.ui.res.stringResource(R.string.preptrove_c7187b),color=Color.White,fontSize=27.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.your_household_organised_96de4e),color=Amber,fontSize=10.sp)
+      if(wide) Column(Modifier.width(if(fontScale>=1.5f) 320.dp else 220.dp).fillMaxHeight().background(Navy).windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical)).verticalScroll(rememberScrollState()).padding(20.dp)) {
+       Text(androidx.compose.ui.res.stringResource(R.string.preptrove_c7187b),color=Color.White,fontSize=27.sp,lineHeight=35.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.your_household_organised_96de4e),color=Amber,fontSize=10.sp)
        Spacer(Modifier.height(32.dp))
        sections.forEach { s->TextButton(onClick={section=s;search=""},modifier=Modifier.fillMaxWidth().heightIn(min=48.dp),colors=ButtonDefaults.textButtonColors(contentColor=if(section==s) Amber else Color.White)) {Text(screenLabel(s),modifier=Modifier.fillMaxWidth())} }
       }
@@ -192,16 +192,16 @@ class MainActivity:ComponentActivity() {
         if(status.isNotEmpty()) item { Text(status) }
         when(section) {
          "Overview"->{
-          item {Card(colors=CardDefaults.cardColors(containerColor=Navy),shape=RoundedCornerShape(24.dp)) {Column(Modifier.padding(28.dp)) {Text(androidx.compose.ui.res.stringResource(R.string.a_little_preparation_more_peace_of_mind_48526d),color=Color.White,fontSize=30.sp,fontWeight=FontWeight.Bold);Spacer(Modifier.height(12.dp));Text(androidx.compose.ui.res.stringResource(R.string.your_essentials_and_household_plans_together_in__354383),color=Color(0xFFCDDCD9));Spacer(Modifier.height(16.dp));Button(onClick={section="Kits"},colors=ButtonDefaults.buttonColors(containerColor=Amber,contentColor=Navy)) {Text(androidx.compose.ui.res.stringResource(R.string.organise_your_kit_e4829c))}}} }
-          item {Row(horizontalArrangement=Arrangement.spacedBy(12.dp)) {Metric(screenLabel("Kits"),records.count{it.kind=="kit" && !it.isTemplate},Modifier.weight(1f));Metric(screenLabel("Supplies"),records.count{it.kind=="supply" && !it.isTemplate},Modifier.weight(1f));Metric(getString(R.string.msg_9a9143036dec),Inventory.attention(records).size,Modifier.weight(1f))} }
-          item {Text(androidx.compose.ui.res.stringResource(R.string.your_next_small_step_b68082),fontSize=22.sp,fontWeight=FontWeight.SemiBold)}
+          item {Card(colors=CardDefaults.cardColors(containerColor=Navy),shape=RoundedCornerShape(24.dp)) {Column(Modifier.padding(28.dp)) {Text(androidx.compose.ui.res.stringResource(R.string.a_little_preparation_more_peace_of_mind_48526d),color=Color.White,fontSize=30.sp,lineHeight=40.sp,fontWeight=FontWeight.Bold);Spacer(Modifier.height(12.dp));Text(androidx.compose.ui.res.stringResource(R.string.your_essentials_and_household_plans_together_in__354383),color=Color(0xFFCDDCD9));Spacer(Modifier.height(16.dp));Button(onClick={section="Kits"},colors=ButtonDefaults.buttonColors(containerColor=Amber,contentColor=Navy)) {Text(androidx.compose.ui.res.stringResource(R.string.organise_your_kit_e4829c))}}} }
+          item {Row(horizontalArrangement=Arrangement.spacedBy(12.dp)) {Metric(screenLabel("Kits"),records.count{it.kind=="kit" && !it.isTemplate},Modifier.weight(1f),"metric-kits");Metric(screenLabel("Supplies"),records.count{it.kind=="supply" && !it.isTemplate},Modifier.weight(1f),"metric-supplies");Metric(getString(R.string.msg_9a9143036dec),Inventory.attention(records).size,Modifier.weight(1f),"metric-attention")} }
+          item {Text(androidx.compose.ui.res.stringResource(R.string.your_next_small_step_b68082),fontSize=22.sp,lineHeight=30.sp,fontWeight=FontWeight.SemiBold)}
           item {InfoCard(getString(R.string.msg_d2dbe2559ba6),getString(R.string.msg_6079021c3755),getString(R.string.msg_ed39c4413dda)) {section="Family plans"} }
           item {InfoCard(getString(R.string.msg_46e7e7653a2f),resources.getQuantityString(R.plurals.supplies_attention,Inventory.attention(records).size,Inventory.attention(records).size),getString(R.string.msg_20881999e49c)) {section="Supplies"} }
           item {InfoCard(getString(R.string.msg_29bad2d89383),getString(R.string.msg_e0d1c3905d20),getString(R.string.msg_e2f452853253)) {section="Contacts"} }
           item {Text(androidx.compose.ui.res.stringResource(R.string.planning_progress_is_not_a_guarantee_of_safety_f_26ae34),fontSize=12.sp)}
          }
          "Reference"->{
-           item {Text(getString(R.string.saved_guidance_united_kingdom_8a9326),fontSize=24.sp,fontWeight=FontWeight.Bold)}
+           item {Text(getString(R.string.saved_guidance_united_kingdom_8a9326),fontSize=24.sp,lineHeight=32.sp,fontWeight=FontWeight.Bold)}
            item {Text(getString(R.string.general_planning_information_not_live_alerts_for_127afe))}
            item {OutlinedButton(onClick={chooseGuidanceCountry=true},modifier=Modifier.testTag("guidance-country")) {Text(guidanceSources.find {it.country==guidanceCountry}?.countryName(resources.configuration.locales[0]) ?: getString(R.string.guidance_choose))}}
            guidanceSources.find {it.country==guidanceCountry}?.let {source->item {
@@ -213,7 +213,7 @@ class MainActivity:ComponentActivity() {
            item {Text(getString(R.string.source_uk_government_prepare_https_prepare_campa_17bb7e),fontSize=12.sp)}
            }
            "Voice"->{
-          item {Text(androidx.compose.ui.res.stringResource(R.string.your_voice_your_planner_4e42c9),fontSize=26.sp,fontWeight=FontWeight.Bold)}
+          item {Text(androidx.compose.ui.res.stringResource(R.string.your_voice_your_planner_4e42c9),fontSize=26.sp,lineHeight=34.sp,fontWeight=FontWeight.Bold)}
           item {Text(androidx.compose.ui.res.stringResource(R.string.push_to_talk_then_review_the_transcript_your_dev_afdb27))}
           item {Button(onClick={if(!SpeechRecognizer.isRecognitionAvailable(this@MainActivity)) response=getString(R.string.msg_79f24e0d59e2) else if(checkSelfPermission(Manifest.permission.RECORD_AUDIO)==PackageManager.PERMISSION_GRANTED) listen({command=it},{listening=it}) else permission.launch(Manifest.permission.RECORD_AUDIO)}) {Icon(Icons.Outlined.Mic,null);Text(if(listening) getString(R.string.msg_bbb4106e8144) else getString(R.string.msg_4c15103c8011))} }
           item {OutlinedTextField(value=command,onValueChange={command=it},label={Text(androidx.compose.ui.res.stringResource(R.string.transcript_or_typed_command_48008f))},modifier=Modifier.fillMaxWidth())}
@@ -235,16 +235,16 @@ class MainActivity:ComponentActivity() {
           item {TextButton(onClick={runCatching {startActivity(Intent(Intent.ACTION_VIEW,android.net.Uri.parse("https://github.com/lanray07/PrepTrove/blob/main/docs/PRIVACY.md")))}.onFailure {status=getString(R.string.support_browser_missing)}}) {Text(getString(R.string.support_privacy))};TextButton(onClick={runCatching {startActivity(Intent(Intent.ACTION_VIEW,android.net.Uri.parse("https://github.com/lanray07/PrepTrove/blob/main/docs/DATA-DELETION.md")))}.onFailure {status=getString(R.string.support_browser_missing)}}) {Text(getString(R.string.support_deletion))} }
           item {OutlinedButton(onClick={chooseLanguage=true}) {Text(getString(R.string.language_label))} }
 
-          item {Text(androidx.compose.ui.res.stringResource(R.string.private_by_default_f52e06),fontSize=26.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.no_account_ads_analytics_location_tracking_or_au_75a32c))}
+          item {Text(androidx.compose.ui.res.stringResource(R.string.private_by_default_f52e06),fontSize=26.sp,lineHeight=34.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.no_account_ads_analytics_location_tracking_or_au_75a32c))}
           item {Row(verticalAlignment=Alignment.CenterVertically) {Switch(checked=dark,onCheckedChange={model.setDarkTheme(it)});Text(androidx.compose.ui.res.stringResource(R.string.dark_theme_3f11a5))} }
           item {Text(androidx.compose.ui.res.stringResource(R.string.interface_english_preview_other_languages_are_pe_364f22))}
           item {Button(onClick={if(remindersEnabled) {model.setRemindersEnabled(false);status=getString(R.string.reminders_disabled)} else if(android.os.Build.VERSION.SDK_INT>=33) notifications.launch(Manifest.permission.POST_NOTIFICATIONS) else {model.setRemindersEnabled(true);status=getString(if(getSystemService(android.app.NotificationManager::class.java).areNotificationsEnabled()) R.string.msg_4bd4c7b77408 else R.string.reminders_blocked)}}) {Text(getString(if(remindersEnabled) R.string.reminders_disable else R.string.enable_optional_reminders_4af429))} }
           item {Text(androidx.compose.ui.res.stringResource(R.string.reminders_are_checked_periodically_usually_daily_226139))}
-          item {Text(androidx.compose.ui.res.stringResource(R.string.exports_2f4dcf),fontSize=22.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.exports_are_unencrypted_review_the_included_info_14b601))}
+          item {Text(androidx.compose.ui.res.stringResource(R.string.exports_2f4dcf),fontSize=22.sp,lineHeight=30.sp,fontWeight=FontWeight.Bold);Text(androidx.compose.ui.res.stringResource(R.string.exports_are_unencrypted_review_the_included_info_14b601))}
           item {Row {listOf("pdf","csv","json","ptb").forEach {type->TextButton(onClick={exportType=type;exportConfirm=true;backupPassword=""}) {Text(type.uppercase())}}} }
           item {OutlinedButton(onClick={importing=true;backupPassword=""}) {Text(getString(R.string.msg_96276c8b3a4b))} }
           if(BuildConfig.AMAZON_PURCHASES_ENABLED) item {Card(Modifier.fillMaxWidth()) {Column(Modifier.padding(20.dp)) {
-           Text(getString(R.string.billing_title),fontSize=22.sp)
+           Text(getString(R.string.billing_title),fontSize=22.sp,lineHeight=30.sp)
            Text(getString(purchase.message))
            if(purchase.premium) Text(getString(R.string.billing_premium_active))
            if(purchase.price.isNotEmpty()) Text(getString(R.string.billing_price,purchase.price))
@@ -260,13 +260,13 @@ class MainActivity:ComponentActivity() {
            }
           }) {Text(getString(R.string.msg_b836676c3c6d))} }
           val visible=records.filter {!it.isTemplate && it.kind==kind && (it.title.contains(search,true)||it.detail.contains(search,true))}
-          item {Text(screenLabel(section),fontSize=28.sp,fontWeight=FontWeight.Bold);Text(when(kind) {"plan"->getString(R.string.msg_4db74eab28d5);"check"->getString(R.string.msg_0d4f4e9b3444);"contact"->getString(R.string.msg_a36a7fd80438);else->getString(R.string.msg_ffacb0664095)})}
+          item {Text(screenLabel(section),fontSize=28.sp,lineHeight=36.sp,fontWeight=FontWeight.Bold);Text(when(kind) {"plan"->getString(R.string.msg_4db74eab28d5);"check"->getString(R.string.msg_0d4f4e9b3444);"contact"->getString(R.string.msg_a36a7fd80438);else->getString(R.string.msg_ffacb0664095)})}
           item {OutlinedTextField(search,{search=it},label={Text(getString(R.string.msg_7d76ac75b53e ,screenLabel(section)))},modifier=Modifier.fillMaxWidth(),leadingIcon={Icon(Icons.Outlined.Search,null)})}
           items(records.filter {it.kind==kind && it.isTemplate && it.kitId.isEmpty()},key={"template-"+it.id}) {template->Card {Column(Modifier.padding(16.dp)) {Text(getString(R.string.template_label,template.title));Row {TextButton(onClick={model.useTemplate(template)}) {Text(getString(R.string.template_use))};TextButton(onClick={deleting=template}) {Text(getString(R.string.delete_e2d0a5))}}}}}
           if(section=="Reminders") item {Text(getString(R.string.review_history));reviews.take(20).forEach {Text(it.title+" · "+displayDate(it.completedOn))}}
           if(visible.isEmpty()) item {InfoCard(getString(R.string.msg_357221fd3aac),getString(R.string.msg_ac8bbdb90299),getString(R.string.msg_f841d822b35e)) {editing=newPlannerRecord(kind ?: "supply")} }
           items(visible,key={it.id}) {e->Card(shape=RoundedCornerShape(18.dp)) {Column(Modifier.padding(20.dp)) {
-           Row(verticalAlignment=Alignment.CenterVertically) {if(kind in listOf("check","reminder")) Checkbox(e.done,{if(it) model.complete(e) else model.save(e.copy(done=false))});Text(e.title,fontSize=20.sp,fontWeight=FontWeight.SemiBold,modifier=Modifier.weight(1f));IconButton(onClick={editing=e}) {Icon(Icons.Outlined.Edit,getString(R.string.msg_261e9c17ca74 ,e.title))}}
+           Row(verticalAlignment=Alignment.CenterVertically) {if(kind in listOf("check","reminder")) Checkbox(e.done,{if(it) model.complete(e) else model.save(e.copy(done=false))});Text(e.title,fontSize=20.sp,lineHeight=28.sp,fontWeight=FontWeight.SemiBold,modifier=Modifier.weight(1f));IconButton(onClick={editing=e}) {Icon(Icons.Outlined.Edit,getString(R.string.msg_261e9c17ca74 ,e.title))}}
            Text(e.detail);if(kind=="supply") Text("${java.text.NumberFormat.getNumberInstance(resources.configuration.locales[0]).format(e.quantity)} ${e.unit} · ${e.category}")
            if(e.kind=="plan" || e.kind=="contact") Text(StructuredFields.summary(e.extraData))
            if(e.purchasedDate.isNotEmpty()) Text(getString(R.string.purchase_date_value,displayDate(e.purchasedDate)))
@@ -309,8 +309,8 @@ class MainActivity:ComponentActivity() {
   }
  }
 }
-@Composable fun Metric(label:String,count:Int,modifier:Modifier) {Card(modifier) {Column(Modifier.padding(16.dp)) {Text(java.text.NumberFormat.getIntegerInstance(androidx.compose.ui.platform.LocalConfiguration.current.locales[0]).format(count),fontSize=30.sp,fontWeight=FontWeight.Bold);Text(label,fontSize=12.sp)}}}
-@Composable fun InfoCard(title:String,body:String,action:String,onClick:()->Unit) {Card(Modifier.fillMaxWidth(),shape=RoundedCornerShape(20.dp)) {Column(Modifier.padding(22.dp)) {Text(title,fontSize=20.sp,fontWeight=FontWeight.SemiBold);Spacer(Modifier.height(8.dp));Text(body);TextButton(onClick=onClick) {Text(action)}}}}
+@Composable fun Metric(label:String,count:Int,modifier:Modifier,tag:String) {Card(modifier) {Column(Modifier.padding(16.dp)) {Text(java.text.NumberFormat.getIntegerInstance(androidx.compose.ui.platform.LocalConfiguration.current.locales[0]).format(count),fontSize=30.sp,lineHeight=40.sp,fontWeight=FontWeight.Bold,modifier=Modifier.testTag(tag));Text(label,fontSize=12.sp)}}}
+@Composable fun InfoCard(title:String,body:String,action:String,onClick:()->Unit) {Card(Modifier.fillMaxWidth(),shape=RoundedCornerShape(20.dp)) {Column(Modifier.padding(22.dp)) {Text(title,fontSize=20.sp,lineHeight=28.sp,fontWeight=FontWeight.SemiBold);Spacer(Modifier.height(8.dp));Text(body);TextButton(onClick=onClick) {Text(action)}}}}
 
 @Composable fun EntryEditor(initial:Entry,kits:List<Entry>,onClose:()->Unit,onSave:(Entry)->Unit) {
  val editorContext=androidx.compose.ui.platform.LocalContext.current

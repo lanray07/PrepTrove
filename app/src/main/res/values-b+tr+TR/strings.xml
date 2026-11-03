@@ -19,7 +19,7 @@
 <string name="private_by_default_f52e06">"Varsayılan olarak gizli"</string>
 <string name="no_account_ads_analytics_location_tracking_or_au_75a32c">"PrepTrove hesabı veya reklam yoktur. Uygulama, yayıncıya ait analiz araçları eklemez; hane kayıtlarını otomatik olarak yüklemez ve konumu izlemez. Amazon dağıtımı ve isteğe bağlı cihaz hizmetleri, verileri kendi koşullarına göre işleyebilir. Kayıtlar, cihazda bu uygulamaya özel depolama alanında tutulur. Cihaz şifrelemesi cihaz ayarlarına bağlıdır."</string>
 <string name="dark_theme_3f11a5">"Koyu tema"</string>
-<string name="interface_english_preview_other_languages_are_pe_364f22">"Arayüz: İngilizce önizleme. Diğer diller çeviri ve inceleme bekliyor. Ses ve konuşma özellikleri yüklü cihaz hizmetlerine bağlıdır."</string>
+<string name="interface_english_preview_other_languages_are_pe_364f22">"Uygulama dilini buradan değiştirebilirsiniz. Konuşma tanıma ve sesli geri bildirim, cihazda yüklü hizmetlere bağlıdır."</string>
 <string name="enable_optional_reminders_4af429">"İsteğe bağlı hatırlatıcıları etkinleştir"</string>
 <string name="reminders_are_checked_periodically_usually_daily_226139">"Hatırlatıcılar düzenli olarak, genellikle her gün kontrol edilir. Zamanlamayı işletim sistemi belirler. Duraklatmak için tamamlandı olarak işaretleyin; ertelemek için tarihi değiştirin."</string>
 <string name="exports_2f4dcf">"Dışa aktarımlar"</string>
@@ -37,7 +37,7 @@
 <string name="also_include_contacts_and_family_plans_331c8a">"Kişileri ve aile planlarını da dahil et"</string>
 <string name="choose_destination_5853e2">"Hedef seç"</string>
 <string name="welcome_to_preptrove_2fb668">"PrepTrove’a hoş geldiniz"</string>
-<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Bugünden hazırlanın. Yarına hazır olun. Kayıtlarınız bu cihazda kalır. Arayüz dili: İngilizce önizleme."</string>
+<string name="prepared_today_ready_for_tomorrow_your_records_s_5cbed1">"Bugünden hazırlanın. Yarına hazır olun. Kayıtlarınız bu cihazda kalır. Uygulama dilini Ayarlar bölümünden değiştirebilirsiniz."</string>
 <string name="household_size_optional_73a7cf">"Hanedeki kişi sayısı (isteğe bağlı)"</string>
 <string name="country_or_region_8d2360">"Ülke veya bölge"</string>
 <string name="reminders_and_microphone_access_are_optional_and_121a8c">"Hatırlatıcılar ve mikrofon erişimi isteğe bağlıdır; izinler yalnızca bunları etkinleştirdiğinizde istenir."</string>

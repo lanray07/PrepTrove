@@ -144,8 +144,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "interface_english_preview_other_languages_are_pe_364f22": {
-      "source": "Interface: English preview. Other languages are pending translation and review. Voice and speech capabilities depend on installed device services.",
-      "translation": "インターフェースは英語のプレビュー版です。他の言語は翻訳と確認の準備中です。音声機能の対応状況は、端末にインストールされたサービスによって異なります。",
+      "source": "You can change the app language here. Voice recognition and spoken feedback depend on installed device services.",
+      "translation": "アプリの言語はここで変更できます。音声認識と読み上げは、端末にインストールされたサービスによって利用できる機能が異なります。",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"
@@ -270,8 +270,8 @@
       "origin": "Codex AI translation and linguistic review; device review pending"
     },
     "prepared_today_ready_for_tomorrow_your_records_s_5cbed1": {
-      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. Interface language: English preview.",
-      "translation": "今日の備えが、明日の安心に。記録はこの端末に保存されます。インターフェースの言語は英語のプレビュー版です。",
+      "source": "Prepared today. Ready for tomorrow. Your records stay on this device. You can change the app language in Settings.",
+      "translation": "今日の備えが、明日の安心に。記録はこの端末に保存されます。アプリの言語は設定で変更できます。",
       "reviewed": true,
       "safetyReviewRequired": false,
       "origin": "Codex AI translation and linguistic review; device review pending"

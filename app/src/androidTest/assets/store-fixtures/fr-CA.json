@@ -6,7 +6,7 @@
     "04-reminders": "Planifiez vos vérifications régulières",
     "05-checklists": "Transformez votre plan en tâches simples",
     "06-voice": "Saisissez ou dictez une commande prise en charge",
-    "07-saved-offline-kit": "Vos kits enregistrés restent accessibles hors ligne",
+    "07-saved-offline-kit": "Vos trousses enregistrées restent accessibles hors ligne",
     "08-report-preview": "Vérifiez un rapport avant de le partager"
   },
   "kitTitle": "Articles essentiels du foyer · exemple",
@@ -37,7 +37,7 @@
   "checkTitles": [
     "Vérifier les fiches des réserves",
     "Vérifier les coordonnées des membres du foyer",
-    "Relire les notes des kits enregistrés"
+    "Relire les notes des trousses enregistrées"
   ],
   "checkGroup": "Vérification du foyer",
   "reminderKit": "Vérifier le kit du foyer",

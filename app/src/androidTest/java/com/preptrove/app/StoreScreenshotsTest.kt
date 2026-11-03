@@ -29,7 +29,7 @@ class StoreScreenshotsTest {
    dao.save(kit)
    val supplies=fixture.getJSONArray("supplies")
    val today=java.time.LocalDate.now()
-   val quantities=listOf(6.0,2.0,12.0,8.0,1.0,2.0)
+   val quantities=listOf(6.0,2.0,12.0,8.0,2.0,2.0)
    for(index in 0 until supplies.length()) dao.save(Entry(kind="supply",title=supplies.getString(index),quantity=quantities[index],unit=fixture.getString(when(index){0->"unitBottles";3->"unitTins";else->"unitItems"}),category=fixture.getString("category"),expiry=when(index){0->today.plusDays(13).toString();3->today.plusDays(16).toString();else->""},kitId=kit.id,location=kit.location))
    val details=org.json.JSONObject()
    for(key in listOf("members","meeting","communication","pets","checkIn"))details.put(key,fixture.getString(key))
@@ -41,14 +41,32 @@ class StoreScreenshotsTest {
    dao.save(Entry(kind="reminder",title=fixture.getString("reminderBatteries"),expiry=today.plusDays(18).toString(),intervalDays=60))
    ActivityScenario.launch(MainActivity::class.java).use {scenario->
     scenario.onActivity {it.window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)}
-    rule.waitUntil(15000) {runCatching {rule.onAllNodesWithText(java.text.NumberFormat.getIntegerInstance(java.util.Locale.forLanguageTag(locale)).format(6),substring=false).fetchSemanticsNodes().isNotEmpty()}.getOrDefault(false)}
+    fun assertFixtureCounts() {
+     val numbers=java.text.NumberFormat.getIntegerInstance(java.util.Locale.forLanguageTag(locale))
+     rule.onNodeWithTag("metric-kits").assertTextEquals(numbers.format(1))
+     rule.onNodeWithTag("metric-supplies").assertTextEquals(numbers.format(6))
+     rule.onNodeWithTag("metric-attention").assertTextEquals(numbers.format(2))
+    }
+    fun awaitFixtureCounts(){rule.waitUntil(15_000) {runCatching {assertFixtureCounts();true}.getOrDefault(false)}}
+    awaitFixtureCounts()
     val folder=File(context.getExternalFilesDir("store"),locale).apply {mkdirs()}
     val marketing=File(context.getExternalFilesDir("marketing"),locale).apply {mkdirs()}
     var panelIndex=0
     fun capture(name:String) {
      rule.waitForIdle()
+     awaitCaptureFrames(scenario)
+     if(name=="01-overview") {awaitFixtureCounts();awaitCaptureFrames(scenario);assertFixtureCounts()}
+     if(name=="08-report-preview") {
+      rule.onNodeWithTag("report-rendered-page").assertIsDisplayed()
+      rule.onNodeWithText(label(R.string.report_loading)).assertDoesNotExist()
+     }
      val content=android.graphics.Rect()
-     scenario.onActivity {it.window.decorView.getWindowVisibleDisplayFrame(content)}
+     val origin=IntArray(2)
+     scenario.onActivity {it.window.decorView.getWindowVisibleDisplayFrame(content);it.findViewById<android.view.View>(android.R.id.content).getLocationOnScreen(origin)}
+     if(name=="01-overview") {
+      val brand=rule.onNodeWithText(label(R.string.preptrove_c7187b),substring=false).fetchSemanticsNode().boundsInRoot
+      check(brand.top+origin[1]>=content.top-1) {"Navigation brand overlaps system status bar"}
+     }
      val bitmap=instrumentation.uiAutomation.takeScreenshot()
      File(folder,name+".png").outputStream().use {bitmap.compress(Bitmap.CompressFormat.PNG,100,it)}
      val panel=storePanel(bitmap,content,fixture.getJSONObject("headlines").getString(name),java.util.Locale.forLanguageTag(locale),++panelIndex)
@@ -75,7 +93,7 @@ class StoreScreenshotsTest {
     section(R.string.nav_settings);rule.onNode(hasScrollToIndexAction()).performScrollToNode(hasText("PDF",substring=false));rule.onNodeWithText("PDF",substring=false).performClick()
     rule.onNodeWithTag("export-sensitive").performScrollTo().performClick()
     rule.onNodeWithText(label(R.string.report_preview),substring=false).performScrollTo().performClick()
-    rule.waitUntil(15000) {rule.onAllNodesWithContentDescription(label(R.string.report_preview)).fetchSemanticsNodes().isNotEmpty()};capture("08-report-preview")
+    rule.waitUntil(15000) {rule.onAllNodesWithTag("report-rendered-page").fetchSemanticsNodes().isNotEmpty()};capture("08-report-preview")
     scenario.onActivity {it.window.clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)}
    }
   }
