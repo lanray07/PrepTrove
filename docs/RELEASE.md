@@ -1,6 +1,6 @@
 # PrepTrove release status
 
-Assessed 3 November 2026. Package `com.preptrove.app`, version 0.1.0/code 1, minimum API 26, target API 36. Purchases remain disabled. Amazon submission has not occurred.
+Assessed 3 November 2026. Package `com.preptrove.app`, version 0.1.0/code 1, minimum API 26, target API 36. Purchases remain disabled. Amazon status **SUBMITTED** was verified at 07:11 UTC. Store approval/live availability remains pending.
 
 ## Implemented launch scope
 
@@ -37,12 +37,13 @@ The corrected unsigned APK is accepted into the draft. Its stored download match
 
 The 39 privacy data-type answers are completed and saved for publisher review. Expected user-requested exports/disclosed voice flows use Amazon's transfer exceptions; this does not imply that these actions never leave the device. Optional support correspondence, user-entered supply purchase dates and accessibility notes are disclosed for app functionality. Platform-service boundaries and the exact draft answers are recorded in `release/privacy-disclosure-review.json`. No independent inspection or certification of Amazon wrapper telemetry is claimed.
 
-The 2,364-character tester instructions are entered on Review; Amazon may clear this field when navigating, so the source file remains authoritative. Export certification remains unchecked and Submit App is disabled. No binding declaration was accepted.
+The 2,364-character tester instructions were present at submission. After the publisher explicitly certified the displayed import/export/encryption declaration, its checkbox was checked and Submit App clicked. Amazon returned SUBMITTED and App Submission Successful. Evidence and the console history timezone are recorded in `release/amazon-submission.json`; the status screenshot is in `release/evidence`.
 
-## Only remaining publisher actions
+## Publisher approvals and next store step
 
-1. Approve the exact proposed public notices in `release/publisher-review`, confirm banksmi@mail.com is monitored and the stated support use/retention/rights process matches practice, and assess the applicable provider/transfer arrangements. The existing linked public notices remain review drafts until approval.
-2. Confirm the displayed Amazon import/export/encryption-law certification at action time and authorize the final submission. This is the publisher's certification, not an AI legal-compliance assessment.
+On 3 November 2026 the owner approved the exact public notices and all 39 privacy declarations, confirmed monitored support and its stated process/provider assessment, and explicitly certified the Amazon export declaration. The approved privacy/deletion text was published in commit39d8425 and fetched publicly to verify it matches after Git newline normalization. Owner attribution is in `release/publisher-approval.json`; this is not independent legal certification.
+
+Amazon estimates 7 November 2026,11:30 PM PST (8 November07:30 UTC) for Appstore availability, subject to review. No store approval or live availability is claimed. The remaining external step is Amazon's review; no additional publisher action was displayed at submission.
 
 Real SKU/catalogue, App Tester, purchase/restore and receipt verification remain deferred prerequisites for a future paid release. They are not asserted as working; checkout and its unfinished card remain disabled.
 
@@ -50,4 +51,4 @@ Real SKU/catalogue, App Tester, purchase/restore and receipt verification remain
 
 Run the documented Gradle checks, capture scripts and asset review, then `python tools/submission_bundle.py`. The ZIP allowlists the unsigned production APK, all locale assets, metadata, proposed/current notices and source-bound evidence. It checks identity, non-debuggable variant, API values, permissions, ZIP alignment, absent test/QA resources, unit/lint results and disabled checkout. It remains `unsigned_review_only` with `productionReady:false`; packaging does not publish or certify compliance.
 
-`python tools/release_check.py` intentionally returns nonzero while publisher approval is pending. Keep signing material/passwords outside Git. Other distribution routes may need owner-controlled signing keys.
+`python tools/release_check.py` now passes the submitted scope; this does not predict Amazon approval. Keep signing material/passwords outside Git. Other distribution routes may need owner-controlled signing keys.

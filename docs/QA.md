@@ -255,3 +255,7 @@ Amazon accepted the corrected unsigned APK; the stored download SHA256 matches l
 The current production fingerprint passed the physical Fire rerun:40 primary cases,35 passed,5 environment/variant skips,zero failures; runner time43.481seconds. The updated debug APK was installed without uninstalling the primary application. Isolated22-language QA compared5632 strings and captured110 views in143.477seconds. Isolated store capture passed with176 raw/176 panels in257.985seconds. The final Arabic page-one-of-two label was inspected on the physical capture. These runtime captures are retained separately from the reviewed API36 Amazon panels; they do not silently replace approved image hashes.
 
 The owner answered “Audio and VoiceView both work” after the requested typed expiry query, Review command, Read response aloud and VoiceView navigation/control smoke check. This is attributed owner evidence on one device, not independent accessibility certification, proof of every speech locale or automated audio detection. No recognition service is installed on this Fire, so actual transcription remains unsupported; typed fallback is available.
+
+## 3 November 2026 — submitted
+
+Owner-approved notices published and publicly verified; final binding export certification explicitly authorized. Amazon returned SUBMITTED and App Submission Successful at07:11 UTC. Purchases remain disabled. See release/amazon-submission.json and docs/RELEASE.md for current status; earlier entries above are historical. Amazon review/approval remains external.

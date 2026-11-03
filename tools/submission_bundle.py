@@ -153,10 +153,15 @@ def main():
              *sorted((ROOT/'release/publisher-review').glob('*.md')),
              *[ROOT / 'docs' / name for name in ['RELEASE.md', 'QA.md', 'PRIVACY.md', 'DATA-DELETION.md', 'BACKUP.md', 'AMAZON-BILLING.md', 'AMAZON-SUBMISSION.md', 'VOICE.md', 'NOTIFICATIONS.md', 'LOCALISATION.md', 'WORLDWIDE-VALIDATION.md', 'SOURCE-DIRECTORY.md']],
              ROOT / 'README.md', ROOT / 'docs/PUBLISHER-REVIEW.md', *sorted((ROOT/'docs').glob('visual-review-*.json')),
-             *[p for p in [ROOT/'release/fire-device-validation.json',ROOT/'release/evidence/TEST-fire-api28.xml',ROOT/'release/native-api36-validation.json',ROOT/'release/manual-accessibility-validation.json',ROOT/'release/amazon-media-validation.json',ROOT/'release/privacy-disclosure-review.json'] if p.exists()], *sorted((ROOT/'release/native-evidence').glob('TEST-*.xml')),
+             *[p for p in [ROOT/'release/fire-device-validation.json',ROOT/'release/evidence/TEST-fire-api28.xml',ROOT/'release/native-api36-validation.json',ROOT/'release/manual-accessibility-validation.json',ROOT/'release/amazon-media-validation.json',ROOT/'release/privacy-disclosure-review.json',ROOT/'release/publisher-approval.json',ROOT/'release/amazon-submission.json',ROOT/'release/evidence/amazon-submitted-20261103.jpg'] if p.exists()], *sorted((ROOT/'release/native-evidence').glob('TEST-*.xml')),
              *sorted((ROOT/'localization/store-queues').glob('*.json')), ROOT / 'localization/report.json', ROOT / 'localization/content-policy.json', ROOT / 'app/src/main/assets/official-sources.json']
+    submission_path = ROOT / 'release/amazon-submission.json'
+    submission = json.loads(submission_path.read_text(encoding='utf-8')) if submission_path.exists() else {}
+    recorded_submitted = submission.get('status') == 'SUBMITTED' and submission.get('apkSha256') == digest(apk)
     report = {'kind': 'unsigned_review_only', 'productionReady': False, 'signed': False,
-              'submitted': False, 'checkoutEnabled': False,
+              'submitted': recorded_submitted, 'recordedAmazonStatus': submission.get('status', 'not_recorded'),
+              'submissionEvidence': 'release/amazon-submission.json' if recorded_submitted else None,
+              'checkoutEnabled': False,
               'buildConfigSha256': digest(config_path),
               'sourceCommit': revision, 'workingTreeDirty': dirty,
               'apk': apk_report, 'apkSha256': digest(apk), 'zipAlignmentVerified': True,

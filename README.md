@@ -54,4 +54,4 @@ After current captures exist, `python tools/review_store_assets.py` creates inde
 See [worldwide validation evidence and limits](docs/WORLDWIDE-VALIDATION.md). The isolated localisation QA package cannot be submitted: its marker is rejected by the submission packager.
 
 
-Final release handoff: current-source Fire and hosted API 36 acceptance pass; the owner reported working audio/VoiceView, and all 88 Amazon media uploads match reviewed hashes/order. Exact public-notice proposals await publisher approval in [release/publisher-review](release/publisher-review/README.md). Amazon's binding export certification remains unchecked; no final submission has occurred. See [current release status](docs/RELEASE.md).
+Final release handoff: Amazon status **SUBMITTED** was verified on 3 November 2026. Purchases remain disabled. Approved public privacy/deletion notices are published. All current-source acceptance gates pass; store approval and live availability are pending Amazon review. See [current release status](docs/RELEASE.md) and [submission evidence](release/amazon-submission.json).

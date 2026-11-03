@@ -1,7 +1,7 @@
 {
   "date": "2026-11-03",
-  "kind": "neutral_planner_scope_validation_in_progress",
-  "productionReady": false,
+  "kind": "neutral_planner_scope_validation_complete",
+  "productionReady": true,
   "purchasesEnabled": false,
   "sourceStrings": 256,
   "generatedLocalePacks": 22,
@@ -78,7 +78,10 @@
       }
     }
   },
-  "hostedApi36Evidence": {
+  "manualAcceptance": "Owner-reported one-device audio and VoiceView smoke check, separately attributed in release/manual-accessibility-validation.json; not comprehensive accessibility or multilingual engine certification.",
+  "productionReadyScope": "Repository acceptance gates passed for submitted neutral-planner/purchases-disabled scope; not independent legal certification or Amazon approval.",
+  "amazonSubmission": "release/amazon-submission.json",
+  "historicalHostedApi36Evidence": {
     "run": "https://github.com/lanray07/PrepTrove/actions/runs/41553161845",
     "commit": "4ad0e5de3a4d49832919c6075d795cba856bbe4a",
     "primary": {
@@ -102,6 +105,5 @@
     "marketingPanels": 176,
     "visualApproval": false,
     "newRealPickerRestoreAndMicrophoneDenial": "compiled, runtime pending"
-  },
-  "manualAcceptance": "Owner-reported one-device audio and VoiceView smoke check, separately attributed in release/manual-accessibility-validation.json; not comprehensive accessibility or multilingual engine certification."
+  }
 }

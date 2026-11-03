@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "status": "saved_for_publisher_review",
+  "status": "saved_and_publisher_approved",
   "dataTypesReviewed": 39,
   "source": "https://developer.amazon.com/docs/app-submission/appstore-privacy-labels.html",
   "policyBasis": "Amazon excludes service-provider processing and expected user-requested disclosures from third-party transfer labels. User-chosen exports and prominently disclosed voice actions are classified under those exceptions. These exclusions do not mean data can never leave the device.",
@@ -775,5 +775,6 @@
     "purchaseHistory": "Only optional user-entered supply purchase dates; checkout/payment-account processing is disabled.",
     "health": "Only optional user-entered household accessibility/support notes; no health-platform, fitness-sensor or biometric record access.",
     "platform": "No publisher analytics/advertising or device-ID queries are integrated. Amazon distribution processing is documented separately; exact proprietary wrapper telemetry has not been independently inspected."
-  }
+  },
+  "publisherApproval": "release/publisher-approval.json"
 }

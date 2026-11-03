@@ -93,3 +93,7 @@ The latest worldwide native QA compares 5,522 packaged strings across 22 locales
 ## Corrected worldwide draft — 3 November 2026
 
 Amazon accepted the corrected worldwide neutral-planner unsigned APK. Its stored download matches local SHA-256 `aa3c8f1741ac21174ea13a319f5499103c51849e364b3ab2dc9812883752ad79` exactly. Manifest Details confirms package `com.preptrove.app`, version0.1.0/code1, minimum26 and target36. Purchases remain disabled. Local build,18 JVM and31tooling checks passed; current hosted acceptance and final asset review are in progress. This supersedes the old binary hash and category uncertainty above: the verified primary category is Productivity > Notes & Bookmarking. Final declarations/export certification remain unchecked; no submission has occurred.
+
+## 3 November 2026 — submitted
+
+Owner-approved notices published and publicly verified; final binding export certification explicitly authorized. Amazon returned SUBMITTED and App Submission Successful at07:11 UTC. Purchases remain disabled. See release/amazon-submission.json and docs/RELEASE.md for current status; earlier entries above are historical. Amazon review/approval remains external.

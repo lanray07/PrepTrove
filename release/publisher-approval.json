@@ -7,12 +7,13 @@
   "noticeAndSupportApproval": "Approve notices and confirm support arrangements",
   "confirmedScope": "Exact privacy/deletion notices, all39 saved privacy declarations, monitored support mailbox, stated support use/retention/rights process and assessed mail.com provider/international-transfer arrangements.",
   "approvedFiles": {
-    "docs/PRIVACY.md": "41b69a23958ac672c1a0a0326cb34ae4fe549e81e93cd21597e5f2d60e6794d6",
-    "docs/DATA-DELETION.md": "588c810283b336c1b4d49029dc9681fc5a520fa1768472d73fe3d0a1eaa206b9"
+    "docs/PRIVACY.md": "8e9563a8c2cb893085bce63032c178b8edfd89343c71697d0f12c27dff4ce383",
+    "docs/DATA-DELETION.md": "f49088984370e87c89f0ed30cdec2f5e2ccfbc954736b8404cbf5b7834f982b3"
   },
   "privacyDeclarationsSha256": "a8c54717d4f7cc0ef9cf747df5ad555ec68e1a861749c7ab24a27d7225a2f4eb",
   "exportCertificationAnswer": "I certify—submit to Amazon",
   "exportCertificationScope": "Publisher certifies displayed Amazon import/export declaration, including encrypted backups, US and authorized international markets, no additional Amazon licence/clearance and applicable import/export/encryption laws; authorizes checking certification and Submit App for free worldwide release with purchases disabled.",
   "attribution": "Owner confirmation in this chat; not independent legal compliance assessment or Amazon approval.",
-  "submissionOutcome": "Not yet performed at time this approval record was created."
+  "submissionOutcome": "Amazon status SUBMITTED and App Submission Successful verified at 2026-11-03T07:11:22Z; see release/amazon-submission.json.",
+  "approvedTextHashEncoding": "SHA-256 of UTF-8 with LF newlines; Git normalizes working-copy CRLF."
 }

@@ -21,33 +21,30 @@
     "Spanish"
   ],
   "englishDescription": "All 15 supported description locales saved Complete after reload; worldwide neutral-planner scope.",
-  "ratingQuestionnaire": "saved; Amazon reported Complete; owner review pending",
-  "targetAudience": "18+ household organisers; owner review pending",
+  "ratingQuestionnaire": "Complete; saved declarations approved by publisher",
+  "targetAudience": "18+ household organisers; submitted",
   "privacyPolicyUrl": "https://github.com/lanray07/PrepTrove/blob/main/docs/PRIVACY.md",
   "dataDeletionUrl": "https://github.com/lanray07/PrepTrove/blob/main/docs/DATA-DELETION.md",
   "publicKey": "downloaded from this app's Amazon console and installed in assets",
   "checkoutEnabled": false,
-  "submitted": false,
-  "remaining": [
-    "publisher approval of exact final public privacy/deletion notice and actual support/provider arrangements",
-    "action-time Amazon export/encryption certification and final Submit App"
-  ],
-  "privacyQuestionnaire": "All39 data-type choices completed and saved for review. User-initiated export/disclosed voice transfers classified under Amazon exceptions; optional support correspondence, supply purchase dates and accessibility notes disclosed for app functionality. Critical changed values rechecked after reload. Publisher approval of the declared scope remains pending.",
+  "submitted": true,
+  "remaining": [],
+  "privacyQuestionnaire": "All39 data-type choices completed and saved for review. User-initiated export/disclosed voice transfers classified under Amazon exceptions; optional support correspondence, supply purchase dates and accessibility notes disclosed for app functionality. Critical changed values rechecked after reload. Publisher approved declared scope on2026-11-03.",
   "tabletIcons": "512x512 and 114x114 accepted",
   "screenshots": "All11 available media locales now have8 reviewed matching PNGs,88 total. Every saved set was reloaded and original images downloaded to verify exact hashes and01–08 order. All22 app-locale asset sets are delivered locally. See amazon-media-validation.json.",
   "publisherName": "O.Bankole",
   "publisherCountry": "United Kingdom",
   "signingStatus": "Amazon documentation permits unsigned APK upload and applies an Amazon signature; local signing is not inherently required for Amazon-managed submission.",
   "submissionBundle": "artifacts/amazon-review.zip; unsigned review only",
-  "unsignedPackageStatus": "Corrected unsigned APK accepted and stored-download hash verified. Current hosted run41561192222 passed18 JVM/31 tooling,35 primary+1 system-file cases with4 skips,5632 resource checks/110 QA captures and176raw/176panels. All176 marketing panels pass scoped AI review. Unsigned review package records remaining manual/publisher/media gates.",
+  "unsignedPackageStatus": "Current accepted APK and tested neutral-planner source submitted successfully; source-bound validation and purchase-disabled configuration unchanged.",
   "publisherCountryCode": "GB",
   "submissionRequested": true,
   "signingReference": "https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html",
   "launchScope": "Worldwide neutral planner with official-source links; cached safety recommendations removed by owner approval on2026-11-02; purchases disabled.",
-  "submissionDeferredReason": "All technical checks, owner-reported audio/VoiceView smoke checks and11 localized media uploads passed. Final publisher notice/declarations and binding export certification remain pending.",
+  "submissionDeferredReason": null,
   "purchaseActivationPrerequisites": "Deferred while purchases are disabled: real SKU, App Tester, restore and receipt-verification validation before any future paid release.",
   "consoleVerifiedDate": "2026-11-03",
-  "consoleVerifiedState": "Final Review shows expected APK/version, free price, primary Productivity > Notes & Bookmarking category,18+ target audience, all available countries,12 Fire tablets/0 TV/0 automotive, Complete content rating and descriptions/media. Export certification unchecked; Submit App disabled only pending compliance confirmation. No submission occurred.",
+  "consoleVerifiedState": "SUBMITTED; App Submission Successful. See amazon-submission.json. Not yet approved/live.",
   "binaryUpload": {
     "status": "accepted_into_draft",
     "file": "app-release-unsigned.apk",
@@ -57,7 +54,7 @@
     "minSdk": 26,
     "targetSdk": 36,
     "sha256": "aa3c8f1741ac21174ea13a319f5499103c51849e364b3ab2dc9812883752ad79",
-    "submitted": false,
+    "submitted": true,
     "manifestVerifiedInConsole": true,
     "selectedFireTablets": 12,
     "selectedFireTv": 0,
@@ -69,7 +66,7 @@
   "supportWebsite": "https://github.com/lanray07/PrepTrove",
   "categoryVerificationNotes": "Productivity > Notes & Bookmarking persisted in both edit selectors after reload and is the explicit App will be listed in category on Review. The console tooltip also shows a secondary Utilities > Notes & Bookmarking label; no hidden API was used to change that secondary mapping.",
   "testingInstructions": "2364-character worldwide tester instructions entered and verified on final Review page; re-enter if Amazon clears them during navigation.",
-  "exportCompliance": "Required export/encryption-law certification remains unchecked; Submit App is disabled. No binding declaration accepted.",
+  "exportCompliance": "Owner explicitly certified displayed declaration; checkbox checked and Amazon submission successful.",
   "localizationProgress": {
     "generatedUiPacks": 22,
     "sourceStrings": 256,
@@ -80,8 +77,8 @@
     "reviewType": "Codex AI linguistic review under owner-approved link-only scope; no qualified safety approval claimed"
   },
   "localPreparedBinary": {
-    "status": "Corrected visual/readiness/localized-copy source compiled locally; hosted runtime and recapture pending.",
-    "uploaded": false,
+    "status": "Corrected unsigned release APK uploaded, hash verified and submitted; current-source hosted and physical validation passed.",
+    "uploaded": true,
     "targetSdk": 36,
     "purchasesEnabled": false
   },
@@ -91,5 +88,6 @@
     "proof": "artifacts/amazon-worldwide-listings.jpg; category/language summary artifacts/amazon-worldwide-review.jpg"
   },
   "languageDeclarationNotes": "All 13 implemented language choices exposed by the console were selected and remained checked after reload. Swedish, Turkish and Indonesian have no console language checkbox; Chinese variants and regional packs are not separate checkboxes.",
-  "mediaReplacementConfirmation": "Owner confirmed replacement across all11 locales; authorized replacement completed and saved."
+  "mediaReplacementConfirmation": "Owner confirmed replacement across all11 locales; authorized replacement completed and saved.",
+  "submissionEvidence": "release/amazon-submission.json"
 }

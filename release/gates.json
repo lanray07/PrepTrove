@@ -16,15 +16,15 @@
     "evidence": "Owner explicitly approved the worldwide planner/official-links-only scope on 2026-11-02. Cached safety recommendations were removed and 11 tagged strings recast as neutral UI/product-limit text, recorded before/after in localization/content-policy.json. Directory holds only 21 country/publisher/HTTPS URLs, no advice. All 22 linguistic queues are AI-reviewed; qualifiedSafetyReview stays false. Any future critical guidance still requires classification and qualified review."
   },
   "publisherLegalAndSupport": {
-    "status": "pending",
-    "evidence": "Publisher O.Bankole, UK and support email banksmi@mail.com are supplied. Exact proposed replacements for the public privacy/deletion pages are in release/publisher-review. The publisher must approve the notices, confirm monitored support and the stated use/retention/rights process, and assess applicable mail.com provider/transfer arrangements. No mailbox verification email was sent or legal compliance certified."
+    "status": "passed",
+    "evidence": "Owner approved exact final privacy/deletion notices and all39 saved declarations, confirmed monitored support and the stated use/retention/rights process, and confirmed assessment of provider/transfer arrangements on2026-11-03. Approved notices pushed in39d8425; public text matches after Git newline normalization. Owner attribution and hashes:release/publisher-approval.json. No independent legal compliance certification claimed."
   },
   "functionalCompleteness": {
     "status": "passed",
-    "evidence": "Current production fingerprint2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610 passed hosted run41561192222:35 primary cases with4 condition/variant skips,1 separate real system-file case,18 JVM/31 tooling checks,5632 string comparisons/110 QA layouts and176 raw/176 panel captures. Actual credential lifecycle, JSON export/copy restore and microphone-denial typed fallback passed. This covers the implemented neutral-planner scope; owner-reported audio/VoiceView evidence is separately attributed; actual transcription is unsupported on this Fire. Only publisher notice/support approval and final export certification remain pending."
+    "evidence": "Current production fingerprint2c36545319f10f47f7ba3ee4cff7301352c44a9f60da34f44817e75513f31610 passed hosted run41561192222:35 primary cases with4 condition/variant skips,1 separate real system-file case,18 JVM/31 tooling checks,5632 string comparisons/110 QA layouts and176 raw/176 panel captures. Actual credential lifecycle, JSON export/copy restore and microphone-denial typed fallback passed. This covers the implemented neutral-planner scope; owner-reported audio/VoiceView evidence is separately attributed; actual transcription is unsupported on this Fire. Publisher notices and final certification are now owner-approved and submission is verified separately."
   },
   "ownerReleaseApproval": {
-    "status": "pending",
-    "evidence": "Owner authorized worldwide neutral planning, GitHub push, Amazon submission and old-image replacement. All current technical/manual smoke checks and88 remote image verifications are complete. Final action awaits publisher approval of exact notice/declarations and the displayed Amazon export/encryption certification. Checkbox remains unchecked and no final submission occurred."
+    "status": "passed",
+    "evidence": "Owner explicitly certified the displayed Amazon import/export/encryption declaration and authorized final submission. Certification checked, Submit App clicked and Amazon SUBMITTED/App Submission Successful observed at2026-11-03T07:11:22Z. See release/amazon-submission.json. This is not Amazon approval/live availability."
   }
 }

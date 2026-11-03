@@ -1,7 +1,4 @@
 {
-  "productionReady": false,
-  "remaining": [
-    "publisherLegalAndSupport: Publisher O.Bankole, UK and support email banksmi@mail.com are supplied. Exact proposed replacements for the public privacy/deletion pages are in release/publisher-review. The publisher must approve the notices, confirm monitored support and the stated use/retention/rights process, and assess applicable mail.com provider/transfer arrangements. No mailbox verification email was sent or legal compliance certified.",
-    "ownerReleaseApproval: Owner authorized worldwide neutral planning, GitHub push, Amazon submission and old-image replacement. All current technical/manual smoke checks and88 remote image verifications are complete. Final action awaits publisher approval of exact notice/declarations and the displayed Amazon export/encryption certification. Checkbox remains unchecked and no final submission occurred."
-  ]
+  "productionReady": true,
+  "remaining": []
 }
