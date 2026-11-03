@@ -67,7 +67,8 @@ class EphemeralUiAcceptanceTest {
     report.put("guidanceGbSelectionPersistedAfterRecreation", true)
 
     section(R.string.nav_settings)
-    rule.onNode(hasText("JSON") and hasClickAction()).performScrollTo().performClick()
+    rule.onNode(hasScrollToIndexAction()).performScrollToNode(hasText("JSON",substring=false))
+    rule.onNode(hasText("JSON") and hasClickAction()).performClick()
     rule.onNodeWithText(localized.getString(R.string.choose_destination_5853e2)).performClick()
 
     val automation = instrumentation.uiAutomation

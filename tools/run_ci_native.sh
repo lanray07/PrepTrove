@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-collect_failure_evidence() { adb pull /sdcard/Android/data/com.preptrove.app/files/acceptance artifacts/device-acceptance >/dev/null 2>&1 || true; }
+collect_failure_evidence() { mkdir -p artifacts/device-acceptance; adb shell ls -la /sdcard/Android/data/com.preptrove.app/files/acceptance || true; adb pull /sdcard/Android/data/com.preptrove.app/files/acceptance artifacts/device-acceptance || true; }
 trap collect_failure_evidence EXIT
 adb shell wm size 1920x1200
 adb shell wm density 240
