@@ -1,6 +1,6 @@
 # PrepTrove data deletion
 
-Updated: 30 October 2026. Submission review copy.
+Updated: 3 November 2026.
 
 PrepTrove does not require a PrepTrove account for core planning. Your household records are stored on your device, so you can remove them directly in the app.
 
@@ -24,4 +24,4 @@ PrepTrove does not store microphone recordings. If your optional speech provider
 
 For help with these steps, email banksmi@mail.com. Please do not send private household plans, medical details, passwords or backup files. Support cannot remotely erase a device-only plan or recover a forgotten PTB backup password.
 
-This page describes current controls; it does not claim forensic erasure from flash storage. The publisher should review this copy before final Appstore submission.
+This page describes current controls; it does not claim forensic erasure from flash storage. For support-correspondence deletion requests, contact banksmi@mail.com; device-only records are removed using the controls above.
